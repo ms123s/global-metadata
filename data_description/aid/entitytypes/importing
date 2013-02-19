@@ -1,0 +1,3 @@
+[sw]
+	type = sw.entitytype
+	content = {\"enabled\":true,\"index\":1000,\"name\":\"importing\",\"pack\":\"aid\",\"team_security\":false,\"fields\":{\"content\":{\"name\":\"content\",\"datatype\":\"binary\",\"enabled\":true},\"importingid\":{\"name\":\"importingid\",\"datatype\":\"string\",\"primary_key\":true,\"constraints\":\"[{\\\"annotation\\\":\\\"NotEmpty\\\",\\\"parameter1\\\":\\\"\\\"},{\\\"annotation\\\":\\\"Pattern\\\",\\\"parameter1\\\":\\\"[a-zA-Z][a-zA-Z0-9_.-/]{2,64}\\\"}]\",\"form_enabled_expr\":\"!isEdit\",\"enabled\":true},\"jsonBody\":{\"name\":\"jsonBody\",\"datatype\":\"text\",\"enabled\":true},\"description\":{\"name\":\"description\",\"datatype\":\"string\",\"enabled\":true},\"user\":{\"name\":\"user\",\"datatype\":\"string\",\"enabled\":true}}}
