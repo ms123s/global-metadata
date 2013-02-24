@@ -1,3 +1,69 @@
 [sw]
 	type = sw.entitytype
-	content = {\"enabled\":true,\"index\":1000,\"name\":\"user\",\"pack\":\"aid\",\"team_security\":false,\"fields\":{\"email\":{\"name\":\"email\",\"datatype\":\"string\",\"enabled\":true},\"admin\":{\"name\":\"admin\",\"datatype\":\"boolean\",\"edittype\":\"checkbox\",\"enabled\":true},\"roles\":{\"name\":\"roles\",\"datatype\":\"array/string\",\"selectable_items\":\"rpc:permission.getAllRoles,mapping:{value:'roleid',label:'roleid'}\",\"edittype\":\"multiselect\",\"enabled\":true},\"givenname\":{\"name\":\"givenname\",\"datatype\":\"string\",\"enabled\":true},\"userid\":{\"name\":\"userid\",\"datatype\":\"string\",\"constraints\":\"[{\\\"annotation\\\":\\\"NotEmpty\\\",\\\"parameter1\\\":\\\"\\\"},{\\\"annotation\\\":\\\"Pattern\\\",\\\"parameter1\\\":\\\"[a-z][a-z0-9]{2,32}\\\"}]\",\"form_enabled_expr\":\"!isEdit\",\"primary_key\":true,\"enabled\":true},\"surname\":{\"name\":\"surname\",\"datatype\":\"string\",\"enabled\":true},\"team_manage\":{\"name\":\"team_manage\",\"datatype\":\"boolean\",\"edittype\":\"checkbox\",\"enabled\":true},\"password\":{\"name\":\"password\",\"datatype\":\"string\",\"enabled\":true},\"groups\":{\"name\":\"groups\",\"datatype\":\"array/string\",\"selectable_items\":\"rpc:auth.getGroups,mapping:{value:'groupid',label:'groupid'}\",\"edittype\":\"multiselect\",\"enabled\":true}}}
+--
+{
+    "enabled": true,
+    "index": 1000,
+    "default_fields": false,
+    "pack": "aid",
+    "team_security": false,
+    "add_self_to_subpanel": false,
+    "description": "",
+    "name": "user",
+    "multi_add": false,
+    "multiple_tabs": false,
+    "exclusion_list": false,
+    "filter": "",
+    "__hints__": {
+
+    },
+    "fields": {
+        "email": {
+            "enabled": true,
+            "name": "email",
+            "datatype": "string"
+        },
+        "admin": {
+            "enabled": true,
+            "name": "admin",
+            "edittype": "checkbox",
+            "datatype": "boolean"
+        },
+        "roles": {
+            "enabled": true,
+            "name": "roles",
+            "edittype": "multiselect",
+            "datatype": "array/string",
+            "selectable_items": "rpc:permission.getAllRoles,mapping:{value:'roleid',label:'roleid'}"
+        },
+        "givenname": {
+            "enabled": true,
+            "name": "givenname",
+            "datatype": "string"
+        },
+        "userid": {
+            "enabled": true,
+            "form_enabled_expr": "!isEdit",
+            "name": "userid",
+            "constraints": "[{\"annotation\":\"NotEmpty\",\"parameter1\":\"\"},{\"annotation\":\"Pattern\",\"parameter1\":\"[a-z][a-z0-9]{2,32}\"}]",
+            "primary_key": true,
+            "datatype": "string"
+        },
+        "surname": {
+            "enabled": true,
+            "name": "surname",
+            "datatype": "string"
+        },
+        "team_manage": {
+            "enabled": true,
+            "name": "team_manage",
+            "edittype": "checkbox",
+            "datatype": "boolean"
+        },
+        "password": {
+            "enabled": true,
+            "name": "password",
+            "datatype": "string"
+        }
+    }
+}

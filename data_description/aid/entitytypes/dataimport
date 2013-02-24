@@ -9,7 +9,7 @@
     "team_security": false,
     "add_self_to_subpanel": false,
     "description": "",
-    "name": "importing",
+    "name": "dataimport",
     "multi_add": false,
     "multiple_tabs": false,
     "exclusion_list": false,
@@ -18,32 +18,39 @@
 
     },
     "fields": {
-        "content": {
+        "defaults": {
             "enabled": true,
-            "name": "content",
-            "datatype": "binary"
-        },
-        "importingid": {
-            "enabled": true,
-            "form_enabled_expr": "!isEdit",
-            "name": "importingid",
-            "constraints": "[{\"annotation\":\"NotEmpty\",\"parameter1\":\"\"},{\"annotation\":\"Pattern\",\"parameter1\":\"[a-zA-Z][a-zA-Z0-9_.-/]{2,64}\"}]",
-            "primary_key": true,
+            "name": "defaults",
             "datatype": "string"
         },
-        "jsonBody": {
+        "importid": {
             "enabled": true,
-            "name": "jsonBody",
-            "datatype": "text"
-        },
-        "description": {
-            "enabled": true,
-            "name": "description",
+            "name": "importid",
             "datatype": "string"
         },
-        "user": {
+        "source": {
             "enabled": true,
-            "name": "user",
+            "name": "source",
+            "datatype": "string"
+        },
+        "filetype": {
+            "enabled": true,
+            "name": "filetype",
+            "datatype": "filetype"
+        },
+        "mapping": {
+            "enabled": true,
+            "name": "mapping",
+            "datatype": "string"
+        },
+        "mainmodule": {
+            "enabled": true,
+            "name": "mainmodule",
+            "datatype": "mainmodule"
+        },
+        "filter": {
+            "enabled": true,
+            "name": "filter",
             "datatype": "string"
         }
     }

@@ -1,0 +1,78 @@
+[sw]
+	type = sw.entitytype
+--
+{
+    "enabled": true,
+    "index": 1000,
+    "default_fields": false,
+    "pack": "aid",
+    "team_security": false,
+    "add_self_to_subpanel": false,
+    "description": "",
+    "name": "teamintern",
+    "multi_add": false,
+    "multiple_tabs": false,
+    "exclusion_list": false,
+    "filter": "",
+    "__hints__": {
+
+    },
+    "fields": {
+        "validTo": {
+            "enabled": true,
+            "name": "validTo",
+            "datatype": "date"
+        },
+        "groupRead": {
+            "enabled": true,
+            "name": "groupRead",
+            "datatype": "array/string"
+        },
+        "userCreate": {
+            "enabled": true,
+            "name": "userCreate",
+            "datatype": "array/string"
+        },
+        "teamid": {
+            "enabled": true,
+            "name": "teamid",
+            "primary_key": true,
+            "datatype": "string"
+        },
+        "groupManage": {
+            "enabled": true,
+            "name": "groupManage",
+            "datatype": "array/string"
+        },
+        "userRead": {
+            "enabled": true,
+            "name": "userRead",
+            "datatype": "array/string"
+        },
+        "description": {
+            "enabled": true,
+            "name": "description",
+            "datatype": "string"
+        },
+        "name": {
+            "enabled": true,
+            "name": "name",
+            "datatype": "string"
+        },
+        "userManage": {
+            "enabled": true,
+            "name": "userManage",
+            "datatype": "array/string"
+        },
+        "validFrom": {
+            "enabled": true,
+            "name": "validFrom",
+            "datatype": "date"
+        },
+        "groupCreate": {
+            "enabled": true,
+            "name": "groupCreate",
+            "datatype": "array/string"
+        }
+    }
+}

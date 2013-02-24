@@ -9,7 +9,7 @@
     "team_security": false,
     "add_self_to_subpanel": false,
     "description": "",
-    "name": "importing",
+    "name": "team",
     "multi_add": false,
     "multiple_tabs": false,
     "exclusion_list": false,
@@ -18,33 +18,31 @@
 
     },
     "fields": {
-        "content": {
+        "teamid": {
             "enabled": true,
-            "name": "content",
-            "datatype": "binary"
-        },
-        "importingid": {
-            "enabled": true,
-            "form_enabled_expr": "!isEdit",
-            "name": "importingid",
-            "constraints": "[{\"annotation\":\"NotEmpty\",\"parameter1\":\"\"},{\"annotation\":\"Pattern\",\"parameter1\":\"[a-zA-Z][a-zA-Z0-9_.-/]{2,64}\"}]",
-            "primary_key": true,
+            "name": "teamid",
             "datatype": "string"
         },
-        "jsonBody": {
+        "valid_from": {
             "enabled": true,
-            "name": "jsonBody",
-            "datatype": "text"
+            "name": "valid_from",
+            "datatype": "date"
         },
         "description": {
             "enabled": true,
             "name": "description",
             "datatype": "string"
         },
-        "user": {
+        "disabled": {
             "enabled": true,
-            "name": "user",
-            "datatype": "string"
+            "name": "disabled",
+            "edittype": "checkbox",
+            "datatype": "boolean"
+        },
+        "valid_to": {
+            "enabled": true,
+            "name": "valid_to",
+            "datatype": "date"
         }
     }
 }

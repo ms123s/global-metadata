@@ -9,7 +9,7 @@
     "team_security": false,
     "add_self_to_subpanel": false,
     "description": "",
-    "name": "message",
+    "name": "settings",
     "multi_add": false,
     "multiple_tabs": false,
     "exclusion_list": false,
@@ -18,24 +18,18 @@
 
     },
     "fields": {
-        "msgid": {
+        "settingsid": {
             "enabled": true,
             "form_enabled_expr": "!isEdit",
-            "name": "msgid",
+            "name": "settingsid",
             "constraints": "[{\"annotation\":\"NotEmpty\",\"parameter1\":\"\"},{\"annotation\":\"Pattern\",\"parameter1\":\"[a-zA-Z][a-zA-Z0-9_.-]{2,64}\"}]",
+            "primary_key": true,
             "datatype": "string"
         },
-        "msgstr": {
+        "description": {
             "enabled": true,
-            "name": "msgstr",
+            "name": "description",
             "datatype": "string"
-        },
-        "language": {
-            "enabled": true,
-            "name": "language",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "[ \n\t\t\t\t{\"value\":\"de\",\"label\":\"%messages.german\"},\n\t\t\t\t{\"value\":\"en\",\"label\":\"%messages.english\"},\n\t\t\t\t{\"value\":\"fr\",\"label\":\"%messages.franc\"},\n\t\t\t\t{\"value\":\"es\",\"label\":\"%messages.spain\"},\n\t\t\t\t{\"value\":\"it\",\"label\":\"%messages.italian\"}\n\t\t\t\t]"
         }
     }
 }

@@ -1,0 +1,48 @@
+[sw]
+	type = sw.entitytype
+--
+{
+    "enabled": true,
+    "index": 1000,
+    "default_fields": false,
+    "pack": "aid",
+    "team_security": false,
+    "add_self_to_subpanel": false,
+    "description": "",
+    "name": "enumdata",
+    "multi_add": false,
+    "multiple_tabs": false,
+    "exclusion_list": false,
+    "filter": "",
+    "__hints__": {
+
+    },
+    "fields": {
+        "sort": {
+            "enabled": true,
+            "default_value": 1,
+            "name": "sort",
+            "datatype": "integer"
+        },
+        "invalid_from": {
+            "enabled": true,
+            "default_value": "31.12.2101",
+            "name": "invalid_from",
+            "datatype": "date"
+        },
+        "invalid": {
+            "enabled": true,
+            "default_value": "false",
+            "name": "invalid",
+            "edittype": "checkbox",
+            "datatype": "boolean"
+        },
+        "key": {
+            "enabled": true,
+            "name": "key",
+            "constraints": "[{\"annotation\":\"NotEmpty\",\"parameter1\":\"\"}]",
+            "primary_key": true,
+            "datatype": "string"
+        }
+    }
+}
