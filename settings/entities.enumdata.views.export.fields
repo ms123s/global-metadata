@@ -1,0 +1,23 @@
+[sw]
+	type = sw.setting
+--
+{
+    "fields": [
+        {
+            "name": "key",
+            "enabled": true
+        },
+        {
+            "name": "sort",
+            "enabled": true
+        },
+        {
+            "name": "invalid",
+            "enabled": true
+        },
+        {
+            "name": "invalid_from",
+            "enabled": true
+        }
+    ]
+}
