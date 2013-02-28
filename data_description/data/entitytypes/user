@@ -34,7 +34,7 @@
             "name": "roles",
             "edittype": "multiselect",
             "datatype": "array/string",
-            "selectable_items": "rpc:permission.getAllRoles,mapping:{value:'roleid',label:'roleid'}"
+            "selectable_items": "rpc:permission.getAllRoles,mapping:{value:'name',label:'name'}"
         },
         "givenname": {
             "enabled": true,

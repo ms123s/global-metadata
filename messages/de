@@ -1671,10 +1671,6 @@
         "msgstr": "Projektverwaltung"
     },
     {
-        "msgid": "mainmenu.projectshellGlobal",
-        "msgstr": "Messages"
-    },
-    {
         "msgid": "mainmenu.reports",
         "msgstr": "Listen/Reports"
     },
@@ -1740,7 +1736,7 @@
     },
     {
         "msgid": "messages.messages_dir",
-        "msgstr": "Messages"
+        "msgstr": "Übersetzungen"
     },
     {
         "msgid": "messages.messages_save",
@@ -3349,5 +3345,17 @@
     {
         "msgid": "filter.text.change_label",
         "msgstr": "In Vergleichsnamen ändern"
+    },
+    {
+        "msgid": "messages.title",
+        "msgstr": "Übersetzungen"
+    },
+    {
+        "msgid": "mainmenu.projectshellMessages",
+        "msgstr": "Übersetzungen"
+    },
+    {
+        "msgid": "mainmenu.projectshellNamespaces",
+        "msgstr": "Applikationen"
     }
 ]
