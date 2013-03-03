@@ -3359,6 +3359,10 @@
         "msgstr": "Applikationen"
     },
     {
+        "msgid": "namespacesmanager.name",
+        "msgstr": "Name"
+    },
+    {
         "msgid": "namespacesmanager.is_installed",
         "msgstr": "Installiert?"
     },
@@ -3381,6 +3385,18 @@
     {
         "msgid": "namespacesmanager.reload",
         "msgstr": "Reload"
+    },
+    {
+        "msgid": "namespacesmanager.del",
+        "msgstr": "Entferne App"
+    },
+    {
+        "msgid": "namespacesmanager.add",
+        "msgstr": "Neue App"
+    },
+    {
+        "msgid": "namespacesmanager.clone",
+        "msgstr": "Install App"
     },
     {
         "msgid": "mainmenu.namespaces",
