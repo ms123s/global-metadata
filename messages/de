@@ -3395,6 +3395,18 @@
         "msgstr": "Neue App"
     },
     {
+        "msgid": "namespacesmanager.title",
+        "msgstr": "Applikationsverwaltung"
+    },
+    {
+        "msgid": "namespacesmanager.create_namespace",
+        "msgstr": "Applikation erstellen"
+    },
+    {
+        "msgid": "namespacesmanager.namespace_name",
+        "msgstr": "Applikationsname"
+    },
+    {
         "msgid": "namespacesmanager.clone",
         "msgstr": "Install App"
     },
