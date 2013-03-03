@@ -3376,7 +3376,7 @@
     },
     {
         "msgid": "namespacesmanager.push",
-        "msgstr": "Push ins Repository"
+        "msgstr": "Änderungen ins Repository schreiben"
     },
     {
         "msgid": "namespacesmanager.pull",
