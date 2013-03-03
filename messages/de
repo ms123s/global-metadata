@@ -3371,6 +3371,22 @@
         "msgstr": "Modifiziert?"
     },
     {
+        "msgid": "namespacesmanager.push",
+        "msgstr": "Push ins Repository"
+    },
+    {
+        "msgid": "namespacesmanager.pull",
+        "msgstr": "Update App"
+    },
+    {
+        "msgid": "namespacesmanager.reload",
+        "msgstr": "Reload"
+    },
+    {
+        "msgid": "mainmenu.namespaces",
+        "msgstr": "Applikationen verwalten"
+    },
+    {
         "msgid": "yes",
         "msgstr": "ja"
     },
