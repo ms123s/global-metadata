@@ -3357,5 +3357,25 @@
     {
         "msgid": "mainmenu.projectshellNamespaces",
         "msgstr": "Applikationen"
+    },
+    {
+        "msgid": "namespacesmanager.is_installed",
+        "msgstr": "Installiert?"
+    },
+    {
+        "msgid": "namespacesmanager.update_available",
+        "msgstr": "Updates verfügbar?"
+    },
+    {
+        "msgid": "namespacesmanager.is_modified",
+        "msgstr": "Modifiziert?"
+    },
+    {
+        "msgid": "yes",
+        "msgstr": "ja"
+    },
+    {
+        "msgid": "no",
+        "msgstr": "nein"
     }
 ]
