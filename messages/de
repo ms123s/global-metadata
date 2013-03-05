@@ -3395,12 +3395,36 @@
         "msgstr": "Reload"
     },
     {
+        "msgid": "namespacesmanager.uninstall",
+        "msgstr": "Deinstall App"
+    },
+    {
+        "msgid": "namespacesmanager.uninstalled",
+        "msgstr": "App deinstalliert"
+    },
+    {
         "msgid": "namespacesmanager.del",
         "msgstr": "Entferne App"
     },
     {
         "msgid": "namespacesmanager.add",
         "msgstr": "Neue App"
+    },
+    {
+        "msgid": "namespacesmanager.confirm_uninstall",
+        "msgstr": "Deinstalliere App?"
+    },
+    {
+        "msgid": "namespacesmanager.confirm_clone",
+        "msgstr": "Installiere App?"
+    },
+    {
+        "msgid": "namespacesmanager.confirm_push",
+        "msgstr": "Übertrage Änderungen in das Repository?"
+    },
+    {
+        "msgid": "namespacesmanager.confirm_pull",
+        "msgstr": "Aktualisiere die App?"
     },
     {
         "msgid": "namespacesmanager.title",
