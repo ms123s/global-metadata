@@ -3415,7 +3415,7 @@
         "msgstr": "Deinstalliere App?"
     },
     {
-        "msgid": "namespacesmanager.confirm_clone",
+        "msgid": "namespacesmanager.confirm_install",
         "msgstr": "Installiere App?"
     },
     {
@@ -3439,7 +3439,7 @@
         "msgstr": "Applikationsname"
     },
     {
-        "msgid": "namespacesmanager.clone",
+        "msgid": "namespacesmanager.install",
         "msgstr": "Install App"
     },
     {
