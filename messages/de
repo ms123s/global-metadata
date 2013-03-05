@@ -2959,6 +2959,26 @@
         "msgstr": "Verzeichnisname"
     },
     {
+        "msgid": "shell.file_name",
+        "msgstr": "Dateiname"
+    },
+    {
+        "msgid": "shell.nt_process",
+        "msgstr": "Workflow"
+    },
+    {
+        "msgid": "shell.nt_form",
+        "msgstr": "Form"
+    },
+    {
+        "msgid": "shell.nt_filter",
+        "msgstr": "Filter"
+    },
+    {
+        "msgid": "shell.node_type",
+        "msgstr": "Typ"
+    },
+    {
         "msgid": "shell.filter_dir",
         "msgstr": "Filter"
     },
@@ -3309,18 +3329,6 @@
     {
         "msgid": "messages.takeover",
         "msgstr": "Übernahme(danach noch Speichern)"
-    },
-    {
-        "msgid": "shell.nt_process",
-        "msgstr": "Prozess"
-    },
-    {
-        "msgid": "shell.nt_filter",
-        "msgstr": "Filter"
-    },
-    {
-        "msgid": "shell.nt_form",
-        "msgstr": "Maske"
     },
     {
         "msgid": "shell.nt_rule",
