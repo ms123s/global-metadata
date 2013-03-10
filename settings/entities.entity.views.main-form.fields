@@ -13,7 +13,7 @@
         },
         {
             "name": "index",
-            "enabled": true
+            "enabled": false
         },
         {
             "name": "enabled",
@@ -41,11 +41,7 @@
         },
         {
             "name": "filter",
-            "enabled": true
-        },
-        {
-            "name": "pack",
-            "enabled": true
+            "enabled": false
         },
         {
             "name": "add_self_to_subpanel",

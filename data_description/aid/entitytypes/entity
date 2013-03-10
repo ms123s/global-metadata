@@ -63,7 +63,7 @@
         },
         "pack": {
             "enabled": true,
-            "default_value": "default",
+            "default_value": "data",
             "name": "pack",
             "edittype": "select",
             "datatype": "string",

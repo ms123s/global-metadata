@@ -12,6 +12,10 @@
             "enabled": true
         },
         {
+            "name": "primary_key",
+            "enabled": true
+        },
+        {
             "name": "enabled",
             "enabled": true
         },

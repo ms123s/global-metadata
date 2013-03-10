@@ -444,7 +444,11 @@
     },
     {
         "msgid": "data.field.selectable_items",
-        "msgstr": "Auswahlmöglichkeiten/Url"
+        "msgstr": "Aufzählung/Url"
+    },
+    {
+        "msgid": "data.field.primary_key",
+        "msgstr": "Id"
     },
     {
         "msgid": "data.field.tab1",
@@ -2997,6 +3001,10 @@
     {
         "msgid": "shell.processes_dir",
         "msgstr": "Prozesse"
+    },
+    {
+        "msgid": "shell.project",
+        "msgstr": "Projekt"
     },
     {
         "msgid": "table.confirm.delete",

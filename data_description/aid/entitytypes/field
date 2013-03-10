@@ -103,6 +103,7 @@
         "primary_key": {
             "enabled": true,
             "name": "primary_key",
+            "default_value": false,
             "datatype": "boolean"
         },
         "searchable_items": {
