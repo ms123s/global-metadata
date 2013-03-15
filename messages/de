@@ -3461,5 +3461,17 @@
     {
         "msgid": "no",
         "msgstr": "nein"
+    },
+    {
+        "msgid": "Importing.title",
+        "msgstr": "Import"
+    },
+    {
+        "msgid": "importing.newImport",
+        "msgstr": "Neuer Import"
+    },
+    {
+        "msgid": "importing.importName",
+        "msgstr": "Name des Import"
     }
 ]
