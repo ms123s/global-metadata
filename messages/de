@@ -3056,7 +3056,7 @@
     },
     {
         "msgid": "tasks.table.processInstanceId",
-        "msgstr": "Prozessinstanz Id"
+        "msgstr": "P id"
     },
     {
         "msgid": "tasks.table.taskid",
@@ -3475,7 +3475,23 @@
         "msgstr": "Name des Import"
     },
     {
+        "msgid": "tasks.table.processName",
+        "msgstr": "Workflow"
+    },
+    {
+        "msgid": "processexplorer.history.businesskey",
+        "msgstr": "Businesskey"
+    },
+    {
         "msgid": "processexplorer.activityId",
-        "msgstr": "ActivityId"
+        "msgstr": "A-Id"
+    },
+    {
+        "msgid": "processexplorer.activityName",
+        "msgstr": "Tätigkeit"
+    },
+    {
+        "msgid": "processexplorer.activityType",
+        "msgstr": "Tätigkeitsart"
     }
 ]
