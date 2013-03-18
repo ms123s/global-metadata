@@ -3493,5 +3493,13 @@
     {
         "msgid": "processexplorer.activityType",
         "msgstr": "Tätigkeitsart"
+    },
+    {
+        "msgid": "processexplorer.activities",
+        "msgstr": "Tätigkeiten"
+    },
+    {
+        "msgid": "processexplorer.variables",
+        "msgstr": "Variablen"
     }
 ]
