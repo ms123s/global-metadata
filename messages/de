@@ -3481,5 +3481,13 @@
     {
         "msgid": "processexplorer.history.businesskey",
         "msgstr": "Businesskey"
+    },
+    {
+        "msgid": "processexplorer.activityName",
+        "msgstr": "Tätigkeit"
+    },
+    {
+        "msgid": "processexplorer.activityType",
+        "msgstr": "Tätigkeitsart"
     }
 ]
