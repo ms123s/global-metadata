@@ -2755,6 +2755,10 @@
         "msgstr": "Prozesshistorie"
     },
     {
+        "msgid": "processexplorer.id",
+        "msgstr": "Id"
+    },
+    {
         "msgid": "processexplorer.history.id",
         "msgstr": "Prozess-ID"
     },
