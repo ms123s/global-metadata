@@ -3473,5 +3473,9 @@
     {
         "msgid": "importing.importName",
         "msgstr": "Name des Import"
+    },
+    {
+        "msgid": "processexplorer.activityId",
+        "msgstr": "ActivityId"
     }
 ]
