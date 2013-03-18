@@ -2711,6 +2711,10 @@
         "msgstr": "Name"
     },
     {
+        "msgid": "processexplorer.filter",
+        "msgstr": "Filter"
+    },
+    {
         "msgid": "processexplorer.assignee",
         "msgstr": "Zuweiser"
     },
@@ -2728,7 +2732,7 @@
     },
     {
         "msgid": "processexplorer.details_info",
-        "msgstr": "Detailinformationen"
+        "msgstr": "Information"
     },
     {
         "msgid": "processexplorer.details_log",
@@ -3500,6 +3504,14 @@
     },
     {
         "msgid": "processexplorer.variables",
+        "msgstr": "Variablen"
+    },
+    {
+        "msgid": "processexplorer.details_activity",
+        "msgstr": "Tätigkeiten"
+    },
+    {
+        "msgid": "processexplorer.details_variables",
         "msgstr": "Variablen"
     }
 ]
