@@ -3487,6 +3487,10 @@
         "msgstr": "Workflow"
     },
     {
+        "msgid": "tasks.table.processCategory",
+        "msgstr": "Applikation"
+    },
+    {
         "msgid": "processexplorer.history.businesskey",
         "msgstr": "Businesskey"
     },
