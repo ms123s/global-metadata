@@ -293,22 +293,6 @@
 		}]
 	},
 	{
-		"name": "flowElement",
-		"properties": [{
-			"id": "categories",
-			"type": "String",
-			"title": "Categories",
-			"title_de": "Kategorien",
-			"value": "",
-			"description": "Categories can be used for documentation or analysis purposes. For example, flowelements can be categorized as being customer oriented vs. support oriented",
-			"description_de": "Kategorien können unterstützend auf die Dokumentation oder Analyse einwirken. Beispielsweise können Flusselemente zu Kategorie 'Kundenorientiert' oder 'Supportorientiert' gehören.",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"wrapLines": true
-		}]
-	},
-	{
 		"name": "loopcharacteristics",
 		"properties": [{
 			"id": "looptype",
@@ -473,91 +457,6 @@
       "description" : "The condition of the sequence flow",
       "popular" : true
     }]
-	},
-	{
-		"name": "gateway",
-		"properties": [{
-			"id": "assignments",
-			"type": "Complex",
-			"title": "Assignments",
-			"title_de": "Zuweisungen",
-			"value": "",
-			"description": "",
-			"readonly": false,
-			"optional": true,
-			"complexItems": [{
-				"id": "to",
-				"name": "To",
-				"name_de": "Auf",
-				"type": "String",
-				"value": "",
-				"width": 100,
-				"optional": false
-			},
-			{
-				"id": "from",
-				"name": "From",
-				"name_de": "Aus",
-				"type": "String",
-				"value": "",
-				"width": 100,
-				"optional": false
-			},
-			{
-				"id": "assigntime",
-				"name": "AssignTime",
-				"name_de": "Zuweisungszeit",
-				"type": "Choice",
-				"value": "Start",
-				"width": 100,
-				"optional": true,
-				"items": [{
-					"id": "c1",
-					"title": "Start",
-					"title_de": "Start",
-					"value": "Start",
-					"refToView": ""
-				},
-				{
-					"id": "c2",
-					"title": "End",
-					"title_de": "Ende",
-					"value": "End",
-					"refToView": ""
-				}]
-			}]
-		},
-		{
-			"id": "pool",
-			"type": "String",
-			"title": "Pool",
-			"value": "",
-			"description": "",
-			"readonly": false,
-			"optional": false,
-			"length": ""
-		},
-		{
-			"id": "lanes",
-			"type": "String",
-			"title": "Lanes",
-			"value": "",
-			"description": "",
-			"readonly": false,
-			"optional": true,
-			"length": ""
-		},
-		{
-			"id": "gates",
-			"type": "String",
-			"title": "Gates",
-			"value": "",
-			"description": "",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"wrapLines": true
-		}]
 	},
 	{
 		"name": "artifact",
@@ -1133,8 +1032,8 @@
 	{
 		"type": "node",
 		"id": "ExclusiveGateway",
-		"title": "Data-based exclusive (XOR) gateway",
-		"title_de": "Datenbasiertes exklusives Gateway",
+		"title": "Exclusive (XOR) gateway",
+		"title_de": "Exklusives (XOR) Gateway",
 		"description": "When splitting, it routes the sequence flow to exactly one of the outgoing branches based on conditions. When merging, it awaits one incoming branch to complete before triggering the outgoing flow.",
 		"description_de": "Es handelt sich um eine Fallunterscheidung. Abhängig von Verzweigungsbedingungen geht der Prozessfluss an genau einem ausgehenden Zweig weiter. Bei einer Zusammenführung wird auf eine der eingehenden Kanten gewartet, um den Prozess anschließend fortzuführen.",
 		"groups": ["Gateways"],
@@ -1202,13 +1101,52 @@
 		"description_de": "Bei einer verzweigenden Verwendung werden sämtliche nachfolgenden Zweige gleichzeitig ausgeführt. Bei der Zusammenführung wird auf alle eingehenden Kanten gewartet, bevor der Prozessfluss fortgesetzt wird.",
     "view" : "gateway/parallel.svg",
 		"icon": "gateway/parallel.png",
-		"propertyPackages": ["baseAttributes", "flowElement", "gateway", "bgColor", "processid"],
+		"propertyPackages": ["baseAttributes", "bgColor", "processid"],
 		"properties": [{
 			"id": "gatewaytype",
 			"type": "String",
 			"title": "Gateway type",
 			"title_de": "Gatewaytyp",
 			"value": "AND",
+			"description": "The type of the gateway.",
+			"description_de": "Der Typ des Gateways.",
+			"readonly": true,
+			"optional": false,
+			"length": ""
+		},
+		{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"description": "Change the border color for a visual differentiation.",
+			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": ["bg_frame", "path9"],
+			"fill": false,
+			"stroke": true
+		}],
+		"roles": ["all", "sequence_start", "sequence_end", "choreography_sequence_start", "choreography_sequence_end", "fromtoall", "GatewaysMorph"]
+	},
+	{
+		"type": "node",
+		"id": "InclusiveGateway",
+		"title": "Inclusive (OR) Gateway",
+		"title_de": "Inclusives (OR) Gateway",
+		"groups": ["Gateways"],
+		"description": "Inclusive Gateways play a role to select some from several Sequence Flows, which suit the condition (the conditional expression is true). At least one Sequence Flow must be selected",
+		"description_de": "Bei einer inclusiven Verwendung werden einige der nachfolgenden Zweige ausgeführt.",
+    "view" : "gateway/inclusive.svg",
+		"icon": "gateway/inclusive.png",
+		"propertyPackages": ["baseAttributes", "bgColor", "processid"],
+		"properties": [{
+			"id": "gatewaytype",
+			"type": "String",
+			"title": "Gateway type",
+			"title_de": "Gatewaytyp",
+			"value": "OR",
 			"description": "The type of the gateway.",
 			"description_de": "Der Typ des Gateways.",
 			"readonly": true,
@@ -1341,7 +1279,7 @@
 		"description_de": "Mehrere Objekte, die logisch in Verbindung stehen, können in einer Gruppe zusammengefasst werden.",
 		"view": "artifact/group.svg",
 		"icon": "artifact/group.png",
-		"propertyPackages": ["baseAttributes", "flowElement", "artifact", "borderColor"],
+		"propertyPackages": ["baseAttributes", "artifact", "borderColor"],
 		"properties": [{
 			"id": "artifacttype",
 			"type": "String",
@@ -1388,7 +1326,7 @@
 			"orientation": "vertical",
 			"align": "southeast"
 		}],
-		"propertyPackages": ["baseAttributes", "flowElement", "artifact"],
+		"propertyPackages": ["baseAttributes", "artifact"],
 		"properties": [{
 			"id": "text",
 			"type": "String",
