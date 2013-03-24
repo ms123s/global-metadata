@@ -419,6 +419,62 @@
     }]
 	},
 	{
+    "name" : "sequenceflowbase",
+    "properties" : [{
+      "id" : "defaultflow",
+      "type" : "Choice",
+      "title" : "Default flow",
+      "title_de" : "Standardfluß",
+      "value" : "None",
+      "description" : "Define the sequence flow as default",
+      "readonly" : false,
+      "popular" : true,
+      "items" : [ {
+        "id" : "none",
+        "title" : "No",
+        "title_de" : "Nein",
+        "value" : "None"
+      }, {
+        "id" : "default",
+        "title" : "Yes",
+        "title_de" : "Ja",
+        "value" : "Default",
+        "icon" : "connector/list/type.default.png",
+        "refToView" : "default"
+      } ]
+    }, {
+      "id" : "conditionalflow",
+      "type" : "Choice",
+      "title" : "Conditional flow",
+      "title_de" : "Bedingter Fluß",
+      "value" : "None",
+      "description" : "Define the sequence flow with a condition",
+      "readonly" : false,
+      "popular" : true,
+      "items" : [ {
+        "id" : "none",
+        "title" : "No",
+        "title_de" : "Nein",
+        "value" : "None"
+      }, {
+        "id" : "default",
+        "title" : "Yes",
+        "title_de" : "Ja",
+        "value" : "Conditional",
+        "icon" : "connector/list/type.expression.png",
+        "refToView" : "conditional"
+      } ]
+    },{
+      "id" : "conditionsequenceflow",
+      "type" : "Text",
+      "title" : "Flow condition",
+      "title_de" : "Flußbedingung",
+      "value" : "",
+      "description" : "The condition of the sequence flow",
+      "popular" : true
+    }]
+	},
+	{
 		"name": "gateway",
 		"properties": [{
 			"id": "assignments",
@@ -1076,7 +1132,7 @@
 	},
 	{
 		"type": "node",
-		"id": "Exclusive_Databased_Gateway",
+		"id": "ExclusiveGateway",
 		"title": "Data-based exclusive (XOR) gateway",
 		"title_de": "Datenbasiertes exklusives Gateway",
 		"description": "When splitting, it routes the sequence flow to exactly one of the outgoing branches based on conditions. When merging, it awaits one incoming branch to complete before triggering the outgoing flow.",
@@ -1399,7 +1455,7 @@
 			"readonly": true,
 			"optional": false
 		},{
-			"id": "attr$activiti$initiator",
+			"id": "initiator",
 			"type": "String",
 			"value": "initiator",
 			"readonly": true,
@@ -1483,82 +1539,12 @@
 		"groups_de": ["Konnektoren"],
 		"view": "connector/sequenceflow.svg",
 		"icon": "connector/sequenceflow.png",
-		"propertyPackages": ["baseAttributes"],
+		"propertyPackages": ["baseAttributes", "sequenceflowbase"],
 		"layout": [{
 			"type": "layout.bpmn2_0.sequenceflow"
 		}],
 		"roles": ["all", "ConnectingObjectsMorph", "fromtoall"],
 		"properties": [{
-			"id": "ConditionType",
-			"type": "Choice",
-			"title": "Condition type",
-			"title_de": "Bedingungstyp",
-			"value": "None",
-			"description": "Determine the type of the flow object. A conditional sequence flow activates the next element only if its condition expression is true. A default sequence flow can follow an exclusive, inclusive or complex gateway and activates its outgoing branch only if all the other outgoing sequence flows from the activity or gateway are not valid",
-			"description_de": "Legt den Typ des Flussobjekts fest. Ein Bedingter Fluss leitet den Prozessfluss nur weiter, wenn der zugehörige Bedingungsausdruck wahr wird. Ein Standardfluss geht von einem Exklusiven, Inklisiven oder Komplexen Gateway aus und leitet den Prozessfluss genau dann weiter, wenn die Bedingungen der anderen ausgehenden Sequenzflüsse falsch sind.",
-			"readonly": false,
-			"optional": false,
-			"items": [{
-				"id": "none",
-				"title": "Standard",
-				"title_de": "Standard",
-				"value": "None"
-			},
-			{
-				"id": "expression",
-				"title": "Conditional Flow",
-				"title_de": "Bedingter Fluss",
-				"value": "Expression",
-				"icon": "connector/list/type.expression.png",
-				"refToView": ""
-			},
-			{
-				"id": "default",
-				"title": "Default Flow",
-				"title_de": "Standardfluss",
-				"value": "Default",
-				"icon": "connector/list/type.default.png",
-				"refToView": "default"
-			}]
-		},
-		{
-			"id": "conditionexpression",
-			"type": "Text",
-			"title": "Condition expression",
-			"title_de": "Bedingungsausdruck",
-			"value": "",
-			"description": "An optional boolean expression that acts as a gating condition.",
-			"description_de": "Ein optionaler Wahrheitswert, der als Ausführungsbedingung funktioniert.",
-			"readonly": false,
-			"optional": true,
-			"length": "",
-			"wrapLines": true
-		},
-		{
-			"id": "isimmediate",
-			"type": "Boolean",
-			"title": "Is immediate",
-			"title_de": "Sofortige Ausführung",
-			"value": "",
-			"description": "An optional boolean value specifying whether activities or choreography activities not in the diagram containing the Sequence Flow can occur between the elements connected by the sequence flow (not selected) or not (selected). Also see the 'ss closed' attribute on process, choreography and collaboration.",
-			"description_de": "(optional) Gibt an, ob zwischen den durch den Sequenzfluss verbundenen Elementen eine weitere Aktivität eingefügt werden kann (nicht ausgewählt) oder nicht (ausgewählt). Es ähnelt dem Ist Geschlossen Attribut eines Prozesses, einer Choreographie oder einer Kollaboration.",
-			"readonly": true,
-			"optional": false
-		},
-		{
-			"id": "showdiamondmarker",
-			"type": "Boolean",
-			"title": "Is conditional flow",
-			"title_de": "ist bedingter Fluss",
-			"value": false,
-			"description": "System intern variable to set the diamond invisible, if 'source shape' is a gateway and 'condition type' is set to expression",
-			"description_de": "Systeminterne Variable die angibt, ob der kleine Diamant am Beginnn eines Bedingten Sequenzflusses sichtbar ist - wenn der Fluss einem Gateway folgt, dann ist der Diamant nicht sichtbar.",
-			"readonly": true,
-			"optional": false,
-			"visible": false,
-			"refToView": "conditional"
-		},
-		{
 			"id": "bordercolor",
 			"type": "Color",
 			"title": "Border color",
@@ -1655,7 +1641,7 @@
 				"to": ["choreography_sequence_end"]
 			},
 			{
-				"from": "Exclusive_Eventbased_Gateway",
+				"from": "ExclusiveGateway",
 				"to": ["FromEventbasedGateway"]
 			},
 			{
@@ -1874,7 +1860,7 @@
 		},
 		{
 			"role": "GatewaysMorph",
-			"baseMorphs": ["Exclusive_Databased_Gateway"]
+			"baseMorphs": ["ExclusiveGateway"]
 		},
 		{
 			"role": "StartEventsMorph",
