@@ -43,7 +43,7 @@
         },
         "filename": {
             "enabled": true,
-            "form_enabled_expr": "false",
+            "form_enabled_expr": false,
             "name": "filename",
             "edittype": "functional",
             "datatype": "string",
@@ -51,7 +51,7 @@
         },
         "type": {
             "enabled": true,
-            "form_enabled_expr": "false",
+            "form_enabled_expr": false,
             "name": "type",
             "edittype": "text",
             "datatype": "string"
