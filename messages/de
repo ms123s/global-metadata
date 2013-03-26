@@ -3039,6 +3039,10 @@
         "msgstr": "Aktion"
     },
     {
+        "msgid": "tasks.table.time",
+        "msgstr": "Erstellt am"
+    },
+    {
         "msgid": "tasks.table.assigned",
         "msgstr": "Meine Aufgaben"
     },
@@ -3056,7 +3060,7 @@
     },
     {
         "msgid": "tasks.table.name",
-        "msgstr": "Name"
+        "msgstr": "Aufgabenname"
     },
     {
         "msgid": "tasks.table.not_assigned",
@@ -3064,11 +3068,11 @@
     },
     {
         "msgid": "tasks.table.processInstanceId",
-        "msgstr": "P id"
+        "msgstr": "Pid"
     },
     {
         "msgid": "tasks.table.taskid",
-        "msgstr": "Schlüssel"
+        "msgstr": "AufgabenId"
     },
     {
         "msgid": "tasks.task.claim",
