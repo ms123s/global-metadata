@@ -8,7 +8,7 @@
 		"title": "XForm",
 		"groups": ["Form"],
 		"description": "A XForms form.",
-		"view": "new_form.svn",
+		"view": "new_form.svg",
 		"icon": "new_form.png",
 		"mayBeRoot": true,
 		"hide": true,
@@ -74,7 +74,7 @@
 		"title": "Input",
 		"groups": ["Controls"],
 		"description": "An input control.",
-		"view": "new_input.svn",
+		"view": "new_input.svg",
 		"icon": "new_input.png",
 		"roles": ["core_form_controls", "controls_morph"],
 
@@ -233,7 +233,7 @@
 		"title": "Textarea",
 		"groups": ["Controls"],
 		"description": "A textarea control.",
-		"view": "new_textarea.svn",
+		"view": "new_textarea.svg",
 		"icon": "new_textarea.png",
 		"roles": ["core_form_controls", "controls_morph"],
 
@@ -357,7 +357,7 @@
 		"title": "Moduleselector",
 		"groups": ["Controls"],
 		"description": "Select an value from specified Module",
-		"view": "new_submit.svn",
+		"view": "new_submit.svg",
 		"icon": "new_submit.png",
 		"roles": ["core_form_controls", "controls_morph"],
 		"layout": [{
@@ -497,7 +497,7 @@
 		"title": "Tableselect",
 		"groups": ["Controls"],
 		"description": "This form control allows the user to make single/multiple selections from a list.",
-		"view": "new_select.svn",
+		"view": "new_select.svg",
 		"icon": "new_select.png",
 		"roles": ["core_form_controls", "controls_morph"],
 		"layout": [{
@@ -601,7 +601,7 @@
 		"title": "Enumselect",
 		"groups": ["Controls"],
 		"description": "This form control allows the user to make single/multiple selections from enums.",
-		"view": "new_select1.svn",
+		"view": "new_select1.svg",
     "icon": "new_select1.png",
 		"roles": ["core_form_controls", "controls_morph"],
 		"layout": [{
@@ -673,7 +673,7 @@
 		"title": "ActionButton",
 		"groups": ["Controls"],
 		"description": "Renders a actionbutton",
-		"view": "new_trigger.svn",
+		"view": "new_trigger.svg",
 		"icon": "new_trigger.png",
 		"roles": ["core_form_controls"],
 		"layout": [{
@@ -839,7 +839,7 @@
 		"title": "Group",
 		"groups": ["Containers"],
 		"description": "A container for defining a hierarchy of form controls.",
-		"view": "new_group.svn",
+		"view": "new_group.svg",
 		"icon": "new_group.png",
 		"roles": ["core_form_controls", "standard_container", "ui_common_container"],
 
@@ -945,7 +945,7 @@
 		"title": "Tabview",
 		"groups": ["Containers"],
 		"description": "This element contains one or more page elements, any one of which is rendered at a given time.",
-		"view": "new_switch.svn",
+		"view": "new_switch.svg",
 		"icon": "new_switch.png",
 		"roles": ["additional_form_controls", "page_container"],
 
@@ -1055,7 +1055,7 @@
 		"title": "Page",
 		"groups": ["Containers"],
 		"description": "This element encloses markup to be conditionally rendered.",
-		"view": "new_case.svn",
+		"view": "new_case.svg",
 		"icon": "new_case.png",
 		"roles": ["page", "labeled", "standard_container", "actions_container"],
 
@@ -1096,7 +1096,7 @@
 		"title": "Label",
 		"groups": ["Support Elements"],
 		"description": "A label for form controls.",
-		"view": "new_label.svn",
+		"view": "new_label.svg",
 		"icon": "new_label.png",
 		"roles": ["label"],
 		"properties": [{
@@ -1131,7 +1131,7 @@
 		"title": "Help",
 		"groups": ["Support Elements"],
 		"description": "Help information for form controls.",
-		"view": "new_help.svn",
+		"view": "new_help.svg",
 		"icon": "new_help.png",
 		"roles": ["ui_common", "support_morph"],
 		"properties": [{
@@ -1225,7 +1225,7 @@
 		"title": "Item",
 		"groups": ["Support Elements"],
 		"description": "An item for select controls.",
-		"view": "new_item.svn",
+		"view": "new_item.svg",
 		"icon": "new_item.png",
 		"roles": ["list_ui_common", "labeled"],
 
@@ -1263,7 +1263,7 @@
 		"title": "Itemset",
 		"groups": ["Support Elements"],
 		"description": "This element allows the creation of dynamic selections within controls select and select1.",
-		"view": "new_itemset.svn",
+		"view": "new_itemset.svg",
 		"icon": "new_itemset.png",
 		"roles": ["list_ui_common", "labeled"],
 
@@ -1386,7 +1386,7 @@
 		"title": "Choices",
 		"groups": ["Support Elements"],
 		"description": "This element is used within selection form controls to group available choices.",
-		"view": "new_choices.svn",
+		"view": "new_choices.svg",
 		"icon": "new_choices.png",
 		"roles": ["list_ui_common", "list_ui_common_container", "labeled"],
 
