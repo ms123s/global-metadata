@@ -3040,7 +3040,7 @@
     },
     {
         "msgid": "tasks.table.assigned",
-        "msgstr": "Zugewiesen"
+        "msgstr": "Meine Aufgaben"
     },
     {
         "msgid": "tasks.table.claim",
@@ -3060,7 +3060,7 @@
     },
     {
         "msgid": "tasks.table.not_assigned",
-        "msgstr": "Nicht zugewiesen"
+        "msgstr": "In Warteschlange"
     },
     {
         "msgid": "tasks.table.processInstanceId",
