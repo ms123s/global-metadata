@@ -8,7 +8,7 @@
 		"title": "XForm",
 		"groups": ["Form"],
 		"description": "A XForms form.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"102\"    height=\"82\"    version=\"1.0\">   <defs></defs> <g pointer-events=\"fill\" oryx:maximumSize=\"200 160\" oryx:minimumSize=\"50 40\">     <rect id=\"taskrect_5_\" x=\"89.1\" y=\"24\" oryx:resize=\"vertical horizontal\" fill=\"#FFFFFF\" stroke=\"#000000\" width=\"269.4\" height=\"139.5\">  </rect> </g> </svg> ",
+		"view": "new_form.svn",
 		"icon": "new_form.png",
 		"mayBeRoot": true,
 		"hide": true,
@@ -74,7 +74,7 @@
 		"title": "Input",
 		"groups": ["Controls"],
 		"description": "An input control.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"152\"    height=\"26\"    version=\"1.0\">   <defs></defs>    <g oryx:minimumSize=\"30 24\" oryx:maximumSize=\"350 24\" >     <rect oryx:anchor=\"top\" oryx:resize=\"horizontal\" x=\"0\" y=\"0\" width=\"150\" height=\"24\" stroke=\"black\" stroke-width=\"1\" fill=\"white\" />  <g id=\"b\">   <text font-size=\"11\" x=\"3\" y=\"11\" oryx:align=\"middle left\" oryx:anchor=\"top right bottom left\" stroke=\"black\">abc</text>  </g>         </g> </svg> ",
+		"view": "new_input.svn",
 		"icon": "new_input.png",
 		"roles": ["core_form_controls", "controls_morph"],
 
@@ -233,7 +233,7 @@
 		"title": "Textarea",
 		"groups": ["Controls"],
 		"description": "A textarea control.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"152\"    height=\"102\"    version=\"1.0\">   <defs></defs>    <g oryx:minimumSize=\"32 20\" oryx:maximumSize=\"350 400\" >     <rect oryx:anchor=\"top\" oryx:resize=\"vertical horizontal\" x=\"0\" y=\"0\" width=\"150\" height=\"100\" stroke=\"black\" stroke-width=\"1\" fill=\"white\" />   <g id=\"b\">   <text font-size=\"11\" x=\"3\" y=\"3\" oryx:align=\"middle left\" oryx:anchor=\"top left\" stroke=\"black\">abc</text>  </g>              </g> </svg> ",
+		"view": "new_textarea.svn",
 		"icon": "new_textarea.png",
 		"roles": ["core_form_controls", "controls_morph"],
 
@@ -357,7 +357,7 @@
 		"title": "Moduleselector",
 		"groups": ["Controls"],
 		"description": "Select an value from specified Module",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"153\"    height=\"26\"    version=\"1.0\">   <defs></defs>    <g oryx:minimumSize=\"30 24\" oryx:maximumSize=\"350 24\" >     <rect oryx:anchor=\"top\" oryx:resize=\"horizontal\" x=\"0\" y=\"0\" width=\"150\" height=\"24\" stroke=\"black\" stroke-width=\"1\" fill=\"#cccccc\" />     <line fill=\"none\" stroke=\"#000000\" stroke-width=\"3\" x1=\"4.25\" y1=\"11.506\" x2=\"17.75\" y2=\"11.494\"/> <polyline fill=\"none\" stroke=\"#000000\" stroke-width=\"3\" points=\"13.172,5.532 19.077,11.438 13.172,17.343 \"/>   </g> </svg> ",
+		"view": "new_submit.svn",
 		"icon": "new_submit.png",
 		"roles": ["core_form_controls", "controls_morph"],
 		"layout": [{
@@ -497,7 +497,7 @@
 		"title": "Tableselect",
 		"groups": ["Controls"],
 		"description": "This form control allows the user to make single/multiple selections from a list.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"152\"    height=\"52\"    version=\"1.0\">   <defs> </defs>    <g>     <rect oryx:anchors=\"top\" oryx:resize=\"vertical horizontal\" x=\"0\" y=\"0\" width=\"150\" height=\"50\" style=\"stroke-dasharray: 2, 3;        stroke: black; stroke-width: 1;\" fill=\"white\"/>     <rect oryx:anchors=\"top left\" x=\"4\" y=\"4\" width=\"12\" height=\"12\" stroke-width=\"1\" stroke=\"black\" fill=\"white\"/>  <line oryx:anchors=\"top left\" x1=\"14\" y1=\"6\" x2=\"9\" y2=\"14\" stroke-width=\"3\" stroke=\"black\"/>  <line oryx:anchors=\"top left\" x1=\"6\" y1=\"9\" x2=\"9\" y2=\"14\" stroke-width=\"3\" stroke=\"black\"/>   </g> </svg> ",
+		"view": "new_select.svn",
 		"icon": "new_select.png",
 		"roles": ["core_form_controls", "controls_morph"],
 		"layout": [{
@@ -601,7 +601,7 @@
 		"title": "Enumselect",
 		"groups": ["Controls"],
 		"description": "This form control allows the user to make single/multiple selections from enums.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"152\"    height=\"26\"    version=\"1.0\">   <defs></defs>    <g>     <rect oryx:anchors=\"top left\" oryx:resize=\"vertical horizontal\" x=\"0\" y=\"0\" width=\"150\" height=\"24\" style=\"stroke-dasharray: 2, 3;        stroke: black; stroke-width: 1;\" fill=\"white\" />     <circle oryx:anchors=\"top left\" cx=\"12\" cy=\"12\" r=\"5\" stroke=\"black\" stroke-width=\"1\" fill=\"white\"/>  <circle oryx:anchors=\"top left\" cx=\"12\" cy=\"12\" r=\"3\" stroke=\"black\" stroke-width=\"1\" fill=\"black\"/>    </g> </svg> ",
+		"view": "new_select1.svn",
     "icon": "new_select1.png",
 		"roles": ["core_form_controls", "controls_morph"],
 		"layout": [{
@@ -673,7 +673,7 @@
 		"title": "ActionButton",
 		"groups": ["Controls"],
 		"description": "Renders a actionbutton",
-		"view": "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?><svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:svg=\"http://www.w3.org/2000/svg\" xmlns:oryx=\"http://www.b3mn.org/oryx\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"152\" height=\"26\" version=\"1.0\">  <defs></defs>  <g>    <rect oryx:anchors=\"top left\" oryx:resize=\"vertical horizontal\" x=\"0\" y=\"0\" width=\"150\" height=\"24\" style=\"stroke-dasharray: 2, 3; stroke: black; stroke-width: 1;\" fill=\"white\" /><text xml:space=\"preserve\" text-anchor=\"middle\" font-family=\"arial\" font-size=\"16\" id=\"svg_1\" y=\"18\" x=\"5\" stroke-width=\"0\" stroke=\"#000000\" fill=\"#000000\">Button</text>  </g></svg>",
+		"view": "new_trigger.svn",
 		"icon": "new_trigger.png",
 		"roles": ["core_form_controls"],
 		"layout": [{
@@ -793,7 +793,7 @@
 		"title": "Alert",
 		"groups": ["Controls"],
 		"description": "Error alert for form controls.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"18\"    height=\"18\"    version=\"1.0\">   <defs></defs>    <g oryx:minimumSize=\"16 16\">     <rect oryx:anchor=\"top\" x=\"0\" y=\"0\"  rx=\"3\" ry=\"3\" width=\"16\" height=\"16\" stroke=\"#000000\" stroke-width=\"1\" fill=\"#FF0A0A\" />      <g id=\"b\">   <text font-size=\"14\" font-weight=\"bold\" x=\"6\" y=\"6\" oryx:align=\"middle center\" stroke=\"black\">!</text>  </g>   </g> </svg> ",
+		"view": "new_alert.svg",
 		"icon": "new_alert.png",
 		"roles": ["core_form_controls"],
 		"properties": [{
@@ -839,7 +839,7 @@
 		"title": "Group",
 		"groups": ["Containers"],
 		"description": "A container for defining a hierarchy of form controls.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"162\"    height=\"70\"    version=\"1.0\">   <defs></defs>    <g oryx:minimumSize=\"40 34\">     <rect id=\"g\" oryx:resize=\"vertical horizontal\" x=\"0\" y=\"0\" width=\"160\" height=\"68\" stroke=\"#777777\" stroke-width=\"1\" fill=\"#f2f4fd\" />   </g> </svg> ",
+		"view": "new_group.svn",
 		"icon": "new_group.png",
 		"roles": ["core_form_controls", "standard_container", "ui_common_container"],
 
@@ -888,7 +888,7 @@
 			"prefix": "oryx",
 			"value": "normal",
 			"description": "The place of this group",
-			"description": "Der Platz der Gruppe",
+			"description_de": "Der Platz der Gruppe",
 			"readonly": false,
 			"optional": false,
 			"refToView": "",
@@ -945,7 +945,7 @@
 		"title": "Tabview",
 		"groups": ["Containers"],
 		"description": "This element contains one or more page elements, any one of which is rendered at a given time.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg   xmlns=\"http://www.w3.org/2000/svg\"   xmlns:svg=\"http://www.w3.org/2000/svg\"   xmlns:oryx=\"http://www.b3mn.org/oryx\"   xmlns:xlink=\"http://www.w3.org/1999/xlink\"   width=\"122\"   height=\"92\"   version=\"1.0\">   <defs></defs> <g pointer-events=\"fill\" oryx:minimumSize=\"60 50\">  <rect id=\"c\" oryx:resize=\"vertical horizontal\" x=\"0\" y=\"0\" width=\"120\" height=\"90\" rx=\"5\" ry=\"5\" stroke=\"black\" stroke-dasharray=\"2, 4, 10, 4\" stroke-width=\"1\" fill=\"none\" />  <g id=\"arrows\">  <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\" stroke-width=\"2\" d=\"M61.467,74.461l0.521-2.955L59.033,70.984    M61.083,72.223c-6.667,3.5,1.333,5.072-11,5.072\"/>  <path oryx:anchors=\"bottom\" fill=\"none\" stroke=\"black\" stroke-width=\"2\" d=\"M58.95,83.639l2.955-0.521l-0.521-2.955 M50,77.473   c12.333,0,4.333,1.428,11,4.928\"/> </g> </g> </svg> ",
+		"view": "new_switch.svn",
 		"icon": "new_switch.png",
 		"roles": ["additional_form_controls", "page_container"],
 
@@ -1055,7 +1055,7 @@
 		"title": "Page",
 		"groups": ["Containers"],
 		"description": "This element encloses markup to be conditionally rendered.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg   xmlns=\"http://www.w3.org/2000/svg\"   xmlns:svg=\"http://www.w3.org/2000/svg\"   xmlns:oryx=\"http://www.b3mn.org/oryx\"   xmlns:xlink=\"http://www.w3.org/1999/xlink\"   width=\"122\"   height=\"92\"   version=\"1.0\">   <defs></defs>   <g pointer-events=\"fill\" oryx:minimumSize=\"60 50\">     <rect id=\"c\" oryx:resize=\"vertical horizontal\" x=\"0\" y=\"0\" width=\"120\" height=\"90\" stroke=\"black\" stroke-dasharray=\"2, 4, 10, 4\" stroke-width=\"1\" fill=\"none\" />    </g> </svg> ",
+		"view": "new_case.svn",
 		"icon": "new_case.png",
 		"roles": ["page", "labeled", "standard_container", "actions_container"],
 
@@ -1096,7 +1096,7 @@
 		"title": "Label",
 		"groups": ["Support Elements"],
 		"description": "A label for form controls.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"102\"    height=\"22\"    version=\"1.0\">   <defs></defs>    <g oryx:minimumSize=\"32 20\" oryx:maximumSize=\"350 20\" >     <rect oryx:anchor=\"top\" oryx:resize=\"horizontal\" x=\"0\" y=\"0\" width=\"100\" height=\"20\" stroke=\"none\" fill=\"#ffffcc\" />  <g id=\"b\">   <text id=\"labeltext\" font-size=\"11\" x=\"0\" y=\"9\" oryx:align=\"middle left\" stroke=\"black\"></text>  </g>   </g>  </svg> ",
+		"view": "new_label.svn",
 		"icon": "new_label.png",
 		"roles": ["label"],
 		"properties": [{
@@ -1131,7 +1131,7 @@
 		"title": "Help",
 		"groups": ["Support Elements"],
 		"description": "Help information for form controls.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"18\"    height=\"18\"    version=\"1.0\">   <defs></defs>    <g oryx:minimumSize=\"16 16\">     <rect oryx:anchor=\"top\" x=\"0\" y=\"0\"  rx=\"3\" ry=\"3\" width=\"16\" height=\"16\" stroke=\"#000000\" stroke-width=\"1\" fill=\"#3366FF\" />      <g id=\"b\">   <text font-size=\"14\" font-weight=\"bold\" x=\"6\" y=\"6\" oryx:align=\"middle center\" stroke=\"black\">?</text>  </g>   </g> </svg> ",
+		"view": "new_help.svn",
 		"icon": "new_help.png",
 		"roles": ["ui_common", "support_morph"],
 		"properties": [{
@@ -1225,7 +1225,7 @@
 		"title": "Item",
 		"groups": ["Support Elements"],
 		"description": "An item for select controls.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"142\"    height=\"26\"    version=\"1.0\">   <defs></defs>    <g>     <rect oryx:anchor=\"top\" oryx:resize=\"horizontal\" x=\"0\" y=\"0\" width=\"140\" height=\"24\" stroke-width=\"0\" fill=\"#cccccc\" />        </g> </svg> ",
+		"view": "new_item.svn",
 		"icon": "new_item.png",
 		"roles": ["list_ui_common", "labeled"],
 
@@ -1263,7 +1263,7 @@
 		"title": "Itemset",
 		"groups": ["Support Elements"],
 		"description": "This element allows the creation of dynamic selections within controls select and select1.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"142\"    height=\"26\"    version=\"1.0\">   <defs></defs>    <g>     <rect oryx:anchor=\"top\" oryx:resize=\"horizontal\" x=\"0\" y=\"0\" width=\"140\" height=\"24\" stroke-width=\"0\" fill=\"#c36a86\" />        </g> </svg> ",
+		"view": "new_itemset.svn",
 		"icon": "new_itemset.png",
 		"roles": ["list_ui_common", "labeled"],
 
@@ -1386,7 +1386,7 @@
 		"title": "Choices",
 		"groups": ["Support Elements"],
 		"description": "This element is used within selection form controls to group available choices.",
-		"view": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?> <svg    xmlns=\"http://www.w3.org/2000/svg\"    xmlns:svg=\"http://www.w3.org/2000/svg\"    xmlns:oryx=\"http://www.b3mn.org/oryx\"    xmlns:xlink=\"http://www.w3.org/1999/xlink\"    width=\"152\"    height=\"52\"    version=\"1.0\">   <defs></defs>    <g>     <rect oryx:anchor=\"top\" oryx:resize=\"vertical horizontal\" x=\"0\" y=\"0\" width=\"150\" height=\"50\" style=\"stroke-dasharray: 2, 3;        stroke: black; stroke-width: 1;\" fill=\"white\" />   </g> </svg> ",
+		"view": "new_choices.svn",
 		"icon": "new_choices.png",
 		"roles": ["list_ui_common", "list_ui_common_container", "labeled"],
 
