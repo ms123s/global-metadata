@@ -102,7 +102,7 @@
 		"properties": [{
 			"id": "attr$activiti$formKey",
 			"type": "ResourceSelector",
-			"parameter": {"type":"sw.form","prefix":""},
+			"config": {"type":"sw.form","prefix":""},
 			"title": "Form",
 			"title_de": "Form",
 			"value": "",
@@ -522,7 +522,7 @@
 		{
 			"id": "attr$activiti$formKey",
 			"type": "ResourceSelector",
-			"parameter": {"type":"sw.form","prefix":""},
+			"config": {"type":"sw.form","prefix":""},
 			"title": "Form",
 			"title_de": "Form",
 			"value": "",
@@ -563,7 +563,7 @@
 		{
 			"id": "attr$activiti$candidateGroups",
 			"type": "MultiSelect",
-			"parameter": "permission:getAllRoles:name",
+			"config": "permission:getAllRoles:name",
 			"title": "Candidategroup",
 			"title_de": "Kandidatengruppe",
 			"description": "Candidategroup",
@@ -576,7 +576,7 @@
 		{
 			"id": "attr$activiti$assignee",
 			"type": "ModuleSelector",
-			"parameter": "user:userid",
+			"config": "user:userid",
 			"title": "Assignee",
 			"title_de": "Beauftragter",
 			"description": "Assignee",
@@ -636,7 +636,7 @@
 		{
 			"id": "el$activiti$filtername",
 			"type": "ResourceSelector",
-			"parameter": {"type":"sw.filter","prefix":""},
+			"config": {"type":"sw.filter","prefix":""},
 			"title": "Filtername",
 			"title_de": "Filtername",
 			"value": "",
@@ -735,7 +735,7 @@
 		{
 			"id": "el$activiti$rulesname",
 			"type": "ResourceSelector",
-			"parameter": {"type":"sw.rule","prefix":""},
+			"config": {"type":"sw.rule","prefix":""},
 			"title": "Rulesname",
 			"title_de": "Regelname",
 			"value": "",
