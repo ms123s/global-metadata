@@ -657,7 +657,7 @@
 		{
 			"id": "xf_enums",
 			"type": "ResourceSelector",
-			"parameter": {"type":"sw.enum","prefix":"enumeration:"},
+			"config": {"type":"sw.enum","prefix":"enumeration:"},
 			"title": "Enumeration",
 			"title_de": "Aufzählung",
 			"value": "",
