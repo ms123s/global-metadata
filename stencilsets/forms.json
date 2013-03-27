@@ -656,9 +656,10 @@
 		},
 		{
 			"id": "xf_enums",
-			"type": "String",
-			"title": "Enums or Enumurl",
-			"title_de": "Auswahlmöglichkeiten/Url",
+			"type": "ResourceSelector",
+			"parameter": {"type":"sw.enum","prefix":"enumeration:"},
+			"title": "Enumeration",
+			"title_de": "Aufzählung",
 			"value": "",
 			"description": "Enums or url to Emuns",
 			"description_de": "Aufzählung oder Url",

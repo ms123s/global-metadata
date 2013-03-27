@@ -102,7 +102,7 @@
 		"properties": [{
 			"id": "attr$activiti$formKey",
 			"type": "ResourceSelector",
-			"parameter": "form:relpath",
+			"parameter": {"type":"sw.form","prefix":""},
 			"title": "Form",
 			"title_de": "Form",
 			"value": "",
@@ -522,7 +522,7 @@
 		{
 			"id": "attr$activiti$formKey",
 			"type": "ResourceSelector",
-			"parameter": "form:relpath",
+			"parameter": {"type":"sw.form","prefix":""},
 			"title": "Form",
 			"title_de": "Form",
 			"value": "",
@@ -636,7 +636,7 @@
 		{
 			"id": "el$activiti$filtername",
 			"type": "ResourceSelector",
-			"parameter": "filter:relpath",
+			"parameter": {"type":"sw.filter","prefix":""},
 			"title": "Filtername",
 			"title_de": "Filtername",
 			"value": "",
@@ -735,7 +735,7 @@
 		{
 			"id": "el$activiti$rulesname",
 			"type": "ResourceSelector",
-			"parameter": "rule:relpath",
+			"parameter": {"type":"sw.rule","prefix":""},
 			"title": "Rulesname",
 			"title_de": "Regelname",
 			"value": "",
