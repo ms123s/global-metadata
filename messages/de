@@ -919,6 +919,14 @@
         "msgstr": "Regel speichern"
     },
     {
+        "msgid": "ruleseditor.bedingung",
+        "msgstr": "Bedingung"
+    },
+    {
+        "msgid": "ruleseditor.ergebnis",
+        "msgstr": "Ergebnis"
+    },
+    {
         "msgid": "data.ruleseditor.ruleseditor",
         "msgstr": "Regeleditor"
     },

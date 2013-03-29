@@ -553,6 +553,7 @@
 		{
 			"id": "xf_columns",
 			"type": "Complex",
+			"config": {"formTree":true,"entityTree":true},
 			"title": "Tablecolumns",
 			"title_de": "Tabellenspalten",
 			"value": "",
