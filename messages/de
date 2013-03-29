@@ -3525,5 +3525,97 @@
     {
         "msgid": "processexplorer.details_variables",
         "msgstr": "Variablen"
+    },
+    {
+        "msgid": "This field is required",
+        "msgstr": "Das Feld muss ausgefüllt werden."
+    },
+    {
+        "msgid": "process.form_incomplete",
+        "msgstr": "Die Form ist nicht vollständig ausgefüllt."
+    },
+    {
+        "msgid": "%1 does not fit %2.",
+        "msgstr": "%1:Eingabe entspricht nicht dem Muster  %2."
+    },
+    {
+        "msgid": "ruleseditor.operators",
+        "msgstr": "Operatoren"
+    },
+    {
+        "msgid": "ruleseditor.vartype",
+        "msgstr": "Variablentyp"
+    },
+    {
+        "msgid": "ruleseditor.condition_column_config",
+        "msgstr": "Bedingungspalte konfigurieren"
+    },
+    {
+        "msgid": "ruleseditor.no_variables_defined",
+        "msgstr": "Keine Variablen definiert"
+    },
+    {
+        "msgid": "ruleseditor.rule_up",
+        "msgstr": "Regel nach oben"
+    },
+    {
+        "msgid": "ruleseditor.rule_down",
+        "msgstr": "Regel nach unten"
+    },
+    {
+        "msgid": "ruleseditor.change_column",
+        "msgstr": "Spalte ändern"
+    },
+    {
+        "msgid": "ruleseditor.delete_column",
+        "msgstr": "Spalte löschen"
+    },
+    {
+        "msgid": "ruleseditor.insert_rule",
+        "msgstr": "Neue Regel"
+    },
+    {
+        "msgid": "ruleseditor.remove_rule",
+        "msgstr": "Regel löschen"
+    },
+    {
+        "msgid": "ruleseditor.insert_action_column",
+        "msgstr": "Neue Aktionsspalte"
+    },
+    {
+        "msgid": "ruleseditor.insert_condition_column",
+        "msgstr": "Neue Bedingungsspalte"
+    },
+    {
+        "msgid": "ruleseditor.edit_undo",
+        "msgstr": "rückgängig machen"
+    },
+    {
+        "msgid": "ruleseditor.edit_redo",
+        "msgstr": "wieder herstellen"
+    },
+    {
+        "msgid": "shell.rules_dir",
+        "msgstr": "Regeln"
+    },
+    {
+        "msgid": "ruleseditor.test",
+        "msgstr": "Testen"
+    },
+    {
+        "msgid": "ruleseditor.table_must_first_be_saved",
+        "msgstr": "Nur gespeicherte Regeln werden berücksichtigt"
+    },
+    {
+        "msgid": "ruleseditor.test_close",
+        "msgstr": "Schliessen"
+    },
+    {
+        "msgid": "ruleseditor.rules_test",
+        "msgstr": "Regeltest"
+    },
+    {
+        "msgid": "shell.rule_saved",
+        "msgstr": "Regeln gespeichert"
     }
 ]

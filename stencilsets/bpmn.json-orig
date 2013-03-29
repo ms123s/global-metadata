@@ -535,6 +535,7 @@
 		{
 			"id": "el$activiti$variablesmapping",
 			"type": "Complex",
+			"config": {"formTree":true},
 			"title": "Parameter-Mapping",
 			"title_de": "Variablen Zuordnung",
 			"value": "",
@@ -649,6 +650,7 @@
 		{
 			"id": "el$activiti$variablesmapping",
 			"type": "Complex",
+			"config": {"formTree":true},
 			"title": "Parameter-Mapping",
 			"title_de": "Variablen Zuordnung",
 			"value": "",
@@ -748,6 +750,7 @@
 		{
 			"id": "el$activiti$variablesmapping",
 			"type": "Complex",
+			"config": {"formTree":true},
 			"title": "Parameter-Mapping",
 			"title_de": "Variablen Zuordnung",
 			"value": "",
@@ -781,7 +784,7 @@
 				"items": [{
 					"id": "incoming",
 					"title": "Incoming",
-					"title_de": "Incoming",
+					"title_de": "Eingehend",
 					"value": "incoming"
 				}, {
 					"id": "outgoing",
