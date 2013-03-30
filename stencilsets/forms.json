@@ -108,30 +108,6 @@
 			"length": "30"
 		},
 		{
-			"id": "xf_navindex",
-			"type": "Integer",
-			"title": "navindex",
-			"prefix": "oryx",
-			"value": 0,
-			"description": "Integer used to define the navigation sequence",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"min": "0"
-		},
-		{
-			"id": "xf_accesskey",
-			"type": "String",
-			"title": "accesskey",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Shortcut for moving the input focus to this control",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "1"
-		},
-		{
 			"id": "xf_type",
 			"type": "Choice",
 			"title": "type",
@@ -203,18 +179,6 @@
 			"length": "100"
 		},
 		{
-			"id": "xf_calculate",
-			"type": "String",
-			"title": "calculate",
-			"prefix": "oryx",
-			"value": "",
-			"description": "An expression used to calculate a string value for the associated instance data node",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		},
-		{
 			"id": "xf_constraint",
 			"type": "String",
 			"title": "constraint",
@@ -267,30 +231,6 @@
 			"length": "30"
 		},
 		{
-			"id": "xf_navindex",
-			"type": "Integer",
-			"title": "navindex",
-			"prefix": "oryx",
-			"value": 0,
-			"description": "Integer used to define the navigation sequence",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"min": "0"
-		},
-		{
-			"id": "xf_accesskey",
-			"type": "String",
-			"title": "accesskey",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Shortcut for moving the input focus to this control",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "1"
-		},
-		{
 			"id": "xf_type",
 			"type": "String",
 			"title": "type",
@@ -321,18 +261,6 @@
 			"prefix": "oryx",
 			"value": "",
 			"description": "Any expression that is convertible to XPath boolean",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		},
-		{
-			"id": "xf_calculate",
-			"type": "String",
-			"title": "calculate",
-			"prefix": "oryx",
-			"value": "",
-			"description": "An expression used to calculate a string value for the associated instance data node",
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
@@ -376,30 +304,6 @@
 			"optional": true,
 			"refToView": "",
 			"length": "30"
-		},
-		{
-			"id": "xf_navindex",
-			"type": "Integer",
-			"title": "navindex",
-			"prefix": "oryx",
-			"value": 0,
-			"description": "Integer used to define the navigation sequence",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"min": "0"
-		},
-		{
-			"id": "xf_accesskey",
-			"type": "String",
-			"title": "accesskey",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Shortcut for moving the input focus to this control",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "1"
 		},
 		{
 			"id": "xf_type",
@@ -518,30 +422,6 @@
 			"length": "30"
 		},
 		{
-			"id": "xf_navindex",
-			"type": "Integer",
-			"title": "navindex",
-			"prefix": "oryx",
-			"value": 0,
-			"description": "Integer used to define the navigation sequence",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"min": "0"
-		},
-		{
-			"id": "xf_accesskey",
-			"type": "String",
-			"title": "accesskey",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Shortcut for moving the input focus to this control",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "1"
-		},
-		{
 			"id": "xf_multiselection",
 			"title": "Multiselection",
 			"title_de": "Mehrfachauswahl",
@@ -621,30 +501,6 @@
 			"optional": true,
 			"refToView": "",
 			"length": "30"
-		},
-		{
-			"id": "xf_navindex",
-			"type": "Integer",
-			"title": "navindex",
-			"prefix": "oryx",
-			"value": 0,
-			"description": "Integer used to define the navigation sequence",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"min": "0"
-		},
-		{
-			"id": "xf_accesskey",
-			"type": "String",
-			"title": "accesskey",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Shortcut for moving the input focus to this control",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "1"
 		},
 		{
 			"id": "xf_multiselection",
@@ -741,37 +597,13 @@
 			"length": "64"
 		},
 		{
-			"id": "xf_navindex",
-			"type": "Integer",
-			"title": "navindex",
-			"prefix": "oryx",
-			"value": 0,
-			"description": "Integer used to define the navigation sequence",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"min": "0"
-		},
-		{
-			"id": "xf_accesskey",
-			"type": "String",
-			"title": "accesskey",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Shortcut for moving the input focus to this control",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "1"
-		},
-		{
 			"id": "xf_type",
 			"type": "String",
 			"title": "type",
 			"prefix": "oryx",
 			"value": "string",
 			"description": "",
-			"readonly": true,
+			"visible": false,
 			"optional": true,
 			"refToView": "",
 			"length": "100"
@@ -871,18 +703,6 @@
 			"length": "30"
 		},
 		{
-			"id": "xf_navindex",
-			"type": "Integer",
-			"title": "navindex",
-			"prefix": "oryx",
-			"value": 0,
-			"description": "Integer used to define the navigation sequence",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"min": "0"
-		},
-		{
 			"id": "xf_place",
 			"type": "Choice",
 			"title": "Place",
@@ -967,30 +787,6 @@
 			"length": "30"
 		},
 		{
-			"id": "xf_navindex",
-			"type": "Integer",
-			"title": "navindex",
-			"prefix": "oryx",
-			"value": 0,
-			"description": "Integer used to define the navigation sequence",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"min": "0"
-		},
-		{
-			"id": "xf_accesskey",
-			"type": "String",
-			"title": "accesskey",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Shortcut for moving the input focus to this control",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "1"
-		},
-		{
 			"id": "xf_type",
 			"type": "String",
 			"title": "type",
@@ -1021,18 +817,6 @@
 			"prefix": "oryx",
 			"value": "",
 			"description": "Any expression that is convertible to XPath boolean",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		},
-		{
-			"id": "xf_calculate",
-			"type": "String",
-			"title": "calculate",
-			"prefix": "oryx",
-			"value": "",
-			"description": "An expression used to calculate a string value for the associated instance data node",
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
@@ -1197,18 +981,6 @@
 			"length": "100"
 		},
 		{
-			"id": "xf_calculate",
-			"type": "String",
-			"title": "calculate",
-			"prefix": "oryx",
-			"value": "",
-			"description": "An expression used to calculate a string value for the associated instance data node",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		},
-		{
 			"id": "xf_constraint",
 			"type": "String",
 			"title": "constraint",
@@ -1352,18 +1124,6 @@
 			"prefix": "oryx",
 			"value": "",
 			"description": "Any expression that is convertible to XPath boolean",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		},
-		{
-			"id": "xf_calculate",
-			"type": "String",
-			"title": "calculate",
-			"prefix": "oryx",
-			"value": "",
-			"description": "An expression used to calculate a string value for the associated instance data node",
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
