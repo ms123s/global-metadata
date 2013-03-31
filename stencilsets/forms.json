@@ -1,5 +1,6 @@
 {
-	"title": "XForms",
+	"title": "Forms",
+	"title_de": "Forms",
 	"namespace": "http://b3mn.org/stencilset/xforms#",
 	"description": "This is the XForms stencil set specification.",
 	"stencils": [{
@@ -24,7 +25,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "This is a unique Id that distinguishes the form from other forms.",
@@ -35,7 +36,7 @@
 		{
 			"id": "xf_name",
 			"type": "String",
-			"title": "name",
+			"title": "Name",
 			"prefix": "oryx",
 			"value": "${diagramname}",
 			"description": "Name is an attribute that is text description of the form.",
@@ -50,6 +51,7 @@
 			"id": "xf_version",
 			"type": "String",
 			"title": "version",
+			"title_de": "Version",
 			"prefix": "oryx",
 			"value": "",
 			"description": "This defines the version number of the form model.",
@@ -61,6 +63,7 @@
 			"id": "xf_default_buttons",
 			"type": "Boolean",
 			"title": "Default buttons",
+			"title_de": "Standard Buttons",
 			"prefix": "oryx",
 			"value": true,
 			"description": "Display default buttons",
@@ -74,6 +77,7 @@
 		"type": "node",
 		"id": "Input",
 		"title": "Input",
+		"title_de": "Eingabefeld",
 		"groups": ["Controls"],
 		"description": "An input control.",
 		"view": "new_input.svg",
@@ -88,7 +92,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
@@ -101,7 +105,8 @@
 		{
 			"id": "xf_type",
 			"type": "Choice",
-			"title": "type",
+			"title": "Input type",
+			"title_de": "Eingabetyp",
 			"prefix": "oryx",
 			"value": "text",
 			"description": "The input datatype",
@@ -149,7 +154,8 @@
 		{
 			"id": "xf_default",
 			"type": "String",
-			"title": "default value",
+			"title": "Defaultvalue",
+			"title_de": "Voreinstellung",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
@@ -161,21 +167,34 @@
 		},
 		{
 			"id": "xf_readonly",
-			"type": "String",
-			"title": "readonly",
+			"type": "Combo",
+			"title": "Readonly",
+			"title_de": "Nur lesen",
 			"prefix": "oryx",
 			"value": "",
-			"description": "Any expression that is convertible to XPath boolean",
+			"description": "",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"length": "100"
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			} ]
 		},
 		{
 			"id": "xf_required",
-			"type": "String",
-			"title": "required",
+			"type": "Combo",
+			"title": "Required",
+			"title_de": "Eingabe nötig",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
@@ -183,12 +202,24 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"length": "100"
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			} ]
 		},
 		{
 			"id": "xf_constraint",
 			"type": "String",
-			"title": "constraint",
+			"title": "Constraint",
+			"title_de": "Eingabeprüfung",
 			"prefix": "oryx",
 			"value": "",
 			"description": "A predicate that needs to be satisfied for the associated instance data node to be considered valid",
@@ -201,8 +232,46 @@
 	},
 	{
 		"type": "node",
+		"id": "Label",
+		"title": "Label",
+		"title_de": "Label",
+		"groups": ["Support Elements"],
+		"description": "A label for form controls.",
+		"view": "new_label.svg",
+		"icon": "new_label.png",
+		"roles": ["label"],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"readonly": false,
+			"visible":false,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_text",
+			"type": "String",
+			"title": "text",
+			"prefix": "oryx",
+			"value": "Label",
+			"description": "",
+			"readonly": false,
+			"optional": true,
+			"refToView": "labeltext",
+			"length": "100",
+			"wrapLines": true
+		}]
+	},
+	{
+		"type": "node",
 		"id": "Textarea",
 		"title": "Textarea",
+		"title_de": "Texteingabe",
 		"groups": ["Controls"],
 		"description": "A textarea control.",
 		"view": "new_textarea.svg",
@@ -217,7 +286,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -242,34 +311,59 @@
 		},
 		{
 			"id": "xf_readonly",
-			"type": "String",
-			"title": "readonly",
+			"type": "Combo",
+			"title": "Readonly",
+			"title_de": "Nur lesen",
 			"prefix": "oryx",
 			"value": "",
-			"description": "Any expression that is convertible to XPath boolean",
+			"description": "",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"length": "100"
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			} ]
 		},
 		{
 			"id": "xf_required",
-			"type": "String",
-			"title": "required",
+			"type": "Combo",
+			"title": "Required",
+			"title_de": "Eingabe nötig",
 			"prefix": "oryx",
 			"value": "",
-			"description": "Any expression that is convertible to XPath boolean",
 			"popular": true,
+			"description": "Any expression that is convertible to XPath boolean",
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"length": "100"
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			} ]
 		},
 		{
 			"id": "xf_constraint",
 			"type": "String",
-			"title": "constraint",
+			"title": "Constraint",
+			"title_de": "Eingabeprüfung",
 			"prefix": "oryx",
 			"value": "",
 			"description": "A predicate that needs to be satisfied for the associated instance data node to be considered valid",
@@ -284,6 +378,7 @@
 		"type": "node",
 		"id": "Moduleselector",
 		"title": "Moduleselector",
+		"title_de": "Wert aus Datenbank",
 		"groups": ["Controls"],
 		"description": "Select an value from specified Module",
 		"view": "new_submit.svg",
@@ -297,7 +392,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -351,6 +446,7 @@
 		"type": "node",
 		"id": "Tableselect",
 		"title": "Tableselect",
+		"title_de": "Auswahl(Tabelle)",
 		"groups": ["Controls"],
 		"description": "This form control allows the user to make single/multiple selections from a list.",
 		"view": "new_select.svg",
@@ -364,7 +460,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -437,6 +533,7 @@
 		"type": "node",
 		"id": "Enumselect",
 		"title": "Enumselect",
+		"title_de": "Auswahl(Aufzählung)",
 		"groups": ["Controls"],
 		"description": "This form control allows the user to make single/multiple selections from enums.",
 		"view": "new_select1.svg",
@@ -450,7 +547,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -489,6 +586,7 @@
 		"type": "node",
 		"id": "ActionButton",
 		"title": "ActionButton",
+		"title_de": "Auslösender Button",
 		"groups": ["Controls"],
 		"description": "Renders a actionbutton",
 		"view": "new_trigger.svg",
@@ -500,7 +598,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -558,25 +656,13 @@
 			"optional": true,
 			"refToView": "",
 			"length": "64"
-		},
-		{
-			"id": "xf_readonly",
-			"type": "String",
-			"title": "readonly",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Any expression that is convertible to XPath boolean",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
 		}]
 	},
 	{
 		"type": "node",
 		"id": "Alert",
 		"title": "Alert",
+		"title_de": "Alarm",
 		"groups": ["Controls"],
 		"description": "Error alert for form controls.",
 		"view": "new_alert.svg",
@@ -585,7 +671,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -626,6 +712,7 @@
 		"type": "node",
 		"id": "Group",
 		"title": "Group",
+		"title_de": "Gruppe",
 		"groups": ["Containers"],
 		"description": "A container for defining a hierarchy of form controls.",
 		"view": "new_group.svg",
@@ -648,7 +735,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -720,6 +807,7 @@
 		"type": "node",
 		"id": "Tabview",
 		"title": "Tabview",
+		"title_de": "Register",
 		"groups": ["Containers"],
 		"description": "This element contains one or more page elements, any one of which is rendered at a given time.",
 		"view": "new_switch.svg",
@@ -732,7 +820,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -762,6 +850,7 @@
 		"type": "node",
 		"id": "Page",
 		"title": "Page",
+		"title_de": "Registerkarte",
 		"groups": ["Containers"],
 		"description": "This element encloses markup to be conditionally rendered.",
 		"view": "new_case.svg",
@@ -778,7 +867,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -804,44 +893,9 @@
 	},
 	{
 		"type": "node",
-		"id": "Label",
-		"title": "Label",
-		"groups": ["Support Elements"],
-		"description": "A label for form controls.",
-		"view": "new_label.svg",
-		"icon": "new_label.png",
-		"roles": ["label"],
-		"properties": [{
-			"id": "xf_id",
-			"type": "String",
-			"title": "id",
-			"prefix": "oryx",
-			"value": "",
-			"description": "",
-			"readonly": false,
-			"visible":false,
-			"optional": true,
-			"refToView": "",
-			"length": "30"
-		},
-		{
-			"id": "xf_text",
-			"type": "String",
-			"title": "text",
-			"prefix": "oryx",
-			"value": "Label",
-			"description": "",
-			"readonly": false,
-			"optional": true,
-			"refToView": "labeltext",
-			"length": "100",
-			"wrapLines": true
-		}]
-	},
-	{
-		"type": "node",
 		"id": "Help",
 		"title": "Help",
+		"title_de": "Hilfe",
 		"groups": ["Support Elements"],
 		"description": "Help information for form controls.",
 		"view": "new_help.svg",
@@ -850,7 +904,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -870,54 +924,6 @@
 			"optional": true,
 			"length": "100",
 			"wrapLines": true
-		},
-		{
-			"id": "xf_type",
-			"type": "String",
-			"title": "type",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Any xsd:QName representing the expected datatype",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		},
-		{
-			"id": "xf_readonly",
-			"type": "String",
-			"title": "readonly",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Any expression that is convertible to XPath boolean",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		},
-		{
-			"id": "xf_required",
-			"type": "String",
-			"title": "required",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Any expression that is convertible to XPath boolean",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		},
-		{
-			"id": "xf_constraint",
-			"type": "String",
-			"title": "constraint",
-			"prefix": "oryx",
-			"value": "",
-			"description": "A predicate that needs to be satisfied for the associated instance data node to be considered valid",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
 		}]
 	},
 	{
@@ -936,7 +942,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -974,7 +980,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -1085,7 +1091,7 @@
 		"properties": [{
 			"id": "xf_id",
 			"type": "String",
-			"title": "id",
+			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
