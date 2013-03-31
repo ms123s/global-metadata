@@ -299,7 +299,8 @@
 		{
 			"id": "xf_default",
 			"type": "text",
-			"title": "default value",
+			"title": "Defaultvalue",
+			"title_de": "Voreinstellung",
 			"prefix": "oryx",
 			"value": "",
 			"description": "The default value is displayed, when the form is loaded.",
@@ -405,7 +406,8 @@
 		{
 			"id": "xf_module",
 			"type": "String",
-			"title": "Module",
+			"title": "Entity",
+			"title_de": "Entität",
 			"prefix": "oryx",
 			"value": "",
 			"description": "The Module",
@@ -419,6 +421,7 @@
 			"id": "xf_field",
 			"type": "String",
 			"title": "Field",
+			"title_de": "Feld",
 			"prefix": "oryx",
 			"value": "",
 			"description": "The Field",
@@ -430,16 +433,28 @@
 		},
 		{
 			"id": "xf_required",
-			"type": "String",
-			"title": "required",
+			"type": "Combo",
+			"title": "Required",
+			"title_de": "Eingabe nötig",
 			"prefix": "oryx",
 			"value": "",
-			"description": "Any expression that is convertible to XPath boolean",
 			"popular": true,
+			"description": "Any expression that is convertible to XPath boolean",
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"length": "100"
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			}]
 		}]
 	},
 	{
@@ -517,16 +532,28 @@
 		},
 		{
 			"id": "xf_required",
-			"type": "String",
-			"title": "required",
+			"type": "Combo",
+			"title": "Required",
+			"title_de": "Eingabe nötig",
 			"prefix": "oryx",
 			"value": "",
-			"description": "Any expression that is convertible to XPath boolean",
 			"popular": true,
+			"description": "Any expression that is convertible to XPath boolean",
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"length": "100"
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			}]
 		}]
 	},
 	{
@@ -611,7 +638,8 @@
 		{
 			"id": "xf_action",
 			"type": "Choice",
-			"title": "action",
+			"title": "Action",
+			"title_de": "Aktion",
 			"prefix": "oryx",
 			"value": "execute",
 			"description": "Execute task or cancel",
@@ -622,12 +650,14 @@
 			"items": [{
 				"id": "c1",
 				"title": "Execute task",
+				"title_de": "Ausführen der Aufgabe",
 				"value": "execute",
 				"refToView": ""
 			},
 			{
 				"id": "c2",
 				"title": "Cancel task",
+				"title_de": "Abbrechen",
 				"value": "cancel",
 				"refToView": ""
 			}]
@@ -685,6 +715,7 @@
 			"id": "xf_message",
 			"type": "Text",
 			"title": "message",
+			"title_de": "Mitteilung",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -748,7 +779,7 @@
 			"id": "xf_place",
 			"type": "Choice",
 			"title": "Place",
-			"title_de": "Ort",
+			"title_de": "Anordung",
 			"prefix": "oryx",
 			"value": "normal",
 			"description": "The place of this group",
@@ -789,18 +820,6 @@
 				"value": "west",
 				"refToView": ""
 			}]
-		},
-		{
-			"id": "xf_readonly",
-			"type": "String",
-			"title": "readonly",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Any expression that is convertible to XPath boolean",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
 		}]
 	},
 	{
@@ -849,7 +868,7 @@
 	{
 		"type": "node",
 		"id": "Page",
-		"title": "Page",
+		"title": "Tabpage",
 		"title_de": "Registerkarte",
 		"groups": ["Containers"],
 		"description": "This element encloses markup to be conditionally rendered.",
@@ -879,16 +898,29 @@
 		},
 		{
 			"id": "xf_selected",
-			"type": "Boolean",
+			"type": "Combo",
 			"title": "selected",
+			"title_de": "Ausgewählte Karte",
 			"prefix": "oryx",
 			"value": false,
-			"description": "Optional selection status for the page.",
+			"description": "selection status for the page.",
 			"visible": false,
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"refToView": ""
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			} ]
 		}]
 	},
 	{
@@ -916,7 +948,8 @@
 		{
 			"id": "xf_message",
 			"type": "String",
-			"title": "message",
+			"title": "Helptext",
+			"title_de": "Hilfetext",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
@@ -924,181 +957,6 @@
 			"optional": true,
 			"length": "100",
 			"wrapLines": true
-		}]
-	},
-	{
-		"type": "node",
-		"id": "Item",
-		"title": "Item",
-		"groups": ["Support Elements"],
-		"description": "An item for select controls.",
-		"view": "new_item.svg",
-		"icon": "new_item.png",
-		"roles": ["list_ui_common", "labeled"],
-
-		"layout": [{
-			"type": "layout.xforms.label.item"
-		}],
-		"properties": [{
-			"id": "xf_id",
-			"type": "String",
-			"title": "Id",
-			"prefix": "oryx",
-			"value": "",
-			"description": "",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "30"
-		},
-		{
-			"id": "xf_value",
-			"type": "String",
-			"title": "value",
-			"prefix": "oryx",
-			"value": "",
-			"description": "",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		}]
-	},
-	{
-		"type": "node",
-		"id": "Itemset",
-		"title": "Itemset",
-		"groups": ["Support Elements"],
-		"description": "This element allows the creation of dynamic selections within controls select and select1.",
-		"view": "new_itemset.svg",
-		"icon": "new_itemset.png",
-		"roles": ["list_ui_common", "labeled"],
-
-		"layout": [{
-			"type": "layout.xforms.label.item"
-		}],
-		"properties": [{
-			"id": "xf_id",
-			"type": "String",
-			"title": "Id",
-			"prefix": "oryx",
-			"value": "",
-			"description": "",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "30"
-		},
-		{
-			"id": "nodeset",
-			"type": "Complex",
-			"title": "nodeset",
-			"value": "",
-			"description": "Defines the items, the Itemset contains.",
-			"readonly": false,
-			"optional": true,
-			"complexItems": [{
-				"id": "name",
-				"name": "Name",
-				"type": "String",
-				"value": "",
-				"width": 100,
-				"optional": false
-			},
-			{
-				"id": "value",
-				"name": "Value",
-				"type": "String",
-				"value": "",
-				"width": 100,
-				"optional": true
-			}]
-		},
-		{
-			"id": "xf_value_value",
-			"type": "String",
-			"title": "value/value",
-			"prefix": "oryx",
-			"value": "",
-			"description": "",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		},
-		{
-			"id": "xf_type",
-			"type": "String",
-			"title": "type",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Any xsd:QName representing the expected datatype",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		},
-		{
-			"id": "xf_readonly",
-			"type": "String",
-			"title": "readonly",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Any expression that is convertible to XPath boolean",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		},
-		{
-			"id": "xf_required",
-			"type": "String",
-			"title": "required",
-			"prefix": "oryx",
-			"value": "",
-			"description": "Any expression that is convertible to XPath boolean",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		},
-		{
-			"id": "xf_constraint",
-			"type": "String",
-			"title": "constraint",
-			"prefix": "oryx",
-			"value": "",
-			"description": "A predicate that needs to be satisfied for the associated instance data node to be considered valid",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		}]
-	},
-	{
-		"type": "node",
-		"id": "Choices",
-		"title": "Choices",
-		"groups": ["Support Elements"],
-		"description": "This element is used within selection form controls to group available choices.",
-		"view": "new_choices.svg",
-		"icon": "new_choices.png",
-		"roles": ["list_ui_common", "list_ui_common_container", "labeled"],
-
-		"layout": [{
-			"type": "layout.xforms.item"
-		}],
-		"properties": [{
-			"id": "xf_id",
-			"type": "String",
-			"title": "Id",
-			"prefix": "oryx",
-			"value": "",
-			"description": "",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "30"
 		}]
 	}],
 	"rules": {
