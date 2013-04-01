@@ -595,11 +595,41 @@
 			"optional": false
 		},
 		{
-			"id": "xf_enums",
+			"id": "xf_enumembed",
+			"type": "Complex",
+			"title": "Embedded",
+			"title_de": "Eingeschlossen",
+			"value": "",
+			"description": "",
+			"description_de": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "value",
+				"name": "Value",
+				"name_de": "Wert",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			},
+			{
+				"id": "label",
+				"name": "Label",
+				"name_de": "Label",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}]
+		},
+		{
+			"id": "xf_enum",
 			"type": "Complex",
 			"config": {"helperTree":["sw.enum","sw.filter"], "kind":"enum"},
-			"title": "Enumeration",
-			"title_de": "Aufzählung",
+			"title": "Remote",
+			"title_de": "Beziehen",
 			"value": "",
 			"description": "",
 			"description_de": "",

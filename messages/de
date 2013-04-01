@@ -3625,5 +3625,9 @@
     {
         "msgid": "shell.rule_saved",
         "msgstr": "Regeln gespeichert"
+    },
+    {
+        "msgid": "label1",
+        "msgstr": "LabelXXXX"
     }
 ]
