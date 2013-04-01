@@ -597,7 +597,7 @@
 		{
 			"id": "xf_enums",
 			"type": "Complex",
-			"config": {"helperTree":["sw.enum","sw.filter"]},
+			"config": {"helperTree":["sw.enum","sw.filter"], "kind":"enum"},
 			"title": "Enumeration",
 			"title_de": "Aufzählung",
 			"value": "",
