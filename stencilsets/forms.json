@@ -622,6 +622,15 @@
 				"value": "",
 				"width": 150,
 				"optional": false
+			},
+			{
+				"id": "tooltip",
+				"name": "Tooltip",
+				"name_de": "Tooltip",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
 			}]
 		},
 		{
@@ -649,9 +658,25 @@
 				"id": "mapping",
 				"name": "Mapping",
 				"name_de": "Mapping",
-				"type": "String",
-				"value": "",
-				"width": 150,
+				"readonly": false,
+				"type": "Choice",
+				"value": "value",
+				"items": [{
+					"id": "value",
+					"title": "value",
+					"value": "value"
+				}, 
+				{
+					"id": "label",
+					"title": "label",
+					"value": "label"
+				},
+				{
+					"id": "tooltip",
+					"title": "tooltip",
+					"value": "tooltip"
+				}],
+				"width": 80,
 				"optional": false
 			}]
 		}]
