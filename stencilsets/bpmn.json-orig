@@ -509,7 +509,7 @@
 		{
 			"id": "el$activiti$variablesmapping",
 			"type": "Complex",
-			"config": {"formTree":true},
+			"config": {"helperTree":["sw.form"]},
 			"title": "Parameter-Mapping",
 			"title_de": "Variablen Zuordnung",
 			"value": "",
@@ -624,7 +624,7 @@
 		{
 			"id": "el$activiti$variablesmapping",
 			"type": "Complex",
-			"config": {"formTree":true},
+			"config": {"helperTree":["sw.form"]},
 			"title": "Parameter-Mapping",
 			"title_de": "Variablen Zuordnung",
 			"value": "",
@@ -724,7 +724,7 @@
 		{
 			"id": "el$activiti$variablesmapping",
 			"type": "Complex",
-			"config": {"formTree":true},
+			"config": {"helperTree":["sw.form"]},
 			"title": "Parameter-Mapping",
 			"title_de": "Variablen Zuordnung",
 			"value": "",

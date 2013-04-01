@@ -498,7 +498,7 @@
 		{
 			"id": "xf_columns",
 			"type": "Complex",
-			"config": {"formTree":true,"entityTree":true},
+			"config": {"helperTree":["sw.form","sw.entitytype"]},
 			"title": "Tablecolumns",
 			"title_de": "Tabellenspalten",
 			"value": "",
@@ -596,17 +596,34 @@
 		},
 		{
 			"id": "xf_enums",
-			"type": "ResourceSelector",
-			"config": {"type":"sw.enum","prefix":"enumeration:"},
+			"type": "Complex",
+			"config": {"helperTree":["sw.enum","sw.filter"]},
 			"title": "Enumeration",
 			"title_de": "Aufzählung",
 			"value": "",
-			"description": "Enums or url to Emuns",
-			"description_de": "Aufzählung oder Url",
+			"description": "",
+			"description_de": "",
 			"popular": true,
 			"readonly": false,
-			"optional": false,
-			"length": "128"
+			"optional": true,
+			"complexItems": [{
+				"id": "colname",
+				"name": "Columnname",
+				"name_de": "Spaltenname",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			},
+			{
+				"id": "mapping",
+				"name": "Mapping",
+				"name_de": "Mapping",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}]
 		}]
 	},
 	{
