@@ -1,0 +1,1076 @@
+{
+	"title": "Documents",
+	"title_de": "Documents",
+	"namespace": "http://b3mn.org/stencilset/xdocuments#",
+	"description": "This is the XDocuments stencil set specification.",
+	"stencils": [{
+		"type": "node",
+		"id": "XDocument",
+		"title": "XDocument",
+		"groups": ["Form"],
+		"description": "A XDocuments form.",
+		"view": "new_form.svg",
+		"icon": "new_form.png",
+		"mayBeRoot": true,
+		"hide": true,
+		"roles": ["standard_container"],
+
+		"layout": [{
+			"type": "layout.rows",
+			"marginTop": 30,
+			"marginLeft": 30,
+			"spacingX": 30,
+			"spacingY": 30
+		}],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "This is a unique Id that distinguishes the form from other forms.",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "xf_name",
+			"type": "String",
+			"title": "Name",
+			"prefix": "oryx",
+			"value": "${diagramname}",
+			"description": "Name is an attribute that is text description of the form.",
+			"popular": true,
+			"readonly": true,
+			"optional": false,
+			"length": "50",
+			"refToView": "formcaption",
+			"wrapLines": true
+		},
+		{
+			"id": "xf_version",
+			"type": "String",
+			"title": "version",
+			"title_de": "Version",
+			"prefix": "oryx",
+			"value": "",
+			"description": "This defines the version number of the form model.",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "xf_default_buttons",
+			"type": "Boolean",
+			"title": "Default buttons",
+			"title_de": "Standard Buttons",
+			"prefix": "oryx",
+			"value": true,
+			"description": "Display default buttons",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
+		}]
+	},
+	{
+		"type": "node",
+		"id": "Input",
+		"title": "Input",
+		"title_de": "Eingabefeld",
+		"groups": ["Controls"],
+		"description": "An input control.",
+		"view": "new_input.svg",
+		"icon": "new_input.png",
+		"roles": ["core_form_controls", "controls_morph"],
+
+		"layout": [{
+			"type": "layout.xforms.label",
+			"moveY": -1,
+			"moveX": 0
+		}],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"description": "",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_type",
+			"type": "Choice",
+			"title": "Input type",
+			"title_de": "Eingabetyp",
+			"prefix": "oryx",
+			"value": "text",
+			"description": "The input datatype",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Text",
+				"value": "text",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "Number",
+				"value": "number",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "Boolean",
+				"value": "boolean",
+				"refToView": ""
+			},
+			{
+				"id": "c4",
+				"title": "Decimal",
+				"value": "decimal",
+				"refToView": ""
+			},
+			{
+				"id": "c5",
+				"title": "Date",
+				"value": "date",
+				"refToView": ""
+			},
+			{
+				"id": "c6",
+				"title": "DateTime",
+				"value": "datetime",
+				"refToView": ""
+			} ]
+		},
+		{
+			"id": "xf_default",
+			"type": "String",
+			"title": "Defaultvalue",
+			"title_de": "Voreinstellung",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"description": "The default value is displayed, when the form is loaded.",
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_readonly",
+			"type": "Combo",
+			"title": "Readonly",
+			"title_de": "Nur lesen",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			} ]
+		},
+		{
+			"id": "xf_required",
+			"type": "Combo",
+			"title": "Required",
+			"title_de": "Eingabe nötig",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"description": "Any expression that is convertible to XPath boolean",
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			} ]
+		},
+		{
+			"id": "xf_constraint",
+			"type": "String",
+			"title": "Constraint",
+			"title_de": "Eingabeprüfung",
+			"prefix": "oryx",
+			"value": "",
+			"description": "A predicate that needs to be satisfied for the associated instance data node to be considered valid",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "100"
+		}]
+	},
+	{
+		"type": "node",
+		"id": "Label",
+		"title": "Label",
+		"title_de": "Label",
+		"groups": ["Support Elements"],
+		"description": "A label for form controls.",
+		"view": "new_label.svg",
+		"icon": "new_label.png",
+		"roles": ["label"],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"readonly": false,
+			"visible":false,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_text",
+			"type": "String",
+			"title": "text",
+			"prefix": "oryx",
+			"value": "Label",
+			"description": "",
+			"readonly": false,
+			"optional": true,
+			"refToView": "labeltext",
+			"length": "100",
+			"wrapLines": true
+		}]
+	},
+	{
+		"type": "node",
+		"id": "Textarea",
+		"title": "Textarea",
+		"title_de": "Texteingabe",
+		"groups": ["Controls"],
+		"description": "A textarea control.",
+		"view": "new_textarea.svg",
+		"icon": "new_textarea.png",
+		"roles": ["core_form_controls", "controls_morph"],
+
+		"layout": [{
+			"type": "layout.xforms.label",
+			"moveY": -1,
+			"moveX": 0
+		}],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_default",
+			"type": "text",
+			"title": "Defaultvalue",
+			"title_de": "Voreinstellung",
+			"prefix": "oryx",
+			"value": "",
+			"description": "The default value is displayed, when the form is loaded.",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_readonly",
+			"type": "Combo",
+			"title": "Readonly",
+			"title_de": "Nur lesen",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			} ]
+		},
+		{
+			"id": "xf_required",
+			"type": "Combo",
+			"title": "Required",
+			"title_de": "Eingabe nötig",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"description": "Any expression that is convertible to XPath boolean",
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			} ]
+		},
+		{
+			"id": "xf_constraint",
+			"type": "String",
+			"title": "Constraint",
+			"title_de": "Eingabeprüfung",
+			"prefix": "oryx",
+			"value": "",
+			"description": "A predicate that needs to be satisfied for the associated instance data node to be considered valid",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "100"
+		}]
+	},
+	{
+		"type": "node",
+		"id": "Moduleselector",
+		"title": "Moduleselector",
+		"title_de": "Wert aus Datenbank",
+		"groups": ["Controls"],
+		"description": "Select an value from specified Module",
+		"view": "new_submit.svg",
+		"icon": "new_submit.png",
+		"roles": ["core_form_controls", "controls_morph"],
+		"layout": [{
+			"type": "layout.xforms.label",
+			"moveY": -1,
+			"moveX": 0
+		}],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_module",
+			"type": "String",
+			"title": "Entity",
+			"title_de": "Entität",
+			"prefix": "oryx",
+			"value": "",
+			"description": "The Module",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "100"
+		},
+		{
+			"id": "xf_field",
+			"type": "String",
+			"title": "Field",
+			"title_de": "Feld",
+			"prefix": "oryx",
+			"value": "",
+			"description": "The Field",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "100"
+		},
+		{
+			"id": "xf_required",
+			"type": "Combo",
+			"title": "Required",
+			"title_de": "Eingabe nötig",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"description": "Any expression that is convertible to XPath boolean",
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			}]
+		}]
+	},
+	{
+		"type": "node",
+		"id": "Tableselect",
+		"title": "Tableselect",
+		"title_de": "Auswahl(Tabelle)",
+		"groups": ["Controls"],
+		"description": "This form control allows the user to make single/multiple selections from a list.",
+		"view": "new_select.svg",
+		"icon": "new_select.png",
+		"roles": ["core_form_controls", "controls_morph"],
+		"layout": [{
+			"type": "layout.xforms.label",
+			"moveY": -1,
+			"moveX": 0
+		}],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_multiselection",
+			"title": "Multiselection",
+			"title_de": "Mehrfachauswahl",
+			"type": "Boolean",
+			"value": false,
+			"popular": true,
+			"readonly": false,
+			"optional": false
+		},
+		{
+			"id": "xf_columns",
+			"type": "Complex",
+			"config": {"helperTree":["sw.form","sw.entitytype"]},
+			"title": "Tablecolumns",
+			"title_de": "Tabellenspalten",
+			"value": "",
+			"description": "Tablecolumns",
+			"description_de": "Angezeigte Tabellenspalten",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "colname",
+				"name": "Columnname",
+				"name_de": "Spaltenname",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}]
+		},
+		{
+			"id": "xf_inputlistname",
+			"type": "String",
+			"title": "Inputlist",
+			"title_de": "Eingabeliste",
+			"value": "",
+			"description": "Name of the list with the selectable elements",
+			"description_de": "Name der Liste mit den auszuwählenden Elementen",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "xf_required",
+			"type": "Combo",
+			"title": "Required",
+			"title_de": "Eingabe nötig",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"description": "Any expression that is convertible to XPath boolean",
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			}]
+		}]
+	},
+	{
+		"type": "node",
+		"id": "Enumselect",
+		"title": "Enumselect",
+		"title_de": "Auswahl(Aufzählung)",
+		"groups": ["Controls"],
+		"description": "This form control allows the user to make single/multiple selections from enums.",
+		"view": "new_select1.svg",
+    "icon": "new_select1.png",
+		"roles": ["core_form_controls", "controls_morph"],
+		"layout": [{
+			"type": "layout.xforms.label",
+			"moveY": -1,
+			"moveX": 0
+		}],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_multiselection",
+			"title": "Multiselection",
+			"title_de": "Mehrfachauswahl",
+			"type": "Boolean",
+			"value": false,
+			"popular": true,
+			"readonly": false,
+			"optional": false
+		},
+		{
+			"id": "xf_enumembed",
+			"type": "Complex",
+			"title": "Embedded",
+			"title_de": "Eingeschlossen",
+			"value": "",
+			"description": "",
+			"description_de": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "value",
+				"name": "Value",
+				"name_de": "Wert",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			},
+			{
+				"id": "label",
+				"name": "Label",
+				"name_de": "Label",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			},
+			{
+				"id": "tooltip",
+				"name": "Tooltip",
+				"name_de": "Tooltip",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}]
+		},
+		{
+			"id": "xf_enum",
+			"type": "Complex",
+			"config": {"helperTree":["sw.enum","sw.filter"], "kind":"enum"},
+			"title": "Remote",
+			"title_de": "Beziehen",
+			"value": "",
+			"description": "",
+			"description_de": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "colname",
+				"name": "Columnname",
+				"name_de": "Spaltenname",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			},
+			{
+				"id": "mapping",
+				"name": "Mapping",
+				"name_de": "Mapping",
+				"readonly": false,
+				"type": "Choice",
+				"value": "value",
+				"items": [{
+					"id": "value",
+					"title": "value",
+					"value": "value"
+				}, 
+				{
+					"id": "label",
+					"title": "label",
+					"value": "label"
+				},
+				{
+					"id": "tooltip",
+					"title": "tooltip",
+					"value": "tooltip"
+				}],
+				"width": 80,
+				"optional": false
+			}]
+		}]
+	},
+	{
+		"type": "node",
+		"id": "ActionButton",
+		"title": "ActionButton",
+		"title_de": "Auslösender Button",
+		"groups": ["Controls"],
+		"description": "Renders a actionbutton",
+		"view": "new_trigger.svg",
+		"icon": "new_trigger.png",
+		"roles": ["core_form_controls"],
+		"layout": [{
+			"type": "layout.xforms.label.button"
+		}],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_action",
+			"type": "Choice",
+			"title": "Action",
+			"title_de": "Aktion",
+			"prefix": "oryx",
+			"value": "execute",
+			"description": "Execute task or cancel",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Execute task",
+				"title_de": "Ausführen der Aufgabe",
+				"value": "execute",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "Cancel task",
+				"title_de": "Abbrechen",
+				"value": "cancel",
+				"refToView": ""
+			}]
+		},
+		{
+			"id": "xf_label",
+			"type": "String",
+			"title": "Label",
+			"prefix": "oryx",
+			"value": "",
+			"description": "Label",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "64"
+		},
+		{
+			"id": "xf_iconname",
+			"type": "String",
+			"title": "Iconname",
+			"prefix": "oryx",
+			"value": "",
+			"description": "Iconname",
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "64"
+		}]
+	},
+	{
+		"type": "node",
+		"id": "Alert",
+		"title": "Alert",
+		"title_de": "Alarm",
+		"groups": ["Controls"],
+		"description": "Error alert for form controls.",
+		"view": "new_alert.svg",
+		"icon": "new_alert.png",
+		"roles": ["core_form_controls"],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_message",
+			"type": "Text",
+			"title": "message",
+			"title_de": "Mitteilung",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"length": "100",
+			"wrapLines": true
+		},
+		{
+			"id": "xf_exclude",
+			"type": "String",
+			"title": "exclude",
+			"prefix": "oryx",
+			"value": "",
+			"description": "Exclude expression",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "100"
+		}]
+	},
+	{
+		"type": "node",
+		"id": "Group",
+		"title": "Group",
+		"title_de": "Gruppe",
+		"groups": ["Containers"],
+		"description": "A container for defining a hierarchy of form controls.",
+		"view": "new_group.svg",
+		"icon": "new_group.png",
+		"roles": ["core_form_controls", "standard_container", "ui_common_container"],
+
+		"layout": [{
+			"type": "layout.rows",
+			"marginTop": 30,
+			"marginLeft": 30,
+			"spacingX": 30,
+			"spacingY": 30,
+			"exclude": ["http://b3mn.org/stencilset/xforms#Label"]
+		},
+		{
+			"type": "layout.xforms.label",
+			"moveY": -1,
+			"moveX": 0
+		}],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_place",
+			"type": "Choice",
+			"title": "Place",
+			"title_de": "Anordung",
+			"prefix": "oryx",
+			"value": "normal",
+			"description": "The place of this group",
+			"description_de": "Der Platz der Gruppe",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Normal",
+				"value": "normal",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "South",
+				"title_de": "Süden",
+				"value": "south",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "North",
+				"title_de": "Norden",
+				"value": "north",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "East",
+				"title_de": "Osten",
+				"value": "east",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "West",
+				"value": "west",
+				"refToView": ""
+			}]
+		}]
+	},
+	{
+		"type": "node",
+		"id": "Tabview",
+		"title": "Tabview",
+		"title_de": "Register",
+		"groups": ["Containers"],
+		"description": "This element contains one or more page elements, any one of which is rendered at a given time.",
+		"view": "new_switch.svg",
+		"icon": "new_switch.png",
+		"roles": ["additional_form_controls", "page_container"],
+
+		"layout": [{
+			"type": "layout.xforms.page"
+		}],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": false,
+			"readonly": false,
+			"visible": false,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_enabled",
+			"type": "String",
+			"title": "enabled",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"visible": false,
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "100"
+		}]
+	},
+	{
+		"type": "node",
+		"id": "Page",
+		"title": "Tabpage",
+		"title_de": "Registerkarte",
+		"groups": ["Containers"],
+		"description": "This element encloses markup to be conditionally rendered.",
+		"view": "new_case.svg",
+		"icon": "new_case.png",
+		"roles": ["page", "labeled", "standard_container", "actions_container"],
+
+		"layout": [{
+			"type": "layout.rows",
+			"marginTop": 30,
+			"marginLeft": 10,
+			"spacingX": 30,
+			"spacingY": 30
+		}],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_selected",
+			"type": "Combo",
+			"title": "selected",
+			"title_de": "Ausgewählte Karte",
+			"prefix": "oryx",
+			"value": false,
+			"description": "selection status for the page.",
+			"visible": false,
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			} ]
+		}]
+	},
+	{
+		"type": "node",
+		"id": "Help",
+		"title": "Help",
+		"title_de": "Hilfe",
+		"groups": ["Support Elements"],
+		"description": "Help information for form controls.",
+		"view": "new_help.svg",
+		"icon": "new_help.png",
+		"roles": ["ui_common", "support_morph"],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_message",
+			"type": "String",
+			"title": "Helptext",
+			"title_de": "Hilfetext",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"readonly": false,
+			"optional": true,
+			"length": "100",
+			"wrapLines": true
+		}]
+	}],
+	"rules": {
+		"containmentRules": [{
+			"role": "standard_container",
+			"contains": ["core_form_controls", "additional_form_controls"]
+		},
+		{
+			"role": "core_form_controls",
+			"contains": ["label", "ui_common", "action"]
+		},
+		{
+			"role": "labeled",
+			"contains": ["label"]
+		},
+		{
+			"role": "ui_common_container",
+			"contains": ["ui_common"]
+		},
+		{
+			"role": "actions_container",
+			"contains": ["action"]
+		},
+		{
+			"role": "list_ui_common_container",
+			"contains": ["list_ui_common"]
+		},
+		{
+			"role": "page_container",
+			"contains": ["page"]
+		}],
+		"morphingRules": [{
+			"role": "controls_morph",
+			"baseMorphs": ["Input"]
+		},
+		{
+			"role": "actions_morph",
+			"baseMorphs": ["Action"]
+		},
+		{
+			"role": "support_morph",
+			"baseMorphs": ["Hint"]
+		}]
+	}
+}
