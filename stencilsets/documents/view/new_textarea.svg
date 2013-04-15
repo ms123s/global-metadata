@@ -9,10 +9,19 @@
    version="1.0">
   <defs></defs>
    <g oryx:minimumSize="32 20" oryx:maximumSize="350 400" >
-    <rect oryx:anchor="top" oryx:resize="vertical horizontal" x="0" y="0" width="150" height="100" stroke="black" stroke-width="1" fill="white" />
+    <rect id="textarea_id" oryx:anchor="top" oryx:resize="vertical horizontal" x="0" y="0" width="150" height="100" stroke="black" stroke-width="1" fill="white" />
+		<text 
+			font-size="10" 
+			id="text" 
+			x="3" 
+			y="10" 
+			oryx:align="left top"
+			oryx:fittoelem="textarea_id"
+			stroke="black">
+		</text>
 
 	<g id="b">
-		<text font-size="11" x="3" y="3" oryx:align="middle left" oryx:anchor="top left" stroke="black">abc</text>
+		<text font-size="11" x="3" y="3" oryx:align="middle left" oryx:anchor="top left" fill="blue" stroke="black">Textarea</text>
 	</g>
     	
     

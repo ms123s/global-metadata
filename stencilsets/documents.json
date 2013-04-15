@@ -295,84 +295,17 @@
 			"optional": false,
 			"refToView": "",
 			"length": "30"
-		},
-		{
-			"id": "xf_default",
+		},{
+			"id": "xf_markdown",
 			"type": "text",
-			"title": "Defaultvalue",
-			"title_de": "Voreinstellung",
-			"prefix": "oryx",
-			"value": "",
-			"description": "The default value is displayed, when the form is loaded.",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "30"
-		},
-		{
-			"id": "xf_readonly",
-			"type": "Combo",
-			"title": "Readonly",
-			"title_de": "Nur lesen",
-			"prefix": "oryx",
-			"value": "",
-			"description": "",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"value": "true",
-				"title": "true",
-				"refToView": ""
-			},
-			{
-				"id": "c2",
-				"value": "false",
-				"title": "false",
-				"refToView": ""
-			} ]
-		},
-		{
-			"id": "xf_required",
-			"type": "Combo",
-			"title": "Required",
-			"title_de": "Eingabe nötig",
+			"title": "Text",
+			"title_de": "Text",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
-			"description": "Any expression that is convertible to XPath boolean",
 			"readonly": false,
 			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"value": "true",
-				"title": "true",
-				"refToView": ""
-			},
-			{
-				"id": "c2",
-				"value": "false",
-				"title": "false",
-				"refToView": ""
-			} ]
-		},
-		{
-			"id": "xf_constraint",
-			"type": "String",
-			"title": "Constraint",
-			"title_de": "Eingabeprüfung",
-			"prefix": "oryx",
-			"value": "",
-			"description": "A predicate that needs to be satisfied for the associated instance data node to be considered valid",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
+			"refToView": "text"
 		}]
 	},
 	{
