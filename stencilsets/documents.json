@@ -58,6 +58,15 @@
 				"value": "right",
 				"refToView": ""
 			}]
+		},{
+			"id": "xf_frame",
+			"title": "Frame",
+			"title_de": "Rahmen",
+			"type": "Boolean",
+			"value": false,
+			"popular": false,
+			"readonly": false,
+			"optional": false
 		}]
 	}],
 	"stencils": [{
@@ -105,29 +114,120 @@
 			"wrapLines": true
 		},
 		{
-			"id": "xf_version",
+			"id": "db_header.left.content",
 			"type": "String",
-			"title": "version",
-			"title_de": "Version",
+			"title": "Header(left)",
+			"title_de": "Kopf(links)",
 			"prefix": "oryx",
 			"value": "",
-			"description": "This defines the version number of the form model.",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
 		},
 		{
-			"id": "xf_default_buttons",
-			"type": "Boolean",
-			"title": "Default buttons",
-			"title_de": "Standard Buttons",
+			"id": "db_header.right.content",
+			"type": "String",
+			"title": "Header(right)",
+			"title_de": "Kopf(rechts)",
 			"prefix": "oryx",
-			"value": true,
-			"description": "Display default buttons",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "db_paper.type",
+			"type": "Choice",
+			"title": "Papertype",
+			"title_de": "Papierformat",
+			"prefix": "oryx",
+			"value": "A4",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"refToView": ""
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "A4",
+				"value": "A4",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "USletter",
+				"value": "USletter",
+				"refToView": ""
+			},{
+				"id": "c3",
+				"title": "A5",
+				"value": "A5",
+				"refToView": ""
+			},{
+				"id": "c4",
+				"title": "A3",
+				"value": "A3",
+				"refToView": ""
+			} ]
+		},
+		{
+			"id": "db_page.orientation",
+			"type": "Choice",
+			"title": "Orientation",
+			"title_de": "Orientierung",
+			"prefix": "oryx",
+			"value": "portrait",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Portrait",
+				"value": "portrait",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "Landscape",
+				"value": "landscape",
+				"refToView": ""
+			}]
+		}, {
+			"id": "db_body.font.master",
+			"type": "Combo",
+			"title": "Basic fontsize",
+			"title_de": "Basisfontgröße",
+			"prefix": "oryx",
+			"value": "8",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "8",
+				"value": "8",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "9",
+				"value": "9",
+				"refToView": ""
+			},{
+				"id": "c3",
+				"title": "10",
+				"value": "10",
+				"refToView": ""
+			},{
+				"id": "c4",
+				"title": "11",
+				"value": "11",
+				"refToView": ""
+			},{
+				"id": "c5",
+				"title": "12",
+				"value": "12",
+				"refToView": ""
+			}]
 		}]
 	},
 	{
@@ -250,131 +350,6 @@
 			}]
 		}],
 		"propertyPackages": ["geometry" ]
-	},
-	{
-		"type": "node",
-		"id": "Enumselect",
-		"title": "Enumselect",
-		"title_de": "Auswahl(Aufzählung)",
-		"groups": ["Controls"],
-		"description": "This form control allows the user to make single/multiple selections from enums.",
-		"view": "new_select1.svg",
-    "icon": "new_select1.png",
-		"roles": ["core_form_controls", "controls_morph"],
-		"layout": [{
-			"type": "layout.xforms.label",
-			"moveY": -1,
-			"moveX": 0
-		}],
-		"properties": [{
-			"id": "xf_id",
-			"type": "String",
-			"title": "Id",
-			"prefix": "oryx",
-			"value": "",
-			"description": "",
-			"popular": true,
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"length": "30"
-		},
-		{
-			"id": "xf_multiselection",
-			"title": "Multiselection",
-			"title_de": "Mehrfachauswahl",
-			"type": "Boolean",
-			"value": false,
-			"popular": true,
-			"readonly": false,
-			"optional": false
-		},
-		{
-			"id": "xf_enumembed",
-			"type": "Complex",
-			"title": "Embedded",
-			"title_de": "Eingeschlossen",
-			"value": "",
-			"description": "",
-			"description_de": "",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"complexItems": [{
-				"id": "value",
-				"name": "Value",
-				"name_de": "Wert",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			},
-			{
-				"id": "label",
-				"name": "Label",
-				"name_de": "Label",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			},
-			{
-				"id": "tooltip",
-				"name": "Tooltip",
-				"name_de": "Tooltip",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			}]
-		},
-		{
-			"id": "xf_enum",
-			"type": "Complex",
-			"config": {"helperTree":["sw.enum","sw.filter"], "kind":"enum"},
-			"title": "Remote",
-			"title_de": "Beziehen",
-			"value": "",
-			"description": "",
-			"description_de": "",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"complexItems": [{
-				"id": "colname",
-				"name": "Columnname",
-				"name_de": "Spaltenname",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			},
-			{
-				"id": "mapping",
-				"name": "Mapping",
-				"name_de": "Mapping",
-				"readonly": false,
-				"type": "Choice",
-				"value": "value",
-				"items": [{
-					"id": "value",
-					"title": "value",
-					"value": "value"
-				}, 
-				{
-					"id": "label",
-					"title": "label",
-					"value": "label"
-				},
-				{
-					"id": "tooltip",
-					"title": "tooltip",
-					"value": "tooltip"
-				}],
-				"width": 80,
-				"optional": false
-			}]
-		}]
 	},
 	{
 		"type": "node",
