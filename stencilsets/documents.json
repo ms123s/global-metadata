@@ -3,6 +3,63 @@
 	"title_de": "Documents",
 	"namespace": "http://b3mn.org/stencilset/xdocuments#",
 	"description": "This is the XDocuments stencil set specification.",
+	"propertyPackages": [{
+		"name": "geometry",
+		"properties": [{
+			"id": "xf_width",
+			"type": "Combo",
+			"title": "Width",
+			"title_de": "Breite",
+			"prefix": "oryx",
+			"value": "1*",
+			"popular": false,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"value": "1*",
+				"title": "1*",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"value": "2*",
+				"title": "2*",
+				"refToView": ""
+			}]
+		},{
+			"id": "xf_align",
+			"type": "Choice",
+			"title": "Alignment",
+			"title_de": "Ausrichtung",
+			"prefix": "oryx",
+			"value": "left",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Left",
+				"title_de": "Links",
+				"value": "left",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "Center",
+				"title_de": "Mitte",
+				"value": "center",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "Right",
+				"title_de": "Rechts",
+				"value": "right",
+				"refToView": ""
+			}]
+		}]
+	}],
 	"stencils": [{
 		"type": "node",
 		"id": "XDocument",
@@ -15,7 +72,7 @@
 		"hide": true,
 		"roles": ["standard_container"],
 
-		"layout": [{
+		"xayout": [{
 			"type": "layout.rows",
 			"marginTop": 30,
 			"marginLeft": 30,
@@ -102,6 +159,19 @@
 			"refToView": "",
 			"length": "30"
 		},{
+			"id": "xf_filter",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.filter","prefix":""},
+			"title": "Filtername",
+			"title_de": "Filtername",
+			"value": "",
+			"description": "Filtername",
+			"description_de": "Name des Filters",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"length": "50"
+		},{
 			"id": "xf_markdown",
 			"type": "text",
 			"title": "Text",
@@ -112,7 +182,8 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": "text"
-		}]
+		}],
+		"propertyPackages": ["geometry" ]
 	},
 	{
 		"type": "node",
@@ -143,19 +214,23 @@
 			"length": "30"
 		},
 		{
-			"id": "xf_multiselection",
-			"title": "Multiselection",
-			"title_de": "Mehrfachauswahl",
-			"type": "Boolean",
-			"value": false,
+			"id": "xf_filter",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.filter","prefix":""},
+			"title": "Filtername",
+			"title_de": "Filtername",
+			"value": "",
+			"description": "Filtername",
+			"description_de": "Name des Filters",
 			"popular": true,
 			"readonly": false,
-			"optional": false
+			"optional": false,
+			"length": "50"
 		},
 		{
 			"id": "xf_columns",
 			"type": "Complex",
-			"config": {"helperTree":["sw.form","sw.entitytype"]},
+			"config": {"helperTree":["sw.filter"]},
 			"title": "Tablecolumns",
 			"title_de": "Tabellenspalten",
 			"value": "",
@@ -173,45 +248,8 @@
 				"width": 150,
 				"optional": false
 			}]
-		},
-		{
-			"id": "xf_inputlistname",
-			"type": "String",
-			"title": "Inputlist",
-			"title_de": "Eingabeliste",
-			"value": "",
-			"description": "Name of the list with the selectable elements",
-			"description_de": "Name der Liste mit den auszuwählenden Elementen",
-			"popular": true,
-			"readonly": false,
-			"optional": false,
-			"length": "50"
-		},
-		{
-			"id": "xf_required",
-			"type": "Combo",
-			"title": "Required",
-			"title_de": "Eingabe nötig",
-			"prefix": "oryx",
-			"value": "",
-			"popular": true,
-			"description": "Any expression that is convertible to XPath boolean",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"value": "true",
-				"title": "true",
-				"refToView": ""
-			},
-			{
-				"id": "c2",
-				"value": "false",
-				"title": "false",
-				"refToView": ""
-			}]
-		}]
+		}],
+		"propertyPackages": ["geometry" ]
 	},
 	{
 		"type": "node",
