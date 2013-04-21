@@ -10,5 +10,58 @@
   <defs></defs>
    <g oryx:minimumSize="40 34">
     <rect id="g" oryx:resize="vertical horizontal" x="0" y="0" width="160" height="68" stroke="#777777" stroke-width="1" fill="#f2f4fd" />
+
+		<g transform="scale(1,1)">
+			<foreignObject x="2" y="3" width="22" height="40">
+				<div xmlns="http://www.w3.org/1999/xhtml" style="display:none;background:white;border:solid 1px gray;margin:0px;font-size:8px;font-family:Helvetica;color:#000000;">
+					<table cellpadding="1" style="font-size:3pt;border:none;border-collapse:collapse;width:50%;">
+						<tr>
+							<td colspan="1" style="border:0px solid gray;background:#496163;">Tablename</td>
+						</tr>
+						<tr>
+							<td style="border:0px solid gray;">Hjdjjd jkdkd</td>
+						</tr>
+						<tr>
+							<td style="border:0px solid gray;">foreignKey</td>
+						</tr>
+						<tr>
+							<td style="border:0px solid gray;">fieldname</td>
+						</tr>
+					</table>
+				</div>
+				<div xmlns="http://www.w3.org/1999/xhtml" style="display:none;background:white;border:solid 1px gray;margin:0px;font-size:8px;font-family:Helvetica;color:#000000;">
+					<table cellpadding="1" style="font-size:3pt;border:none;border-collapse:collapse;width:50%;">
+						<tr>
+							<td style="border:0px solid gray;">Hhhdhd djjd </td>
+						</tr>
+						<tr>
+							<td style="border:0px solid gray;">foreignKey</td>
+						</tr>
+						<tr>
+							<td style="border:0px solid gray;">fieldname</td>
+						</tr>
+						<tr>
+							<td colspan="1" style="border:0px solid gray;background:#496163;">Tablename</td>
+						</tr>
+					</table>
+				</div>
+				<div xmlns="http://www.w3.org/1999/xhtml" style="xisplay:none;background:white;border:solid 1px gray;margin:0px;font-size:8px;font-family:Helvetica;color:#000000;">
+					<table cellpadding="1" style="font-size:3pt;border:none;border-collapse:collapse;width:50%;">
+						<tr>
+							<td style="border:0px solid gray;"> jksdjksjks</td>
+						</tr>
+						<tr>
+							<td colspan="1" style="border:0px solid gray;background:#496163;">Tablename</td>
+						</tr>
+						<tr>
+							<td style="border:0px solid gray;">foreignKey</td>
+						</tr>
+						<tr>
+							<td style="border:0px solid gray;">fieldname</td>
+						</tr>
+					</table>
+				</div>
+			</foreignObject>
+		</g>
   </g>
 </svg>
