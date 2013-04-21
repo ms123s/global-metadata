@@ -115,7 +115,6 @@
 			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
-			"description": "This is a unique Id that distinguishes the form from other forms.",
 			"visible": false,
 			"readonly": false,
 			"optional": true,
@@ -127,7 +126,6 @@
 			"title": "Name",
 			"prefix": "oryx",
 			"value": "${diagramname}",
-			"description": "Name is an attribute that is text description of the form.",
 			"popular": true,
 			"readonly": true,
 			"optional": false,
@@ -153,6 +151,50 @@
 			"title_de": "Kopf(rechts)",
 			"prefix": "oryx",
 			"value": "",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "db_page.margin.top",
+			"type": "String",
+			"title": "page.margin.top",
+			"title_de": "Seitenabstand(o.)",
+			"prefix": "oryx",
+			"value": "5mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "db_body.margin.top",
+			"type": "String",
+			"title": "body.margin.top",
+			"title_de": "Textabstand(o.)",
+			"prefix": "oryx",
+			"value": "20mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "db_page.margin.bottom",
+			"type": "String",
+			"title": "page.margin.bottom",
+			"title_de": "Seitenabstand(u.)",
+			"prefix": "oryx",
+			"value": "5mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "db_body.margin.bottom",
+			"type": "String",
+			"title": "Textabstand(unten)",
+			"title_de": "Textabstand(u.)",
+			"prefix": "oryx",
+			"value": "20mm",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
@@ -448,18 +490,6 @@
 				"title": "First",
 				"title_de": "Erste",
 				"value": "first",
-				"refToView": ""
-			},{
-				"id": "c2",
-				"title": "Odd",
-				"title_de": "Ungerade",
-				"value": "odd",
-				"refToView": ""
-			},{
-				"id": "c2",
-				"title": "Even",
-				"title_de": "Gerade",
-				"value": "even",
 				"refToView": ""
 			},{
 				"id": "c2",
