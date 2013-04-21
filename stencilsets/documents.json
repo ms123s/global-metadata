@@ -67,6 +67,27 @@
 			"popular": false,
 			"readonly": false,
 			"optional": false
+		},{
+			"id": "xf_engine",
+			"type": "Choice",
+			"title": "Template",
+			"title_de": "Template",
+			"prefix": "oryx",
+			"value": "st",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "StringTemplate",
+				"value": "st",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "Groovy",
+				"value": "groovy",
+				"refToView": ""
+			}]
 		}]
 	}],
 	"stencils": [{
@@ -95,6 +116,7 @@
 			"prefix": "oryx",
 			"value": "",
 			"description": "This is a unique Id that distinguishes the form from other forms.",
+			"visible": false,
 			"readonly": false,
 			"optional": true,
 			"length": "50"
@@ -115,7 +137,7 @@
 		},
 		{
 			"id": "db_header.left.content",
-			"type": "String",
+			"type": "Text",
 			"title": "Header(left)",
 			"title_de": "Kopf(links)",
 			"prefix": "oryx",
@@ -353,9 +375,9 @@
 	},
 	{
 		"type": "node",
-		"id": "Group",
-		"title": "Group",
-		"title_de": "Gruppe",
+		"id": "HeaderFooter",
+		"title": "Header/Footer",
+		"title_de": "Kopf/Fuss",
 		"groups": ["Containers"],
 		"description": "A container for defining a hierarchy of form controls.",
 		"view": "new_group.svg",
@@ -388,48 +410,68 @@
 			"length": "30"
 		},
 		{
-			"id": "xf_place",
+			"id": "xf_headerfooter",
 			"type": "Choice",
-			"title": "Place",
-			"title_de": "Anordung",
+			"title": "Header/Footer",
+			"title_de": "Kopf/Fuss",
 			"prefix": "oryx",
-			"value": "normal",
-			"description": "The place of this group",
-			"description_de": "Der Platz der Gruppe",
+			"value": "header",
 			"readonly": false,
 			"optional": false,
 			"refToView": "",
 			"items": [{
 				"id": "c1",
-				"title": "Normal",
-				"value": "normal",
+				"title": "Header",
+				"title_de": "Kopf",
+				"value": "header",
 				"refToView": ""
 			},
 			{
 				"id": "c2",
-				"title": "South",
-				"title_de": "Süden",
-				"value": "south",
+				"title": "Footer",
+				"title_de": "Fuss",
+				"value": "footer",
 				"refToView": ""
-			},
-			{
-				"id": "c3",
-				"title": "North",
-				"title_de": "Norden",
-				"value": "north",
+			}]
+		},{
+			"id": "xf_pages",
+			"type": "Choice",
+			"title": "Which page(s)",
+			"title_de": "Welche Seite(n)",
+			"prefix": "oryx",
+			"value": "first",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "First",
+				"title_de": "Erste",
+				"value": "first",
 				"refToView": ""
-			},
-			{
-				"id": "c3",
-				"title": "East",
-				"title_de": "Osten",
-				"value": "east",
+			},{
+				"id": "c2",
+				"title": "Odd",
+				"title_de": "Ungerade",
+				"value": "odd",
 				"refToView": ""
-			},
-			{
-				"id": "c3",
-				"title": "West",
-				"value": "west",
+			},{
+				"id": "c2",
+				"title": "Even",
+				"title_de": "Gerade",
+				"value": "even",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "All but first",
+				"title_de": "Alle ausser Erster",
+				"value": "allbf",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "All",
+				"title_de": "Alle",
+				"value": "all",
 				"refToView": ""
 			}]
 		}]
@@ -443,7 +485,7 @@
 		"description": "This element contains one or more page elements, any one of which is rendered at a given time.",
 		"view": "new_switch.svg",
 		"icon": "new_switch.png",
-		"roles": ["additional_form_controls", "page_container"],
+		"roles": ["__additional_form_controls", "page_container"],
 
 		"layout": [{
 			"type": "layout.xforms.page"
