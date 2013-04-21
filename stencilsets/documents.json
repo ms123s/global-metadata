@@ -134,28 +134,6 @@
 			"wrapLines": true
 		},
 		{
-			"id": "db_header.left.content",
-			"type": "Text",
-			"title": "Header(left)",
-			"title_de": "Kopf(links)",
-			"prefix": "oryx",
-			"value": "",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},
-		{
-			"id": "db_header.right.content",
-			"type": "String",
-			"title": "Header(right)",
-			"title_de": "Kopf(rechts)",
-			"prefix": "oryx",
-			"value": "",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},
-		{
 			"id": "db_page.margin.top",
 			"type": "String",
 			"title": "page.margin.top",
@@ -193,6 +171,17 @@
 			"type": "String",
 			"title": "Textabstand(unten)",
 			"title_de": "Textabstand(u.)",
+			"prefix": "oryx",
+			"value": "20mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "db_region.after.extent",
+			"type": "String",
+			"title": "Texthöhe(unten)",
+			"title_de": "Texthöhe(u.)",
 			"prefix": "oryx",
 			"value": "20mm",
 			"readonly": false,
@@ -317,11 +306,29 @@
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
-			"popular": true,
+			"visible": false,
 			"readonly": false,
 			"optional": false,
 			"refToView": "",
 			"length": "30"
+		},{
+      "id" : "description",
+      "type" : "String",
+      "title" : "Description",
+			"title_de": "Beschreibung",
+      "value" : "",
+			"refToView": "text"
+		},{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"readonly": false,
+			"optional": false,
+			"refToView": "bg_frame",
+			"fill": false,
+			"stroke": true
 		},{
 			"id": "xf_filter",
 			"type": "ResourceSelector",
@@ -345,7 +352,7 @@
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"refToView": "text"
+			"refToView": ""
 		}],
 		"propertyPackages": ["geometry" ]
 	},
@@ -355,7 +362,6 @@
 		"title": "Auto. gen.Table",
 		"title_de": "Auto erz. Tabelle",
 		"groups": ["Controls"],
-		"description": "This form control allows the user to make single/multiple selections from a list.",
 		"view": "new_autogentable.svg",
 		"icon": "table.png",
 		"roles": ["core_form_controls", "controls_morph"],
@@ -417,21 +423,20 @@
 	},
 	{
 		"type": "node",
-		"id": "HeaderFooter",
-		"title": "Header/Footer",
-		"title_de": "Kopf/Fuss",
+		"id": "Row",
+		"title": "Row",
+		"title_de": "Reihe",
 		"groups": ["Containers"],
-		"description": "A container for defining a hierarchy of form controls.",
 		"view": "new_group.svg",
 		"icon": "new_group.png",
 		"roles": ["core_form_controls", "standard_container", "ui_common_container"],
 
 		"layout": [{
 			"type": "layout.rows",
-			"marginTop": 30,
-			"marginLeft": 30,
-			"spacingX": 30,
-			"spacingY": 30,
+			"marginTop": 20,
+			"marginLeft": 25,
+			"spacingX": 8,
+			"spacingY": 0,
 			"exclude": ["http://b3mn.org/stencilset/xforms#Label"]
 		},
 		{
@@ -444,36 +449,60 @@
 			"type": "String",
 			"title": "Id",
 			"prefix": "oryx",
+			"visible":false,
 			"value": "",
 			"description": "",
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
 			"length": "30"
-		},
-		{
-			"id": "xf_headerfooter",
+		},{
+      "id" : "description",
+      "type" : "String",
+      "title" : "Description",
+			"title_de": "Beschreibung",
+      "value" : "",
+			"refToView": "text"
+		},{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"readonly": false,
+			"optional": false,
+			"refToView": "bg_frame",
+			"fill": false,
+			"stroke": true
+		},{
+			"id": "xf_position",
 			"type": "Choice",
-			"title": "Header/Footer",
-			"title_de": "Kopf/Fuss",
+			"title": "Position",
+			"title_de": "Position",
 			"prefix": "oryx",
-			"value": "header",
+			"value": "body",
 			"readonly": false,
 			"optional": false,
 			"refToView": "",
 			"items": [{
 				"id": "c1",
+				"title": "Body",
+				"title_de": "Körper",
+				"value": "body",
+				"refToView": "body"
+			},{
+				"id": "c2",
 				"title": "Header",
 				"title_de": "Kopf",
 				"value": "header",
-				"refToView": ""
+				"refToView": "header"
 			},
 			{
-				"id": "c2",
+				"id": "c3",
 				"title": "Footer",
 				"title_de": "Fuss",
 				"value": "footer",
-				"refToView": ""
+				"refToView": "footer"
 			}]
 		},{
 			"id": "xf_pages",
