@@ -133,12 +133,12 @@
 		"hide": true,
 		"roles": ["standard_container"],
 
-		"xayout": [{
-			"type": "layout.rows",
-			"marginTop": 30,
+		"layout": [{
+			"type": "layout.vertical",
+			"marginTop": 10,
 			"marginLeft": 30,
 			"spacingX": 30,
-			"spacingY": 30
+			"spacingY": 10
 		}],
 		"properties": [{
 			"id": "xf_id",
@@ -313,7 +313,7 @@
 			"id": "db_table.cell.border.color",
 			"type": "Color",
 			"title": "Cellcolor",
-			"title_de": "Tabellenzellenfarbe",
+			"title_de": "Zellenrahmenfarbe",
 			"prefix": "oryx",
 			"value": "#777777",
 			"readonly": false,
@@ -333,7 +333,7 @@
 			"id": "db_table.cell.border.style",
 			"type": "Choice",
 			"title": "Tablecellestyle",
-			"title_de": "Tabllenzellenstyle",
+			"title_de": "Zellenrahmenstyle",
 			"prefix": "oryx",
 			"value": "solid",
 			"popular": false,
@@ -623,7 +623,7 @@
 		"groups": ["Containers"],
 		"view": "new_group.svg",
 		"icon": "new_group.png",
-		"roles": ["core_form_controls", "standard_container", "ui_common_container"],
+		"roles": ["additional_form_controls" ],
 
 		"layout": [{
 			"type": "layout.rows",
@@ -891,33 +891,13 @@
 	"rules": {
 		"containmentRules": [{
 			"role": "standard_container",
-			"contains": ["core_form_controls", "additional_form_controls"]
+			"contains": ["additional_form_controls"]
 		},
 		{
-			"role": "core_form_controls",
-			"contains": ["label", "ui_common", "action"]
-		},
-		{
-			"role": "labeled",
-			"contains": ["label"]
-		},
-		{
-			"role": "ui_common_container",
-			"contains": ["ui_common"]
-		},
-		{
-			"role": "actions_container",
-			"contains": ["action"]
-		},
-		{
-			"role": "list_ui_common_container",
-			"contains": ["list_ui_common"]
-		},
-		{
-			"role": "page_container",
-			"contains": ["page"]
+			"role": "additional_form_controls",
+			"contains": ["core_form_controls"]
 		}],
-		"morphingRules": [{
+		"xorphingRules": [{
 			"role": "controls_morph",
 			"baseMorphs": ["Input"]
 		},
