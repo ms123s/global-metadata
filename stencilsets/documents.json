@@ -59,9 +59,40 @@
 				"refToView": ""
 			}]
 		},{
-			"id": "xf_frame",
-			"title": "Frame",
-			"title_de": "Rahmen",
+			"id": "xf_valign",
+			"type": "Choice",
+			"title": "VAlignment",
+			"title_de": "VAusrichtung",
+			"prefix": "oryx",
+			"value": "top",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Top",
+				"title_de": "Open",
+				"value": "top",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "Middle",
+				"title_de": "Mitte",
+				"value": "middle",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "Bottom",
+				"title_de": "Unten",
+				"value": "bottom",
+				"refToView": ""
+			}]
+		},{
+			"id": "xf_colsep",
+			"title": "Colsep",
+			"title_de": "Spaltentrenner",
 			"type": "Boolean",
 			"value": false,
 			"popular": false,
@@ -533,6 +564,17 @@
 				"value": "all",
 				"refToView": ""
 			}]
+		},{
+			"id": "xf_colsep",
+			"type": "Boolean",
+			"title": "Colsep",
+			"title_de": "Spaltentrenner",
+			"prefix": "oryx",
+			"value": false,
+			"visible": false,
+			"readonly": false,
+			"optional": false,
+			"refToView": ""
 		},{
 			"id": "xf_frame",
 			"type": "Choice",
