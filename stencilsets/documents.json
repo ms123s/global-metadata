@@ -31,7 +31,7 @@
 			"id": "xf_align",
 			"type": "Choice",
 			"title": "Alignment",
-			"title_de": "Ausrichtung",
+			"title_de": "Hor.Ausrichtung",
 			"prefix": "oryx",
 			"value": "left",
 			"readonly": false,
@@ -62,7 +62,7 @@
 			"id": "xf_valign",
 			"type": "Choice",
 			"title": "VAlignment",
-			"title_de": "VAusrichtung",
+			"title_de": "Vert.Ausrichtung",
 			"prefix": "oryx",
 			"value": "top",
 			"readonly": false,
@@ -71,7 +71,7 @@
 			"items": [{
 				"id": "c1",
 				"title": "Top",
-				"title_de": "Open",
+				"title_de": "Oben",
 				"value": "top",
 				"refToView": ""
 			},
@@ -207,8 +207,7 @@
 			"readonly": false,
 			"optional": true,
 			"length": "50"
-		},
-		{
+		},{
 			"id": "db_region.after.extent",
 			"type": "String",
 			"title": "Texthöhe(unten)",
@@ -218,6 +217,170 @@
 			"readonly": false,
 			"optional": true,
 			"length": "50"
+		},{
+			"id": "db_page.margin.inner",
+			"type": "String",
+			"title": "Left margin",
+			"title_de": "Linker Rand",
+			"prefix": "oryx",
+			"value": "20mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_page.margin.outer",
+			"type": "String",
+			"title": "Right margin",
+			"title_de": "Rechter Rand",
+			"prefix": "oryx",
+			"value": "20mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_table.frame.border.color",
+			"type": "Color",
+			"title": "Framecolor",
+			"title_de": "Rahmenfarbe",
+			"prefix": "oryx",
+			"value": "#777777",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_table.frame.border.thickness",
+			"type": "String",
+			"title": "Framethickness",
+			"title_de": "Rahmenstärke",
+			"prefix": "oryx",
+			"value": "0.4pt",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_table.frame.border.style",
+			"type": "Choice",
+			"title": "Framestyle",
+			"title_de": "Rahmenstyle",
+			"prefix": "oryx",
+			"value": "solid",
+			"popular": false,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Solid",
+				"value": "solid",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "Dotted",
+				"value": "dotted",
+				"refToView": ""
+			},{
+				"id": "c3",
+				"title": "Dashed",
+				"value": "dashed",
+				"refToView": ""
+			},{
+				"id": "c4",
+				"title": "Double",
+				"value": "double",
+				"refToView": ""
+			},{
+				"id": "c5",
+				"title": "Ridge",
+				"value": "ridge",
+				"refToView": ""
+			},{
+				"id": "c6",
+				"title": "Groove",
+				"value": "groove",
+				"refToView": ""
+			},{
+				"id": "c7",
+				"title": "Outset",
+				"value": "outset",
+				"refToView": ""
+			},{
+				"id": "c8",
+				"title": "Inset",
+				"value": "inset",
+				"refToView": ""
+			} ]
+		},{
+			"id": "db_table.cell.border.color",
+			"type": "Color",
+			"title": "Cellcolor",
+			"title_de": "Tabellenzellenfarbe",
+			"prefix": "oryx",
+			"value": "#777777",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_table.cell.border.thickness",
+			"type": "String",
+			"title": "Cellthickness",
+			"title_de": "Zellenrahmenstärke",
+			"prefix": "oryx",
+			"value": "0.4pt",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_table.cell.border.style",
+			"type": "Choice",
+			"title": "Tablecellestyle",
+			"title_de": "Tabllenzellenstyle",
+			"prefix": "oryx",
+			"value": "solid",
+			"popular": false,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Solid",
+				"value": "solid",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "Dotted",
+				"value": "dotted",
+				"refToView": ""
+			},{
+				"id": "c3",
+				"title": "Dashed",
+				"value": "dashed",
+				"refToView": ""
+			},{
+				"id": "c4",
+				"title": "Double",
+				"value": "double",
+				"refToView": ""
+			},{
+				"id": "c5",
+				"title": "Ridge",
+				"value": "ridge",
+				"refToView": ""
+			},{
+				"id": "c6",
+				"title": "Groove",
+				"value": "groove",
+				"refToView": ""
+			},{
+				"id": "c7",
+				"title": "Outset",
+				"value": "outset",
+				"refToView": ""
+			},{
+				"id": "c8",
+				"title": "Inset",
+				"value": "inset",
+				"refToView": ""
+			} ]
 		},
 		{
 			"id": "db_paper.type",
@@ -539,7 +702,7 @@
 			"id": "xf_pages",
 			"type": "Choice",
 			"title": "Which page(s)",
-			"title_de": "Welche Seite(n)",
+			"title_de": "Auf Seite(n)/nur Kopf/Fuß",
 			"prefix": "oryx",
 			"value": "first",
 			"readonly": false,
@@ -588,7 +751,7 @@
 			"items": [{
 				"id": "c1",
 				"title": "All",
-				"title_de": "Alle Seiten",
+				"title_de": "Überall",
 				"value": "all",
 				"refToView": ""
 			},{
