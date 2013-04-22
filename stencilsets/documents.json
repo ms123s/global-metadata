@@ -533,6 +533,53 @@
 				"value": "all",
 				"refToView": ""
 			}]
+		},{
+			"id": "xf_frame",
+			"type": "Choice",
+			"title": "Frame",
+			"title_de": "Rahmen",
+			"prefix": "oryx",
+			"value": "none",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "All",
+				"title_de": "Alle Seiten",
+				"value": "all",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "None",
+				"title_de": "Keiner",
+				"value": "none",
+				"refToView": ""
+			},{
+				"id": "c3",
+				"title": "Bottom",
+				"title_de": "Nur unten",
+				"value": "bottom",
+				"refToView": ""
+			},{
+				"id": "c4",
+				"title": "Left ad right",
+				"title_de": "Links und Rechts",
+				"value": "sides",
+				"refToView": ""
+			},{
+				"id": "c5",
+				"title": "Oben",
+				"title_de": "Oben",
+				"value": "top",
+				"refToView": ""
+			},{
+				"id": "c6",
+				"title": "Top and bottom",
+				"title_de": "Oben und unten",
+				"value": "topbot",
+				"refToView": ""
+			}]
 		}]
 	},
 	{
