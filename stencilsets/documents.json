@@ -702,7 +702,7 @@
 			"id": "xf_pages",
 			"type": "Choice",
 			"title": "Which page(s)",
-			"title_de": "Auf Seite(n)/nur Kopf/Fuß",
+			"title_de": "Auf Seite(n)/nur bei Kopf/Fuß relevant",
 			"prefix": "oryx",
 			"value": "first",
 			"readonly": false,
@@ -711,7 +711,7 @@
 			"items": [{
 				"id": "c1",
 				"title": "First",
-				"title_de": "Erste",
+				"title_de": "Nur erste Seite",
 				"value": "first",
 				"refToView": ""
 			},{
@@ -785,8 +785,42 @@
 				"value": "topbot",
 				"refToView": ""
 			}]
-		}]
-	},
+		},{
+			"id": "xf_need",
+			"type": "String",
+			"title": "Need height",
+			"title_de": "Verlangte Höhe",
+			"prefix": "oryx",
+			"value": "",
+			"visible": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
+		},{
+			"id": "xf_keeptogether",
+			"type": "Choice",
+			"title": "Keep together",
+			"title_de": "Block zus. halten",
+			"prefix": "oryx",
+			"value": "none",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "No",
+				"title_de": "Nein",
+				"value": "none",
+				"refToView": ""
+			},{
+				"id": "c3",
+				"title": "Yes",
+				"title_de": "Ja",
+				"value": "always",
+				"refToView": ""
+			}]
+		 }
+	 ]},
 	{
 		"type": "node",
 		"id": "Tabview",
