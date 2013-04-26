@@ -99,6 +99,15 @@
 			"readonly": false,
 			"optional": false
 		},{
+			"id": "xf_enabled",
+			"title": "Enabled",
+			"title_de": "Verwenden",
+			"type": "Boolean",
+			"value": true,
+			"popular": true,
+			"readonly": false,
+			"optional": false
+		},{
 			"id": "xf_engine",
 			"type": "Choice",
 			"title": "Template",
@@ -184,6 +193,17 @@
 			"value": "20mm",
 			"readonly": false,
 			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "db_region.before.extent",
+			"type": "String",
+			"title": "page.margin.top",
+			"title_de": "Texthöhe(o.)",
+			"prefix": "oryx",
+			"value": "0mm",
+			"readonly": false,
+			"visible": false,
 			"length": "50"
 		},
 		{
@@ -650,6 +670,15 @@
 			"optional": true,
 			"refToView": "",
 			"length": "30"
+		},{
+			"id": "xf_enabled",
+			"title": "Enabled",
+			"title_de": "Verwenden",
+			"type": "Boolean",
+			"value": true,
+			"popular": true,
+			"readonly": false,
+			"optional": false
 		},{
       "id" : "description",
       "type" : "String",
