@@ -3629,5 +3629,17 @@
     {
         "msgid": "label1",
         "msgstr": "LabelXXXX"
+    },
+    {
+        "msgid": "data.form.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "data.form.saved",
+        "msgstr": "Daten gespeichert"
+    },
+    {
+        "msgid": "data.form.select",
+        "msgstr": "Auswählen"
     }
 ]

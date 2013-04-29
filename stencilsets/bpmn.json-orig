@@ -851,8 +851,8 @@
 				"optional": false
 			}, {
 				"id": "documentvar",
-				"name_de": "documentvariable",
-				"name": "Dokumentvariable",
+				"name": "documentvariable",
+				"name_de": "Dokumentvariable",
 				"type": "String",
 				"value": "",
 				"width": 150,
