@@ -3023,7 +3023,7 @@
         "msgstr": "Projekt"
     },
     {
-        "msgid": "table.confirm.delete",
+        "msgid": "composite.select_dialog.confirm_delete",
         "msgstr": "Ausgewählten Datensatz löschen?"
     },
     {
@@ -3641,5 +3641,17 @@
     {
         "msgid": "data.form.select",
         "msgstr": "Auswählen"
+    },
+    {
+        "msgid": "data.form.created",
+        "msgstr": "Datensatz erstellt"
+    },
+    {
+        "msgid": "entitytypes.databasescheme_clean",
+        "msgstr": "Databaseschema löschen"
+    },
+    {
+        "msgid": "entitytypes.databasescheme_clean.confirm",
+        "msgstr": "Das Schema wirklich löschen? <b>Alle Daten gehen verloren!</b>"
     }
 ]
