@@ -1020,6 +1020,16 @@
 			"length": "50"
 		},
 		{
+			"id": "el$activiti$filename",
+			"type": "String",
+			"title": "Filename",
+			"title_de": "Filename(ohne Pfad)",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
 			"id": "el$activiti$variablesmapping",
 			"type": "Complex",
 			"config": {"helperTree":["sw.form"]},
@@ -1139,6 +1149,16 @@
 			"readonly": false,
 			"optional": false,
 			"length": "50"
+		},
+		{
+			"id": "el$activiti$attachment",
+			"type": "String",
+			"title": "Attachment",
+			"title_de": "Anhang",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"length": "90"
 		},
 		{
 			"id": "el$activiti$text",
