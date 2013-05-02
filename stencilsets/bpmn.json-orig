@@ -10,6 +10,7 @@
       "type" : "String",
       "title" : "Id",
       "value" : "",
+			"visible":false,
       "description" : "Unique identifier of the element.",
       "popular" : true
     }]
@@ -109,7 +110,7 @@
 		}]
 	},
 	{
-		"name": "catchEventAttributes",
+		"name": "formAttributes",
 		"properties": [{
 			"id": "attr$activiti$formKey",
 			"type": "ResourceSelector",
@@ -122,22 +123,6 @@
 			"readonly": false,
 			"optional": true,
 			"length": "50"
-		}]
-	},
-	{
-		"name": "throwEventAttributes",
-		"properties": [{
-			"id": "datainputassociations",
-			"type": "String",
-			"title": "Data input associations",
-			"title_de": "Daten Eingangs-Assoziationen",
-			"value": "",
-			"description": "The data associations of the throw event. The data input association of a throw event is responsible for the assignment of a data element that is in scope of the event to the event data.",
-			"description_de": "Die Datenassoziationen für ein auslösendes Ereignis. Die Daten Eingangs-Assoziation eines auslösenden Ereignisses ordnet Datenelemente aus dem Anwendungsbereich des Ereignisses den Daten des Ereignisses zu.",
-			"readonly": false,
-			"optional": true,
-			"length": "",
-			"wrapLines": true
 		}]
 	},
 	{
@@ -389,14 +374,17 @@
 	},
 	{
     "name" : "callactivitybase",
-    "properties" : [ {
-      "id" : "callactivitycalledelement",
-      "type" : "String",
+    "properties" : [{
+			"id": "callactivitycalledelement",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.process","prefix":""},
       "title" : "Called element",
-      "value" : "",
+      "title_de" : "Name des ausz. Prozesses",
+			"value": "",
       "description" : "Process reference.",
       "popular" : true
-    }, {
+		},
+		{
       "id" : "callactivityinparameters",
       "type" : "Complex",
       "title" : "In parameters",
@@ -454,6 +442,31 @@
         "width" : 200,
         "optional" : false
       } ]
+    } ]
+  }, 
+	{
+    "name" : "timerdefinition",
+    "properties" : [ {
+      "id" : "timerdurationdefinition",
+      "type" : "String",
+      "title" : "Time duration (e.g. PT5M)",
+      "value" : "",
+      "description" : "Define the timer with a ISO-8601 duration.",
+      "popular" : true
+    }, {
+      "id" : "timerdatedefinition",
+      "type" : "String",
+      "title" : "Time date in ISO-8601",
+      "value" : "",
+      "description" : "Define the timer with a ISO-8601 date definition.",
+      "popular" : true
+    }, {
+      "id" : "timercycledefinition",
+      "type" : "String",
+      "title" : "Time cycle (e.g. R3/PT10H)",
+      "value" : "",
+      "description" : "Define the timer with a ISO-8601 cycle.",
+      "popular" : true
     } ]
   }, 
 	{
@@ -540,6 +553,7 @@
     "type" : "node",
     "id" : "SubProcess",
     "title" : "Sub process",
+    "title_de" : "Subprozess",
     "description" : "A sub process scope",
     "view" : "activity/subprocess.expanded.svg",
     "icon" : "activity/expanded.subprocess.png",
@@ -551,6 +565,7 @@
     "type" : "node",
     "id" : "EventSubProcess",
     "title" : "Event sub process",
+    "title_de" : "Ereignis Subprozess",
     "description" : "A event sub process scope",
     "view" : "activity/event.subprocess.svg",
     "icon" : "activity/event.subprocess.png",
@@ -562,9 +577,10 @@
     "type" : "node",
     "id" : "CallActivity",
     "title" : "Call activity",
+    "title_de" : "Aufruf (Sub-)Prozess",
     "description" : "A call activity",
     "view" : "activity/callactivity.svg",
-    "icon" : "activity/task.png",
+    "icon" : "activity/list/subprocess.png",
     "groups" : [ "Structural" ],
     "groups_de" : [ "Struktur" ],
     "propertyPackages" : [ "elementbase", "baseattributes", "callactivitybase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
@@ -580,7 +596,7 @@
 		"description": "A User Task is used to model work that needs to be done by a human actor. When the process execution arrives at such a user task, a new task is created in the task list of the user(s) or group(s) assigned to that task.",
     "view" : "activity/usertask.svg",
 		"icon": "activity/list/type.user.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end"],
+		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event"],
 		"properties": [{
 			"id": "attr$activiti$formHandlerClass",
 			"type": "String",
@@ -681,7 +697,7 @@
 		"description": "A Filter Task is a Task that generates a list uses an predefined filter.",
     "view" : "activity/filtertask.svg",
 		"icon": "activity/list/type.filter.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end"],
+		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event"],
 		"properties": [{
 			"id": "attr$activiti$class",
 			"type": "String",
@@ -767,7 +783,7 @@
 		"description": "A Rules Task is a Task that executes a rules.",
     "view" : "activity/businessruletask.svg",
 		"icon": "activity/list/type.business.rule.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end"],
+		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event"],
 		"properties": [{
 			"id": "attr$activiti$class",
 			"type": "String",
@@ -860,7 +876,7 @@
 		"description": "A Script Task is executed by a business process engine. The modeler or implementer defines a script in a language that the engine can interpret. When the Task is ready to start, the engine will execute the script. When the script is completed, the Task will also be completed.",
     "view" : "activity/scripttask.svg",
 		"icon": "activity/list/type.script.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end"],
+		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event"],
 		"properties": [{
 			"id": "bordercolor",
 			"type": "Color",
@@ -918,7 +934,7 @@
 		"description": "A Document Task is a Task that generates document.",
     "view" : "activity/documenttask.svg",
 		"icon": "activity/list/type.document.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end"],
+		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event"],
 		"properties": [{
 			"id": "attr$activiti$class",
 			"type": "String",
@@ -1002,7 +1018,7 @@
 		"description": "A Send Task is a simple Task that is designed to send a Message to an external Participant (relative to the Process). Once the Message has been sent, the Task is completed.",
     "view" : "activity/sendtask.svg",
 		"icon": "activity/list/type.send.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end"],
+		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event"],
 		"properties": [{
 			"id": "attr$activiti$type",
 			"type": "String",
@@ -1257,7 +1273,7 @@
 		"description_de": "Hier beginnt der normale Prozessfluss durch eine nicht näher beschriebene Auslösebedingung.",
 		"view": "startevent/none.svg",
 		"icon": "startevent/none.png",
-		"propertyPackages": ["baseAttributes", "catchEventAttributes", "bgColor", "borderColor", "processid"],
+		"propertyPackages": ["baseAttributes", "formAttributes", "bgColor", "borderColor", "processid"],
 		"roles": ["all", "Startevents_all", "sequence_start", "to_task_event", "from_task_event", "StartEventsMorph"],
 		"properties": [{
 			"id": "trigger",
@@ -1278,46 +1294,31 @@
 		}]
 	},
 	{
-		"type": "node",
-		"id": "IntermediateTimerEvent",
-		"title": "Intermediate Timer Event",
-		"title_de": "Zeit-Zwischenereignis",
-		"groups": ["Events"],
-		"groups_de": ["Ereignisse"],
-		"description": "Process execution is delayed until a certain point in time is reached or a particular duration is over.",
-		"description_de": "Im Laufe der Prozessausführung muss für eine festgelegte Dauer bzw. auf das Eintreten eines Zeitpunktes gewartet werden, bis die Ausführung fortgesetzt wird.",
-		"view": "catching/timer.svg",
-		"icon": "catching/timer.png",
-		"propertyPackages": ["baseAttributes", "boundaryevent", "timer", "bgColor"],
-		"roles": ["all", "sequence_start", "sequence_end", "to_task_event", "from_task_event",  "FromEventbasedGateway", "IntermediateEventOnSubprocessBoundary", "IntermediateEventOnActivityBoundary", "EventOnChoreographyActivityBoundary", "IntermediateEventsMorph"],
-		"properties": [{
-			"id": "trigger",
-			"type": "String",
-			"title": "Trigger",
-			"title_de": "Auslöser",
-			"value": "Timer",
-			"description": "The trigger for the intermediate event, depending on the event type.",
-			"description_de": "Der Auslöser für das Zwischenereignis. Er hängt vom Typ des Zwischenereignisses ab.",
-			"visible": false,
-			"optional": false,
-			"refToView": "",
-			"length": ""
-		},
-		{
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"description": "Change the border color for a visual differentiation.",
-			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": ["bg_frame", "frame", "frame2", "circle", "path1", "frame2_non_interrupting"],
-			"fill": false,
-			"stroke": true
-		}]
-	},
+    "type" : "node",
+    "id" : "StartTimerEvent",
+    "title" : "Start timer event",
+    "title_de" : "Start timer Ereignis",
+    "description" : "A start event with a timer trigger",
+    "view" : "startevent/timer.svg",
+    "icon" : "startevent/timer.png",
+    "groups" : [ "Events" ],
+    "groups_de" : [ "Ereignisse" ],
+    "propertyPackages" : [ "borderColor", "elementbase", "baseattributes", "timerdefinition", "executionlistenersbase" ],
+    "roles" : [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ]
+  }, 
+	{
+    "type" : "node",
+    "id" : "CatchTimerEvent",
+    "title" : "Intermediate timer catching event",
+    "title_de" : "Timer Zwischenereignis",
+    "description" : "An intermediate catching event with a timer trigger",
+    "view" : "intermediateevent/timer.svg",
+    "icon" : "catching/timer.png",
+    "groups" : [ "Events" ],
+    "groups_de" : [ "Ereignisse" ],
+    "propertyPackages" : [ "borderColor", "elementbase", "baseattributes", "timerdefinition", "executionlistenersbase" ],
+    "roles" : [ "sequence_start", "sequence_end", "CatchEventsMorph", "all" ]
+  }, 
 	{
 		"type": "node",
 		"id": "EndNoneEvent",
@@ -1329,8 +1330,8 @@
 		"description_de": "Untypisiertes Endereignis, welches ein normales Ende eines Prozesses markiert.",
 		"view": "endevent/none.svg",
 		"icon": "endevent/none.png",
-		"propertyPackages": ["baseAttributes", "throwEventAttributes", "bgColor", "borderColor"],
-		"roles": ["all", "sequence_end", "to_task_event", "from_task_event", "choreography_sequence_end", "Endevents_all", "EndEventsMorph"],
+		"propertyPackages": ["baseAttributes", "bgColor", "borderColor"],
+		"roles": ["all", "sequence_end", "to_task_event", "from_task_event", "Endevents_all", "EndEventsMorph"],
 		"properties": [{
 			"id": "trigger",
 			"type": "String",
