@@ -113,7 +113,7 @@
 			"title": "Template",
 			"title_de": "Template",
 			"prefix": "oryx",
-			"value": "st",
+			"value": "groovy",
 			"readonly": false,
 			"optional": false,
 			"refToView": "",

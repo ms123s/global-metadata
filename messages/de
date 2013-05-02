@@ -3653,5 +3653,93 @@
     {
         "msgid": "entitytypes.databasescheme_clean.confirm",
         "msgstr": "Das Schema wirklich löschen? <b>Alle Daten gehen verloren!</b>"
+    },
+    {
+        "msgid": "shell.process_saved",
+        "msgstr": "Prozess gespeichert"
+    },
+    {
+        "msgid": "shell.filter_saved",
+        "msgstr": "Filter gespeichert"
+    },
+    {
+        "msgid": "shell.document_saved",
+        "msgstr": "Dokument gespeichert"
+    },
+    {
+        "msgid": "shell.copy_node",
+        "msgstr": "Kopieren"
+    },
+    {
+        "msgid": "shell.rename_node",
+        "msgstr": "Verschieben"
+    },
+    {
+        "msgid": "shell.copy_to",
+        "msgstr": "kopiere nach"
+    },
+    {
+        "msgid": "shell.copy_ready",
+        "msgstr": "Datei kopiert"
+    },
+    {
+        "msgid": "shell.copy_failed",
+        "msgstr": "Kopieren fehlgeschlagen"
+    },
+    {
+        "msgid": "shell.confirm_delete",
+        "msgstr": "Die Datei  löschen?"
+    },
+    {
+        "msgid": "shell.node_deleted",
+        "msgstr": "Datei gelöscht"
+    },
+    {
+        "msgid": "shell.move_to",
+        "msgstr": "verschieben nach"
+    },
+    {
+        "msgid": "shell.dest_filename",
+        "msgstr": "Zieldateiname"
+    },
+    {
+        "msgid": "shell.move_ready",
+        "msgstr": "Datei verschoben"
+    },
+    {
+        "msgid": "shell.file_create_failed",
+        "msgstr": "Dateierstellung ist fehlgeschlagen"
+    },
+    {
+        "msgid": "shell.directory_created",
+        "msgstr": "Verzeichnis erstellt"
+    },
+    {
+        "msgid": "shell.file_created",
+        "msgstr": "Datei erstellt"
+    },
+    {
+        "msgid": "messages.new_messageslang",
+        "msgstr": "Neue Sprache"
+    },
+    {
+        "msgid": "enumerations.new_enum",
+        "msgstr": "Neue Aufzählung"
+    },
+    {
+        "msgid": "shell.asset_exists",
+        "msgstr": "bereits vergeben"
+    },
+    {
+        "msgid": "shell.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "shell.for",
+        "msgstr": "für"
+    },
+    {
+        "msgid": "Cancel",
+        "msgstr": "Abbruch"
     }
 ]
