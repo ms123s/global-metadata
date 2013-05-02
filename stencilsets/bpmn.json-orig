@@ -379,10 +379,10 @@
 			"type": "ResourceSelector",
 			"config": {"type":"sw.process","prefix":""},
       "title" : "Called element",
-      "title_de" : "Name des ausz. Prozesses",
+      "title_de" : "Name des Prozesses",
 			"value": "",
       "description" : "Process reference.",
-      "popular" : true
+      "popular" : false
 		},
 		{
       "id" : "callactivityinparameters",
@@ -391,7 +391,7 @@
       "title_de" : "Eingabeparameter",
       "value" : "",
       "description" : "Definition of the input parameters",
-      "popular" : true,
+      "popular" : false,
       "complexItems" : [ {
         "id" : "ioparameter_source",
         "name" : "Source",
@@ -424,7 +424,7 @@
       "title_de" : "Ausgabeparameter",
       "value" : "",
       "description" : "Definition of the output parameters",
-      "popular" : true,
+      "popular" : false,
       "complexItems" : [ {
         "id" : "ioparameter_source",
         "name" : "Source",
@@ -566,9 +566,22 @@
 	},
 	{
     "type" : "node",
+    "id" : "CallActivity",
+    "title" : "Call activity",
+    "title_de" : "Aufruf Prozess",
+    "description" : "A call activity",
+    "view" : "activity/callactivity.svg",
+    "icon" : "activity/list/subprocess.png",
+    "groups" : [ "Structural" ],
+    "groups_de" : [ "Struktur" ],
+    "propertyPackages" : [ "bgColor","borderColor", "elementbase", "baseattributes", "callactivitybase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
+  }, 
+	{
+    "type" : "node",
     "id" : "SubProcess",
     "title" : "Sub process",
-    "title_de" : "Subprozess",
+    "title_de" : "Subprozess(eingebettet)",
     "description" : "A sub process scope",
     "view" : "activity/subprocess.expanded.svg",
     "icon" : "activity/expanded.subprocess.png",
@@ -576,7 +589,8 @@
     "groups_de" : [ "Struktur" ],
     "propertyPackages" : [ "elementbase", "baseattributes", "asynchronousbase", "executionlistenersbase", "loopcharacteristics" ],
     "roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
-  }, {
+  }, 
+	{
     "type" : "node",
     "id" : "EventSubProcess",
     "title" : "Event sub process",
@@ -587,19 +601,7 @@
     "groups" : [ "Structural" ],
     "groups_de" : [ "Struktur" ],
     "propertyPackages" : [ "elementbase", "baseattributes", "asynchronousbase", "executionlistenersbase" ],
-    "roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
-  }, {
-    "type" : "node",
-    "id" : "CallActivity",
-    "title" : "Call activity",
-    "title_de" : "Aufruf (Sub-)Prozess",
-    "description" : "A call activity",
-    "view" : "activity/callactivity.svg",
-    "icon" : "activity/list/subprocess.png",
-    "groups" : [ "Structural" ],
-    "groups_de" : [ "Struktur" ],
-    "propertyPackages" : [ "elementbase", "baseattributes", "callactivitybase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
-    "roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
+    "_roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
   }, 
 	{
 		"type": "node",
