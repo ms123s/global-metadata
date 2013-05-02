@@ -574,7 +574,7 @@
     "icon" : "activity/list/subprocess.png",
     "groups" : [ "Structural" ],
     "groups_de" : [ "Struktur" ],
-    "propertyPackages" : [ "bgColor","borderColor", "elementbase", "baseattributes", "callactivitybase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor","borderColor", "callactivitybase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
     "roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
   }, 
 	{
@@ -587,7 +587,7 @@
     "icon" : "activity/expanded.subprocess.png",
     "groups" : [ "Structural" ],
     "groups_de" : [ "Struktur" ],
-    "propertyPackages" : [ "elementbase", "baseattributes", "asynchronousbase", "executionlistenersbase", "loopcharacteristics" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics" ],
     "roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
   }, 
 	{
@@ -600,7 +600,7 @@
     "icon" : "activity/event.subprocess.png",
     "groups" : [ "Structural" ],
     "groups_de" : [ "Struktur" ],
-    "propertyPackages" : [ "elementbase", "baseattributes", "asynchronousbase", "executionlistenersbase" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase" ],
     "_roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
   }, 
 	{
