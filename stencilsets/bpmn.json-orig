@@ -388,12 +388,14 @@
       "id" : "callactivityinparameters",
       "type" : "Complex",
       "title" : "In parameters",
+      "title_de" : "Eingabeparameter",
       "value" : "",
       "description" : "Definition of the input parameters",
       "popular" : true,
       "complexItems" : [ {
         "id" : "ioparameter_source",
         "name" : "Source",
+        "name_de" : "Quellvariable",
         "type" : "String",
         "value" : "",
         "width" : 200,
@@ -401,6 +403,7 @@
       }, {
         "id" : "ioparameter_sourceexpression",
         "name" : "Source expression",
+        "name_de" : "Quellenausdruck",
         "type" : "String",
         "value" : "",
         "width" : 200,
@@ -408,6 +411,7 @@
       }, {
         "id" : "ioparameter_target",
         "name" : "Target",
+        "name_de" : "Zielvariable",
         "type" : "String",
         "value" : "",
         "width" : 200,
@@ -417,12 +421,14 @@
       "id" : "callactivityoutparameters",
       "type" : "Complex",
       "title" : "Out parameters",
+      "title_de" : "Ausgabeparameter",
       "value" : "",
       "description" : "Definition of the output parameters",
       "popular" : true,
       "complexItems" : [ {
         "id" : "ioparameter_source",
         "name" : "Source",
+        "name_de" : "Quellvariable",
         "type" : "String",
         "value" : "",
         "width" : 200,
@@ -430,6 +436,7 @@
       }, {
         "id" : "ioparameter_sourceexpression",
         "name" : "Source expression",
+        "name_de" : "Quellenausdruck",
         "type" : "String",
         "value" : "",
         "width" : 200,
@@ -437,6 +444,7 @@
       }, {
         "id" : "ioparameter_target",
         "name" : "Target",
+        "name_de" : "Zielvariable",
         "type" : "String",
         "value" : "",
         "width" : 200,
