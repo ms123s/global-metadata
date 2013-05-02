@@ -29,7 +29,7 @@
     <text font-size="12" id="text_name" x="50" y="40" oryx:align="middle center" oryx:fittoelem="text_frame" stroke="black"></text>
     <g id="serviceTask" transform="scale(0.7,0.7) translate(8,8)">
     <g id="header" transform="scale(1,1)">
-      <foreignObject x="2" y="3" width="28" height="40">
+      <foreignObject x="2" y="-2" width="28" height="40">
         <div xmlns="http://www.w3.org/1999/xhtml" style="xisplay:none;background:white;border:solid 1px #111111;margin:0px;font-size:8px;font-family:Helvetica;color:#000000;">
           <table cellpadding="1" style="font-size:3pt;border:none;border-collapse:collapse;width:50%;">
             <tr>

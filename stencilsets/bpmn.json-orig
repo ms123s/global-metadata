@@ -4,6 +4,17 @@
 	"description": "This is the BPMN 2.0 stencil set specification.",
 	"description_de": "Dies ist die BPMN 2.0 Stencilset Spezifikation.",
 	"propertyPackages": [{
+    "name" : "elementbase",
+    "properties" : [ {
+      "id" : "overrideid",
+      "type" : "String",
+      "title" : "Id",
+      "value" : "",
+      "description" : "Unique identifier of the element.",
+      "popular" : true
+    }]
+    }, 
+		{
 		"name": "baseAttributes",
 		"properties": [{
 			"id": "name",
@@ -267,61 +278,6 @@
 		}]
 	},
 	{
-		"name" : "subprocess",
-		"properties" : [
-			{
-				"id": "subprocesstype",
-				"type": "Choice",
-				"title": "subProcessType",
-				"title_de":"Subprozesstyp",
-				"value": "Embedded",
-				"description": "SubProcessType is an attribute that defines whether the Sub-Process details are embedded within the higher level Process or refers to another, re-usable Process. The default is Embedded.",
-				"description_de":"Der Subprozesstyp gibt an, ob die Subprozessdetails in einen übergeordneten Prozess eingebettet sind oder auf einen anderen wiederverwendbaren Prozess verweisen.",
-				"optional": false,
-				"refToView": "",
-				"items": [
-					{
-						"id": "choice1",
-						"title":"Embedded",
-						"value":"Embedded"
-					},
-					{
-						"id": "choice2",
-						"title": "Independent",
-						"value": "Independent"
-					},
-					{
-						"id": "choice3",
-						"title": "Reference",
-						"value": "Reference"
-					}
-				]
-			},
-			{
-				"id":"inputmaps",
-				"type":"String",
-				"title":"InputMaps",
-				"title_de":"Eingabe-Mengen",
-				"value":"",
-				"description":"",
-				"readonly":false,
-				"optional":false,
-				"refToView":""
-			},
-			{
-				"id":"outputmaps",
-				"type":"String",
-				"title":"OutputMaps",
-				"title_de":"Ausgabe-Mengen",
-				"value":"",
-				"description":"",
-				"readonly":false,
-				"optional":false,
-				"refToView":""
-			}
-		]
-	},
-	{
 		"name": "loopcharacteristics",
 		"properties": [{
 			"id": "looptype",
@@ -432,6 +388,75 @@
     }]
 	},
 	{
+    "name" : "callactivitybase",
+    "properties" : [ {
+      "id" : "callactivitycalledelement",
+      "type" : "String",
+      "title" : "Called element",
+      "value" : "",
+      "description" : "Process reference.",
+      "popular" : true
+    }, {
+      "id" : "callactivityinparameters",
+      "type" : "Complex",
+      "title" : "In parameters",
+      "value" : "",
+      "description" : "Definition of the input parameters",
+      "popular" : true,
+      "complexItems" : [ {
+        "id" : "ioparameter_source",
+        "name" : "Source",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      }, {
+        "id" : "ioparameter_sourceexpression",
+        "name" : "Source expression",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      }, {
+        "id" : "ioparameter_target",
+        "name" : "Target",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      } ]
+    }, {
+      "id" : "callactivityoutparameters",
+      "type" : "Complex",
+      "title" : "Out parameters",
+      "value" : "",
+      "description" : "Definition of the output parameters",
+      "popular" : true,
+      "complexItems" : [ {
+        "id" : "ioparameter_source",
+        "name" : "Source",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      }, {
+        "id" : "ioparameter_sourceexpression",
+        "name" : "Source expression",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      }, {
+        "id" : "ioparameter_target",
+        "name" : "Target",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      } ]
+    } ]
+  }, 
+	{
     "name" : "sequenceflowbase",
     "properties" : [{
       "id" : "defaultflow",
@@ -512,139 +537,39 @@
 		}]
 	},
 	{
-		"type" : 			"node",
-		"id" :				"CollapsedSubprocess",
-		"title" : 			"Collapsed Subprocess",
-		"title_de" :		"Zugeklappter Unterprozess",
-		"groups" :			["Activities"],
-		"groups_de" :		["Aktivitäten"],
-		"description" :		"A subprocess is a decomposable activity. It can be linked to another process diagram.",
-		"description_de" :	"Ein Unterprozess ist eine verfeinerbare Aktivität. Er kann mit einem anderen Prozessdiagramm verlinkt werden.",
-		"view" :			"activity/subprocess.collapsed.svg",
-		"icon" :			"activity/subprocess.png",
-		"propertyPackages" :[
-			"baseAttributes",
-			"activity",
-			"subprocess",
-			"loopcharacteristics",
-			"bgColor",
-			"properties",
-			"iospecification"
-		],
-		"properties" :		[
-			{
-				"id":"activitytype",
-				"type":"String",
-				"title":"ActivityType",
-				"title_de":"Aktivitätstyp",
-				"value":"Sub-Process",
-				"value_de":"Unterprozess",
-				"description":"The Type of Activity.",
-				"description_de":"Typ der Aktivität",
-				"readonly":true,
-				"optional":false,
-				"length":""
-			},
-			{
-				"id":"bgcolor",
-				"type":"Color",
-				"title":"BackgroundColor",
-				"title_de":"Hintergrundfarbe",
-				"value":"#ffffcc",
-				"description":"",
-				"readonly":false,
-				"optional":false,
-				"refToView":"fill_el",
-				"fill":true,
-				"stroke":false
-			}	
-		],
-		"roles": 			[
-			"all",
-			"sequence_start",
-			"sequence_end",
-			"messageflow_start",
-			"messageflow_end",
-			"to_task_event",
-			"from_task_event",
-			"fromtoall",
-			"ActivitiesMorph"
-		]
-	},
-	{
-		"type" : 			"node",
-		"id" :				"Subprocess",
-		"title" :			"Expanded Subprocess",
-		"title_de" :		"Aufgeklappter Unterprozess",
-		"groups" :			["Activities"],
-		"groups_de" :		["Aktivitäten"],
-		"description" :		"A subprocess is a decomposable activity. An expanded subprocess contains a valid BPMN diagram.",
-		"description_de" :	"Ein Unterprozess ist eine verfeinerte Aktivität. Ein aufgeklappter Unterprozess enthält in sich ein eigenes BPMN Diagramm, welches direkt innerhalb modelliert wird.",
-		"view" :			"activity/subprocess.expanded.svg",
-		"icon" :			"activity/expanded.subprocess.png",
-		"layout" : 			[
-								{"type" : "layout.bpmn2_0.subprocess"},
-								{"type" : "layout.container.dockers"},
-								{
-									"type" : "layout.container.minBounds",
-									"options" : {
-										"fixedX" : true,
-										"ignoreChildsWithId" : [
-											"http://b3mn.org/stencilset/bpmn2.0#Lane",
-											"http://b3mn.org/stencilset/bpmn2.0#StartNoneEvent"
-										]
-									}
-								}
-							],
-		"propertyPackages" :[
-			"baseAttributes",
-			"activity",
-			"subprocess",
-			"loopcharacteristics",
-			"properties",
-			"iospecification"
-		],
-		"properties" :		[
-			{
-				"id":"activitytype",
-				"type":"String",
-				"title":"ActivityType",
-				"title_de":"Aktivitätstyp",
-				"value":"Sub-Process",
-				"value_de":"Unterprozess",
-				"description":"The Type of Activity.",
-				"description_de":"Typ der Aktivität",
-				"readonly":true,
-				"optional":false,
-				"length":""
-			},
-			{
-				"id":"bgcolor",
-				"type":"Color",
-				"title":"BackgroundColor",
-				"title_de":"Hintergrundfarbe",
-				"value":"#ffffff",
-				"description":"",
-				"readonly":false,
-				"optional":false,
-				"refToView":"fill_el",
-				"fill":true,
-				"stroke":false
-			}	
-		],
-		"roles"	:			[
-			"all",
-			"sequence_start",
-			"sequence_end",
-			"messageflow_start",
-			"messageflow_end",
-			"to_task_event",
-			"from_task_event",
-			"fromtoall",
-			"canContainArtifacts",
-			"ActivitiesMorph"
-		]
-	},
+    "type" : "node",
+    "id" : "SubProcess",
+    "title" : "Sub process",
+    "description" : "A sub process scope",
+    "view" : "activity/subprocess.expanded.svg",
+    "icon" : "activity/expanded.subprocess.png",
+    "groups" : [ "Structural" ],
+    "groups_de" : [ "Struktur" ],
+    "propertyPackages" : [ "elementbase", "baseattributes", "asynchronousbase", "executionlistenersbase", "loopcharacteristics" ],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
+  }, {
+    "type" : "node",
+    "id" : "EventSubProcess",
+    "title" : "Event sub process",
+    "description" : "A event sub process scope",
+    "view" : "activity/event.subprocess.svg",
+    "icon" : "activity/event.subprocess.png",
+    "groups" : [ "Structural" ],
+    "groups_de" : [ "Struktur" ],
+    "propertyPackages" : [ "elementbase", "baseattributes", "asynchronousbase", "executionlistenersbase" ],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
+  }, {
+    "type" : "node",
+    "id" : "CallActivity",
+    "title" : "Call activity",
+    "description" : "A call activity",
+    "view" : "activity/callactivity.svg",
+    "icon" : "activity/task.png",
+    "groups" : [ "Structural" ],
+    "groups_de" : [ "Struktur" ],
+    "propertyPackages" : [ "elementbase", "baseattributes", "callactivitybase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
+  }, 
 	{
 		"type": "node",
 		"id": "UserTask",
@@ -655,7 +580,7 @@
 		"description": "A User Task is used to model work that needs to be done by a human actor. When the process execution arrives at such a user task, a new task is created in the task list of the user(s) or group(s) assigned to that task.",
     "view" : "activity/usertask.svg",
 		"icon": "activity/list/type.user.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end", "fromtoall"],
+		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end"],
 		"properties": [{
 			"id": "attr$activiti$formHandlerClass",
 			"type": "String",
@@ -756,7 +681,7 @@
 		"description": "A Filter Task is a Task that generates a list uses an predefined filter.",
     "view" : "activity/filtertask.svg",
 		"icon": "activity/list/type.filter.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end", "fromtoall"],
+		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end"],
 		"properties": [{
 			"id": "attr$activiti$class",
 			"type": "String",
@@ -842,7 +767,7 @@
 		"description": "A Rules Task is a Task that executes a rules.",
     "view" : "activity/businessruletask.svg",
 		"icon": "activity/list/type.business.rule.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end", "fromtoall"],
+		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end"],
 		"properties": [{
 			"id": "attr$activiti$class",
 			"type": "String",
@@ -935,7 +860,7 @@
 		"description": "A Script Task is executed by a business process engine. The modeler or implementer defines a script in a language that the engine can interpret. When the Task is ready to start, the engine will execute the script. When the script is completed, the Task will also be completed.",
     "view" : "activity/scripttask.svg",
 		"icon": "activity/list/type.script.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end", "fromtoall"],
+		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end"],
 		"properties": [{
 			"id": "bordercolor",
 			"type": "Color",
@@ -993,7 +918,7 @@
 		"description": "A Document Task is a Task that generates document.",
     "view" : "activity/documenttask.svg",
 		"icon": "activity/list/type.document.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end", "fromtoall"],
+		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end"],
 		"properties": [{
 			"id": "attr$activiti$class",
 			"type": "String",
@@ -1077,7 +1002,7 @@
 		"description": "A Send Task is a simple Task that is designed to send a Message to an external Participant (relative to the Process). Once the Message has been sent, the Task is completed.",
     "view" : "activity/sendtask.svg",
 		"icon": "activity/list/type.send.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end", "fromtoall"],
+		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event", "FromEventbasedGateway", "messageflow_start", "messageflow_end"],
 		"properties": [{
 			"id": "attr$activiti$type",
 			"type": "String",
@@ -1241,7 +1166,7 @@
 			"fill": false,
 			"stroke": true
 		}],
-		"roles": ["all", "sequence_start", "sequence_end", "choreography_sequence_start", "choreography_sequence_end", "fromtoall", "GatewaysMorph"]
+		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
 	},
 	{
 		"type": "node",
@@ -1280,7 +1205,7 @@
 			"fill": false,
 			"stroke": true
 		}],
-		"roles": ["all", "sequence_start", "sequence_end", "choreography_sequence_start", "choreography_sequence_end", "fromtoall", "GatewaysMorph"]
+		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
 	},
 	{
 		"type": "node",
@@ -1319,82 +1244,21 @@
 			"fill": false,
 			"stroke": true
 		}],
-		"roles": ["all", "sequence_start", "sequence_end", "choreography_sequence_start", "choreography_sequence_end", "fromtoall", "GatewaysMorph"]
-	},
-	{
-		"type": "node",
-		"id": "TextAnnotation",
-		"title": "Text Annotation",
-		"title_de": "Textanmerkung",
-		"groups": ["Artifacts"],
-		"groups_de": ["Artefakte"],
-		"description": "Any object can be associated with a text annotation to provide additional documentation.",
-		"description_de": "Jedes Objekt kann durch eine Text-Anmerkung kommentiert werden.",
-		"view": "artifact/text.annotation.svg",
-		"icon": "artifact/text.annotation.png",
-		"defaultAlign": [{
-			"align": "northeast"
-		},
-		{
-			"orientation": "vertical",
-			"align": "southeast"
-		}],
-		"propertyPackages": ["baseAttributes"],
-		"properties": [{
-			"id": "text",
-			"type": "String",
-			"title": "Text",
-			"value": "",
-			"description": "The annotating text.",
-			"description_de": "Der kommentierende Text.",
-			"readonly": false,
-			"optional": true,
-			"refToView": "text",
-			"length": "",
-			"wrapLines": true
-		},
-		{
-			"id": "textformat",
-			"type": "String",
-			"title": "Text format",
-			"title_de": "Textformat",
-			"popular": true,
-			"value": "text/plain",
-			"description": "This attribute identifies the format of the text. It must follow the mimetype format.",
-			"description_de": "Dieses Attribut definiert das Format des Textes (MIME-Typ).",
-			"visible": false,
-			"optional": false,
-			"length": ""
-		},
-		{
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"description": "Change the border color for a visual differentiation.",
-			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": ["frame"],
-			"fill": false,
-			"stroke": true
-		}],
-		"roles": ["all", "from_artifact", "to_artifact", "TextAnnotationMorph"]
+		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
 	},
 	{
 		"type": "node",
 		"id": "StartNoneEvent",
 		"title": "Start Event",
 		"title_de": "Startereignis",
-		"groups": ["Start Events"],
-		"groups_de": ["Startereignisse"],
+		"groups": ["Events"],
+		"groups_de": ["Ereignisse"],
 		"description": "Untyped start event.",
 		"description_de": "Hier beginnt der normale Prozessfluss durch eine nicht näher beschriebene Auslösebedingung.",
 		"view": "startevent/none.svg",
 		"icon": "startevent/none.png",
 		"propertyPackages": ["baseAttributes", "catchEventAttributes", "bgColor", "borderColor", "processid"],
-		"roles": ["all", "Startevents_all", "sequence_start", "choreography_sequence_start", "to_task_event", "from_task_event", "fromtoall", "StartEventsMorph"],
+		"roles": ["all", "Startevents_all", "sequence_start", "to_task_event", "from_task_event", "StartEventsMorph"],
 		"properties": [{
 			"id": "trigger",
 			"type": "String",
@@ -1418,14 +1282,14 @@
 		"id": "IntermediateTimerEvent",
 		"title": "Intermediate Timer Event",
 		"title_de": "Zeit-Zwischenereignis",
-		"groups": ["Catching Intermediate Events"],
-		"groups_de": ["Zwischenereignisse (eintretend)"],
+		"groups": ["Events"],
+		"groups_de": ["Ereignisse"],
 		"description": "Process execution is delayed until a certain point in time is reached or a particular duration is over.",
 		"description_de": "Im Laufe der Prozessausführung muss für eine festgelegte Dauer bzw. auf das Eintreten eines Zeitpunktes gewartet werden, bis die Ausführung fortgesetzt wird.",
 		"view": "catching/timer.svg",
 		"icon": "catching/timer.png",
 		"propertyPackages": ["baseAttributes", "boundaryevent", "timer", "bgColor"],
-		"roles": ["all", "sequence_start", "sequence_end", "to_task_event", "from_task_event", "fromtoall", "choreography_sequence_start", "choreography_sequence_end", "FromEventbasedGateway", "IntermediateEventOnSubprocessBoundary", "IntermediateEventOnActivityBoundary", "EventOnChoreographyActivityBoundary", "IntermediateEventsMorph"],
+		"roles": ["all", "sequence_start", "sequence_end", "to_task_event", "from_task_event",  "FromEventbasedGateway", "IntermediateEventOnSubprocessBoundary", "IntermediateEventOnActivityBoundary", "EventOnChoreographyActivityBoundary", "IntermediateEventsMorph"],
 		"properties": [{
 			"id": "trigger",
 			"type": "String",
@@ -1459,14 +1323,14 @@
 		"id": "EndNoneEvent",
 		"title": "End Event",
 		"title_de": "Endereignis",
-		"groups": ["End Events"],
-		"groups_de": ["Endereignisse"],
+		"groups": ["Events"],
+		"groups_de": ["Ereignisse"],
 		"description": "The untyped end event typically marks the standard end of a process.",
 		"description_de": "Untypisiertes Endereignis, welches ein normales Ende eines Prozesses markiert.",
 		"view": "endevent/none.svg",
 		"icon": "endevent/none.png",
 		"propertyPackages": ["baseAttributes", "throwEventAttributes", "bgColor", "borderColor"],
-		"roles": ["all", "sequence_end", "to_task_event", "from_task_event", "fromtoall", "choreography_sequence_end", "Endevents_all", "EndEventsMorph"],
+		"roles": ["all", "sequence_end", "to_task_event", "from_task_event", "choreography_sequence_end", "Endevents_all", "EndEventsMorph"],
 		"properties": [{
 			"id": "trigger",
 			"type": "String",
@@ -1494,7 +1358,7 @@
 		"layout": [{
 			"type": "layout.bpmn2_0.sequenceflow"
 		}],
-		"roles": ["all", "ConnectingObjectsMorph", "fromtoall"],
+		"roles": ["all", "ConnectingObjectsMorph"],
 		"properties": [{
 			"id": "bordercolor",
 			"type": "Color",
@@ -1511,694 +1375,139 @@
 		}]
 	},
 	{
-		"type": "edge",
-		"id": "Association_Undirected",
-		"title": "Association (undirected)",
-		"title_de": "Ungerichtete Assoziation",
-		"description": "Attaching a data object with an undirected association to a sequence flow indicates hand-over of information between the activities involved.",
-		"description_de": "Die Zuordnung eines Datenobjekts zu einem Sequenzfluss über eine ungerichtete Assoziation weist auf eine Informationsübergabe zwischen den Aktivitäten hin.",
-		"groups": ["Connecting Objects"],
+    "type" : "edge",
+    "id" : "Association",
+    "title" : "Association",
+    "description" : "Associates a text annotation with an element.",
+    "view" : "connector/association.undirected.svg",
+    "icon" : "connector/association.undirected.png",
+    "groups" : [ "Connecting Objects" ],
 		"groups_de": ["Konnektoren"],
-		"view": "connector/association.undirected.svg",
-		"icon": "connector/association.undirected.png",
-		"roles": ["all", "ConnectingObjectsMorph", "fromtoall"],
-		"propertyPackages": ["borderColor"],
+    "layout" : [ {
+      "type" : "layout.bpmn2_0.sequenceflow"
+    } ],
+    "propertyPackages" : [ "borderColor","elementbase", "baseattributes" ],
+    "roles" : [ "ConnectingObjectsMorph", "all" ]
+  },
+	{
+		"type": "node",
+		"id": "TextAnnotation",
+		"title": "Text Annotation",
+		"title_de": "Textanmerkung",
+		"groups": ["Artifacts"],
+		"groups_de": ["Artefakte"],
+		"description": "Any object can be associated with a text annotation to provide additional documentation.",
+		"description_de": "Jedes Objekt kann durch eine Text-Anmerkung kommentiert werden.",
+		"view": "artifact/text.annotation.svg",
+		"icon": "artifact/text.annotation.png",
+		"defaultAlign": [{
+			"align": "northeast"
+		},
+		{
+			"orientation": "vertical",
+			"align": "southeast"
+		}],
+		"propertyPackages": ["baseAttributes"],
 		"properties": [{
-			"id": "type",
-			"type": "Choice",
-			"title": "Responsibilities",
-			"title_de": "Verantwortlichkeiten",
-			"value": "none",
-			"description": "Describes the type of the responsibility according to RACI.",
-			"description_de": "Beschreibt die Verantwortlichkeiten nach dem RACI-Modell.",
+			"id": "text",
+			"type": "String",
+			"title": "Text",
+			"value": "",
+			"description": "The annotating text.",
+			"description_de": "Der kommentierende Text.",
 			"readonly": false,
 			"optional": true,
-			"refToView": "name",
-			"items": [{
-				"id": "c1",
-				"title": "",
-				"title_de": "",
-				"value": "none"
-			},
-			{
-				"id": "c2",
-				"title": "responsible",
-				"title_de": "führt durch",
-				"value": "performs"
-			},
-			{
-				"id": "c3",
-				"title": "accountable",
-				"title_de": "erteilt Freigabe",
-				"value": "approves"
-			},
-			{
-				"id": "c4",
-				"title": "consulted",
-				"title_de": "wird konsultiert",
-				"value": "consulted"
-			},
-			{
-				"id": "c5",
-				"title": "informed",
-				"title_de": "wird informiert",
-				"value": "isNotified"
-			}]
-		}]
+			"refToView": "text",
+			"length": "",
+			"wrapLines": true
+		},
+		{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"description": "Change the border color for a visual differentiation.",
+			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": ["frame"],
+			"fill": false,
+			"stroke": true
+		}],
+		"roles": ["all"]
 	}],
-	"rules": {
-		"cardinalityRules": [{
-			"role": "Startevents_all",
-			"incomingEdges": [{
-				"role": "SequenceFlow",
-				"maximum": 0
-			}]
-		},
-		{
-			"role": "Endevents_all",
-			"outgoingEdges": [{
-				"role": "SequenceFlow",
-				"maximum": 0
-			}]
-		}],
-		"connectionRules": [{
-			"role": "SequenceFlow",
-			"connects": [{
-				"from": "sequence_start",
-				"to": ["sequence_end"]
-			},
-			{
-				"from": "choreography_sequence_start",
-				"to": ["choreography_sequence_end"]
-			},
-			{
-				"from": "ExclusiveGateway",
-				"to": ["FromEventbasedGateway"]
-			},
-			{
-				"from": "EventbasedGateway",
-				"to": ["FromEventbasedGateway"]
-			}]
-		},
-		{
-			"role": "MessageFlow",
-			"connects": [{
-				"from": "messageflow_start",
-				"to": ["messageflow_end"]
-			}]
-		},
-		{
-			"role": "ChoreographyMessageFlowStart",
-			"connects": [{
-				"from": "messageflow_start",
-				"to": ["choreography_messageflow_end"]
-			}]
-		},
-		{
-			"role": "ChoreographyMessageFlowEnd",
-			"connects": [{
-				"from": "choreography_messageflow_start",
-				"to": ["messageflow_end"]
-			}]
-		},
-		{
-			"role": "IntermediateEventOnActivityBoundary",
-			"connects": [{
-				"from": "Task",
-				"to": ["IntermediateEventOnActivityBoundary"]
-			}]
-		},
-		{
-			"role": "IntermediateEventOnSubprocessBoundary",
-			"connects": [{
-				"from": "CollapsedSubprocess",
-				"to": ["IntermediateEventOnSubprocessBoundary"]
-			},
-			{
-				"from": "Subprocess",
-				"to": ["IntermediateEventOnSubprocessBoundary"]
-			}]
-		},
-		{
-			"role": "EventOnChoreographyActivityBoundary",
-			"connects": [{
-				"from": "ChoreographyMorph",
-				"to": ["EventOnChoreographyActivityBoundary"]
-			}]
-		},
-		{
-			"role": "Directed_Association",
-			"connects": [{
-				"from": "from_task_event",
-				"to": ["DataObject"]
-			},
-			{
-				"from": "from_task_event",
-				"to": ["DataStore"]
-			},
-			{
-				"from": "from_task_event",
-				"to": ["ITSystem"]
-			},
-			{
-				"from": "DataObject",
-				"to": ["to_task_event"]
-			},
-			{
-				"from": "DataStore",
-				"to": ["to_task_event"]
-			},
-			{
-				"from": "ITSystem",
-				"to": ["to_task_event"]
-			},
-			{
-				"from": "IntermediateCompensationEventCatching",
-				"to": ["to_task_event"]
-			},
-			{
-				"from": "IntermediateCompensationEventCatching",
-				"to": ["ChoreographyMorph"]
-			}]
-		},
-		{
-			"role": "Association_Undirected",
-			"connects": [{
-				"from": "SequenceFlow",
-				"to": ["DataObject"]
-			},
-			{
-				"from": "DataObject",
-				"to": ["SequenceFlow"]
-			},
-			{
-				"from": "DataObject",
-				"to": ["MessageFlow"]
-			},
-			{
-				"from": "MessageFlow",
-				"to": ["DataObject"]
-			},
-			{
-				"from": "ITSystem",
-				"to": ["to_task_event"]
-			},
-			{
-				"from": "from_task_event",
-				"to": ["ITSystem"]
-			},
-			{
-				"from": "DataStore",
-				"to": ["to_task_event"]
-			},
-			{
-				"from": "from_task_event",
-				"to": ["DataStore"]
-			},
-			{
-				"from": "fromtoall",
-				"to": ["TextAnnotation"]
-			},
-			{
-				"from": "TextAnnotation",
-				"to": "fromtoall"
-			},
-			{
-				"from": "Message",
-				"to": ["MessageFlow"]
-			},
-			{
-				"from": "MessageFlow",
-				"to": ["Message"]
-			},
-			{
-				"from": "Message",
-				"to": ["ChoreographyElement"]
-			},
-			{
-				"from": "ChoreographyElement",
-				"to": ["Message"]
-			},
-			{
-				"from": "ChoreographyElement",
-				"to": ["TextAnnotation"]
-			},
-			{
-				"from": "TextAnnotation",
-				"to": "ChoreographyElement"
-			},
-			{
-				"from": "ActivitiesMorph",
-				"to": ["to_participant"]
-			},
-			{
-				"from": "to_participant",
-				"to": ["ActivitiesMorph"]
-			}]
-		}],
-		"containmentRules": [{
-			"role": "BPMNDiagram",
-			"contains": ["all"]
-		},
-		{
-			"role": "EventSubprocess",
-			"contains": ["eventSubprocessElement", "EventSubprocess", "CollapsedEventSubprocess", "sequence_start", "sequence_end"]
-		},
-		{
-			"role": "Subprocess",
-			"contains": ["sequence_start", "sequence_end", "from_task_event", "to_task_event", "EventSubprocess", "CollapsedEventSubprocess", "TextAnnotation", "from_participant"]
-		},
-		{
-			"role": "MessageContainer",
-			"contains": ["Message"]
-		},
-		{
-			"role": "ChoreographyElement",
-			"contains": ["ChoreographyParticipant"]
-		},
-		{
-			"role": "ChoreographySubprocessExpanded",
-			"contains": ["ChoreographyElement", "choreography_sequence_start", "choreography_sequence_end", "Message", "TextAnnotation"]
-		}],
-		"morphingRules": [{
-			"role": "ActivitiesMorph",
-			"baseMorphs": ["Task"],
-			"preserveBounds": true
-		},
-		{
-			"role": "EventActivitiesMorph",
-			"baseMorphs": ["CollapsedEventSubprocess"]
-		},
-		{
-			"role": "GatewaysMorph",
-			"baseMorphs": ["ExclusiveGateway"]
-		},
-		{
-			"role": "StartEventsMorph",
-			"baseMorphs": ["StartNoneEvent"],
-			"showInShapeMenu": false
-		},
-		{
-			"role": "DataObjectMorph",
-			"baseMorphs": ["ITSystem"]
-		},
-		{
-			"role": "IntermediateEventsMorph",
-			"baseMorphs": ["IntermediateEvent"]
-		},
-		{
-			"role": "EndEventsMorph",
-			"baseMorphs": ["EndNoneEvent"]
-		},
-		{
-			"role": "TextAnnotationMorph",
-			"baseMorphs": ["TextAnnotation"]
-		},
-		{
-			"role": "DataObjectMorph",
-			"baseMorphs": ["DataObject"]
-		},
-		{
-			"role": "ConnectingObjectsMorph",
-			"baseMorphs": ["SequenceFlow"]
-		},
-		{
-			"role": "ChoreographyMorph",
-			"baseMorphs": ["ChoreographyTask"]
-		},
-		{
-			"role": "AssociationMorph",
-			"baseMorphs": [""]
-		}],
-		"layoutRules": [{
-			"role": "ActivitiesMorph",
-			"outs": [{
-				"edgeRole": "MessageFlow",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"edgeRole": "MessageFlow",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			}],
-			"ins": [{
-				"edgeRole": "MessageFlow",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"edgeRole": "MessageFlow",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			}]
-		},
-		{
-			"role": "EventActivitiesMorph",
-			"outs": [{
-				"edgeRole": "MessageFlow",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"edgeRole": "MessageFlow",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			}],
-			"ins": [{
-				"edgeRole": "MessageFlow",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"edgeRole": "MessageFlow",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			}]
-		},
-		{
-			"role": "ChoreographyMorph",
-			"outs": [{
-				"edgeRole": "MessageFlow",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"edgeRole": "MessageFlow",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			}],
-			"ins": [{
-				"edgeRole": "MessageFlow",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"edgeRole": "MessageFlow",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			}]
-		},
-		{
-			"role": "GatewaysMorph",
-			"outs": [{
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"orientation": "vertical",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			}]
-		},
-		{
-			"role": "StartEventsMorph",
-			"outs": [{
-				"edgeRole": "MessageFlow",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"edgeRole": "MessageFlow",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			}],
-			"ins": [{
-				"edgeRole": "MessageFlow",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"edgeRole": "MessageFlow",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			}]
-		},
-		{
-			"role": "IntermediateEventsMorph",
-			"outs": [{
-				"edgeRole": "MessageFlow",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"edgeRole": "MessageFlow",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			}],
-			"ins": [{
-				"edgeRole": "MessageFlow",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"edgeRole": "MessageFlow",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			}]
-		},
-		{
-			"role": "EndEventsMorph",
-			"outs": [{
-				"edgeRole": "MessageFlow",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"edgeRole": "MessageFlow",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			}],
-			"ins": [{
-				"edgeRole": "MessageFlow",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			},
-			{
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"edgeRole": "MessageFlow",
-				"t": 1,
-				"r": 2,
-				"b": 1,
-				"l": 2
-			},
-			{
-				"orientation": "vertical",
-				"t": 2,
-				"r": 1,
-				"b": 2,
-				"l": 1
-			}]
-		}]
-	}
+  "rules" : {
+    "cardinalityRules" : [ {
+      "role" : "Startevents_all",
+      "incomingEdges" : [ {
+        "role" : "SequenceFlow",
+        "maximum" : 0
+      } ]
+    }, {
+      "role" : "Endevents_all",
+      "outgoingEdges" : [ {
+        "role" : "SequenceFlow",
+        "maximum" : 0
+      } ]
+    } ],
+    "connectionRules" : [ {
+      "role" : "SequenceFlow",
+      "connects" : [ {
+        "from" : "sequence_start",
+        "to" : [ "sequence_end" ]
+      } ]
+    }, {
+      "role" : "Association",
+      "connects" : [ {
+        "from" : "sequence_start",
+        "to" : [ "TextAnnotation" ]
+      } ]
+    }, {
+      "role" : "Association",
+      "connects" : [ {
+        "from" : "TextAnnotation",
+        "to" : [ "sequence_end" ]
+      } ]
+    }, {
+      "role" : "IntermediateEventOnActivityBoundary",
+      "connects" : [ {
+        "from" : "Activity",
+        "to" : [ "IntermediateEventOnActivityBoundary" ]
+      } ]
+    } ],
+    "containmentRules" : [ {
+      "role" : "BPMNDiagram",
+      "contains" : [ "all" ]
+    }, {
+      "role" : "SubProcess",
+      "contains" : [ "sequence_start", "sequence_end", "from_task_event", "to_task_event", "EventSubprocess", "TextAnnotation" ]
+    }, {
+      "role" : "EventSubProcess",
+      "contains" : [ "sequence_start", "sequence_end", "from_task_event", "to_task_event", "TextAnnotation" ]
+    } ],
+    "morphingRules" : [ {
+      "role" : "ActivitiesMorph",
+      "baseMorphs" : [ "UserTask" ],
+      "preserveBounds" : true
+    }, {
+      "role" : "GatewaysMorph",
+      "baseMorphs" : [ "ExclusiveGateway" ]
+    }, {
+      "role" : "StartEventsMorph",
+      "baseMorphs" : [ "StartNoneEvent" ]
+    }, {
+      "role" : "EndEventsMorph",
+      "baseMorphs" : [ "StartNoneEvent" ]
+    }, {
+      "role" : "CatchEventsMorph",
+      "baseMorphs" : [ "CatchTimerEvent" ]
+    }, {
+      "role" : "ThrowEventsMorph",
+      "baseMorphs" : [ "ThrowNoneEvent" ]
+    }, {
+      "role" : "TextAnnotation",
+      "baseMorphs" : [ "TextAnnotation" ]
+    } ]
+  }
 }
