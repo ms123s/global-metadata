@@ -442,7 +442,14 @@
         "width" : 200,
         "optional" : false
       } ]
-    } ]
+    } ,
+		{
+			"id": "tasktype",
+			"type": "String",
+			"visible": false,
+			"optional": false,
+			"value": "None"
+		}]
   }, 
 	{
     "name" : "timerdefinition",
