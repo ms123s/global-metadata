@@ -485,6 +485,18 @@
     } ]
   }, 
 	{
+    "name" : "messagerefdefinition",
+    "properties" : [ {
+      "id" : "messageref",
+      "type" : "String",
+      "title" : "Message reference",
+      "title_de" : "Message Referenz",
+      "value" : "",
+      "description" : "Define the message name.",
+      "popular" : true
+    } ]
+  }, 
+	{
     "name" : "sequenceflowbase",
     "properties" : [{
       "id" : "defaultflow",
@@ -553,7 +565,7 @@
 		"mayBeRoot": true,
 		"hide": true,
 		"propertyPackages": ["baseAttributes", "diagram"],
-		"roles": ["canContainArtifacts"],
+		"roles": [],
 		"properties": [{
 			"id": "orientation",
 			"type": "String",
@@ -613,7 +625,7 @@
 		"description": "A User Task is used to model work that needs to be done by a human actor. When the process execution arrives at such a user task, a new task is created in the task list of the user(s) or group(s) assigned to that task.",
     "view" : "activity/usertask.svg",
 		"icon": "activity/list/type.user.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event"],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [{
 			"id": "attr$activiti$formHandlerClass",
 			"type": "String",
@@ -714,7 +726,7 @@
 		"description": "A Filter Task is a Task that generates a list uses an predefined filter.",
     "view" : "activity/filtertask.svg",
 		"icon": "activity/list/type.filter.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event"],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [{
 			"id": "attr$activiti$class",
 			"type": "String",
@@ -800,7 +812,7 @@
 		"description": "A Rules Task is a Task that executes a rules.",
     "view" : "activity/businessruletask.svg",
 		"icon": "activity/list/type.business.rule.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event"],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [{
 			"id": "attr$activiti$class",
 			"type": "String",
@@ -893,7 +905,7 @@
 		"description": "A Script Task is executed by a business process engine. The modeler or implementer defines a script in a language that the engine can interpret. When the Task is ready to start, the engine will execute the script. When the script is completed, the Task will also be completed.",
     "view" : "activity/scripttask.svg",
 		"icon": "activity/list/type.script.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event"],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [{
 			"id": "bordercolor",
 			"type": "Color",
@@ -951,7 +963,7 @@
 		"description": "A Document Task is a Task that generates document.",
     "view" : "activity/documenttask.svg",
 		"icon": "activity/list/type.document.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event"],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [{
 			"id": "attr$activiti$class",
 			"type": "String",
@@ -1035,7 +1047,7 @@
 		"description": "A Send Task is a simple Task that is designed to send a Message to an external Participant (relative to the Process). Once the Message has been sent, the Task is completed.",
     "view" : "activity/sendtask.svg",
 		"icon": "activity/list/type.send.png",
-		"roles": ["all", "sequence_start", "sequence_end", "from_task_event", "to_task_event"],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [{
 			"id": "attr$activiti$type",
 			"type": "String",
@@ -1291,7 +1303,7 @@
 		"view": "startevent/none.svg",
 		"icon": "startevent/none.png",
 		"propertyPackages": ["baseAttributes", "formAttributes", "bgColor", "borderColor", "processid"],
-		"roles": ["all", "Startevents_all", "sequence_start", "to_task_event", "from_task_event", "StartEventsMorph"],
+    "roles" : [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ],
 		"properties": [{
 			"id": "trigger",
 			"type": "String",
@@ -1325,6 +1337,18 @@
   }, 
 	{
     "type" : "node",
+    "id" : "StartMessageEvent",
+    "title" : "Start message event",
+    "description" : "A start event with a message trigger",
+    "view" : "startevent/message.svg",
+    "icon" : "startevent/message.png",
+    "groups" : [ "Events" ],
+    "groups_de" : [ "Ereignisse" ],
+    "propertyPackages" : [ "elementbase", "baseattributes", "messagerefdefinition", "executionlistenersbase" ],
+    "roles" : [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ]
+  }, 
+	{
+    "type" : "node",
     "id" : "CatchTimerEvent",
     "title" : "Intermediate timer catching event",
     "title_de" : "Timer Zwischenereignis",
@@ -1348,7 +1372,7 @@
 		"view": "endevent/none.svg",
 		"icon": "endevent/none.png",
 		"propertyPackages": ["baseAttributes", "bgColor", "borderColor"],
-		"roles": ["all", "sequence_end", "to_task_event", "from_task_event", "Endevents_all", "EndEventsMorph"],
+		"roles": ["all", "sequence_end", "Endevents_all", "EndEventsMorph"],
 		"properties": [{
 			"id": "trigger",
 			"type": "String",
@@ -1499,10 +1523,10 @@
       "contains" : [ "all" ]
     }, {
       "role" : "SubProcess",
-      "contains" : [ "sequence_start", "sequence_end", "from_task_event", "to_task_event", "EventSubprocess", "TextAnnotation" ]
+      "contains" : [ "sequence_start", "sequence_end", "EventSubprocess", "TextAnnotation" ]
     }, {
       "role" : "EventSubProcess",
-      "contains" : [ "sequence_start", "sequence_end", "from_task_event", "to_task_event", "TextAnnotation" ]
+      "contains" : [ "sequence_start", "sequence_end", "TextAnnotation" ]
     } ],
     "morphingRules" : [ {
       "role" : "ActivitiesMorph",
