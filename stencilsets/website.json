@@ -103,12 +103,25 @@
 			"length": "30"
 		},
 		{
+			"id": "xf_label",
+			"type": "String",
+			"title": "Label",
+			"title_de": "Bezeichnung",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "60"
+		},
+		{
 			"id": "xf_linktype",
 			"type": "Choice",
 			"title": "Linktype",
 			"title_de": "Linktyp",
 			"prefix": "oryx",
-			"value": "intern",
+			"value": "internal",
 			"description": "The link type",
 			"popular": true,
 			"readonly": false,
@@ -116,42 +129,81 @@
 			"refToView": "menuitem",
 			"items": [{
 				"id": "c1",
-				"title": "Intern",
-				"value": "intern",
-				"refToView": ""
+				"title": "Internal",
+				"title_de": "Intern",
+				"value": "internal",
+				"icon": "markdown.png",
+				"refToView": "internal"
 			},
 			{
 				"id": "c2",
 				"title": "Workflow",
 				"value": "workflow",
-				"refToView": ""
+				"icon": "system-run.png",
+				"refToView": "workflow"
 			},
 			{
 				"id": "c2",
 				"title": "Menu",
 				"title_de": "Menue",
+				"icon": "menu.png",
 				"value": "menu",
-				"refToView": ""
+				"refToView": "menu"
 			},
 			{
 				"id": "c3",
-				"title": "Extern",
-				"value": "Extern",
-				"refToView": ""
+				"title": "Internet",
+				"value": "internet",
+				"icon": "internet.png",
+				"refToView": "internet"
 			} ]
+		},
+		{
+			"id": "xf_menu",
+			"type": "String",
+			"title": "Menu",
+			"title_de": "Menu",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
 		},
 		{
 			"id": "xf_url",
 			"type": "String",
-			"title": "Url",
-			"title_de": "Url",
+			"title": "Url(Internet)",
+			"title_de": "Url(Internet)",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "xf_workflow",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.process","prefix":""},
+      "title" : "Workflow",
+      "title_de" : "Workflow",
+			"prefix": "oryx",
+			"value": "",
+			"refToView": "",
+      "popular" : true
+		},
+		{
+			"id": "xf_content",
+			"type": "text",
+			"title": "Content(Internal)",
+			"title_de": "Inhalt(Intern)",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"refToView": "",
-			"length": "30"
+			"refToView": ""
 		}]
 	},
 	{
@@ -199,15 +251,15 @@
 		"groups": ["Containers"],
 		"description": "A container for defining a hierarchy of menu controls.",
 		"view": "new_group.svg",
-		"icon": "new_group.png",
+		"icon": "menu.png",
 		"roles": ["menus"],
 
 		"layout": [{
 			"type": "layout.rows",
-			"marginTop": 15,
+			"marginTop": 30,
 			"marginLeft": 15,
 			"spacingX": 15,
-			"spacingY": 15,
+			"spacingY": 30,
 			"exclude": ["http://b3mn.org/stencilset/xforms#Label"]
 		},
 		{
@@ -256,7 +308,7 @@
 	"rules": {
 		"containmentRules": [{
 			"role": "menus",
-			"contains": ["label","menuitems"]
+			"contains": ["label","menus", "menuitems"]
 		},
 		{
 			"role": "main_container",
