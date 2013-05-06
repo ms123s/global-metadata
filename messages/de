@@ -3741,5 +3741,9 @@
     {
         "msgid": "Cancel",
         "msgstr": "Abbruch"
+    },
+    {
+        "msgid": "shell.nt_website",
+        "msgstr": "Website"
     }
 ]
