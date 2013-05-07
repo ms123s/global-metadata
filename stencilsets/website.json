@@ -60,13 +60,13 @@
 			"length": "50"
 		},
 		{
-			"id": "xf_default_buttons",
-			"type": "Boolean",
-			"title": "Default buttons",
-			"title_de": "Standard Buttons",
+			"id": "xf_css",
+			"type": "text",
+			"config":{"mode":"text/css"},
+			"title": "CSS",
+			"title_de": "CSS",
 			"prefix": "oryx",
-			"value": true,
-			"description": "Display default buttons",
+			"value": "",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
@@ -103,16 +103,16 @@
 			"length": "30"
 		},
 		{
-			"id": "xf_label",
+			"id": "xf_name",
 			"type": "String",
-			"title": "Label",
-			"title_de": "Bezeichnung",
+			"title": "Name",
+			"title_de": "Name",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"refToView": "",
+			"refToView": "menuitem",
 			"length": "60"
 		},
 		{
@@ -126,7 +126,7 @@
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"refToView": "menuitem",
+			"refToView": "",
 			"items": [{
 				"id": "c1",
 				"title": "Internal",
@@ -255,16 +255,16 @@
 		"roles": ["menus"],
 
 		"layout": [{
-			"type": "layout.rows",
+			"type": "layout.vertical",
 			"marginTop": 30,
 			"marginLeft": 15,
 			"spacingX": 15,
-			"spacingY": 30,
+			"spacingY": 15,
 			"exclude": ["http://b3mn.org/stencilset/xforms#Label"]
 		},
 		{
 			"type": "layout.xforms.label",
-			"moveY": -1,
+			"moveY": 10,
 			"moveX": 0
 		}],
 		"properties": [{
@@ -289,15 +289,23 @@
 			"readonly": false,
 			"optional": false,
 			"refToView": "",
-			"items": [{
+			"items": [
+				{
 				"id": "c1",
+				"title": "Startmenu",
+				"title_de": "Startmenue",
+				"value": "start",
+				"refToView": ""
+			},
+				{
+				"id": "c2",
 				"title": "Mainmenu",
 				"title_de": "Hauptmenue",
 				"value": "main",
 				"refToView": ""
 			},
 			{
-				"id": "c2",
+				"id": "c3",
 				"title": "Submenu",
 				"title_de": "Untermenue",
 				"value": "sub",
