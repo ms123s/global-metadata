@@ -62,7 +62,7 @@
 		{
 			"id": "xf_css",
 			"type": "text",
-			"config":{"mode":"text/css"},
+			"config":{"mode":"text/css","width":"600","height":"800"},
 			"title": "CSS",
 			"title_de": "CSS",
 			"prefix": "oryx",
@@ -71,6 +71,17 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
+		},
+		{
+			"id": "css_mainBackgroundColor",
+			"type": "Color",
+			"title": "MainBackgroundColor",
+			"title_de": "MainBackgroundColor",
+			"prefix": "oryx",
+			"value": "#FFFFFF",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
 		}]
 	},
 	{
@@ -230,9 +241,9 @@
 			"length": "30"
 		},
 		{
-			"id": "xf_text",
+			"id": "xf_name",
 			"type": "String",
-			"title": "text",
+			"title": "Name",
 			"prefix": "oryx",
 			"value": "Menuheader",
 			"description": "",
@@ -275,40 +286,48 @@
 			"value": "",
 			"description": "",
 			"readonly": false,
-			"optional": true,
+			"popular": true,
 			"refToView": "",
 			"length": "30"
 		},
 		{
-			"id": "xf_type",
-			"type": "Choice",
-			"title": "Menutype",
-			"title_de": "Menuetyp",
-			"prefix": "oryx",
-			"value": "main",
+			"id": "xf_on_startpage",
+			"title": "On startpage",
+			"title_de": "Auf Startseite",
+			"type": "Boolean",
+			"value": true,
+			"popular": true,
 			"readonly": false,
-			"optional": false,
+			"optional": false
+		},{
+			"id": "xf_edge",
+			"type": "Choice",
+			"title": "Edge",
+			"title_de": "Rand",
+			"prefix": "oryx",
+			"value": "left",
+			"popular": true,
 			"refToView": "",
 			"items": [
 				{
 				"id": "c1",
-				"title": "Startmenu",
-				"title_de": "Startmenue",
-				"value": "start",
+				"title": "Top",
+				"title_de": "Oben",
+				"value": "top",
 				"refToView": ""
 			},
-				{
+			{
 				"id": "c2",
-				"title": "Mainmenu",
-				"title_de": "Hauptmenue",
-				"value": "main",
+				"title": "Left",
+				"title_de": "Links",
+				"value": "left",
 				"refToView": ""
 			},
 			{
 				"id": "c3",
-				"title": "Submenu",
-				"title_de": "Untermenue",
-				"value": "sub",
+				"title": "Right",
+				"title_de": "Rechts",
+				"value": "right",
 				"refToView": ""
 			}]
 		}]
