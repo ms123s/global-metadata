@@ -1,45 +1,304 @@
 {
-	"title": "Forms",
-	"title_de": "Forms",
-	"namespace": "http://b3mn.org/stencilset/xforms#",
-	"description": "This is the XForms stencil set specification.",
+	"title": "Website",
+	"title_de": "Website",
+	"namespace": "http://b3mn.org/stencilset/xwebsite#",
+	"description": "This is the XWebsite stencil set specification.",
+	"propertyPackages": [
+		{
+		"name": "flexchild",
+		"properties": [{
+			"id": "ws_flex-basis",
+			"type": "Combo",
+			"title": "Width",
+			"title_de": "Breite",
+			"prefix": "oryx",
+			"value": "auto",
+			"popular": false,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "auto",
+				"value": "auto",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "100px",
+				"value": "100px",
+				"refToView": ""
+			}]
+		},
+		{
+			"id": "ws_align-self",
+			"type": "Choice",
+			"title": "Vert. Alignment",
+			"title_de": "Vert. Ausrichtung",
+			"prefix": "oryx",
+			"value": "auto",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Auto",
+				"value": "auto",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "Flex start",
+				"value": "flex-start",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "Flex end",
+				"value": "flex-end",
+				"refToView": ""
+			},
+			{
+				"id": "c4",
+				"title": "Center",
+				"value": "center",
+				"refToView": ""
+			},
+			{
+				"id": "c5",
+				"title": "Baseline",
+				"value": "baseline",
+				"refToView": ""
+			},
+			{
+				"id": "c6",
+				"title": "Stretch",
+				"value": "stretch",
+				"refToView": ""
+			}]
+		},
+		{
+			"id": "ws_order",
+			"title": "Order",
+			"title_de": "Anordnung",
+			"type": "Integer",
+			"value": 0,
+			"popular": false,
+			"readonly": false,
+			"optional": false
+		},{
+			"id": "ws_flex-shrink",
+			"title": "Shrink",
+			"title_de": "Schrumpfen",
+			"type": "Integer",
+			"value": 1,
+			"popular": false,
+			"readonly": false,
+			"optional": false
+		},{
+			"id": "ws_flex-grow",
+			"title": "Grow",
+			"title_de": "Wachsen",
+			"type": "Integer",
+			"value": 0,
+			"popular": false,
+			"readonly": false,
+			"optional": false
+		}]
+	},
+	{
+		"name": "flexcontainer",
+		"properties": [{
+			"id": "ws_display",
+			"type": "Choice",
+			"title": "Display",
+			"prefix": "oryx",
+			"value": "flex",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "flex",
+				"value": "flex",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "inline-flex",
+				"value": "inline-flex",
+				"refToView": ""
+			}]
+		},
+		{
+			"id": "ws_justify-content",
+			"type": "Choice",
+			"title": "Justify content",
+			"title_de": "Inhaltjustierung",
+			"prefix": "oryx",
+			"value": "flex-start",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [
+			{
+				"id": "c1",
+				"title": "Flex start",
+				"value": "flex-start",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "Flex end",
+				"value": "flex-end",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "Center",
+				"value": "center",
+				"refToView": ""
+			},
+			{
+				"id": "c4",
+				"title": "Space between",
+				"value": "space-between",
+				"refToView": ""
+			},
+			{
+				"id": "c5",
+				"title": "Space around",
+				"value": "space-around",
+				"refToView": ""
+			}]
+		},
+		{
+			"id": "ws_align-items",
+			"type": "Choice",
+			"title": "Alignment items",
+			"title_de": "Ausrichtung Elemente",
+			"prefix": "oryx",
+			"value": "flex-start",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [
+			{
+				"id": "c1",
+				"title": "Flex start",
+				"value": "flex-start",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "Flex end",
+				"value": "flex-end",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "Center",
+				"value": "center",
+				"refToView": ""
+			},
+			{
+				"id": "c4",
+				"title": "Baseline",
+				"value": "baseline",
+				"refToView": ""
+			},
+			{
+				"id": "c5",
+				"title": "Stretch",
+				"value": "stretch",
+				"refToView": ""
+			}]
+		},
+		{
+			"id": "ws_align-content",
+			"type": "Choice",
+			"title": "Align content",
+			"title_de": "Inhaltausrichtung",
+			"prefix": "oryx",
+			"value": "flex-start",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Flex start",
+				"value": "flex-start",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "Flex end",
+				"value": "flex-end",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "Center",
+				"value": "center",
+				"refToView": ""
+			},
+			{
+				"id": "c4",
+				"title": "Space between",
+				"value": "space-between",
+				"refToView": ""
+			},
+			{
+				"id": "c5",
+				"title": "Space around",
+				"value": "space-around",
+				"refToView": ""
+			},
+			{
+				"id": "c6",
+				"title": "Stretch",
+				"value": "stretch",
+				"refToView": ""
+			}]
+		}]
+	}
+],
 	"stencils": [{
 		"type": "node",
-		"id": "XForm",
-		"title": "XForm",
+		"id": "XDocument",
+		"title": "XDocument",
 		"groups": ["Form"],
-		"description": "A XForms form.",
+		"description": "A XDocuments form.",
 		"view": "new_form.svg",
 		"icon": "new_form.png",
 		"mayBeRoot": true,
 		"hide": true,
-		"roles": ["main_container"],
+		"roles": ["standard_container"],
 
 		"layout": [{
-			"type": "layout.rows",
-			"marginTop": 30,
+			"type": "layout.vertical",
+			"marginTop": 10,
 			"marginLeft": 30,
 			"spacingX": 30,
-			"spacingY": 30
+			"spacingY": 10
 		}],
 		"properties": [{
-			"id": "xf_id",
+			"id": "ws_id",
 			"type": "String",
 			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
-			"description": "This is a unique Id that distinguishes the form from other forms.",
+			"visible": false,
 			"readonly": false,
 			"optional": true,
 			"length": "50"
 		},
 		{
-			"id": "xf_name",
+			"id": "ws_name",
 			"type": "String",
 			"title": "Name",
 			"prefix": "oryx",
 			"value": "${diagramname}",
-			"description": "Name is an attribute that is text description of the form.",
 			"popular": true,
 			"readonly": true,
 			"optional": false,
@@ -48,52 +307,339 @@
 			"wrapLines": true
 		},
 		{
-			"id": "xf_version",
+			"id": "db_page.margin.top",
 			"type": "String",
-			"title": "version",
-			"title_de": "Version",
+			"title": "page.margin.top",
+			"title_de": "Seitenabstand(o.)",
 			"prefix": "oryx",
-			"value": "",
-			"description": "This defines the version number of the form model.",
+			"value": "5mm",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
 		},
 		{
-			"id": "xf_css",
-			"type": "text",
-			"config":{"mode":"text/css","width":"600","height":"800"},
-			"title": "CSS",
-			"title_de": "CSS",
+			"id": "db_body.margin.top",
+			"type": "String",
+			"title": "body.margin.top",
+			"title_de": "Textabstand(o.)",
 			"prefix": "oryx",
-			"value": "",
+			"value": "20mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "db_region.before.extent",
+			"type": "String",
+			"title": "page.margin.top",
+			"title_de": "Texthöhe(o.)",
+			"prefix": "oryx",
+			"value": "0mm",
+			"readonly": false,
+			"visible": false,
+			"length": "50"
+		},
+		{
+			"id": "db_page.margin.bottom",
+			"type": "String",
+			"title": "page.margin.bottom",
+			"title_de": "Seitenabstand(u.)",
+			"prefix": "oryx",
+			"value": "5mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "db_body.margin.bottom",
+			"type": "String",
+			"title": "Textabstand(unten)",
+			"title_de": "Textabstand(u.)",
+			"prefix": "oryx",
+			"value": "20mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_region.after.extent",
+			"type": "String",
+			"title": "Texthöhe(unten)",
+			"title_de": "Texthöhe(u.)",
+			"prefix": "oryx",
+			"value": "20mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_page.margin.inner",
+			"type": "String",
+			"title": "Left margin",
+			"title_de": "Linker Rand",
+			"prefix": "oryx",
+			"value": "20mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_page.margin.outer",
+			"type": "String",
+			"title": "Right margin",
+			"title_de": "Rechter Rand",
+			"prefix": "oryx",
+			"value": "20mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_table.frame.border.color",
+			"type": "Color",
+			"title": "Framecolor",
+			"title_de": "Rahmenfarbe",
+			"prefix": "oryx",
+			"value": "#777777",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_table.frame.border.thickness",
+			"type": "String",
+			"title": "Framethickness",
+			"title_de": "Rahmenstärke",
+			"prefix": "oryx",
+			"value": "0.4pt",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_table.frame.border.style",
+			"type": "Choice",
+			"title": "Framestyle",
+			"title_de": "Rahmenstyle",
+			"prefix": "oryx",
+			"value": "solid",
+			"popular": false,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Solid",
+				"value": "solid",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "Dotted",
+				"value": "dotted",
+				"refToView": ""
+			},{
+				"id": "c3",
+				"title": "Dashed",
+				"value": "dashed",
+				"refToView": ""
+			},{
+				"id": "c4",
+				"title": "Double",
+				"value": "double",
+				"refToView": ""
+			},{
+				"id": "c5",
+				"title": "Ridge",
+				"value": "ridge",
+				"refToView": ""
+			},{
+				"id": "c6",
+				"title": "Groove",
+				"value": "groove",
+				"refToView": ""
+			},{
+				"id": "c7",
+				"title": "Outset",
+				"value": "outset",
+				"refToView": ""
+			},{
+				"id": "c8",
+				"title": "Inset",
+				"value": "inset",
+				"refToView": ""
+			} ]
+		},{
+			"id": "db_table.cell.border.color",
+			"type": "Color",
+			"title": "Cellcolor",
+			"title_de": "Zellenrahmenfarbe",
+			"prefix": "oryx",
+			"value": "#777777",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_table.cell.border.thickness",
+			"type": "String",
+			"title": "Cellthickness",
+			"title_de": "Zellenrahmenstärke",
+			"prefix": "oryx",
+			"value": "0.4pt",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_table.cell.border.style",
+			"type": "Choice",
+			"title": "Tablecellestyle",
+			"title_de": "Zellenrahmenstyle",
+			"prefix": "oryx",
+			"value": "solid",
+			"popular": false,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Solid",
+				"value": "solid",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "Dotted",
+				"value": "dotted",
+				"refToView": ""
+			},{
+				"id": "c3",
+				"title": "Dashed",
+				"value": "dashed",
+				"refToView": ""
+			},{
+				"id": "c4",
+				"title": "Double",
+				"value": "double",
+				"refToView": ""
+			},{
+				"id": "c5",
+				"title": "Ridge",
+				"value": "ridge",
+				"refToView": ""
+			},{
+				"id": "c6",
+				"title": "Groove",
+				"value": "groove",
+				"refToView": ""
+			},{
+				"id": "c7",
+				"title": "Outset",
+				"value": "outset",
+				"refToView": ""
+			},{
+				"id": "c8",
+				"title": "Inset",
+				"value": "inset",
+				"refToView": ""
+			} ]
+		},
+		{
+			"id": "db_paper.type",
+			"type": "Choice",
+			"title": "Papertype",
+			"title_de": "Papierformat",
+			"prefix": "oryx",
+			"value": "A4",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"refToView": ""
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "A4",
+				"value": "A4",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "USletter",
+				"value": "USletter",
+				"refToView": ""
+			},{
+				"id": "c3",
+				"title": "A5",
+				"value": "A5",
+				"refToView": ""
+			},{
+				"id": "c4",
+				"title": "A3",
+				"value": "A3",
+				"refToView": ""
+			} ]
 		},
 		{
-			"id": "css_mainBackgroundColor",
-			"type": "Color",
-			"title": "MainBackgroundColor",
-			"title_de": "MainBackgroundColor",
+			"id": "db_page.orientation",
+			"type": "Choice",
+			"title": "Orientation",
+			"title_de": "Orientierung",
 			"prefix": "oryx",
-			"value": "#FFFFFF",
+			"value": "portrait",
+			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"length": "50"
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Portrait",
+				"value": "portrait",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "Landscape",
+				"value": "landscape",
+				"refToView": ""
+			}]
+		}, {
+			"id": "db_body.font.master",
+			"type": "Combo",
+			"title": "Basic fontsize",
+			"title_de": "Basisfontgröße",
+			"prefix": "oryx",
+			"value": "8",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "8",
+				"value": "8",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "9",
+				"value": "9",
+				"refToView": ""
+			},{
+				"id": "c3",
+				"title": "10",
+				"value": "10",
+				"refToView": ""
+			},{
+				"id": "c4",
+				"title": "11",
+				"value": "11",
+				"refToView": ""
+			},{
+				"id": "c5",
+				"title": "12",
+				"value": "12",
+				"refToView": ""
+			}]
 		}]
 	},
 	{
 		"type": "node",
-		"id": "MenuItem",
-		"title": "Menu item",
-		"title_de": "Menue Eintrag",
+		"id": "Textarea",
+		"title": "Textarea",
+		"title_de": "Texteingabe",
 		"groups": ["Controls"],
-		"description": "An input control.",
-		"view": "new_input.svg",
-		"icon": "new_input.png",
-		"roles": ["menuitems"],
+		"description": "A textarea control.",
+		"view": "new_textarea.svg",
+		"icon": "markdown.png",
+		"roles": ["core_form_controls", "controls_morph"],
 
 		"layout": [{
 			"type": "layout.xforms.label",
@@ -101,245 +647,403 @@
 			"moveX": 0
 		}],
 		"properties": [{
-			"id": "xf_id",
+			"id": "ws_id",
 			"type": "String",
 			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
-			"popular": true,
 			"description": "",
+			"visible": false,
 			"readonly": false,
 			"optional": false,
 			"refToView": "",
 			"length": "30"
-		},
-		{
-			"id": "xf_name",
-			"type": "String",
-			"title": "Name",
-			"title_de": "Name",
-			"prefix": "oryx",
-			"value": "",
-			"popular": true,
+		},{
+      "id" : "description",
+      "type" : "String",
+      "title" : "Description",
+			"title_de": "Beschreibung",
+      "value" : "",
+			"refToView": "text"
+		},{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
 			"readonly": false,
-			"optional": true,
-			"refToView": "menuitem",
-			"length": "60"
-		},
-		{
-			"id": "xf_linktype",
-			"type": "Choice",
-			"title": "Linktype",
-			"title_de": "Linktyp",
-			"prefix": "oryx",
-			"value": "internal",
-			"description": "The link type",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "Internal",
-				"title_de": "Intern",
-				"value": "internal",
-				"icon": "markdown.png",
-				"refToView": "internal"
-			},
-			{
-				"id": "c2",
-				"title": "Workflow",
-				"value": "workflow",
-				"icon": "system-run.png",
-				"refToView": "workflow"
-			},
-			{
-				"id": "c2",
-				"title": "Menu",
-				"title_de": "Menue",
-				"icon": "menu.png",
-				"value": "menu",
-				"refToView": "menu"
-			},
-			{
-				"id": "c3",
-				"title": "Internet",
-				"value": "internet",
-				"icon": "internet.png",
-				"refToView": "internet"
-			} ]
-		},
-		{
-			"id": "xf_menu",
-			"type": "String",
-			"title": "Menu",
-			"title_de": "Menu",
-			"prefix": "oryx",
-			"value": "",
-			"popular": true,
-			"optional": true,
-			"refToView": "",
-			"length": "30"
-		},
-		{
-			"id": "xf_url",
-			"type": "String",
-			"title": "Url(Internet)",
-			"title_de": "Url(Internet)",
-			"prefix": "oryx",
-			"value": "",
-			"popular": true,
-			"optional": true,
-			"refToView": "",
-			"length": "30"
-		},
-		{
-			"id": "xf_workflow",
+			"optional": false,
+			"refToView": "bg_frame",
+			"fill": false,
+			"stroke": true
+		},{
+			"id": "ws_filter",
 			"type": "ResourceSelector",
-			"config": {"type":"sw.process","prefix":""},
-      "title" : "Workflow",
-      "title_de" : "Workflow",
-			"prefix": "oryx",
+			"config": {"type":"sw.filter","prefix":""},
+			"title": "Filtername",
+			"title_de": "Filtername",
 			"value": "",
-			"refToView": "",
-      "popular" : true
-		},
-		{
-			"id": "xf_content",
+			"description": "Filtername",
+			"description_de": "Name des Filters",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"length": "50"
+		},{
+			"id": "ws_markdown",
 			"type": "text",
-			"title": "Content(Internal)",
-			"title_de": "Inhalt(Intern)",
+			"config":{"mode":"text/tiki"},
+			"title": "Text",
+			"title_de": "Text",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
-		}]
+		}],
+		"propertyPackages": ["flexchild" ]
 	},
 	{
 		"type": "node",
-		"id": "Label",
-		"title": "Menuheader",
-		"title_de": "Menue Kopf",
-		"groups": ["Support Elements"],
-		"description": "A label for form controls.",
-		"view": "new_label.svg",
-		"icon": "new_label.png",
-		"roles": ["label"],
+		"id": "autogentable",
+		"title": "Auto. gen.Table",
+		"title_de": "Auto erz. Tabelle",
+		"groups": ["Controls"],
+		"view": "new_autogentable.svg",
+		"icon": "table.png",
+		"roles": ["core_form_controls", "controls_morph"],
+		"layout": [{
+			"type": "layout.xforms.label",
+			"moveY": -1,
+			"moveX": 0
+		}],
 		"properties": [{
-			"id": "xf_id",
+			"id": "ws_id",
 			"type": "String",
 			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
 			"description": "",
+			"popular": true,
 			"readonly": false,
-			"visible":false,
-			"optional": true,
+			"optional": false,
 			"refToView": "",
 			"length": "30"
 		},
 		{
-			"id": "xf_name",
-			"type": "String",
-			"title": "Name",
-			"prefix": "oryx",
-			"value": "Menuheader",
-			"description": "",
+			"id": "ws_filter",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.filter","prefix":""},
+			"title": "Filtername",
+			"title_de": "Filtername",
+			"value": "",
+			"description": "Filtername",
+			"description_de": "Name des Filters",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "ws_columns",
+			"type": "Complex",
+			"config": {"helperTree":["sw.filter"]},
+			"title": "Tablecolumns",
+			"title_de": "Tabellenspalten",
+			"value": "",
+			"description": "Tablecolumns",
+			"description_de": "Angezeigte Tabellenspalten",
+			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"refToView": "labeltext",
-			"length": "100",
-			"wrapLines": true
-		}]
+			"complexItems": [{
+				"id": "colname",
+				"name": "Columnname",
+				"name_de": "Spaltenname",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}]
+		}],
+		"propertyPackages": ["flexchild" ]
 	},
 	{
 		"type": "node",
-		"id": "Menu",
-		"title": "Menu",
-		"title_de": "Menue",
+		"id": "Row",
+		"title": "Row",
+		"title_de": "Reihe",
 		"groups": ["Containers"],
-		"description": "A container for defining a hierarchy of menu controls.",
 		"view": "new_group.svg",
-		"icon": "menu.png",
-		"roles": ["menus"],
+		"icon": "new_group.png",
+		"roles": ["additional_form_controls" ],
 
 		"layout": [{
-			"type": "layout.vertical",
-			"marginTop": 30,
-			"marginLeft": 15,
-			"spacingX": 15,
-			"spacingY": 15,
+			"type": "layout.rows",
+			"marginTop": 20,
+			"marginLeft": 25,
+			"spacingX": 8,
+			"spacingY": 0,
 			"exclude": ["http://b3mn.org/stencilset/xforms#Label"]
 		},
 		{
 			"type": "layout.xforms.label",
-			"moveY": 10,
+			"moveY": -1,
 			"moveX": 0
 		}],
 		"properties": [{
-			"id": "xf_id",
+			"id": "ws_id",
 			"type": "String",
 			"title": "Id",
 			"prefix": "oryx",
+			"visible":false,
 			"value": "",
 			"description": "",
 			"readonly": false,
-			"popular": true,
+			"optional": true,
 			"refToView": "",
 			"length": "30"
-		},
-		{
-			"id": "xf_on_startpage",
-			"title": "On startpage",
-			"title_de": "Auf Startseite",
+		},{
+			"id": "ws_enabled",
+			"title": "Enabled",
+			"title_de": "Verwenden",
 			"type": "Boolean",
 			"value": true,
 			"popular": true,
 			"readonly": false,
 			"optional": false
 		},{
-			"id": "xf_edge",
+      "id" : "description",
+      "type" : "String",
+      "title" : "Description",
+			"title_de": "Beschreibung",
+      "value" : "",
+			"refToView": "text"
+		},{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"readonly": false,
+			"optional": false,
+			"refToView": "bg_frame",
+			"fill": false,
+			"stroke": true
+		},{
+			"id": "ws_position",
 			"type": "Choice",
-			"title": "Edge",
-			"title_de": "Rand",
+			"title": "Position",
+			"title_de": "Position",
 			"prefix": "oryx",
-			"value": "left",
-			"popular": true,
+			"value": "body",
+			"readonly": false,
+			"optional": false,
 			"refToView": "",
-			"items": [
-				{
+			"items": [{
 				"id": "c1",
-				"title": "Top",
+				"title": "Body",
+				"title_de": "Körper",
+				"value": "body",
+				"refToView": "body"
+			},{
+				"id": "c2",
+				"title": "Header",
+				"title_de": "Kopf",
+				"value": "header",
+				"refToView": "header"
+			},
+			{
+				"id": "c3",
+				"title": "Footer",
+				"title_de": "Fuss",
+				"value": "footer",
+				"refToView": "footer"
+			}]
+		},{
+			"id": "ws_colsep",
+			"type": "Boolean",
+			"title": "Colsep",
+			"title_de": "Spaltentrenner",
+			"prefix": "oryx",
+			"value": false,
+			"visible": false,
+			"readonly": false,
+			"optional": false,
+			"refToView": ""
+		},{
+			"id": "ws_frame",
+			"type": "Choice",
+			"title": "Frame",
+			"title_de": "Rahmen",
+			"prefix": "oryx",
+			"value": "none",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "All",
+				"title_de": "Überall",
+				"value": "all",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "None",
+				"title_de": "Keiner",
+				"value": "none",
+				"refToView": ""
+			},{
+				"id": "c3",
+				"title": "Bottom",
+				"title_de": "Nur unten",
+				"value": "bottom",
+				"refToView": ""
+			},{
+				"id": "c4",
+				"title": "Left ad right",
+				"title_de": "Links und Rechts",
+				"value": "sides",
+				"refToView": ""
+			},{
+				"id": "c5",
+				"title": "Oben",
 				"title_de": "Oben",
 				"value": "top",
+				"refToView": ""
+			},{
+				"id": "c6",
+				"title": "Top and bottom",
+				"title_de": "Oben und unten",
+				"value": "topbot",
+				"refToView": ""
+			}]
+		 }
+	 ],
+		"propertyPackages": ["flexcontainer" ]
+	},
+	{
+		"type": "node",
+		"id": "Tabview",
+		"title": "Tabview",
+		"title_de": "Register",
+		"groups": ["Containers"],
+		"description": "This element contains one or more page elements, any one of which is rendered at a given time.",
+		"view": "new_switch.svg",
+		"icon": "new_switch.png",
+		"roles": ["__additional_form_controls", "page_container"],
+
+		"layout": [{
+			"type": "layout.xforms.page"
+		}],
+		"properties": [{
+			"id": "ws_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": false,
+			"readonly": false,
+			"visible": false,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "ws_enabled",
+			"type": "String",
+			"title": "enabled",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"visible": false,
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "100"
+		}]
+	},
+	{
+		"type": "node",
+		"id": "Page",
+		"title": "Tabpage",
+		"title_de": "Registerkarte",
+		"groups": ["Containers"],
+		"description": "This element encloses markup to be conditionally rendered.",
+		"view": "new_case.svg",
+		"icon": "new_case.png",
+		"roles": ["page", "labeled", "standard_container", "actions_container"],
+
+		"layout": [{
+			"type": "layout.rows",
+			"marginTop": 30,
+			"marginLeft": 10,
+			"spacingX": 30,
+			"spacingY": 30
+		}],
+		"properties": [{
+			"id": "ws_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "ws_selected",
+			"type": "Combo",
+			"title": "selected",
+			"title_de": "Ausgewählte Karte",
+			"prefix": "oryx",
+			"value": false,
+			"description": "selection status for the page.",
+			"visible": false,
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"value": "true",
+				"title": "true",
 				"refToView": ""
 			},
 			{
 				"id": "c2",
-				"title": "Left",
-				"title_de": "Links",
-				"value": "left",
+				"value": "false",
+				"title": "false",
 				"refToView": ""
-			},
-			{
-				"id": "c3",
-				"title": "Right",
-				"title_de": "Rechts",
-				"value": "right",
-				"refToView": ""
-			}]
+			} ]
 		}]
 	}],
 	"rules": {
 		"containmentRules": [{
-			"role": "menus",
-			"contains": ["label","menus", "menuitems"]
+			"role": "standard_container",
+			"contains": ["additional_form_controls"]
 		},
 		{
-			"role": "main_container",
-			"contains": ["menus"]
+			"role": "additional_form_controls",
+			"contains": ["core_form_controls"]
+		}],
+		"xorphingRules": [{
+			"role": "controls_morph",
+			"baseMorphs": ["Input"]
+		},
+		{
+			"role": "actions_morph",
+			"baseMorphs": ["Action"]
+		},
+		{
+			"role": "support_morph",
+			"baseMorphs": ["Hint"]
 		}]
 	}
 }
