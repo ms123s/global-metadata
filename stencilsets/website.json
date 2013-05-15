@@ -9,8 +9,8 @@
 		"properties": [{
 			"id": "ws_flex-basis",
 			"type": "Combo",
-			"title": "Width",
-			"title_de": "Breite",
+			"title": "Basiswidth",
+			"title_de": "Basisbreite",
 			"prefix": "oryx",
 			"value": "auto",
 			"popular": false,
@@ -27,6 +27,12 @@
 				"id": "c2",
 				"title": "100px",
 				"value": "100px",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "120%",
+				"value": "120%",
 				"refToView": ""
 			}]
 		},
@@ -104,6 +110,19 @@
 			"popular": false,
 			"readonly": false,
 			"optional": false
+		},
+		{
+			"id": "ws_css",
+			"type": "text",
+			"config":{"mode":"text/css","width":"600","height":"800"},
+			"title": "CSS",
+			"title_de": "CSS",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
 		}]
 	},
 	{
@@ -220,6 +239,7 @@
 			"title": "Align content",
 			"title_de": "Inhaltausrichtung",
 			"prefix": "oryx",
+			"visible": false,
 			"value": "flex-start",
 			"readonly": false,
 			"optional": false,
@@ -260,6 +280,19 @@
 				"value": "stretch",
 				"refToView": ""
 			}]
+		},
+		{
+			"id": "ws_css",
+			"type": "text",
+			"config":{"mode":"text/css","width":"600","height":"800"},
+			"title": "CSS",
+			"title_de": "CSS",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
 		}]
 	}
 ],
@@ -307,327 +340,17 @@
 			"wrapLines": true
 		},
 		{
-			"id": "db_page.margin.top",
-			"type": "String",
-			"title": "page.margin.top",
-			"title_de": "Seitenabstand(o.)",
+			"id": "ws_css",
+			"type": "text",
+			"config":{"mode":"text/css","width":"600","height":"800"},
+			"title": "CSS",
+			"title_de": "CSS",
 			"prefix": "oryx",
-			"value": "5mm",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},
-		{
-			"id": "db_body.margin.top",
-			"type": "String",
-			"title": "body.margin.top",
-			"title_de": "Textabstand(o.)",
-			"prefix": "oryx",
-			"value": "20mm",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},
-		{
-			"id": "db_region.before.extent",
-			"type": "String",
-			"title": "page.margin.top",
-			"title_de": "Texthöhe(o.)",
-			"prefix": "oryx",
-			"value": "0mm",
-			"readonly": false,
-			"visible": false,
-			"length": "50"
-		},
-		{
-			"id": "db_page.margin.bottom",
-			"type": "String",
-			"title": "page.margin.bottom",
-			"title_de": "Seitenabstand(u.)",
-			"prefix": "oryx",
-			"value": "5mm",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},
-		{
-			"id": "db_body.margin.bottom",
-			"type": "String",
-			"title": "Textabstand(unten)",
-			"title_de": "Textabstand(u.)",
-			"prefix": "oryx",
-			"value": "20mm",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},{
-			"id": "db_region.after.extent",
-			"type": "String",
-			"title": "Texthöhe(unten)",
-			"title_de": "Texthöhe(u.)",
-			"prefix": "oryx",
-			"value": "20mm",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},{
-			"id": "db_page.margin.inner",
-			"type": "String",
-			"title": "Left margin",
-			"title_de": "Linker Rand",
-			"prefix": "oryx",
-			"value": "20mm",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},{
-			"id": "db_page.margin.outer",
-			"type": "String",
-			"title": "Right margin",
-			"title_de": "Rechter Rand",
-			"prefix": "oryx",
-			"value": "20mm",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},{
-			"id": "db_table.frame.border.color",
-			"type": "Color",
-			"title": "Framecolor",
-			"title_de": "Rahmenfarbe",
-			"prefix": "oryx",
-			"value": "#777777",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},{
-			"id": "db_table.frame.border.thickness",
-			"type": "String",
-			"title": "Framethickness",
-			"title_de": "Rahmenstärke",
-			"prefix": "oryx",
-			"value": "0.4pt",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},{
-			"id": "db_table.frame.border.style",
-			"type": "Choice",
-			"title": "Framestyle",
-			"title_de": "Rahmenstyle",
-			"prefix": "oryx",
-			"value": "solid",
-			"popular": false,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "Solid",
-				"value": "solid",
-				"refToView": ""
-			},{
-				"id": "c2",
-				"title": "Dotted",
-				"value": "dotted",
-				"refToView": ""
-			},{
-				"id": "c3",
-				"title": "Dashed",
-				"value": "dashed",
-				"refToView": ""
-			},{
-				"id": "c4",
-				"title": "Double",
-				"value": "double",
-				"refToView": ""
-			},{
-				"id": "c5",
-				"title": "Ridge",
-				"value": "ridge",
-				"refToView": ""
-			},{
-				"id": "c6",
-				"title": "Groove",
-				"value": "groove",
-				"refToView": ""
-			},{
-				"id": "c7",
-				"title": "Outset",
-				"value": "outset",
-				"refToView": ""
-			},{
-				"id": "c8",
-				"title": "Inset",
-				"value": "inset",
-				"refToView": ""
-			} ]
-		},{
-			"id": "db_table.cell.border.color",
-			"type": "Color",
-			"title": "Cellcolor",
-			"title_de": "Zellenrahmenfarbe",
-			"prefix": "oryx",
-			"value": "#777777",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},{
-			"id": "db_table.cell.border.thickness",
-			"type": "String",
-			"title": "Cellthickness",
-			"title_de": "Zellenrahmenstärke",
-			"prefix": "oryx",
-			"value": "0.4pt",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},{
-			"id": "db_table.cell.border.style",
-			"type": "Choice",
-			"title": "Tablecellestyle",
-			"title_de": "Zellenrahmenstyle",
-			"prefix": "oryx",
-			"value": "solid",
-			"popular": false,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "Solid",
-				"value": "solid",
-				"refToView": ""
-			},{
-				"id": "c2",
-				"title": "Dotted",
-				"value": "dotted",
-				"refToView": ""
-			},{
-				"id": "c3",
-				"title": "Dashed",
-				"value": "dashed",
-				"refToView": ""
-			},{
-				"id": "c4",
-				"title": "Double",
-				"value": "double",
-				"refToView": ""
-			},{
-				"id": "c5",
-				"title": "Ridge",
-				"value": "ridge",
-				"refToView": ""
-			},{
-				"id": "c6",
-				"title": "Groove",
-				"value": "groove",
-				"refToView": ""
-			},{
-				"id": "c7",
-				"title": "Outset",
-				"value": "outset",
-				"refToView": ""
-			},{
-				"id": "c8",
-				"title": "Inset",
-				"value": "inset",
-				"refToView": ""
-			} ]
-		},
-		{
-			"id": "db_paper.type",
-			"type": "Choice",
-			"title": "Papertype",
-			"title_de": "Papierformat",
-			"prefix": "oryx",
-			"value": "A4",
+			"value": "",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "A4",
-				"value": "A4",
-				"refToView": ""
-			},
-			{
-				"id": "c2",
-				"title": "USletter",
-				"value": "USletter",
-				"refToView": ""
-			},{
-				"id": "c3",
-				"title": "A5",
-				"value": "A5",
-				"refToView": ""
-			},{
-				"id": "c4",
-				"title": "A3",
-				"value": "A3",
-				"refToView": ""
-			} ]
-		},
-		{
-			"id": "db_page.orientation",
-			"type": "Choice",
-			"title": "Orientation",
-			"title_de": "Orientierung",
-			"prefix": "oryx",
-			"value": "portrait",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "Portrait",
-				"value": "portrait",
-				"refToView": ""
-			},{
-				"id": "c2",
-				"title": "Landscape",
-				"value": "landscape",
-				"refToView": ""
-			}]
-		}, {
-			"id": "db_body.font.master",
-			"type": "Combo",
-			"title": "Basic fontsize",
-			"title_de": "Basisfontgröße",
-			"prefix": "oryx",
-			"value": "8",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "8",
-				"value": "8",
-				"refToView": ""
-			},{
-				"id": "c2",
-				"title": "9",
-				"value": "9",
-				"refToView": ""
-			},{
-				"id": "c3",
-				"title": "10",
-				"value": "10",
-				"refToView": ""
-			},{
-				"id": "c4",
-				"title": "11",
-				"value": "11",
-				"refToView": ""
-			},{
-				"id": "c5",
-				"title": "12",
-				"value": "12",
-				"refToView": ""
-			}]
+			"refToView": ""
 		}]
 	},
 	{
