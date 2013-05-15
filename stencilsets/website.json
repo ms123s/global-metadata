@@ -5,6 +5,48 @@
 	"description": "This is the XWebsite stencil set specification.",
 	"propertyPackages": [
 		{
+		"name": "base",
+		"properties": [{
+			"id": "ws_id",
+			"type": "String",
+			"title": "Id",
+			"value": "",
+			"readonly": false,
+			"popular": true,
+			"optional": true,
+			"length": "50"
+		},{
+      "id" : "ws_name",
+      "type" : "String",
+      "title" : "Name",
+			"title_de": "Name",
+      "value" : "",
+			"readonly": false,
+			"optional": true,
+			"refToView": "text"
+		},{
+			"id": "ws_enabled",
+			"title": "Enabled",
+			"title_de": "Verwenden",
+			"type": "Boolean",
+			"value": true,
+			"popular": true,
+			"readonly": false,
+			"optional": false
+		},{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"readonly": false,
+			"optional": false,
+			"refToView": "bg_frame",
+			"fill": false,
+			"stroke": true
+		}]
+	},
+	{
 		"name": "flexchild",
 		"properties": [{
 			"id": "ws_flex-basis",
@@ -119,7 +161,7 @@
 			"title_de": "CSS",
 			"prefix": "oryx",
 			"value": "",
-			"popular": true,
+			"popular": false,
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
@@ -289,7 +331,7 @@
 			"title_de": "CSS",
 			"prefix": "oryx",
 			"value": "",
-			"popular": true,
+			"popular": false,
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
@@ -370,49 +412,6 @@
 			"moveX": 0
 		}],
 		"properties": [{
-			"id": "ws_id",
-			"type": "String",
-			"title": "Id",
-			"prefix": "oryx",
-			"value": "",
-			"description": "",
-			"visible": false,
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"length": "30"
-		},{
-      "id" : "description",
-      "type" : "String",
-      "title" : "Description",
-			"title_de": "Beschreibung",
-      "value" : "",
-			"refToView": "text"
-		},{
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"readonly": false,
-			"optional": false,
-			"refToView": "bg_frame",
-			"fill": false,
-			"stroke": true
-		},{
-			"id": "ws_filter",
-			"type": "ResourceSelector",
-			"config": {"type":"sw.filter","prefix":""},
-			"title": "Filtername",
-			"title_de": "Filtername",
-			"value": "",
-			"description": "Filtername",
-			"description_de": "Name des Filters",
-			"popular": true,
-			"readonly": false,
-			"optional": false,
-			"length": "50"
-		},{
 			"id": "ws_markdown",
 			"type": "text",
 			"config":{"mode":"text/tiki"},
@@ -425,57 +424,174 @@
 			"optional": true,
 			"refToView": ""
 		}],
-		"propertyPackages": ["flexchild" ]
+		"propertyPackages": ["base", "flexchild" ]
 	},
 	{
 		"type": "node",
-		"id":"Select",
-		"title":"Select",
+		"id":"Menu",
+		"title":"Menu",
+		"title_de":"Menü",
 		"groups":["Controls"],
 		"view":"new_menu.svg",
 		"icon":"new_select.png",
-		"roles": ["flex_child", "menu", "menu_item", "controls_morph"],
-		"layout" : [{"type" : "layout.website.item"}],
-		"properties": [
-			{
-				"id":"ws_id",
+		"roles": ["flex_child", "menu", "controls_morph"],
+		"layout" : [{"type" : "layout.website.menuitem"}],
+		"properties": [{
+				"id":"ws_xid",
 				"type":"String",
 				"title":"id",
 				"prefix":"oryx",
 				"value":"",
 				"description":"",
 				"readonly":false,
+				"visible":false,
 				"optional":true,
 				"refToView":"",
 				"length":"30"
-			}
-		]
+		}], 
+		"propertyPackages": ["base", "flexchild" ]
 	},
 	{
 		"type": "node",
-		"id":"Item",
-		"title":"Item",
+		"id":"Submenu",
+		"title":"Submenu",
+		"title_de":"Untermenü",
+		"groups":["Controls"],
+		"view":"new_submenu.svg",
+		"icon":"new_select1.png",
+		"roles": ["menu", "menu_item", "controls_morph"],
+		"layout" : [{"type" : "layout.website.menuitem"}],
+		"properties": [ ], 
+		"propertyPackages": ["base" ]
+	},
+	{
+		"type": "node",
+		"id":"Menuitem",
+		"title":"Menuitem",
+		"title_de":"Menüeeintag",
 		"groups":["Controls"],
 		"view":"new_item.svg",
 		"icon":"new_item.png",
 		"roles": [
 			"menu_item"
 		],
-		"layout":[{"type":"layout.website.label.item"}],
-		"properties": [
+		"layout":[{"type":"layout.website.label.menuitem"}],
+		"properties": [{
+			"id": "ws_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"description": "",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "ws_name",
+			"type": "String",
+			"title": "Name",
+			"title_de": "Name",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "menuitem",
+			"length": "60"
+		},
+		{
+			"id": "ws_linktype",
+			"type": "Choice",
+			"title": "Linktype",
+			"title_de": "Linktyp",
+			"prefix": "oryx",
+			"value": "internal",
+			"description": "The link type",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Internal",
+				"title_de": "Intern",
+				"value": "internal",
+				"icon": "markdown.png",
+				"refToView": "internal"
+			},
 			{
-				"id":"xf_id",
-				"type":"String",
-				"title":"id",
-				"prefix":"oryx",
-				"value":"",
-				"description":"",
-				"readonly":false,
-				"optional":true,
-				"refToView":"",
-				"length":"30"
-			}
-		]
+				"id": "c2",
+				"title": "Workflow",
+				"value": "workflow",
+				"icon": "system-run.png",
+				"refToView": "workflow"
+			},
+			{
+				"id": "c2",
+				"title": "Menu",
+				"title_de": "Menue",
+				"icon": "menu.png",
+				"value": "menu",
+				"refToView": "menu"
+			},
+			{
+				"id": "c3",
+				"title": "Internet",
+				"value": "internet",
+				"icon": "internet.png",
+				"refToView": "internet"
+			} ]
+		},
+		{
+			"id": "ws_menu",
+			"type": "String",
+			"title": "Menu",
+			"title_de": "Menu",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "ws_url",
+			"type": "String",
+			"title": "Url(Internet)",
+			"title_de": "Url(Internet)",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		},
+		{
+			"id": "ws_workflow",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.process","prefix":""},
+      "title" : "Workflow",
+      "title_de" : "Workflow",
+			"prefix": "oryx",
+			"value": "",
+			"refToView": "",
+      "popular" : true
+		},
+		{
+			"id": "ws_content",
+			"type": "text",
+			"title": "Content(Internal)",
+			"title_de": "Inhalt(Intern)",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
+		}]
 	},
 	{
 		"type": "node",
@@ -485,7 +601,7 @@
 		"groups": ["Controls"],
 		"view": "new_autogentable.svg",
 		"icon": "table.png",
-		"roles": ["flex_child", "controls_morph"],
+		"roles": ["xflex_child", "controls_morph"],
 		"layout": [{
 			"type": "layout.website.label",
 			"moveY": -1,
@@ -566,75 +682,6 @@
 			"moveX": 0
 		}],
 		"properties": [{
-			"id": "ws_id",
-			"type": "String",
-			"title": "Id",
-			"prefix": "oryx",
-			"visible":false,
-			"value": "",
-			"description": "",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "30"
-		},{
-			"id": "ws_enabled",
-			"title": "Enabled",
-			"title_de": "Verwenden",
-			"type": "Boolean",
-			"value": true,
-			"popular": true,
-			"readonly": false,
-			"optional": false
-		},{
-      "id" : "description",
-      "type" : "String",
-      "title" : "Description",
-			"title_de": "Beschreibung",
-      "value" : "",
-			"refToView": "text"
-		},{
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"readonly": false,
-			"optional": false,
-			"refToView": "bg_frame",
-			"fill": false,
-			"stroke": true
-		},{
-			"id": "ws_position",
-			"type": "Choice",
-			"title": "Position",
-			"title_de": "Position",
-			"prefix": "oryx",
-			"value": "body",
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "Body",
-				"title_de": "Körper",
-				"value": "body",
-				"refToView": "body"
-			},{
-				"id": "c2",
-				"title": "Header",
-				"title_de": "Kopf",
-				"value": "header",
-				"refToView": "header"
-			},
-			{
-				"id": "c3",
-				"title": "Footer",
-				"title_de": "Fuss",
-				"value": "footer",
-				"refToView": "footer"
-			}]
-		},{
 			"id": "ws_colsep",
 			"type": "Boolean",
 			"title": "Colsep",
@@ -694,108 +741,7 @@
 			}]
 		 }
 	 ],
-		"propertyPackages": ["flexcontainer" ]
-	},
-	{
-		"type": "node",
-		"id": "Tabview",
-		"title": "Tabview",
-		"title_de": "Register",
-		"groups": ["Containers"],
-		"description": "This element contains one or more page elements, any one of which is rendered at a given time.",
-		"view": "new_switch.svg",
-		"icon": "new_switch.png",
-		"roles": ["__additional_form_controls", "page_container"],
-
-		"layout": [{
-			"type": "layout.website.page"
-		}],
-		"properties": [{
-			"id": "ws_id",
-			"type": "String",
-			"title": "Id",
-			"prefix": "oryx",
-			"value": "",
-			"description": "",
-			"popular": false,
-			"readonly": false,
-			"visible": false,
-			"optional": true,
-			"refToView": "",
-			"length": "30"
-		},
-		{
-			"id": "ws_enabled",
-			"type": "String",
-			"title": "enabled",
-			"prefix": "oryx",
-			"value": "",
-			"description": "",
-			"visible": false,
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "100"
-		}]
-	},
-	{
-		"type": "node",
-		"id": "Page",
-		"title": "Tabpage",
-		"title_de": "Registerkarte",
-		"groups": ["Containers"],
-		"description": "This element encloses markup to be conditionally rendered.",
-		"view": "new_case.svg",
-		"icon": "new_case.png",
-		"roles": ["page", "labeled", "standard_container", "actions_container"],
-
-		"layout": [{
-			"type": "layout.rows",
-			"marginTop": 30,
-			"marginLeft": 10,
-			"spacingX": 30,
-			"spacingY": 30
-		}],
-		"properties": [{
-			"id": "ws_id",
-			"type": "String",
-			"title": "Id",
-			"prefix": "oryx",
-			"value": "",
-			"description": "",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"length": "30"
-		},
-		{
-			"id": "ws_selected",
-			"type": "Combo",
-			"title": "selected",
-			"title_de": "Ausgewählte Karte",
-			"prefix": "oryx",
-			"value": false,
-			"description": "selection status for the page.",
-			"visible": false,
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"value": "true",
-				"title": "true",
-				"refToView": ""
-			},
-			{
-				"id": "c2",
-				"value": "false",
-				"title": "false",
-				"refToView": ""
-			} ]
-		}]
+		"propertyPackages": ["base","flexcontainer" ]
 	}],
 	"rules": {
 		"containmentRules": [{
