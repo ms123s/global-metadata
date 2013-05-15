@@ -1,7 +1,7 @@
 {
 	"title": "Website",
 	"title_de": "Website",
-	"namespace": "http://b3mn.org/stencilset/xwebsite#",
+	"namespace": "http://b3mn.org/stencilset/website",
 	"description": "This is the XWebsite stencil set specification.",
 	"propertyPackages": [
 		{
@@ -362,10 +362,10 @@
 		"description": "A textarea control.",
 		"view": "new_textarea.svg",
 		"icon": "markdown.png",
-		"roles": ["core_form_controls", "controls_morph"],
+		"roles": ["flex_child", "controls_morph"],
 
 		"layout": [{
-			"type": "layout.xforms.label",
+			"type": "layout.website.label",
 			"moveY": -1,
 			"moveX": 0
 		}],
@@ -429,15 +429,65 @@
 	},
 	{
 		"type": "node",
+		"id":"Select",
+		"title":"Select",
+		"groups":["Controls"],
+		"view":"new_menu.svg",
+		"icon":"new_select.png",
+		"roles": ["flex_child", "menu", "menu_item", "controls_morph"],
+		"layout" : [{"type" : "layout.website.item"}],
+		"properties": [
+			{
+				"id":"ws_id",
+				"type":"String",
+				"title":"id",
+				"prefix":"oryx",
+				"value":"",
+				"description":"",
+				"readonly":false,
+				"optional":true,
+				"refToView":"",
+				"length":"30"
+			}
+		]
+	},
+	{
+		"type": "node",
+		"id":"Item",
+		"title":"Item",
+		"groups":["Controls"],
+		"view":"new_item.svg",
+		"icon":"new_item.png",
+		"roles": [
+			"menu_item"
+		],
+		"layout":[{"type":"layout.website.label.item"}],
+		"properties": [
+			{
+				"id":"xf_id",
+				"type":"String",
+				"title":"id",
+				"prefix":"oryx",
+				"value":"",
+				"description":"",
+				"readonly":false,
+				"optional":true,
+				"refToView":"",
+				"length":"30"
+			}
+		]
+	},
+	{
+		"type": "node",
 		"id": "autogentable",
 		"title": "Auto. gen.Table",
 		"title_de": "Auto erz. Tabelle",
 		"groups": ["Controls"],
 		"view": "new_autogentable.svg",
 		"icon": "table.png",
-		"roles": ["core_form_controls", "controls_morph"],
+		"roles": ["flex_child", "controls_morph"],
 		"layout": [{
-			"type": "layout.xforms.label",
+			"type": "layout.website.label",
 			"moveY": -1,
 			"moveX": 0
 		}],
@@ -498,9 +548,9 @@
 		"title": "Row",
 		"title_de": "Reihe",
 		"groups": ["Containers"],
-		"view": "new_group.svg",
-		"icon": "new_group.png",
-		"roles": ["additional_form_controls" ],
+		"view": "new_row.svg",
+		"icon": "row.png",
+		"roles": ["flex_container" ],
 
 		"layout": [{
 			"type": "layout.rows",
@@ -508,10 +558,10 @@
 			"marginLeft": 25,
 			"spacingX": 8,
 			"spacingY": 0,
-			"exclude": ["http://b3mn.org/stencilset/xforms#Label"]
+			"exclude": ["http://b3mn.org/stencilset/website#Label"]
 		},
 		{
-			"type": "layout.xforms.label",
+			"type": "layout.website.label",
 			"moveY": -1,
 			"moveX": 0
 		}],
@@ -658,7 +708,7 @@
 		"roles": ["__additional_form_controls", "page_container"],
 
 		"layout": [{
-			"type": "layout.xforms.page"
+			"type": "layout.website.page"
 		}],
 		"properties": [{
 			"id": "ws_id",
@@ -750,23 +800,20 @@
 	"rules": {
 		"containmentRules": [{
 			"role": "standard_container",
-			"contains": ["additional_form_controls"]
+			"contains": ["flex_container"]
 		},
 		{
-			"role": "additional_form_controls",
-			"contains": ["core_form_controls"]
-		}],
+			"role": "flex_container",
+			"contains": ["flex_child"]
+		},
+		{
+			"role": "menu",
+			"contains": ["menu_item"]
+		}
+],
 		"xorphingRules": [{
 			"role": "controls_morph",
 			"baseMorphs": ["Input"]
-		},
-		{
-			"role": "actions_morph",
-			"baseMorphs": ["Action"]
-		},
-		{
-			"role": "support_morph",
-			"baseMorphs": ["Hint"]
 		}]
 	}
 }
