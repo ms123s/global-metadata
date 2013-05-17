@@ -3480,11 +3480,19 @@
     },
     {
         "msgid": "Importing.title",
-        "msgstr": "Import"
+        "msgstr": "Importe"
     },
     {
         "msgid": "importing.newImport",
         "msgstr": "Neuer Import"
+    },
+    {
+        "msgid": "importing.importingCreated",
+        "msgstr": "Import wurde angelegt"
+    },
+    {
+        "msgid": "data.user.created",
+        "msgstr": "Anwender angelegt"
     },
     {
         "msgid": "importing.importName",
