@@ -300,15 +300,11 @@
     },
     {
         "msgid": "data.entity.multi_add",
+        "msgstr": "Mehrfacherstellung von Entitäten"
+    },
+    {
+        "msgid": "data.entity.multiple_tabs",
         "msgstr": "Filter kombinieren"
-    },
-    {
-        "msgid": "data.entity.multiple_tabs",
-        "msgstr": "Mulitple tabs possible"
-    },
-    {
-        "msgid": "data.entity.multiple_tabs",
-        "msgstr": "Mehrere Tabs möglich"
     },
     {
         "msgid": "data.entity.name",
