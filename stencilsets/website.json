@@ -16,18 +16,9 @@
 			"optional": true,
 			"length": "50"
 		},{
-      "id" : "ws_name",
-      "type" : "String",
-      "title" : "Name",
-			"title_de": "Name",
-      "value" : "",
-			"readonly": false,
-			"optional": true,
-			"refToView": "text"
-		},{
-			"id": "ws_enabled",
-			"title": "Enabled",
-			"title_de": "Verwenden",
+			"id": "ws_atstartpage",
+			"title": "At startpage",
+			"title_de": "Auf Startseite",
 			"type": "Boolean",
 			"value": true,
 			"popular": true,
@@ -382,6 +373,19 @@
 			"wrapLines": true
 		},
 		{
+			"id": "ws_title",
+			"type": "String",
+			"title": "Title",
+			"title_de": "Titel",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"length": "50",
+			"wrapLines": true
+		},
+		{
 			"id": "ws_css",
 			"type": "text",
 			"config":{"mode":"text/css","width":"600","height":"800"},
@@ -461,7 +465,17 @@
 		"icon":"new_select1.png",
 		"roles": ["menu", "menu_item", "controls_morph"],
 		"layout" : [{"type" : "layout.website.menuitem"}],
-		"properties": [ ], 
+		"properties": [{
+      "id" : "ws_name",
+      "type" : "String",
+      "title" : "Name",
+			"title_de": "Name",
+      "value" : "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "text"
+		}], 
 		"propertyPackages": ["base" ]
 	},
 	{
@@ -503,6 +517,17 @@
 			"length": "60"
 		},
 		{
+			"id": "ws_locationid",
+			"type": "String",
+			"title": "LocationId",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
+		},
+		{
 			"id": "ws_linktype",
 			"type": "Choice",
 			"title": "Linktype",
@@ -516,11 +541,11 @@
 			"refToView": "",
 			"items": [{
 				"id": "c1",
-				"title": "Internal",
-				"title_de": "Intern",
-				"value": "internal",
+				"title": "Content",
+				"title_de": "Content",
+				"value": "content",
 				"icon": "markdown.png",
-				"refToView": "internal"
+				"refToView": "content"
 			},
 			{
 				"id": "c2",
@@ -530,32 +555,12 @@
 				"refToView": "workflow"
 			},
 			{
-				"id": "c2",
-				"title": "Menu",
-				"title_de": "Menue",
-				"icon": "menu.png",
-				"value": "menu",
-				"refToView": "menu"
-			},
-			{
 				"id": "c3",
 				"title": "Internet",
 				"value": "internet",
 				"icon": "internet.png",
 				"refToView": "internet"
 			} ]
-		},
-		{
-			"id": "ws_menu",
-			"type": "String",
-			"title": "Menu",
-			"title_de": "Menu",
-			"prefix": "oryx",
-			"value": "",
-			"popular": true,
-			"optional": true,
-			"refToView": "",
-			"length": "30"
 		},
 		{
 			"id": "ws_url",
@@ -581,10 +586,9 @@
       "popular" : true
 		},
 		{
-			"id": "ws_content",
-			"type": "text",
-			"title": "Content(Internal)",
-			"title_de": "Inhalt(Intern)",
+			"id": "ws_contentid",
+			"type": "String",
+			"title": "ContentId",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
