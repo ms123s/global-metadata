@@ -586,6 +586,17 @@
       "popular" : true
 		},
 		{
+			"id": "ws_markdown",
+			"type": "text",
+			"title": "Content",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
+		},
+		{
 			"id": "ws_contentid",
 			"type": "String",
 			"title": "ContentId",
@@ -595,7 +606,8 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
-		}]
+		}
+	]
 	},
 	{
 		"type": "node",
