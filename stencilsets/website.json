@@ -352,7 +352,7 @@
 		"icon": "new_form.png",
 		"mayBeRoot": true,
 		"hide": true,
-		"roles": ["standard_container"],
+		"roles": ["main_container"],
 
 		"layout": [{
 			"type": "layout.vertical",
@@ -735,8 +735,8 @@
 		"title": "Row",
 		"title_de": "Reihe",
 		"groups": ["Containers"],
-		"view": "new_row.svg",
-		"icon": "row.png",
+		"view": "new_dock.svg",
+		"icon": "dock.png",
 		"roles": ["flex_container" ],
 
 		"layout": [{
@@ -810,13 +810,54 @@
 				"value": "topbot",
 				"refToView": ""
 			}]
+		},{
+			"id": "ws_position",
+			"type": "Choice",
+			"title": "Position",
+			"title_de": "Position",
+			"prefix": "oryx",
+			"value": "center",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "North",
+				"title_de": "Norden",
+				"value": "north",
+				"refToView": "north"
+			},{
+				"id": "c2",
+				"title": "West",
+				"title_de": "Westen",
+				"value": "west",
+				"refToView": "west"
+			},{
+				"id": "c3",
+				"title": "East",
+				"title_de": "Osten",
+				"value": "east",
+				"refToView": "east"
+			},{
+				"id": "c4",
+				"title": "Center",
+				"title_de": "Zentrum",
+				"value": "center",
+				"refToView": "center"
+			},{
+				"id": "c5",
+				"title": "South",
+				"title_de": "Süden",
+				"value": "south",
+				"refToView": "south"
+			}]
 		 }
 	 ],
 		"propertyPackages": ["base","flexcontainer" ]
 	}],
 	"rules": {
 		"containmentRules": [{
-			"role": "standard_container",
+			"role": "main_container",
 			"contains": ["flex_container"]
 		},
 		{
