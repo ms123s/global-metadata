@@ -152,7 +152,20 @@
 			"title_de": "CSS",
 			"prefix": "oryx",
 			"value": "",
-			"popular": false,
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
+		},
+		{
+			"id": "ws_js",
+			"type": "text",
+			"config":{"mode":"text/javascript","width":"600","height":"800"},
+			"title": "Javascript",
+			"title_de": "Javascript",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
@@ -397,6 +410,19 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
+		},
+		{
+			"id": "ws_js",
+			"type": "text",
+			"config":{"mode":"text/javascript","width":"600","height":"800"},
+			"title": "Javascript",
+			"title_de": "Javascript",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
 		}]
 	},
 	{
@@ -421,6 +447,35 @@
 			"config":{"mode":"text/tiki"},
 			"title": "Text",
 			"title_de": "Text",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
+		}],
+		"propertyPackages": ["base", "flexchild" ]
+	},
+	{
+		"type": "node",
+		"id": "Htmlarea",
+		"title": "Htmlarea",
+		"title_de": "Htmleingabe",
+		"groups": ["Controls"],
+		"view": "new_htmlarea.svg",
+		"icon": "html.png",
+		"roles": ["flex_child", "controls_morph"],
+
+		"layout": [{
+			"type": "layout.website.label",
+			"moveY": -1,
+			"moveX": 0
+		}],
+		"properties": [{
+			"id": "ws_html",
+			"type": "text",
+			"config":{"mode":"text/xml"},
+			"title": "Html",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
