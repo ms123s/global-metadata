@@ -38,12 +38,12 @@
 		}]
 	},
 	{
-		"name": "flexchild",
+		"name": "contentelement",
 		"properties": [{
-			"id": "ws_flex-basis",
+			"id": "ws_width",
 			"type": "Combo",
-			"title": "Basiswidth",
-			"title_de": "Basisbreite",
+			"title": "Width",
+			"title_de": "Breite",
 			"prefix": "oryx",
 			"value": "auto",
 			"popular": false,
@@ -64,82 +64,57 @@
 			},
 			{
 				"id": "c3",
-				"title": "120%",
-				"value": "120%",
+				"title": "100%",
+				"value": "100%",
 				"refToView": ""
 			}]
 		},
 		{
-			"id": "ws_align-self",
-			"type": "Choice",
-			"title": "Vert. Alignment",
-			"title_de": "Vert. Ausrichtung",
+			"id": "ws_height",
+			"type": "Combo",
+			"title": "Height",
+			"title_de": "Höhe",
 			"prefix": "oryx",
 			"value": "auto",
+			"popular": false,
 			"readonly": false,
 			"optional": false,
 			"refToView": "",
 			"items": [{
 				"id": "c1",
-				"title": "Auto",
+				"title": "auto",
 				"value": "auto",
 				"refToView": ""
 			},
 			{
 				"id": "c2",
-				"title": "Flex start",
-				"value": "flex-start",
+				"title": "100px",
+				"value": "100px",
 				"refToView": ""
 			},
 			{
 				"id": "c3",
-				"title": "Flex end",
-				"value": "flex-end",
-				"refToView": ""
-			},
-			{
-				"id": "c4",
-				"title": "Center",
-				"value": "center",
-				"refToView": ""
-			},
-			{
-				"id": "c5",
-				"title": "Baseline",
-				"value": "baseline",
-				"refToView": ""
-			},
-			{
-				"id": "c6",
-				"title": "Stretch",
-				"value": "stretch",
+				"title": "100%",
+				"value": "100%",
 				"refToView": ""
 			}]
 		},
 		{
-			"id": "ws_order",
-			"title": "Order",
-			"title_de": "Anordnung",
-			"type": "Integer",
-			"value": 0,
+			"id": "ws_flex",
+			"title": "Flex",
+			"title_de": "Flexible",
+			"type": "Boolean",
+			"value": true,
 			"popular": false,
 			"readonly": false,
 			"optional": false
-		},{
-			"id": "ws_flex-shrink",
-			"title": "Shrink",
-			"title_de": "Schrumpfen",
-			"type": "Integer",
-			"value": 1,
-			"popular": false,
-			"readonly": false,
-			"optional": false
-		},{
-			"id": "ws_flex-grow",
-			"title": "Grow",
-			"title_de": "Wachsen",
-			"type": "Integer",
-			"value": 0,
+		},
+		{
+			"id": "ws_border",
+			"title": "Border",
+			"title_de": "Rahmen",
+			"type": "Boolean",
+			"value": true,
 			"popular": false,
 			"readonly": false,
 			"optional": false
@@ -172,114 +147,8 @@
 		}]
 	},
 	{
-		"name": "flexcontainer",
-		"properties": [{
-			"id": "ws_display",
-			"type": "Choice",
-			"title": "Display",
-			"prefix": "oryx",
-			"value": "flex",
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "flex",
-				"value": "flex",
-				"refToView": ""
-			},
-			{
-				"id": "c2",
-				"title": "inline-flex",
-				"value": "inline-flex",
-				"refToView": ""
-			}]
-		},
-		{
-			"id": "ws_justify-content",
-			"type": "Choice",
-			"title": "Justify content",
-			"title_de": "Inhaltjustierung",
-			"prefix": "oryx",
-			"value": "flex-start",
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"items": [
-			{
-				"id": "c1",
-				"title": "Flex start",
-				"value": "flex-start",
-				"refToView": ""
-			},
-			{
-				"id": "c2",
-				"title": "Flex end",
-				"value": "flex-end",
-				"refToView": ""
-			},
-			{
-				"id": "c3",
-				"title": "Center",
-				"value": "center",
-				"refToView": ""
-			},
-			{
-				"id": "c4",
-				"title": "Space between",
-				"value": "space-between",
-				"refToView": ""
-			},
-			{
-				"id": "c5",
-				"title": "Space around",
-				"value": "space-around",
-				"refToView": ""
-			}]
-		},
-		{
-			"id": "ws_align-items",
-			"type": "Choice",
-			"title": "Alignment items",
-			"title_de": "Ausrichtung Elemente",
-			"prefix": "oryx",
-			"value": "flex-start",
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"items": [
-			{
-				"id": "c1",
-				"title": "Flex start",
-				"value": "flex-start",
-				"refToView": ""
-			},
-			{
-				"id": "c2",
-				"title": "Flex end",
-				"value": "flex-end",
-				"refToView": ""
-			},
-			{
-				"id": "c3",
-				"title": "Center",
-				"value": "center",
-				"refToView": ""
-			},
-			{
-				"id": "c4",
-				"title": "Baseline",
-				"value": "baseline",
-				"refToView": ""
-			},
-			{
-				"id": "c5",
-				"title": "Stretch",
-				"value": "stretch",
-				"refToView": ""
-			}]
-		},
-		{
+		"name": "layoutcontainer",
+		"properties": [ {
 			"id": "ws_align-content",
 			"type": "Choice",
 			"title": "Align content",
@@ -328,6 +197,66 @@
 			}]
 		},
 		{
+			"id": "ws_width",
+			"type": "Combo",
+			"title": "Width",
+			"title_de": "Breite",
+			"prefix": "oryx",
+			"value": "auto",
+			"popular": false,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "auto",
+				"value": "auto",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "100px",
+				"value": "100px",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "100%",
+				"value": "100%",
+				"refToView": ""
+			}]
+		},
+		{
+			"id": "ws_height",
+			"type": "Combo",
+			"title": "Height",
+			"title_de": "Höhe",
+			"prefix": "oryx",
+			"value": "auto",
+			"popular": false,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "auto",
+				"value": "auto",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "100px",
+				"value": "100px",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "100%",
+				"value": "100%",
+				"refToView": ""
+			}]
+		},
+		{
 			"id": "ws_css",
 			"type": "text",
 			"config":{"mode":"text/css","width":"600","height":"800"},
@@ -335,7 +264,7 @@
 			"title_de": "CSS",
 			"prefix": "oryx",
 			"value": "",
-			"popular": false,
+			"popular": true,
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
@@ -344,10 +273,9 @@
 ],
 	"stencils": [{
 		"type": "node",
-		"id": "XDocument",
-		"title": "XDocument",
+		"id": "XWebsite",
+		"title": "XWebsite",
 		"groups": ["Form"],
-		"description": "A XDocuments form.",
 		"view": "new_form.svg",
 		"icon": "new_form.png",
 		"mayBeRoot": true,
@@ -423,6 +351,33 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
+		},
+		{
+			"id": "ws_xspacing",
+			"title": "XSpacing",
+			"type": "Integer",
+			"value": 10,
+			"popular": true,
+			"readonly": false,
+			"optional": false
+		},
+		{
+			"id": "ws_yspacing",
+			"title": "YSpacing",
+			"type": "Integer",
+			"value": 10,
+			"popular": true,
+			"readonly": false,
+			"optional": false
+		},
+		{
+			"id": "ws_padding",
+			"title": "Padding",
+			"type": "Integer",
+			"value": 5,
+			"popular": true,
+			"readonly": false,
+			"optional": false
 		}]
 	},
 	{
@@ -434,7 +389,7 @@
 		"description": "A textarea control.",
 		"view": "new_textarea.svg",
 		"icon": "markdown.png",
-		"roles": ["flex_child", "controls_morph"],
+		"roles": ["content_element", "controls_morph"],
 
 		"layout": [{
 			"type": "layout.website.label",
@@ -454,7 +409,7 @@
 			"optional": true,
 			"refToView": ""
 		}],
-		"propertyPackages": ["base", "flexchild" ]
+		"propertyPackages": ["base", "contentelement" ]
 	},
 	{
 		"type": "node",
@@ -464,7 +419,7 @@
 		"groups": ["Controls"],
 		"view": "new_htmlarea.svg",
 		"icon": "html.png",
-		"roles": ["flex_child", "controls_morph"],
+		"roles": ["content_element", "controls_morph"],
 
 		"layout": [{
 			"type": "layout.website.label",
@@ -483,7 +438,7 @@
 			"optional": true,
 			"refToView": ""
 		}],
-		"propertyPackages": ["base", "flexchild" ]
+		"propertyPackages": ["base", "contentelement" ]
 	},
 	{
 		"type": "node",
@@ -493,7 +448,7 @@
 		"groups":["Controls"],
 		"view":"new_menu.svg",
 		"icon":"new_select.png",
-		"roles": ["flex_child", "menu", "controls_morph"],
+		"roles": ["content_element", "menu", "controls_morph"],
 		"layout" : [{"type" : "layout.website.menuitem"}],
 		"properties": [{
 				"id":"ws_xid",
@@ -508,7 +463,7 @@
 				"refToView":"",
 				"length":"30"
 		}], 
-		"propertyPackages": ["base", "flexchild" ]
+		"propertyPackages": ["base", "contentelement" ]
 	},
 	{
 		"type": "node",
@@ -727,17 +682,17 @@
 				"optional": false
 			}]
 		}],
-		"propertyPackages": ["flexchild" ]
+		"propertyPackages": ["contentelement" ]
 	},
 	{
 		"type": "node",
-		"id": "Row",
-		"title": "Row",
-		"title_de": "Reihe",
+		"id": "Pageelement",
+		"title": "Pageelement",
+		"title_de": "Seitenelement",
 		"groups": ["Containers"],
 		"view": "new_dock.svg",
 		"icon": "dock.png",
-		"roles": ["flex_container" ],
+		"roles": ["layout_container" ],
 
 		"layout": [{
 			"type": "layout.rows",
@@ -753,64 +708,6 @@
 			"moveX": 0
 		}],
 		"properties": [{
-			"id": "ws_colsep",
-			"type": "Boolean",
-			"title": "Colsep",
-			"title_de": "Spaltentrenner",
-			"prefix": "oryx",
-			"value": false,
-			"visible": false,
-			"readonly": false,
-			"optional": false,
-			"refToView": ""
-		},{
-			"id": "ws_frame",
-			"type": "Choice",
-			"title": "Frame",
-			"title_de": "Rahmen",
-			"prefix": "oryx",
-			"value": "none",
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "All",
-				"title_de": "Überall",
-				"value": "all",
-				"refToView": ""
-			},{
-				"id": "c2",
-				"title": "None",
-				"title_de": "Keiner",
-				"value": "none",
-				"refToView": ""
-			},{
-				"id": "c3",
-				"title": "Bottom",
-				"title_de": "Nur unten",
-				"value": "bottom",
-				"refToView": ""
-			},{
-				"id": "c4",
-				"title": "Left ad right",
-				"title_de": "Links und Rechts",
-				"value": "sides",
-				"refToView": ""
-			},{
-				"id": "c5",
-				"title": "Oben",
-				"title_de": "Oben",
-				"value": "top",
-				"refToView": ""
-			},{
-				"id": "c6",
-				"title": "Top and bottom",
-				"title_de": "Oben und unten",
-				"value": "topbot",
-				"refToView": ""
-			}]
-		},{
 			"id": "ws_position",
 			"type": "Choice",
 			"title": "Position",
@@ -853,16 +750,53 @@
 			}]
 		 }
 	 ],
-		"propertyPackages": ["base","flexcontainer" ]
+		"propertyPackages": ["base","layoutcontainer" ]
+	},
+	{
+		"type": "node",
+		"id": "Secondarygroup",
+		"title": "Secondarygroup",
+		"title_de": "Sekundärgruppe",
+		"groups": ["Containers"],
+		"view": "new_secondary.svg",
+		"icon": "replace16.png",
+		"roles": ["layout_container" ],
+
+		"layout": [{
+			"type": "layout.rows",
+			"marginTop": 20,
+			"marginLeft": 25,
+			"spacingX": 8,
+			"spacingY": 0,
+			"exclude": ["http://b3mn.org/stencilset/website#Label"]
+		},
+		{
+			"type": "layout.website.label",
+			"moveY": -1,
+			"moveX": 0
+		}],
+		"properties": [ {
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"readonly": false,
+			"optional": false,
+			"refToView": "bg_frame",
+			"fill": false,
+			"stroke": true
+		}],
+		"propertyPackages": [ ]
 	}],
 	"rules": {
 		"containmentRules": [{
 			"role": "main_container",
-			"contains": ["flex_container"]
+			"contains": ["layout_container"]
 		},
 		{
-			"role": "flex_container",
-			"contains": ["flex_child"]
+			"role": "layout_container",
+			"contains": ["content_element"]
 		},
 		{
 			"role": "menu",
