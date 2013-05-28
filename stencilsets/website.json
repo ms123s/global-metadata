@@ -37,6 +37,87 @@
 			"stroke": true
 		}]
 	},
+		{
+		"name": "border",
+		"properties": [{
+			"id": "ws_bordercolor",
+			"type": "Color",
+			"title": "Bordercolor",
+			"title_de": "Rahmenfarbe",
+			"prefix": "oryx",
+			"value": "black",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "ws_borderwidth",
+			"type": "Integer",
+			"title": "Borderthickness",
+			"title_de": "Rahmenstärke",
+			"prefix": "oryx",
+			"value": 0,
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "ws_borderstyle",
+			"type": "Choice",
+			"title": "Borderstyle",
+			"title_de": "Rahmenstyle",
+			"prefix": "oryx",
+			"value": "none",
+			"popular": false,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [ {
+				"id": "c1",
+				"title": "None",
+				"value": "none",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "Solid",
+				"value": "solid",
+				"refToView": ""
+			},{
+				"id": "c3",
+				"title": "Dotted",
+				"value": "dotted",
+				"refToView": ""
+			},{
+				"id": "c4",
+				"title": "Dashed",
+				"value": "dashed",
+				"refToView": ""
+			},{
+				"id": "c5",
+				"title": "Double",
+				"value": "double",
+				"refToView": ""
+			},{
+				"id": "c6",
+				"title": "Ridge",
+				"value": "ridge",
+				"refToView": ""
+			},{
+				"id": "c7",
+				"title": "Groove",
+				"value": "groove",
+				"refToView": ""
+			},{
+				"id": "c8",
+				"title": "Outset",
+				"value": "outset",
+				"refToView": ""
+			},{
+				"id": "c9",
+				"title": "Inset",
+				"value": "inset",
+				"refToView": ""
+			}]
+		}]
+	},
 	{
 		"name": "contentelement",
 		"properties": [{
@@ -174,16 +255,6 @@
 				"value": "bottom",
 				"refToView": ""
 			}]
-		},
-		{
-			"id": "ws_border",
-			"title": "Border",
-			"title_de": "Rahmen",
-			"type": "Boolean",
-			"value": true,
-			"popular": false,
-			"readonly": false,
-			"optional": false
 		},
 		{
 			"id": "ws_css",
@@ -444,6 +515,17 @@
 			"popular": true,
 			"readonly": false,
 			"optional": false
+		}, 
+		{
+			"id": "ws_backgroundcolor",
+			"type": "Color",
+			"title": "Backgroundcolor",
+			"title_de": "Hintergrundfarbe",
+			"prefix": "oryx",
+			"value": "white",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
 		}]
 	},
 	{
@@ -816,7 +898,7 @@
 			}]
 		 }
 	 ],
-		"propertyPackages": ["base","layoutcontainer" ]
+		"propertyPackages": ["base","border","layoutcontainer" ]
 	},
 	{
 		"type": "node",
