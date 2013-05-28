@@ -110,6 +110,72 @@
 			"optional": false
 		},
 		{
+			"id": "ws_alignx",
+			"type": "Choice",
+			"title": "AlignX",
+			"title_de": "Ausrichtung X",
+			"prefix": "oryx",
+			"visible": true,
+			"value": "center",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "center",
+				"title_de": "Mitte",
+				"value": "center",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "left",
+				"title_de": "Links",
+				"value": "left",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "right",
+				"title_de": "Rechts",
+				"value": "right",
+				"refToView": ""
+			}]
+		},
+		{
+			"id": "ws_aligny",
+			"type": "Choice",
+			"title": "AlignY",
+			"title_de": "Ausrichtung Y",
+			"prefix": "oryx",
+			"visible": true,
+			"value": "middle",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "middle",
+				"title_de": "Mitte",
+				"value": "middle",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "top",
+				"title_de": "Oben",
+				"value": "top",
+				"refToView": ""
+			},
+			{
+				"id": "c3",
+				"title": "bottom",
+				"title_de": "Unten",
+				"value": "bottom",
+				"refToView": ""
+			}]
+		},
+		{
 			"id": "ws_border",
 			"title": "Border",
 			"title_de": "Rahmen",
