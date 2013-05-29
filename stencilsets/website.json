@@ -517,6 +517,28 @@
 			"optional": false
 		}, 
 		{
+			"id": "css_headercolor",
+			"type": "Color",
+			"title": "Headercolor",
+			"title_de": "Überschriftfarbe",
+			"prefix": "oryx",
+			"value": "#3982b7",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "css_textcolor",
+			"type": "Color",
+			"title": "Textcolor",
+			"title_de": "Textfarbe",
+			"prefix": "oryx",
+			"value": "#4d5054",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
 			"id": "ws_backgroundcolor",
 			"type": "Color",
 			"title": "Backgroundcolor",
