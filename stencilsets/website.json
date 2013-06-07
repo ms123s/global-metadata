@@ -698,14 +698,16 @@
 		},
 		{
 			"id": "ws_locationid",
-			"type": "String",
+			"type": "Choice",
+			"config": {"type":"ms123.graphicaleditor.plugins.propertyedit.ShapeSelect","criteria":{"parentStencil":"Pageelement", "roles":["content_element"]},"propertyNames":["ws_id"], "delimeter":":"},
 			"title": "LocationId",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"refToView": ""
+			"refToView": "",
+			"items": []
 		},
 		{
 			"id": "ws_linktype",
@@ -729,13 +731,20 @@
 			},
 			{
 				"id": "c2",
+				"title": "ContentId",
+				"value": "contentid",
+				"icon": "contentid.png",
+				"refToView": "contentid"
+			},
+			{
+				"id": "c3",
 				"title": "Workflow",
 				"value": "workflow",
 				"icon": "system-run.png",
 				"refToView": "workflow"
 			},
 			{
-				"id": "c3",
+				"id": "c4",
 				"title": "Internet",
 				"value": "internet",
 				"icon": "internet.png",
@@ -778,13 +787,19 @@
 		},
 		{
 			"id": "ws_contentid",
-			"type": "String",
+			"type": "Choice",
+			"config": {"type":"ms123.graphicaleditor.plugins.propertyedit.ShapeSelect","criteria":{"parentStencil":null, "fileType":"sw.website","roles":["content_element"]},"propertyNames":["fileName","ws_id"], "delimeter":":"},
 			"title": "ContentId",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
+			"items": [ {
+				"id": "c1",
+				"title": "-",
+				"value": "none"
+			} ],
 			"refToView": ""
 		}
 	]
