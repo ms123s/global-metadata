@@ -10,7 +10,7 @@
       "type" : "String",
       "title" : "Id",
       "value" : "",
-			"visible":false,
+			"include":false,
       "description" : "Unique identifier of the element.",
       "popular" : true
     }]
@@ -55,7 +55,7 @@
 			"description": "Defines the ID of the container process used in the exported BPMN 2.0 XML. The ID has to be a valid XSD:id string and identifies a process unambiguous.",
 			"description_de": "Definiert die ID des Prozesselementes im exportierten BPMN 2.0 XML. Die ID muss XSD:id konform sein und den Prozess eindeutig identifizieren.",
 			"value": "",
-			"visible": false,
+			"include": false,
 			"optional": true,
 			"wraplines": false
 		}]
@@ -223,7 +223,7 @@
 			"value_de": "Deutsch",
 			"description": "This holds the language in which text is written.",
 			"description_de": "Sprache, in welcher der Text verfasst ist.",
-			"visible": false,
+			"include": false,
 			"optional": true
 		},
 		{
@@ -314,7 +314,7 @@
 			"title_de": "sequentiell",
       "value" : "Yes",
       "description" : "Define the multi instance as sequential.",
-			"visible": false,
+			"include": false,
       "popular" : true,
       "items" : [ {
         "id" : "no",
@@ -333,7 +333,7 @@
       "title" : "Cardinality (Multi-instance)",
 			"title_de": "Schleifen-Kardinalität",
       "value" : "",
-			"visible": false,
+			"include": false,
       "description" : "Define the cardinality of multi instance.",
       "popular" : true
     }, {
@@ -367,7 +367,7 @@
 			"title_de": "Ist für Kompensation",
       "value" : "false",
       "description" : "A flag that identifies whether this activity is intended for the purposes of compensation.",
-			"visible": false,
+			"include": false,
       "popular" : false,
       "refToView" : "compensation"
     }]
@@ -454,7 +454,7 @@
 		{
 			"id": "tasktype",
 			"type": "String",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"value": "None"
 		}]
@@ -573,7 +573,7 @@
 			"value": "horizontal",
 			"description": "Internal flag to set the default orientation",
 			"readonly": false,
-			"visible": false
+			"include": false
 		}]
 	},
 	{
@@ -634,7 +634,7 @@
 			"value": "org.ms123.common.workflow.UserTaskFormHandler",
 			"description": "",
 			"description_de": "",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"length": "50"
 		},
@@ -710,7 +710,7 @@
 			"id": "tasktype",
 			"type": "String",
 			"value": "User",
-			"visible": false,
+			"include": false,
 			"optional": false
 		  }]
 		,
@@ -735,7 +735,7 @@
 			"value": "org.ms123.common.workflow.TaskFilterExecutor",
 			"description": "",
 			"description_de": "DelegateClass",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"length": "50"
 		},
@@ -797,7 +797,7 @@
 			"id": "tasktype",
 			"type": "String",
 			"value": "Filter",
-			"visible": false,
+			"include": false,
 			"optional": false
 		}],
 		"propertyPackages": ["baseAttributes", "borderColor","bgColor", "loopcharacteristics" ]
@@ -821,7 +821,7 @@
 			"value": "org.ms123.common.workflow.TaskRulesExecutor",
 			"description": "",
 			"description_de": "DelegateClass",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"length": "50"
 		},
@@ -890,7 +890,7 @@
 			"id": "tasktype",
 			"type": "String",
 			"value": "Rules",
-			"visible": false,
+			"include": false,
 			"optional": false
 		}],
 		"propertyPackages": ["baseAttributes", "borderColor", "bgColor","loopcharacteristics" ]
@@ -928,7 +928,7 @@
 			"value": "org.ms123.common.workflow.TaskScriptExecutor",
 			"description": "",
 			"description_de": "DelegateClass",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"length": "50"
 		},
@@ -948,7 +948,7 @@
 			"id": "tasktype",
 			"type": "String",
 			"value": "Script",
-			"visible": false,
+			"include": false,
 			"optional": false
 		}],
 		"propertyPackages": ["baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
@@ -972,7 +972,7 @@
 			"value": "org.ms123.common.workflow.TaskDocumentExecutor",
 			"description": "",
 			"description_de": "DelegateClass",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"length": "50"
 		},
@@ -1032,7 +1032,7 @@
 			"id": "tasktype",
 			"type": "String",
 			"value": "Filter",
-			"visible": false,
+			"include": false,
 			"optional": false
 		}],
 		"propertyPackages": ["baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
@@ -1056,7 +1056,7 @@
 			"value": "mail",
 			"description": "MailTask",
 			"description_de": "MailTask",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"length": "50"
 		},
@@ -1144,7 +1144,7 @@
 		{
 			"id": "tasktype",
 			"type": "String",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"value": "Send"
 			}
@@ -1169,7 +1169,7 @@
 			"value": "XOR",
 			"description": "The type of the gateway",
 			"description_de": "Der Typ des Gateways.",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"length": ""
 		},
@@ -1181,7 +1181,7 @@
 			"value": "Data",
 			"description": "The type of the XOR gateway.",
 			"description_de": "Der Typ des XOR Gateways.",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"length": ""
 		},
@@ -1193,7 +1193,7 @@
 			"value": "true",
 			"description": "Defines whether the 'X' in the center of the gateway is visible.",
 			"description_de": "Gibt an, ob das kennzeichnende 'X' im Gateway sichtbar ist.",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"refToView": "cross"
 		},
@@ -1232,7 +1232,7 @@
 			"value": "AND",
 			"description": "The type of the gateway.",
 			"description_de": "Der Typ des Gateways.",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"length": ""
 		},
@@ -1271,7 +1271,7 @@
 			"value": "OR",
 			"description": "The type of the gateway.",
 			"description_de": "Der Typ des Gateways.",
-			"visible": false,
+			"include": false,
 			"optional": false,
 			"length": ""
 		},
@@ -1312,13 +1312,13 @@
 			"value": "None",
 			"description": "The trigger for the start event, depending on the start event type.",
 			"description_de": "Der Auslöser für das Startereignis. Er hängt vom Typ des Startereignisses ab.",
-			"visible": false,
+			"include": false,
 			"optional": false
 		},{
 			"id": "initiator",
 			"type": "String",
 			"value": "initiator",
-			"visible": false,
+			"include": false,
 			"optional": true
 		}]
 	},
@@ -1381,7 +1381,7 @@
 			"value": "None",
 			"description": "The trigger for the end event, depending on the event type.",
 			"description_de": "Der Auslöser für das Endereignis. Er hängt vom Typ des Ereignisses ab.",
-			"visible": false,
+			"include": false,
 			"optional": false
 		}]
 	},

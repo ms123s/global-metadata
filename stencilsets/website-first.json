@@ -235,7 +235,7 @@
 			"value": "",
 			"description": "",
 			"readonly": false,
-			"visible":false,
+			"include":false,
 			"optional": true,
 			"refToView": "",
 			"length": "30"
