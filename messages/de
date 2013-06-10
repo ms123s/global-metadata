@@ -3805,5 +3805,13 @@
     {
         "msgid": "entitytypes.generate_class",
         "msgstr": "Klasse erzeugen"
+    },
+    {
+        "msgid": "entitytypes.confirm_delete",
+        "msgstr": "Klasse löschen?"
+    },
+    {
+        "msgid": "shell.form_saved",
+        "msgstr": "gespeichert"
     }
 ]
