@@ -3813,5 +3813,13 @@
     {
         "msgid": "shell.form_saved",
         "msgstr": "gespeichert"
+    },
+    {
+        "msgid": "max.vor_komma",
+        "msgstr": "Vor Komma"
+    },
+    {
+        "msgid": "max.nach_komma",
+        "msgstr": "Nach Komma"
     }
 ]

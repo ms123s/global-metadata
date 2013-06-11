@@ -216,19 +216,98 @@
 			} ]
 		},
 		{
-			"id": "xf_constraint",
-			"type": "String",
-			"title": "Constraint",
-			"title_de": "Eingabeprüfung",
+			"id": "xf_constraint_string",
+			"type": "Constraints",
+			"config":[
+     		{ "validator":"Pattern","options":[{"label":"","type":"string"}] },
+     		{ "validator":"Length","options":[{"label":"","type":"int"}] },
+     		{ "validator":"NotBlank","options":[] },
+     		{ "validator":"CreditCardNumber","options":[] },
+     		{ "validator":"URL","options":[] },
+     		{ "validator":"Email","options":[] }
+			],
+			"title": "Constraint(String)",
+			"title_de": "Prüfung(String)",
 			"prefix": "oryx",
 			"value": "",
-			"description": "A predicate that needs to be satisfied for the associated instance data node to be considered valid",
 			"popular": true,
-			"readonly": false,
+			"visible": "xf_type=='text'",
 			"optional": true,
 			"refToView": "",
 			"length": "100"
-		}]
+		},
+		{
+			"id": "xf_constraint_date",
+			"type": "Constraints",
+			"config":[
+     		{ "validator":"Future","options":[] },
+     		{ "validator":"Past","options":[] },
+     		{ "validator":"NotBlank","options":[] }
+			],
+			"title": "Constraint(Date)",
+			"title_de": "Prüfung(Datum)",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"visible": "xf_type=='date'||xf_type=='datetime'",
+			"optional": true,
+			"refToView": "",
+			"length": "100"
+		},
+		{
+			"id": "xf_constraint_boolean",
+			"type": "Constraints",
+			"config":[
+     		{ "validator":"AssertFalse" },
+     		{ "validator":"AssertTrue" }
+			],
+			"title": "Constraint(Boolean)",
+			"title_de": "Prüfung(Boolean)",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"visible": "xf_type=='boolean'",
+			"optional": true,
+			"refToView": "",
+			"length": "100"
+		},
+		{
+			"id": "xf_constraint_decimal",
+			"type": "Constraints",
+			"config":[
+     		{ "validator":"Digits","options":[{"label":"@max.vor_komma","type":"int"},{"label":"@max.nach_komma","type":"int"} ] },
+     		{ "validator":"DecimalMin","options":[{"label":"","type":"decimal"}] },
+     		{ "validator":"DecimalMax","options":[{"label":"","type":"decimal"}] }
+			],
+			"title": "Constraint(Decimal)",
+			"title_de": "Prüfung(Dezimal)",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"visible": "xf_type=='decimal'",
+			"optional": true,
+			"refToView": "",
+			"length": "100"
+		},
+		{
+			"id": "xf_constraint_number",
+			"type": "Constraints",
+			"config":[
+     		{ "validator":"Max","options":[{"label":"","type":"int"}] },
+     		{ "validator":"Min","options":[{"label":"","type":"int"}] },
+     		{ "validator":"NotBlank","options":[] }
+			],
+			"title": "Constraint(Number)",
+			"title_de": "Prüfung(Nummer)",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"visible": "xf_type=='number'",
+			"optional": true,
+			"refToView": "",
+			"length": "100"
+		}
+	]
 	},
 	{
 		"type": "node",
