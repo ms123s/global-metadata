@@ -219,8 +219,9 @@
 			"id": "xf_constraint_text",
 			"type": "Constraints",
 			"config":[
-     		{ "clazz":"xxx.Pattern","label":"@Muster","options":[{"label":"","type":"string","optname":"regexp"}] },
+     		{ "clazz":"Pattern","label":"@Muster","options":[{"label":"","type":"string","optname":"regexp"}] },
      		{ "clazz":"Size","options":[{"label":"Min","type":"int","optname":"min"},{"label":"Max","type":"int","optname":"max"}] },
+     		{ "clazz":"NotNull","options":[] },
      		{ "clazz":"CreditCardNumber","pkg":"org.hibernate.validator.constraints", "options":[] },
      		{ "clazz":"URL","pkg":"org.hibernate.validator.constraints", "options":[] },
      		{ "clazz":"Email","pkg":"org.hibernate.validator.constraints", "options":[] }
@@ -241,7 +242,8 @@
 			"config":[
      		{ "clazz":"Future","options":[] },
      		{ "clazz":"Past","options":[] },
-     		{ "clazz":"NotBlank","options":[] }
+     		{ "clazz":"NotBlank","options":[] },
+     		{ "clazz":"NotNull","options":[] }
 			],
 			"title": "Constraint(Date)",
 			"title_de": "Prüfung(Datum)",
@@ -258,7 +260,8 @@
 			"type": "Constraints",
 			"config":[
      		{ "clazz":"AssertFalse" },
-     		{ "clazz":"AssertTrue" }
+     		{ "clazz":"AssertTrue" },
+     		{ "clazz":"NotNull","options":[] }
 			],
 			"title": "Constraint(Boolean)",
 			"title_de": "Prüfung(Boolean)",
@@ -276,7 +279,9 @@
 			"config":[
      		{ "clazz":"Digits","options":[{"label":"@max.vor_komma","type":"int","optname":"integer"},{"label":"@max.nach_komma","type":"int","optname":"fraction"} ] },
      		{ "clazz":"DecimalMin","options":[{"label":"","type":"decimal"}] },
-     		{ "clazz":"DecimalMax","options":[{"label":"","type":"decimal"}] }
+     		{ "clazz":"DecimalMax","options":[{"label":"","type":"decimal"}] },
+     		{ "clazz":"NotBlank","options":[] },
+     		{ "clazz":"NotNull","options":[] }
 			],
 			"title": "Constraint(Decimal)",
 			"title_de": "Prüfung(Dezimal)",
@@ -292,9 +297,9 @@
 			"id": "xf_constraint_number",
 			"type": "Constraints",
 			"config":[
-     		{ "clazz":"Max","options":[{"label":"","type":"int"}] },
      		{ "clazz":"Min","options":[{"label":"","type":"int"}] },
-     		{ "clazz":"NotBlank","pkg":"org.hibernate.validator.constraints", "options":[] }
+     		{ "clazz":"Max","options":[{"label":"","type":"int"}] },
+     		{ "clazz":"NotNull","options":[] }
 			],
 			"title": "Constraint(Number)",
 			"title_de": "Prüfung(Nummer)",
