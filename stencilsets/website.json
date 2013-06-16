@@ -191,6 +191,16 @@
 			"optional": false
 		},
 		{
+			"id": "ws_scrollbar",
+			"title": "Scrollbar",
+			"title_de": "Scrollbar",
+			"type": "Boolean",
+			"value": false,
+			"popular": false,
+			"readonly": false,
+			"optional": false
+		},
+		{
 			"id": "ws_alignx",
 			"type": "Choice",
 			"title": "AlignX",

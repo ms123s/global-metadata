@@ -221,10 +221,10 @@
 			"config":[
      		{ "clazz":"Pattern","label":"@Muster","options":[{"label":"","type":"string","optname":"regexp"}] },
      		{ "clazz":"Size","options":[{"label":"Min","type":"int","optname":"min"},{"label":"Max","type":"int","optname":"max"}] },
-     		{ "clazz":"NotNull","options":[] },
+     		{ "clazz":"NotBlank","pkg":"org.hibernate.validator.constraints","options":[] },
      		{ "clazz":"CreditCardNumber","pkg":"org.hibernate.validator.constraints", "options":[] },
      		{ "clazz":"URL","pkg":"org.hibernate.validator.constraints", "options":[] },
-     		{ "clazz":"Email","pkg":"org.hibernate.validator.constraints", "options":[] }
+        { "clazz":"Email","pkg":"org.hibernate.validator.constraints", "options":[] }
 			],
 			"title": "Constraint(String)",
 			"title_de": "Prüfung(String)",
@@ -242,6 +242,8 @@
 			"config":[
      		{ "clazz":"Future","options":[] },
      		{ "clazz":"Past","options":[] },
+     		{ "clazz":"DateMin","pkg":"org.ms123.common.form.constraints","options":[{"label":"","type":"date,long"}] },
+     		{ "clazz":"DateMax","pkg":"org.ms123.common.form.constraints","options":[{"label":"","type":"date,long"}] },
      		{ "clazz":"NotBlank","options":[] },
      		{ "clazz":"NotNull","options":[] }
 			],
@@ -278,8 +280,8 @@
 			"type": "Constraints",
 			"config":[
      		{ "clazz":"Digits","options":[{"label":"@max.vor_komma","type":"int","optname":"integer"},{"label":"@max.nach_komma","type":"int","optname":"fraction"} ] },
-     		{ "clazz":"DecimalMin","options":[{"label":"","type":"decimal"}] },
-     		{ "clazz":"DecimalMax","options":[{"label":"","type":"decimal"}] },
+        { "clazz":"DecimalMin","options":[{"label":"","type":"decimal"}] },
+        { "clazz":"DecimalMax","options":[{"label":"","type":"decimal"}] },
      		{ "clazz":"NotBlank","options":[] },
      		{ "clazz":"NotNull","options":[] }
 			],
@@ -297,8 +299,8 @@
 			"id": "xf_constraint_number",
 			"type": "Constraints",
 			"config":[
-     		{ "clazz":"Min","options":[{"label":"","type":"int"}] },
-     		{ "clazz":"Max","options":[{"label":"","type":"int"}] },
+     		{ "clazz":"Min","options":[{"label":"","type":"int,long"}] },
+     		{ "clazz":"Max","options":[{"label":"","type":"int,long"}] },
      		{ "clazz":"NotNull","options":[] }
 			],
 			"title": "Constraint(Number)",
