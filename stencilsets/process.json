@@ -574,6 +574,28 @@
 			"description": "Internal flag to set the default orientation",
 			"readonly": false,
 			"include": false
+		},{
+			"id": "startableGroups",
+			"type": "MultiSelect",
+			"config": "permission:getAllRoles:name",
+			"title": "Startable groups",
+			"title_de": "Startbar von(Gruppen)",
+			"value": "",
+			"readonly": false,
+			"optional": false,
+			"popular": true,
+			"length": "50"
+		},{
+			"id": "startableUsers",
+			"type": "ModuleSelector",
+			"config": "user:userid",
+			"title": "Startable users",
+			"title_de": "Startbar von(Usern)",
+			"value": "",
+			"readonly": false,
+			"popular": true,
+			"optional": false,
+			"length": "50"
 		}]
 	},
 	{

@@ -587,7 +587,7 @@
 			"optional": true,
 			"refToView": ""
 		}],
-		"propertyPackages": ["base", "contentelement" ]
+		"propertyPackages": ["base", "contentelement", "border" ]
 	},
 	{
 		"type": "node",
@@ -616,7 +616,7 @@
 			"optional": true,
 			"refToView": ""
 		}],
-		"propertyPackages": ["base", "contentelement" ]
+		"propertyPackages": ["base", "contentelement", "border" ]
 	},
 	{
 		"type": "node",
@@ -641,7 +641,7 @@
 				"refToView":"",
 				"length":"30"
 		}], 
-		"propertyPackages": ["base", "contentelement" ]
+		"propertyPackages": ["base", "contentelement", "border" ]
 	},
 	{
 		"type": "node",
@@ -753,6 +753,13 @@
 			},
 			{
 				"id": "c4",
+				"title": "Javascript",
+				"value": "js",
+				"icon": "js16.png",
+				"refToView": "js"
+			},
+			{
+				"id": "c5",
 				"title": "Internet",
 				"value": "internet",
 				"icon": "internet.png",
@@ -783,6 +790,19 @@
 			"value": "",
 			"refToView": "",
       "popular" : true
+		},
+		{
+			"id": "ws_js",
+			"type": "String",
+			"title": "Javascript",
+			"title_de": "Javascript",
+			"prefix": "oryx",
+			"visible": "ws_linktype=='js'",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
 		},
 		{
 			"id": "ws_markdown",
