@@ -777,7 +777,7 @@
 			"popular": true,
 			"optional": true,
 			"refToView": "",
-			"length": "30"
+			"length": "128"
 		},
 		{
 			"id": "ws_workflow",
@@ -802,7 +802,7 @@
 			"popular": true,
 			"optional": true,
 			"refToView": "",
-			"length": "30"
+			"length": "128"
 		},
 		{
 			"id": "ws_markdown",

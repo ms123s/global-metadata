@@ -1,0 +1,13 @@
+[sw]
+	type = sw.role
+--
+{
+    "name": "global.guest",
+    "permissions": [
+        {
+            "enabled": true,
+            "permission": "website:entities:data:anfrage",
+            "actions": "read,write"
+        }
+    ]
+}

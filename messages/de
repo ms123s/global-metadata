@@ -3679,28 +3679,12 @@
         "msgstr": "Datenimporte"
     },
     {
-        "msgid": "window.data.filters",
-        "msgstr": "Prozessfilter"
-    },
-    {
-        "msgid": "window.data.forms",
-        "msgstr": "Prozessmasken"
-    },
-    {
-        "msgid": "window.data.lists",
-        "msgstr": "Listen"
-    },
-    {
-        "msgid": "window.data.messages",
+        "msgid": "window.messages",
         "msgstr": "Messageeditor"
     },
     {
         "msgid": "window.data.moduleeditor",
         "msgstr": "Module Editor"
-    },
-    {
-        "msgid": "window.data.rules",
-        "msgstr": "Prozessregeln"
     },
     {
         "msgid": "window.data.workfloweditor",
@@ -3711,16 +3695,8 @@
         "msgstr": "Datenimporte"
     },
     {
-        "msgid": "window.enumeditor",
-        "msgstr": "Aufzählungen"
-    },
-    {
         "msgid": "window.globalsearch",
         "msgstr": "Globale Suche"
-    },
-    {
-        "msgid": "window.meta.enums",
-        "msgstr": "Aufzählungen"
     },
     {
         "msgid": "window.meta.importcsv",
@@ -3751,11 +3727,11 @@
         "msgstr": "Listen/Reporte"
     },
     {
-        "msgid": "window.security.groups",
+        "msgid": "window.groups",
         "msgstr": "Gruppen"
     },
     {
-        "msgid": "window.security.users",
+        "msgid": "window.users",
         "msgstr": "Anwender"
     },
     {

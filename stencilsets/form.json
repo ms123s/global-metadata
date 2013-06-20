@@ -600,6 +600,15 @@
 				"value": "",
 				"width": 150,
 				"optional": false
+			},
+			{
+				"id": "display",
+				"name": "Header",
+				"name_de": "Anzeige",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": true
 			}]
 		},
 		{
