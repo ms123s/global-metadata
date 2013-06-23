@@ -218,14 +218,7 @@
 		{
 			"id": "xf_constraint_text",
 			"type": "Constraints",
-			"config":[
-     		{ "clazz":"Pattern","label":"@Muster","options":[{"label":"","type":"string","optname":"regexp"}] },
-     		{ "clazz":"Size","options":[{"label":"Min","type":"int","optname":"min"},{"label":"Max","type":"int","optname":"max"}] },
-     		{ "clazz":"NotBlank","pkg":"org.hibernate.validator.constraints","options":[] },
-     		{ "clazz":"CreditCardNumber","pkg":"org.hibernate.validator.constraints", "options":[] },
-     		{ "clazz":"URL","pkg":"org.hibernate.validator.constraints", "options":[] },
-        { "clazz":"Email","pkg":"org.hibernate.validator.constraints", "options":[] }
-			],
+			"config":"###constraints_text",
 			"title": "Constraint(String)",
 			"title_de": "Prüfung(String)",
 			"prefix": "oryx",
@@ -239,14 +232,7 @@
 		{
 			"id": "xf_constraint_date",
 			"type": "Constraints",
-			"config":[
-     		{ "clazz":"Future","options":[] },
-     		{ "clazz":"Past","options":[] },
-     		{ "clazz":"DateMin","pkg":"org.ms123.common.form.constraints","options":[{"label":"","type":"date,long"}] },
-     		{ "clazz":"DateMax","pkg":"org.ms123.common.form.constraints","options":[{"label":"","type":"date,long"}] },
-     		{ "clazz":"NotBlank","options":[] },
-     		{ "clazz":"NotNull","options":[] }
-			],
+			"config":"###constraints_date",
 			"title": "Constraint(Date)",
 			"title_de": "Prüfung(Datum)",
 			"prefix": "oryx",
@@ -260,11 +246,7 @@
 		{
 			"id": "xf_constraint_boolean",
 			"type": "Constraints",
-			"config":[
-     		{ "clazz":"AssertFalse" },
-     		{ "clazz":"AssertTrue" },
-     		{ "clazz":"NotNull","options":[] }
-			],
+			"config":"###constraints_boolean",
 			"title": "Constraint(Boolean)",
 			"title_de": "Prüfung(Boolean)",
 			"prefix": "oryx",
@@ -278,13 +260,7 @@
 		{
 			"id": "xf_constraint_decimal",
 			"type": "Constraints",
-			"config":[
-     		{ "clazz":"Digits","options":[{"label":"@max.vor_komma","type":"int","optname":"integer"},{"label":"@max.nach_komma","type":"int","optname":"fraction"} ] },
-        { "clazz":"DecimalMin","options":[{"label":"","type":"decimal"}] },
-        { "clazz":"DecimalMax","options":[{"label":"","type":"decimal"}] },
-     		{ "clazz":"NotBlank","options":[] },
-     		{ "clazz":"NotNull","options":[] }
-			],
+			"config":"###constraints_decimal",
 			"title": "Constraint(Decimal)",
 			"title_de": "Prüfung(Dezimal)",
 			"prefix": "oryx",
@@ -298,11 +274,7 @@
 		{
 			"id": "xf_constraint_number",
 			"type": "Constraints",
-			"config":[
-     		{ "clazz":"Min","options":[{"label":"","type":"int,long"}] },
-     		{ "clazz":"Max","options":[{"label":"","type":"int,long"}] },
-     		{ "clazz":"NotNull","options":[] }
-			],
+			"config":"###constraints_number",
 			"title": "Constraint(Number)",
 			"title_de": "Prüfung(Nummer)",
 			"prefix": "oryx",
@@ -777,9 +749,9 @@
 	},
 	{
 		"type": "node",
-		"id": "Tableedit",
-		"title": "Tableedit",
-		"title_de": "Eingabe(Tabelle)",
+		"id": "Gridinput",
+		"title": "Gridinput",
+		"title_de": "Eingabe(Grid)",
 		"groups": ["Controls"],
 		"description": "This form control allows the user to make single/multiple selections from a list.",
 		"view": "new_tableedit.svg",
@@ -804,16 +776,6 @@
 			"length": "30"
 		},
 		{
-			"id": "xf_multiselection",
-			"title": "Multiselection",
-			"title_de": "Mehrfachauswahl",
-			"type": "Boolean",
-			"value": false,
-			"popular": true,
-			"readonly": false,
-			"optional": false
-		},
-		{
 			"id": "xf_columns",
 			"type": "Complex",
 			"config": {"helperTree":["sw.form","sw.entitytype"]},
@@ -831,7 +793,7 @@
 				"name_de": "Spaltenname",
 				"type": "String",
 				"value": "",
-				"width": 150,
+				"width": 100,
 				"optional": false
 			},
 			{
@@ -840,8 +802,79 @@
 				"name_de": "Anzeige",
 				"type": "String",
 				"value": "",
-				"width": 150,
+				"width": 100,
 				"optional": true
+			},
+			{
+				"id": "type",
+				"name": "Type",
+				"name_de": "Type",
+				"readonly": false,
+				"type": "Choice",
+				"value": "text",
+				"width": 60,
+				"optional": false,
+
+				"items": [ {
+					"id": "c1",
+					"title": "Text",
+					"value": "text",
+					"refToView": ""
+				},
+				{
+					"id": "c2",
+					"title": "TextArea",
+					"value": "textarea",
+					"refToView": ""
+				},
+				{
+					"id": "c3",
+					"title": "Number",
+					"value": "number",
+					"refToView": ""
+				},
+				{
+					"id": "c4",
+					"title": "Boolean",
+					"value": "boolean",
+					"refToView": ""
+				},
+				{
+					"id": "c5",
+					"title": "Decimal",
+					"value": "decimal",
+					"refToView": ""
+				},
+				{
+					"id": "c6",
+					"title": "Date",
+					"value": "date",
+					"refToView": ""
+				},
+				{
+					"id": "c7",
+					"title": "DateTime",
+					"value": "datetime",
+					"refToView": ""
+				}]},
+				{
+				"id": "constraints",
+				"name": "Constraints",
+				"name_de": "Prüfung",
+				"config": { 
+								"typecolumn":"type",
+								"text":"###constraints_text",
+								"textarea":"###constraints_text",
+								"date":"###constraints_date",
+								"datetime":"###constraints_date",
+								"number":"###constraints_number",
+								"boolean":"###constraints_boolean",
+								"decimal":"###constraints_decimal"
+				},
+				"type": "Constraints",
+				"width": 40,
+				"optional": true,
+				"value": ""
 			}]
 		},
 		{
@@ -856,31 +889,6 @@
 			"readonly": false,
 			"optional": false,
 			"length": "50"
-		},
-		{
-			"id": "xf_required",
-			"type": "Combo",
-			"title": "Required",
-			"title_de": "Eingabe nötig",
-			"prefix": "oryx",
-			"value": "",
-			"popular": true,
-			"description": "Any expression that is convertible to XPath boolean",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"value": "true",
-				"title": "true",
-				"refToView": ""
-			},
-			{
-				"id": "c2",
-				"value": "false",
-				"title": "false",
-				"refToView": ""
-			}]
 		}]
 	},
 	{
@@ -1274,5 +1282,40 @@
 			"role": "support_morph",
 			"baseMorphs": ["Hint"]
 		}]
-	}
+	},
+ "definitions":{
+	"constraints_text":[
+		{ "clazz":"Pattern","label":"@Muster","options":[{"label":"","type":"string","optname":"regexp"}] },
+		{ "clazz":"Size","options":[{"label":"Min","type":"int","optname":"min"},{"label":"Max","type":"int","optname":"max"}] },
+		{ "clazz":"NotBlank","pkg":"org.hibernate.validator.constraints","options":[] },
+		{ "clazz":"CreditCardNumber","pkg":"org.hibernate.validator.constraints", "options":[] },
+		{ "clazz":"URL","pkg":"org.hibernate.validator.constraints", "options":[] },
+		{ "clazz":"Email","pkg":"org.hibernate.validator.constraints", "options":[] }
+	],
+	"constraints_date":[
+		{ "clazz":"Future","options":[] },
+		{ "clazz":"Past","options":[] },
+		{ "clazz":"DateMin","pkg":"org.ms123.common.form.constraints","options":[{"label":"","type":"date,long"}] },
+		{ "clazz":"DateMax","pkg":"org.ms123.common.form.constraints","options":[{"label":"","type":"date,long"}] },
+		{ "clazz":"NotBlank","options":[] },
+		{ "clazz":"NotNull","options":[] }
+	],
+	"constraints_boolean":[
+		{ "clazz":"AssertFalse" },
+		{ "clazz":"AssertTrue" },
+		{ "clazz":"NotNull","options":[] }
+	],
+	"constraints_decimal":[
+		{ "clazz":"Digits","options":[{"label":"@max.vor_komma","type":"int","optname":"integer"},{"label":"@max.nach_komma","type":"int","optname":"fraction"} ] },
+		{ "clazz":"DecimalMin","options":[{"label":"","type":"decimal"}] },
+		{ "clazz":"DecimalMax","options":[{"label":"","type":"decimal"}] },
+		{ "clazz":"NotBlank","options":[] },
+		{ "clazz":"NotNull","options":[] }
+	],
+	"constraints_number":[
+		{ "clazz":"Min","options":[{"label":"","type":"int,long"}] },
+		{ "clazz":"Max","options":[{"label":"","type":"int,long"}] },
+		{ "clazz":"NotNull","options":[] }
+	]
+ }
 }
