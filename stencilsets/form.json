@@ -1297,7 +1297,7 @@
 		{ "clazz":"Past","options":[] },
 		{ "clazz":"DateMin","pkg":"org.ms123.common.form.constraints","options":[{"label":"","type":"date,long"}] },
 		{ "clazz":"DateMax","pkg":"org.ms123.common.form.constraints","options":[{"label":"","type":"date,long"}] },
-		{ "clazz":"NotBlank","options":[] },
+		{ "clazz":"NotBlank","pkg":"org.hibernate.validator.constraints","options":[] },
 		{ "clazz":"NotNull","options":[] }
 	],
 	"constraints_boolean":[
@@ -1307,9 +1307,9 @@
 	],
 	"constraints_decimal":[
 		{ "clazz":"Digits","options":[{"label":"@max.vor_komma","type":"int","optname":"integer"},{"label":"@max.nach_komma","type":"int","optname":"fraction"} ] },
-		{ "clazz":"DecimalMin","options":[{"label":"","type":"decimal"}] },
-		{ "clazz":"DecimalMax","options":[{"label":"","type":"decimal"}] },
-		{ "clazz":"NotBlank","options":[] },
+		{ "clazz":"DecimalMin","options":[{"label":"","type":"decimal,string"}] },
+		{ "clazz":"DecimalMax","options":[{"label":"","type":"decimal,string"}] },
+		{ "clazz":"NotBlank","pkg":"org.hibernate.validator.constraints","options":[] },
 		{ "clazz":"NotNull","options":[] }
 	],
 	"constraints_number":[
