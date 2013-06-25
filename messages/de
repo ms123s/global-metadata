@@ -3,496 +3,3076 @@
 --
 [
     {
+        "msgid": "configeditor.default_not_allowed",
+        "msgstr": "\"default\" nicht erlaubt"
+    },
+    {
+        "msgid": "data.wactions.value",
+        "msgstr": "###"
+    },
+    {
         "msgid": "%1 does not fit %2.",
         "msgstr": "%1:Eingabe entspricht nicht dem Muster  %2."
     },
     {
-        "msgid": "Cancel",
-        "msgstr": "Abbruch"
+        "msgid": "data.groups.no_config",
+        "msgstr": "------------"
     },
     {
-        "msgid": "Duplicated",
-        "msgstr": "bereits vorhanden"
+        "msgid": "import.select_the_source",
+        "msgstr": "1.Quelle"
     },
     {
-        "msgid": "Importing.title",
-        "msgstr": "Importe"
+        "msgid": "import.upload_exportfile",
+        "msgstr": "2.Upload"
     },
     {
-        "msgid": "This field is required",
-        "msgstr": "Das Feld muss ausgefüllt werden."
+        "msgid": "import.map_fields",
+        "msgstr": "3.Mapping"
     },
     {
-        "msgid": "composite.add_to_exclusion_list",
-        "msgstr": "Zur Aussschlußliste hinzufügen"
+        "msgid": "import.specify_defaults",
+        "msgstr": "4.Defaults"
     },
     {
-        "msgid": "composite.contextmenu.add_to_tab",
-        "msgstr": "mit welchem Tab zusammenführen ?"
+        "msgid": "import.duplicate_filter",
+        "msgstr": "5.Filter"
     },
     {
-        "msgid": "composite.contextmenu.sub_from_tab",
-        "msgstr": "von welchen Tab abziehen?"
+        "msgid": "import.result",
+        "msgstr": "6.Resultat"
     },
     {
-        "msgid": "composite.contextmenu.tab",
-        "msgstr": "Tab"
+        "msgid": "tasks.usertasks.dublettencheck.desc",
+        "msgstr": "<div style='color:blue'>%r Records importiert. %d Dublettenkandidaten gefunden</div>"
     },
     {
-        "msgid": "composite.contextmenu.too_little_tabs",
-        "msgstr": "Zu wenig offene Tabs"
+        "msgid": "tasks.usertasks.dublettencheck.reference",
+        "msgstr": "<div style='color:blue'>Der Originalsatz .</div>"
     },
     {
-        "msgid": "composite.exclusion_list",
-        "msgstr": "Aussschlußliste"
+        "msgid": "processexplorer.activityId",
+        "msgstr": "A-Id"
     },
     {
-        "msgid": "composite.save_dialog.name_filter",
-        "msgstr": "Name des Filters"
+        "msgid": "meta.traits.acl_users",
+        "msgstr": "ACL Anwender"
+    },
+    {
+        "msgid": "meta.traits.acl_groups",
+        "msgstr": "ACL Gruppen"
     },
     {
         "msgid": "composite.select_dialog.cancel",
         "msgstr": "Abbrechen"
     },
     {
-        "msgid": "composite.select_dialog.confirm_delete",
-        "msgstr": "Ausgewählten Datensatz löschen?"
+        "msgid": "tasks.form.cancel",
+        "msgstr": "Abbrechen"
     },
     {
-        "msgid": "composite.select_dialog.confirm_delete",
-        "msgstr": "Wirklich löschen?"
+        "msgid": "ruleseditor.cancel",
+        "msgstr": "Abbrechen"
     },
     {
-        "msgid": "composite.select_dialog.delete",
-        "msgstr": "Löschen"
+        "msgid": "import.mapping.cancel",
+        "msgstr": "Abbrechen"
     },
     {
-        "msgid": "composite.select_dialog.deleted",
-        "msgstr": "Filter gelöscht"
+        "msgid": "Cancel",
+        "msgstr": "Abbruch"
     },
     {
-        "msgid": "composite.select_dialog.name_filter",
-        "msgstr": "Bitte einen Filter auswählen"
-    },
-    {
-        "msgid": "composite.select_dialog.no_search_saved",
-        "msgstr": "Kein Filter gespeichert"
-    },
-    {
-        "msgid": "composite.select_dialog.save",
-        "msgstr": "Speichern"
-    },
-    {
-        "msgid": "composite.select_dialog.saved",
-        "msgstr": "Filter gespeichert"
-    },
-    {
-        "msgid": "composite.select_dialog.use",
-        "msgstr": "Verwenden"
-    },
-    {
-        "msgid": "config.attribute",
-        "msgstr": "Attribut"
-    },
-    {
-        "msgid": "config.edit_attribute",
-        "msgstr": "Ändere ausgew. Attribute"
-    },
-    {
-        "msgid": "config.menu.add_config_button",
-        "msgstr": "Konfiguration erstellen"
-    },
-    {
-        "msgid": "config.menu.add_config_title",
-        "msgstr": "Name der neuen Konfiguration"
-    },
-    {
-        "msgid": "config.menu.add_configuration",
-        "msgstr": "neue Konfiguration"
-    },
-    {
-        "msgid": "config.menu.configuration",
-        "msgstr": "Konfiguration"
-    },
-    {
-        "msgid": "config.menu.only_letter_and_numbers_allowed",
-        "msgstr": "Nur Buchstaben und Ziffern erlaubt.Mindestlänge 5 Zeichen"
-    },
-    {
-        "msgid": "config.select_config",
-        "msgstr": "Bitte eine Konfiguration auswählen!"
-    },
-    {
-        "msgid": "config.status_form",
-        "msgstr": "Status/Form"
-    },
-    {
-        "msgid": "config.status_table",
-        "msgstr": "Status/Klasse"
-    },
-    {
-        "msgid": "config.tab_form",
-        "msgstr": "Tab/Form"
-    },
-    {
-        "msgid": "configeditor.check_type",
-        "msgstr": "Vergleichsmech."
-    },
-    {
-        "msgid": "configeditor.check_type.both",
-        "msgstr": "Klang und Abstand"
+        "msgid": "entitytypes.dependent",
+        "msgstr": "Abhängige Datensätze im sekundären Modul mitlöschen"
     },
     {
         "msgid": "configeditor.check_type.distance",
         "msgstr": "Abstand"
     },
     {
-        "msgid": "configeditor.check_type.equal",
-        "msgstr": "Gleich"
+        "msgid": "filter.text.union",
+        "msgstr": "Addiere"
     },
     {
-        "msgid": "configeditor.check_type.phonetic",
-        "msgstr": "Klang"
-    },
-    {
-        "msgid": "configeditor.column",
-        "msgstr": "Spalte"
-    },
-    {
-        "msgid": "configeditor.config_created",
-        "msgstr": "Konfiguration erzeugt"
-    },
-    {
-        "msgid": "configeditor.confirm.change",
-        "msgstr": "Die Konfiguration wechseln? Nicht Gespeichertes geht verloren."
-    },
-    {
-        "msgid": "configeditor.create_config",
-        "msgstr": "Konfigurationsname"
-    },
-    {
-        "msgid": "configeditor.default_not_allowed",
-        "msgstr": "\"default\" nicht erlaubt"
-    },
-    {
-        "msgid": "configeditor.display",
-        "msgstr": "Anzeige"
-    },
-    {
-        "msgid": "configeditor.displayname",
-        "msgstr": "Anzeigename"
-    },
-    {
-        "msgid": "configeditor.fieldsets",
-        "msgstr": "EigenschaftenSets"
-    },
-    {
-        "msgid": "configeditor.form.tab",
-        "msgstr": "Tabulator"
-    },
-    {
-        "msgid": "configeditor.new_config",
-        "msgstr": "neue Konfiguration"
-    },
-    {
-        "msgid": "configeditor.search.options",
-        "msgstr": "SuchOptionen"
-    },
-    {
-        "msgid": "configeditor.selected_config",
-        "msgstr": "Ausgewählte Konfiguration"
-    },
-    {
-        "msgid": "data.app",
-        "msgstr": "Applikationen"
+        "msgid": "filter.text.add_to",
+        "msgstr": "Addiere zu"
     },
     {
         "msgid": "data.app.admin_global",
         "msgstr": "Admin global"
     },
     {
+        "msgid": "meta.teams.admin_not",
+        "msgstr": "Admin kann nicht zugewiesen werden"
+    },
+    {
+        "msgid": "data.groups.admin",
+        "msgstr": "Administrator"
+    },
+    {
+        "msgid": "data.users.admin",
+        "msgstr": "Administrator"
+    },
+    {
+        "msgid": "data.user.admin",
+        "msgstr": "Administrator Recht"
+    },
+    {
+        "msgid": "data.group.admin",
+        "msgstr": "Administratorrecht"
+    },
+    {
+        "msgid": "gui.data_import_tab.tab1",
+        "msgstr": "Adressen"
+    },
+    {
+        "msgid": "meta.wactions.type",
+        "msgstr": "Aktion"
+    },
+    {
+        "msgid": "tasks.table.action",
+        "msgstr": "Aktion"
+    },
+    {
+        "msgid": "processes.table.action",
+        "msgstr": "Aktion"
+    },
+    {
+        "msgid": "data.wactions.created",
+        "msgstr": "Aktion angelegt"
+    },
+    {
+        "msgid": "meta.workflows.actions-alerts-processes",
+        "msgstr": "Aktion,Alarm,Prozess"
+    },
+    {
+        "msgid": "meta.workflows.actions-processes-alerts",
+        "msgstr": "Aktion,Prozess,Alarm"
+    },
+    {
+        "msgid": "permissions.actions",
+        "msgstr": "Aktionen"
+    },
+    {
+        "msgid": "meta.workflows.wactions",
+        "msgstr": "Aktionen"
+    },
+    {
+        "msgid": "searchfilter.actionbutton",
+        "msgstr": "Aktionen"
+    },
+    {
+        "msgid": "moduleaccesseditor.enabled",
+        "msgstr": "Aktiv"
+    },
+    {
+        "msgid": "data.workflows.active",
+        "msgstr": "Aktiv"
+    },
+    {
+        "msgid": "data.wconditions.active",
+        "msgstr": "Aktiv"
+    },
+    {
+        "msgid": "data.wactions.active",
+        "msgstr": "Aktiv"
+    },
+    {
+        "msgid": "wactions.active",
+        "msgstr": "Aktiv"
+    },
+    {
+        "msgid": "namespacesmanager.confirm_pull",
+        "msgstr": "Aktualisiere die App?"
+    },
+    {
+        "msgid": "meta.workflows.alerts-actions-processes",
+        "msgstr": "Alarm,Aktion,Prozess"
+    },
+    {
+        "msgid": "meta.workflows.alerts-processes-actions",
+        "msgstr": "Alarm,Prozess,Aktion"
+    },
+    {
+        "msgid": "eaprod.Alle_schreiben",
+        "msgstr": "Alle Entitäten mit schreiben"
+    },
+    {
         "msgid": "data.app.all_modules_together",
         "msgstr": "Alle Module zusammen"
     },
     {
-        "msgid": "data.app.allinone_menu",
-        "msgstr": "App und Adminmenu zusammen"
+        "msgid": "fieldselector.selectall",
+        "msgstr": "Alle auswählen"
     },
     {
-        "msgid": "data.app.configeditor",
-        "msgstr": "Configeditor"
+        "msgid": "fieldselector.removeall",
+        "msgstr": "Alle entfernen"
     },
     {
-        "msgid": "data.app.description",
-        "msgstr": "Beschreibung"
+        "msgid": "fieldselector.selectall_without",
+        "msgstr": "Alle(ohne Systemeigenschaften)"
     },
     {
-        "msgid": "data.app.id",
-        "msgstr": "Id"
+        "msgid": "settings.displayname",
+        "msgstr": "Angezeigter Name (aus Messages)"
     },
     {
-        "msgid": "data.app.mapping",
-        "msgstr": "Mapping"
+        "msgid": "messages.msgstr",
+        "msgstr": "Angezeigter Text"
     },
     {
-        "msgid": "data.app.messages_global",
-        "msgstr": "Übersetzungen global verwalten"
+        "msgid": "meta.traits.acl_create",
+        "msgstr": "Anlegen"
     },
     {
-        "msgid": "data.app.module_list",
-        "msgstr": "Module"
+        "msgid": "meta.constraints.annotation",
+        "msgstr": "Annotation"
     },
     {
-        "msgid": "data.app.moduleeditor",
-        "msgstr": "Modul Editor"
+        "msgid": "meta.enumdata.Anrede",
+        "msgstr": "Anrede"
     },
     {
-        "msgid": "data.app.modules",
-        "msgstr": "Module"
+        "msgid": "moduleaccesseditor.view",
+        "msgstr": "Ansicht"
     },
     {
-        "msgid": "data.app.name",
-        "msgstr": "Name"
+        "msgid": "window.users",
+        "msgstr": "Anwender"
     },
     {
-        "msgid": "data.app.one_module_per_window",
-        "msgstr": "Ein Modul pro Fenster"
+        "msgid": "meta.traits.user",
+        "msgstr": "Anwender"
     },
     {
-        "msgid": "data.app.one_per_window",
-        "msgstr": "Daten Module in je einem Fenster "
+        "msgid": "mainmenu.users",
+        "msgstr": "Anwender"
     },
     {
-        "msgid": "data.app.relation_list",
-        "msgstr": "Relationen"
+        "msgid": "data.users.created",
+        "msgstr": "Anwender angelegt"
     },
     {
-        "msgid": "data.app.relations",
-        "msgstr": "Beziehungen"
+        "msgid": "data.user.created",
+        "msgstr": "Anwender angelegt"
     },
     {
-        "msgid": "data.app.save",
-        "msgstr": "speichern"
+        "msgid": "data.users.saved",
+        "msgstr": "Anwender gespeichert"
+    },
+    {
+        "msgid": "security.users.save",
+        "msgstr": "Anwender speichern"
+    },
+    {
+        "msgid": "data.user.tab1",
+        "msgstr": "Anwenderdaten"
+    },
+    {
+        "msgid": "data.users.tab1",
+        "msgstr": "Anwenderdaten"
+    },
+    {
+        "msgid": "import.result_rec",
+        "msgstr": "Anzahl Sätze"
+    },
+    {
+        "msgid": "configeditor.display",
+        "msgstr": "Anzeige"
+    },
+    {
+        "msgid": "meta.lists.fs.display",
+        "msgstr": "Anzeige"
+    },
+    {
+        "msgid": "shell.jsoneditor",
+        "msgstr": "Anzeigen Quelle"
+    },
+    {
+        "msgid": "meta.lists.fs.displayname",
+        "msgstr": "Anzeigename"
+    },
+    {
+        "msgid": "configeditor.displayname",
+        "msgstr": "Anzeigename"
+    },
+    {
+        "msgid": "data.message.msgstr",
+        "msgstr": "Anzeigter Text"
+    },
+    {
+        "msgid": "namespacesmanager.uninstalled",
+        "msgstr": "App deinstalliert"
     },
     {
         "msgid": "data.app.saved",
         "msgstr": "App gespeichert"
     },
     {
-        "msgid": "data.app.users_global",
-        "msgstr": "User/Gruppen global verwalten"
+        "msgid": "data.app.allinone_menu",
+        "msgstr": "App und Adminmenu zusammen"
     },
     {
-        "msgid": "data.datatraits.save",
-        "msgstr": "Übernehmen(Der Satz muss dann noch abgespeichert werden)"
+        "msgid": "data.relation.app",
+        "msgstr": "Application"
     },
     {
-        "msgid": "data.documents",
-        "msgstr": "Dokumente"
+        "msgid": "data.module.app",
+        "msgstr": "Applikation"
     },
     {
-        "msgid": "data.entity",
-        "msgstr": "Klassen"
+        "msgid": "tasks.table.processCategory",
+        "msgstr": "Applikation"
     },
     {
-        "msgid": "data.entity.default_fields",
-        "msgstr": "Default Eigenschaften"
+        "msgid": "namespacesmanager.create_namespace",
+        "msgstr": "Applikation erstellen"
     },
     {
-        "msgid": "data.entity.description",
-        "msgstr": "Beschreibung der Klasse"
+        "msgid": "data.app",
+        "msgstr": "Applikationen"
     },
     {
-        "msgid": "data.entity.enabled",
-        "msgstr": "Klasse enabled"
+        "msgid": "mainmenu.projectshellNamespaces",
+        "msgstr": "Applikationen"
     },
     {
-        "msgid": "data.entity.exclusion_list",
-        "msgstr": "Ausschlussliste verwendbar"
+        "msgid": "mainmenu.namespaces",
+        "msgstr": "Applikationen verwalten"
     },
     {
-        "msgid": "data.entity.field_list",
-        "msgstr": "Klasseneigenschaften"
+        "msgid": "data.relation.apps",
+        "msgstr": "Applikations"
     },
     {
-        "msgid": "data.entity.index",
-        "msgstr": "Index"
+        "msgid": "data.module.apps",
+        "msgstr": "Applikations"
     },
     {
-        "msgid": "data.entity.multi_add",
-        "msgstr": "Mehrfacherstellung von Entitäten"
+        "msgid": "namespacesmanager.namespace_name",
+        "msgstr": "Applikationsname"
     },
     {
-        "msgid": "data.entity.multiple_tabs",
-        "msgstr": "Filter kombinieren"
+        "msgid": "namespacesmanager.title",
+        "msgstr": "Applikationsverwaltung"
     },
     {
-        "msgid": "data.entity.name",
-        "msgstr": "Name der Klasse"
+        "msgid": "config.attribute",
+        "msgstr": "Attribut"
     },
     {
-        "msgid": "data.entity.namespace",
-        "msgstr": "Enthalten in Namespace"
+        "msgid": "meta.tables.attribute",
+        "msgstr": "Attribut"
     },
     {
-        "msgid": "data.entity.save",
-        "msgstr": "Klasse speichern"
+        "msgid": "entitytypes.create_field.name",
+        "msgstr": "Attributename"
     },
     {
-        "msgid": "data.entity.team_security",
-        "msgstr": "Teams zuordnen"
+        "msgid": "tasks.task.completed",
+        "msgstr": "Aufgabe fertiggestellt"
     },
     {
-        "msgid": "data.enumdata.created",
-        "msgstr": "Datensatz wurde angelegt"
+        "msgid": "tasks.table.complete",
+        "msgstr": "Aufgabe fertigstellen"
     },
     {
-        "msgid": "data.enumdata.save",
-        "msgstr": "Speichern"
+        "msgid": "tasks.task.complete",
+        "msgstr": "Aufgabe fertigstellen"
     },
     {
-        "msgid": "data.enumdata.saved",
-        "msgstr": "Gespeichert"
+        "msgid": "tasks.table.claim",
+        "msgstr": "Aufgabe übernehmen"
     },
     {
-        "msgid": "data.enumfield.description",
-        "msgstr": "Beschreibung"
+        "msgid": "tasks.task.claim",
+        "msgstr": "Aufgabe übernehmen?"
     },
     {
-        "msgid": "data.enumfield.fieldname",
-        "msgstr": "Name der Eigenschaft"
+        "msgid": "tasks.task.claimed",
+        "msgstr": "Aufgabe übernohmen"
     },
     {
-        "msgid": "data.enumfield.save",
-        "msgstr": "Speichern"
+        "msgid": "mainmenu.tasks",
+        "msgstr": "Aufgaben"
     },
     {
-        "msgid": "data.enumfield.saved",
-        "msgstr": "Gespeichert"
+        "msgid": "window.tasks",
+        "msgstr": "Aufgaben"
     },
     {
-        "msgid": "data.field",
-        "msgstr": "Eigenschaften"
+        "msgid": "tasks.table.taskid",
+        "msgstr": "AufgabenId"
     },
     {
-        "msgid": "data.field.constraints",
-        "msgstr": "Plausibilitäten"
-    },
-    {
-        "msgid": "data.field.created",
-        "msgstr": "Eigenschaft wurde gespeichert"
-    },
-    {
-        "msgid": "data.field.datatype",
-        "msgstr": "Datentyp"
-    },
-    {
-        "msgid": "data.field.default_value",
-        "msgstr": "Defaultwert"
-    },
-    {
-        "msgid": "data.field.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "data.field.editoptions_cols",
-        "msgstr": "Spalten bei Textarea"
-    },
-    {
-        "msgid": "data.field.editoptions_rows",
-        "msgstr": "Zeilen bei Textarea"
-    },
-    {
-        "msgid": "data.field.edittype",
-        "msgstr": "Edittyp"
-    },
-    {
-        "msgid": "data.field.enabled",
-        "msgstr": "benutzt"
-    },
-    {
-        "msgid": "data.field.entity",
-        "msgstr": "Klasse"
-    },
-    {
-        "msgid": "data.field.form_enabled_expr",
-        "msgstr": "Ausdruck ob editierbar"
-    },
-    {
-        "msgid": "data.field.formula_client",
-        "msgstr": "Formel(Client)"
-    },
-    {
-        "msgid": "data.field.formula_in",
-        "msgstr": "Formel(eingehend)"
-    },
-    {
-        "msgid": "data.field.formula_out",
-        "msgstr": "Formel(ausgehend)"
-    },
-    {
-        "msgid": "data.field.id",
-        "msgstr": "Id"
-    },
-    {
-        "msgid": "data.field.module",
-        "msgstr": "Modul"
-    },
-    {
-        "msgid": "data.field.name",
-        "msgstr": "Name"
-    },
-    {
-        "msgid": "data.field.primary_key",
-        "msgstr": "Id"
-    },
-    {
-        "msgid": "data.field.primary_key",
-        "msgstr": "Primärer Schlüssel"
-    },
-    {
-        "msgid": "data.field.save",
-        "msgstr": "speichern"
-    },
-    {
-        "msgid": "data.field.saved",
-        "msgstr": "Eigenschaft gespeichert"
-    },
-    {
-        "msgid": "data.field.search_options",
-        "msgstr": "Suchmöglichkeiten"
+        "msgid": "tasks.table.name",
+        "msgstr": "Aufgabenname"
     },
     {
         "msgid": "data.field.selectable_items",
         "msgstr": "Aufzählung/Url"
     },
     {
-        "msgid": "data.field.tab1",
-        "msgstr": "Common"
+        "msgid": "enumerations.enumeration_dir",
+        "msgstr": "Aufzählungen"
     },
     {
-        "msgid": "data.field.tab2",
-        "msgstr": "Scripting"
+        "msgid": "mainmenu.enumeditor",
+        "msgstr": "Aufzählungen"
     },
     {
-        "msgid": "data.field.tab3",
-        "msgstr": "Constraints"
+        "msgid": "meta.enums.root.title",
+        "msgstr": "Aufzählungen"
+    },
+    {
+        "msgid": "meta.enums.new_enum_name",
+        "msgstr": "Aufzählungsname"
+    },
+    {
+        "msgid": "data.field.form_enabled_expr",
+        "msgstr": "Ausdruck ob editierbar"
+    },
+    {
+        "msgid": "data.workflows.processing_order",
+        "msgstr": "Ausführungreihenfolge"
+    },
+    {
+        "msgid": "ruleseditor.outputvariables",
+        "msgstr": "Ausgabevariablen"
+    },
+    {
+        "msgid": "multiselect2side.selected",
+        "msgstr": "Ausgewählt"
+    },
+    {
+        "msgid": "moduleeditor.selected_category",
+        "msgstr": "Ausgewählte Kategorie"
+    },
+    {
+        "msgid": "configeditor.selected_config",
+        "msgstr": "Ausgewählte Konfiguration"
+    },
+    {
+        "msgid": "composite.select_dialog.confirm_delete",
+        "msgstr": "Ausgewählten Datensatz löschen?"
+    },
+    {
+        "msgid": "data.entity.exclusion_list",
+        "msgstr": "Ausschlussliste verwendbar"
+    },
+    {
+        "msgid": "composite.exclusion_list",
+        "msgstr": "Aussschlußliste"
+    },
+    {
+        "msgid": "data.form.select",
+        "msgstr": "Auswählen"
+    },
+    {
+        "msgid": "searchfilter.selectbutton",
+        "msgstr": "Auswählen"
+    },
+    {
+        "msgid": "import.mapping.automatic",
+        "msgstr": "Auto"
+    },
+    {
+        "msgid": "moduleeditor.globalprop.baseurl",
+        "msgstr": "Baseurl"
+    },
+    {
+        "msgid": "data.module.baseurl",
+        "msgstr": "Basisurl"
+    },
+    {
+        "msgid": "moduleeditor.baseurl",
+        "msgstr": "Basisurl des Modules"
+    },
+    {
+        "msgid": "moduleaccesseditor.update",
+        "msgstr": "Bearbeiten"
+    },
+    {
+        "msgid": "meta.enumdata.bedeutung",
+        "msgstr": "Bedeutung"
+    },
+    {
+        "msgid": "ruleseditor.bedingung",
+        "msgstr": "Bedingung"
+    },
+    {
+        "msgid": "data.wconditions.value",
+        "msgstr": "Bedingung"
+    },
+    {
+        "msgid": "data.wconditions.tab2",
+        "msgstr": "Bedingung"
+    },
+    {
+        "msgid": "data.wconditions.created",
+        "msgstr": "Bedingung angelegt"
+    },
+    {
+        "msgid": "data.wconditions.saved",
+        "msgstr": "Bedingung gespeichert"
+    },
+    {
+        "msgid": "filter.text.del_condition",
+        "msgstr": "Bedingung löschen"
+    },
+    {
+        "msgid": "meta.workflows.wconditions",
+        "msgstr": "Bedingungen"
+    },
+    {
+        "msgid": "filter.text.and_help",
+        "msgstr": "Bedingungen in diesem Zweig müssen zutreffen / <b>AND</b>"
+    },
+    {
+        "msgid": "ruleseditor.condition_column_config",
+        "msgstr": "Bedingungspalte konfigurieren"
+    },
+    {
+        "msgid": "ruleseditor.insert_condition_column",
+        "msgstr": "Bedinungungsspalte einfügen"
+    },
+    {
+        "msgid": "meta.enumdata.beruf",
+        "msgstr": "Beruf"
+    },
+    {
+        "msgid": "meta.fieldset.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "meta.traits.create_trait2",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "meta.traits.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.wactions.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "entitytypes.create_class.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.enumfield.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.group.groupid",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "import.mapping.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.field.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "meta.fieldsets.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.rule.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.wconditions.tab1",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "meta.enums.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.groups.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.module.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.filter.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.app.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.workflows.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.wconditions.description",
+        "msgstr": "Beschreibung"
     },
     {
         "msgid": "data.fieldets.tab1",
         "msgstr": "Beschreibung"
     },
     {
+        "msgid": "tasks.table.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "meta.teams.create_team2",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.group.description",
+        "msgstr": "Beschreibung 2"
+    },
+    {
+        "msgid": "data.entity.description",
+        "msgstr": "Beschreibung der Klasse"
+    },
+    {
+        "msgid": "data.namespace.description",
+        "msgstr": "Beschreibung des Namespace"
+    },
+    {
+        "msgid": "entitytypes.relation",
+        "msgstr": "Beziehung"
+    },
+    {
+        "msgid": "meta.relations.relation",
+        "msgstr": "Beziehung"
+    },
+    {
+        "msgid": "data.relation.relation",
+        "msgstr": "Beziehung"
+    },
+    {
+        "msgid": "entitytypes.relations_saved",
+        "msgstr": "Beziehung gespeichert"
+    },
+    {
+        "msgid": "data.relation.saved",
+        "msgstr": "Beziehung gespeichert"
+    },
+    {
+        "msgid": "entitytypes.relations_save",
+        "msgstr": "Beziehung speichern"
+    },
+    {
+        "msgid": "entitytypes.relations",
+        "msgstr": "Beziehungen"
+    },
+    {
+        "msgid": "data.app.relations",
+        "msgstr": "Beziehungen"
+    },
+    {
+        "msgid": "data.relation",
+        "msgstr": "Beziehungen"
+    },
+    {
+        "msgid": "meta.teams.form_not_valid",
+        "msgstr": "Bitte alle Eigenschaften ausfüllen"
+    },
+    {
+        "msgid": "meta.tables.select_attribute",
+        "msgstr": "Bitte ein Attribut auswählen!"
+    },
+    {
+        "msgid": "gui.data_import_tab.select_attribute",
+        "msgstr": "Bitte ein Mapping auswählen!"
+    },
+    {
+        "msgid": "meta.traits.tree.select",
+        "msgstr": "Bitte ein Merkmal auswählen"
+    },
+    {
+        "msgid": "import.select_file",
+        "msgstr": "Bitte eine Datei auswählen"
+    },
+    {
+        "msgid": "meta.teams.select_group",
+        "msgstr": "Bitte eine Gruppe auswählen"
+    },
+    {
+        "msgid": "config.select_config",
+        "msgstr": "Bitte eine Konfiguration auswählen!"
+    },
+    {
+        "msgid": "data.users.select_user",
+        "msgstr": "Bitte einen Benutzer auswählen!"
+    },
+    {
+        "msgid": "composite.select_dialog.name_filter",
+        "msgstr": "Bitte einen Filter auswählen"
+    },
+    {
+        "msgid": "meta.teams.select_user",
+        "msgstr": "Bitte einen User auswählen"
+    },
+    {
+        "msgid": "globalsearch.searchstringinput",
+        "msgstr": "Bitte geben Sie eine Suchanfrage ein:"
+    },
+    {
+        "msgid": "moduleeditor.main-grid.isBlack",
+        "msgstr": "BlackListet"
+    },
+    {
+        "msgid": "processexplorer.history.businesskey",
+        "msgstr": "Businesskey"
+    },
+    {
+        "msgid": "data.app.configeditor",
+        "msgstr": "Configeditor"
+    },
+    {
+        "msgid": "data.user.team_manage",
+        "msgstr": "Darf Teams auf Ebene 1 erstellen"
+    },
+    {
+        "msgid": "This field is required",
+        "msgstr": "Das Feld muss ausgefüllt werden."
+    },
+    {
+        "msgid": "entitytypes.databasescheme_clean.confirm",
+        "msgstr": "Das Schema wirklich löschen? <b>Alle Daten gehen verloren!</b>"
+    },
+    {
+        "msgid": "entitytypes.databasescheme_clean",
+        "msgstr": "Databaseschema löschen"
+    },
+    {
+        "msgid": "shell.file_created",
+        "msgstr": "Datei erstellt"
+    },
+    {
+        "msgid": "shell.node_deleted",
+        "msgstr": "Datei gelöscht"
+    },
+    {
+        "msgid": "shell.copy_ready",
+        "msgstr": "Datei kopiert"
+    },
+    {
+        "msgid": "shell.move_ready",
+        "msgstr": "Datei verschoben"
+    },
+    {
+        "msgid": "shell.file_create_failed",
+        "msgstr": "Dateierstellung ist fehlgeschlagen"
+    },
+    {
+        "msgid": "shell.file_name",
+        "msgstr": "Dateiname"
+    },
+    {
+        "msgid": "import.uploading_complete",
+        "msgstr": "Dateitransfer abgeschlossen"
+    },
+    {
+        "msgid": "meta.enums.data",
+        "msgstr": "Daten"
+    },
+    {
+        "msgid": "data.app.one_per_window",
+        "msgstr": "Daten Module in je einem Fenster "
+    },
+    {
+        "msgid": "data.form.saved",
+        "msgstr": "Daten gespeichert"
+    },
+    {
+        "msgid": "entitytypes.update_db",
+        "msgstr": "Datenbank anpassen"
+    },
+    {
+        "msgid": "import.table.databasefield",
+        "msgstr": "Datenbankeigenschaft"
+    },
+    {
+        "msgid": "entitytypes.data_description",
+        "msgstr": "Datenbeschreibung"
+    },
+    {
+        "msgid": "window.dataimports",
+        "msgstr": "Datenimporte"
+    },
+    {
+        "msgid": "mainmenu.dataimports",
+        "msgstr": "Datenimporte"
+    },
+    {
+        "msgid": "window.data.dataimports",
+        "msgstr": "Datenimporte"
+    },
+    {
+        "msgid": "menu.data.dataimports",
+        "msgstr": "Datenimporte"
+    },
+    {
+        "msgid": "widgets.table.view_button",
+        "msgstr": "Datensatz anzeigen"
+    },
+    {
+        "msgid": "widgets.table.copy_button",
+        "msgstr": "Datensatz duplizieren"
+    },
+    {
+        "msgid": "widgets.table.edit_button",
+        "msgstr": "Datensatz editieren"
+    },
+    {
+        "msgid": "data.form.created",
+        "msgstr": "Datensatz erstellt"
+    },
+    {
+        "msgid": "widgets.table.del_button",
+        "msgstr": "Datensatz löschen"
+    },
+    {
+        "msgid": "data.messages.created",
+        "msgstr": "Datensatz wurde angelegt"
+    },
+    {
+        "msgid": "data.enumdata.created",
+        "msgstr": "Datensatz wurde angelegt"
+    },
+    {
+        "msgid": "data.message.created",
+        "msgstr": "Datensatz wurde erstellt"
+    },
+    {
+        "msgid": "widgets.table.unassign_button",
+        "msgstr": "Datensatzzuordnung trennen"
+    },
+    {
+        "msgid": "widgets.table.export_button",
+        "msgstr": "Datensätze exportieren"
+    },
+    {
+        "msgid": "widgets.table.import_button",
+        "msgstr": "Datensätze importieren"
+    },
+    {
+        "msgid": "moduleeditor.table.datatype",
+        "msgstr": "Datentyp"
+    },
+    {
+        "msgid": "entitytypes.create_field.datatype",
+        "msgstr": "Datentyp"
+    },
+    {
+        "msgid": "data.field.datatype",
+        "msgstr": "Datentyp"
+    },
+    {
+        "msgid": "meta.tables.datatype",
+        "msgstr": "Datentyp"
+    },
+    {
+        "msgid": "processexplorer.date",
+        "msgstr": "Datum"
+    },
+    {
+        "msgid": "processexplorer.duration",
+        "msgstr": "Dauer"
+    },
+    {
+        "msgid": "import.mapping.decoder",
+        "msgstr": "Decoder"
+    },
+    {
+        "msgid": "data.entity.default_fields",
+        "msgstr": "Default Eigenschaften"
+    },
+    {
+        "msgid": "data.field.default_value",
+        "msgstr": "Defaultwert"
+    },
+    {
+        "msgid": "namespacesmanager.uninstall",
+        "msgstr": "Deinstall App"
+    },
+    {
+        "msgid": "namespacesmanager.confirm_uninstall",
+        "msgstr": "Deinstalliere App?"
+    },
+    {
+        "msgid": "data.process.deployed",
+        "msgstr": "Der Prozess wurde deployed"
+    },
+    {
+        "msgid": "data.process.undeployed",
+        "msgstr": "Der Prozess wurde undeployed"
+    },
+    {
+        "msgid": "data.filter.description",
+        "msgstr": "Description"
+    },
+    {
+        "msgid": "processexplorer.details_log",
+        "msgstr": "Detail Log"
+    },
+    {
+        "msgid": "messages.german",
+        "msgstr": "Deutsch"
+    },
+    {
+        "msgid": "shell.confirm_delete",
+        "msgstr": "Die Datei  löschen?"
+    },
+    {
+        "msgid": "process.form_incomplete",
+        "msgstr": "Die Form ist nicht vollständig ausgefüllt."
+    },
+    {
+        "msgid": "moduleeditor.confirm.change",
+        "msgstr": "Die Kategorie wechseln? Nicht Gespeichertes geht verloren."
+    },
+    {
+        "msgid": "configeditor.confirm.change",
+        "msgstr": "Die Konfiguration wechseln? Nicht Gespeichertes geht verloren."
+    },
+    {
+        "msgid": "shell.nt_document",
+        "msgstr": "Dokument"
+    },
+    {
+        "msgid": "shell.document_saved",
+        "msgstr": "Dokument gespeichert"
+    },
+    {
+        "msgid": "mainmenu.documents",
+        "msgstr": "Dokumente"
+    },
+    {
+        "msgid": "data.documents",
+        "msgstr": "Dokumente"
+    },
+    {
+        "msgid": "tasks.usertasks.dublettencheck.delete_dublette",
+        "msgstr": "Dublette komplett löschen"
+    },
+    {
+        "msgid": "moduleeditor.duplicate-check",
+        "msgstr": "Dublettencheck Eigenschaften"
+    },
+    {
+        "msgid": "import.duplicated",
+        "msgstr": "Dublettenverdacht"
+    },
+    {
+        "msgid": "import.select_button",
+        "msgstr": "Durchsuchen"
+    },
+    {
+        "msgid": "tasks.usertasks.dublettencheck.edit_dublette",
+        "msgstr": "Editieren der Dublette und als neuen Satz speichern"
+    },
+    {
+        "msgid": "shell.editor",
+        "msgstr": "Editor"
+    },
+    {
+        "msgid": "data.field.edittype",
+        "msgstr": "Edittyp"
+    },
+    {
+        "msgid": "entitytypeField.entitytypeField_saved",
+        "msgstr": "Eigenschaft gespeichert"
+    },
+    {
+        "msgid": "data.field.saved",
+        "msgstr": "Eigenschaft gespeichert"
+    },
+    {
+        "msgid": "entitytypes.leftfield",
+        "msgstr": "Eigenschaft im primären Modul"
+    },
+    {
+        "msgid": "data.relation.leftfield",
+        "msgstr": "Eigenschaft im primären Modul"
+    },
+    {
+        "msgid": "meta.relations.leftfield",
+        "msgstr": "Eigenschaft im primären Modul"
+    },
+    {
+        "msgid": "meta.relations.rightfield",
+        "msgstr": "Eigenschaft im sekundären Modul"
+    },
+    {
+        "msgid": "data.relation.rightfield",
+        "msgstr": "Eigenschaft im sekundären Modul"
+    },
+    {
+        "msgid": "entitytypes.rightfield",
+        "msgstr": "Eigenschaft im sekundären Modul"
+    },
+    {
+        "msgid": "data.field.created",
+        "msgstr": "Eigenschaft wurde gespeichert"
+    },
+    {
+        "msgid": "entitytypes.attribute_takeit",
+        "msgstr": "Eigenschaft übernehmen"
+    },
+    {
+        "msgid": "data.module.fields",
+        "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "fieldselector.fields",
+        "msgstr": "Eigenschaften"
+    },
+    {
         "msgid": "data.fieldets.tab2",
         "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "meta.lists.fields",
+        "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "data.fieldset.fields",
+        "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "meta.enums.fields",
+        "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "data.field",
+        "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "fieldselector.properties",
+        "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "meta.lists.fieldtab",
+        "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "meta.fieldset.fields",
+        "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "meta.fieldsets.fields",
+        "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "settings.fields",
+        "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "data.module.field_list",
+        "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "meta.wactions.editfields",
+        "msgstr": "Eigenschaften auswählen"
+    },
+    {
+        "msgid": "wactions.fieldaction",
+        "msgstr": "Eigenschaften bearbeiten"
+    },
+    {
+        "msgid": "data.wactions.saved",
+        "msgstr": "Eigenschaften gespeichert"
+    },
+    {
+        "msgid": "moduleeditor.fields_saved",
+        "msgstr": "Eigenschaften gespeichert"
+    },
+    {
+        "msgid": "meta.wactions.uebernehmen",
+        "msgstr": "Eigenschaften übernehmen"
+    },
+    {
+        "msgid": "settings.fieldsets",
+        "msgstr": "Eigenschaften(gemeinsame Suche)"
+    },
+    {
+        "msgid": "meta.fieldset.fsname",
+        "msgstr": "EigenschaftenSet Name"
+    },
+    {
+        "msgid": "meta.fieldsets.save",
+        "msgstr": "EigenschaftenSet übernehmen, anschließend noch \"Eigenschaften\" speichern"
+    },
+    {
+        "msgid": "configeditor.fieldsets",
+        "msgstr": "EigenschaftenSets"
+    },
+    {
+        "msgid": "meta.lists.fields_save",
+        "msgstr": "Eigenschaftenspeichern"
+    },
+    {
+        "msgid": "settings.name",
+        "msgstr": "Eigenschaftsname in der Klasse"
+    },
+    {
+        "msgid": "moduleaccesseditor.owner",
+        "msgstr": "Eigentümer"
+    },
+    {
+        "msgid": "data.app.one_module_per_window",
+        "msgstr": "Ein Modul pro Fenster"
+    },
+    {
+        "msgid": "please.wait",
+        "msgstr": "Einen Moment ..."
+    },
+    {
+        "msgid": "widgets.table.form_incomplete",
+        "msgstr": "Eingabe nicht vollständig"
+    },
+    {
+        "msgid": "ruleseditor.inputvariables",
+        "msgstr": "Eingabevariablen"
+    },
+    {
+        "msgid": "settings.view_properties",
+        "msgstr": "Einstellungen der Sicht"
+    },
+    {
+        "msgid": "settings.views_selected_items_saved",
+        "msgstr": "Einstellungen gespeichert"
+    },
+    {
+        "msgid": "import.import_saved",
+        "msgstr": "Einstellungen gespeichert"
+    },
+    {
+        "msgid": "multiusebox.remove",
+        "msgstr": "Elemente entfernen"
+    },
+    {
+        "msgid": "multiusebox.replace",
+        "msgstr": "Elemente ersetzen"
+    },
+    {
+        "msgid": "multiusebox.add",
+        "msgstr": "Elemente hinzufügen"
+    },
+    {
+        "msgid": "data.users.email",
+        "msgstr": "Email"
+    },
+    {
+        "msgid": "moduleeditor.globalprop.enabled",
+        "msgstr": "Enabled"
+    },
+    {
+        "msgid": "settings.enabled",
+        "msgstr": "Enabled"
+    },
+    {
+        "msgid": "permissions.enabled",
+        "msgstr": "Enabled"
+    },
+    {
+        "msgid": "processexplorer.endTime",
+        "msgstr": "Endezeit"
+    },
+    {
+        "msgid": "data.projects.end_date",
+        "msgstr": "Endtermin Projekt"
+    },
+    {
+        "msgid": "messages.english",
+        "msgstr": "Englisch"
+    },
+    {
+        "msgid": "namespacesmanager.del",
+        "msgstr": "Entferne App"
+    },
+    {
+        "msgid": "data.entity.namespace",
+        "msgstr": "Enthalten in Namespace"
+    },
+    {
+        "msgid": "meta.lists.resulttab",
+        "msgstr": "Ergebnis"
+    },
+    {
+        "msgid": "ruleseditor.ergebnis",
+        "msgstr": "Ergebnis"
+    },
+    {
+        "msgid": "processexplorer.completed",
+        "msgstr": "Erledigt"
+    },
+    {
+        "msgid": "processexplorer.finished_only",
+        "msgstr": "Erledigte Prozesse"
+    },
+    {
+        "msgid": "meta.wactions.create-record",
+        "msgstr": "Erstellen eines Datensatzes in einem verbundenen Modul"
+    },
+    {
+        "msgid": "tasks.table.time",
+        "msgstr": "Erstellt am"
+    },
+    {
+        "msgid": "ruleseditor.no_variables_defined",
+        "msgstr": "Es sind keine Variablen definiert"
+    },
+    {
+        "msgid": "export.csv.excel_compatible",
+        "msgstr": "Excel kompatibel"
+    },
+    {
+        "msgid": "moduleeditor.export",
+        "msgstr": "Export"
+    },
+    {
+        "msgid": "export.export_button",
+        "msgstr": "Export"
+    },
+    {
+        "msgid": "moduleaccesseditor.export",
+        "msgstr": "Exportieren"
+    },
+    {
+        "msgid": "tasks.task.not_completed",
+        "msgstr": "Fehler beim Beenden der Aufgabe"
+    },
+    {
+        "msgid": "tasks.task.not_claimed",
+        "msgstr": "Fehler beim Übernehmen der Aufgabe"
+    },
+    {
+        "msgid": "processes.startform.notstarted",
+        "msgstr": "Fehler: Prozess kann nicht gestartet werden"
+    },
+    {
+        "msgid": "tasks.form.notstarted",
+        "msgstr": "Fehler: Task kann nicht gestartet werden"
+    },
+    {
+        "msgid": "meta.constraints.message",
+        "msgstr": "Fehlermeldung"
+    },
+    {
+        "msgid": "export.csv.filename",
+        "msgstr": "Filename"
+    },
+    {
+        "msgid": "meta.lists.which_filter",
+        "msgstr": "Filter"
+    },
+    {
+        "msgid": "processexplorer.filter",
+        "msgstr": "Filter"
+    },
+    {
+        "msgid": "shell.nt_filter",
+        "msgstr": "Filter"
+    },
+    {
+        "msgid": "meta.lists.filtertab",
+        "msgstr": "Filter"
+    },
+    {
+        "msgid": "shell.filter_dir",
+        "msgstr": "Filter"
+    },
+    {
+        "msgid": "messages.filter",
+        "msgstr": "Filter (inkrementell)"
+    },
+    {
+        "msgid": "data.filtereditor.filtereditor",
+        "msgstr": "Filter Editor"
+    },
+    {
+        "msgid": "meta.lists.filter_deleted",
+        "msgstr": "Filter gelöscht"
+    },
+    {
+        "msgid": "composite.select_dialog.deleted",
+        "msgstr": "Filter gelöscht"
+    },
+    {
+        "msgid": "shell.filter_saved",
+        "msgstr": "Filter gespeichert"
+    },
+    {
+        "msgid": "composite.select_dialog.saved",
+        "msgstr": "Filter gespeichert"
+    },
+    {
+        "msgid": "meta.lists.listfilter_saved",
+        "msgstr": "Filter gespeichert"
+    },
+    {
+        "msgid": "data.entity.multiple_tabs",
+        "msgstr": "Filter kombinieren"
+    },
+    {
+        "msgid": "meta.lists.del_filter",
+        "msgstr": "Filter löschen"
+    },
+    {
+        "msgid": "data.filter.name",
+        "msgstr": "Filtername"
+    },
+    {
+        "msgid": "meta.lists.filter_used",
+        "msgstr": "Filtername schon vergeben"
+    },
+    {
+        "msgid": "meta.lists.windowtitle",
+        "msgstr": "Filterregeln"
+    },
+    {
+        "msgid": "import.table.filter_column",
+        "msgstr": "Filterspalte"
+    },
+    {
+        "msgid": "shell.nt_form",
+        "msgstr": "Form"
+    },
+    {
+        "msgid": "entitytypes.create_form_settings",
+        "msgstr": "Formeinstellungen erzeugen"
+    },
+    {
+        "msgid": "data.field.formula_client",
+        "msgstr": "Formel(Client)"
+    },
+    {
+        "msgid": "data.field.formula_out",
+        "msgstr": "Formel(ausgehend)"
+    },
+    {
+        "msgid": "data.field.formula_in",
+        "msgstr": "Formel(eingehend)"
+    },
+    {
+        "msgid": "moduleeditor.main-form.formlayout",
+        "msgstr": "Formlayout"
+    },
+    {
+        "msgid": "shell.forms_dir",
+        "msgstr": "Forms"
+    },
+    {
+        "msgid": "messages.franc",
+        "msgstr": "Französisch"
+    },
+    {
+        "msgid": "entitytypes.deleted",
+        "msgstr": "Gelöscht"
+    },
+    {
+        "msgid": "data.messages.saved",
+        "msgstr": "Gespeichert"
+    },
+    {
+        "msgid": "import.mapping.saved",
+        "msgstr": "Gespeichert"
+    },
+    {
+        "msgid": "data.enumfield.saved",
+        "msgstr": "Gespeichert"
+    },
+    {
+        "msgid": "data.enumdata.saved",
+        "msgstr": "Gespeichert"
+    },
+    {
+        "msgid": "configeditor.check_type.equal",
+        "msgstr": "Gleich"
+    },
+    {
+        "msgid": "data.groups.tab1",
+        "msgstr": "Global"
+    },
+    {
+        "msgid": "moduleeditor.global-search",
+        "msgstr": "Global suchbare Felder"
+    },
+    {
+        "msgid": "mainmenu.settings",
+        "msgstr": "Globale Einstellungen"
+    },
+    {
+        "msgid": "window.settings",
+        "msgstr": "Globale Einstellungen für Klassen und Klasseneigenschaften"
+    },
+    {
+        "msgid": "mainmenu.globalsearch",
+        "msgstr": "Globale Suche"
+    },
+    {
+        "msgid": "moduleeditor.global-search",
+        "msgstr": "Globale Suche"
+    },
+    {
+        "msgid": "window.globalsearch",
+        "msgstr": "Globale Suche"
+    },
+    {
+        "msgid": "data.group.tab1",
+        "msgstr": "Gobal"
+    },
+    {
+        "msgid": "data.graphicaleditor.graphicaleditor",
+        "msgstr": "Grafischer Prozess/Masken Editor"
+    },
+    {
+        "msgid": "meta.traits.group",
+        "msgstr": "Gruppe"
+    },
+    {
+        "msgid": "data.users.group",
+        "msgstr": "Gruppe"
+    },
+    {
+        "msgid": "data.groups.created",
+        "msgstr": "Gruppe angelegt"
+    },
+    {
+        "msgid": "security.group.saved",
+        "msgstr": "Gruppe gespeichert"
+    },
+    {
+        "msgid": "data.group.saved",
+        "msgstr": "Gruppe gespeichert"
+    },
+    {
+        "msgid": "meta.teams.group_exists",
+        "msgstr": "Gruppe schon ausgewählt"
+    },
+    {
+        "msgid": "data.groups.save",
+        "msgstr": "Gruppe speichern"
+    },
+    {
+        "msgid": "security.group.save",
+        "msgstr": "Gruppe speichern"
+    },
+    {
+        "msgid": "window.groups",
+        "msgstr": "Gruppen"
+    },
+    {
+        "msgid": "mainmenu.groups",
+        "msgstr": "Gruppen"
+    },
+    {
+        "msgid": "data.users.groups",
+        "msgstr": "Gruppen"
+    },
+    {
+        "msgid": "data.group.groupid",
+        "msgstr": "Gruppen-ID"
+    },
+    {
+        "msgid": "data.groups.groupname",
+        "msgstr": "Gruppenname"
+    },
+    {
+        "msgid": "meta.teams.valid_from",
+        "msgstr": "Gültig ab"
+    },
+    {
+        "msgid": "meta.datatraits.valid_from",
+        "msgstr": "Gültig ab"
+    },
+    {
+        "msgid": "meta.traits.valid_from",
+        "msgstr": "Gültig ab"
+    },
+    {
+        "msgid": "meta.datatraits.valid_to",
+        "msgstr": "Gültig bis"
+    },
+    {
+        "msgid": "meta.teams.valid_to",
+        "msgstr": "Gültig bis"
+    },
+    {
+        "msgid": "meta.traits.valid_to",
+        "msgstr": "Gültig bis"
+    },
+    {
+        "msgid": "moduleeditor.main-form",
+        "msgstr": "Hauptform"
+    },
+    {
+        "msgid": "mainmenu.start",
+        "msgstr": "Hauptmenü"
+    },
+    {
+        "msgid": "meta.lists.main_module",
+        "msgstr": "Hauptmodul"
+    },
+    {
+        "msgid": "import.main_module",
+        "msgstr": "Hauptmodul"
+    },
+    {
+        "msgid": "moduleeditor.main-grid",
+        "msgstr": "Haupttabelle"
+    },
+    {
+        "msgid": "import.upload_button",
+        "msgstr": "Hochladen"
+    },
+    {
+        "msgid": "import.upload_with_mapping_button",
+        "msgstr": "Hochladen und Mapping setzen"
+    },
+    {
+        "msgid": "data.app.id",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "data.field.primary_key",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "data.module.id",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "processexplorer.id",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "processes.table.id",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "data.field.id",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "tasks.usertasks.dublettencheck.ignore",
+        "msgstr": "Ignorieren"
+    },
+    {
+        "msgid": "export.csv.always_quote",
+        "msgstr": "Immer Quotezeichen benutzen"
+    },
+    {
+        "msgid": "moduleaccesseditor.import",
+        "msgstr": "Import"
+    },
+    {
+        "msgid": "import.import_button",
+        "msgstr": "Import"
+    },
+    {
+        "msgid": "window.meta.importcsv",
+        "msgstr": "Import CSV"
+    },
+    {
+        "msgid": "import.import_created",
+        "msgstr": "Import erstellt"
+    },
+    {
+        "msgid": "import.import_deleted",
+        "msgstr": "Import gelöscht"
+    },
+    {
+        "msgid": "import.del_import",
+        "msgstr": "Import löschen"
+    },
+    {
+        "msgid": "importing.importingCreated",
+        "msgstr": "Import wurde angelegt"
+    },
+    {
+        "msgid": "Importing.title",
+        "msgstr": "Importe"
+    },
+    {
+        "msgid": "import.save_import",
+        "msgstr": "Importeinstellungen speichern"
+    },
+    {
+        "msgid": "import.import_type",
+        "msgstr": "Importtyp"
+    },
+    {
+        "msgid": "filter.text.change_label",
+        "msgstr": "In Vergleichsnamen ändern"
+    },
+    {
+        "msgid": "tasks.table.not_assigned",
+        "msgstr": "In Warteschlange"
+    },
+    {
+        "msgid": "moduleaccesseditor.disabled",
+        "msgstr": "Inaktiv"
+    },
+    {
+        "msgid": "meta.datatraits.disabled",
+        "msgstr": "Inaktiv"
+    },
+    {
+        "msgid": "data.module.index",
+        "msgstr": "Index"
+    },
+    {
+        "msgid": "moduleeditor.globalprop.index",
+        "msgstr": "Index"
+    },
+    {
+        "msgid": "data.entity.index",
+        "msgstr": "Index"
+    },
+    {
+        "msgid": "processexplorer.details_info",
+        "msgstr": "Information"
+    },
+    {
+        "msgid": "namespacesmanager.install",
+        "msgstr": "Install App"
+    },
+    {
+        "msgid": "namespacesmanager.confirm_install",
+        "msgstr": "Installiere App?"
+    },
+    {
+        "msgid": "namespacesmanager.is_installed",
+        "msgstr": "Installiert?"
+    },
+    {
+        "msgid": "processexplorer.instance_diagram",
+        "msgstr": "Instanz Diagramm"
+    },
+    {
+        "msgid": "settings.views.propertyedit.isblack",
+        "msgstr": "Is black"
+    },
+    {
+        "msgid": "messages.italian",
+        "msgstr": "Italienisch"
+    },
+    {
+        "msgid": "moduleaccesseditor.all",
+        "msgstr": "Ja"
+    },
+    {
+        "msgid": "kommune.B3000",
+        "msgstr": "KKKKKKKKKKKKKK"
+    },
+    {
+        "msgid": "data.module.category",
+        "msgstr": "Kategorie"
+    },
+    {
+        "msgid": "moduleeditor.globalprop.category",
+        "msgstr": "Kategorie"
+    },
+    {
+        "msgid": "import.no_filename",
+        "msgstr": "Kein Dateiname angeben"
+    },
+    {
+        "msgid": "composite.select_dialog.no_search_saved",
+        "msgstr": "Kein Filter gespeichert"
+    },
+    {
+        "msgid": "meta.lists.too_little_filter",
+        "msgstr": "Kein Filter vorhanden"
+    },
+    {
+        "msgid": "import.mapping.no_mapping_saved",
+        "msgstr": "Kein Mapping gespeichert"
+    },
+    {
+        "msgid": "tasks.usertasks.dublettencheck.no_dublette_selected",
+        "msgstr": "Keine Dublette ausgewählt"
+    },
+    {
+        "msgid": "import.no_mapping",
+        "msgstr": "Keine Eigenschaften ausgewählt."
+    },
+    {
+        "msgid": "ruleseditor.no_variables_defined",
+        "msgstr": "Keine Variablen definiert"
+    },
+    {
+        "msgid": "configeditor.check_type.phonetic",
+        "msgstr": "Klang"
+    },
+    {
+        "msgid": "configeditor.check_type.both",
+        "msgstr": "Klang und Abstand"
+    },
+    {
+        "msgid": "data.field.entity",
+        "msgstr": "Klasse"
+    },
+    {
+        "msgid": "data.namespace.entity",
+        "msgstr": "Klasse"
+    },
+    {
+        "msgid": "widgets.table.compile_button",
+        "msgstr": "Klasse compilieren"
+    },
+    {
+        "msgid": "data.entity.enabled",
+        "msgstr": "Klasse enabled"
+    },
+    {
+        "msgid": "entitytypes.generate_class",
+        "msgstr": "Klasse erzeugen"
+    },
+    {
+        "msgid": "entitytypes.entitytype_saved",
+        "msgstr": "Klasse gespeichert"
+    },
+    {
+        "msgid": "entitytypes.confirm_delete",
+        "msgstr": "Klasse löschen?"
+    },
+    {
+        "msgid": "data.entity.save",
+        "msgstr": "Klasse speichern"
+    },
+    {
+        "msgid": "entitytypes.entitytypes",
+        "msgstr": "Klassen"
+    },
+    {
+        "msgid": "data.entity",
+        "msgstr": "Klassen"
+    },
+    {
+        "msgid": "data.namespace.entity_list",
+        "msgstr": "Klassen"
+    },
+    {
+        "msgid": "settings.entities",
+        "msgstr": "Klassen"
+    },
+    {
+        "msgid": "mainmenu.moduleadmin",
+        "msgstr": "Klassen / Beziehungen verwalten"
+    },
+    {
+        "msgid": "data.entity.field_list",
+        "msgstr": "Klasseneigenschaften"
+    },
+    {
+        "msgid": "entitytypes.create_class.name",
+        "msgstr": "Klassenname"
+    },
+    {
+        "msgid": "meta.tree.node_created",
+        "msgstr": "Knoten angelegt"
+    },
+    {
+        "msgid": "meta.tree.del_node",
+        "msgstr": "Knoten löschen"
+    },
+    {
+        "msgid": "data.form.comment",
+        "msgstr": "Kommentar"
+    },
+    {
+        "msgid": "config.menu.configuration",
+        "msgstr": "Konfiguration"
+    },
+    {
+        "msgid": "data.group.config",
+        "msgstr": "Konfiguration"
+    },
+    {
+        "msgid": "config.menu.add_config_button",
+        "msgstr": "Konfiguration erstellen"
+    },
+    {
+        "msgid": "configeditor.config_created",
+        "msgstr": "Konfiguration erzeugt"
+    },
+    {
+        "msgid": "mainmenu.configeditor",
+        "msgstr": "Konfigurations  Editor"
+    },
+    {
+        "msgid": "window.configeditor",
+        "msgstr": "Konfigurations Editor"
+    },
+    {
+        "msgid": "window.data.configeditor",
+        "msgstr": "Konfigurations Editor"
+    },
+    {
+        "msgid": "configeditor.create_config",
+        "msgstr": "Konfigurationsname"
+    },
+    {
+        "msgid": "import.table.header_row",
+        "msgstr": "Kopfzeile"
+    },
+    {
+        "msgid": "filter.text.copy_to",
+        "msgstr": "Kopiere nach"
+    },
+    {
+        "msgid": "shell.copy_node",
+        "msgstr": "Kopieren"
+    },
+    {
+        "msgid": "shell.copy_failed",
+        "msgstr": "Kopieren fehlgeschlagen"
+    },
+    {
+        "msgid": "label1",
+        "msgstr": "LabelXXXX"
+    },
+    {
+        "msgid": "import.mapping.load",
+        "msgstr": "Laden"
+    },
+    {
+        "msgid": "data.users.read",
+        "msgstr": "Lesen"
+    },
+    {
+        "msgid": "meta.traits.acl_read",
+        "msgstr": "Lesen"
+    },
+    {
+        "msgid": "data.groups.read",
+        "msgstr": "Lesen"
+    },
+    {
+        "msgid": "moduleaccesseditor.list",
+        "msgstr": "Liste"
+    },
+    {
+        "msgid": "meta.lists.list_deleted",
+        "msgstr": "Liste gelöscht"
+    },
+    {
+        "msgid": "meta.lists.del_list",
+        "msgstr": "Liste löschen"
+    },
+    {
+        "msgid": "window.reports",
+        "msgstr": "Listen/Reporte"
+    },
+    {
+        "msgid": "mainmenu.reports",
+        "msgstr": "Listen/Reports"
+    },
+    {
+        "msgid": "meta.tree.root.lists",
+        "msgstr": "Listen/Reports"
+    },
+    {
+        "msgid": "processexplorer.logmessage",
+        "msgstr": "Log Nachricht"
+    },
+    {
+        "msgid": "moduleaccesseditor.delete",
+        "msgstr": "Löschen"
+    },
+    {
+        "msgid": "composite.select_dialog.delete",
+        "msgstr": "Löschen"
+    },
+    {
+        "msgid": "import.mapping.delete",
+        "msgstr": "Löschen"
+    },
+    {
+        "msgid": "shell.del_node",
+        "msgstr": "Löschen"
+    },
+    {
+        "msgid": "entitytypes.delete",
+        "msgstr": "Löschen"
+    },
+    {
+        "msgid": "relations.many-to-many",
+        "msgstr": "Many-to-Many: Beide Module haben einen Subpanel des jeweilig anderen Modul."
+    },
+    {
+        "msgid": "data.app.mapping",
+        "msgstr": "Mapping"
+    },
+    {
+        "msgid": "gui.data_import_tab.mapping",
+        "msgstr": "Mapping"
+    },
+    {
+        "msgid": "meta.lists.fs.mapping",
+        "msgstr": "Mapping"
+    },
+    {
+        "msgid": "data.forms.test",
+        "msgstr": "Maske testen"
+    },
+    {
+        "msgid": "data.form.fid",
+        "msgstr": "Masken ID"
+    },
+    {
+        "msgid": "settings.views.propertyedit.formlayout",
+        "msgstr": "Masken Layout"
+    },
+    {
+        "msgid": "data.entity.multi_add",
+        "msgstr": "Mehrfacherstellung von Entitäten"
+    },
+    {
+        "msgid": "tasks.table.assigned",
+        "msgstr": "Meine Aufgaben"
+    },
+    {
+        "msgid": "meta.constraint.message",
+        "msgstr": "Meldung"
+    },
+    {
+        "msgid": "searchfilter.menubutton",
+        "msgstr": "Menü"
+    },
+    {
+        "msgid": "meta.traits.trait_created",
+        "msgstr": "Merkmal erstellt"
+    },
+    {
+        "msgid": "meta.traits.trait_saved",
+        "msgstr": "Merkmal gespeichert"
+    },
+    {
+        "msgid": "meta.traits.save_trait",
+        "msgstr": "Merkmal speichern"
+    },
+    {
+        "msgid": "data.groups.trait_l2_manage",
+        "msgstr": "Merkmal-Ebene2 verwalten"
+    },
+    {
+        "msgid": "data.groups.trait_l3_read",
+        "msgstr": "Merkmal-Ebene3 lesen"
+    },
+    {
+        "msgid": "data.groups.tags",
+        "msgstr": "Merkmale"
+    },
+    {
+        "msgid": "data.users.tags",
+        "msgstr": "Merkmale"
+    },
+    {
+        "msgid": "meta.traits.root.title",
+        "msgstr": "Merkmale"
+    },
+    {
+        "msgid": "window.meta.traits",
+        "msgstr": "Merkmale"
+    },
+    {
+        "msgid": "meta.traits.traitid",
+        "msgstr": "Merkmalname"
+    },
+    {
+        "msgid": "meta.datatraits.description",
+        "msgstr": "Merkmalname"
+    },
+    {
+        "msgid": "data.messages.msgstr",
+        "msgstr": "Message"
+    },
+    {
+        "msgid": "mainmenu.messages",
+        "msgstr": "Message Editor"
+    },
+    {
+        "msgid": "data.message.msgid",
+        "msgstr": "Message ID"
+    },
+    {
+        "msgid": "data.message.saved",
+        "msgstr": "Message gespeichert"
+    },
+    {
+        "msgid": "data.message.saved",
+        "msgstr": "Message saved"
+    },
+    {
+        "msgid": "messages.messages_save",
+        "msgstr": "Message speichern"
+    },
+    {
+        "msgid": "messages.msgid",
+        "msgstr": "Message-ID"
+    },
+    {
+        "msgid": "data.messages.msgid",
+        "msgstr": "MessageId"
+    },
+    {
+        "msgid": "window.messages",
+        "msgstr": "Messageeditor"
+    },
+    {
+        "msgid": "entitytypes.create_messages",
+        "msgstr": "Messages erzeugen"
+    },
+    {
+        "msgid": "messages.messages_saved",
+        "msgstr": "Messages gespeichert"
+    },
+    {
+        "msgid": "export.csv.include_column_header",
+        "msgstr": "Mit Spaltenüberschrift"
+    },
+    {
+        "msgid": "export.xml.with_null_values",
+        "msgstr": "Mit leeren Eigenschaften"
+    },
+    {
+        "msgid": "meta.teams.delete_member",
+        "msgstr": "Mitglied löschen"
+    },
+    {
+        "msgid": "namespacesmanager.is_modified",
+        "msgstr": "Modifiziert?"
+    },
+    {
+        "msgid": "data.field.module",
+        "msgstr": "Modul"
+    },
+    {
+        "msgid": "meta.wactions.targetmodule",
+        "msgstr": "Modul"
+    },
+    {
+        "msgid": "moduleaccesseditor.module",
+        "msgstr": "Modul"
+    },
+    {
+        "msgid": "data.app.moduleeditor",
+        "msgstr": "Modul Editor"
+    },
+    {
+        "msgid": "mainmenu.moduleeditor",
+        "msgstr": "Modul Editor"
+    },
+    {
+        "msgid": "window.moduleeditor",
+        "msgstr": "Modul Editor"
+    },
+    {
+        "msgid": "import.create_module",
+        "msgstr": "Modul erkennen/erstellen"
+    },
+    {
+        "msgid": "data.module.created",
+        "msgstr": "Modul erstellt"
+    },
+    {
+        "msgid": "moduleeditor.module_created",
+        "msgstr": "Modul erstellt"
+    },
+    {
+        "msgid": "data.module.saved",
+        "msgstr": "Modul gespeichert"
+    },
+    {
+        "msgid": "meta.tree.root.modules",
+        "msgstr": "Module"
+    },
+    {
+        "msgid": "data.module.modules",
+        "msgstr": "Module"
+    },
+    {
+        "msgid": "data.app.module_list",
+        "msgstr": "Module"
+    },
+    {
+        "msgid": "data.module",
+        "msgstr": "Module"
+    },
+    {
+        "msgid": "data.app.modules",
+        "msgstr": "Module"
+    },
+    {
+        "msgid": "window.data.moduleeditor",
+        "msgstr": "Module Editor"
+    },
+    {
+        "msgid": "data.filter.modulename",
+        "msgstr": "Modulname"
+    },
+    {
+        "msgid": "moduleeditor.create_module",
+        "msgstr": "Modulname"
+    },
+    {
+        "msgid": "tasks.usertasks.dublettencheck.mode",
+        "msgstr": "Modus"
+    },
+    {
+        "msgid": "data.relation.dependent",
+        "msgstr": "N-Sätze mit löschen"
+    },
+    {
+        "msgid": "max.nach_komma",
+        "msgstr": "Nach Komma"
+    },
+    {
+        "msgid": "meta.lists.fs.up",
+        "msgstr": "Nach oben"
+    },
+    {
+        "msgid": "meta.lists.fs.down",
+        "msgstr": "Nach unten"
+    },
+    {
+        "msgid": "data.users.givenname",
+        "msgstr": "Nachname"
+    },
+    {
+        "msgid": "data.field.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "shell.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "data.module.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "processes.table.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "data.rule.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "moduleeditor.table.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "namespacesmanager.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "data.app.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "data.user.surname",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "import.mapping.name_mapping",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "data.enumfield.fieldname",
+        "msgstr": "Name der Eigenschaft"
+    },
+    {
+        "msgid": "data.entity.name",
+        "msgstr": "Name der Klasse"
+    },
+    {
+        "msgid": "meta.lists.list_name",
+        "msgstr": "Name der Liste"
+    },
+    {
+        "msgid": "config.menu.add_config_title",
+        "msgstr": "Name der neuen Konfiguration"
+    },
+    {
+        "msgid": "meta.fieldsets.fsname",
+        "msgstr": "Name des EigenschaftenSets"
+    },
+    {
+        "msgid": "meta.lists.filter_name",
+        "msgstr": "Name des Filters"
+    },
+    {
+        "msgid": "composite.save_dialog.name_filter",
+        "msgstr": "Name des Filters"
+    },
+    {
+        "msgid": "importing.importName",
+        "msgstr": "Name des Import"
+    },
+    {
+        "msgid": "import.import_name",
+        "msgstr": "Name des Imports"
+    },
+    {
+        "msgid": "meta.traits.create_trait1",
+        "msgstr": "Name des Merkmals"
+    },
+    {
+        "msgid": "data.namespace.name",
+        "msgstr": "Name des Namespace"
+    },
+    {
+        "msgid": "meta.teams.create_team1",
+        "msgstr": "Name des Teams"
+    },
+    {
+        "msgid": "meta.lists.new_filtername",
+        "msgstr": "Name des neuen Filters"
+    },
+    {
+        "msgid": "meta.enums.duplicated",
+        "msgstr": "Name ist schon vergeben"
+    },
+    {
+        "msgid": "meta.lists.duplicated",
+        "msgstr": "Name ist schon vergeben"
+    },
+    {
+        "msgid": "meta.teams.name_and_description",
+        "msgstr": "Name und Beschreibung müssen ausgefüllt werden."
+    },
+    {
+        "msgid": "meta.traits.name_and_description",
+        "msgstr": "Name und Beschreibung müssen ausgefüllt werden."
+    },
+    {
+        "msgid": "data.namespace",
+        "msgstr": "Namespace"
+    },
+    {
+        "msgid": "data.relation.namespace",
+        "msgstr": "Namespace"
+    },
+    {
+        "msgid": "data.namespace.save",
+        "msgstr": "Namespace speichern"
+    },
+    {
+        "msgid": "data.namespace.saved",
+        "msgstr": "Namespcae gespeichert"
+    },
+    {
+        "msgid": "moduleaccesseditor.none",
+        "msgstr": "Nein"
+    },
+    {
+        "msgid": "tasks.usertasks.dublettencheck.insert",
+        "msgstr": "Neu"
+    },
+    {
+        "msgid": "ruleseditor.insert_action_column",
+        "msgstr": "Neue Aktionsspalte"
+    },
+    {
+        "msgid": "namespacesmanager.add",
+        "msgstr": "Neue App"
+    },
+    {
+        "msgid": "meta.enums.new_enum",
+        "msgstr": "Neue Aufzählung"
+    },
+    {
+        "msgid": "enumerations.new_enum",
+        "msgstr": "Neue Aufzählung"
+    },
+    {
+        "msgid": "meta.enums.enum_created",
+        "msgstr": "Neue Aufzählung erstellt"
+    },
+    {
+        "msgid": "filter.text.new_condition",
+        "msgstr": "Neue Bedingung"
+    },
+    {
+        "msgid": "ruleseditor.insert_condition_column",
+        "msgstr": "Neue Bedingungsspalte"
+    },
+    {
+        "msgid": "shell.new_file",
+        "msgstr": "Neue Datei"
+    },
+    {
+        "msgid": "entitytypes.new_field",
+        "msgstr": "Neue Eigenschaft"
+    },
+    {
+        "msgid": "entitytypes.new_entitytype",
+        "msgstr": "Neue Klasse"
+    },
+    {
+        "msgid": "entitytypes.new_fast_entitytype_create",
+        "msgstr": "Neue Klasse(ad Hoc)"
+    },
+    {
+        "msgid": "entitytypes.new_entitytype_wizard_form",
+        "msgstr": "Neue Klasse(aus einer Form) "
+    },
+    {
+        "msgid": "meta.lists.listfields_created",
+        "msgstr": "Neue Liste erstellt"
+    },
+    {
+        "msgid": "ruleseditor.insert_rule",
+        "msgstr": "Neue Regel"
+    },
+    {
+        "msgid": "messages.new_messageslang",
+        "msgstr": "Neue Sprache"
+    },
+    {
+        "msgid": "filter.text.new_search",
+        "msgstr": "Neue Suche"
+    },
+    {
+        "msgid": "meta.tree.new_node",
+        "msgstr": "Neuen Knoten erzeugen"
+    },
+    {
+        "msgid": "meta.lists.listfilter_created",
+        "msgstr": "Neuer Filter erstellt"
+    },
+    {
+        "msgid": "importing.newImport",
+        "msgstr": "Neuer Import"
+    },
+    {
+        "msgid": "main.login",
+        "msgstr": "Neues Login"
+    },
+    {
+        "msgid": "meta.traits.new_trait",
+        "msgstr": "Neues Merkmal"
+    },
+    {
+        "msgid": "moduleeditor.new_module",
+        "msgstr": "Neues Modul"
+    },
+    {
+        "msgid": "meta.teams.new_team",
+        "msgstr": "Neues Team"
+    },
+    {
+        "msgid": "meta.traits.new_subtrait",
+        "msgstr": "Neues Untermerkmal"
+    },
+    {
+        "msgid": "shell.new_directory",
+        "msgstr": "Neues Verzeichnis"
+    },
+    {
+        "msgid": "filter.text.new_win",
+        "msgstr": "Neues Window"
+    },
+    {
+        "msgid": "multiusebox.ignore",
+        "msgstr": "Nicht verwenden"
+    },
+    {
+        "msgid": "config.menu.only_letter_and_numbers_allowed",
+        "msgstr": "Nur Buchstaben und Ziffern erlaubt.Mindestlänge 5 Zeichen"
+    },
+    {
+        "msgid": "eaprod.nur_Kontakte",
+        "msgstr": "Nur Kontakte lesen"
+    },
+    {
+        "msgid": "ruleseditor.table_must_first_be_saved",
+        "msgstr": "Nur gespeicherte Regeln werden berücksichtigt"
+    },
+    {
+        "msgid": "relations.one-to-many-bi",
+        "msgstr": "One-to-Many-Bi: Primäres Modul hat einen Subpanel des sekundären Moduls, dieses hält eine Referenze auf das Primäre."
+    },
+    {
+        "msgid": "relations.one-to-many",
+        "msgstr": "One-to-Many: Primäres Modul hat einen Subpanel des sekundärenen Moduls ."
+    },
+    {
+        "msgid": "relations.one-to-one-bi",
+        "msgstr": "One-to-One-Bi: Beide Module haben eine Referenz auf das jeweilige andere Modul."
+    },
+    {
+        "msgid": "relations.one-to-one",
+        "msgstr": "One-to-One: Primäres Modul hat eine Referenz auf sekundäres Modul."
+    },
+    {
+        "msgid": "ruleseditor.operator",
+        "msgstr": "Operator"
+    },
+    {
+        "msgid": "meta.fieldsets.search_options",
+        "msgstr": "Operatoren"
     },
     {
         "msgid": "data.fieldets.tab3",
         "msgstr": "Operatoren"
     },
     {
-        "msgid": "data.fieldset.fields",
-        "msgstr": "Eigenschaften"
+        "msgid": "ruleseditor.operators",
+        "msgstr": "Operatoren"
+    },
+    {
+        "msgid": "moduleeditor.main-grid.orderby",
+        "msgstr": "OrderBy"
+    },
+    {
+        "msgid": "processexplorer.owner",
+        "msgstr": "Owner"
+    },
+    {
+        "msgid": "meta.constraint.parameter1",
+        "msgstr": "Parameter1"
+    },
+    {
+        "msgid": "meta.constraints.parameter2",
+        "msgstr": "Parameter2"
+    },
+    {
+        "msgid": "meta.constraint.parameter2",
+        "msgstr": "Parameter2"
+    },
+    {
+        "msgid": "data.users.password",
+        "msgstr": "Passwort"
+    },
+    {
+        "msgid": "data.user.password",
+        "msgstr": "Passwort"
+    },
+    {
+        "msgid": "permissions.permission",
+        "msgstr": "Permission"
+    },
+    {
+        "msgid": "tasks.table.processInstanceId",
+        "msgstr": "Pid"
+    },
+    {
+        "msgid": "import.constraintViolations",
+        "msgstr": "Plaus. Verl."
+    },
+    {
+        "msgid": "meta.constraint.annotation",
+        "msgstr": "Plausibilität"
+    },
+    {
+        "msgid": "data.field.constraints",
+        "msgstr": "Plausibilitäten"
+    },
+    {
+        "msgid": "data.field.tab3",
+        "msgstr": "Plausibilitäten"
+    },
+    {
+        "msgid": "import.constraintViolationsLong",
+        "msgstr": "Plausibilitätsverletzungen"
+    },
+    {
+        "msgid": "gui.data_import_tab.select_attribute",
+        "msgstr": "Please select a mapping !"
+    },
+    {
+        "msgid": "meta.tables.select_attribute",
+        "msgstr": "Please select an attribute !"
+    },
+    {
+        "msgid": "meta.relations.leftmodule",
+        "msgstr": "Primary module"
+    },
+    {
+        "msgid": "data.field.tab1",
+        "msgstr": "Primär"
+    },
+    {
+        "msgid": "data.field.primary_key",
+        "msgstr": "Primärer Schlüssel"
+    },
+    {
+        "msgid": "data.relation.leftmodule",
+        "msgstr": "Primäres Modul"
+    },
+    {
+        "msgid": "entitytypes.leftmodule",
+        "msgstr": "Primäres Modul"
+    },
+    {
+        "msgid": "meta.relations.leftmodule",
+        "msgstr": "Primäres Modul"
+    },
+    {
+        "msgid": "data.filter.saved",
+        "msgstr": "Process filter saved"
+    },
+    {
+        "msgid": "shell.project",
+        "msgstr": "Projekt"
+    },
+    {
+        "msgid": "data.projects.save",
+        "msgstr": "Projekt speichern"
+    },
+    {
+        "msgid": "data.projects.created",
+        "msgstr": "Projekt wurde angelegt"
+    },
+    {
+        "msgid": "data.projects.description",
+        "msgstr": "Projektbeschreibung"
+    },
+    {
+        "msgid": "data.projects",
+        "msgstr": "Projekte"
+    },
+    {
+        "msgid": "data.projects.name",
+        "msgstr": "Projektname"
+    },
+    {
+        "msgid": "mainmenu.projectshell",
+        "msgstr": "Projektverwaltung"
+    },
+    {
+        "msgid": "processexplorer.processdefinitions",
+        "msgstr": "Prozess Definitionen"
+    },
+    {
+        "msgid": "shell.process_saved",
+        "msgstr": "Prozess gespeichert"
+    },
+    {
+        "msgid": "processes.startform.started",
+        "msgstr": "Prozess gestartet"
+    },
+    {
+        "msgid": "processes.form.start",
+        "msgstr": "Prozess starten"
+    },
+    {
+        "msgid": "processexplorer.start_process",
+        "msgstr": "Prozess starten"
+    },
+    {
+        "msgid": "wactions.processaction",
+        "msgstr": "Prozess starten"
+    },
+    {
+        "msgid": "meta.workflows.processes-actions-alerts",
+        "msgstr": "Prozess,Aktion,Alarm"
+    },
+    {
+        "msgid": "meta.workflows.processes-alerts-actions",
+        "msgstr": "Prozess,Alarm,Aktion"
+    },
+    {
+        "msgid": "processexplorer.history.id",
+        "msgstr": "Prozess-ID"
+    },
+    {
+        "msgid": "shell.processes_dir",
+        "msgstr": "Prozesse"
+    },
+    {
+        "msgid": "window.processes",
+        "msgstr": "Prozesse"
+    },
+    {
+        "msgid": "mainmenu.processes",
+        "msgstr": "Prozesse"
+    },
+    {
+        "msgid": "mainmenu.filters",
+        "msgstr": "Prozessfilter"
+    },
+    {
+        "msgid": "data.filter.id",
+        "msgstr": "Prozessfilter ID"
+    },
+    {
+        "msgid": "data.filters.saved",
+        "msgstr": "Prozessfilter gespeichert"
+    },
+    {
+        "msgid": "data.filter.save",
+        "msgstr": "Prozessfilter speichern"
+    },
+    {
+        "msgid": "data.filter.created",
+        "msgstr": "Prozessfilter wurde erstellt"
+    },
+    {
+        "msgid": "processexplorer.history",
+        "msgstr": "Prozesshistorie"
+    },
+    {
+        "msgid": "data.form.saved",
+        "msgstr": "Prozessmaske gespeichert"
+    },
+    {
+        "msgid": "data.form.save",
+        "msgstr": "Prozessmaske speichen"
+    },
+    {
+        "msgid": "data.form.created",
+        "msgstr": "Prozessmaske wurde erstellt"
+    },
+    {
+        "msgid": "mainmenu.forms",
+        "msgstr": "Prozessmasken"
+    },
+    {
+        "msgid": "mainmenu.rules",
+        "msgstr": "Prozessregeln"
+    },
+    {
+        "msgid": "processexplorer.definition_diagramm",
+        "msgstr": "Prozesss Diagramm"
+    },
+    {
+        "msgid": "tasks.usertasks.dublettencheck.checkit",
+        "msgstr": "Prüfen"
+    },
+    {
+        "msgid": "import.mapping.sourcepath",
+        "msgstr": "Quellenpfad"
+    },
+    {
+        "msgid": "export.csv.landscape",
+        "msgstr": "Querformat"
+    },
+    {
+        "msgid": "export.csv.quote",
+        "msgstr": "Quotezeichen"
+    },
+    {
+        "msgid": "data.group.tab2",
+        "msgstr": "Rechte"
+    },
+    {
+        "msgid": "data.groups.tab2",
+        "msgstr": "Rechte"
+    },
+    {
+        "msgid": "data.user.tab2",
+        "msgstr": "Rechte"
+    },
+    {
+        "msgid": "data.users.tab2",
+        "msgstr": "Rechte"
+    },
+    {
+        "msgid": "data.message.created",
+        "msgstr": "Record was created"
+    },
+    {
+        "msgid": "shell.nt_rule",
+        "msgstr": "Regel"
+    },
+    {
+        "msgid": "data.rule.created",
+        "msgstr": "Regel erstellt"
+    },
+    {
+        "msgid": "ruleseditor.remove_rule",
+        "msgstr": "Regel löschen"
+    },
+    {
+        "msgid": "ruleseditor.rule_up",
+        "msgstr": "Regel nach oben"
+    },
+    {
+        "msgid": "ruleseditor.rule_down",
+        "msgstr": "Regel nach unten"
+    },
+    {
+        "msgid": "data.rule.save",
+        "msgstr": "Regel speichern"
+    },
+    {
+        "msgid": "data.ruleseditor.ruleseditor",
+        "msgstr": "Regeleditor"
+    },
+    {
+        "msgid": "shell.rules_dir",
+        "msgstr": "Regeln"
+    },
+    {
+        "msgid": "shell.rule_saved",
+        "msgstr": "Regeln gespeichert"
+    },
+    {
+        "msgid": "ruleseditor.rules_test",
+        "msgstr": "Regeltest"
+    },
+    {
+        "msgid": "ruleseditor.variables",
+        "msgstr": "Regelvariablen"
+    },
+    {
+        "msgid": "data.namespace.relation",
+        "msgstr": "Relation"
+    },
+    {
+        "msgid": "data.relation.created",
+        "msgstr": "Relation  angelegt"
+    },
+    {
+        "msgid": "meta.relations.save",
+        "msgstr": "Relation speichern"
+    },
+    {
+        "msgid": "moduleeditor.relations",
+        "msgstr": "Relationen"
+    },
+    {
+        "msgid": "data.namespace.relation_list",
+        "msgstr": "Relationen"
+    },
+    {
+        "msgid": "data.app.relation_list",
+        "msgstr": "Relationen"
+    },
+    {
+        "msgid": "namespacesmanager.reload",
+        "msgstr": "Reload"
+    },
+    {
+        "msgid": "moduleeditor.report",
+        "msgstr": "Report"
+    },
+    {
+        "msgid": "mainmenu.resources",
+        "msgstr": "Resourcen"
+    },
+    {
+        "msgid": "util.resources",
+        "msgstr": "Ressourcen"
+    },
+    {
+        "msgid": "processexplorer.revision",
+        "msgstr": "Revision"
+    },
+    {
+        "msgid": "roleselector.role_created",
+        "msgstr": "Rolle wurde erstellt"
+    },
+    {
+        "msgid": "permissions.roles",
+        "msgstr": "Rollen"
+    },
+    {
+        "msgid": "data.users.tab3",
+        "msgstr": "Rollen"
+    },
+    {
+        "msgid": "data.user.tab3",
+        "msgstr": "Rollen"
+    },
+    {
+        "msgid": "roleselector.roleid",
+        "msgstr": "Rollen-ID"
+    },
+    {
+        "msgid": "searchfilter.resetbutton",
+        "msgstr": "Rücksetzen"
+    },
+    {
+        "msgid": "meta.lists.resetbutton",
+        "msgstr": "Rücksetzen"
+    },
+    {
+        "msgid": "import.close_button",
+        "msgstr": "Schliessen"
+    },
+    {
+        "msgid": "export.close_button",
+        "msgstr": "Schliessen"
+    },
+    {
+        "msgid": "ruleseditor.test_close",
+        "msgstr": "Schliessen"
+    },
+    {
+        "msgid": "meta.enumdata.key",
+        "msgstr": "Schlüssel"
+    },
+    {
+        "msgid": "processes.table.key",
+        "msgstr": "Schlüssel"
+    },
+    {
+        "msgid": "filter.text.intersect",
+        "msgstr": "Schnittmenge"
+    },
+    {
+        "msgid": "data.field.tab2",
+        "msgstr": "Scripte"
+    },
+    {
+        "msgid": "meta.relations.rightmodule",
+        "msgstr": "Secondary module"
+    },
+    {
+        "msgid": "entitytypes.rightmodule",
+        "msgstr": "Sekundäres Modul"
+    },
+    {
+        "msgid": "data.relation.rightmodule",
+        "msgstr": "Sekundäres Modul"
+    },
+    {
+        "msgid": "meta.relations.rightmodule",
+        "msgstr": "Sekundäres Modul"
+    },
+    {
+        "msgid": "filter.text.form_letter",
+        "msgstr": "Serienbrief erstellen"
+    },
+    {
+        "msgid": "wactions.servicelabel",
+        "msgstr": "Service"
+    },
+    {
+        "msgid": "wactions.serviceaction",
+        "msgstr": "Service ausführen"
+    },
+    {
+        "msgid": "settings.views",
+        "msgstr": "Sichten"
+    },
+    {
+        "msgid": "main.logout",
+        "msgstr": "Sie wurden ausgeloggt"
+    },
+    {
+        "msgid": "export.csv.order_first_n_field",
+        "msgstr": "Sortiere die ersten N-Eigenschaften"
+    },
+    {
+        "msgid": "meta.enumdata.sort",
+        "msgstr": "Sortierung"
+    },
+    {
+        "msgid": "settings.views.propertyedit.orderby",
+        "msgstr": "Sotierung nach"
+    },
+    {
+        "msgid": "configeditor.column",
+        "msgstr": "Spalte"
+    },
+    {
+        "msgid": "meta.lists.fs.column",
+        "msgstr": "Spalte"
+    },
+    {
+        "msgid": "ruleseditor.delete_column",
+        "msgstr": "Spalte löschen"
+    },
+    {
+        "msgid": "ruleseditor.change_column",
+        "msgstr": "Spalte ändern"
+    },
+    {
+        "msgid": "data.field.editoptions_cols",
+        "msgstr": "Spalten bei Textarea"
+    },
+    {
+        "msgid": "export.csv.col_delimeter",
+        "msgstr": "Spaltentrenner"
+    },
+    {
+        "msgid": "messages.spain",
+        "msgstr": "Spanisch"
+    },
+    {
+        "msgid": "data.module.store",
+        "msgstr": "Speicher"
+    },
+    {
+        "msgid": "data.form.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "searchfilter.savebutton",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "meta.wconditions.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "data.enumfield.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "tasks.usertasks.dublettencheck.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "composite.select_dialog.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "meta.lists.fs.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "import.mapping.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "data.messages.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "data.message.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "meta.wactions.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "meta.workflows.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "meta.lists.savebutton",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "data.enumdata.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "data.messages.language",
+        "msgstr": "Sprache"
+    },
+    {
+        "msgid": "data.message.language",
+        "msgstr": "Sprache"
+    },
+    {
+        "msgid": "moduleaccesseditor.notset",
+        "msgstr": "Standard"
+    },
+    {
+        "msgid": "data.projects.start_date",
+        "msgstr": "Starttermin Projekt"
+    },
+    {
+        "msgid": "processexplorer.history.starttime",
+        "msgstr": "Startzeit"
+    },
+    {
+        "msgid": "processexplorer.startTime",
+        "msgstr": "Startzeit"
+    },
+    {
+        "msgid": "config.status_form",
+        "msgstr": "Status/Form"
+    },
+    {
+        "msgid": "meta.tables.status_form",
+        "msgstr": "Status/Form"
+    },
+    {
+        "msgid": "meta.tables.status_table",
+        "msgstr": "Status/Klasse"
+    },
+    {
+        "msgid": "config.status_table",
+        "msgstr": "Status/Klasse"
+    },
+    {
+        "msgid": "filter.text.new_exists_subselect",
+        "msgstr": "Subselect brücksichtigen"
+    },
+    {
+        "msgid": "filter.text.except",
+        "msgstr": "Subtract"
+    },
+    {
+        "msgid": "filter.text.except",
+        "msgstr": "Subtrahiere"
+    },
+    {
+        "msgid": "filter.text.sub_from",
+        "msgstr": "Subtrahiere von"
+    },
+    {
+        "msgid": "configeditor.search.options",
+        "msgstr": "SuchOptionen"
+    },
+    {
+        "msgid": "searchfilter.searchbutton",
+        "msgstr": "Suche"
+    },
+    {
+        "msgid": "moduleeditor.search",
+        "msgstr": "Suche"
+    },
+    {
+        "msgid": "meta.lists.searchbutton",
+        "msgstr": "Suche"
+    },
+    {
+        "msgid": "entitytypes.create_search_settings",
+        "msgstr": "Sucheinstellungen erzeugen"
+    },
+    {
+        "msgid": "data.field.search_options",
+        "msgstr": "Suchmöglichkeiten"
+    },
+    {
+        "msgid": "meta.fieldset.search_options",
+        "msgstr": "Suchoptionen"
+    },
+    {
+        "msgid": "filter.exists_subselect",
+        "msgstr": "Sätze die im Subselect enthalten sind"
+    },
+    {
+        "msgid": "filter.exists_not_subselect",
+        "msgstr": "Sätze die nicht im Subselect enthalten sind"
+    },
+    {
+        "msgid": "composite.contextmenu.tab",
+        "msgstr": "Tab"
+    },
+    {
+        "msgid": "settings.tab",
+        "msgstr": "Tab"
+    },
+    {
+        "msgid": "config.tab_form",
+        "msgstr": "Tab/Form"
+    },
+    {
+        "msgid": "meta.tables.tab_form",
+        "msgstr": "Tab/Form"
     },
     {
         "msgid": "data.fieldset.tab1",
@@ -507,1856 +3087,40 @@
         "msgstr": "Tab3"
     },
     {
-        "msgid": "data.filter.created",
-        "msgstr": "Prozessfilter wurde erstellt"
+        "msgid": "entitytypes.create_table_settings",
+        "msgstr": "Tabelleneinstellungen erzeugen"
     },
     {
-        "msgid": "data.filter.description",
-        "msgstr": "Beschreibung"
+        "msgid": "configeditor.form.tab",
+        "msgstr": "Tabulator"
     },
     {
-        "msgid": "data.filter.description",
-        "msgstr": "Description"
+        "msgid": "tasks.form.started",
+        "msgstr": "Task gestartet"
     },
     {
-        "msgid": "data.filter.id",
-        "msgstr": "Prozessfilter ID"
+        "msgid": "tasks.form.start",
+        "msgstr": "Task starten"
     },
     {
-        "msgid": "data.filter.modulename",
-        "msgstr": "Modulname"
-    },
-    {
-        "msgid": "data.filter.name",
-        "msgstr": "Filtername"
-    },
-    {
-        "msgid": "data.filter.save",
-        "msgstr": "Prozessfilter speichern"
-    },
-    {
-        "msgid": "data.filter.saved",
-        "msgstr": "Process filter saved"
-    },
-    {
-        "msgid": "data.filter.type",
-        "msgstr": "Typ"
-    },
-    {
-        "msgid": "data.filtereditor.filtereditor",
-        "msgstr": "Filter Editor"
-    },
-    {
-        "msgid": "data.filters.saved",
-        "msgstr": "Prozessfilter gespeichert"
-    },
-    {
-        "msgid": "data.form.comment",
-        "msgstr": "Kommentar"
-    },
-    {
-        "msgid": "data.form.created",
-        "msgstr": "Prozessmaske wurde erstellt"
-    },
-    {
-        "msgid": "data.form.created",
-        "msgstr": "Datensatz erstellt"
-    },
-    {
-        "msgid": "data.form.fid",
-        "msgstr": "Masken ID"
-    },
-    {
-        "msgid": "data.form.save",
-        "msgstr": "Prozessmaske speichen"
-    },
-    {
-        "msgid": "data.form.save",
-        "msgstr": "Speichern"
-    },
-    {
-        "msgid": "data.form.saved",
-        "msgstr": "Daten gespeichert"
-    },
-    {
-        "msgid": "data.form.saved",
-        "msgstr": "Prozessmaske gespeichert"
-    },
-    {
-        "msgid": "data.form.select",
-        "msgstr": "Auswählen"
-    },
-    {
-        "msgid": "data.forms.test",
-        "msgstr": "Maske testen"
-    },
-    {
-        "msgid": "data.graphicaleditor.graphicaleditor",
-        "msgstr": "Grafischer Prozess/Masken Editor"
-    },
-    {
-        "msgid": "data.group.admin",
-        "msgstr": "Administratorrecht"
-    },
-    {
-        "msgid": "data.group.config",
-        "msgstr": "Konfiguration"
-    },
-    {
-        "msgid": "data.group.description",
-        "msgstr": "Beschreibung 2"
-    },
-    {
-        "msgid": "data.group.groupid",
-        "msgstr": "Gruppen-ID"
-    },
-    {
-        "msgid": "data.group.groupid",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "data.group.saved",
-        "msgstr": "Gruppe gespeichert"
-    },
-    {
-        "msgid": "data.group.tab1",
-        "msgstr": "Gobal"
-    },
-    {
-        "msgid": "data.group.tab2",
-        "msgstr": "Rechte"
-    },
-    {
-        "msgid": "data.group.trait_manage",
-        "msgstr": "Teams auf Ebene 1 anlegen"
-    },
-    {
-        "msgid": "data.groups.admin",
-        "msgstr": "Administrator"
-    },
-    {
-        "msgid": "data.groups.created",
-        "msgstr": "Gruppe angelegt"
-    },
-    {
-        "msgid": "data.groups.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "data.groups.groupname",
-        "msgstr": "Gruppenname"
-    },
-    {
-        "msgid": "data.groups.manage",
-        "msgstr": "Verwalten(Anlegen, Ändern, Stilllegen von Kontakten/Aktivitäten)"
-    },
-    {
-        "msgid": "data.groups.no_config",
-        "msgstr": "------------"
-    },
-    {
-        "msgid": "data.groups.read",
-        "msgstr": "Lesen"
-    },
-    {
-        "msgid": "data.groups.save",
-        "msgstr": "Gruppe speichern"
-    },
-    {
-        "msgid": "data.groups.tab1",
-        "msgstr": "Global"
-    },
-    {
-        "msgid": "data.groups.tab2",
-        "msgstr": "Rechte"
-    },
-    {
-        "msgid": "data.groups.tags",
-        "msgstr": "Merkmale"
-    },
-    {
-        "msgid": "data.groups.trait_l2_manage",
-        "msgstr": "Merkmal-Ebene2 verwalten"
-    },
-    {
-        "msgid": "data.groups.trait_l3_read",
-        "msgstr": "Merkmal-Ebene3 lesen"
-    },
-    {
-        "msgid": "data.groups.trait_manage",
-        "msgstr": "Teams auf Ebene 1 anlegen"
-    },
-    {
-        "msgid": "data.message.created",
-        "msgstr": "Datensatz wurde erstellt"
-    },
-    {
-        "msgid": "data.message.created",
-        "msgstr": "Record was created"
-    },
-    {
-        "msgid": "data.message.language",
-        "msgstr": "Sprache"
-    },
-    {
-        "msgid": "data.message.msgid",
-        "msgstr": "Message ID"
-    },
-    {
-        "msgid": "data.message.msgstr",
-        "msgstr": "Anzeigter Text"
-    },
-    {
-        "msgid": "data.message.save",
-        "msgstr": "Speichern"
-    },
-    {
-        "msgid": "data.message.saved",
-        "msgstr": "Message gespeichert"
-    },
-    {
-        "msgid": "data.message.saved",
-        "msgstr": "Message saved"
-    },
-    {
-        "msgid": "data.messages.created",
-        "msgstr": "Datensatz wurde angelegt"
-    },
-    {
-        "msgid": "data.messages.language",
-        "msgstr": "Sprache"
-    },
-    {
-        "msgid": "data.messages.msgid",
-        "msgstr": "MessageId"
-    },
-    {
-        "msgid": "data.messages.msgstr",
-        "msgstr": "Message"
-    },
-    {
-        "msgid": "data.messages.save",
-        "msgstr": "Speichern"
-    },
-    {
-        "msgid": "data.messages.saved",
-        "msgstr": "Gespeichert"
-    },
-    {
-        "msgid": "data.module",
-        "msgstr": "Module"
-    },
-    {
-        "msgid": "data.module.app",
-        "msgstr": "Applikation"
-    },
-    {
-        "msgid": "data.module.apps",
-        "msgstr": "Applikations"
-    },
-    {
-        "msgid": "data.module.baseurl",
-        "msgstr": "Basisurl"
-    },
-    {
-        "msgid": "data.module.category",
-        "msgstr": "Kategorie"
-    },
-    {
-        "msgid": "data.module.created",
-        "msgstr": "Modul erstellt"
-    },
-    {
-        "msgid": "data.module.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "data.module.enabled",
-        "msgstr": "benutzt"
-    },
-    {
-        "msgid": "data.module.field_list",
-        "msgstr": "Eigenschaften"
-    },
-    {
-        "msgid": "data.module.fields",
-        "msgstr": "Eigenschaften"
-    },
-    {
-        "msgid": "data.module.id",
-        "msgstr": "Id"
-    },
-    {
-        "msgid": "data.module.index",
-        "msgstr": "Index"
-    },
-    {
-        "msgid": "data.module.modules",
-        "msgstr": "Module"
-    },
-    {
-        "msgid": "data.module.name",
-        "msgstr": "Name"
-    },
-    {
-        "msgid": "data.module.save",
-        "msgstr": "speichern"
-    },
-    {
-        "msgid": "data.module.saved",
-        "msgstr": "Modul gespeichert"
-    },
-    {
-        "msgid": "data.module.store",
-        "msgstr": "Speicher"
-    },
-    {
-        "msgid": "data.namespace",
-        "msgstr": "Namespace"
-    },
-    {
-        "msgid": "data.namespace.description",
-        "msgstr": "Beschreibung des Namespace"
-    },
-    {
-        "msgid": "data.namespace.entity",
-        "msgstr": "Klasse"
-    },
-    {
-        "msgid": "data.namespace.entity_list",
-        "msgstr": "Klassen"
-    },
-    {
-        "msgid": "data.namespace.name",
-        "msgstr": "Name des Namespace"
-    },
-    {
-        "msgid": "data.namespace.relation",
-        "msgstr": "Relation"
-    },
-    {
-        "msgid": "data.namespace.relation_list",
-        "msgstr": "Relationen"
-    },
-    {
-        "msgid": "data.namespace.save",
-        "msgstr": "Namespace speichern"
-    },
-    {
-        "msgid": "data.namespace.saved",
-        "msgstr": "Namespcae gespeichert"
-    },
-    {
-        "msgid": "data.process.deployed",
-        "msgstr": "Der Prozess wurde deployed"
-    },
-    {
-        "msgid": "data.process.undeployed",
-        "msgstr": "Der Prozess wurde undeployed"
-    },
-    {
-        "msgid": "data.projects",
-        "msgstr": "Projekte"
-    },
-    {
-        "msgid": "data.projects.created",
-        "msgstr": "Projekt wurde angelegt"
-    },
-    {
-        "msgid": "data.projects.description",
-        "msgstr": "Projektbeschreibung"
-    },
-    {
-        "msgid": "data.projects.end_date",
-        "msgstr": "Endtermin Projekt"
-    },
-    {
-        "msgid": "data.projects.name",
-        "msgstr": "Projektname"
-    },
-    {
-        "msgid": "data.projects.save",
-        "msgstr": "Projekt speichern"
-    },
-    {
-        "msgid": "data.projects.start_date",
-        "msgstr": "Starttermin Projekt"
-    },
-    {
-        "msgid": "data.relation",
-        "msgstr": "Beziehungen"
-    },
-    {
-        "msgid": "data.relation.app",
-        "msgstr": "Application"
-    },
-    {
-        "msgid": "data.relation.apps",
-        "msgstr": "Applikations"
-    },
-    {
-        "msgid": "data.relation.created",
-        "msgstr": "Relation  angelegt"
-    },
-    {
-        "msgid": "data.relation.dependent",
-        "msgstr": "N-Sätze mit löschen"
-    },
-    {
-        "msgid": "data.relation.leftfield",
-        "msgstr": "Eigenschaft im primären Modul"
-    },
-    {
-        "msgid": "data.relation.leftmodule",
-        "msgstr": "Primäres Modul"
-    },
-    {
-        "msgid": "data.relation.namespace",
-        "msgstr": "Namespace"
-    },
-    {
-        "msgid": "data.relation.relation",
-        "msgstr": "Beziehung"
-    },
-    {
-        "msgid": "data.relation.rightfield",
-        "msgstr": "Eigenschaft im sekundären Modul"
-    },
-    {
-        "msgid": "data.relation.rightmodule",
-        "msgstr": "Sekundäres Modul"
-    },
-    {
-        "msgid": "data.relation.save",
-        "msgstr": "speichern"
-    },
-    {
-        "msgid": "data.relation.saved",
-        "msgstr": "Beziehung gespeichert"
-    },
-    {
-        "msgid": "data.rule.created",
-        "msgstr": "Regel erstellt"
-    },
-    {
-        "msgid": "data.rule.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "data.rule.name",
-        "msgstr": "Name"
-    },
-    {
-        "msgid": "data.rule.save",
-        "msgstr": "Regel speichern"
-    },
-    {
-        "msgid": "data.ruleseditor.ruleseditor",
-        "msgstr": "Regeleditor"
-    },
-    {
-        "msgid": "data.user.admin",
-        "msgstr": "Administrator Recht"
-    },
-    {
-        "msgid": "data.user.created",
-        "msgstr": "Anwender angelegt"
-    },
-    {
-        "msgid": "data.user.email",
-        "msgstr": "eMail"
-    },
-    {
-        "msgid": "data.user.givenname",
-        "msgstr": "Vorname"
-    },
-    {
-        "msgid": "data.user.password",
-        "msgstr": "Passwort"
-    },
-    {
-        "msgid": "data.user.saved",
-        "msgstr": "User gespeichert"
-    },
-    {
-        "msgid": "data.user.surname",
-        "msgstr": "Name"
-    },
-    {
-        "msgid": "data.user.tab1",
-        "msgstr": "Anwenderdaten"
-    },
-    {
-        "msgid": "data.user.tab2",
-        "msgstr": "Rechte"
-    },
-    {
-        "msgid": "data.user.tab3",
-        "msgstr": "Rollen"
-    },
-    {
-        "msgid": "data.user.team_manage",
-        "msgstr": "Darf Teams auf Ebene 1 erstellen"
-    },
-    {
-        "msgid": "data.user.trait_manage",
-        "msgstr": "Teams auf Ebene 1 anlegen"
-    },
-    {
-        "msgid": "data.user.userid",
-        "msgstr": "User-ID"
-    },
-    {
-        "msgid": "data.users.admin",
-        "msgstr": "Administrator"
-    },
-    {
-        "msgid": "data.users.created",
-        "msgstr": "Anwender angelegt"
-    },
-    {
-        "msgid": "data.users.email",
-        "msgstr": "Email"
-    },
-    {
-        "msgid": "data.users.givenname",
-        "msgstr": "Nachname"
-    },
-    {
-        "msgid": "data.users.group",
-        "msgstr": "Gruppe"
-    },
-    {
-        "msgid": "data.users.groups",
-        "msgstr": "Gruppen"
-    },
-    {
-        "msgid": "data.users.manage",
-        "msgstr": "Verwalten(Anlegen, Ändern, Stilllegen von Kontakten/Aktivitäten)"
-    },
-    {
-        "msgid": "data.users.password",
-        "msgstr": "Passwort"
-    },
-    {
-        "msgid": "data.users.read",
-        "msgstr": "Lesen"
-    },
-    {
-        "msgid": "data.users.saved",
-        "msgstr": "Anwender gespeichert"
-    },
-    {
-        "msgid": "data.users.select_user",
-        "msgstr": "Bitte einen Benutzer auswählen!"
-    },
-    {
-        "msgid": "data.users.tab1",
-        "msgstr": "Anwenderdaten"
-    },
-    {
-        "msgid": "data.users.tab2",
-        "msgstr": "Rechte"
-    },
-    {
-        "msgid": "data.users.tab3",
-        "msgstr": "Rollen"
-    },
-    {
-        "msgid": "data.users.tags",
-        "msgstr": "Merkmale"
-    },
-    {
-        "msgid": "data.users.userid",
-        "msgstr": "UserId"
-    },
-    {
-        "msgid": "data.wactions.active",
-        "msgstr": "Aktiv"
-    },
-    {
-        "msgid": "data.wactions.created",
-        "msgstr": "Aktion angelegt"
-    },
-    {
-        "msgid": "data.wactions.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "data.wactions.saved",
-        "msgstr": "Eigenschaften gespeichert"
-    },
-    {
-        "msgid": "data.wactions.value",
-        "msgstr": "###"
-    },
-    {
-        "msgid": "data.wconditions.active",
-        "msgstr": "Aktiv"
-    },
-    {
-        "msgid": "data.wconditions.created",
-        "msgstr": "Bedingung angelegt"
-    },
-    {
-        "msgid": "data.wconditions.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "data.wconditions.saved",
-        "msgstr": "Bedingung gespeichert"
-    },
-    {
-        "msgid": "data.wconditions.tab1",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "data.wconditions.tab2",
-        "msgstr": "Bedingung"
-    },
-    {
-        "msgid": "data.wconditions.value",
-        "msgstr": "Bedingung"
-    },
-    {
-        "msgid": "data.workflows.active",
-        "msgstr": "Aktiv"
-    },
-    {
-        "msgid": "data.workflows.applies_to",
-        "msgstr": "Wird angewendet auf"
-    },
-    {
-        "msgid": "data.workflows.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "data.workflows.execution_occurs",
-        "msgstr": "Wird ausgeführt"
-    },
-    {
-        "msgid": "data.workflows.processing_order",
-        "msgstr": "Ausführungreihenfolge"
-    },
-    {
-        "msgid": "data.workflows.saved",
-        "msgstr": "Trigger gespeichert"
-    },
-    {
-        "msgid": "data.workflows.targetmodule",
-        "msgstr": "Zielmodul"
-    },
-    {
-        "msgid": "data.workflows.workflow_id",
-        "msgstr": "TriggerId"
-    },
-    {
-        "msgid": "eaprod.Alle_schreiben",
-        "msgstr": "Alle Entitäten mit schreiben"
-    },
-    {
-        "msgid": "eaprod.nur_Kontakte",
-        "msgstr": "Nur Kontakte lesen"
-    },
-    {
-        "msgid": "entitytypeField.entitytypeField_saved",
-        "msgstr": "Eigenschaft gespeichert"
-    },
-    {
-        "msgid": "entitytypes.create_class.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "entitytypes.create_class.name",
-        "msgstr": "Klassenname"
-    },
-    {
-        "msgid": "entitytypes.create_field.datatype",
-        "msgstr": "Datentyp"
-    },
-    {
-        "msgid": "entitytypes.create_field.name",
-        "msgstr": "Attributename"
-    },
-    {
-        "msgid": "entitytypes.data_description",
-        "msgstr": "Datenbeschreibung"
-    },
-    {
-        "msgid": "entitytypes.databasescheme_clean",
-        "msgstr": "Databaseschema löschen"
-    },
-    {
-        "msgid": "entitytypes.databasescheme_clean.confirm",
-        "msgstr": "Das Schema wirklich löschen? <b>Alle Daten gehen verloren!</b>"
-    },
-    {
-        "msgid": "entitytypes.delete",
-        "msgstr": "Löschen"
-    },
-    {
-        "msgid": "entitytypes.deleted",
-        "msgstr": "Gelöscht"
-    },
-    {
-        "msgid": "entitytypes.dependent",
-        "msgstr": "Abhängige Datensätze im sekundären Modul mitlöschen"
-    },
-    {
-        "msgid": "entitytypes.entitytypes",
-        "msgstr": "Klassen"
-    },
-    {
-        "msgid": "entitytypes.leftfield",
-        "msgstr": "Eigenschaft im primären Modul"
-    },
-    {
-        "msgid": "entitytypes.leftmodule",
-        "msgstr": "Primäres Modul"
-    },
-    {
-        "msgid": "entitytypes.new_entitytype",
-        "msgstr": "Neue Klasse"
-    },
-    {
-        "msgid": "entitytypes.new_entitytype_wizard_form",
-        "msgstr": "Neue Klasse(aus einer Form) "
-    },
-    {
-        "msgid": "entitytypes.new_fast_entitytype_create",
-        "msgstr": "Neue Klasse(ad Hoc)"
-    },
-    {
-        "msgid": "entitytypes.new_field",
-        "msgstr": "Neue Eigenschaft"
-    },
-    {
-        "msgid": "entitytypes.relation",
-        "msgstr": "Beziehung"
-    },
-    {
-        "msgid": "entitytypes.relations",
-        "msgstr": "Beziehungen"
-    },
-    {
-        "msgid": "entitytypes.relations_save",
-        "msgstr": "Beziehung speichern"
-    },
-    {
-        "msgid": "entitytypes.relations_saved",
-        "msgstr": "Beziehung gespeichert"
-    },
-    {
-        "msgid": "entitytypes.rightfield",
-        "msgstr": "Eigenschaft im sekundären Modul"
-    },
-    {
-        "msgid": "entitytypes.rightmodule",
-        "msgstr": "Sekundäres Modul"
-    },
-    {
-        "msgid": "entitytypes.update_db",
-        "msgstr": "Datenbank anpassen"
-    },
-    {
-        "msgid": "enumerations.enumeration_dir",
-        "msgstr": "Aufzählungen"
-    },
-    {
-        "msgid": "enumerations.new_enum",
-        "msgstr": "Neue Aufzählung"
-    },
-    {
-        "msgid": "export.close_button",
-        "msgstr": "Schliessen"
-    },
-    {
-        "msgid": "export.csv.always_quote",
-        "msgstr": "Immer Quotezeichen benutzen"
-    },
-    {
-        "msgid": "export.csv.col_delimeter",
-        "msgstr": "Spaltentrenner"
-    },
-    {
-        "msgid": "export.csv.excel_compatible",
-        "msgstr": "Excel kompatibel"
-    },
-    {
-        "msgid": "export.csv.filename",
-        "msgstr": "Filename"
-    },
-    {
-        "msgid": "export.csv.include_column_header",
-        "msgstr": "Mit Spaltenüberschrift"
-    },
-    {
-        "msgid": "export.csv.landscape",
-        "msgstr": "Querformat"
-    },
-    {
-        "msgid": "export.csv.order_first_n_field",
-        "msgstr": "Sortiere die ersten N-Eigenschaften"
-    },
-    {
-        "msgid": "export.csv.quote",
-        "msgstr": "Quotezeichen"
-    },
-    {
-        "msgid": "export.csv.row_delimeter",
-        "msgstr": "Zeilentrenner"
-    },
-    {
-        "msgid": "export.export_button",
-        "msgstr": "Export"
-    },
-    {
-        "msgid": "export.xml.with_null_values",
-        "msgstr": "Mit leeren Eigenschaften"
-    },
-    {
-        "msgid": "fieldselector.fields",
-        "msgstr": "Eigenschaften"
-    },
-    {
-        "msgid": "fieldselector.properties",
-        "msgstr": "Eigenschaften"
-    },
-    {
-        "msgid": "fieldselector.removeall",
-        "msgstr": "Alle entfernen"
-    },
-    {
-        "msgid": "fieldselector.selectall",
-        "msgstr": "Alle auswählen"
-    },
-    {
-        "msgid": "fieldselector.selectall_without",
-        "msgstr": "Alle(ohne Systemeigenschaften)"
-    },
-    {
-        "msgid": "filter.exists_not_subselect",
-        "msgstr": "Sätze die nicht im Subselect enthalten sind"
-    },
-    {
-        "msgid": "filter.exists_subselect",
-        "msgstr": "Sätze die im Subselect enthalten sind"
-    },
-    {
-        "msgid": "filter.text.add_to",
-        "msgstr": "Addiere zu"
-    },
-    {
-        "msgid": "filter.text.and",
-        "msgstr": "alle"
-    },
-    {
-        "msgid": "filter.text.and_help",
-        "msgstr": "Bedingungen in diesem Zweig müssen zutreffen / <b>AND</b>"
-    },
-    {
-        "msgid": "filter.text.and_not",
-        "msgstr": "nicht alle"
-    },
-    {
-        "msgid": "filter.text.and_not_help",
-        "msgstr": "der Bedingungen in diesem Zweig müssen zutreffen / <b>NOT AND</b>"
-    },
-    {
-        "msgid": "filter.text.change_label",
-        "msgstr": "In Vergleichsnamen ändern"
-    },
-    {
-        "msgid": "filter.text.change_to_compound",
-        "msgstr": "Zusammengesetzte Bedingung"
-    },
-    {
-        "msgid": "filter.text.copy_to",
-        "msgstr": "Kopiere nach"
-    },
-    {
-        "msgid": "filter.text.del_condition",
-        "msgstr": "Bedingung löschen"
-    },
-    {
-        "msgid": "filter.text.except",
-        "msgstr": "Subtrahiere"
-    },
-    {
-        "msgid": "filter.text.except",
-        "msgstr": "Subtract"
-    },
-    {
-        "msgid": "filter.text.except_help",
-        "msgstr": "die zweite Selektion(<b>2</b>) von der Ersten(<b>1</b>) / <b>EXCEPT</b>"
-    },
-    {
-        "msgid": "filter.text.form_letter",
-        "msgstr": "Serienbrief erstellen"
-    },
-    {
-        "msgid": "filter.text.insert_parent",
-        "msgstr": "Übergeordneten Knoten einfügen"
-    },
-    {
-        "msgid": "filter.text.intersect",
-        "msgstr": "Schnittmenge"
-    },
-    {
-        "msgid": "filter.text.intersect_help",
-        "msgstr": "von beiden Selektionen  / <b>INTERSECT</b>"
-    },
-    {
-        "msgid": "filter.text.multi_edit",
-        "msgstr": "Ändern  aller Sätze des Filters"
-    },
-    {
-        "msgid": "filter.text.new_condition",
-        "msgstr": "Neue Bedingung"
-    },
-    {
-        "msgid": "filter.text.new_exists_subselect",
-        "msgstr": "Subselect brücksichtigen"
-    },
-    {
-        "msgid": "filter.text.new_search",
-        "msgstr": "Neue Suche"
-    },
-    {
-        "msgid": "filter.text.new_win",
-        "msgstr": "Neues Window"
-    },
-    {
-        "msgid": "filter.text.not",
-        "msgstr": "keine"
-    },
-    {
-        "msgid": "filter.text.not_help",
-        "msgstr": "der Bedingungen in diesem Zweig darf zutreffen / <b>NOT OR</b>"
-    },
-    {
-        "msgid": "filter.text.or",
-        "msgstr": "jede"
-    },
-    {
-        "msgid": "filter.text.or_help",
-        "msgstr": "der Bedingungen in diesem Zweig trifft zu / <b>OR</b>"
-    },
-    {
-        "msgid": "filter.text.sub_from",
-        "msgstr": "Subtrahiere von"
-    },
-    {
-        "msgid": "filter.text.union",
-        "msgstr": "Addiere"
-    },
-    {
-        "msgid": "filter.text.union_help",
-        "msgstr": "die beiden Selektionen / <b>UNION</b>"
-    },
-    {
-        "msgid": "globalsearch.searchstringinput",
-        "msgstr": "Bitte geben Sie eine Suchanfrage ein:"
-    },
-    {
-        "msgid": "gui.data_import_tab.mapping",
-        "msgstr": "Mapping"
-    },
-    {
-        "msgid": "gui.data_import_tab.select_attribute",
-        "msgstr": "Please select a mapping !"
-    },
-    {
-        "msgid": "gui.data_import_tab.select_attribute",
-        "msgstr": "Bitte ein Mapping auswählen!"
-    },
-    {
-        "msgid": "gui.data_import_tab.tab1",
-        "msgstr": "Adressen"
-    },
-    {
-        "msgid": "import.close_button",
-        "msgstr": "Schliessen"
-    },
-    {
-        "msgid": "import.constraintViolations",
-        "msgstr": "Plaus. Verl."
-    },
-    {
-        "msgid": "import.constraintViolationsLong",
-        "msgstr": "Plausibilitätsverletzungen"
-    },
-    {
-        "msgid": "import.create_module",
-        "msgstr": "Modul erkennen/erstellen"
-    },
-    {
-        "msgid": "import.del_import",
-        "msgstr": "Import löschen"
-    },
-    {
-        "msgid": "import.duplicate_filter",
-        "msgstr": "5.Filter"
-    },
-    {
-        "msgid": "import.duplicated",
-        "msgstr": "Dublettenverdacht"
-    },
-    {
-        "msgid": "import.import_button",
-        "msgstr": "Import"
-    },
-    {
-        "msgid": "import.import_created",
-        "msgstr": "Import erstellt"
-    },
-    {
-        "msgid": "import.import_deleted",
-        "msgstr": "Import gelöscht"
-    },
-    {
-        "msgid": "import.import_name",
-        "msgstr": "Name des Imports"
-    },
-    {
-        "msgid": "import.import_saved",
-        "msgstr": "Einstellungen gespeichert"
-    },
-    {
-        "msgid": "import.import_type",
-        "msgstr": "Importtyp"
-    },
-    {
-        "msgid": "import.main_module",
-        "msgstr": "Hauptmodul"
-    },
-    {
-        "msgid": "import.map_fields",
-        "msgstr": "3.Mapping"
-    },
-    {
-        "msgid": "import.mapping.automatic",
-        "msgstr": "Auto"
-    },
-    {
-        "msgid": "import.mapping.cancel",
-        "msgstr": "Abbrechen"
-    },
-    {
-        "msgid": "import.mapping.confirm_delete",
-        "msgstr": "Wirklich löschen"
-    },
-    {
-        "msgid": "import.mapping.decoder",
-        "msgstr": "Decoder"
-    },
-    {
-        "msgid": "import.mapping.delete",
-        "msgstr": "Löschen"
-    },
-    {
-        "msgid": "import.mapping.deleted",
-        "msgstr": "gelöscht"
-    },
-    {
-        "msgid": "import.mapping.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "import.mapping.load",
-        "msgstr": "Laden"
-    },
-    {
-        "msgid": "import.mapping.name_mapping",
-        "msgstr": "Name"
-    },
-    {
-        "msgid": "import.mapping.no_mapping_saved",
-        "msgstr": "Kein Mapping gespeichert"
-    },
-    {
-        "msgid": "import.mapping.preview",
-        "msgstr": "Vorschau"
-    },
-    {
-        "msgid": "import.mapping.save",
-        "msgstr": "Speichern"
-    },
-    {
-        "msgid": "import.mapping.saved",
-        "msgstr": "Gespeichert"
-    },
-    {
-        "msgid": "import.mapping.sourcepath",
-        "msgstr": "Quellenpfad"
-    },
-    {
-        "msgid": "import.mapping.targetpath",
-        "msgstr": "Ziel"
-    },
-    {
-        "msgid": "import.mapping.use",
-        "msgstr": "Verwenden"
-    },
-    {
-        "msgid": "import.new_import",
-        "msgstr": "neuer Import"
-    },
-    {
-        "msgid": "import.no_filename",
-        "msgstr": "Kein Dateiname angeben"
-    },
-    {
-        "msgid": "import.no_mapping",
-        "msgstr": "Keine Eigenschaften ausgewählt."
-    },
-    {
-        "msgid": "import.preview_button",
-        "msgstr": "Voransicht"
-    },
-    {
-        "msgid": "import.reset_button",
-        "msgstr": "Zurücksetzen"
-    },
-    {
-        "msgid": "import.result",
-        "msgstr": "6.Resultat"
-    },
-    {
-        "msgid": "import.result_rec",
-        "msgstr": "Anzahl Sätze"
-    },
-    {
-        "msgid": "import.save_import",
-        "msgstr": "Importeinstellungen speichern"
-    },
-    {
-        "msgid": "import.select_button",
-        "msgstr": "Durchsuchen"
-    },
-    {
-        "msgid": "import.select_file",
-        "msgstr": "Bitte eine Datei auswählen"
-    },
-    {
-        "msgid": "import.select_the_source",
-        "msgstr": "1.Quelle"
-    },
-    {
-        "msgid": "import.specify_defaults",
-        "msgstr": "4.Defaults"
-    },
-    {
-        "msgid": "import.table.databasefield",
-        "msgstr": "Datenbankeigenschaft"
-    },
-    {
-        "msgid": "import.table.filter_column",
-        "msgstr": "Filterspalte"
-    },
-    {
-        "msgid": "import.table.header_row",
-        "msgstr": "Kopfzeile"
-    },
-    {
-        "msgid": "import.table.row1",
-        "msgstr": "Zeile 1"
-    },
-    {
-        "msgid": "import.table.row2",
-        "msgstr": "Zeile 2"
-    },
-    {
-        "msgid": "import.upload_button",
-        "msgstr": "Hochladen"
-    },
-    {
-        "msgid": "import.upload_exportfile",
-        "msgstr": "2.Upload"
-    },
-    {
-        "msgid": "import.upload_with_mapping_button",
-        "msgstr": "Hochladen und Mapping setzen"
-    },
-    {
-        "msgid": "import.uploading_complete",
-        "msgstr": "Dateitransfer abgeschlossen"
-    },
-    {
-        "msgid": "importing.importName",
-        "msgstr": "Name des Import"
-    },
-    {
-        "msgid": "importing.importingCreated",
-        "msgstr": "Import wurde angelegt"
-    },
-    {
-        "msgid": "importing.newImport",
-        "msgstr": "Neuer Import"
-    },
-    {
-        "msgid": "kommune.B3000",
-        "msgstr": "KKKKKKKKKKKKKK"
-    },
-    {
-        "msgid": "label1",
-        "msgstr": "LabelXXXX"
-    },
-    {
-        "msgid": "main.login",
-        "msgstr": "Neues Login"
-    },
-    {
-        "msgid": "main.logout",
-        "msgstr": "Sie wurden ausgeloggt"
-    },
-    {
-        "msgid": "mainmenu.configeditor",
-        "msgstr": "Konfigurations  Editor"
-    },
-    {
-        "msgid": "mainmenu.dataimports",
-        "msgstr": "Datenimporte"
-    },
-    {
-        "msgid": "mainmenu.documents",
-        "msgstr": "Dokumente"
-    },
-    {
-        "msgid": "mainmenu.enumeditor",
-        "msgstr": "Aufzählungen"
-    },
-    {
-        "msgid": "mainmenu.filters",
-        "msgstr": "Prozessfilter"
-    },
-    {
-        "msgid": "mainmenu.forms",
-        "msgstr": "Prozessmasken"
-    },
-    {
-        "msgid": "mainmenu.globalsearch",
-        "msgstr": "Globale Suche"
-    },
-    {
-        "msgid": "mainmenu.groups",
-        "msgstr": "Gruppen"
-    },
-    {
-        "msgid": "mainmenu.messages",
-        "msgstr": "Message Editor"
-    },
-    {
-        "msgid": "mainmenu.moduleadmin",
-        "msgstr": "Klassen / Beziehungen verwalten"
-    },
-    {
-        "msgid": "mainmenu.moduleeditor",
-        "msgstr": "Modul Editor"
-    },
-    {
-        "msgid": "mainmenu.namespaces",
-        "msgstr": "Applikationen verwalten"
-    },
-    {
-        "msgid": "mainmenu.permissions",
-        "msgstr": "Verwalten Permissions"
-    },
-    {
-        "msgid": "mainmenu.processes",
-        "msgstr": "Prozesse"
-    },
-    {
-        "msgid": "mainmenu.projectshell",
-        "msgstr": "Projektverwaltung"
-    },
-    {
-        "msgid": "mainmenu.projectshellMessages",
-        "msgstr": "Übersetzungen"
-    },
-    {
-        "msgid": "mainmenu.projectshellNamespaces",
-        "msgstr": "Applikationen"
-    },
-    {
-        "msgid": "mainmenu.reports",
-        "msgstr": "Listen/Reports"
-    },
-    {
-        "msgid": "mainmenu.resources",
-        "msgstr": "Resourcen"
-    },
-    {
-        "msgid": "mainmenu.rules",
-        "msgstr": "Prozessregeln"
-    },
-    {
-        "msgid": "mainmenu.settings",
-        "msgstr": "Globale Einstellungen"
-    },
-    {
-        "msgid": "mainmenu.start",
-        "msgstr": "Hauptmenü"
-    },
-    {
-        "msgid": "mainmenu.tasks",
-        "msgstr": "Aufgaben"
-    },
-    {
-        "msgid": "mainmenu.teameditor",
-        "msgstr": "Team Editor"
-    },
-    {
-        "msgid": "mainmenu.triggereditor",
-        "msgstr": "Trigger Editor"
-    },
-    {
-        "msgid": "mainmenu.users",
-        "msgstr": "Anwender"
-    },
-    {
-        "msgid": "mainmenu.workfloweditor",
-        "msgstr": "Trigger Editor"
-    },
-    {
-        "msgid": "menu.data.dataimports",
-        "msgstr": "Datenimporte"
-    },
-    {
-        "msgid": "messages.english",
-        "msgstr": "Englisch"
-    },
-    {
-        "msgid": "messages.filter",
-        "msgstr": "Filter (inkrementell)"
-    },
-    {
-        "msgid": "messages.franc",
-        "msgstr": "Französisch"
-    },
-    {
-        "msgid": "messages.german",
-        "msgstr": "Deutsch"
-    },
-    {
-        "msgid": "messages.italian",
-        "msgstr": "Italienisch"
-    },
-    {
-        "msgid": "messages.messages_dir",
-        "msgstr": "Übersetzungen"
-    },
-    {
-        "msgid": "messages.messages_save",
-        "msgstr": "Message speichern"
-    },
-    {
-        "msgid": "messages.messages_saved",
-        "msgstr": "Messages gespeichert"
-    },
-    {
-        "msgid": "messages.msgid",
-        "msgstr": "Message-ID"
-    },
-    {
-        "msgid": "messages.msgstr",
-        "msgstr": "Angezeigter Text"
-    },
-    {
-        "msgid": "messages.new_messageslang",
-        "msgstr": "Neue Sprache"
-    },
-    {
-        "msgid": "messages.spain",
-        "msgstr": "Spanisch"
-    },
-    {
-        "msgid": "messages.takeover",
-        "msgstr": "Übernahme(danach noch Speichern)"
-    },
-    {
-        "msgid": "messages.title",
-        "msgstr": "Übersetzungen"
-    },
-    {
-        "msgid": "meta.constraints.annotation",
-        "msgstr": "Annotation"
-    },
-    {
-        "msgid": "meta.constraints.message",
-        "msgstr": "Fehlermeldung"
-    },
-    {
-        "msgid": "meta.constraints.parameter2",
-        "msgstr": "Parameter2"
-    },
-    {
-        "msgid": "meta.datatraits.description",
-        "msgstr": "Merkmalname"
-    },
-    {
-        "msgid": "meta.datatraits.disabled",
-        "msgstr": "Inaktiv"
-    },
-    {
-        "msgid": "meta.datatraits.valid_from",
-        "msgstr": "Gültig ab"
-    },
-    {
-        "msgid": "meta.datatraits.valid_to",
-        "msgstr": "Gültig bis"
-    },
-    {
-        "msgid": "meta.enumdata.Anrede",
-        "msgstr": "Anrede"
-    },
-    {
-        "msgid": "meta.enumdata.bedeutung",
-        "msgstr": "Bedeutung"
-    },
-    {
-        "msgid": "meta.enumdata.beruf",
-        "msgstr": "Beruf"
-    },
-    {
-        "msgid": "meta.enumdata.invalid",
-        "msgstr": "Ungültig"
-    },
-    {
-        "msgid": "meta.enumdata.invalid_from",
-        "msgstr": "Ungültig ab"
-    },
-    {
-        "msgid": "meta.enumdata.key",
-        "msgstr": "Schlüssel"
-    },
-    {
-        "msgid": "meta.enumdata.sort",
-        "msgstr": "Sortierung"
-    },
-    {
-        "msgid": "meta.enums.data",
-        "msgstr": "Daten"
-    },
-    {
-        "msgid": "meta.enums.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "meta.enums.duplicated",
-        "msgstr": "Name ist schon vergeben"
-    },
-    {
-        "msgid": "meta.enums.enum_created",
-        "msgstr": "Neue Aufzählung erstellt"
-    },
-    {
-        "msgid": "meta.enums.fields",
-        "msgstr": "Eigenschaften"
-    },
-    {
-        "msgid": "meta.enums.new_enum",
-        "msgstr": "Neue Aufzählung"
-    },
-    {
-        "msgid": "meta.enums.new_enum_name",
-        "msgstr": "Aufzählungsname"
-    },
-    {
-        "msgid": "meta.enums.root.title",
-        "msgstr": "Aufzählungen"
-    },
-    {
-        "msgid": "meta.fieldset.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "meta.fieldset.fields",
-        "msgstr": "Eigenschaften"
-    },
-    {
-        "msgid": "meta.fieldset.fsname",
-        "msgstr": "EigenschaftenSet Name"
-    },
-    {
-        "msgid": "meta.fieldset.search_options",
-        "msgstr": "Suchoptionen"
-    },
-    {
-        "msgid": "meta.fieldsets.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "meta.fieldsets.fields",
-        "msgstr": "Eigenschaften"
-    },
-    {
-        "msgid": "meta.fieldsets.fsname",
-        "msgstr": "Name des EigenschaftenSets"
-    },
-    {
-        "msgid": "meta.fieldsets.save",
-        "msgstr": "EigenschaftenSet übernehmen, anschließend noch \"Eigenschaften\" speichern"
-    },
-    {
-        "msgid": "meta.fieldsets.search_options",
-        "msgstr": "Operatoren"
-    },
-    {
-        "msgid": "meta.lists.add_to_filter",
-        "msgstr": "addieren zu "
-    },
-    {
-        "msgid": "meta.lists.bn",
-        "msgstr": "beginnt nicht mit"
-    },
-    {
-        "msgid": "meta.lists.bw",
-        "msgstr": "beginnt mit"
-    },
-    {
-        "msgid": "meta.lists.cn",
-        "msgstr": "enthält"
-    },
-    {
-        "msgid": "meta.lists.copy_from_filter",
-        "msgstr": "wird kopiert"
-    },
-    {
-        "msgid": "meta.lists.del_filter",
-        "msgstr": "Filter löschen"
-    },
-    {
-        "msgid": "meta.lists.del_list",
-        "msgstr": "Liste löschen"
-    },
-    {
-        "msgid": "meta.lists.duplicated",
-        "msgstr": "Name ist schon vergeben"
-    },
-    {
-        "msgid": "meta.lists.en",
-        "msgstr": "endet nicht mit"
-    },
-    {
-        "msgid": "meta.lists.eq",
-        "msgstr": "gleich"
-    },
-    {
-        "msgid": "meta.lists.ew",
-        "msgstr": "endet mit"
-    },
-    {
-        "msgid": "meta.lists.fields",
-        "msgstr": "Eigenschaften"
-    },
-    {
-        "msgid": "meta.lists.fields_save",
-        "msgstr": "Eigenschaftenspeichern"
-    },
-    {
-        "msgid": "meta.lists.fieldtab",
-        "msgstr": "Eigenschaften"
-    },
-    {
-        "msgid": "meta.lists.filter_deleted",
-        "msgstr": "Filter gelöscht"
-    },
-    {
-        "msgid": "meta.lists.filter_empty",
-        "msgstr": "leerer Filter"
-    },
-    {
-        "msgid": "meta.lists.filter_name",
-        "msgstr": "Name des Filters"
-    },
-    {
-        "msgid": "meta.lists.filter_used",
-        "msgstr": "Filtername schon vergeben"
-    },
-    {
-        "msgid": "meta.lists.filtertab",
-        "msgstr": "Filter"
-    },
-    {
-        "msgid": "meta.lists.fs.column",
-        "msgstr": "Spalte"
-    },
-    {
-        "msgid": "meta.lists.fs.display",
-        "msgstr": "Anzeige"
-    },
-    {
-        "msgid": "meta.lists.fs.displayname",
-        "msgstr": "Anzeigename"
-    },
-    {
-        "msgid": "meta.lists.fs.down",
-        "msgstr": "Nach unten"
-    },
-    {
-        "msgid": "meta.lists.fs.mapping",
-        "msgstr": "Mapping"
-    },
-    {
-        "msgid": "meta.lists.fs.save",
-        "msgstr": "Speichern"
-    },
-    {
-        "msgid": "meta.lists.fs.up",
-        "msgstr": "Nach oben"
-    },
-    {
-        "msgid": "meta.lists.ge",
-        "msgstr": "größer gleich"
-    },
-    {
-        "msgid": "meta.lists.gt",
-        "msgstr": "größer"
-    },
-    {
-        "msgid": "meta.lists.in",
-        "msgstr": "ist in"
-    },
-    {
-        "msgid": "meta.lists.le",
-        "msgstr": "kleiner gleich"
-    },
-    {
-        "msgid": "meta.lists.list_deleted",
-        "msgstr": "Liste gelöscht"
-    },
-    {
-        "msgid": "meta.lists.list_name",
-        "msgstr": "Name der Liste"
-    },
-    {
-        "msgid": "meta.lists.listfields_created",
-        "msgstr": "Neue Liste erstellt"
-    },
-    {
-        "msgid": "meta.lists.listfields_saved",
-        "msgstr": "ausgewählte Eigenschaften gespeichert"
-    },
-    {
-        "msgid": "meta.lists.listfilter_created",
-        "msgstr": "Neuer Filter erstellt"
-    },
-    {
-        "msgid": "meta.lists.listfilter_saved",
-        "msgstr": "Filter gespeichert"
-    },
-    {
-        "msgid": "meta.lists.lt",
-        "msgstr": "kleiner"
-    },
-    {
-        "msgid": "meta.lists.main_module",
-        "msgstr": "Hauptmodul"
-    },
-    {
-        "msgid": "meta.lists.nc",
-        "msgstr": "enthält nicht"
-    },
-    {
-        "msgid": "meta.lists.ne",
-        "msgstr": "ungleich"
-    },
-    {
-        "msgid": "meta.lists.new_filter",
-        "msgstr": "neuer Filter"
-    },
-    {
-        "msgid": "meta.lists.new_filtername",
-        "msgstr": "Name des neuen Filters"
-    },
-    {
-        "msgid": "meta.lists.new_list",
-        "msgstr": "neue Liste"
-    },
-    {
-        "msgid": "meta.lists.ni",
-        "msgstr": "ist nicht in"
-    },
-    {
-        "msgid": "meta.lists.odata",
-        "msgstr": "['gleich', 'ungleich', 'kleiner', 'kleiner gleich','größer','größer gleich', 'beginnt mit','beginnt nicht mit','ist in','ist nicht in','endet mit','endet nicht mit','enthält','enthält nicht']"
-    },
-    {
-        "msgid": "meta.lists.resetbutton",
-        "msgstr": "Rücksetzen"
-    },
-    {
-        "msgid": "meta.lists.resulttab",
-        "msgstr": "Ergebnis"
-    },
-    {
-        "msgid": "meta.lists.savebutton",
-        "msgstr": "Speichern"
-    },
-    {
-        "msgid": "meta.lists.searchbutton",
-        "msgstr": "Suche"
-    },
-    {
-        "msgid": "meta.lists.sub_from_filter",
-        "msgstr": "abziehen von"
-    },
-    {
-        "msgid": "meta.lists.takeit",
-        "msgstr": "Übernehmen"
-    },
-    {
-        "msgid": "meta.lists.too_little_filter",
-        "msgstr": "Kein Filter vorhanden"
-    },
-    {
-        "msgid": "meta.lists.which_filter",
-        "msgstr": "Filter"
-    },
-    {
-        "msgid": "meta.lists.windowtitle",
-        "msgstr": "Filterregeln"
-    },
-    {
-        "msgid": "meta.relations.leftfield",
-        "msgstr": "Eigenschaft im primären Modul"
-    },
-    {
-        "msgid": "meta.relations.leftmodule",
-        "msgstr": "Primary module"
-    },
-    {
-        "msgid": "meta.relations.leftmodule",
-        "msgstr": "Primäres Modul"
-    },
-    {
-        "msgid": "meta.relations.relation",
-        "msgstr": "Beziehung"
-    },
-    {
-        "msgid": "meta.relations.rightfield",
-        "msgstr": "Eigenschaft im sekundären Modul"
-    },
-    {
-        "msgid": "meta.relations.rightmodule",
-        "msgstr": "Sekundäres Modul"
-    },
-    {
-        "msgid": "meta.relations.rightmodule",
-        "msgstr": "Secondary module"
-    },
-    {
-        "msgid": "meta.relations.save",
-        "msgstr": "Relation speichern"
-    },
-    {
-        "msgid": "meta.tables.attribute",
-        "msgstr": "Attribut"
-    },
-    {
-        "msgid": "meta.tables.datatype",
-        "msgstr": "Datentyp"
-    },
-    {
-        "msgid": "meta.tables.select_attribute",
-        "msgstr": "Please select an attribute !"
-    },
-    {
-        "msgid": "meta.tables.select_attribute",
-        "msgstr": "Bitte ein Attribut auswählen!"
-    },
-    {
-        "msgid": "meta.tables.status_form",
-        "msgstr": "Status/Form"
-    },
-    {
-        "msgid": "meta.tables.status_table",
-        "msgstr": "Status/Klasse"
-    },
-    {
-        "msgid": "meta.tables.tab_form",
-        "msgstr": "Tab/Form"
-    },
-    {
-        "msgid": "meta.teams.add_member",
-        "msgstr": "neues Mitglied hinzufügen"
-    },
-    {
-        "msgid": "meta.teams.admin_not",
-        "msgstr": "Admin kann nicht zugewiesen werden"
+        "msgid": "processexplorer.taskId",
+        "msgstr": "Task-ID"
     },
     {
         "msgid": "meta.teams.confirm_delete",
         "msgstr": "Team (und alle darunter liegenden Teams) wirklich löschen? <br /><div style='color:red'>Es werden auch sämtliche Zuweisungen dieser Teams,<br \\> in allen Datensätzen entfernt!</div>"
     },
     {
+        "msgid": "window.teameditor",
+        "msgstr": "Team Editor"
+    },
+    {
+        "msgid": "mainmenu.teameditor",
+        "msgstr": "Team Editor"
+    },
+    {
         "msgid": "meta.teams.create_header",
         "msgstr": "Team anlegen"
-    },
-    {
-        "msgid": "meta.teams.create_team1",
-        "msgstr": "Name des Teams"
-    },
-    {
-        "msgid": "meta.teams.create_team2",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "meta.teams.delete_member",
-        "msgstr": "Mitglied löschen"
-    },
-    {
-        "msgid": "meta.teams.delete_team",
-        "msgstr": "Team löschen"
-    },
-    {
-        "msgid": "meta.teams.form_not_valid",
-        "msgstr": "Bitte alle Eigenschaften ausfüllen"
-    },
-    {
-        "msgid": "meta.teams.group_exists",
-        "msgstr": "Gruppe schon ausgewählt"
-    },
-    {
-        "msgid": "meta.teams.group_header",
-        "msgstr": "Teamgruppenmitglied"
-    },
-    {
-        "msgid": "meta.teams.manage_header",
-        "msgstr": "Team verwalten (ändern)"
-    },
-    {
-        "msgid": "meta.teams.member_groups",
-        "msgstr": "Teamgruppenmitglieder"
-    },
-    {
-        "msgid": "meta.teams.member_users",
-        "msgstr": "Teammitglieder"
-    },
-    {
-        "msgid": "meta.teams.name_and_description",
-        "msgstr": "Name und Beschreibung müssen ausgefüllt werden."
-    },
-    {
-        "msgid": "meta.teams.new_team",
-        "msgstr": "Neues Team"
-    },
-    {
-        "msgid": "meta.teams.root.title",
-        "msgstr": "Teams"
-    },
-    {
-        "msgid": "meta.teams.save_team",
-        "msgstr": "Team speichern"
-    },
-    {
-        "msgid": "meta.teams.select_group",
-        "msgstr": "Bitte eine Gruppe auswählen"
-    },
-    {
-        "msgid": "meta.teams.select_user",
-        "msgstr": "Bitte einen User auswählen"
     },
     {
         "msgid": "meta.teams.team_created",
@@ -2367,680 +3131,188 @@
         "msgstr": "Team gespeichert"
     },
     {
-        "msgid": "meta.teams.user_exists",
-        "msgstr": "User schon ausgewählt"
+        "msgid": "meta.teams.delete_team",
+        "msgstr": "Team löschen"
+    },
+    {
+        "msgid": "meta.teams.save_team",
+        "msgstr": "Team speichern"
+    },
+    {
+        "msgid": "meta.teams.manage_header",
+        "msgstr": "Team verwalten (ändern)"
+    },
+    {
+        "msgid": "meta.teams.group_header",
+        "msgstr": "Teamgruppenmitglied"
+    },
+    {
+        "msgid": "meta.teams.member_groups",
+        "msgstr": "Teamgruppenmitglieder"
     },
     {
         "msgid": "meta.teams.user_header",
         "msgstr": "Teammitglied"
     },
     {
-        "msgid": "meta.teams.valid_from",
-        "msgstr": "Gültig ab"
+        "msgid": "meta.teams.member_users",
+        "msgstr": "Teammitglieder"
     },
     {
-        "msgid": "meta.teams.valid_to",
-        "msgstr": "Gültig bis"
+        "msgid": "window.meta.teams",
+        "msgstr": "Teams"
     },
     {
-        "msgid": "meta.traits.acl_create",
-        "msgstr": "Anlegen"
+        "msgid": "meta.teams.root.title",
+        "msgstr": "Teams"
     },
     {
-        "msgid": "meta.traits.acl_groups",
-        "msgstr": "ACL Gruppen"
+        "msgid": "data.groups.trait_manage",
+        "msgstr": "Teams auf Ebene 1 anlegen"
     },
     {
-        "msgid": "meta.traits.acl_manage",
-        "msgstr": "Verwalten"
+        "msgid": "data.group.trait_manage",
+        "msgstr": "Teams auf Ebene 1 anlegen"
     },
     {
-        "msgid": "meta.traits.acl_read",
-        "msgstr": "Lesen"
+        "msgid": "data.user.trait_manage",
+        "msgstr": "Teams auf Ebene 1 anlegen"
     },
     {
-        "msgid": "meta.traits.acl_users",
-        "msgstr": "ACL Anwender"
+        "msgid": "data.entity.team_security",
+        "msgstr": "Teams zuordnen"
     },
     {
-        "msgid": "meta.traits.create_trait1",
-        "msgstr": "Name des Merkmals"
+        "msgid": "ruleseditor.test",
+        "msgstr": "Testen"
     },
     {
-        "msgid": "meta.traits.create_trait2",
-        "msgstr": "Beschreibung"
+        "msgid": "mainmenu.triggereditor",
+        "msgstr": "Trigger Editor"
     },
     {
-        "msgid": "meta.traits.description",
-        "msgstr": "Beschreibung"
+        "msgid": "window.data.workfloweditor",
+        "msgstr": "Trigger Editor"
     },
     {
-        "msgid": "meta.traits.group",
-        "msgstr": "Gruppe"
+        "msgid": "mainmenu.workfloweditor",
+        "msgstr": "Trigger Editor"
     },
     {
-        "msgid": "meta.traits.name_and_description",
-        "msgstr": "Name und Beschreibung müssen ausgefüllt werden."
-    },
-    {
-        "msgid": "meta.traits.new_subtrait",
-        "msgstr": "Neues Untermerkmal"
-    },
-    {
-        "msgid": "meta.traits.new_trait",
-        "msgstr": "Neues Merkmal"
-    },
-    {
-        "msgid": "meta.traits.root.title",
-        "msgstr": "Merkmale"
-    },
-    {
-        "msgid": "meta.traits.save_trait",
-        "msgstr": "Merkmal speichern"
-    },
-    {
-        "msgid": "meta.traits.subtrait_created",
-        "msgstr": "Untermerkmal erstellt"
-    },
-    {
-        "msgid": "meta.traits.take_it",
-        "msgstr": "Übernehmen"
-    },
-    {
-        "msgid": "meta.traits.trait",
-        "msgstr": "merkmal"
-    },
-    {
-        "msgid": "meta.traits.trait_created",
-        "msgstr": "Merkmal erstellt"
-    },
-    {
-        "msgid": "meta.traits.trait_saved",
-        "msgstr": "Merkmal gespeichert"
-    },
-    {
-        "msgid": "meta.traits.traitid",
-        "msgstr": "Merkmalname"
-    },
-    {
-        "msgid": "meta.traits.tree.select",
-        "msgstr": "Bitte ein Merkmal auswählen"
-    },
-    {
-        "msgid": "meta.traits.tree.title",
-        "msgstr": "ausgewähltes Merkmal"
-    },
-    {
-        "msgid": "meta.traits.user",
-        "msgstr": "Anwender"
-    },
-    {
-        "msgid": "meta.traits.valid_from",
-        "msgstr": "Gültig ab"
-    },
-    {
-        "msgid": "meta.traits.valid_to",
-        "msgstr": "Gültig bis"
-    },
-    {
-        "msgid": "meta.tree.del_node",
-        "msgstr": "Knoten löschen"
-    },
-    {
-        "msgid": "meta.tree.new_node",
-        "msgstr": "Neuen Knoten erzeugen"
-    },
-    {
-        "msgid": "meta.tree.node_created",
-        "msgstr": "Knoten angelegt"
-    },
-    {
-        "msgid": "meta.tree.root.lists",
-        "msgstr": "Listen/Reports"
-    },
-    {
-        "msgid": "meta.tree.root.modules",
-        "msgstr": "Module"
-    },
-    {
-        "msgid": "meta.wactions.create-record",
-        "msgstr": "Erstellen eines Datensatzes in einem verbundenen Modul"
-    },
-    {
-        "msgid": "meta.wactions.editfields",
-        "msgstr": "Eigenschaften auswählen"
-    },
-    {
-        "msgid": "meta.wactions.save",
-        "msgstr": "Speichern"
-    },
-    {
-        "msgid": "meta.wactions.targetmodule",
-        "msgstr": "Modul"
-    },
-    {
-        "msgid": "meta.wactions.type",
-        "msgstr": "Aktion"
-    },
-    {
-        "msgid": "meta.wactions.uebernehmen",
-        "msgstr": "Eigenschaften übernehmen"
-    },
-    {
-        "msgid": "meta.wactions.update-related",
-        "msgstr": "Ändern von Eigenschaften in einem verknüpften Modul"
-    },
-    {
-        "msgid": "meta.wactions.update-target",
-        "msgstr": "Ändern von Eigenschaften im Zielmodul"
-    },
-    {
-        "msgid": "meta.wconditions.save",
-        "msgstr": "Speichern"
-    },
-    {
-        "msgid": "meta.workflows.actions-alerts-processes",
-        "msgstr": "Aktion,Alarm,Prozess"
-    },
-    {
-        "msgid": "meta.workflows.actions-processes-alerts",
-        "msgstr": "Aktion,Prozess,Alarm"
-    },
-    {
-        "msgid": "meta.workflows.after-time-elapsed",
-        "msgstr": "Zeitgesteuert"
-    },
-    {
-        "msgid": "meta.workflows.alerts-actions-processes",
-        "msgstr": "Alarm,Aktion,Prozess"
-    },
-    {
-        "msgid": "meta.workflows.alerts-processes-actions",
-        "msgstr": "Alarm,Prozess,Aktion"
-    },
-    {
-        "msgid": "meta.workflows.new-and-updated-records",
-        "msgstr": "auf neue und geänderte Datensätze"
-    },
-    {
-        "msgid": "meta.workflows.new-records",
-        "msgstr": "on new records"
-    },
-    {
-        "msgid": "meta.workflows.new-records",
-        "msgstr": "auf neue Datensätze"
-    },
-    {
-        "msgid": "meta.workflows.processes-actions-alerts",
-        "msgstr": "Prozess,Aktion,Alarm"
-    },
-    {
-        "msgid": "meta.workflows.processes-alerts-actions",
-        "msgstr": "Prozess,Alarm,Aktion"
-    },
-    {
-        "msgid": "meta.workflows.save",
-        "msgstr": "Speichern"
+        "msgid": "data.workflows.saved",
+        "msgstr": "Trigger gespeichert"
     },
     {
         "msgid": "meta.workflows.saved",
         "msgstr": "Trigger gespeichert"
     },
     {
-        "msgid": "meta.workflows.updated-records",
-        "msgstr": "auf geänderte Datensätze"
+        "msgid": "data.workflows.workflow_id",
+        "msgstr": "TriggerId"
     },
     {
-        "msgid": "meta.workflows.wactions",
-        "msgstr": "Aktionen"
+        "msgid": "data.filter.type",
+        "msgstr": "Typ"
     },
     {
-        "msgid": "meta.workflows.wconditions",
-        "msgstr": "Bedingungen"
-    },
-    {
-        "msgid": "meta.workflows.when-record-saved",
-        "msgstr": "wenn Datensatz gespeichert wird"
-    },
-    {
-        "msgid": "moduleaccesseditor.access",
-        "msgstr": "Zugang"
-    },
-    {
-        "msgid": "moduleaccesseditor.all",
-        "msgstr": "Ja"
-    },
-    {
-        "msgid": "moduleaccesseditor.delete",
-        "msgstr": "Löschen"
-    },
-    {
-        "msgid": "moduleaccesseditor.disabled",
-        "msgstr": "Inaktiv"
-    },
-    {
-        "msgid": "moduleaccesseditor.enabled",
-        "msgstr": "Aktiv"
-    },
-    {
-        "msgid": "moduleaccesseditor.export",
-        "msgstr": "Exportieren"
-    },
-    {
-        "msgid": "moduleaccesseditor.import",
-        "msgstr": "Import"
-    },
-    {
-        "msgid": "moduleaccesseditor.list",
-        "msgstr": "Liste"
-    },
-    {
-        "msgid": "moduleaccesseditor.module",
-        "msgstr": "Modul"
-    },
-    {
-        "msgid": "moduleaccesseditor.none",
-        "msgstr": "Nein"
-    },
-    {
-        "msgid": "moduleaccesseditor.notset",
-        "msgstr": "Standard"
-    },
-    {
-        "msgid": "moduleaccesseditor.owner",
-        "msgstr": "Eigentümer"
-    },
-    {
-        "msgid": "moduleaccesseditor.update",
-        "msgstr": "Bearbeiten"
-    },
-    {
-        "msgid": "moduleaccesseditor.view",
-        "msgstr": "Ansicht"
-    },
-    {
-        "msgid": "moduleeditor.baseurl",
-        "msgstr": "Basisurl des Modules"
-    },
-    {
-        "msgid": "moduleeditor.confirm.change",
-        "msgstr": "Die Kategorie wechseln? Nicht Gespeichertes geht verloren."
-    },
-    {
-        "msgid": "moduleeditor.create_module",
-        "msgstr": "Modulname"
-    },
-    {
-        "msgid": "moduleeditor.duplicate-check",
-        "msgstr": "Dublettencheck Eigenschaften"
-    },
-    {
-        "msgid": "moduleeditor.export",
-        "msgstr": "Export"
-    },
-    {
-        "msgid": "moduleeditor.fields_saved",
-        "msgstr": "Eigenschaften gespeichert"
-    },
-    {
-        "msgid": "moduleeditor.global-search",
-        "msgstr": "Global suchbare Felder"
-    },
-    {
-        "msgid": "moduleeditor.global-search",
-        "msgstr": "Globale Suche"
-    },
-    {
-        "msgid": "moduleeditor.globalprop.baseurl",
-        "msgstr": "Baseurl"
-    },
-    {
-        "msgid": "moduleeditor.globalprop.category",
-        "msgstr": "Kategorie"
-    },
-    {
-        "msgid": "moduleeditor.globalprop.enabled",
-        "msgstr": "Enabled"
-    },
-    {
-        "msgid": "moduleeditor.globalprop.index",
-        "msgstr": "Index"
-    },
-    {
-        "msgid": "moduleeditor.main-form",
-        "msgstr": "Hauptform"
-    },
-    {
-        "msgid": "moduleeditor.main-form.formlayout",
-        "msgstr": "Formlayout"
-    },
-    {
-        "msgid": "moduleeditor.main-grid",
-        "msgstr": "Haupttabelle"
-    },
-    {
-        "msgid": "moduleeditor.main-grid.isBlack",
-        "msgstr": "BlackListet"
-    },
-    {
-        "msgid": "moduleeditor.main-grid.orderby",
-        "msgstr": "OrderBy"
-    },
-    {
-        "msgid": "moduleeditor.module_created",
-        "msgstr": "Modul erstellt"
-    },
-    {
-        "msgid": "moduleeditor.new_module",
-        "msgstr": "Neues Modul"
-    },
-    {
-        "msgid": "moduleeditor.relations",
-        "msgstr": "Relationen"
-    },
-    {
-        "msgid": "moduleeditor.report",
-        "msgstr": "Report"
-    },
-    {
-        "msgid": "moduleeditor.search",
-        "msgstr": "Suche"
-    },
-    {
-        "msgid": "moduleeditor.selected_category",
-        "msgstr": "Ausgewählte Kategorie"
-    },
-    {
-        "msgid": "moduleeditor.table.datatype",
-        "msgstr": "Datentyp"
-    },
-    {
-        "msgid": "moduleeditor.table.name",
-        "msgstr": "Name"
-    },
-    {
-        "msgid": "multiselect2side.available",
-        "msgstr": "Verfügbar"
-    },
-    {
-        "msgid": "multiselect2side.selected",
-        "msgstr": "Ausgewählt"
-    },
-    {
-        "msgid": "multiusebox.add",
-        "msgstr": "Elemente hinzufügen"
-    },
-    {
-        "msgid": "multiusebox.ignore",
-        "msgstr": "Nicht verwenden"
-    },
-    {
-        "msgid": "multiusebox.remove",
-        "msgstr": "Elemente entfernen"
-    },
-    {
-        "msgid": "multiusebox.replace",
-        "msgstr": "Elemente ersetzen"
-    },
-    {
-        "msgid": "namespacesmanager.add",
-        "msgstr": "Neue App"
-    },
-    {
-        "msgid": "namespacesmanager.confirm_install",
-        "msgstr": "Installiere App?"
-    },
-    {
-        "msgid": "namespacesmanager.confirm_pull",
-        "msgstr": "Aktualisiere die App?"
-    },
-    {
-        "msgid": "namespacesmanager.confirm_push",
-        "msgstr": "Übertrage Änderungen in das Repository?"
-    },
-    {
-        "msgid": "namespacesmanager.confirm_uninstall",
-        "msgstr": "Deinstalliere App?"
-    },
-    {
-        "msgid": "namespacesmanager.create_namespace",
-        "msgstr": "Applikation erstellen"
-    },
-    {
-        "msgid": "namespacesmanager.del",
-        "msgstr": "Entferne App"
-    },
-    {
-        "msgid": "namespacesmanager.install",
-        "msgstr": "Install App"
-    },
-    {
-        "msgid": "namespacesmanager.is_installed",
-        "msgstr": "Installiert?"
-    },
-    {
-        "msgid": "namespacesmanager.is_modified",
-        "msgstr": "Modifiziert?"
-    },
-    {
-        "msgid": "namespacesmanager.name",
-        "msgstr": "Name"
-    },
-    {
-        "msgid": "namespacesmanager.namespace_name",
-        "msgstr": "Applikationsname"
-    },
-    {
-        "msgid": "namespacesmanager.pull",
-        "msgstr": "Update App"
-    },
-    {
-        "msgid": "namespacesmanager.push",
-        "msgstr": "Änderungen ins Repository schreiben"
-    },
-    {
-        "msgid": "namespacesmanager.reload",
-        "msgstr": "Reload"
-    },
-    {
-        "msgid": "namespacesmanager.title",
-        "msgstr": "Applikationsverwaltung"
-    },
-    {
-        "msgid": "namespacesmanager.uninstall",
-        "msgstr": "Deinstall App"
-    },
-    {
-        "msgid": "namespacesmanager.uninstalled",
-        "msgstr": "App deinstalliert"
-    },
-    {
-        "msgid": "namespacesmanager.update_available",
-        "msgstr": "Updates verfügbar?"
-    },
-    {
-        "msgid": "no",
-        "msgstr": "nein"
-    },
-    {
-        "msgid": "permissions.actions",
-        "msgstr": "Aktionen"
-    },
-    {
-        "msgid": "permissions.enabled",
-        "msgstr": "Enabled"
-    },
-    {
-        "msgid": "permissions.permission",
-        "msgstr": "Permission"
-    },
-    {
-        "msgid": "permissions.roles",
-        "msgstr": "Rollen"
-    },
-    {
-        "msgid": "please.wait",
-        "msgstr": "Einen Moment ..."
-    },
-    {
-        "msgid": "process.form_incomplete",
-        "msgstr": "Die Form ist nicht vollständig ausgefüllt."
-    },
-    {
-        "msgid": "processes.form.start",
-        "msgstr": "Prozess starten"
-    },
-    {
-        "msgid": "processes.startform.notstarted",
-        "msgstr": "Fehler: Prozess kann nicht gestartet werden"
-    },
-    {
-        "msgid": "processes.startform.started",
-        "msgstr": "Prozess gestartet"
-    },
-    {
-        "msgid": "processes.table.action",
-        "msgstr": "Aktion"
-    },
-    {
-        "msgid": "processes.table.id",
-        "msgstr": "Id"
-    },
-    {
-        "msgid": "processes.table.key",
-        "msgstr": "Schlüssel"
-    },
-    {
-        "msgid": "processes.table.name",
-        "msgstr": "Name"
-    },
-    {
-        "msgid": "processexplorer.activities",
-        "msgstr": "Tätigkeiten"
-    },
-    {
-        "msgid": "processexplorer.activityId",
-        "msgstr": "A-Id"
+        "msgid": "shell.node_type",
+        "msgstr": "Typ"
     },
     {
         "msgid": "processexplorer.activityName",
         "msgstr": "Tätigkeit"
     },
     {
-        "msgid": "processexplorer.activityType",
-        "msgstr": "Tätigkeitsart"
-    },
-    {
-        "msgid": "processexplorer.assignee",
-        "msgstr": "Zuweiser"
-    },
-    {
-        "msgid": "processexplorer.completed",
-        "msgstr": "Erledigt"
-    },
-    {
-        "msgid": "processexplorer.date",
-        "msgstr": "Datum"
-    },
-    {
-        "msgid": "processexplorer.definition_diagramm",
-        "msgstr": "Prozesss Diagramm"
+        "msgid": "processexplorer.activities",
+        "msgstr": "Tätigkeiten"
     },
     {
         "msgid": "processexplorer.details_activity",
         "msgstr": "Tätigkeiten"
     },
     {
-        "msgid": "processexplorer.details_info",
-        "msgstr": "Information"
-    },
-    {
-        "msgid": "processexplorer.details_log",
-        "msgstr": "Detail Log"
-    },
-    {
-        "msgid": "processexplorer.details_variables",
-        "msgstr": "Variablen"
-    },
-    {
-        "msgid": "processexplorer.duration",
-        "msgstr": "Dauer"
-    },
-    {
-        "msgid": "processexplorer.endTime",
-        "msgstr": "Endezeit"
-    },
-    {
-        "msgid": "processexplorer.filter",
-        "msgstr": "Filter"
-    },
-    {
-        "msgid": "processexplorer.finished_only",
-        "msgstr": "Erledigte Prozesse"
-    },
-    {
-        "msgid": "processexplorer.history",
-        "msgstr": "Prozesshistorie"
-    },
-    {
-        "msgid": "processexplorer.history.businesskey",
-        "msgstr": "Businesskey"
-    },
-    {
-        "msgid": "processexplorer.history.id",
-        "msgstr": "Prozess-ID"
-    },
-    {
-        "msgid": "processexplorer.history.starttime",
-        "msgstr": "Startzeit"
-    },
-    {
-        "msgid": "processexplorer.id",
-        "msgstr": "Id"
-    },
-    {
-        "msgid": "processexplorer.instance_diagram",
-        "msgstr": "Instanz Diagramm"
-    },
-    {
-        "msgid": "processexplorer.logmessage",
-        "msgstr": "Log Nachricht"
-    },
-    {
-        "msgid": "processexplorer.owner",
-        "msgstr": "Owner"
-    },
-    {
-        "msgid": "processexplorer.processdefinitions",
-        "msgstr": "Prozess Definitionen"
-    },
-    {
-        "msgid": "processexplorer.revision",
-        "msgstr": "Revision"
-    },
-    {
-        "msgid": "processexplorer.startTime",
-        "msgstr": "Startzeit"
-    },
-    {
-        "msgid": "processexplorer.start_process",
-        "msgstr": "Prozess starten"
-    },
-    {
-        "msgid": "processexplorer.taskId",
-        "msgstr": "Task-ID"
-    },
-    {
-        "msgid": "processexplorer.time",
-        "msgstr": "Zeit"
+        "msgid": "processexplorer.activityType",
+        "msgstr": "Tätigkeitsart"
     },
     {
         "msgid": "processexplorer.unfinished_only",
         "msgstr": "Unerledigte Prozess"
     },
     {
+        "msgid": "meta.enumdata.invalid",
+        "msgstr": "Ungültig"
+    },
+    {
+        "msgid": "meta.enumdata.invalid_from",
+        "msgstr": "Ungültig ab"
+    },
+    {
+        "msgid": "meta.traits.subtrait_created",
+        "msgstr": "Untermerkmal erstellt"
+    },
+    {
+        "msgid": "tasks.usertasks.dublettencheck.update",
+        "msgstr": "Update"
+    },
+    {
+        "msgid": "namespacesmanager.pull",
+        "msgstr": "Update App"
+    },
+    {
+        "msgid": "namespacesmanager.update_available",
+        "msgstr": "Updates verfügbar?"
+    },
+    {
+        "msgid": "security.user.saved",
+        "msgstr": "User gespeichert"
+    },
+    {
+        "msgid": "data.user.saved",
+        "msgstr": "User gespeichert"
+    },
+    {
+        "msgid": "meta.teams.user_exists",
+        "msgstr": "User schon ausgewählt"
+    },
+    {
+        "msgid": "security.user.save",
+        "msgstr": "User speichern"
+    },
+    {
+        "msgid": "data.user.userid",
+        "msgstr": "User-ID"
+    },
+    {
+        "msgid": "data.app.users_global",
+        "msgstr": "User/Gruppen global verwalten"
+    },
+    {
+        "msgid": "data.users.userid",
+        "msgstr": "UserId"
+    },
+    {
+        "msgid": "ruleseditor.variable",
+        "msgstr": "Variable"
+    },
+    {
+        "msgid": "processexplorer.details_variables",
+        "msgstr": "Variablen"
+    },
+    {
+        "msgid": "processexplorer.variables",
+        "msgstr": "Variablen"
+    },
+    {
+        "msgid": "ruleseditor.variable",
+        "msgstr": "Variablen Typ"
+    },
+    {
         "msgid": "processexplorer.variableName",
         "msgstr": "Variablenname"
+    },
+    {
+        "msgid": "ruleseditor.vartype",
+        "msgstr": "Variablentyp"
     },
     {
         "msgid": "processexplorer.variableType",
@@ -3051,288 +3323,44 @@
         "msgstr": "Variablenwert"
     },
     {
-        "msgid": "processexplorer.variables",
-        "msgstr": "Variablen"
+        "msgid": "multiselect2side.available",
+        "msgstr": "Verfügbar"
     },
     {
-        "msgid": "relations.many-to-many",
-        "msgstr": "Many-to-Many: Beide Module haben einen Subpanel des jeweilig anderen Modul."
+        "msgid": "configeditor.check_type",
+        "msgstr": "Vergleichsmech."
     },
     {
-        "msgid": "relations.one-to-many",
-        "msgstr": "One-to-Many: Primäres Modul hat einen Subpanel des sekundärenen Moduls ."
+        "msgid": "shell.rename_node",
+        "msgstr": "Verschieben"
     },
     {
-        "msgid": "relations.one-to-many-bi",
-        "msgstr": "One-to-Many-Bi: Primäres Modul hat einen Subpanel des sekundären Moduls, dieses hält eine Referenze auf das Primäre."
+        "msgid": "meta.traits.acl_manage",
+        "msgstr": "Verwalten"
     },
     {
-        "msgid": "relations.one-to-one",
-        "msgstr": "One-to-One: Primäres Modul hat eine Referenz auf sekundäres Modul."
+        "msgid": "window.permissions",
+        "msgstr": "Verwalten Permissions"
     },
     {
-        "msgid": "relations.one-to-one-bi",
-        "msgstr": "One-to-One-Bi: Beide Module haben eine Referenz auf das jeweilige andere Modul."
+        "msgid": "mainmenu.permissions",
+        "msgstr": "Verwalten Permissions"
     },
     {
-        "msgid": "roleselector.role_created",
-        "msgstr": "Rolle wurde erstellt"
+        "msgid": "data.users.manage",
+        "msgstr": "Verwalten(Anlegen, Ändern, Stilllegen von Kontakten/Aktivitäten)"
     },
     {
-        "msgid": "roleselector.roleid",
-        "msgstr": "Rollen-ID"
+        "msgid": "data.groups.manage",
+        "msgstr": "Verwalten(Anlegen, Ändern, Stilllegen von Kontakten/Aktivitäten)"
     },
     {
-        "msgid": "ruleseditor.apply_changes",
-        "msgstr": "Änderung übernehmen"
+        "msgid": "import.mapping.use",
+        "msgstr": "Verwenden"
     },
     {
-        "msgid": "ruleseditor.bedingung",
-        "msgstr": "Bedingung"
-    },
-    {
-        "msgid": "ruleseditor.cancel",
-        "msgstr": "Abbrechen"
-    },
-    {
-        "msgid": "ruleseditor.change_column",
-        "msgstr": "Spalte ändern"
-    },
-    {
-        "msgid": "ruleseditor.condition_column_config",
-        "msgstr": "Bedingungspalte konfigurieren"
-    },
-    {
-        "msgid": "ruleseditor.delete_column",
-        "msgstr": "Spalte löschen"
-    },
-    {
-        "msgid": "ruleseditor.edit_redo",
-        "msgstr": "wieder herstellen"
-    },
-    {
-        "msgid": "ruleseditor.edit_undo",
-        "msgstr": "rückgängig machen"
-    },
-    {
-        "msgid": "ruleseditor.ergebnis",
-        "msgstr": "Ergebnis"
-    },
-    {
-        "msgid": "ruleseditor.inputvariables",
-        "msgstr": "Eingabevariablen"
-    },
-    {
-        "msgid": "ruleseditor.insert_action_column",
-        "msgstr": "Neue Aktionsspalte"
-    },
-    {
-        "msgid": "ruleseditor.insert_condition_column",
-        "msgstr": "Neue Bedingungsspalte"
-    },
-    {
-        "msgid": "ruleseditor.insert_condition_column",
-        "msgstr": "Bedinungungsspalte einfügen"
-    },
-    {
-        "msgid": "ruleseditor.insert_rule",
-        "msgstr": "Neue Regel"
-    },
-    {
-        "msgid": "ruleseditor.no_variables_defined",
-        "msgstr": "Es sind keine Variablen definiert"
-    },
-    {
-        "msgid": "ruleseditor.no_variables_defined",
-        "msgstr": "Keine Variablen definiert"
-    },
-    {
-        "msgid": "ruleseditor.operator",
-        "msgstr": "Operator"
-    },
-    {
-        "msgid": "ruleseditor.operators",
-        "msgstr": "Operatoren"
-    },
-    {
-        "msgid": "ruleseditor.outputvariables",
-        "msgstr": "Ausgabevariablen"
-    },
-    {
-        "msgid": "ruleseditor.remove_rule",
-        "msgstr": "Regel löschen"
-    },
-    {
-        "msgid": "ruleseditor.rule_down",
-        "msgstr": "Regel nach unten"
-    },
-    {
-        "msgid": "ruleseditor.rule_up",
-        "msgstr": "Regel nach oben"
-    },
-    {
-        "msgid": "ruleseditor.rules_test",
-        "msgstr": "Regeltest"
-    },
-    {
-        "msgid": "ruleseditor.table_must_first_be_saved",
-        "msgstr": "Nur gespeicherte Regeln werden berücksichtigt"
-    },
-    {
-        "msgid": "ruleseditor.test",
-        "msgstr": "Testen"
-    },
-    {
-        "msgid": "ruleseditor.test_close",
-        "msgstr": "Schliessen"
-    },
-    {
-        "msgid": "ruleseditor.variable",
-        "msgstr": "Variablen Typ"
-    },
-    {
-        "msgid": "ruleseditor.variable",
-        "msgstr": "Variable"
-    },
-    {
-        "msgid": "ruleseditor.variables",
-        "msgstr": "Regelvariablen"
-    },
-    {
-        "msgid": "ruleseditor.vartype",
-        "msgstr": "Variablentyp"
-    },
-    {
-        "msgid": "searchfilter.actionbutton",
-        "msgstr": "Aktionen"
-    },
-    {
-        "msgid": "searchfilter.menubutton",
-        "msgstr": "Menü"
-    },
-    {
-        "msgid": "searchfilter.resetbutton",
-        "msgstr": "Rücksetzen"
-    },
-    {
-        "msgid": "searchfilter.savebutton",
-        "msgstr": "Speichern"
-    },
-    {
-        "msgid": "searchfilter.searchbutton",
-        "msgstr": "Suche"
-    },
-    {
-        "msgid": "searchfilter.selectbutton",
-        "msgstr": "Auswählen"
-    },
-    {
-        "msgid": "security.group.save",
-        "msgstr": "Gruppe speichern"
-    },
-    {
-        "msgid": "security.group.saved",
-        "msgstr": "Gruppe gespeichert"
-    },
-    {
-        "msgid": "security.user.save",
-        "msgstr": "User speichern"
-    },
-    {
-        "msgid": "security.user.saved",
-        "msgstr": "User gespeichert"
-    },
-    {
-        "msgid": "security.users.save",
-        "msgstr": "Anwender speichern"
-    },
-    {
-        "msgid": "select.yesno",
-        "msgstr": "true:Ja;false:Nein"
-    },
-    {
-        "msgid": "settings.displayname",
-        "msgstr": "Angezeigter Name (aus Messages)"
-    },
-    {
-        "msgid": "settings.enabled",
-        "msgstr": "Enabled"
-    },
-    {
-        "msgid": "settings.entities",
-        "msgstr": "Klassen"
-    },
-    {
-        "msgid": "settings.fields",
-        "msgstr": "Eigenschaften"
-    },
-    {
-        "msgid": "settings.fieldsets",
-        "msgstr": "Eigenschaften(gemeinsame Suche)"
-    },
-    {
-        "msgid": "settings.name",
-        "msgstr": "Eigenschaftsname in der Klasse"
-    },
-    {
-        "msgid": "settings.tab",
-        "msgstr": "Tab"
-    },
-    {
-        "msgid": "settings.view_properties",
-        "msgstr": "Einstellungen der Sicht"
-    },
-    {
-        "msgid": "settings.views",
-        "msgstr": "Sichten"
-    },
-    {
-        "msgid": "settings.views.propertyedit.formlayout",
-        "msgstr": "Masken Layout"
-    },
-    {
-        "msgid": "settings.views.propertyedit.isblack",
-        "msgstr": "Is black"
-    },
-    {
-        "msgid": "settings.views.propertyedit.orderby",
-        "msgstr": "Sotierung nach"
-    },
-    {
-        "msgid": "settings.views_selected_items_saved",
-        "msgstr": "Einstellungen gespeichert"
-    },
-    {
-        "msgid": "shell.asset_exists",
-        "msgstr": "bereits vergeben"
-    },
-    {
-        "msgid": "shell.confirm_delete",
-        "msgstr": "Die Datei  löschen?"
-    },
-    {
-        "msgid": "shell.copy_failed",
-        "msgstr": "Kopieren fehlgeschlagen"
-    },
-    {
-        "msgid": "shell.copy_node",
-        "msgstr": "Kopieren"
-    },
-    {
-        "msgid": "shell.copy_ready",
-        "msgstr": "Datei kopiert"
-    },
-    {
-        "msgid": "shell.copy_to",
-        "msgstr": "kopiere nach"
-    },
-    {
-        "msgid": "shell.del_node",
-        "msgstr": "Löschen"
-    },
-    {
-        "msgid": "shell.dest_filename",
-        "msgstr": "Zieldateiname"
+        "msgid": "composite.select_dialog.use",
+        "msgstr": "Verwenden"
     },
     {
         "msgid": "shell.directory_created",
@@ -3343,459 +3371,447 @@
         "msgstr": "Verzeichnisname"
     },
     {
-        "msgid": "shell.document_saved",
-        "msgstr": "Dokument gespeichert"
+        "msgid": "max.vor_komma",
+        "msgstr": "Vor Komma"
     },
     {
-        "msgid": "shell.editor",
-        "msgstr": "Editor"
+        "msgid": "import.preview_button",
+        "msgstr": "Voransicht"
     },
     {
-        "msgid": "shell.file_create_failed",
-        "msgstr": "Dateierstellung ist fehlgeschlagen"
+        "msgid": "data.user.givenname",
+        "msgstr": "Vorname"
     },
     {
-        "msgid": "shell.file_created",
-        "msgstr": "Datei erstellt"
-    },
-    {
-        "msgid": "shell.file_name",
-        "msgstr": "Dateiname"
-    },
-    {
-        "msgid": "shell.filter_dir",
-        "msgstr": "Filter"
-    },
-    {
-        "msgid": "shell.filter_saved",
-        "msgstr": "Filter gespeichert"
-    },
-    {
-        "msgid": "shell.for",
-        "msgstr": "für"
-    },
-    {
-        "msgid": "shell.forms_dir",
-        "msgstr": "Forms"
-    },
-    {
-        "msgid": "shell.jsoneditor",
-        "msgstr": "Anzeigen Quelle"
-    },
-    {
-        "msgid": "shell.move_ready",
-        "msgstr": "Datei verschoben"
-    },
-    {
-        "msgid": "shell.move_to",
-        "msgstr": "verschieben nach"
-    },
-    {
-        "msgid": "shell.name",
-        "msgstr": "Name"
-    },
-    {
-        "msgid": "shell.new_directory",
-        "msgstr": "Neues Verzeichnis"
-    },
-    {
-        "msgid": "shell.new_file",
-        "msgstr": "Neue Datei"
-    },
-    {
-        "msgid": "shell.node_deleted",
-        "msgstr": "Datei gelöscht"
-    },
-    {
-        "msgid": "shell.node_type",
-        "msgstr": "Typ"
-    },
-    {
-        "msgid": "shell.nt_document",
-        "msgstr": "Dokument"
-    },
-    {
-        "msgid": "shell.nt_filter",
-        "msgstr": "Filter"
-    },
-    {
-        "msgid": "shell.nt_form",
-        "msgstr": "Form"
-    },
-    {
-        "msgid": "shell.nt_process",
-        "msgstr": "Workflow"
-    },
-    {
-        "msgid": "shell.nt_rule",
-        "msgstr": "Regel"
+        "msgid": "import.mapping.preview",
+        "msgstr": "Vorschau"
     },
     {
         "msgid": "shell.nt_website",
         "msgstr": "Website"
     },
     {
-        "msgid": "shell.process_saved",
-        "msgstr": "Prozess gespeichert"
+        "msgid": "data.workflows.applies_to",
+        "msgstr": "Wird angewendet auf"
     },
     {
-        "msgid": "shell.processes_dir",
-        "msgstr": "Prozesse"
+        "msgid": "data.workflows.execution_occurs",
+        "msgstr": "Wird ausgeführt"
     },
     {
-        "msgid": "shell.project",
-        "msgstr": "Projekt"
+        "msgid": "import.mapping.confirm_delete",
+        "msgstr": "Wirklich löschen"
     },
     {
-        "msgid": "shell.rename_node",
-        "msgstr": "Verschieben"
-    },
-    {
-        "msgid": "shell.rule_saved",
-        "msgstr": "Regeln gespeichert"
-    },
-    {
-        "msgid": "shell.rules_dir",
-        "msgstr": "Regeln"
-    },
-    {
-        "msgid": "tasks.form.cancel",
-        "msgstr": "Abbrechen"
-    },
-    {
-        "msgid": "tasks.form.notstarted",
-        "msgstr": "Fehler: Task kann nicht gestartet werden"
-    },
-    {
-        "msgid": "tasks.form.start",
-        "msgstr": "Task starten"
-    },
-    {
-        "msgid": "tasks.form.started",
-        "msgstr": "Task gestartet"
-    },
-    {
-        "msgid": "tasks.table.action",
-        "msgstr": "Aktion"
-    },
-    {
-        "msgid": "tasks.table.assigned",
-        "msgstr": "Meine Aufgaben"
-    },
-    {
-        "msgid": "tasks.table.claim",
-        "msgstr": "Aufgabe übernehmen"
-    },
-    {
-        "msgid": "tasks.table.complete",
-        "msgstr": "Aufgabe fertigstellen"
-    },
-    {
-        "msgid": "tasks.table.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "tasks.table.name",
-        "msgstr": "Aufgabenname"
-    },
-    {
-        "msgid": "tasks.table.not_assigned",
-        "msgstr": "In Warteschlange"
-    },
-    {
-        "msgid": "tasks.table.processCategory",
-        "msgstr": "Applikation"
-    },
-    {
-        "msgid": "tasks.table.processInstanceId",
-        "msgstr": "Pid"
+        "msgid": "composite.select_dialog.confirm_delete",
+        "msgstr": "Wirklich löschen?"
     },
     {
         "msgid": "tasks.table.processName",
         "msgstr": "Workflow"
     },
     {
-        "msgid": "tasks.table.taskid",
-        "msgstr": "AufgabenId"
+        "msgid": "shell.nt_process",
+        "msgstr": "Workflow"
     },
     {
-        "msgid": "tasks.table.time",
-        "msgstr": "Erstellt am"
+        "msgid": "import.table.row1",
+        "msgstr": "Zeile 1"
     },
     {
-        "msgid": "tasks.task.claim",
-        "msgstr": "Aufgabe übernehmen?"
+        "msgid": "import.table.row2",
+        "msgstr": "Zeile 2"
     },
     {
-        "msgid": "tasks.task.claimed",
-        "msgstr": "Aufgabe übernohmen"
+        "msgid": "data.field.editoptions_rows",
+        "msgstr": "Zeilen bei Textarea"
     },
     {
-        "msgid": "tasks.task.complete",
-        "msgstr": "Aufgabe fertigstellen"
+        "msgid": "export.csv.row_delimeter",
+        "msgstr": "Zeilentrenner"
     },
     {
-        "msgid": "tasks.task.completed",
-        "msgstr": "Aufgabe fertiggestellt"
+        "msgid": "processexplorer.time",
+        "msgstr": "Zeit"
     },
     {
-        "msgid": "tasks.task.not_claimed",
-        "msgstr": "Fehler beim Übernehmen der Aufgabe"
+        "msgid": "meta.workflows.after-time-elapsed",
+        "msgstr": "Zeitgesteuert"
     },
     {
-        "msgid": "tasks.task.not_completed",
-        "msgstr": "Fehler beim Beenden der Aufgabe"
+        "msgid": "import.mapping.targetpath",
+        "msgstr": "Ziel"
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.checkit",
-        "msgstr": "Prüfen"
+        "msgid": "shell.dest_filename",
+        "msgstr": "Zieldateiname"
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.delete_dublette",
-        "msgstr": "Dublette komplett löschen"
+        "msgid": "data.workflows.targetmodule",
+        "msgstr": "Zielmodul"
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.desc",
-        "msgstr": "<div style='color:blue'>%r Records importiert. %d Dublettenkandidaten gefunden</div>"
+        "msgid": "composite.contextmenu.too_little_tabs",
+        "msgstr": "Zu wenig offene Tabs"
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.edit_dublette",
-        "msgstr": "Editieren der Dublette und als neuen Satz speichern"
+        "msgid": "moduleaccesseditor.access",
+        "msgstr": "Zugang"
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.ignore",
-        "msgstr": "Ignorieren"
+        "msgid": "composite.add_to_exclusion_list",
+        "msgstr": "Zur Aussschlußliste hinzufügen"
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.insert",
-        "msgstr": "Neu"
+        "msgid": "import.reset_button",
+        "msgstr": "Zurücksetzen"
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.mode",
-        "msgstr": "Modus"
+        "msgid": "filter.text.change_to_compound",
+        "msgstr": "Zusammengesetzte Bedingung"
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.no_dublette_selected",
-        "msgstr": "Keine Dublette ausgewählt"
+        "msgid": "processexplorer.assignee",
+        "msgstr": "Zuweiser"
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.reference",
-        "msgstr": "<div style='color:blue'>Der Originalsatz .</div>"
+        "msgid": "meta.lists.odata",
+        "msgstr": "['gleich', 'ungleich', 'kleiner', 'kleiner gleich','größer','größer gleich', 'beginnt mit','beginnt nicht mit','ist in','ist nicht in','endet mit','endet nicht mit','enthält','enthält nicht']"
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.save",
-        "msgstr": "Speichern"
+        "msgid": "meta.lists.sub_from_filter",
+        "msgstr": "abziehen von"
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.uebernahme_von_teilen",
-        "msgstr": "Übernahme von Teilen in den Originalsatz"
+        "msgid": "meta.lists.add_to_filter",
+        "msgstr": "addieren zu "
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.uebernehmen",
-        "msgstr": "Übernehmen in den Originalsatz"
+        "msgid": "filter.text.and",
+        "msgstr": "alle"
     },
     {
-        "msgid": "tasks.usertasks.dublettencheck.update",
-        "msgstr": "Update"
+        "msgid": "meta.workflows.updated-records",
+        "msgstr": "auf geänderte Datensätze"
     },
     {
-        "msgid": "util.resources",
-        "msgstr": "Ressourcen"
+        "msgid": "meta.workflows.new-records",
+        "msgstr": "auf neue Datensätze"
     },
     {
-        "msgid": "wactions.active",
-        "msgstr": "Aktiv"
+        "msgid": "meta.workflows.new-and-updated-records",
+        "msgstr": "auf neue und geänderte Datensätze"
     },
     {
-        "msgid": "wactions.fieldaction",
-        "msgstr": "Eigenschaften bearbeiten"
+        "msgid": "meta.lists.listfields_saved",
+        "msgstr": "ausgewählte Eigenschaften gespeichert"
     },
     {
-        "msgid": "wactions.processaction",
-        "msgstr": "Prozess starten"
+        "msgid": "meta.traits.tree.title",
+        "msgstr": "ausgewähltes Merkmal"
     },
     {
-        "msgid": "wactions.serviceaction",
-        "msgstr": "Service ausführen"
+        "msgid": "meta.lists.bw",
+        "msgstr": "beginnt mit"
     },
     {
-        "msgid": "wactions.servicelabel",
-        "msgstr": "Service"
+        "msgid": "meta.lists.bn",
+        "msgstr": "beginnt nicht mit"
     },
     {
-        "msgid": "widgets.table.add_button",
-        "msgstr": "neuer Datensatz"
+        "msgid": "data.field.enabled",
+        "msgstr": "benutzt"
     },
     {
-        "msgid": "widgets.table.compile_button",
-        "msgstr": "Klasse compilieren"
+        "msgid": "data.module.enabled",
+        "msgstr": "benutzt"
     },
     {
-        "msgid": "widgets.table.copy_button",
-        "msgstr": "Datensatz duplizieren"
+        "msgid": "shell.asset_exists",
+        "msgstr": "bereits vergeben"
     },
     {
-        "msgid": "widgets.table.del_button",
-        "msgstr": "Datensatz löschen"
+        "msgid": "Duplicated",
+        "msgstr": "bereits vorhanden"
     },
     {
-        "msgid": "widgets.table.edit_button",
-        "msgstr": "Datensatz editieren"
+        "msgid": "filter.text.not_help",
+        "msgstr": "der Bedingungen in diesem Zweig darf zutreffen / <b>NOT OR</b>"
     },
     {
-        "msgid": "widgets.table.export_button",
-        "msgstr": "Datensätze exportieren"
+        "msgid": "filter.text.and_not_help",
+        "msgstr": "der Bedingungen in diesem Zweig müssen zutreffen / <b>NOT AND</b>"
     },
     {
-        "msgid": "widgets.table.import_button",
-        "msgstr": "Datensätze importieren"
+        "msgid": "filter.text.or_help",
+        "msgstr": "der Bedingungen in diesem Zweig trifft zu / <b>OR</b>"
     },
     {
-        "msgid": "widgets.table.select_button",
-        "msgstr": "vorhandenen Datensatz auswählen"
+        "msgid": "filter.text.union_help",
+        "msgstr": "die beiden Selektionen / <b>UNION</b>"
     },
     {
-        "msgid": "widgets.table.unassign_button",
-        "msgstr": "Datensatzzuordnung trennen"
+        "msgid": "filter.text.except_help",
+        "msgstr": "die zweite Selektion(<b>2</b>) von der Ersten(<b>1</b>) / <b>EXCEPT</b>"
     },
     {
-        "msgid": "widgets.table.unassign_button",
-        "msgstr": "unassign record"
+        "msgid": "data.user.email",
+        "msgstr": "eMail"
     },
     {
-        "msgid": "widgets.table.view_button",
-        "msgstr": "Datensatz anzeigen"
+        "msgid": "meta.lists.ew",
+        "msgstr": "endet mit"
     },
     {
-        "msgid": "window.configeditor",
-        "msgstr": "Konfigurations Editor"
+        "msgid": "meta.lists.en",
+        "msgstr": "endet nicht mit"
     },
     {
-        "msgid": "window.data.configeditor",
-        "msgstr": "Konfigurations Editor"
+        "msgid": "meta.lists.cn",
+        "msgstr": "enthält"
     },
     {
-        "msgid": "window.data.dataimports",
-        "msgstr": "Datenimporte"
+        "msgid": "meta.lists.nc",
+        "msgstr": "enthält nicht"
     },
     {
-        "msgid": "window.messages",
-        "msgstr": "Messageeditor"
+        "msgid": "shell.for",
+        "msgstr": "für"
     },
     {
-        "msgid": "window.data.moduleeditor",
-        "msgstr": "Module Editor"
-    },
-    {
-        "msgid": "window.data.workfloweditor",
-        "msgstr": "Trigger Editor"
-    },
-    {
-        "msgid": "window.dataimports",
-        "msgstr": "Datenimporte"
-    },
-    {
-        "msgid": "window.globalsearch",
-        "msgstr": "Globale Suche"
-    },
-    {
-        "msgid": "window.meta.importcsv",
-        "msgstr": "Import CSV"
-    },
-    {
-        "msgid": "window.meta.teams",
-        "msgstr": "Teams"
-    },
-    {
-        "msgid": "window.meta.traits",
-        "msgstr": "Merkmale"
-    },
-    {
-        "msgid": "window.moduleeditor",
-        "msgstr": "Modul Editor"
-    },
-    {
-        "msgid": "window.permissions",
-        "msgstr": "Verwalten Permissions"
-    },
-    {
-        "msgid": "window.processes",
-        "msgstr": "Prozesse"
-    },
-    {
-        "msgid": "window.reports",
-        "msgstr": "Listen/Reporte"
-    },
-    {
-        "msgid": "window.groups",
-        "msgstr": "Gruppen"
-    },
-    {
-        "msgid": "window.users",
-        "msgstr": "Anwender"
-    },
-    {
-        "msgid": "window.settings",
-        "msgstr": "Globale Einstellungen für Klassen und Klasseneigenschaften"
-    },
-    {
-        "msgid": "window.tasks",
-        "msgstr": "Aufgaben"
-    },
-    {
-        "msgid": "window.teameditor",
-        "msgstr": "Team Editor"
-    },
-    {
-        "msgid": "yes",
-        "msgstr": "ja"
-    },
-    {
-        "msgid": "entitytypes.attribute_takeit",
-        "msgstr": "Eigenschaft übernehmen"
-    },
-    {
-        "msgid": "widgets.table.form_incomplete",
-        "msgstr": "Eingabe nicht vollständig"
-    },
-    {
-        "msgid": "entitytypes.entitytype_saved",
-        "msgstr": "Klasse gespeichert"
-    },
-    {
-        "msgid": "entitytypes.create_messages",
-        "msgstr": "Messages erzeugen"
-    },
-    {
-        "msgid": "entitytypes.create_form_settings",
-        "msgstr": "Formeinstellungen erzeugen"
-    },
-    {
-        "msgid": "entitytypes.create_table_settings",
-        "msgstr": "Tabelleneinstellungen erzeugen"
-    },
-    {
-        "msgid": "entitytypes.create_search_settings",
-        "msgstr": "Sucheinstellungen erzeugen"
-    },
-    {
-        "msgid": "entitytypes.generate_class",
-        "msgstr": "Klasse erzeugen"
-    },
-    {
-        "msgid": "entitytypes.confirm_delete",
-        "msgstr": "Klasse löschen?"
+        "msgid": "import.mapping.deleted",
+        "msgstr": "gelöscht"
     },
     {
         "msgid": "shell.form_saved",
         "msgstr": "gespeichert"
     },
     {
-        "msgid": "max.vor_komma",
-        "msgstr": "Vor Komma"
+        "msgid": "meta.lists.eq",
+        "msgstr": "gleich"
     },
     {
-        "msgid": "max.nach_komma",
-        "msgstr": "Nach Komma"
+        "msgid": "meta.lists.gt",
+        "msgstr": "größer"
+    },
+    {
+        "msgid": "meta.lists.ge",
+        "msgstr": "größer gleich"
+    },
+    {
+        "msgid": "meta.lists.in",
+        "msgstr": "ist in"
+    },
+    {
+        "msgid": "meta.lists.ni",
+        "msgstr": "ist nicht in"
+    },
+    {
+        "msgid": "yes",
+        "msgstr": "ja"
+    },
+    {
+        "msgid": "filter.text.or",
+        "msgstr": "jede"
+    },
+    {
+        "msgid": "filter.text.not",
+        "msgstr": "keine"
+    },
+    {
+        "msgid": "meta.lists.lt",
+        "msgstr": "kleiner"
+    },
+    {
+        "msgid": "meta.lists.le",
+        "msgstr": "kleiner gleich"
+    },
+    {
+        "msgid": "shell.copy_to",
+        "msgstr": "kopiere nach"
+    },
+    {
+        "msgid": "meta.lists.filter_empty",
+        "msgstr": "leerer Filter"
+    },
+    {
+        "msgid": "meta.traits.trait",
+        "msgstr": "merkmal"
+    },
+    {
+        "msgid": "composite.contextmenu.add_to_tab",
+        "msgstr": "mit welchem Tab zusammenführen ?"
+    },
+    {
+        "msgid": "no",
+        "msgstr": "nein"
+    },
+    {
+        "msgid": "configeditor.new_config",
+        "msgstr": "neue Konfiguration"
+    },
+    {
+        "msgid": "config.menu.add_configuration",
+        "msgstr": "neue Konfiguration"
+    },
+    {
+        "msgid": "meta.lists.new_list",
+        "msgstr": "neue Liste"
+    },
+    {
+        "msgid": "widgets.table.add_button",
+        "msgstr": "neuer Datensatz"
+    },
+    {
+        "msgid": "meta.lists.new_filter",
+        "msgstr": "neuer Filter"
+    },
+    {
+        "msgid": "import.new_import",
+        "msgstr": "neuer Import"
+    },
+    {
+        "msgid": "meta.teams.add_member",
+        "msgstr": "neues Mitglied hinzufügen"
+    },
+    {
+        "msgid": "filter.text.and_not",
+        "msgstr": "nicht alle"
+    },
+    {
+        "msgid": "meta.workflows.new-records",
+        "msgstr": "on new records"
+    },
+    {
+        "msgid": "ruleseditor.edit_undo",
+        "msgstr": "rückgängig machen"
+    },
+    {
+        "msgid": "data.field.save",
+        "msgstr": "speichern"
+    },
+    {
+        "msgid": "data.module.save",
+        "msgstr": "speichern"
+    },
+    {
+        "msgid": "data.relation.save",
+        "msgstr": "speichern"
+    },
+    {
+        "msgid": "data.app.save",
+        "msgstr": "speichern"
+    },
+    {
+        "msgid": "select.yesno",
+        "msgstr": "true:Ja;false:Nein"
+    },
+    {
+        "msgid": "widgets.table.unassign_button",
+        "msgstr": "unassign record"
+    },
+    {
+        "msgid": "meta.lists.ne",
+        "msgstr": "ungleich"
+    },
+    {
+        "msgid": "shell.move_to",
+        "msgstr": "verschieben nach"
+    },
+    {
+        "msgid": "filter.text.intersect_help",
+        "msgstr": "von beiden Selektionen  / <b>INTERSECT</b>"
+    },
+    {
+        "msgid": "composite.contextmenu.sub_from_tab",
+        "msgstr": "von welchen Tab abziehen?"
+    },
+    {
+        "msgid": "widgets.table.select_button",
+        "msgstr": "vorhandenen Datensatz auswählen"
+    },
+    {
+        "msgid": "meta.workflows.when-record-saved",
+        "msgstr": "wenn Datensatz gespeichert wird"
+    },
+    {
+        "msgid": "ruleseditor.edit_redo",
+        "msgstr": "wieder herstellen"
+    },
+    {
+        "msgid": "meta.lists.copy_from_filter",
+        "msgstr": "wird kopiert"
+    },
+    {
+        "msgid": "config.edit_attribute",
+        "msgstr": "Ändere ausgew. Attribute"
+    },
+    {
+        "msgid": "filter.text.multi_edit",
+        "msgstr": "Ändern  aller Sätze des Filters"
+    },
+    {
+        "msgid": "meta.wactions.update-target",
+        "msgstr": "Ändern von Eigenschaften im Zielmodul"
+    },
+    {
+        "msgid": "meta.wactions.update-related",
+        "msgstr": "Ändern von Eigenschaften in einem verknüpften Modul"
+    },
+    {
+        "msgid": "ruleseditor.apply_changes",
+        "msgstr": "Änderung übernehmen"
+    },
+    {
+        "msgid": "namespacesmanager.push",
+        "msgstr": "Änderungen ins Repository schreiben"
+    },
+    {
+        "msgid": "filter.text.insert_parent",
+        "msgstr": "Übergeordneten Knoten einfügen"
+    },
+    {
+        "msgid": "tasks.usertasks.dublettencheck.uebernahme_von_teilen",
+        "msgstr": "Übernahme von Teilen in den Originalsatz"
+    },
+    {
+        "msgid": "messages.takeover",
+        "msgstr": "Übernahme(danach noch Speichern)"
+    },
+    {
+        "msgid": "meta.traits.take_it",
+        "msgstr": "Übernehmen"
+    },
+    {
+        "msgid": "meta.lists.takeit",
+        "msgstr": "Übernehmen"
+    },
+    {
+        "msgid": "tasks.usertasks.dublettencheck.uebernehmen",
+        "msgstr": "Übernehmen in den Originalsatz"
+    },
+    {
+        "msgid": "data.datatraits.save",
+        "msgstr": "Übernehmen(Der Satz muss dann noch abgespeichert werden)"
+    },
+    {
+        "msgid": "mainmenu.projectshellMessages",
+        "msgstr": "Übersetzungen"
+    },
+    {
+        "msgid": "messages.messages_dir",
+        "msgstr": "Übersetzungen"
+    },
+    {
+        "msgid": "messages.title",
+        "msgstr": "Übersetzungen"
+    },
+    {
+        "msgid": "data.app.messages_global",
+        "msgstr": "Übersetzungen global verwalten"
+    },
+    {
+        "msgid": "namespacesmanager.confirm_push",
+        "msgstr": "Übertrage Änderungen in das Repository?"
     }
 ]
