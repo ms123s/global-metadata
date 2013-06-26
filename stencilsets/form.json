@@ -856,6 +856,13 @@
 					"title": "DateTime",
 					"value": "datetime",
 					"refToView": ""
+				},
+				{
+					"id": "c8",
+					"title": "Search",
+					"title_de": "Suche",
+					"value": "search",
+					"refToView": ""
 				}]},
 				{
 				"id": "constraints",

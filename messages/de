@@ -3743,6 +3743,10 @@
         "msgstr": "wird kopiert"
     },
     {
+        "msgid": "data.field.searchable_items",
+        "msgstr": "Suche(Liste)"
+    },
+    {
         "msgid": "config.edit_attribute",
         "msgstr": "Ändere ausgew. Attribute"
     },
@@ -3813,5 +3817,21 @@
     {
         "msgid": "namespacesmanager.confirm_push",
         "msgstr": "Übertrage Änderungen in das Repository?"
+    },
+    {
+        "msgid": "graphicaleditor.select_resource",
+        "msgstr": "Eine Ressource auswählen"
+    },
+    {
+        "msgid": "graphicaleditor.select_entity",
+        "msgstr": "Einen Datentyp auswählen"
+    },
+    {
+        "msgid": "graphicaleditor.constraints",
+        "msgstr": "Plausibilitäten"
+    },
+    {
+        "msgid": "relatedto.selection",
+        "msgstr": "Selektion aus"
     }
 ]
