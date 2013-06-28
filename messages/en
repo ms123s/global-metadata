@@ -1531,8 +1531,16 @@
         "msgstr": "Invalid from"
     },
     {
-        "msgid": "meta.enumdata.key",
-        "msgstr": "Key"
+        "msgid": "meta.enumdata.value",
+        "msgstr": "Value"
+    },
+    {
+        "msgid": "meta.enumdata.label",
+        "msgstr": "Label"
+    },
+    {
+        "msgid": "meta.enumdata.tooltip",
+        "msgstr": "Tooltip"
     },
     {
         "msgid": "meta.enumdata.sort",

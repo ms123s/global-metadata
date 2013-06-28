@@ -36,13 +36,6 @@
             "name": "invalid",
             "edittype": "checkbox",
             "datatype": "boolean"
-        },
-        "key": {
-            "enabled": true,
-            "name": "key",
-            "constraints": "[{\"annotation\":\"NotEmpty\",\"parameter1\":\"\"}]",
-            "primary_key": true,
-            "datatype": "string"
         }
     }
 }

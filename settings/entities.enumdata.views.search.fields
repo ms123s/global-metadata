@@ -4,10 +4,6 @@
 {
     "fields": [
         {
-            "name": "key",
-            "enabled": true
-        },
-        {
             "name": "sort",
             "enabled": true
         },

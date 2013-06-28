@@ -87,6 +87,10 @@
         "msgstr": "Abhängige Datensätze im sekundären Modul mitlöschen"
     },
     {
+        "msgid": "entitytypes.class_not_created",
+        "msgstr": "Klasse noch nicht erstellt"
+    },
+    {
         "msgid": "configeditor.check_type.distance",
         "msgstr": "Abstand"
     },
@@ -412,7 +416,7 @@
     },
     {
         "msgid": "data.field.selectable_items",
-        "msgstr": "Aufzählung/Url"
+        "msgstr": "Aufzählung"
     },
     {
         "msgid": "enumerations.enumeration_dir",
@@ -869,6 +873,14 @@
     {
         "msgid": "entitytypes.create_field.datatype",
         "msgstr": "Datentyp"
+    },
+    {
+        "msgid": "entitytypes.field_saved",
+        "msgstr": "Eigenschaft gespeichert"
+    },
+    {
+        "msgid": "entitytypes.update_db_successfull",
+        "msgstr": "Datenbank angepasst"
     },
     {
         "msgid": "data.field.datatype",
@@ -2324,7 +2336,7 @@
     },
     {
         "msgid": "entitytypes.new_fast_entitytype_create",
-        "msgstr": "Neue Klasse(ad Hoc)"
+        "msgstr": "Neue Klasse(Fast)"
     },
     {
         "msgid": "entitytypes.new_entitytype_wizard_form",
@@ -2815,8 +2827,16 @@
         "msgstr": "Schliessen"
     },
     {
-        "msgid": "meta.enumdata.key",
-        "msgstr": "Schlüssel"
+        "msgid": "meta.enumdata.value",
+        "msgstr": "Wert"
+    },
+    {
+        "msgid": "meta.enumdata.label",
+        "msgstr": "Label"
+    },
+    {
+        "msgid": "meta.enumdata.tooltip",
+        "msgstr": "Tooltip"
     },
     {
         "msgid": "processes.table.key",
@@ -3833,5 +3853,17 @@
     {
         "msgid": "relatedto.selection",
         "msgstr": "Selektion aus"
+    },
+    {
+        "msgid": "entitytypes.new_fast_entitytype_edit",
+        "msgstr": "Edit Klasse(Fast)"
+    },
+    {
+        "msgid": "table.confirm.delete",
+        "msgstr": "Den Satz löschen?"
+    },
+    {
+        "msgid": "enumerations.confirm_delete",
+        "msgstr": "Enumeration löschen?"
     }
 ]
