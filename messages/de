@@ -2615,24 +2615,20 @@
         "msgstr": "Prozesse"
     },
     {
-        "msgid": "mainmenu.filters",
-        "msgstr": "Prozessfilter"
-    },
-    {
         "msgid": "data.filter.id",
-        "msgstr": "Prozessfilter ID"
+        "msgstr": "Filter ID"
     },
     {
         "msgid": "data.filters.saved",
-        "msgstr": "Prozessfilter gespeichert"
+        "msgstr": "Filter gespeichert"
     },
     {
         "msgid": "data.filter.save",
-        "msgstr": "Prozessfilter speichern"
+        "msgstr": "Filter speichern"
     },
     {
         "msgid": "data.filter.created",
-        "msgstr": "Prozessfilter wurde erstellt"
+        "msgstr": "Filter wurde erstellt"
     },
     {
         "msgid": "processexplorer.history",
@@ -2644,19 +2640,11 @@
     },
     {
         "msgid": "data.form.save",
-        "msgstr": "Prozessmaske speichen"
+        "msgstr": "Speichern"
     },
     {
         "msgid": "data.form.created",
-        "msgstr": "Prozessmaske wurde erstellt"
-    },
-    {
-        "msgid": "mainmenu.forms",
-        "msgstr": "Prozessmasken"
-    },
-    {
-        "msgid": "mainmenu.rules",
-        "msgstr": "Prozessregeln"
+        "msgstr": "Datensatz gespeichert"
     },
     {
         "msgid": "processexplorer.definition_diagramm",
