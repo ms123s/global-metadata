@@ -3865,5 +3865,9 @@
     {
         "msgid": "enumerations.confirm_delete",
         "msgstr": "Enumeration löschen?"
+    },
+    {
+        "msgid": "namespacesmanager.changes_pushed",
+        "msgstr": "Änderungen ins Repository übertragen"
     }
 ]
