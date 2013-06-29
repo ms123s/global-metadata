@@ -2636,7 +2636,7 @@
     },
     {
         "msgid": "data.form.saved",
-        "msgstr": "Prozessmaske gespeichert"
+        "msgstr": "Datensatz gespeichert"
     },
     {
         "msgid": "data.form.save",
@@ -2644,7 +2644,7 @@
     },
     {
         "msgid": "data.form.created",
-        "msgstr": "Datensatz gespeichert"
+        "msgstr": "Datensatz erstellt"
     },
     {
         "msgid": "processexplorer.definition_diagramm",
