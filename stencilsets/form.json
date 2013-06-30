@@ -462,7 +462,8 @@
 		},
 		{
 			"id": "xf_module",
-			"type": "String",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.entitytype","prefix":""},
 			"title": "Entity",
 			"title_de": "Entität",
 			"prefix": "oryx",
@@ -905,8 +906,8 @@
 		"title_de": "Auslösender Button",
 		"groups": ["Controls"],
 		"description": "Renders a actionbutton",
-		"view": "new_trigger.svg",
-		"icon": "new_trigger.png",
+		"view": "actionbutton.svg",
+		"icon": "actionbutton.png",
 		"roles": ["core_form_controls"],
 		"layout": [{
 			"type": "layout.xforms.label.button"
