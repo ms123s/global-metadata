@@ -559,7 +559,7 @@
 		},{
 			"id": "xf_markdown",
 			"type": "text",
-			"config":{"mode":"text/tiki"},
+			"config":{"mode":"text/tiki", "helper":"DocumentMarkdown"},
 			"title": "Text",
 			"title_de": "Text",
 			"prefix": "oryx",

@@ -1311,6 +1311,10 @@
         "msgstr": "Filter Editor"
     },
     {
+        "msgid": "filtereditor.mainmodule",
+        "msgstr": "Hauptentität"
+    },
+    {
         "msgid": "meta.lists.filter_deleted",
         "msgstr": "Filter gelöscht"
     },
@@ -3853,6 +3857,14 @@
     {
         "msgid": "enumerations.confirm_delete",
         "msgstr": "Enumeration löschen?"
+    },
+    {
+        "msgid": "documentmarkdown.insert_table1",
+        "msgstr": "Tabelle mit einem Record"
+    },
+    {
+        "msgid": "documentmarkdown.insert_table2",
+        "msgstr": "Tabelle mit Liste"
     },
     {
         "msgid": "namespacesmanager.changes_pushed",

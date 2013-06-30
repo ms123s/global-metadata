@@ -439,8 +439,8 @@
 		"title_de": "Wert aus Datenbank",
 		"groups": ["Controls"],
 		"description": "Select an value from specified Module",
-		"view": "new_submit.svg",
-		"icon": "new_submit.png",
+		"view": "entity_select.svg",
+		"icon": "entity_select.png",
 		"roles": ["core_form_controls", "controls_morph"],
 		"layout": [{
 			"type": "layout.xforms.label",
