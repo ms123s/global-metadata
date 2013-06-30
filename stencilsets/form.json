@@ -490,6 +490,35 @@
 			"length": "100"
 		},
 		{
+			"id": "xf_fieldlist",
+			"type": "Complex",
+			"config": {"helperTree":["sw.form","sw.entitytype"]},
+			"title": "Fieldlist",
+			"title_de": "Feldliste",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "fieldname",
+				"name": "Fieldname",
+				"name_de": "Feldname",
+				"type": "String",
+				"value": "",
+				"width": 100,
+				"optional": false
+			},
+			{
+				"id": "mapping",
+				"name": "Mapping",
+				"name_de": "Mapping",
+				"type": "String",
+				"value": "",
+				"width": 100,
+				"optional": true
+			}]
+		},
+		{
 			"id": "xf_required",
 			"type": "Combo",
 			"title": "Required",
@@ -799,8 +828,17 @@
 			},
 			{
 				"id": "display",
-				"name": "Header",
+				"name": "Display",
 				"name_de": "Anzeige",
+				"type": "String",
+				"value": "",
+				"width": 100,
+				"optional": true
+			},
+			{
+				"id": "mapping",
+				"name": "Mapping",
+				"name_de": "Mapping",
 				"type": "String",
 				"value": "",
 				"width": 100,
