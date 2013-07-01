@@ -585,7 +585,7 @@
 		{
 			"id": "xf_columns",
 			"type": "Complex",
-			"config": {"helperTree":["sw.form","sw.entitytype"]},
+			"config": {"helperTree":["sw.form","sw.filter","sw.entitytype"]},
 			"title": "Tablecolumns",
 			"title_de": "Tabellenspalten",
 			"value": "",
@@ -625,6 +625,20 @@
 			"readonly": false,
 			"optional": false,
 			"length": "50"
+		},
+		{
+			"id": "xf_filter",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.filter","prefix":""},
+			"title": "Filter",
+			"title_de": "Filter",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "100"
 		},
 		{
 			"id": "xf_required",
