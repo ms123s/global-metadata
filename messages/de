@@ -3869,5 +3869,13 @@
     {
         "msgid": "namespacesmanager.changes_pushed",
         "msgstr": "Änderungen ins Repository übertragen"
+    },
+    {
+        "msgid": "graphicaleditor.fieldselectorfield.db_fieldname",
+        "msgstr": "Database Feldname"
+    },
+    {
+        "msgid": "graphicaleditor.fieldselectorfield.form_fieldname",
+        "msgstr": "Form Feldname"
     }
 ]

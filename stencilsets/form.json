@@ -435,8 +435,8 @@
 	{
 		"type": "node",
 		"id": "Moduleselector",
-		"title": "Moduleselector",
-		"title_de": "Wert aus Datenbank",
+		"title": "Values from specified Entity",
+		"title_de": "Werte aus Datenbank",
 		"groups": ["Controls"],
 		"description": "Select an value from specified Module",
 		"view": "entity_select.svg",
@@ -491,32 +491,14 @@
 		},
 		{
 			"id": "xf_fieldlist",
-			"type": "Complex",
-			"config": {"helperTree":["sw.form","sw.entitytype"]},
+			"type": "FieldSelector",
+			"config": {"helperTree":["sw.form"], "entityField":"xf_module"},
 			"title": "Fieldlist",
 			"title_de": "Feldliste",
 			"value": "",
 			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"complexItems": [{
-				"id": "fieldname",
-				"name": "Fieldname",
-				"name_de": "Feldname",
-				"type": "String",
-				"value": "",
-				"width": 100,
-				"optional": false
-			},
-			{
-				"id": "mapping",
-				"name": "Mapping",
-				"name_de": "Mapping",
-				"type": "String",
-				"value": "",
-				"width": 100,
-				"optional": true
-			}]
+			"readonly": "xf_module==''||xf_module==null",
+			"optional": true
 		},
 		{
 			"id": "xf_required",
