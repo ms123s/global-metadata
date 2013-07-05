@@ -476,20 +476,6 @@
 			"length": "100"
 		},
 		{
-			"id": "xf_field",
-			"type": "String",
-			"title": "Field",
-			"title_de": "Feld",
-			"prefix": "oryx",
-			"value": "",
-			"description": "The Field",
-			"popular": true,
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"length": "100"
-		},
-		{
 			"id": "xf_fieldlist",
 			"type": "FieldSelector",
 			"config": {"helperTree":["sw.form"], "entityField":"xf_module"},
@@ -499,31 +485,6 @@
 			"popular": true,
 			"readonly": "xf_module==''||xf_module==null",
 			"optional": true
-		},
-		{
-			"id": "xf_required",
-			"type": "Combo",
-			"title": "Required",
-			"title_de": "Eingabe nötig",
-			"prefix": "oryx",
-			"value": "",
-			"popular": true,
-			"description": "Any expression that is convertible to XPath boolean",
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"value": "true",
-				"title": "true",
-				"refToView": ""
-			},
-			{
-				"id": "c2",
-				"value": "false",
-				"title": "false",
-				"refToView": ""
-			}]
 		}]
 	},
 	{

@@ -3877,5 +3877,69 @@
     {
         "msgid": "graphicaleditor.fieldselectorfield.form_fieldname",
         "msgstr": "Form Feldname"
+    },
+    {
+        "msgid": "data.trigger.active",
+        "msgstr": "Aktiv"
+    },
+    {
+        "msgid": "data.trigger.applies_to",
+        "msgstr": "Angewendet auf"
+    },
+    {
+        "msgid": "data.trigger.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.trigger.execution_occurs",
+        "msgstr": "Ausgeführt wenn"
+    },
+    {
+        "msgid": "data.trigger.processing_order",
+        "msgstr": "Reihenfolge"
+    },
+    {
+        "msgid": "data.trigger.targetmodule",
+        "msgstr": "Zielentität"
+    },
+    {
+        "msgid": "data.trigger.trigger_id",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "data.tcondition.active",
+        "msgstr": "Aktiv"
+    },
+    {
+        "msgid": "data.tcondition.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.tcondition.value",
+        "msgstr": "Wert"
+    },
+    {
+        "msgid": "meta.triggers.tactions",
+        "msgstr": "Aktionen"
+    },
+    {
+        "msgid": "meta.triggers.new-and-updated-records",
+        "msgstr": "Neue und aktualisierte Datensätze"
+    },
+    {
+        "msgid": "meta.triggers.updated-records",
+        "msgstr": "Aktualisierte Datensätze"
+    },
+    {
+        "msgid": "meta.triggers.new-records",
+        "msgstr": "Neue Datensätze"
+    },
+    {
+        "msgid": "meta.triggers.when-record-saved",
+        "msgstr": "Wenn Datensatz gespeichert wird"
+    },
+    {
+        "msgid": "meta.triggers.tconditions",
+        "msgstr": "Bedingungen"
     }
 ]
