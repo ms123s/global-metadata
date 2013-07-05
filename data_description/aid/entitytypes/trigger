@@ -63,7 +63,7 @@
             "name": "targetmodule",
             "edittype": "select",
             "datatype": "string",
-            "selectable_items": "rpc:entity:getEntities,storeId:\"@{STORE_ID}\",ignorePack:true,withChilds:false, sortField:\"pack,name\",mapping:{value:\"(pack+'.'+inflector.getClassName(name))\",label:\"(inflector.getClassName(name))\" },filter:\"pack=='default'||pack=='admin'\""
+            "selectable_items": "rpc:entity:getEntities,storeId:\"@{STORE_ID}\",ignorePack:true,withChilds:false, sortField:\"name\",mapping:{value:\"('data.'+inflector.getClassName(name))\",label:\"(inflector.getClassName(name))\" }"
         },
         "applies_to": {
             "enabled": true,
