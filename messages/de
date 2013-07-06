@@ -3860,11 +3860,23 @@
     },
     {
         "msgid": "documentmarkdown.insert_table1",
-        "msgstr": "Tabelle mit einem Record"
+        "msgstr": "Tabellenansicht  des ersten Datensatzes"
     },
     {
         "msgid": "documentmarkdown.insert_table2",
-        "msgstr": "Tabelle mit Liste"
+        "msgstr": "Tabellenansicht aller Datensätze"
+    },
+    {
+        "msgid": "wikimarkdown.table",
+        "msgstr": "Tabelle"
+    },
+    {
+        "msgid": "wikimarkdown.table_with_vars",
+        "msgstr": "Tabelle mit Variablen"
+    },
+    {
+        "msgid": "wikimarkdown.table_with_loop",
+        "msgstr": "Tabelle mit Schleife"
     },
     {
         "msgid": "namespacesmanager.changes_pushed",
