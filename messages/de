@@ -223,6 +223,10 @@
         "msgstr": "Angezeigter Name (aus Messages)"
     },
     {
+        "msgid": "settings.views_selected_items_saved",
+        "msgstr": "Einstellung gespeichert"
+    },
+    {
         "msgid": "messages.msgstr",
         "msgstr": "Angezeigter Text"
     },
@@ -1157,10 +1161,6 @@
     {
         "msgid": "settings.view_properties",
         "msgstr": "Einstellungen der Sicht"
-    },
-    {
-        "msgid": "settings.views_selected_items_saved",
-        "msgstr": "Einstellungen gespeichert"
     },
     {
         "msgid": "import.import_saved",

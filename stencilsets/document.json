@@ -552,11 +552,35 @@
 			"value": "",
 			"description": "Filtername",
 			"description_de": "Name des Filters",
-			"popular": true,
+			"popular": false,
 			"readonly": false,
+			"visible": false,
 			"optional": false,
 			"length": "50"
-		},{
+		}, {
+			"id": "xf_type",
+			"type": "Choice",
+			"title": "Texttype",
+			"title_de": "Texttyp",
+			"prefix": "oryx",
+			"value": "html",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Html",
+				"value": "html",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "Markdown",
+				"value": "markdown",
+				"refToView": ""
+			} ]
+		},
+		{
 			"id": "xf_markdown",
 			"type": "text",
 			"config":{"mode":"text/tiki", "helper":"DocumentMarkdown","toolbarAddon":"WikiMarkdown"},
@@ -564,11 +588,25 @@
 			"title_de": "Text",
 			"prefix": "oryx",
 			"value": "",
+			"visible": "xf_type=='markdown'",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
-		}],
+		}, {
+			"id": "xf_html",
+			"type": "html",
+			"config":{"mode":"text/tiki", "helper":"DocumentMarkdown","toolbarAddon":"WikiMarkdown"},
+			"title": "Html",
+			"title_de": "Html",
+			"prefix": "oryx",
+			"value": "",
+			"visible": "xf_type=='html'",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
+		} ],
 		"propertyPackages": ["geometry" ]
 	},
 	{
