@@ -606,8 +606,8 @@
 		}],
 		"properties": [{
 			"id": "ws_html",
-			"type": "text",
-			"config":{"mode":"text/xml"},
+			"type": "html",
+			"config":{},
 			"title": "Html",
 			"prefix": "oryx",
 			"value": "",
@@ -782,7 +782,7 @@
 		{
 			"id": "ws_workflow",
 			"type": "ResourceSelector",
-			"config": {"type":"sw.process","prefix":""},
+			"config": {"type":"sw.process","editable":true, "prefix":""},
       "title" : "Workflow",
       "title_de" : "Workflow",
 			"visible": "ws_linktype=='workflow'",

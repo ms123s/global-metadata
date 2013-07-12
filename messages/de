@@ -3953,5 +3953,9 @@
     {
         "msgid": "meta.triggers.tconditions",
         "msgstr": "Bedingungen"
+    },
+    {
+        "msgid": "shell.website_saved",
+        "msgstr": "Website gespeichert"
     }
 ]
