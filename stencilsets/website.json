@@ -25,16 +25,37 @@
 			"readonly": false,
 			"optional": false
 		},{
+      "id" : "description",
+      "type" : "String",
+      "title" : "Description",
+			"title_de": "Beschreibung",
+      "value" : "",
+			"refToView": "text"
+		},{
 			"id": "bordercolor",
 			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
+			"title": "Colormark",
+			"title_de": "Farbmarkierung",
 			"value": "#000000",
 			"readonly": false,
 			"optional": false,
 			"refToView": "bg_frame",
 			"fill": false,
 			"stroke": true
+		}]
+	},
+		{
+		"name": "color",
+		"properties": [{
+			"id": "ws_bgcolor",
+			"type": "Color",
+			"title": "Backgroundcolor",
+			"title_de": "Hintergrundfarbe",
+			"prefix": "oryx",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
 		}]
 	},
 		{
@@ -587,7 +608,7 @@
 			"optional": true,
 			"refToView": ""
 		}],
-		"propertyPackages": ["base", "contentelement", "border" ]
+		"propertyPackages": ["base", "contentelement", "border","color" ]
 	},
 	{
 		"type": "node",
@@ -616,7 +637,7 @@
 			"optional": true,
 			"refToView": ""
 		}],
-		"propertyPackages": ["base", "contentelement", "border" ]
+		"propertyPackages": ["base", "contentelement", "border","color" ]
 	},
 	{
 		"type": "node",
@@ -641,7 +662,7 @@
 				"refToView":"",
 				"length":"30"
 		}], 
-		"propertyPackages": ["base", "contentelement", "border" ]
+		"propertyPackages": ["base", "contentelement", "border","color" ]
 	},
 	{
 		"type": "node",
@@ -967,7 +988,7 @@
 			}]
 		 }
 	 ],
-		"propertyPackages": ["base","border","layoutcontainer" ]
+		"propertyPackages": ["base","border","color","layoutcontainer" ]
 	},
 	{
 		"type": "node",
