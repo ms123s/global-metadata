@@ -47,12 +47,12 @@
 		{
 		"name": "color",
 		"properties": [{
-			"id": "ws_bgcolor",
+			"id": "ws_backgroundcolor",
 			"type": "Color",
 			"title": "Backgroundcolor",
 			"title_de": "Hintergrundfarbe",
 			"prefix": "oryx",
-			"value": "",
+			"value": "none",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
@@ -568,12 +568,34 @@
 			"length": "50"
 		},
 		{
+			"id": "css_linkcolor",
+			"type": "Color",
+			"title": "Linkcolor",
+			"title_de": "Linkfarbe",
+			"prefix": "oryx",
+			"value": "#4d5054",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
 			"id": "ws_backgroundcolor",
 			"type": "Color",
 			"title": "Backgroundcolor",
 			"title_de": "Hintergrundfarbe",
 			"prefix": "oryx",
 			"value": "white",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "ws_backgroundcolor2",
+			"type": "Color",
+			"title": "Backgroundcolor2",
+			"title_de": "Hintergrundfarbe2",
+			"prefix": "oryx",
+			"value": "none",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
