@@ -166,64 +166,20 @@
 			}]
 		},
 		{
-			"id": "ws_height",
-			"type": "Combo",
-			"title": "Height",
-			"title_de": "Höhe",
-			"prefix": "oryx",
-			"value": "auto",
-			"popular": false,
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "auto",
-				"value": "auto",
-				"refToView": ""
-			},
-			{
-				"id": "c2",
-				"title": "100px",
-				"value": "100px",
-				"refToView": ""
-			}]
-		},
-		{
-			"id": "ws_scrollbar",
-			"title": "Scrollbar",
-			"title_de": "Scrollbar",
-			"type": "Boolean",
-			"value": false,
-			"popular": false,
-			"readonly": false,
-			"optional": false
-		},
-		{
 			"id": "ws_weightx",
-			"title": "Weight X",
-			"title_de": "Wichtung X",
+			"title": "WeightX",
+			"title_de": "WichtungX",
 			"type": "Integer",
 			"value": 1,
 			"popular": false,
 			"readonly": false,
-			"optional": false
-		},
-		{
-			"id": "ws_weighty",
-			"title": "Weight Y",
-			"title_de": "Wichtung Y",
-			"type": "Integer",
-			"value": 1,
-			"popular": false,
-			"readonly": false,
-			"optional": false
+			"optional": true
 		},
 		{
 			"id": "ws_alignx",
 			"type": "Choice",
 			"title": "AlignX",
-			"title_de": "Ausrichtung X",
+			"title_de": "AusrichtungX",
 			"prefix": "oryx",
 			"value": "center",
 			"readonly": false,
@@ -252,10 +208,54 @@
 			}]
 		},
 		{
+			"id": "ws_height",
+			"type": "Combo",
+			"title": "Height",
+			"title_de": "Höhe",
+			"prefix": "oryx",
+			"value": "auto",
+			"popular": false,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "auto",
+				"value": "auto",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "100px",
+				"value": "100px",
+				"refToView": ""
+			}]
+		},
+		{
+			"id": "ws_minheight",
+			"title": "Min. height",
+			"title_de": "Als min. Höhe",
+			"type": "Boolean",
+			"value": false,
+			"popular": false,
+			"readonly": false,
+			"optional": false
+		},
+		{
+			"id": "ws_weighty",
+			"title": "WeightY",
+			"title_de": "WichtungY",
+			"type": "Integer",
+			"value": 1,
+			"popular": false,
+			"readonly": false,
+			"optional": true
+		},
+		{
 			"id": "ws_aligny",
 			"type": "Choice",
 			"title": "AlignY",
-			"title_de": "Ausrichtung Y",
+			"title_de": "AusrichtungY",
 			"prefix": "oryx",
 			"value": "middle",
 			"readonly": false,
@@ -282,6 +282,16 @@
 				"value": "bottom",
 				"refToView": ""
 			}]
+		},
+		{
+			"id": "ws_scrollbar",
+			"title": "Scrollbar",
+			"title_de": "Scrollbar",
+			"type": "Boolean",
+			"value": false,
+			"popular": false,
+			"readonly": false,
+			"optional": false
 		},
 		{
 			"id": "ws_css",
