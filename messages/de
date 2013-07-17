@@ -3957,5 +3957,17 @@
     {
         "msgid": "shell.website_saved",
         "msgstr": "Website gespeichert"
+    },
+    {
+        "msgid": "teameditor.createteam.team_manage_is_false",
+        "msgstr": "Keine Berechtigung zum Anlegen von Teams"
+    },
+    {
+        "msgid": "importing.deleteImport",
+        "msgstr": "löschen"
+    },
+    {
+        "msgid": "importing.importingDeleted",
+        "msgstr": "Import gelöscht"
     }
 ]

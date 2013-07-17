@@ -163,12 +163,6 @@
 				"title": "100px",
 				"value": "100px",
 				"refToView": ""
-			},
-			{
-				"id": "c3",
-				"title": "100%",
-				"value": "100%",
-				"refToView": ""
 			}]
 		},
 		{
@@ -193,23 +187,7 @@
 				"title": "100px",
 				"value": "100px",
 				"refToView": ""
-			},
-			{
-				"id": "c3",
-				"title": "100%",
-				"value": "100%",
-				"refToView": ""
 			}]
-		},
-		{
-			"id": "ws_flex",
-			"title": "Flex",
-			"title_de": "Flexible",
-			"type": "Boolean",
-			"value": true,
-			"popular": false,
-			"readonly": false,
-			"optional": false
 		},
 		{
 			"id": "ws_scrollbar",
@@ -217,6 +195,26 @@
 			"title_de": "Scrollbar",
 			"type": "Boolean",
 			"value": false,
+			"popular": false,
+			"readonly": false,
+			"optional": false
+		},
+		{
+			"id": "ws_weightx",
+			"title": "Weight X",
+			"title_de": "Wichtung X",
+			"type": "Integer",
+			"value": 1,
+			"popular": false,
+			"readonly": false,
+			"optional": false
+		},
+		{
+			"id": "ws_weighty",
+			"title": "Weight Y",
+			"title_de": "Wichtung Y",
+			"type": "Integer",
+			"value": 1,
 			"popular": false,
 			"readonly": false,
 			"optional": false
