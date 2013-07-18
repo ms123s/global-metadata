@@ -140,6 +140,35 @@
 		}]
 	},
 	{
+		"name": "html",
+		"properties": [{
+			"id": "ws_css",
+			"type": "text",
+			"config":{"mode":"text/css","width":"600","height":"800"},
+			"title": "CSS",
+			"title_de": "CSS",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
+		},
+		{
+			"id": "ws_js",
+			"type": "text",
+			"config":{"mode":"text/javascript","width":"600","height":"800"},
+			"title": "Javascript",
+			"title_de": "Javascript",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
+		}]
+	},
+	{
 		"name": "contentelement",
 		"properties": [{
 			"id": "ws_width",
@@ -292,32 +321,6 @@
 			"popular": false,
 			"readonly": false,
 			"optional": false
-		},
-		{
-			"id": "ws_css",
-			"type": "text",
-			"config":{"mode":"text/css","width":"600","height":"800"},
-			"title": "CSS",
-			"title_de": "CSS",
-			"prefix": "oryx",
-			"value": "",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": ""
-		},
-		{
-			"id": "ws_js",
-			"type": "text",
-			"config":{"mode":"text/javascript","width":"600","height":"800"},
-			"title": "Javascript",
-			"title_de": "Javascript",
-			"prefix": "oryx",
-			"value": "",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": ""
 		}]
 	},
 	{
@@ -638,7 +641,7 @@
 			"optional": true,
 			"refToView": ""
 		}],
-		"propertyPackages": ["base", "contentelement", "border","color" ]
+		"propertyPackages": ["base", "html", "contentelement", "border","color" ]
 	},
 	{
 		"type": "node",
@@ -667,7 +670,7 @@
 			"optional": true,
 			"refToView": ""
 		}],
-		"propertyPackages": ["base", "contentelement", "border","color" ]
+		"propertyPackages": ["base", "html", "contentelement", "border","color" ]
 	},
 	{
 		"type": "node",
@@ -691,6 +694,57 @@
 				"optional":true,
 				"refToView":"",
 				"length":"30"
+		},
+		{
+			"id": "ws_menutype",
+			"type": "Choice",
+			"title": "Menutype",
+			"title_de": "Menütyp",
+			"prefix": "oryx",
+			"value": "html",
+			"description": "The link type",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Html",
+				"value": "html"
+			},
+			{
+				"id": "c2",
+				"title": "Tree",
+				"title_de": "Baum",
+				"value": "tree"
+			} ]
+		},
+		{
+			"id": "ws_css",
+			"type": "text",
+			"config":{"mode":"text/css","width":"600","height":"800"},
+			"title": "CSS",
+			"title_de": "CSS",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"visible": "ws_menutype=='html'",
+			"refToView": ""
+		},{
+			"id": "ws_js",
+			"type": "text",
+			"config":{"mode":"text/javascript","width":"600","height":"800"},
+			"title": "Javascript",
+			"title_de": "Javascript",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"visible": "ws_menutype=='html'",
+			"optional": true,
+			"refToView": ""
 		}], 
 		"propertyPackages": ["base", "contentelement", "border","color" ]
 	},
@@ -950,7 +1004,7 @@
 				"optional": false
 			}]
 		}],
-		"propertyPackages": ["contentelement" ]
+		"propertyPackages": ["html", "contentelement" ]
 	},
 	{
 		"type": "node",
