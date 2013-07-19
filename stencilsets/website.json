@@ -195,6 +195,16 @@
 			}]
 		},
 		{
+			"id": "ws_colspan",
+			"title": "Columnspan",
+			"title_de": "Spaltenumfassend",
+			"type": "Integer",
+			"value": 1,
+			"popular": false,
+			"readonly": false,
+			"optional": true
+		},
+		{
 			"id": "ws_weightx",
 			"title": "WeightX",
 			"title_de": "WichtungX",
@@ -696,6 +706,18 @@
 				"length":"30"
 		},
 		{
+			"id": "ws_title",
+			"type": "Text",
+			"title": "Title",
+			"title_de": "Überschrift",
+			"prefix": "oryx",
+			"value": null,
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "128"
+		},
+		{
 			"id": "ws_menutype",
 			"type": "Choice",
 			"title": "Menutype",
@@ -1124,7 +1146,7 @@
 			"role": "menu",
 			"contains": ["menu_item"]
 		}
-],
+    ],
 		"xorphingRules": [{
 			"role": "controls_morph",
 			"baseMorphs": ["Input"]
