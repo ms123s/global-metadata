@@ -887,6 +887,13 @@
 			},
 			{
 				"id": "c5",
+				"title": "Webpage(Html)",
+				"value": "webpage",
+				"icon": "webpage.png",
+				"refToView": "webpage"
+			},
+			{
+				"id": "c6",
 				"title": "Internet",
 				"value": "internet",
 				"icon": "internet.png",
@@ -942,6 +949,19 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
+		},
+		{
+			"id": "ws_webpage",
+			"type": "String",
+			"title": "Webpage(Html)",
+			"title_de": "Webpage(Html)",
+			"prefix": "oryx",
+			"visible": "ws_linktype=='webpage'",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "128"
 		},
 		{
 			"id": "ws_contentid",
