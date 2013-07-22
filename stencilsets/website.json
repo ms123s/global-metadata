@@ -641,7 +641,7 @@
 		"properties": [{
 			"id": "ws_markdown",
 			"type": "text",
-			"config":{"mode":"text/tiki"},
+			"config":{"mode":"text/tiki", "helper":"DocumentMarkdown","toolbarAddon":"WikiMarkdown"},
 			"title": "Text",
 			"title_de": "Text",
 			"prefix": "oryx",
