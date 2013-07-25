@@ -572,12 +572,12 @@
 				"id": "c1",
 				"title": "Html",
 				"value": "html",
-				"refToView": ""
+				"refToView": "html"
 			},{
 				"id": "c2",
 				"title": "Markdown",
 				"value": "markdown",
-				"refToView": ""
+				"refToView": "markdown"
 			} ]
 		},
 		{
