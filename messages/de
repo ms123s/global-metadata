@@ -3973,5 +3973,9 @@
     {
         "msgid": "shell.webpage_saved",
         "msgstr": "Webpage gespeichert"
+    },
+    {
+        "msgid": "shell.nt_webpage",
+        "msgstr": "Webpage"
     }
 ]
