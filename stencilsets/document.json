@@ -107,27 +107,6 @@
 			"popular": true,
 			"readonly": false,
 			"optional": false
-		},{
-			"id": "xf_engine",
-			"type": "Choice",
-			"title": "Template",
-			"title_de": "Template",
-			"prefix": "oryx",
-			"value": "groovy",
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "StringTemplate",
-				"value": "st",
-				"refToView": ""
-			},{
-				"id": "c2",
-				"title": "Groovy",
-				"value": "groovy",
-				"refToView": ""
-			}]
 		}]
 	}],
 	"stencils": [{
@@ -543,20 +522,6 @@
 			"refToView": "bg_frame",
 			"fill": false,
 			"stroke": true
-		},{
-			"id": "xf_filter",
-			"type": "ResourceSelector",
-			"config": {"type":"sw.filter","prefix":""},
-			"title": "Filtername",
-			"title_de": "Filtername",
-			"value": "",
-			"description": "Filtername",
-			"description_de": "Name des Filters",
-			"popular": false,
-			"readonly": false,
-			"visible": false,
-			"optional": false,
-			"length": "50"
 		}, {
 			"id": "xf_type",
 			"type": "Choice",
@@ -593,6 +558,29 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
+		},{
+			"id": "xf_syntax",
+			"type": "Choice",
+			"title": "Syntax",
+			"title_de": "Syntax",
+			"prefix": "oryx",
+			"visible": "xf_type=='markdown'",
+			"value": "xwiki",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "XWiki",
+				"value": "xwiki",
+				"refToView": ""
+			},{
+				"id": "c2",
+				"title": "Mediawiki",
+				"value": "mediawiki",
+				"refToView": ""
+			}]
 		}, {
 			"id": "xf_html",
 			"type": "html",
