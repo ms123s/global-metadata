@@ -40,8 +40,8 @@
             "enabled": true
         },
         {
-            "name": "filter",
-            "enabled": false
+            "name": "sidebar",
+            "enabled": true
         },
         {
             "name": "add_self_to_subpanel",

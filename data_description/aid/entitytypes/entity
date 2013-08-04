@@ -89,7 +89,7 @@
             "datatype": "boolean"
         },
         "filter": {
-            "enabled": true,
+            "enabled": false,
             "name": "filter",
             "datatype": "string"
         },

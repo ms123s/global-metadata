@@ -468,7 +468,7 @@
     },
     {
         "msgid": "data.entity.exclusion_list",
-        "msgstr": "Ausschlussliste verwendbar"
+        "msgstr": "Ausschlussliste"
     },
     {
         "msgid": "composite.exclusion_list",
@@ -908,7 +908,7 @@
     },
     {
         "msgid": "data.entity.default_fields",
-        "msgstr": "Default Eigenschaften"
+        "msgstr": "Autogen. Felder wie Owner,Mod.Time"
     },
     {
         "msgid": "data.field.default_value",
@@ -1956,7 +1956,11 @@
     },
     {
         "msgid": "data.entity.multi_add",
-        "msgstr": "Mehrfacherstellung von Entitäten"
+        "msgstr": "Serienerzeugung"
+    },
+    {
+        "msgid": "data.entity.add_self_to_subpanel",
+        "msgstr": "Zusätzliche Anzeige im Subpanel"
     },
     {
         "msgid": "tasks.table.assigned",
@@ -3196,7 +3200,7 @@
     },
     {
         "msgid": "data.entity.team_security",
-        "msgstr": "Teams zuordnen"
+        "msgstr": "Teamverwaltung"
     },
     {
         "msgid": "ruleseditor.test",
