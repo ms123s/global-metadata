@@ -8,6 +8,11 @@
             "enabled": true,
             "permission": "website:entities:data:anfrage",
             "actions": "read,write"
+        },
+        {
+            "enabled": true,
+            "permission": "website:entities:data:address",
+            "actions": "read,write"
         }
     ]
 }

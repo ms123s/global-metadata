@@ -12,6 +12,7 @@
     "name": "entity",
     "multi_add": false,
     "multiple_tabs": false,
+    "sidebar": false,
     "exclusion_list": false,
     "filter": "",
     "__hints__": {
@@ -73,6 +74,12 @@
             "enabled": true,
             "default_value": false,
             "name": "multiple_tabs",
+            "datatype": "boolean"
+        },
+        "sidebar": {
+            "enabled": true,
+            "default_value": false,
+            "name": "sidebar",
             "datatype": "boolean"
         },
         "team_security": {

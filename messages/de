@@ -1339,6 +1339,10 @@
         "msgstr": "Filter kombinieren"
     },
     {
+        "msgid": "data.entity.sidebar",
+        "msgstr": "Sidebar"
+    },
+    {
         "msgid": "meta.lists.del_filter",
         "msgstr": "Filter löschen"
     },
@@ -3977,5 +3981,9 @@
     {
         "msgid": "shell.nt_webpage",
         "msgstr": "Webpage"
+    },
+    {
+        "msgid": "widgets.table.select_record",
+        "msgstr": "Datensatzauswahl"
     }
 ]
