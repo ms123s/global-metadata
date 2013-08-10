@@ -755,8 +755,16 @@
         "msgstr": "Das Schema wirklich löschen? <b>Alle Daten gehen verloren!</b>"
     },
     {
+        "msgid": "entitytypes.databasescheme_clean.klass_confirm",
+        "msgstr": "Das Schema für ausgewählte Klassen wirklich löschen? <b>Die Daten für diese Klassen gehen verloren!</b>"
+    },
+    {
         "msgid": "entitytypes.databasescheme_clean",
-        "msgstr": "Databaseschema löschen"
+        "msgstr": "Databaseschema komplett löschen"
+    },
+    {
+        "msgid": "entitytypes.databasescheme_table_clean",
+        "msgstr": "Databaseschema für ausgewählte Klassen löschen"
     },
     {
         "msgid": "shell.file_created",
@@ -3989,5 +3997,9 @@
     {
         "msgid": "widgets.table.select_record",
         "msgstr": "Datensatzauswahl"
+    },
+    {
+        "msgid": "entitytypes.edit_entitytype",
+        "msgstr": "Klassendetails"
     }
 ]

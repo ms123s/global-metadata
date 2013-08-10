@@ -811,7 +811,7 @@
 			"title": "Id",
 			"prefix": "oryx",
 			"value": "",
-			"popular": true,
+			"include": false,
 			"description": "",
 			"readonly": false,
 			"optional": false,
@@ -830,6 +830,16 @@
 			"optional": true,
 			"refToView": "menuitem",
 			"length": "60"
+		},
+		{
+			"id": "ws_enabled",
+			"title": "Enabled",
+			"title_de": "Anzeigen",
+			"type": "Boolean",
+			"value": true,
+			"popular": true,
+			"readonly": false,
+			"optional": false
 		},
 		{
 			"id": "ws_locationid",
