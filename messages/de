@@ -3999,6 +3999,10 @@
         "msgstr": "Datensatzauswahl"
     },
     {
+        "msgid": "namespacesmanager.app_installed",
+        "msgstr": "Application installiert"
+    },
+    {
         "msgid": "entitytypes.edit_entitytype",
         "msgstr": "Klassendetails"
     }

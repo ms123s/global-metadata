@@ -171,6 +171,17 @@
 	{
 		"name": "contentelement",
 		"properties": [{
+			"id": "ws_usetabs",
+			"title": "Tabs",
+			"title_de": "Tabs",
+			"type": "Boolean",
+			"value": false,
+			"visible": "parent=='pageelement'",
+			"popular": true,
+			"readonly": false,
+			"optional": false
+		},
+		{
 			"id": "ws_width",
 			"type": "Combo",
 			"title": "Width",
@@ -247,40 +258,6 @@
 			}]
 		},
 		{
-			"id": "ws_height",
-			"type": "Combo",
-			"title": "Height",
-			"title_de": "Höhe",
-			"prefix": "oryx",
-			"value": "auto",
-			"popular": false,
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "auto",
-				"value": "auto",
-				"refToView": ""
-			},
-			{
-				"id": "c2",
-				"title": "100px",
-				"value": "100px",
-				"refToView": ""
-			}]
-		},
-		{
-			"id": "ws_minheight",
-			"title": "Min. height",
-			"title_de": "Als min. Höhe",
-			"type": "Boolean",
-			"value": false,
-			"popular": false,
-			"readonly": false,
-			"optional": false
-		},
-		{
 			"id": "ws_weighty",
 			"title": "WeightY",
 			"title_de": "WichtungY",
@@ -323,12 +300,47 @@
 			}]
 		},
 		{
+			"id": "ws_height",
+			"type": "Combo",
+			"title": "Height",
+			"title_de": "Höhe",
+			"prefix": "oryx",
+			"value": "auto",
+			"popular": false,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "auto",
+				"value": "auto",
+				"refToView": ""
+			},
+			{
+				"id": "c2",
+				"title": "100px",
+				"value": "100px",
+				"refToView": ""
+			}]
+		},
+		{
+			"id": "ws_minheight",
+			"title": "Min. height",
+			"title_de": "Als min. Höhe",
+			"type": "Boolean",
+			"value": false,
+			"popular": false,
+			"readonly": false,
+			"optional": false
+		},
+		{
 			"id": "ws_scrollbar",
 			"title": "Scrollbar",
 			"title_de": "Scrollbar",
 			"type": "Boolean",
 			"value": false,
 			"popular": false,
+			"include": false,
 			"readonly": false,
 			"optional": false
 		}]
