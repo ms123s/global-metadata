@@ -627,7 +627,7 @@
         "msgstr": "Beschreibung"
     },
     {
-        "msgid": "data.fieldets.tab1",
+        "msgid": "data.fieldet.tab1",
         "msgstr": "Beschreibung"
     },
     {
@@ -688,7 +688,7 @@
     },
     {
         "msgid": "meta.teams.form_not_valid",
-        "msgstr": "Bitte alle Eigenschaften ausfüllen"
+        "msgstr": "Bitte alle Felder ausfüllen"
     },
     {
         "msgid": "meta.tables.select_attribute",
@@ -888,7 +888,7 @@
     },
     {
         "msgid": "entitytypes.field_saved",
-        "msgstr": "Eigenschaft gespeichert"
+        "msgstr": "Feld gespeichert"
     },
     {
         "msgid": "entitytypes.update_db_successfull",
@@ -988,7 +988,7 @@
     },
     {
         "msgid": "moduleeditor.duplicate-check",
-        "msgstr": "Dublettencheck Eigenschaften"
+        "msgstr": "Dublettencheck"
     },
     {
         "msgid": "import.duplicated",
@@ -1012,139 +1012,143 @@
     },
     {
         "msgid": "entitytypeField.entitytypeField_saved",
-        "msgstr": "Eigenschaft gespeichert"
+        "msgstr": "Feld gespeichert"
     },
     {
         "msgid": "data.field.saved",
-        "msgstr": "Eigenschaft gespeichert"
+        "msgstr": "Feld gespeichert"
     },
     {
         "msgid": "entitytypes.leftfield",
-        "msgstr": "Eigenschaft im primären Modul"
+        "msgstr": "Feld im primären Modul"
     },
     {
         "msgid": "data.relation.leftfield",
-        "msgstr": "Eigenschaft im primären Modul"
+        "msgstr": "Feld im primären Modul"
     },
     {
         "msgid": "meta.relations.leftfield",
-        "msgstr": "Eigenschaft im primären Modul"
+        "msgstr": "Feld im primären Modul"
     },
     {
         "msgid": "meta.relations.rightfield",
-        "msgstr": "Eigenschaft im sekundären Modul"
+        "msgstr": "Feld im sekundären Modul"
     },
     {
         "msgid": "data.relation.rightfield",
-        "msgstr": "Eigenschaft im sekundären Modul"
+        "msgstr": "Feld im sekundären Modul"
     },
     {
         "msgid": "entitytypes.rightfield",
-        "msgstr": "Eigenschaft im sekundären Modul"
+        "msgstr": "Feld im sekundären Modul"
     },
     {
         "msgid": "data.field.created",
-        "msgstr": "Eigenschaft wurde gespeichert"
+        "msgstr": "Feld wurde gespeichert"
     },
     {
         "msgid": "entitytypes.attribute_takeit",
-        "msgstr": "Eigenschaft übernehmen"
+        "msgstr": "Feld übernehmen"
     },
     {
         "msgid": "data.module.fields",
-        "msgstr": "Eigenschaften"
+        "msgstr": "Felder"
     },
     {
         "msgid": "fieldselector.fields",
-        "msgstr": "Eigenschaften"
+        "msgstr": "Felder"
     },
     {
-        "msgid": "data.fieldets.tab2",
-        "msgstr": "Eigenschaften"
+        "msgid": "data.fieldet.tab2",
+        "msgstr": "Felder"
     },
     {
         "msgid": "meta.lists.fields",
-        "msgstr": "Eigenschaften"
+        "msgstr": "Felder"
     },
     {
         "msgid": "data.fieldset.fields",
-        "msgstr": "Eigenschaften"
+        "msgstr": "Felder"
     },
     {
         "msgid": "meta.enums.fields",
-        "msgstr": "Eigenschaften"
+        "msgstr": "Felder"
     },
     {
         "msgid": "data.field",
-        "msgstr": "Eigenschaften"
+        "msgstr": "Felder"
     },
     {
         "msgid": "fieldselector.properties",
-        "msgstr": "Eigenschaften"
+        "msgstr": "Felder"
     },
     {
         "msgid": "meta.lists.fieldtab",
-        "msgstr": "Eigenschaften"
+        "msgstr": "Felder"
     },
     {
         "msgid": "meta.fieldset.fields",
-        "msgstr": "Eigenschaften"
+        "msgstr": "Felder"
     },
     {
         "msgid": "meta.fieldsets.fields",
-        "msgstr": "Eigenschaften"
+        "msgstr": "Felder"
     },
     {
         "msgid": "settings.fields",
-        "msgstr": "Eigenschaften"
+        "msgstr": "Felder"
     },
     {
         "msgid": "data.module.field_list",
-        "msgstr": "Eigenschaften"
+        "msgstr": "Felder"
     },
     {
         "msgid": "meta.wactions.editfields",
-        "msgstr": "Eigenschaften auswählen"
+        "msgstr": "Felder auswählen"
     },
     {
         "msgid": "wactions.fieldaction",
-        "msgstr": "Eigenschaften bearbeiten"
+        "msgstr": "Felder bearbeiten"
     },
     {
         "msgid": "data.wactions.saved",
-        "msgstr": "Eigenschaften gespeichert"
+        "msgstr": "Felder gespeichert"
     },
     {
         "msgid": "moduleeditor.fields_saved",
-        "msgstr": "Eigenschaften gespeichert"
+        "msgstr": "Felder gespeichert"
     },
     {
         "msgid": "meta.wactions.uebernehmen",
-        "msgstr": "Eigenschaften übernehmen"
+        "msgstr": "Felder übernehmen"
     },
     {
         "msgid": "settings.fieldsets",
-        "msgstr": "Eigenschaften(gemeinsame Suche)"
+        "msgstr": "Fieldsets(gemeinsame Suche)"
+    },
+    {
+        "msgid": "settings.fieldsets_saved",
+        "msgstr": "Fieldsets gespeichert"
     },
     {
         "msgid": "meta.fieldset.fsname",
-        "msgstr": "EigenschaftenSet Name"
+        "msgstr": "Fieldset Name"
     },
     {
         "msgid": "meta.fieldsets.save",
-        "msgstr": "EigenschaftenSet übernehmen, anschließend noch \"Eigenschaften\" speichern"
+        "msgstr": "Fieldset übernehmen, abschließend muss noch gespeichert werden"
     },
     {
         "msgid": "configeditor.fieldsets",
-        "msgstr": "EigenschaftenSets"
+        "msgstr": "Fieldsets"
     },
     {
         "msgid": "meta.lists.fields_save",
-        "msgstr": "Eigenschaftenspeichern"
+        "msgstr": "Felder speichern"
     },
     {
         "msgid": "settings.name",
-        "msgstr": "Eigenschaftsname in der Klasse"
+        "msgstr": "Feldname"
     },
     {
         "msgid": "moduleaccesseditor.owner",
@@ -1168,7 +1172,7 @@
     },
     {
         "msgid": "settings.view_properties",
-        "msgstr": "Einstellungen der Sicht"
+        "msgstr": "Einstellungen"
     },
     {
         "msgid": "import.import_saved",
@@ -1201,6 +1205,10 @@
     {
         "msgid": "permissions.enabled",
         "msgstr": "Enabled"
+    },
+    {
+        "msgid": "permissions.entities",
+        "msgstr": "Entitäten(Klassen)"
     },
     {
         "msgid": "processexplorer.endTime",
@@ -2240,7 +2248,7 @@
     },
     {
         "msgid": "meta.fieldsets.fsname",
-        "msgstr": "Name des EigenschaftenSets"
+        "msgstr": "Name des Fieldset"
     },
     {
         "msgid": "meta.lists.filter_name",
@@ -2348,7 +2356,7 @@
     },
     {
         "msgid": "entitytypes.new_field",
-        "msgstr": "Neue Eigenschaft"
+        "msgstr": "Neues Feld"
     },
     {
         "msgid": "entitytypes.new_entitytype",
@@ -2459,7 +2467,7 @@
         "msgstr": "Operatoren"
     },
     {
-        "msgid": "data.fieldets.tab3",
+        "msgid": "data.fieldet.tab3",
         "msgstr": "Operatoren"
     },
     {
@@ -3103,18 +3111,6 @@
         "msgstr": "Tab/Form"
     },
     {
-        "msgid": "data.fieldset.tab1",
-        "msgstr": "Tab1"
-    },
-    {
-        "msgid": "data.fieldset.tab2",
-        "msgstr": "Tab2"
-    },
-    {
-        "msgid": "data.fieldset.tab3",
-        "msgstr": "Tab3"
-    },
-    {
         "msgid": "entitytypes.create_table_settings",
         "msgstr": "Tabelleneinstellungen erzeugen"
     },
@@ -3532,7 +3528,7 @@
     },
     {
         "msgid": "meta.lists.listfields_saved",
-        "msgstr": "ausgewählte Eigenschaften gespeichert"
+        "msgstr": "ausgewählte Felder gespeichert"
     },
     {
         "msgid": "meta.traits.tree.title",

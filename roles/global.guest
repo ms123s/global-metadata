@@ -13,6 +13,16 @@
             "enabled": true,
             "permission": "website:entities:data:address",
             "actions": "read,write"
+        },
+        {
+            "enabled": true,
+            "permission": "website:entities:data:addressbook",
+            "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "website:entities:data:addressgroup",
+            "actions": "read"
         }
     ]
 }
