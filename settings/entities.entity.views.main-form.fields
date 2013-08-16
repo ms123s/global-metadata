@@ -29,23 +29,23 @@
         },
         {
             "name": "multiple_tabs",
-            "enabled": true
+            "enabled": false
         },
         {
             "name": "exclusion_list",
-            "enabled": true
+            "enabled": false
         },
         {
             "name": "multi_add",
-            "enabled": true
+            "enabled": false
         },
         {
             "name": "sidebar",
-            "enabled": true
+            "enabled": false
         },
         {
             "name": "add_self_to_subpanel",
-            "enabled": true
+            "enabled": false
         },
         {
             "name": "_team_list",

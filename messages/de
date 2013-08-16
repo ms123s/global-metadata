@@ -223,6 +223,10 @@
         "msgstr": "Angezeigter Name (aus Messages)"
     },
     {
+        "msgid": "settings.properties_saved",
+        "msgstr": "Properties gespeichert"
+    },
+    {
         "msgid": "settings.views_selected_items_saved",
         "msgstr": "Einstellung gespeichert"
     },

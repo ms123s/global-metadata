@@ -62,7 +62,7 @@
             "name": "default_fields",
             "datatype": "boolean"
         },
-        "pack": {
+        "xpack": {
             "enabled": true,
             "default_value": "data",
             "name": "pack",
