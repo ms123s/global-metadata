@@ -571,6 +571,26 @@
         "msgstr": "Beschreibung"
     },
     {
+        "msgid": "data._updated_by",
+        "msgstr": "Geändert von"
+    },
+    {
+        "msgid": "data._owner",
+        "msgstr": "Besitzer"
+    },
+    {
+        "msgid": "data._updated_at",
+        "msgstr": "Geändert am"
+    },
+    {
+        "msgid": "data._created_at",
+        "msgstr": "Erstellt am"
+    },
+    {
+        "msgid": "data._created_by",
+        "msgstr": "Erstellt von"
+    },
+    {
         "msgid": "data.enumfield.description",
         "msgstr": "Beschreibung"
     },
@@ -627,7 +647,7 @@
         "msgstr": "Beschreibung"
     },
     {
-        "msgid": "data.fieldet.tab1",
+        "msgid": "data.fieldset.tab1",
         "msgstr": "Beschreibung"
     },
     {
@@ -1059,7 +1079,7 @@
         "msgstr": "Felder"
     },
     {
-        "msgid": "data.fieldet.tab2",
+        "msgid": "data.fieldset.tab2",
         "msgstr": "Felder"
     },
     {
@@ -1097,6 +1117,10 @@
     {
         "msgid": "settings.fields",
         "msgstr": "Felder"
+    },
+    {
+        "msgid": "settings.properties",
+        "msgstr": "Properties"
     },
     {
         "msgid": "data.module.field_list",
@@ -1172,7 +1196,7 @@
     },
     {
         "msgid": "settings.view_properties",
-        "msgstr": "Einstellungen"
+        "msgstr": "Properties"
     },
     {
         "msgid": "import.import_saved",
@@ -1448,7 +1472,7 @@
     },
     {
         "msgid": "window.settings",
-        "msgstr": "Globale Einstellungen für Klassen und Klasseneigenschaften"
+        "msgstr": "Globale Einstellungen"
     },
     {
         "msgid": "mainmenu.globalsearch",
@@ -2467,7 +2491,7 @@
         "msgstr": "Operatoren"
     },
     {
-        "msgid": "data.fieldet.tab3",
+        "msgid": "data.fieldset.tab3",
         "msgstr": "Operatoren"
     },
     {
@@ -2896,7 +2920,7 @@
     },
     {
         "msgid": "settings.views",
-        "msgstr": "Sichten"
+        "msgstr": "Views"
     },
     {
         "msgid": "main.logout",
