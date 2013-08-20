@@ -7,10 +7,6 @@
         "msgstr": "\"default\" nicht erlaubt"
     },
     {
-        "msgid": "data.wactions.value",
-        "msgstr": "###"
-    },
-    {
         "msgid": "%1 does not fit %2.",
         "msgstr": "%1:Eingabe entspricht nicht dem Muster  %2."
     },
@@ -131,7 +127,7 @@
         "msgstr": "Adressen"
     },
     {
-        "msgid": "meta.wactions.type",
+        "msgid": "meta.tactions.type",
         "msgstr": "Aktion"
     },
     {
@@ -143,7 +139,7 @@
         "msgstr": "Aktion"
     },
     {
-        "msgid": "data.wactions.created",
+        "msgid": "data.tactions.created",
         "msgstr": "Aktion angelegt"
     },
     {
@@ -176,10 +172,6 @@
     },
     {
         "msgid": "data.wconditions.active",
-        "msgstr": "Aktiv"
-    },
-    {
-        "msgid": "data.wactions.active",
         "msgstr": "Aktiv"
     },
     {
@@ -567,10 +559,6 @@
         "msgstr": "Beschreibung"
     },
     {
-        "msgid": "data.wactions.description",
-        "msgstr": "Beschreibung"
-    },
-    {
         "msgid": "entitytypes.create_class.description",
         "msgstr": "Beschreibung"
     },
@@ -863,6 +851,10 @@
         "msgstr": "Datensatz anzeigen"
     },
     {
+        "msgid": "widgets.table.save_settings",
+        "msgstr": "Einstellung speichern"
+    },
+    {
         "msgid": "widgets.table.copy_button",
         "msgstr": "Datensatz duplizieren"
     },
@@ -1131,15 +1123,15 @@
         "msgstr": "Felder"
     },
     {
-        "msgid": "meta.wactions.editfields",
+        "msgid": "meta.tactions.editfields",
         "msgstr": "Felder auswählen"
     },
     {
-        "msgid": "wactions.fieldaction",
+        "msgid": "tactions.fieldaction",
         "msgstr": "Felder bearbeiten"
     },
     {
-        "msgid": "data.wactions.saved",
+        "msgid": "data.tactions.saved",
         "msgstr": "Felder gespeichert"
     },
     {
@@ -1147,7 +1139,7 @@
         "msgstr": "Felder gespeichert"
     },
     {
-        "msgid": "meta.wactions.uebernehmen",
+        "msgid": "meta.tactions.uebernehmen",
         "msgstr": "Felder übernehmen"
     },
     {
@@ -1275,7 +1267,7 @@
         "msgstr": "Erledigte Prozesse"
     },
     {
-        "msgid": "meta.wactions.create-record",
+        "msgid": "meta.tactions.create-record",
         "msgstr": "Erstellen eines Datensatzes in einem verbundenen Modul"
     },
     {
@@ -2127,7 +2119,7 @@
         "msgstr": "Modul"
     },
     {
-        "msgid": "meta.wactions.targetmodule",
+        "msgid": "meta.tactions.targetmodule",
         "msgstr": "Modul"
     },
     {
@@ -2643,7 +2635,7 @@
         "msgstr": "Prozess starten"
     },
     {
-        "msgid": "wactions.processaction",
+        "msgid": "tactions.processaction",
         "msgstr": "Prozess starten"
     },
     {
@@ -2915,11 +2907,11 @@
         "msgstr": "Serienbrief erstellen"
     },
     {
-        "msgid": "wactions.servicelabel",
+        "msgid": "tactions.servicelabel",
         "msgstr": "Service"
     },
     {
-        "msgid": "wactions.serviceaction",
+        "msgid": "tactions.serviceaction",
         "msgstr": "Service ausführen"
     },
     {
@@ -2940,7 +2932,11 @@
     },
     {
         "msgid": "settings.views.propertyedit.orderby",
-        "msgstr": "Sotierung nach"
+        "msgstr": "Sortierung nach"
+    },
+    {
+        "msgid": "settings.views.propertyedit.horizontal_scroll",
+        "msgstr": "Horizontaler Scrollbalken"
     },
     {
         "msgid": "configeditor.column",
@@ -3015,8 +3011,12 @@
         "msgstr": "Speichern"
     },
     {
-        "msgid": "meta.wactions.save",
+        "msgid": "meta.tactions.save",
         "msgstr": "Speichern"
+    },
+    {
+        "msgid": "data.tactions.active",
+        "msgstr": "Aktiv"
     },
     {
         "msgid": "meta.workflows.save",
@@ -3243,11 +3243,7 @@
         "msgstr": "Trigger Editor"
     },
     {
-        "msgid": "window.data.workfloweditor",
-        "msgstr": "Trigger Editor"
-    },
-    {
-        "msgid": "mainmenu.workfloweditor",
+        "msgid": "window.data.triggereditor",
         "msgstr": "Trigger Editor"
     },
     {
@@ -3807,11 +3803,11 @@
         "msgstr": "Ändern  aller Sätze des Filters"
     },
     {
-        "msgid": "meta.wactions.update-target",
+        "msgid": "meta.tactions.update-target",
         "msgstr": "Ändern von Eigenschaften im Zielmodul"
     },
     {
-        "msgid": "meta.wactions.update-related",
+        "msgid": "meta.tactions.update-related",
         "msgstr": "Ändern von Eigenschaften in einem verknüpften Modul"
     },
     {
@@ -3973,6 +3969,18 @@
     {
         "msgid": "meta.triggers.tactions",
         "msgstr": "Aktionen"
+    },
+    {
+        "msgid": "data.taction.active",
+        "msgstr": "Aktiv"
+    },
+    {
+        "msgid": "data.taction.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.taction.value",
+        "msgstr": "Wert"
     },
     {
         "msgid": "meta.triggers.new-and-updated-records",
