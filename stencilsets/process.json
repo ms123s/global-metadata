@@ -26,7 +26,7 @@
 			"description_de": "Bezeichnung des BPMN-Elementes.",
 			"readonly": false,
 			"optional": true,
-			"length": "",
+			"length": "64",
 			"wrapLines": true,
 			"refToView": "text_name"
 		},
