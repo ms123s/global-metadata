@@ -2843,6 +2843,10 @@
         "msgstr": "Rollen-ID"
     },
     {
+        "msgid": "roleselector.namespace",
+        "msgstr": "Namespace"
+    },
+    {
         "msgid": "searchfilter.resetbutton",
         "msgstr": "Rücksetzen"
     },

@@ -1,0 +1,9 @@
+[sw]
+	type = sw.role
+--
+{
+    "name": "global.mitarbeiter",
+    "permissions": [
+
+    ]
+}
