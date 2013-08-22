@@ -4039,6 +4039,10 @@
         "msgstr": "Application installiert"
     },
     {
+        "msgid": "namespacesmanager.confirm_delete",
+        "msgstr": "<b>Achtung! Namespace wird komplett gelöscht, einschliesslich Repository!!</b>"
+    },
+    {
         "msgid": "entitytypes.edit_entitytype",
         "msgstr": "Klassendetails"
     }
