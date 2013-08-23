@@ -547,6 +547,7 @@
       "type" : "Text",
       "title" : "Flow condition",
       "title_de" : "Flußbedingung",
+			"visible": "conditionalflow!='None'",
       "value" : "",
       "description" : "The condition of the sequence flow",
       "popular" : true

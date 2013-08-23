@@ -71,6 +71,18 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
+		},
+		{
+			"id": "xf_postprocess",
+			"config":{"mode":"text/x-groovy"},
+			"type": "Text",
+			"title": "Postprocess",
+			"title_de": "Nachbearbeitung",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"length": "50"
 		}]
 	},
 	{
@@ -214,6 +226,28 @@
 				"title": "false",
 				"refToView": ""
 			} ]
+		},
+		{
+			"id": "xf_filtercheck",
+			"type": "Complex",
+			"config": {"helperTree":["sw.filter"], "kind":"filterparam"},
+			"title": "Filtercheck",
+			"title_de": "Filtercheck",
+			"value": "",
+			"description": "",
+			"description_de": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "param",
+				"name": "Filterparam",
+				"name_de": "Filterparam",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}]
 		},
 		{
 			"id": "xf_constraint_text",
@@ -566,7 +600,7 @@
 			"description_de": "Name der Liste mit den auszuwählenden Elementen",
 			"popular": true,
 			"readonly": false,
-			"optional": false,
+			"optional": true,
 			"length": "50"
 		},
 		{

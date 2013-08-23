@@ -1668,7 +1668,7 @@
     },
     {
         "msgid": "filter.text.change_label",
-        "msgstr": "In Vergleichsnamen ändern"
+        "msgstr": "Parametername setzen"
     },
     {
         "msgid": "tasks.table.not_assigned",
@@ -4045,5 +4045,9 @@
     {
         "msgid": "entitytypes.edit_entitytype",
         "msgstr": "Klassendetails"
+    },
+    {
+        "msgid": "processes.taskform.notstarted",
+        "msgstr": "Task kann nicht gestartet werden"
     }
 ]
