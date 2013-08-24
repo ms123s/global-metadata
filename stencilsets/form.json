@@ -233,7 +233,7 @@
 			"config": {"helperTree":["sw.filter"], "kind":"filterparam"},
 			"title": "Filtercheck",
 			"title_de": "Filtercheck",
-			"value": "",
+			"value": null,
 			"description": "",
 			"description_de": "",
 			"popular": true,
