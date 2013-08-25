@@ -597,6 +597,33 @@
 			"popular": true,
 			"optional": false,
 			"length": "50"
+		},
+		{
+			"id": "initialParameter",
+			"type": "Complex",
+			"title": "Initialparameter",
+			"title_de": "Startparameter",
+			"value": "",
+			"readonly": false,
+			"popular": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name_de": "Name",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}]
 		}]
 	},
 	{

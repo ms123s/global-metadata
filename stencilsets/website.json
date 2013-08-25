@@ -916,6 +916,20 @@
 			},
 			{
 				"id": "c6",
+				"title": "Swf(Flash)",
+				"value": "swf",
+				"icon": "swf.png",
+				"refToView": "swf"
+			},
+			{
+				"id": "c7",
+				"title": "Pdf",
+				"value": "pdf",
+				"icon": "pdf.png",
+				"refToView": "pdf"
+			},
+			{
+				"id": "c8",
 				"title": "Internet",
 				"value": "internet",
 				"icon": "internet.png",
@@ -946,6 +960,30 @@
 			"value": "",
 			"refToView": "",
       "popular" : true
+		},
+		{
+			"id": "ws_swf",
+			"type": "String",
+			"title": "Swf(Flash)",
+			"prefix": "oryx",
+			"visible": "ws_linktype=='swf'",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "128"
+		},
+		{
+			"id": "ws_pdf",
+			"type": "String",
+			"title": "Pdf",
+			"prefix": "oryx",
+			"visible": "ws_linktype=='pdf'",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "128"
 		},
 		{
 			"id": "ws_js",

@@ -95,6 +95,10 @@
         "msgstr": "Addiere"
     },
     {
+        "msgid": "filter.text.new_label_name",
+        "msgstr": "Parametername"
+    },
+    {
         "msgid": "filter.text.add_to",
         "msgstr": "Addiere zu"
     },
