@@ -14,7 +14,7 @@
     <rect oryx:anchor="top" id="text_frame" oryx:resize="horizontal" x="0" y="0" width="110" height="24" stroke="none" stroke-width="0" fill="none" />
 		<text id="menuitem" 
 			oryx:fittoelem="text_frame"
-		font-size="8.5" x="23" y="11" oryx:align="middle left" oryx:anchor="top right bottom left" fill="#6694e3" stroke="black"></text>
+		font-size="8.5" x="30" y="11" oryx:align="middle left" oryx:anchor="top right bottom left" fill="#6694e3" stroke="black"></text>
 	</g>
     	
     <g id="workflow" transform="scale(1,1)">

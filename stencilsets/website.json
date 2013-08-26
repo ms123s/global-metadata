@@ -793,17 +793,28 @@
 		"roles": ["menu", "menu_item", "controls_morph"],
 		"layout" : [{"type" : "layout.website.menuitem"}],
 		"properties": [{
-      "id" : "ws_name",
-      "type" : "String",
-      "title" : "Name",
+			"id": "ws_name",
+			"type": "String",
+			"title": "Name",
 			"title_de": "Name",
-      "value" : "",
+			"prefix": "oryx",
+			"value": "",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"refToView": "text"
-		}], 
-		"propertyPackages": ["base" ]
+			"refToView": "_submenu"
+		},{
+			"id": "ws_enabled",
+			"title": "Enabled",
+			"title_de": "Anzeigen",
+			"type": "Boolean",
+			"value": true,
+			"popular": true,
+			"readonly": false,
+			"optional": false
+		}
+		], 
+		"propertyPackages": [ ]
 	},
 	{
 		"type": "node",
