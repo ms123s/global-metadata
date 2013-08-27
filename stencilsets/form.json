@@ -1010,12 +1010,11 @@
 	{
 		"type": "node",
 		"id": "Alert",
-		"title": "Alert",
-		"title_de": "Alarm",
+		"title": "Information",
+		"title_de": "Information",
 		"groups": ["Controls"],
-		"description": "Error alert for form controls.",
 		"view": "new_alert.svg",
-		"icon": "new_alert.png",
+		"icon": "infobox-20.png",
 		"roles": ["core_form_controls"],
 		"properties": [{
 			"id": "xf_id",
