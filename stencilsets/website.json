@@ -44,7 +44,235 @@
 			"stroke": true
 		}]
 	},
+	{
+		"name": "menuitem",
+		"properties": [{
+			"id": "ws_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"include": false,
+			"description": "",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "30"
+		},
 		{
+			"id": "ws_name",
+			"type": "String",
+			"title": "Name",
+			"title_de": "Name",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "menuitem",
+			"length": "60"
+		},
+		{
+			"id": "ws_enabled",
+			"title": "Enabled",
+			"title_de": "Anzeigen",
+			"type": "Boolean",
+			"value": true,
+			"popular": true,
+			"readonly": false,
+			"optional": false
+		},
+		{
+			"id": "ws_locationid",
+			"type": "Choice",
+			"config": {"type":"ms123.graphicaleditor.plugins.propertyedit.ShapeSelect","criteria":{"parentStencil":"Pageelement", "roles":["content_element"]},"propertyNames":["ws_id"], "delimeter":":"},
+			"title": "LocationId",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": []
+		},
+		{
+			"id": "ws_linktype",
+			"type": "Choice",
+			"title": "Linktype",
+			"title_de": "Linktyp",
+			"prefix": "oryx",
+			"value": "content",
+			"description": "The link type",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "Content",
+				"title_de": "Content",
+				"value": "content",
+				"icon": "markdown.png",
+				"refToView": "content"
+			},
+			{
+				"id": "c2",
+				"title": "ContentId",
+				"value": "contentid",
+				"icon": "contentid.png",
+				"refToView": "contentid"
+			},
+			{
+				"id": "c3",
+				"title": "Workflow",
+				"value": "workflow",
+				"icon": "system-run.png",
+				"refToView": "workflow"
+			},
+			{
+				"id": "c4",
+				"title": "Javascript",
+				"value": "js",
+				"icon": "js16.png",
+				"refToView": "js"
+			},
+			{
+				"id": "c5",
+				"title": "Webpage(Html)",
+				"value": "webpage",
+				"icon": "webpage.png",
+				"refToView": "webpage"
+			},
+			{
+				"id": "c6",
+				"title": "Swf(Flash)",
+				"value": "swf",
+				"icon": "swf.png",
+				"refToView": "swf"
+			},
+			{
+				"id": "c7",
+				"title": "Pdf",
+				"value": "pdf",
+				"icon": "pdf.png",
+				"refToView": "pdf"
+			},
+			{
+				"id": "c8",
+				"title": "Internet",
+				"value": "internet",
+				"icon": "internet.png",
+				"refToView": "internet"
+			} ]
+		},
+		{
+			"id": "ws_url",
+			"type": "String",
+			"title": "Url(Internet)",
+			"title_de": "Url(Internet)",
+			"prefix": "oryx",
+			"visible": "ws_linktype=='internet'",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "128"
+		},
+		{
+			"id": "ws_workflow",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.process","editable":true, "prefix":""},
+      "title" : "Workflow",
+      "title_de" : "Workflow",
+			"visible": "ws_linktype=='workflow'",
+			"prefix": "oryx",
+			"value": "",
+			"refToView": "",
+      "popular" : true
+		},
+		{
+			"id": "ws_swf",
+			"type": "String",
+			"title": "Swf(Flash)",
+			"prefix": "oryx",
+			"visible": "ws_linktype=='swf'",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "128"
+		},
+		{
+			"id": "ws_pdf",
+			"type": "String",
+			"title": "Pdf",
+			"prefix": "oryx",
+			"visible": "ws_linktype=='pdf'",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "128"
+		},
+		{
+			"id": "ws_js",
+			"type": "String",
+			"title": "Javascript",
+			"title_de": "Javascript",
+			"prefix": "oryx",
+			"visible": "ws_linktype=='js'",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "128"
+		},
+		{
+			"id": "ws_markdown",
+			"type": "text",
+			"title": "Content",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"visible": "ws_linktype=='content'",
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
+		},
+		{
+			"id": "ws_webpage",
+			"type": "String",
+			"title": "Webpage(Html)",
+			"title_de": "Webpage(Html)",
+			"prefix": "oryx",
+			"visible": "ws_linktype=='webpage'",
+			"value": "",
+			"popular": true,
+			"optional": true,
+			"refToView": "",
+			"length": "128"
+		},
+		{
+			"id": "ws_contentid",
+			"type": "Choice",
+			"config": {"type":"ms123.graphicaleditor.plugins.propertyedit.ShapeSelect","criteria":{"parentStencil":null, "fileType":"sw.website","roles":["content_element"]},"propertyNames":["fileName","ws_id"], "delimeter":":"},
+			"title": "ContentId",
+			"prefix": "oryx",
+			"visible": "ws_linktype=='contentid'",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"items": [ {
+				"id": "c1",
+				"title": "-",
+				"value": "none"
+			} ],
+			"refToView": ""
+		}
+	]
+	},
+	{
 		"name": "color",
 		"properties": [{
 			"id": "ws_backgroundcolor",
@@ -58,7 +286,7 @@
 			"length": "50"
 		}]
 	},
-		{
+	{
 		"name": "border",
 		"properties": [{
 			"id": "ws_bordercolor",
@@ -803,18 +1031,8 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": "_submenu"
-		},{
-			"id": "ws_enabled",
-			"title": "Enabled",
-			"title_de": "Anzeigen",
-			"type": "Boolean",
-			"value": true,
-			"popular": true,
-			"readonly": false,
-			"optional": false
-		}
-		], 
-		"propertyPackages": [ ]
+		}], 
+		"propertyPackages": [ "menuitem"]
 	},
 	{
 		"type": "node",
@@ -828,231 +1046,8 @@
 			"menu_item"
 		],
 		"layout":[{"type":"layout.website.label.menuitem"}],
-		"properties": [{
-			"id": "ws_id",
-			"type": "String",
-			"title": "Id",
-			"prefix": "oryx",
-			"value": "",
-			"include": false,
-			"description": "",
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"length": "30"
-		},
-		{
-			"id": "ws_name",
-			"type": "String",
-			"title": "Name",
-			"title_de": "Name",
-			"prefix": "oryx",
-			"value": "",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "menuitem",
-			"length": "60"
-		},
-		{
-			"id": "ws_enabled",
-			"title": "Enabled",
-			"title_de": "Anzeigen",
-			"type": "Boolean",
-			"value": true,
-			"popular": true,
-			"readonly": false,
-			"optional": false
-		},
-		{
-			"id": "ws_locationid",
-			"type": "Choice",
-			"config": {"type":"ms123.graphicaleditor.plugins.propertyedit.ShapeSelect","criteria":{"parentStencil":"Pageelement", "roles":["content_element"]},"propertyNames":["ws_id"], "delimeter":":"},
-			"title": "LocationId",
-			"prefix": "oryx",
-			"value": "",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"items": []
-		},
-		{
-			"id": "ws_linktype",
-			"type": "Choice",
-			"title": "Linktype",
-			"title_de": "Linktyp",
-			"prefix": "oryx",
-			"value": "content",
-			"description": "The link type",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "Content",
-				"title_de": "Content",
-				"value": "content",
-				"icon": "markdown.png",
-				"refToView": "content"
-			},
-			{
-				"id": "c2",
-				"title": "ContentId",
-				"value": "contentid",
-				"icon": "contentid.png",
-				"refToView": "contentid"
-			},
-			{
-				"id": "c3",
-				"title": "Workflow",
-				"value": "workflow",
-				"icon": "system-run.png",
-				"refToView": "workflow"
-			},
-			{
-				"id": "c4",
-				"title": "Javascript",
-				"value": "js",
-				"icon": "js16.png",
-				"refToView": "js"
-			},
-			{
-				"id": "c5",
-				"title": "Webpage(Html)",
-				"value": "webpage",
-				"icon": "webpage.png",
-				"refToView": "webpage"
-			},
-			{
-				"id": "c6",
-				"title": "Swf(Flash)",
-				"value": "swf",
-				"icon": "swf.png",
-				"refToView": "swf"
-			},
-			{
-				"id": "c7",
-				"title": "Pdf",
-				"value": "pdf",
-				"icon": "pdf.png",
-				"refToView": "pdf"
-			},
-			{
-				"id": "c8",
-				"title": "Internet",
-				"value": "internet",
-				"icon": "internet.png",
-				"refToView": "internet"
-			} ]
-		},
-		{
-			"id": "ws_url",
-			"type": "String",
-			"title": "Url(Internet)",
-			"title_de": "Url(Internet)",
-			"prefix": "oryx",
-			"visible": "ws_linktype=='internet'",
-			"value": "",
-			"popular": true,
-			"optional": true,
-			"refToView": "",
-			"length": "128"
-		},
-		{
-			"id": "ws_workflow",
-			"type": "ResourceSelector",
-			"config": {"type":"sw.process","editable":true, "prefix":""},
-      "title" : "Workflow",
-      "title_de" : "Workflow",
-			"visible": "ws_linktype=='workflow'",
-			"prefix": "oryx",
-			"value": "",
-			"refToView": "",
-      "popular" : true
-		},
-		{
-			"id": "ws_swf",
-			"type": "String",
-			"title": "Swf(Flash)",
-			"prefix": "oryx",
-			"visible": "ws_linktype=='swf'",
-			"value": "",
-			"popular": true,
-			"optional": true,
-			"refToView": "",
-			"length": "128"
-		},
-		{
-			"id": "ws_pdf",
-			"type": "String",
-			"title": "Pdf",
-			"prefix": "oryx",
-			"visible": "ws_linktype=='pdf'",
-			"value": "",
-			"popular": true,
-			"optional": true,
-			"refToView": "",
-			"length": "128"
-		},
-		{
-			"id": "ws_js",
-			"type": "String",
-			"title": "Javascript",
-			"title_de": "Javascript",
-			"prefix": "oryx",
-			"visible": "ws_linktype=='js'",
-			"value": "",
-			"popular": true,
-			"optional": true,
-			"refToView": "",
-			"length": "128"
-		},
-		{
-			"id": "ws_markdown",
-			"type": "text",
-			"title": "Content",
-			"prefix": "oryx",
-			"value": "",
-			"popular": true,
-			"visible": "ws_linktype=='content'",
-			"readonly": false,
-			"optional": true,
-			"refToView": ""
-		},
-		{
-			"id": "ws_webpage",
-			"type": "String",
-			"title": "Webpage(Html)",
-			"title_de": "Webpage(Html)",
-			"prefix": "oryx",
-			"visible": "ws_linktype=='webpage'",
-			"value": "",
-			"popular": true,
-			"optional": true,
-			"refToView": "",
-			"length": "128"
-		},
-		{
-			"id": "ws_contentid",
-			"type": "Choice",
-			"config": {"type":"ms123.graphicaleditor.plugins.propertyedit.ShapeSelect","criteria":{"parentStencil":null, "fileType":"sw.website","roles":["content_element"]},"propertyNames":["fileName","ws_id"], "delimeter":":"},
-			"title": "ContentId",
-			"prefix": "oryx",
-			"visible": "ws_linktype=='contentid'",
-			"value": "",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"items": [ {
-				"id": "c1",
-				"title": "-",
-				"value": "none"
-			} ],
-			"refToView": ""
-		}
-	]
+		"properties": [],
+		"propertyPackages": [ "menuitem"]
 	},
 	{
 		"type": "node",
