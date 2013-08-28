@@ -8,8 +8,8 @@
    height="26"
    version="1.0">
   <defs></defs>
-   <g oryx:minimumSize="30 24" oryx:maximumSize="350 24" >
-    <rect oryx:anchor="top" oryx:resize="horizontal" x="0" y="0" width="150" height="24" stroke="black" stroke-width="1" fill="#ffffff" />
+   <g oryx:minimumSize="30 24" oryx:maximumSize="350 240" >
+    <rect oryx:anchor="top" oryx:resize="vertical horizontal" x="0" y="0" width="150" height="24" stroke="black" stroke-width="1" fill="#ffffff" />
     
 		<text id="labeltext" font-size="12" x="20" y="12" oryx:align="middle left" fill="#ddba7a" style="font-weight: bold;" stroke="black">Information</text>
     <g id="html" transform="scale(1,1)">
