@@ -1056,7 +1056,17 @@
 			"menu_item"
 		],
 		"layout":[{"type":"layout.website.label.menuitem"}],
-		"properties": [],
+		"properties": [{
+			"id": "ws_scrollbar",
+			"title": "Scrollbar",
+			"title_de": "Scrollbar",
+			"type": "Boolean",
+			"value": true,
+			"popular": true,
+			"include": true,
+			"readonly": false,
+			"optional": false
+		}],
 		"propertyPackages": [ "menuitem"]
 	},
 	{
