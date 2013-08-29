@@ -571,6 +571,16 @@
 			"include": false,
 			"readonly": false,
 			"optional": false
+		},
+		{
+			"id": "ws_padding",
+			"title": "Padding(t,r,b,l)",
+			"type": "String",
+			"value": "3",
+			"popular": false,
+			"include": true,
+			"readonly": false,
+			"optional": false
 		}]
 	},
 	{
