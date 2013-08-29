@@ -1188,7 +1188,17 @@
 				"value": "south",
 				"refToView": "south"
 			}]
-		 }
+		 },{
+			"id": "ws_display",
+			"type": "String",
+			"title": "Display",
+			"title_de": "Anzeige",
+			"prefix": "oryx",
+			"value": null,
+			"readonly": false,
+			"optional": false,
+			"length": "50"
+		}
 	 ],
 		"propertyPackages": ["base","border","color","layoutcontainer" ]
 	},
