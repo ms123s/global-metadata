@@ -229,6 +229,7 @@
 		},
 		{
 			"id": "ws_markdown",
+			"config":{"mode":"text/tiki", "helper":"DocumentMarkdown","toolbarAddon":"WikiMarkdown"},
 			"type": "text",
 			"title": "Content",
 			"prefix": "oryx",

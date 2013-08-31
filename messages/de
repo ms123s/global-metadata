@@ -4053,5 +4053,21 @@
     {
         "msgid": "processes.taskform.notstarted",
         "msgstr": "Task kann nicht gestartet werden"
+    },
+    {
+        "msgid": "processscript.insert_create_object",
+        "msgstr": "createObject"
+    },
+    {
+        "msgid": "processscript.insert_get_objectbyid",
+        "msgstr": "getObjectById"
+    },
+    {
+        "msgid": "processscript.insert_filter_single",
+        "msgstr": "executeNamedFilter/Single"
+    },
+    {
+        "msgid": "processscript.insert_filter_list",
+        "msgstr": "executeNamedFilter/List"
     }
 ]
