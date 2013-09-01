@@ -122,7 +122,8 @@
 		"roles": ["standard_container"],
 
 		"layout": [{
-			"type": "layout.vertical",
+			"type": "layout.rows",
+			"verticalLayout":true,
 			"marginTop": 10,
 			"marginLeft": 30,
 			"spacingX": 30,
