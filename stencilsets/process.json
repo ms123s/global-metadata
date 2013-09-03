@@ -261,8 +261,48 @@
 			"optional": true,
 			"dateFormat": "j/m/y"
 		}]
-	},
-	{
+	},{
+    "name" : "asynchronousbase",
+    "properties" : [ {
+      "id" : "asynchronousdefinition",
+      "type" : "Choice",
+      "title" : "Asynchronous",
+      "title_de" : "Asynchron",
+      "value" : "No",
+      "description" : "Define the activity as asynchronous.",
+      "popular" : true,
+      "items" : [ {
+        "id" : "no",
+        "title" : "No",
+        "title_de" : "Nein",
+        "value" : "No"
+      }, {
+        "id" : "yes",
+        "title" : "Yes",
+        "title_de" : "Ja",
+        "value" : "Yes"
+      } ]
+    }, {
+      "id" : "exclusivedefinition",
+      "type" : "Choice",
+      "title" : "Exclusive",
+      "title_de" : "Exclusiv",
+      "value" : "Yes",
+      "description" : "Define the activity as exclusive.",
+      "popular" : true,
+      "items" : [ {
+        "id" : "no",
+        "title" : "No",
+        "title_de" : "Nein",
+        "value" : "No"
+      }, {
+        "id" : "yes",
+        "title" : "Yes",
+        "title_de" : "Ja",
+        "value" : "Yes"
+      } ]
+    } ]
+  }, {
 		"name": "loopcharacteristics",
 		"properties": [{
 			"id": "looptype",
@@ -626,6 +666,19 @@
 			}]
 		}]
 	},
+	{
+    "type" : "node",
+    "id" : "ReceiveTask",
+    "title" : "Receive task",
+    "title_de" : "Empfangsaufgabe",
+    "description" : "An task that waits for a signal",
+    "view" : "activity/receivetask.svg",
+    "icon" : "activity/list/type.receive.png",
+    "groups" : [ "Activities" ],
+		"groups_de": ["Aktivitäten"],
+    "propertyPackages" : [ "elementbase", "baseattributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
+  }, 
 	{
     "type" : "node",
     "id" : "CallActivity",
