@@ -10,7 +10,7 @@
       "type" : "String",
       "title" : "Id",
       "value" : "",
-			"include":false,
+			"include":true,
       "description" : "Unique identifier of the element.",
       "popular" : true
     }]
@@ -676,7 +676,7 @@
     "icon" : "activity/list/type.receive.png",
     "groups" : [ "Activities" ],
 		"groups_de": ["Aktivitäten"],
-    "propertyPackages" : [ "elementbase", "baseattributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
     "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
   }, 
 	{
