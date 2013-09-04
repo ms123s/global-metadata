@@ -411,8 +411,88 @@
       "popular" : false,
       "refToView" : "compensation"
     }]
-	},
-	{
+	},{
+    "name" : "servicetaskbase",
+    "properties" : [ {
+      "id" : "type",
+      "type" : "Choice",
+      "title" : "Type",
+			"title_de": "Typ",
+      "value" : "camel",
+			"include": true,
+      "popular" : true,
+      "items" : [ {
+        "id" : "camel",
+        "title" : "camel",
+        "value" : "camel"
+      }, {
+        "id" : "xxxx",
+        "title" : "xxxx",
+        "value" : "xxxx"
+      } ]
+    },{
+      "id" : "servicetaskclass",
+      "type" : "String",
+      "title" : "Class",
+      "value" : "",
+      "description" : "Class that implements the service task logic.",
+			"include": false,
+      "popular" : true
+    }, {
+      "id" : "servicetaskexpression",
+      "type" : "String",
+      "title" : "Expression",
+      "value" : "",
+      "description" : "Service task logic defined with an expression.",
+			"include": false,
+      "popular" : true
+    }, {
+      "id" : "servicetaskdelegateexpression",
+      "type" : "String",
+      "title" : "Delegate expression",
+      "value" : "",
+      "description" : "Service task logic defined with a delegate expression.",
+			"include": false,
+      "popular" : true
+    }, {
+      "id" : "servicetaskresultvariable",
+      "type" : "String",
+      "title" : "Result variable name",
+      "value" : "",
+      "description" : "Process variable name to store the service task result.",
+      "popular" : true
+    }, {
+      "id" : "servicetaskfields",
+      "type" : "Complex",
+      "title" : "Class fields",
+      "value" : "",
+      "description" : "Field extensions",
+			"include": false,
+      "popular" : true,
+      "complexItems" : [ {
+        "id" : "servicetask_field_name",
+        "name" : "Name",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      }, {
+        "id" : "servicetask_field_value",
+        "name" : "String value",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      }, {
+        "id" : "servicetask_field_expression",
+        "name" : "Expression",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      } ]
+    } ]
+  },{
     "name" : "callactivitybase",
     "properties" : [{
 			"id": "callactivitycalledelement",
@@ -677,6 +757,18 @@
     "groups" : [ "Activities" ],
 		"groups_de": ["Aktivitäten"],
     "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
+  }, {   
+    "type" : "node",
+    "id" : "ServiceTask",
+    "title" : "Service task",
+    "title_de" : "Serviceaufgabe",
+    "description" : "An automatic task with service logic",
+    "view" : "activity/servicetask.svg",
+    "icon" : "activity/list/type.service.png",
+    "groups" : [ "Activities" ],
+		"groups_de": ["Aktivitäten"],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "servicetaskbase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
     "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
   }, 
 	{
