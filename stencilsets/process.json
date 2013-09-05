@@ -465,9 +465,9 @@
       "id" : "servicetaskfields",
       "type" : "Complex",
       "title" : "Class fields",
-      "value" : "",
+      "value": "{ \"totalCount\": 1, \"items\": [ { \"servicetask_field_name\": \"camelBehaviorClass\", \"servicetask_field_value\": \"org.ms123.common.workflow.camel.CamelBehaviorDefaultImpl\", \"servicetask_field_expression\": \"\" } ] }",
       "description" : "Field extensions",
-			"include": false,
+			"include": true,
       "popular" : true,
       "complexItems" : [ {
         "id" : "servicetask_field_name",
@@ -716,6 +716,16 @@
 			"readonly": false,
 			"popular": true,
 			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "camelRoutes",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.camel","prefix":""},
+			"title": "Camel",
+			"value": "",
+			"readonly": false,
+			"optional": true,
 			"length": "50"
 		},
 		{
