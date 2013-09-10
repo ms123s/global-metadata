@@ -758,6 +758,18 @@
 	},
 	{
 		"type": "node",
+		"id": "MessageFilter",
+		"title": "Messagefilter",
+		"groups": ["Router"],
+    "view" : "messagefilter.svg",
+		"icon": "messagefilter.png",
+		"propertyPackages": ["baseAttributes", "bgColor", "bordercolor"],
+		"properties": [
+		],
+		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
+	},
+	{
+		"type": "node",
 		"id": "MessageRouter",
 		"title": "Messagerouter",
 		"groups": ["Router"],
