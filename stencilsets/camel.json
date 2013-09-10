@@ -758,38 +758,27 @@
 	},
 	{
 		"type": "node",
+		"id": "MessageRouter",
+		"title": "Messagerouter",
+		"groups": ["Router"],
+    "view" : "messagerouter.svg",
+		"icon": "messagerouter.png",
+		"propertyPackages": ["baseAttributes", "bgColor", "bordercolor"],
+		"properties": [
+		],
+		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
+	},
+	{
+		"type": "node",
 		"id": "AggregatRoute",
-		"title": "Aggregat route",
+		"title": "Aggregat",
 		"title_de": "Aggregat",
-		"groups": ["Gateways"],
+		"groups": ["Router"],
     "view" : "aggregat.svg",
 		"icon": "aggregat.png",
-		"propertyPackages": ["baseAttributes", "bgColor", "processid"],
-		"properties": [{
-			"id": "gatewaytype",
-			"type": "String",
-			"title": "Gateway-Typ",
-			"value": "XOR",
-			"description": "The type of the gateway",
-			"description_de": "Der Typ des Gateways.",
-			"include": false,
-			"optional": false,
-			"length": ""
-		},
-		{
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"description": "Change the border color for a visual differentiation.",
-			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": ["bg_frame", "crosspath", "crosspath2"],
-			"fill": false,
-			"stroke": true
-		}],
+		"propertyPackages": ["baseAttributes", "bgColor", "borderColor"],
+		"properties": [
+		],
 		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
 	},
 	{
@@ -797,8 +786,6 @@
 		"id": "SequenceFlow",
 		"title": "Sequence Flow",
 		"title_de": "Sequenzfluss",
-		"description": "Sequence flow defines the execution order of activities.",
-		"description_de": "Ein Sequenzfluss definiert die Ausführungsreihenfolge von Aktivitäten.",
 		"groups": ["Connecting Objects"],
 		"groups_de": ["Konnektoren"],
 		"view": "sequenceflow.svg",
@@ -808,20 +795,8 @@
 			"type": "layout.bpmn2_0.sequenceflow"
 		}],
 		"roles": ["all", "ConnectingObjectsMorph"],
-		"properties": [{
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"description": "Change the border color for a visual differentiation.",
-			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": ["bg_frame", "arrowhead", "conditional", "default"],
-			"fill": false,
-			"stroke": true
-		}]
+		"properties": [
+		]
 	},
 	{
     "type" : "node",
@@ -832,7 +807,7 @@
     "icon" : "ftpendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor",  "activity" ],
 		"properties": [{
 			"id": "endpoint_type1",
 			"type":"String",

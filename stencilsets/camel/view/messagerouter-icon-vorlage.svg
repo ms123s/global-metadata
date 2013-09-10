@@ -12,9 +12,9 @@
    version="1.0"
    id="svg2"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="aggregat.svg">
+   sodipodi:docname="messagerouter.svg">
   <metadata
-     id="metadata41">
+     id="metadata37">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -26,7 +26,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs39" />
+     id="defs35" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -38,22 +38,22 @@
      inkscape:pageshadow="2"
      inkscape:window-width="640"
      inkscape:window-height="480"
-     id="namedview37"
+     id="namedview33"
      showgrid="false"
      inkscape:zoom="1.6857143"
      inkscape:cx="75"
      inkscape:cy="70"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-x="146"
+     inkscape:window-y="185"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
   <g
      pointer-events="fill"
-     transform="matrix(1,0,0,1.3871543,0,0.09678858)"
      class="SlideGroup"
      id="g4"
+     transform="matrix(1,0,0,1.3621766,0,0.09054416)"
      style="stroke-width:0.25"
-     inkscape:export-filename="/ms-dev/gitrepos/global/stencilsets/camel/icons/aggregat.png"
+     inkscape:export-filename="/ms-dev/gitrepos/global/stencilsets/camel/icons/messagerouter.png"
      inkscape:export-xdpi="20.9"
      inkscape:export-ydpi="20.9">
     <defs
@@ -79,69 +79,86 @@
            stop-opacity="1" />
       </radialGradient>
     </defs>
+    <g
+       id="id3">
+      <path
+         d="M 0,47 77,47 77,0 0,0 0,47 z"
+         id="path13"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:none" />
+      <path
+         d="M 0,47 77,47 77,0 0,0 0,47 z"
+         id="bg_frame"
+         style="fill:url(#background);stroke:#0f0f0f;stroke-width:0.5"
+         inkscape:connector-curvature="0" />
+    </g>
+    <circle
+       id="frame"
+       cx="20"
+       cy="23"
+       r="3"
+       d="m 23,23 c 0,1.656854 -1.343146,3 -3,3 -1.656854,0 -3,-1.343146 -3,-3 0,-1.656854 1.343146,-3 3,-3 1.656854,0 3,1.343146 3,3 z"
+       sodipodi:cx="20"
+       sodipodi:cy="23"
+       sodipodi:rx="3"
+       sodipodi:ry="3"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
     <path
-       d="M 77,47 0,47 0,0 77,0 77,47 z"
-       id="path12"
-       inkscape:connector-curvature="0"
-       style="fill:none;stroke:none" />
-    <path
-       d="M 77,47 0,47 0,0 77,0 77,47 z"
-       id="bg_frame"
-       style="fill:url(#background);stroke:#0f0f0f;stroke-width:0.5"
-       inkscape:connector-curvature="0" />
-    <path
-       d="m 67,28 -9,0 0,-9 9,0 0,9 z"
-       id="path15"
-       inkscape:connector-curvature="0"
-       style="fill:#ffffff;stroke:none" />
-    <path
-       d="m 67,28 -9,0 0,-9 9,0 0,9 z"
+       d="m 5,23 15,0"
        id="path17"
        inkscape:connector-curvature="0"
        style="fill:none;stroke:#0f0f0f" />
+    <circle
+       id="circle19"
+       cx="56"
+       cy="8"
+       r="3"
+       d="m 59,8 c 0,1.6568542 -1.343146,3 -3,3 -1.656854,0 -3,-1.3431458 -3,-3 0,-1.6568542 1.343146,-3 3,-3 1.656854,0 3,1.3431458 3,3 z"
+       sodipodi:cx="56"
+       sodipodi:cy="8"
+       sodipodi:rx="3"
+       sodipodi:ry="3"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
     <path
-       d="m 50,23 -13,5 0,-9 13,4 z"
-       id="path19"
-       inkscape:connector-curvature="0"
-       style="fill:#0f0f0f;stroke:none" />
-    <path
-       d="m 50,23 -13,5 0,-9 13,4 z"
+       d="M 56,8 71,8"
        id="path21"
        inkscape:connector-curvature="0"
        style="fill:none;stroke:#0f0f0f" />
+    <circle
+       id="circle23"
+       cx="56"
+       cy="23"
+       r="3"
+       d="m 59,23 c 0,1.656854 -1.343146,3 -3,3 -1.656854,0 -3,-1.343146 -3,-3 0,-1.656854 1.343146,-3 3,-3 1.656854,0 3,1.343146 3,3 z"
+       sodipodi:cx="56"
+       sodipodi:cy="23"
+       sodipodi:rx="3"
+       sodipodi:ry="3"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
     <path
-       d="m 26,23 24,0"
-       id="path23"
-       inkscape:connector-curvature="0"
-       style="fill:none;stroke:#0f0f0f" />
-    <path
-       d="m 18,28 -9,0 0,-9 9,0 0,9 z"
+       d="m 56,23 15,0"
        id="path25"
        inkscape:connector-curvature="0"
-       style="fill:#ffffff;stroke:none" />
-    <path
-       d="m 18,28 -9,0 0,-9 9,0 0,9 z"
-       id="path27"
-       inkscape:connector-curvature="0"
        style="fill:none;stroke:#0f0f0f" />
+    <circle
+       id="circle27"
+       cx="56"
+       cy="37"
+       r="3"
+       d="m 59,37 c 0,1.656854 -1.343146,3 -3,3 -1.656854,0 -3,-1.343146 -3,-3 0,-1.656854 1.343146,-3 3,-3 1.656854,0 3,1.343146 3,3 z"
+       sodipodi:cx="56"
+       sodipodi:cy="37"
+       sodipodi:rx="3"
+       sodipodi:ry="3"
+       style="fill:#000000;stroke:#000000;stroke-width:1" />
     <path
-       d="m 18,14 -9,0 0,-8 9,0 0,8 z"
+       d="m 56,38 15,0"
        id="path29"
        inkscape:connector-curvature="0"
-       style="fill:#ffffff;stroke:none" />
-    <path
-       d="m 18,14 -9,0 0,-8 9,0 0,8 z"
-       id="path31"
-       inkscape:connector-curvature="0"
        style="fill:none;stroke:#0f0f0f" />
     <path
-       d="m 18,41 -9,0 0,-9 9,0 0,9 z"
-       id="path33"
-       inkscape:connector-curvature="0"
-       style="fill:#ffffff;stroke:none" />
-    <path
-       d="m 18,41 -9,0 0,-9 9,0 0,9 z"
-       id="path35"
+       d="M 20,23 56,8"
+       id="path31"
        inkscape:connector-curvature="0"
        style="fill:none;stroke:#0f0f0f" />
   </g>
