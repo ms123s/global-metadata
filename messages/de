@@ -3443,6 +3443,10 @@
         "msgstr": "Vorschau"
     },
     {
+        "msgid": "shell.nt_camel",
+        "msgstr": "Camelroute"
+    },
+    {
         "msgid": "shell.nt_website",
         "msgstr": "Website"
     },
