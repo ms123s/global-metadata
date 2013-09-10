@@ -1,0 +1,1761 @@
+{
+	"title": "BPMN 2.0",
+	"namespace": "http://b3mn.org/stencilset/camel#",
+	"description": "This is the BPMN 2.0 stencil set specification.",
+	"description_de": "Dies ist die BPMN 2.0 Stencilset Spezifikation.",
+	"propertyPackages": [{
+    "name" : "elementbase",
+    "properties" : [ {
+      "id" : "overrideid",
+      "type" : "String",
+      "title" : "Id",
+      "value" : "",
+			"include":true,
+      "description" : "Unique identifier of the element.",
+      "popular" : true
+    }]
+    }, 
+		{
+		"name": "baseAttributes",
+		"properties": [{
+			"id": "name",
+			"type": "String",
+			"title": "Name",
+			"value": "",
+			"description": "The descriptive name of the BPMN element.",
+			"description_de": "Bezeichnung des BPMN-Elementes.",
+			"readonly": false,
+			"optional": true,
+			"length": "64",
+			"wrapLines": true,
+			"refToView": "text_name"
+		},
+		{
+			"id": "documentation",
+			"type": "Text",
+			"title": "Documentation",
+			"title_de": "Dokumentation",
+			"value": "",
+			"description": "This attribute is used to annotate the BPMN element, such as descriptions and other documentation.",
+			"description_de": "Der Modellierer kann weiteren Text zur Dokumentation des BPMN-Elementes einfügen.",
+			"readonly": false,
+			"optional": true,
+			"length": "",
+			"wrapLines": true,
+			"popular": true
+		}]
+	},
+	{
+		"name": "processid",
+		"properties": [{
+			"id": "processid",
+			"type": "String",
+			"title": "ProcessID",
+			"title_de": "Prozess-ID",
+			"description": "Defines the ID of the container process used in the exported BPMN 2.0 XML. The ID has to be a valid XSD:id string and identifies a process unambiguous.",
+			"description_de": "Definiert die ID des Prozesselementes im exportierten BPMN 2.0 XML. Die ID muss XSD:id konform sein und den Prozess eindeutig identifizieren.",
+			"value": "",
+			"include": false,
+			"optional": true,
+			"wraplines": false
+		}]
+	},
+	{
+		"name": "bgColor",
+		"properties": [{
+			"id": "bgcolor",
+			"type": "Color",
+			"title": "BackgroundColor",
+			"title_de": "Hintergrundfarbe",
+			"value": "#ffffff",
+			"description": "Change the background color for a visual differentiation.",
+			"description_de": "Verändern Sie die Hintergrundfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": "fill_el",
+			"fill": true,
+			"stroke": false
+		}]
+	},
+	{
+		"name": "borderColor",
+		"properties": [{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"description": "Change the border color for a visual differentiation.",
+			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": ["callActivity", "bg_frame", "hand", "finger", "finger1", "finger2", "thumb", "top", "rect", "row", "col", "paper", "line1", "line2", "line3", "line4", "userTaskpath", "userTaskpath2", "userTaskpath3", "userTaskpath4", "userTaskcircle", "teethForeground", "ringForeground", "teethBackground", "ringBackground", "receiveTaskpath", "instantiate", "sendTaskpath", "sendTaskpath2", "path2396", "parallelpath", "sequentialpath", "compensationpath"],
+			"fill": false,
+			"stroke": true
+		}]
+	},
+	{
+		"name": "boundaryevent",
+		"properties": [{
+			"id": "boundarycancelactivity2",
+			"type": "Boolean",
+			"title": "Cancel activity",
+			"title_de": "Aktivität abbrechen",
+			"value": true,
+			"description": "Denotes whether the activity should be canceled or not (i.e., whether the boundary catch event acts as an Error or an Escalation). If the activity is not canceled, multiple instances of that handler can run concurrently.",
+			"description_de": "Kennzeichnet, ob eine Aktivität abgebrochen werden soll oder nicht (d.h., ob ein angeheftetes eintretendes Ereignis als Fehler oder Eskalation auftreten kann). Wenn die Aktivität nicht beendet wird, können mehrere Instanzen der Behandlungsroutine parallel ausgeführt werden.",
+			"readonly": false,
+			"optional": true,
+			"refToView": ["frame", "frame2"]
+		}]
+	},
+	{
+		"name": "formAttributes",
+		"properties": [{
+			"id": "attr$activiti$formKey",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.form","prefix":""},
+			"title": "Form",
+			"title_de": "Form",
+			"value": "",
+			"description": "",
+			"description_de": "Das Formular zum Starten des Prozesses",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		}]
+	},
+	{
+		"name": "timer",
+		"properties": [{
+			"id": "timedate",
+			"type": "String",
+			"title": "Timedate",
+			"title_de": "Datum",
+			"value": "",
+			"description": "The date of the timer definition.",
+			"description_de": "Der Zeitpunkt des definierten Zeitereignisses.",
+			"readonly": false,
+			"optional": true,
+			"popular": true
+		},
+		{
+			"id": "timecycle",
+			"type": "String",
+			"title": "Timecycle",
+			"title_de": "Zeitzyklus",
+			"value": "",
+			"description": "The time cycle of the timer definition.",
+			"description_de": "Der Zeitzyklus des definierten Zeitereignisses.",
+			"readonly": false,
+			"optional": true,
+			"popular": true
+		},
+		{
+			"id": "timeduration",
+			"type": "String",
+			"title": "Time duration",
+			"title_de": "Dauer",
+			"value": "",
+			"description": "The duration of the timer definition.",
+			"description_de": "Die Dauer des definierten Zeitereignisses.",
+			"readonly": false,
+			"optional": true,
+			"popular": true
+		}]
+	},
+	{
+		"name": "compensation",
+		"properties": [{
+			"id": "waitforcompletion",
+			"type": "Boolean",
+			"title": "Wait for completion",
+			"title_de": "Auf Fertigstellung warten",
+			"value": true,
+			"popular": false,
+			"description": "Determine whether a throw compensation is performed synchronously or asynchronously.",
+			"description_de": "Gibt an, ob die erzeugte Kompensierung synchron oder asynchron aufgerufen wird.",
+			"readonly": false,
+			"optional": true
+		},
+		{
+			"id": "activityref",
+			"type": "String",
+			"title": "Activity reference",
+			"title_de": "Aktivitätsreferenz",
+			"value": "",
+			"popular": true,
+			"description": "The activity related to the compensation event",
+			"description_de": "Die Kompensierung betreffende Aktivität",
+			"readonly": false,
+			"optional": true
+		}]
+	},
+	{
+		"name": "diagram",
+		"properties": [{
+			"id": "version",
+			"type": "String",
+			"title": "Version",
+			"value": "",
+			"description": "This defines the version number of the diagram.",
+			"description_de": "Setzt die Versionsnummer des Diagramms.",
+			"readonly": false,
+			"optional": true
+		},
+		{
+			"id": "author",
+			"type": "String",
+			"title": "Author",
+			"title_de": "Autor",
+			"value": "",
+			"description": "This holds the name of the diagram's author.",
+			"description_de": "Name des Diagrammautors.",
+			"readonly": false,
+			"optional": true
+		},
+		{
+			"id": "language",
+			"type": "String",
+			"title": "Language",
+			"title_de": "Sprache",
+			"value": "English",
+			"value_de": "Deutsch",
+			"description": "This holds the language in which text is written.",
+			"description_de": "Sprache, in welcher der Text verfasst ist.",
+			"include": false,
+			"optional": true
+		},
+		{
+			"id": "targetnamespace",
+			"type": "String",
+			"title": "Target namespace",
+			"title_de": "Ziel-Namensraum",
+			"value": "http://www.signavio.com/bpmn20",
+			"description": "Defines the XML namespace of the elements inside the document.",
+			"description_de": "Definiert den XML-Namensraum, der für die Elemente im Dokument verwendet wird.",
+			"readonly": false,
+			"optional": true
+		},
+		{
+			"id": "creationdate",
+			"type": "Date",
+			"title": "Creation date",
+			"title_de": "Erstellt am",
+			"value": "",
+			"description": "This defines the date on which the diagram was created.",
+			"description_de": "Datum, an dem das Diagramm erstellt wurde.",
+			"readonly": false,
+			"optional": true,
+			"dateFormat": "j/m/y"
+		},
+		{
+			"id": "modificationdate",
+			"type": "Date",
+			"title": "Modification date",
+			"title_de": "Geändert am",
+			"value": "",
+			"description": "This defines the date on which the diagram was last modified.",
+			"description_de": "Datum der letzten Änderung.",
+			"readonly": false,
+			"optional": true,
+			"dateFormat": "j/m/y"
+		}]
+	},{
+    "name" : "asynchronousbase",
+    "properties" : [ {
+      "id" : "asynchronousdefinition",
+      "type" : "Choice",
+      "title" : "Asynchronous",
+      "title_de" : "Asynchron",
+      "value" : "No",
+      "description" : "Define the activity as asynchronous.",
+      "popular" : true,
+      "items" : [ {
+        "id" : "no",
+        "title" : "No",
+        "title_de" : "Nein",
+        "value" : "No"
+      }, {
+        "id" : "yes",
+        "title" : "Yes",
+        "title_de" : "Ja",
+        "value" : "Yes"
+      } ]
+    }, {
+      "id" : "exclusivedefinition",
+      "type" : "Choice",
+      "title" : "Exclusive",
+      "title_de" : "Exclusiv",
+      "value" : "Yes",
+      "description" : "Define the activity as exclusive.",
+      "popular" : true,
+      "items" : [ {
+        "id" : "no",
+        "title" : "No",
+        "title_de" : "Nein",
+        "value" : "No"
+      }, {
+        "id" : "yes",
+        "title" : "Yes",
+        "title_de" : "Ja",
+        "value" : "Yes"
+      } ]
+    } ]
+  }, {
+		"name": "loopcharacteristics",
+		"properties": [{
+			"id": "looptype",
+			"type": "Choice",
+			"title": "Loop type",
+			"title_de": "Schleifentyp",
+			"value": "None",
+			"description": "Repeated activity execution (parallel or sequential) can be displayed through different loop types",
+			"description_de": "Wiederholtes (paralleles oder sequentielles) Ausführen einer Aktivität kann durch die Angabe eines Schleifentyps dargestellt werden. ",
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"items": [{
+				"id": "c1",
+				"title": "None",
+				"title_de": "Keine Schleife",
+				"value": "None",
+				"refToView": "none"
+			},
+			{
+				"id": "c2",
+				"title": "Standard",
+				"title_de": "Standard",
+				"value": "Standard",
+				"icon": "activity/list/looptype.standard.png",
+				"refToView": "loop"
+			},
+			{
+				"id": "c3",
+				"title": "MI Parallel",
+				"title_de": "MI parallel",
+				"value": "Parallel",
+				"icon": "activity/list/mi.parallel.png",
+				"refToView": "parallel"
+			},
+			{
+				"id": "c4",
+				"title": "MI Sequential",
+				"title_de": "MI sequentialisiert",
+				"value": "Sequential",
+				"icon": "activity/list/mi.sequential.png",
+				"refToView": "sequential"
+			}]
+		},
+		{
+      "id" : "multiinstance_sequential",
+      "type" : "Choice",
+      "title" : "Sequential (Multi-instance)",
+			"title_de": "sequentiell",
+      "value" : "Yes",
+      "description" : "Define the multi instance as sequential.",
+			"include": false,
+      "popular" : true,
+      "items" : [ {
+        "id" : "no",
+        "title" : "No",
+        "title_de" : "Nein",
+        "value" : "No"
+      }, {
+        "id" : "yes",
+        "title" : "Yes",
+        "title_de" : "Yes",
+        "value" : "Yes"
+      } ]
+    }, {
+      "id" : "multiinstance_cardinality",
+      "type" : "String",
+      "title" : "Cardinality (Multi-instance)",
+			"title_de": "Schleifen-Kardinalität",
+      "value" : "",
+			"include": false,
+      "description" : "Define the cardinality of multi instance.",
+      "popular" : true
+    }, {
+      "id" : "multiinstance_collection",
+      "type" : "String",
+      "title" : "Collection (Multi-instance)",
+			"title_de": "Schleifenliste",
+      "value" : "",
+      "description" : "Define the collection for the multi instance.",
+      "popular" : true
+    }, {
+      "id" : "multiinstance_variable",
+      "type" : "String",
+      "title" : "Element variable (Multi-instance)",
+			"title_de": "Elementvariable",
+      "value" : "",
+      "description" : "Define the element variable for the multi instance.",
+      "popular" : true
+    }, {
+      "id" : "multiinstance_condition",
+      "type" : "String",
+      "title" : "Completion condition (Multi-instance)",
+			"title_de": "Endebedingung",
+      "value" : "",
+      "description" : "Define the completion condition for the multi instance.",
+      "popular" : true
+    }, {
+      "id" : "isforcompensation",
+      "type" : "Boolean",
+      "title" : "Is for compensation",
+			"title_de": "Ist für Kompensation",
+      "value" : "false",
+      "description" : "A flag that identifies whether this activity is intended for the purposes of compensation.",
+			"include": false,
+      "popular" : false,
+      "refToView" : "compensation"
+    }]
+	},{
+    "name" : "servicetaskbase",
+    "properties" : [ {
+      "id" : "type",
+      "type" : "Choice",
+      "title" : "Type",
+			"title_de": "Typ",
+      "value" : "camel",
+			"include": true,
+      "popular" : true,
+      "items" : [ {
+        "id" : "camel",
+        "title" : "camel",
+        "value" : "camel"
+      }, {
+        "id" : "xxxx",
+        "title" : "xxxx",
+        "value" : "xxxx"
+      } ]
+    },{
+      "id" : "servicetaskclass",
+      "type" : "String",
+      "title" : "Class",
+      "value" : "",
+      "description" : "Class that implements the service task logic.",
+			"include": false,
+      "popular" : true
+    }, {
+      "id" : "servicetaskexpression",
+      "type" : "String",
+      "title" : "Expression",
+      "value" : "",
+      "description" : "Service task logic defined with an expression.",
+			"include": false,
+      "popular" : true
+    }, {
+      "id" : "servicetaskdelegateexpression",
+      "type" : "String",
+      "title" : "Delegate expression",
+      "value" : "",
+      "description" : "Service task logic defined with a delegate expression.",
+			"include": false,
+      "popular" : true
+    }, {
+      "id" : "servicetaskresultvariable",
+      "type" : "String",
+      "title" : "Result variable name",
+      "value" : "",
+      "description" : "Process variable name to store the service task result.",
+      "popular" : true
+    }, {
+      "id" : "servicetaskfields",
+      "type" : "Complex",
+      "title" : "Class fields",
+      "value": "{ \"totalCount\": 1, \"items\": [ { \"servicetask_field_name\": \"camelBehaviorClass\", \"servicetask_field_value\": \"org.ms123.common.workflow.camel.CamelBehaviorDefaultImpl\", \"servicetask_field_expression\": \"\" } ] }",
+      "description" : "Field extensions",
+			"include": true,
+      "popular" : true,
+      "complexItems" : [ {
+        "id" : "servicetask_field_name",
+        "name" : "Name",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      }, {
+        "id" : "servicetask_field_value",
+        "name" : "String value",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      }, {
+        "id" : "servicetask_field_expression",
+        "name" : "Expression",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      } ]
+    } ]
+  },{
+    "name" : "callactivitybase",
+    "properties" : [{
+			"id": "callactivitycalledelement",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.process","prefix":""},
+      "title" : "Called element",
+      "title_de" : "Name des Prozesses",
+			"value": "",
+      "description" : "Process reference.",
+      "popular" : false
+		},
+		{
+      "id" : "callactivityinparameters",
+      "type" : "Complex",
+      "title" : "In parameters",
+      "title_de" : "Eingabeparameter",
+      "value" : "",
+      "description" : "Definition of the input parameters",
+      "popular" : false,
+      "complexItems" : [ {
+        "id" : "ioparameter_source",
+        "name" : "Source",
+        "name_de" : "Quellvariable",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      }, {
+        "id" : "ioparameter_sourceexpression",
+        "name" : "Source expression",
+        "name_de" : "Quellenausdruck",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      }, {
+        "id" : "ioparameter_target",
+        "name" : "Target",
+        "name_de" : "Zielvariable",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      } ]
+    }, {
+      "id" : "callactivityoutparameters",
+      "type" : "Complex",
+      "title" : "Out parameters",
+      "title_de" : "Ausgabeparameter",
+      "value" : "",
+      "description" : "Definition of the output parameters",
+      "popular" : false,
+      "complexItems" : [ {
+        "id" : "ioparameter_source",
+        "name" : "Source",
+        "name_de" : "Quellvariable",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      }, {
+        "id" : "ioparameter_sourceexpression",
+        "name" : "Source expression",
+        "name_de" : "Quellenausdruck",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      }, {
+        "id" : "ioparameter_target",
+        "name" : "Target",
+        "name_de" : "Zielvariable",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      } ]
+    } ,
+		{
+			"id": "tasktype",
+			"type": "String",
+			"include": false,
+			"optional": false,
+			"value": "None"
+		}]
+  }, 
+	{
+    "name" : "timerdefinition",
+    "properties" : [ {
+      "id" : "timerdurationdefinition",
+      "type" : "String",
+      "title" : "Time duration (e.g. PT5M)",
+      "value" : "",
+      "description" : "Define the timer with a ISO-8601 duration.",
+      "popular" : true
+    }, {
+      "id" : "timerdatedefinition",
+      "type" : "String",
+      "title" : "Time date in ISO-8601",
+      "value" : "",
+      "description" : "Define the timer with a ISO-8601 date definition.",
+      "popular" : true
+    }, {
+      "id" : "timercycledefinition",
+      "type" : "String",
+      "title" : "Time cycle (e.g. R3/PT10H)",
+      "value" : "",
+      "description" : "Define the timer with a ISO-8601 cycle.",
+      "popular" : true
+    } ]
+  }, 
+	{
+    "name" : "messagerefdefinition",
+    "properties" : [ {
+      "id" : "messageref",
+      "type" : "String",
+      "title" : "Message reference",
+      "title_de" : "Message Referenz",
+      "value" : "",
+      "description" : "Define the message name.",
+      "popular" : true
+    } ]
+  }, 
+	{
+    "name" : "sequenceflowbase",
+    "properties" : [{
+      "id" : "defaultflow",
+      "type" : "Choice",
+      "title" : "Default flow",
+      "title_de" : "Standardfluß",
+      "value" : "None",
+      "description" : "Define the sequence flow as default",
+      "readonly" : false,
+      "popular" : true,
+      "items" : [ {
+        "id" : "none",
+        "title" : "No",
+        "title_de" : "Nein",
+        "value" : "None"
+      }, {
+        "id" : "default",
+        "title" : "Yes",
+        "title_de" : "Ja",
+        "value" : "Default",
+        "icon" : "connector/list/type.default.png",
+        "refToView" : "default"
+      } ]
+    }, {
+      "id" : "conditionalflow",
+      "type" : "Choice",
+      "title" : "Conditional flow",
+      "title_de" : "Bedingter Fluß",
+      "value" : "None",
+      "description" : "Define the sequence flow with a condition",
+      "readonly" : false,
+      "popular" : true,
+      "items" : [ {
+        "id" : "none",
+        "title" : "No",
+        "title_de" : "Nein",
+        "value" : "None"
+      }, {
+        "id" : "default",
+        "title" : "Yes",
+        "title_de" : "Ja",
+        "value" : "Conditional",
+        "icon" : "connector/list/type.expression.png",
+        "refToView" : "conditional"
+      } ]
+    },{
+      "id" : "conditionsequenceflow",
+      "type" : "Text",
+      "title" : "Flow condition",
+      "title_de" : "Flußbedingung",
+			"visible": "conditionalflow!='None'",
+      "value" : "",
+      "description" : "The condition of the sequence flow",
+      "popular" : true
+    }]
+	}],
+	"stencils": [{
+		"type": "node",
+		"id": "BPMNDiagram",
+		"title": "BPMN-Diagram",
+		"title_de": "BPMN-Diagramm",
+		"groups": ["Diagram"],
+		"description": "A BPMN 2.0 diagram.",
+		"description_de": "Ein BPMN 2.0 Diagramm",
+    "view" : "diagram.svg",
+		"icon": "diagram.png",
+		"mayBeRoot": true,
+		"hide": true,
+		"propertyPackages": ["baseAttributes", "diagram"],
+		"roles": [],
+		"properties": [{
+			"id": "orientation",
+			"type": "String",
+			"title": "_orientation",
+			"value": "horizontal",
+			"description": "Internal flag to set the default orientation",
+			"readonly": false,
+			"include": false
+		},{
+			"id": "startableGroups",
+			"type": "MultiSelect",
+			"config": "permission:getAllRoles:name",
+			"title": "Startable groups",
+			"title_de": "Startbar von(Gruppen)",
+			"value": "",
+			"readonly": false,
+			"optional": false,
+			"popular": true,
+			"length": "50"
+		},{
+			"id": "startableUsers",
+			"type": "ModuleSelector",
+			"config": "user:userid",
+			"title": "Startable users",
+			"title_de": "Startbar von(Usern)",
+			"value": "",
+			"readonly": false,
+			"popular": true,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "camelRoutes",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.camel","prefix":""},
+			"title": "Camel",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "initialParameter",
+			"type": "Complex",
+			"title": "Initialparameter",
+			"title_de": "Startparameter",
+			"value": "",
+			"readonly": false,
+			"popular": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name_de": "Name",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}]
+		}]
+	},
+	{
+    "type" : "node",
+    "id" : "ReceiveTask",
+    "title" : "Receive task",
+    "title_de" : "Empfangsaufgabe",
+    "description" : "An task that waits for a signal",
+    "view" : "activity/receivetask.svg",
+    "icon" : "activity/list/type.receive.png",
+    "groups" : [ "Activities" ],
+		"groups_de": ["Aktivitäten"],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
+  }, {   
+    "type" : "node",
+    "id" : "ServiceTask",
+    "title" : "Service task",
+    "title_de" : "Serviceaufgabe",
+    "description" : "An automatic task with service logic",
+    "view" : "activity/servicetask.svg",
+    "icon" : "activity/list/type.service.png",
+    "groups" : [ "Activities" ],
+		"groups_de": ["Aktivitäten"],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "servicetaskbase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
+  }, 
+	{
+    "type" : "node",
+    "id" : "CallActivity",
+    "title" : "Call activity",
+    "title_de" : "Aufruf Prozess",
+    "description" : "A call activity",
+    "view" : "activity/callactivity.svg",
+    "icon" : "activity/list/subprocess.png",
+    "groups" : [ "Structural" ],
+    "groups_de" : [ "Struktur" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor","borderColor", "callactivitybase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
+  }, 
+	{
+    "type" : "node",
+    "id" : "SubProcess",
+    "title" : "Sub process",
+    "title_de" : "Subprozess(eingebettet)",
+    "description" : "A sub process scope",
+    "view" : "activity/subprocess.expanded.svg",
+    "icon" : "activity/expanded.subprocess.png",
+    "groups" : [ "Structural" ],
+    "groups_de" : [ "Struktur" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics" ],
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
+  }, 
+	{
+    "type" : "node",
+    "id" : "EventSubProcess",
+    "title" : "Event sub process",
+    "title_de" : "Ereignis Subprozess",
+    "description" : "A event sub process scope",
+    "view" : "activity/event.subprocess.svg",
+    "icon" : "activity/event.subprocess.png",
+    "groups" : [ "Structural" ],
+    "groups_de" : [ "Struktur" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase" ],
+    "_roles" : [ "sequence_start", "Activity", "sequence_end", "all" ]
+  }, 
+	{
+		"type": "node",
+		"id": "UserTask",
+		"title": "User Task",
+		"title_de": "Benutzeraufgabe",
+		"groups": ["Activities"],
+		"groups_de": ["Aktivitäten"],
+		"description": "A User Task is used to model work that needs to be done by a human actor. When the process execution arrives at such a user task, a new task is created in the task list of the user(s) or group(s) assigned to that task.",
+    "view" : "activity/usertask.svg",
+		"icon": "activity/list/type.user.png",
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
+		"properties": [{
+			"id": "attr$activiti$formHandlerClass",
+			"type": "String",
+			"title": "formHandlerClass",
+			"title_de": "formHandlerClass",
+			"value": "org.ms123.common.workflow.UserTaskFormHandler",
+			"description": "",
+			"description_de": "",
+			"include": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "attr$activiti$formKey",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.form","prefix":""},
+			"title": "Form",
+			"title_de": "Form",
+			"value": "",
+			"description": "",
+			"description_de": "Das Bearbeitungsformular",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$variablesmapping",
+			"type": "Complex",
+			"config": {"helperTree":["sw.form"]},
+			"title": "Parameter-Mapping",
+			"title_de": "Variablen Zuordnung",
+			"value": "",
+			"description": "Mapping processvariables to form",
+			"description_de": "Zuordnung von Prozessvariablen zur Form",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "processvar",
+				"name_de": "Prozessvariable",
+				"name": "Processvariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "formvar",
+				"name_de": "Formvariable",
+				"name": "Formvariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			} ]
+		},
+		{
+			"id": "attr$activiti$candidateGroups",
+			"type": "MultiSelect",
+			"config": "permission:getAllRoles:name",
+			"title": "Candidategroup",
+			"title_de": "Kandidatengruppe",
+			"description": "Candidategroup",
+			"description_de": "Kandidatengruppe",
+			"value": "",
+			"readonly": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "attr$activiti$assignee",
+			"type": "ModuleSelector",
+			"config": "user:userid",
+			"title": "Assignee",
+			"title_de": "Beauftragter",
+			"description": "Assignee",
+			"description_de": "Beauftragter",
+			"value": "",
+			"readonly": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "tasktype",
+			"type": "String",
+			"value": "User",
+			"include": false,
+			"optional": false
+		  }]
+		,
+		"propertyPackages": ["baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
+	},
+	{
+		"type": "node",
+		"id": "FilterTask",
+		"title": "Filter Task",
+		"title_de": "Filteraufgabe",
+		"groups": ["Activities"],
+		"groups_de": ["Aktivitäten"],
+		"description": "A Filter Task is a Task that generates a list uses an predefined filter.",
+    "view" : "activity/filtertask.svg",
+		"icon": "activity/list/type.filter.png",
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
+		"properties": [{
+			"id": "attr$activiti$class",
+			"type": "String",
+			"title": "Class",
+			"title_de": "Class",
+			"value": "org.ms123.common.workflow.TaskFilterExecutor",
+			"description": "",
+			"description_de": "DelegateClass",
+			"include": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$filtername",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.filter","prefix":""},
+			"title": "Filtername",
+			"title_de": "Filtername",
+			"value": "",
+			"description": "Filtername",
+			"description_de": "Name des Filters",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$variablesmapping",
+			"type": "Complex",
+			"config": {"helperTree":["sw.form"]},
+			"title": "Parameter-Mapping",
+			"title_de": "Variablen Zuordnung",
+			"value": "",
+			"description": "Mapping processvariables to filter",
+			"description_de": "Zuordnung von Prozessvariablen zum Filter",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "processvar",
+				"name_de": "Prozessvariable",
+				"name": "Processvariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "filtervar",
+				"name_de": "Filtervariable",
+				"name": "Filtervariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			} ]
+		},
+		{
+			"id": "el$activiti$listname",
+			"type": "String",
+			"title": "Listname",
+			"title_de": "Listenname",
+			"value": "",
+			"description": "Name of the generated list",
+			"description_de": "Name des erzeugten Liste",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "tasktype",
+			"type": "String",
+			"value": "Filter",
+			"include": false,
+			"optional": false
+		}],
+		"propertyPackages": ["baseAttributes", "borderColor","bgColor", "loopcharacteristics" ]
+	},
+	{
+		"type": "node",
+		"id": "RulesTask",
+		"title": "Rules Task",
+		"title_de": "Regelaufgabe",
+		"groups": ["Activities"],
+		"groups_de": ["Aktivitäten"],
+		"description": "A Rules Task is a Task that executes a rules.",
+    "view" : "activity/businessruletask.svg",
+		"icon": "activity/list/type.business.rule.png",
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
+		"properties": [{
+			"id": "attr$activiti$class",
+			"type": "String",
+			"title": "Class",
+			"title_de": "Class",
+			"value": "org.ms123.common.workflow.TaskRulesExecutor",
+			"description": "",
+			"description_de": "DelegateClass",
+			"include": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$rulesname",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.rule","prefix":""},
+			"title": "Rulesname",
+			"title_de": "Regelname",
+			"value": "",
+			"description": "Rulesname",
+			"description_de": "Name der Regel",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$variablesmapping",
+			"type": "Complex",
+			"config": {"helperTree":["sw.form"]},
+			"title": "Parameter-Mapping",
+			"title_de": "Variablen Zuordnung",
+			"value": "",
+			"description": "Mapping processvariables to rules",
+			"description_de": "Zuordnung von Prozessvariablen zu Regeln",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "processvar",
+				"name_de": "Prozessvariable",
+				"name": "Processvariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "rulesvar",
+				"name_de": "Regelvariable",
+				"name": "Rulesvariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			},{
+				"id": "direction",
+				"name": "Direction",
+				"name_de": "Richtung",
+				"readonly": false,
+				"type": "Choice",
+				"value": "incoming",
+				"items": [{
+					"id": "incoming",
+					"title": "Incoming",
+					"title_de": "Eingehend",
+					"value": "incoming"
+				}, {
+					"id": "outgoing",
+					"title": "Outgoing",
+					"title_de": "Ausgehend",
+					"value": "outgoing"
+				}],
+				"width": 80,
+				"optional": true
+			}]
+		},{
+			"id": "tasktype",
+			"type": "String",
+			"value": "Rules",
+			"include": false,
+			"optional": false
+		}],
+		"propertyPackages": ["baseAttributes", "borderColor", "bgColor","loopcharacteristics" ]
+	},
+	{
+		"type": "node",
+		"id": "ScriptTask",
+		"title": "Script Task",
+		"title_de": "Scriptaufgabe",
+		"groups": ["Activities"],
+		"groups_de": ["Aktivitäten"],
+		"description": "A Script Task is executed by a business process engine. The modeler or implementer defines a script in a language that the engine can interpret. When the Task is ready to start, the engine will execute the script. When the script is completed, the Task will also be completed.",
+    "view" : "activity/scripttask.svg",
+		"icon": "activity/list/type.script.png",
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
+		"properties": [{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"description": "Change the border color for a visual differentiation.",
+			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": ["callActivity", "bg_frame", "hand", "finger", "finger1", "finger2", "thumb", "top", "rect", "row", "col", "paper", "line1", "line2", "line3", "line4", "userTaskpath", "userTaskpath2", "userTaskpath3", "userTaskpath4", "userTaskcircle", "teethForeground", "ringForeground", "teethBackground", "ringBackground", "receiveTaskpath", "instantiate", "sendTaskpath", "sendTaskpath2", "path2396", "parallelpath", "sequentialpath", "compensationpath"],
+			"fill": false,
+			"stroke": true
+		},
+		{
+			"id": "attr$activiti$class",
+			"type": "String",
+			"title": "Class",
+			"title_de": "Class",
+			"value": "org.ms123.common.workflow.TaskScriptExecutor",
+			"description": "",
+			"description_de": "DelegateClass",
+			"include": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$script",
+			"config":{"mode":"text/x-groovy", "helper":"ProcessScript"},
+			"type": "Text",
+			"title": "Script",
+			"title_de": "Script",
+			"value": "",
+			"description": "",
+			"description_de": "Ausführbare Anweisungen",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "tasktype",
+			"type": "String",
+			"value": "Script",
+			"include": false,
+			"optional": false
+		}],
+		"propertyPackages": ["baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
+	},
+	{
+		"type": "node",
+		"id": "DocumentTask",
+		"title": "Document Task",
+		"title_de": "Dokumentaufgabe",
+		"groups": ["Activities"],
+		"groups_de": ["Aktivitäten"],
+		"description": "A Document Task is a Task that generates document.",
+    "view" : "activity/documenttask.svg",
+		"icon": "activity/list/type.document.png",
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
+		"properties": [{
+			"id": "attr$activiti$class",
+			"type": "String",
+			"title": "Class",
+			"title_de": "Class",
+			"value": "org.ms123.common.workflow.TaskDocumentExecutor",
+			"description": "",
+			"description_de": "DelegateClass",
+			"include": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$documentname",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.document","prefix":""},
+			"title": "Documentname",
+			"title_de": "Dokumentname",
+			"value": "",
+			"description": "Documentname",
+			"description_de": "Name des Dokuments",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$filename",
+			"type": "String",
+			"title": "Filename",
+			"title_de": "Filename(ohne Pfad)",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$variablesmapping",
+			"type": "Complex",
+			"config": {"helperTree":["sw.form"]},
+			"title": "Parameter-Mapping",
+			"title_de": "Variablen Zuordnung",
+			"value": "",
+			"description": "Mapping processvariables to document",
+			"description_de": "Zuordnung von Prozessvariablen zum Dokument",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "processvar",
+				"name_de": "Prozessvariable",
+				"name": "Processvariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "documentvar",
+				"name": "documentvariable",
+				"name_de": "Dokumentvariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			} ]
+		},
+		{
+			"id": "tasktype",
+			"type": "String",
+			"value": "Filter",
+			"include": false,
+			"optional": false
+		}],
+		"propertyPackages": ["baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
+	},
+	{
+		"type": "node",
+		"id": "SendTask",
+		"title": "Send Task",
+		"title_de": "Sendeaufgabe",
+		"groups": ["Activities"],
+		"groups_de": ["Aktivitäten"],
+		"description": "A Send Task is a simple Task that is designed to send a Message to an external Participant (relative to the Process). Once the Message has been sent, the Task is completed.",
+    "view" : "activity/sendtask.svg",
+		"icon": "activity/list/type.send.png",
+    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
+		"properties": [{
+			"id": "attr$activiti$type",
+			"type": "String",
+			"title": "type",
+			"title_de": "type",
+			"value": "mail",
+			"description": "MailTask",
+			"description_de": "MailTask",
+			"include": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$to",
+			"type": "String",
+			"title": "To",
+			"title_de": "An",
+			"value": "",
+			"description": "Receiver",
+			"description_de": "Empfänger",
+			"readonly": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$cc",
+			"type": "String",
+			"title": "Cc",
+			"title_de": "Cc",
+			"value": "",
+			"description": "Cc-Receiver",
+			"description_de": "Cc-Empfänger",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$bcc",
+			"type": "String",
+			"title": "Bcc",
+			"title_de": "Bcc",
+			"value": "",
+			"description": "Bcc-Receiver",
+			"description_de": "Bcc-Empfänger",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$from",
+			"type": "String",
+			"title": "From",
+			"title_de": "Von",
+			"value": "",
+			"description": "Sender",
+			"description_de": "Absender",
+			"readonly": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$subject",
+			"type": "String",
+			"title": "Subject",
+			"title_de": "Betreff",
+			"value": "",
+			"description": "Subject",
+			"description_de": "Betreff",
+			"readonly": false,
+			"optional": false,
+			"length": "50"
+		},
+		{
+			"id": "el$activiti$attachment",
+			"type": "String",
+			"title": "Attachment",
+			"title_de": "Anhang",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"length": "90"
+		},
+		{
+			"id": "el$activiti$text",
+			"type": "Text",
+			"title": "Body",
+			"title_de": "Inhalt",
+			"value": "",
+			"description": "Mailtext",
+			"description_de": "Mailtext",
+			"readonly": false,
+			"optional": false
+		},
+		{
+			"id": "tasktype",
+			"type": "String",
+			"include": false,
+			"optional": false,
+			"value": "Send"
+			}
+		],
+		"propertyPackages": ["baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
+	},
+	{
+		"type": "node",
+		"id": "ExclusiveGateway",
+		"title": "Exclusive (XOR) gateway",
+		"title_de": "Exklusives (XOR) Gateway",
+		"description": "When splitting, it routes the sequence flow to exactly one of the outgoing branches based on conditions. When merging, it awaits one incoming branch to complete before triggering the outgoing flow.",
+		"description_de": "Es handelt sich um eine Fallunterscheidung. Abhängig von Verzweigungsbedingungen geht der Prozessfluss an genau einem ausgehenden Zweig weiter. Bei einer Zusammenführung wird auf eine der eingehenden Kanten gewartet, um den Prozess anschließend fortzuführen.",
+		"groups": ["Gateways"],
+    "view" : "gateway/exclusive.databased.svg",
+		"icon": "gateway/exclusive.databased.png",
+		"propertyPackages": ["baseAttributes", "bgColor", "processid"],
+		"properties": [{
+			"id": "gatewaytype",
+			"type": "String",
+			"title": "Gateway-Typ",
+			"value": "XOR",
+			"description": "The type of the gateway",
+			"description_de": "Der Typ des Gateways.",
+			"include": false,
+			"optional": false,
+			"length": ""
+		},
+		{
+			"id": "xortype",
+			"type": "String",
+			"title": "XOR type",
+			"title_de": "XOR-Typ",
+			"value": "Data",
+			"description": "The type of the XOR gateway.",
+			"description_de": "Der Typ des XOR Gateways.",
+			"include": false,
+			"optional": false,
+			"length": ""
+		},
+		{
+			"id": "markervisible",
+			"type": "Boolean",
+			"title": "X-Marker visible",
+			"title_de": "X-Marker sichtbar",
+			"value": "true",
+			"description": "Defines whether the 'X' in the center of the gateway is visible.",
+			"description_de": "Gibt an, ob das kennzeichnende 'X' im Gateway sichtbar ist.",
+			"include": false,
+			"optional": false,
+			"refToView": "cross"
+		},
+		{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"description": "Change the border color for a visual differentiation.",
+			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": ["bg_frame", "crosspath", "crosspath2"],
+			"fill": false,
+			"stroke": true
+		}],
+		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
+	},
+	{
+		"type": "node",
+		"id": "ParallelGateway",
+		"title": "Parallel Gateway",
+		"title_de": "Paralleles Gateway",
+		"groups": ["Gateways"],
+		"description": "When used to split the sequence flow, all outgoing branches are activated simultaneously. When merging parallel branches it waits for all incoming branches to complete before triggering the outgoing flow.",
+		"description_de": "Bei einer verzweigenden Verwendung werden sämtliche nachfolgenden Zweige gleichzeitig ausgeführt. Bei der Zusammenführung wird auf alle eingehenden Kanten gewartet, bevor der Prozessfluss fortgesetzt wird.",
+    "view" : "gateway/parallel.svg",
+		"icon": "gateway/parallel.png",
+		"propertyPackages": ["baseAttributes", "bgColor", "processid"],
+		"properties": [{
+			"id": "gatewaytype",
+			"type": "String",
+			"title": "Gateway type",
+			"title_de": "Gatewaytyp",
+			"value": "AND",
+			"description": "The type of the gateway.",
+			"description_de": "Der Typ des Gateways.",
+			"include": false,
+			"optional": false,
+			"length": ""
+		},
+		{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"description": "Change the border color for a visual differentiation.",
+			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": ["bg_frame", "path9"],
+			"fill": false,
+			"stroke": true
+		}],
+		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
+	},
+	{
+		"type": "node",
+		"id": "InclusiveGateway",
+		"title": "Inclusive (OR) Gateway",
+		"title_de": "Inclusives (OR) Gateway",
+		"groups": ["Gateways"],
+		"description": "Inclusive Gateways play a role to select some from several Sequence Flows, which suit the condition (the conditional expression is true). At least one Sequence Flow must be selected",
+		"description_de": "Bei einer inclusiven Verwendung werden einige der nachfolgenden Zweige ausgeführt.",
+    "view" : "gateway/inclusive.svg",
+		"icon": "gateway/inclusive.png",
+		"propertyPackages": ["baseAttributes", "bgColor", "processid"],
+		"properties": [{
+			"id": "gatewaytype",
+			"type": "String",
+			"title": "Gateway type",
+			"title_de": "Gatewaytyp",
+			"value": "OR",
+			"description": "The type of the gateway.",
+			"description_de": "Der Typ des Gateways.",
+			"include": false,
+			"optional": false,
+			"length": ""
+		},
+		{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"description": "Change the border color for a visual differentiation.",
+			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": ["bg_frame", "path9"],
+			"fill": false,
+			"stroke": true
+		}],
+		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
+	},
+	{
+		"type": "node",
+		"id": "StartNoneEvent",
+		"title": "Start Event",
+		"title_de": "Startereignis",
+		"groups": ["Events"],
+		"groups_de": ["Ereignisse"],
+		"description": "Untyped start event.",
+		"description_de": "Hier beginnt der normale Prozessfluss durch eine nicht näher beschriebene Auslösebedingung.",
+		"view": "startevent/none.svg",
+		"icon": "startevent/none.png",
+		"propertyPackages": ["baseAttributes", "formAttributes", "bgColor", "borderColor", "processid"],
+    "roles" : [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ],
+		"properties": [{
+			"id": "trigger",
+			"type": "String",
+			"title": "Trigger",
+			"title_de": "Auslöser",
+			"value": "None",
+			"description": "The trigger for the start event, depending on the start event type.",
+			"description_de": "Der Auslöser für das Startereignis. Er hängt vom Typ des Startereignisses ab.",
+			"include": false,
+			"optional": false
+		},{
+			"id": "initiator",
+			"type": "String",
+			"value": "initiator",
+			"include": false,
+			"optional": true
+		}]
+	},
+	{
+    "type" : "node",
+    "id" : "StartTimerEvent",
+    "title" : "Start timer event",
+    "title_de" : "Start timer Ereignis",
+    "description" : "A start event with a timer trigger",
+    "view" : "startevent/timer.svg",
+    "icon" : "startevent/timer.png",
+    "groups" : [ "Events" ],
+    "groups_de" : [ "Ereignisse" ],
+    "propertyPackages" : [ "borderColor", "elementbase", "baseattributes", "timerdefinition", "executionlistenersbase" ],
+    "roles" : [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ]
+  }, 
+	{
+    "type" : "node",
+    "id" : "StartMessageEvent",
+    "title" : "Start message event",
+    "description" : "A start event with a message trigger",
+    "view" : "startevent/message.svg",
+    "icon" : "startevent/message.png",
+    "groups" : [ "Events" ],
+    "groups_de" : [ "Ereignisse" ],
+    "propertyPackages" : [ "elementbase", "baseattributes", "messagerefdefinition", "executionlistenersbase" ],
+    "roles" : [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ]
+  }, 
+	{
+    "type" : "node",
+    "id" : "CatchTimerEvent",
+    "title" : "Intermediate timer catching event",
+    "title_de" : "Timer Zwischenereignis",
+    "description" : "An intermediate catching event with a timer trigger",
+    "view" : "intermediateevent/timer.svg",
+    "icon" : "catching/timer.png",
+    "groups" : [ "Events" ],
+    "groups_de" : [ "Ereignisse" ],
+    "propertyPackages" : [ "borderColor", "elementbase", "baseattributes", "timerdefinition", "executionlistenersbase" ],
+    "roles" : [ "sequence_start", "sequence_end", "CatchEventsMorph", "all" ]
+  }, 
+	{
+		"type": "node",
+		"id": "EndNoneEvent",
+		"title": "End Event",
+		"title_de": "Endereignis",
+		"groups": ["Events"],
+		"groups_de": ["Ereignisse"],
+		"description": "The untyped end event typically marks the standard end of a process.",
+		"description_de": "Untypisiertes Endereignis, welches ein normales Ende eines Prozesses markiert.",
+		"view": "endevent/none.svg",
+		"icon": "endevent/none.png",
+		"propertyPackages": ["baseAttributes", "bgColor", "borderColor"],
+		"roles": ["all", "sequence_end", "Endevents_all", "EndEventsMorph"],
+		"properties": [{
+			"id": "trigger",
+			"type": "String",
+			"title": "Trigger",
+			"title_de": "Auslöser",
+			"value": "None",
+			"description": "The trigger for the end event, depending on the event type.",
+			"description_de": "Der Auslöser für das Endereignis. Er hängt vom Typ des Ereignisses ab.",
+			"include": false,
+			"optional": false
+		}]
+	},
+	{
+		"type": "edge",
+		"id": "SequenceFlow",
+		"title": "Sequence Flow",
+		"title_de": "Sequenzfluss",
+		"description": "Sequence flow defines the execution order of activities.",
+		"description_de": "Ein Sequenzfluss definiert die Ausführungsreihenfolge von Aktivitäten.",
+		"groups": ["Connecting Objects"],
+		"groups_de": ["Konnektoren"],
+		"view": "connector/sequenceflow.svg",
+		"icon": "connector/sequenceflow.png",
+		"propertyPackages": ["baseAttributes", "sequenceflowbase"],
+		"layout": [{
+			"type": "layout.bpmn2_0.sequenceflow"
+		}],
+		"roles": ["all", "ConnectingObjectsMorph"],
+		"properties": [{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"description": "Change the border color for a visual differentiation.",
+			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": ["bg_frame", "arrowhead", "conditional", "default"],
+			"fill": false,
+			"stroke": true
+		}]
+	},
+	{
+    "type" : "edge",
+    "id" : "Association",
+    "title" : "Association",
+    "description" : "Associates a text annotation with an element.",
+    "view" : "connector/association.undirected.svg",
+    "icon" : "connector/association.undirected.png",
+    "groups" : [ "Connecting Objects" ],
+		"groups_de": ["Konnektoren"],
+    "layout" : [ {
+      "type" : "layout.bpmn2_0.sequenceflow"
+    } ],
+    "propertyPackages" : [ "borderColor","elementbase", "baseattributes" ],
+    "roles" : [ "ConnectingObjectsMorph", "all" ]
+  },
+	{
+		"type": "node",
+		"id": "TextAnnotation",
+		"title": "Text Annotation",
+		"title_de": "Textanmerkung",
+		"groups": ["Artifacts"],
+		"groups_de": ["Artefakte"],
+		"description": "Any object can be associated with a text annotation to provide additional documentation.",
+		"description_de": "Jedes Objekt kann durch eine Text-Anmerkung kommentiert werden.",
+		"view": "artifact/text.annotation.svg",
+		"icon": "artifact/text.annotation.png",
+		"defaultAlign": [{
+			"align": "northeast"
+		},
+		{
+			"orientation": "vertical",
+			"align": "southeast"
+		}],
+		"propertyPackages": ["baseAttributes"],
+		"properties": [{
+			"id": "text",
+			"type": "String",
+			"title": "Text",
+			"value": "",
+			"description": "The annotating text.",
+			"description_de": "Der kommentierende Text.",
+			"readonly": false,
+			"optional": true,
+			"refToView": "text",
+			"length": "",
+			"wrapLines": true
+		},
+		{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"description": "Change the border color for a visual differentiation.",
+			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": ["frame"],
+			"fill": false,
+			"stroke": true
+		}],
+		"roles": ["all"]
+	}],
+  "rules" : {
+    "cardinalityRules" : [ {
+      "role" : "Startevents_all",
+      "incomingEdges" : [ {
+        "role" : "SequenceFlow",
+        "maximum" : 0
+      } ]
+    }, {
+      "role" : "Endevents_all",
+      "outgoingEdges" : [ {
+        "role" : "SequenceFlow",
+        "maximum" : 0
+      } ]
+    } ],
+    "connectionRules" : [ {
+      "role" : "SequenceFlow",
+      "connects" : [ {
+        "from" : "sequence_start",
+        "to" : [ "sequence_end" ]
+      } ]
+    }, {
+      "role" : "Association",
+      "connects" : [ {
+        "from" : "sequence_start",
+        "to" : [ "TextAnnotation" ]
+      } ]
+    }, {
+      "role" : "Association",
+      "connects" : [ {
+        "from" : "TextAnnotation",
+        "to" : [ "sequence_end" ]
+      } ]
+    }, {
+      "role" : "IntermediateEventOnActivityBoundary",
+      "connects" : [ {
+        "from" : "Activity",
+        "to" : [ "IntermediateEventOnActivityBoundary" ]
+      } ]
+    } ],
+    "containmentRules" : [ {
+      "role" : "BPMNDiagram",
+      "contains" : [ "all" ]
+    }, {
+      "role" : "SubProcess",
+      "contains" : [ "sequence_start", "sequence_end", "EventSubprocess", "TextAnnotation" ]
+    }, {
+      "role" : "EventSubProcess",
+      "contains" : [ "sequence_start", "sequence_end", "TextAnnotation" ]
+    } ],
+    "morphingRules" : [ {
+      "role" : "ActivitiesMorph",
+      "baseMorphs" : [ "UserTask" ],
+      "preserveBounds" : true
+    }, {
+      "role" : "GatewaysMorph",
+      "baseMorphs" : [ "ExclusiveGateway" ]
+    }, {
+      "role" : "StartEventsMorph",
+      "baseMorphs" : [ "StartNoneEvent" ]
+    }, {
+      "role" : "EndEventsMorph",
+      "baseMorphs" : [ "StartNoneEvent" ]
+    }, {
+      "role" : "CatchEventsMorph",
+      "baseMorphs" : [ "CatchTimerEvent" ]
+    }, {
+      "role" : "ThrowEventsMorph",
+      "baseMorphs" : [ "ThrowNoneEvent" ]
+    }, {
+      "role" : "TextAnnotation",
+      "baseMorphs" : [ "TextAnnotation" ]
+    } ]
+  }
+}
