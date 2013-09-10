@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:oryx="http://www.b3mn.org/oryx" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="40" version="1.0">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:oryx="http://www.b3mn.org/oryx" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="140" version="1.0">
   <g pointer-events="fill" transform="xcale(0.7,0.7)" stroke-width="0.25" class="SlideGroup">
     <defs>
       <radialGradient id="background" cx="10%" cy="10%" r="100%" fx="10%" fy="10%">
@@ -7,24 +7,43 @@
         <stop id="fill_el" offset="100%" stop-color="#ffffcc" stop-opacity="1" />
       </radialGradient>
     </defs>
-    <g id="border">
-      <path d="M 0,47 L 84,47 84,0 0,0 0,47 Z" fill="none" stroke="none" />
-      <path id="bg_frame" d="M 0,47 L 84,47 84,0 0,0 0,47 Z" fill="url(#background) #ffffcc" stroke="rgb(15,15,15)" stroke-width="2.5" />
-    </g>
-    <g transform="xcale(0.7,0.7) translate(8,8)">
-      <text id="endpoint_type" xml:space="preserve" text-anchor="middle" font-weight="bold" xont-family="serif" font-size="12" y="18" x="3" stroke-width="0" stroke="#000000" fill="black">
-FTP12345
+    <g transform="translate(8,8)">
+      <text id="type" xml:space="preserve" text-anchor="middle" font-weight="bold" xont-family="serif" font-size="12" y="18" x="3" stroke-width="0" stroke="#000000" fill="black">
+Aggregat
 </text>
     </g>
-    <g id="arrow">
-      <path d="M 1,33 L 36,33" fill="none" stroke="black" />
-      <path d="M 37,38 L 37,29 47,33 37,38 Z" fill="black" stroke="none" />
-      <path d="M 37,38 L 37,29 47,33 37,38 Z" fill="none" stroke="black" />
-      <path d="M 47,33 L 37,38 37,29 47,33 Z" fill="none" stroke="black" />
-    </g>
-    <g id="whiterect">
-      <path d="M 52,42 L 79,42 79,24 52,24 52,42 Z" fill="rgb(255,255,255)" stroke="black" />
-      <path d="M 52,42 L 79,42 79,24 52,24 52,42 Z" fill="none" stroke="black" />
-    </g>
+
+
+		<g id="id3">
+			<path d="M 77,47 L 0,47 0,0 77,0 77,47 Z" fill="none" stroke="none" />
+			<path d="M 77,47 L 0,47 0,0 77,0 77,47 Z" id="bg_frame" fill="url(#background) #ffffcc" stroke="rgb(15,15,15)" stroke-width="2.5" />
+		</g>
+		<g id="id4">
+			<path d="M 67,28 L 58,28 58,19 67,19 67,28 Z" fill="rgb(255,255,255)" stroke="none" />
+			<path d="M 67,28 L 58,28 58,19 67,19 67,28 Z" fill="none" stroke="rgb(15,15,15)" />
+		</g>
+		<g id="id5">
+			<path d="M 50,23 L 37,28 37,19 50,23 Z" fill="rgb(15,15,15)" stroke="none" />
+			<path d="M 50,23 L 37,28 37,19 50,23 Z" fill="none" stroke="rgb(15,15,15)" />
+		</g>
+		<g id="id6">
+			<path d="M 26,23 L 50,23" fill="none" stroke="rgb(15,15,15)" />
+		</g>
+		<g id="id7">
+			<path d="M 18,28 L 9,28 9,19 18,19 18,28 Z" fill="rgb(255,255,255)" stroke="none" />
+			<path d="M 18,28 L 9,28 9,19 18,19 18,28 Z" fill="none" stroke="rgb(15,15,15)" />
+		</g>
+		<g id="id8">
+			<path d="M 18,14 L 9,14 9,6 18,6 18,14 Z" fill="rgb(255,255,255)" stroke="none" />
+			<path d="M 18,14 L 9,14 9,6 18,6 18,14 Z" fill="none" stroke="rgb(15,15,15)" />
+		</g>
+		<g id="id9">
+			<path d="M 18,41 L 9,41 9,32 18,32 18,41 Z" fill="rgb(255,255,255)" stroke="none" />
+			<path d="M 18,41 L 9,41 9,32 18,32 18,41 Z" fill="none" stroke="rgb(15,15,15)" />
+		</g>
+
+
+
+
   </g>
 </svg>

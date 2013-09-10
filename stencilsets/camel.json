@@ -757,6 +757,42 @@
 		}]
 	},
 	{
+		"type": "node",
+		"id": "AggregatRoute",
+		"title": "Aggregat route",
+		"title_de": "Aggregat",
+		"groups": ["Gateways"],
+    "view" : "aggregat.svg",
+		"icon": "aggregat.png",
+		"propertyPackages": ["baseAttributes", "bgColor", "processid"],
+		"properties": [{
+			"id": "gatewaytype",
+			"type": "String",
+			"title": "Gateway-Typ",
+			"value": "XOR",
+			"description": "The type of the gateway",
+			"description_de": "Der Typ des Gateways.",
+			"include": false,
+			"optional": false,
+			"length": ""
+		},
+		{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"description": "Change the border color for a visual differentiation.",
+			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": ["bg_frame", "crosspath", "crosspath2"],
+			"fill": false,
+			"stroke": true
+		}],
+		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
+	},
+	{
 		"type": "edge",
 		"id": "SequenceFlow",
 		"title": "Sequence Flow",
