@@ -6,25 +6,15 @@
         <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
         <stop id="fill_el" offset="100%" stop-color="#ffffcc" stop-opacity="1" />
       </radialGradient>
+      <marker id="arrow" viewBox="0 0 10 10" refX="1" refY="5" markerUnits="strokeWidth" orient="auto" markerWidth="8" markerHeight="14">
+        <path d="M 0 0 L 10 5 L 0 10 z" />
+      </marker>
     </defs>
-    <g id="border">
-      <path d="M 0,47 L 84,47 84,0 0,0 0,47 Z" fill="none" stroke="none" />
-      <path id="bg_frame" d="M 0,47 L 84,47 84,0 0,0 0,47 Z" fill="url(#background) #ffffcc" stroke="rgb(15,15,15)" stroke-width=".5" />
-    </g>
-    <g transform="xcale(0.7,0.7) translate(8,8)">
-      <text id="endpoint_type" xml:space="preserve" text-anchor="middle" font-weight="bold" xont-family="serif" font-size="12" y="18" x="3" stroke-width="0" stroke="#000000" fill="black">
+    <rect x="0" y="0" width="83" rx="2" ry="2" height="47" id="bg_frame" fill="url(#background)" stroke="none" stroke-width="0.5" />
+    <text id="endpoint_type" xml:space="preserve" text-anchor="middle" font-weight="bold" xont-family="serif" font-size="12" y="18" x="3" stroke-width="0" stroke="#000000" fill="black">
 FTP
 </text>
-    </g>
-    <g id="arrow">
-      <path d="M 1,33 L 36,33" fill="none" stroke="black" />
-      <path d="M 37,38 L 37,29 47,33 37,38 Z" fill="black" stroke="none" />
-      <path d="M 37,38 L 37,29 47,33 37,38 Z" fill="none" stroke="black" />
-      <path d="M 47,33 L 37,38 37,29 47,33 Z" fill="none" stroke="black" />
-    </g>
-    <g id="whiterect">
-      <path d="M 52,42 L 79,42 79,24 52,24 52,42 Z" fill="rgb(255,255,255)" stroke="black" />
-      <path d="M 52,42 L 79,42 79,24 52,24 52,42 Z" fill="none" stroke="black" />
-    </g>
+    <line x1="1" y1="33" x2="42" y2="33" stroke="black" stroke-width="1" marker-end="url(#arrow)" />
+    <rect x="52" y="24" width="27" height="18" rx="1" ry="1" fill="#ffffff" stroke="#000000" stroke-width="0.5" />
   </g>
 </svg>

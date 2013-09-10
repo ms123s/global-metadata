@@ -61,15 +61,28 @@
 		}]
 	},
 	{
-		"name": "bgColor",
+		"name": "bgColorRouter",
 		"properties": [{
 			"id": "bgcolor",
 			"type": "Color",
 			"title": "BackgroundColor",
 			"title_de": "Hintergrundfarbe",
-			"value": "#ffffff",
-			"description": "Change the background color for a visual differentiation.",
-			"description_de": "Verändern Sie die Hintergrundfarbe für eine visuelle Unterscheidung.",
+			"value": "yellow",
+			"readonly": false,
+			"optional": false,
+			"refToView": "fill_el",
+			"fill": true,
+			"stroke": false
+		}]
+	},
+	{
+		"name": "bgColorEndpoint",
+		"properties": [{
+			"id": "bgcolor",
+			"type": "Color",
+			"title": "BackgroundColor",
+			"title_de": "Hintergrundfarbe",
+			"value": "#ffffcc",
 			"readonly": false,
 			"optional": false,
 			"refToView": "fill_el",
@@ -763,7 +776,7 @@
 		"groups": ["Router"],
     "view" : "messagefilter.svg",
 		"icon": "messagefilter.png",
-		"propertyPackages": ["baseAttributes", "bgColor", "bordercolor"],
+		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
 		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
@@ -775,7 +788,7 @@
 		"groups": ["Router"],
     "view" : "messagerouter.svg",
 		"icon": "messagerouter.png",
-		"propertyPackages": ["baseAttributes", "bgColor", "bordercolor"],
+		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
 		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
@@ -788,7 +801,7 @@
 		"groups": ["Router"],
     "view" : "aggregat.svg",
 		"icon": "aggregat.png",
-		"propertyPackages": ["baseAttributes", "bgColor", "borderColor"],
+		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
 		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
@@ -819,12 +832,12 @@
     "icon" : "ftpendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor",  "activity" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColorEndpoint", "borderColor",  "activity" ],
 		"properties": [{
 			"id": "endpoint_type1",
 			"type":"String",
 			"value": "FTP",
-			"optional": false,
+			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
     "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
@@ -837,7 +850,7 @@
     "icon" : "directendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColorEndpoint", "borderColor", "activity" ],
 		"properties": [{
 			"id": "endpoint_type2",
 			"type":"String",
@@ -855,7 +868,7 @@
     "icon" : "mailendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColorEndpoint", "borderColor", "activity" ],
 		"properties": [{
 			"id": "endpoint_type2",
 			"type":"String",
@@ -873,7 +886,7 @@
     "icon" : "jmsendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColorEndpoint", "borderColor", "activity" ],
 		"properties": [{
 			"id": "endpoint_type3",
 			"type":"String",
@@ -891,7 +904,7 @@
     "icon" : "sedaendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColorEndpoint", "borderColor", "activity" ],
 		"properties": [{
 			"id": "endpoint_type4",
 			"type":"String",
