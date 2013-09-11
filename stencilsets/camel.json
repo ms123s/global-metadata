@@ -229,7 +229,7 @@
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
-		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
+		"roles": ["all", "whenConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
 	},
 	{
 		"type": "node",
@@ -254,6 +254,9 @@
 		"view": "simpleconnection.svg",
 		"icon": "simpleconnection.png",
 		"propertyPackages": ["baseAttributes"],
+		"layout": [{
+			"type": "layout.bpmn2_0.sequenceflow"
+		}],
 		"roles": ["all", "ConnectingObjectsMorph"],
 		"properties": [
 		]
@@ -289,7 +292,7 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, 
 	{
     "type" : "node",
@@ -308,7 +311,7 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, 
 	{
     "type" : "node",
@@ -327,7 +330,7 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
     "id" : "MailEndpoint",
@@ -345,7 +348,7 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
     "id" : "JMSEndpoint",
@@ -363,7 +366,7 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
     "id" : "SedaEndpoint",
@@ -381,7 +384,7 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}
 	],
   "rules" : {
