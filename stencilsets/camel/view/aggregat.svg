@@ -13,11 +13,8 @@
     <path d="M 50,23 L 37,28 37,19 50,23 Z" fill="rgb(15,15,15)" stroke="none" />
     <path d="M 50,23 L 37,28 37,19 50,23 Z" fill="none" stroke="rgb(15,15,15)" />
     <path d="M 26,23 L 50,23" fill="none" stroke="rgb(15,15,15)" />
-    <path d="M 18,28 L 9,28 9,19 18,19 18,28 Z" fill="rgb(255,255,255)" stroke="none" />
     <path d="M 18,28 L 9,28 9,19 18,19 18,28 Z" fill="none" stroke="rgb(15,15,15)" />
-    <path d="M 18,14 L 9,14 9,6 18,6 18,14 Z" fill="rgb(255,255,255)" stroke="none" />
     <path d="M 18,14 L 9,14 9,6 18,6 18,14 Z" fill="none" stroke="rgb(15,15,15)" />
-    <path d="M 18,41 L 9,41 9,32 18,32 18,41 Z" fill="rgb(255,255,255)" stroke="none" />
-    <path d="M 18,41 L 9,41 9,32 18,32 18,41 Z" fill="none" stroke="rgb(15,15,15)" />
+    <path d="M 18,41 L 9,41 9,32 18,32 18,41 Z" fill="#ffffff" stroke="rgb(15,15,15)" />
   </g>
 </svg>

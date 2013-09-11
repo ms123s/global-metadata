@@ -1,66 +1,28 @@
 {
 	"title": "BPMN 2.0",
 	"namespace": "http://b3mn.org/stencilset/camel#",
-	"description": "This is the BPMN 2.0 stencil set specification.",
-	"description_de": "Dies ist die BPMN 2.0 Stencilset Spezifikation.",
 	"propertyPackages": [{
-    "name" : "elementbase",
-    "properties" : [ {
+		"name": "baseAttributes",
+		"properties": [{
       "id" : "overrideid",
       "type" : "String",
       "title" : "Id",
       "value" : "",
 			"include":true,
-      "description" : "Unique identifier of the element.",
       "popular" : true
-    }]
-    }, 
-		{
-		"name": "baseAttributes",
-		"properties": [{
-			"id": "name",
-			"type": "String",
-			"title": "Name",
-			"value": "",
-			"description": "The descriptive name of the BPMN element.",
-			"description_de": "Bezeichnung des BPMN-Elementes.",
-			"readonly": false,
-			"optional": true,
-			"length": "64",
-			"wrapLines": true,
-			"refToView": "text_name"
-		},
-		{
+    },{
 			"id": "documentation",
 			"type": "Text",
 			"title": "Documentation",
 			"title_de": "Dokumentation",
 			"value": "",
-			"description": "This attribute is used to annotate the BPMN element, such as descriptions and other documentation.",
-			"description_de": "Der Modellierer kann weiteren Text zur Dokumentation des BPMN-Elementes einfügen.",
 			"readonly": false,
 			"optional": true,
 			"length": "",
 			"wrapLines": true,
 			"popular": true
 		}]
-	},
-	{
-		"name": "processid",
-		"properties": [{
-			"id": "processid",
-			"type": "String",
-			"title": "ProcessID",
-			"title_de": "Prozess-ID",
-			"description": "Defines the ID of the container process used in the exported BPMN 2.0 XML. The ID has to be a valid XSD:id string and identifies a process unambiguous.",
-			"description_de": "Definiert die ID des Prozesselementes im exportierten BPMN 2.0 XML. Die ID muss XSD:id konform sein und den Prozess eindeutig identifizieren.",
-			"value": "",
-			"include": false,
-			"optional": true,
-			"wraplines": false
-		}]
-	},
-	{
+	},{
 		"name": "bgColorRouter",
 		"properties": [{
 			"id": "bgcolor",
@@ -74,8 +36,7 @@
 			"fill": true,
 			"stroke": false
 		}]
-	},
-	{
+	},{
 		"name": "bgColorEndpoint",
 		"properties": [{
 			"id": "bgcolor",
@@ -89,8 +50,7 @@
 			"fill": true,
 			"stroke": false
 		}]
-	},
-	{
+	},{
 		"name": "borderColor",
 		"properties": [{
 			"id": "bordercolor",
@@ -106,105 +66,7 @@
 			"fill": false,
 			"stroke": true
 		}]
-	},
-	{
-		"name": "boundaryevent",
-		"properties": [{
-			"id": "boundarycancelactivity2",
-			"type": "Boolean",
-			"title": "Cancel activity",
-			"title_de": "Aktivität abbrechen",
-			"value": true,
-			"description": "Denotes whether the activity should be canceled or not (i.e., whether the boundary catch event acts as an Error or an Escalation). If the activity is not canceled, multiple instances of that handler can run concurrently.",
-			"description_de": "Kennzeichnet, ob eine Aktivität abgebrochen werden soll oder nicht (d.h., ob ein angeheftetes eintretendes Ereignis als Fehler oder Eskalation auftreten kann). Wenn die Aktivität nicht beendet wird, können mehrere Instanzen der Behandlungsroutine parallel ausgeführt werden.",
-			"readonly": false,
-			"optional": true,
-			"refToView": ["frame", "frame2"]
-		}]
-	},
-	{
-		"name": "formAttributes",
-		"properties": [{
-			"id": "attr$activiti$formKey",
-			"type": "ResourceSelector",
-			"config": {"type":"sw.form","prefix":""},
-			"title": "Form",
-			"title_de": "Form",
-			"value": "",
-			"description": "",
-			"description_de": "Das Formular zum Starten des Prozesses",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		}]
-	},
-	{
-		"name": "timer",
-		"properties": [{
-			"id": "timedate",
-			"type": "String",
-			"title": "Timedate",
-			"title_de": "Datum",
-			"value": "",
-			"description": "The date of the timer definition.",
-			"description_de": "Der Zeitpunkt des definierten Zeitereignisses.",
-			"readonly": false,
-			"optional": true,
-			"popular": true
-		},
-		{
-			"id": "timecycle",
-			"type": "String",
-			"title": "Timecycle",
-			"title_de": "Zeitzyklus",
-			"value": "",
-			"description": "The time cycle of the timer definition.",
-			"description_de": "Der Zeitzyklus des definierten Zeitereignisses.",
-			"readonly": false,
-			"optional": true,
-			"popular": true
-		},
-		{
-			"id": "timeduration",
-			"type": "String",
-			"title": "Time duration",
-			"title_de": "Dauer",
-			"value": "",
-			"description": "The duration of the timer definition.",
-			"description_de": "Die Dauer des definierten Zeitereignisses.",
-			"readonly": false,
-			"optional": true,
-			"popular": true
-		}]
-	},
-	{
-		"name": "compensation",
-		"properties": [{
-			"id": "waitforcompletion",
-			"type": "Boolean",
-			"title": "Wait for completion",
-			"title_de": "Auf Fertigstellung warten",
-			"value": true,
-			"popular": false,
-			"description": "Determine whether a throw compensation is performed synchronously or asynchronously.",
-			"description_de": "Gibt an, ob die erzeugte Kompensierung synchron oder asynchron aufgerufen wird.",
-			"readonly": false,
-			"optional": true
-		},
-		{
-			"id": "activityref",
-			"type": "String",
-			"title": "Activity reference",
-			"title_de": "Aktivitätsreferenz",
-			"value": "",
-			"popular": true,
-			"description": "The activity related to the compensation event",
-			"description_de": "Die Kompensierung betreffende Aktivität",
-			"readonly": false,
-			"optional": true
-		}]
-	},
-	{
+	},{
 		"name": "diagram",
 		"properties": [{
 			"id": "version",
@@ -215,8 +77,7 @@
 			"description_de": "Setzt die Versionsnummer des Diagramms.",
 			"readonly": false,
 			"optional": true
-		},
-		{
+		},{
 			"id": "author",
 			"type": "String",
 			"title": "Author",
@@ -226,31 +87,7 @@
 			"description_de": "Name des Diagrammautors.",
 			"readonly": false,
 			"optional": true
-		},
-		{
-			"id": "language",
-			"type": "String",
-			"title": "Language",
-			"title_de": "Sprache",
-			"value": "English",
-			"value_de": "Deutsch",
-			"description": "This holds the language in which text is written.",
-			"description_de": "Sprache, in welcher der Text verfasst ist.",
-			"include": false,
-			"optional": true
-		},
-		{
-			"id": "targetnamespace",
-			"type": "String",
-			"title": "Target namespace",
-			"title_de": "Ziel-Namensraum",
-			"value": "http://www.signavio.com/bpmn20",
-			"description": "Defines the XML namespace of the elements inside the document.",
-			"description_de": "Definiert den XML-Namensraum, der für die Elemente im Dokument verwendet wird.",
-			"readonly": false,
-			"optional": true
-		},
-		{
+		},{
 			"id": "creationdate",
 			"type": "Date",
 			"title": "Creation date",
@@ -261,8 +98,7 @@
 			"readonly": false,
 			"optional": true,
 			"dateFormat": "j/m/y"
-		},
-		{
+		},{
 			"id": "modificationdate",
 			"type": "Date",
 			"title": "Modification date",
@@ -274,361 +110,7 @@
 			"optional": true,
 			"dateFormat": "j/m/y"
 		}]
-	},{
-    "name" : "asynchronousbase",
-    "properties" : [ {
-      "id" : "asynchronousdefinition",
-      "type" : "Choice",
-      "title" : "Asynchronous",
-      "title_de" : "Asynchron",
-      "value" : "No",
-      "description" : "Define the activity as asynchronous.",
-      "popular" : true,
-      "items" : [ {
-        "id" : "no",
-        "title" : "No",
-        "title_de" : "Nein",
-        "value" : "No"
-      }, {
-        "id" : "yes",
-        "title" : "Yes",
-        "title_de" : "Ja",
-        "value" : "Yes"
-      } ]
-    }, {
-      "id" : "exclusivedefinition",
-      "type" : "Choice",
-      "title" : "Exclusive",
-      "title_de" : "Exclusiv",
-      "value" : "Yes",
-      "description" : "Define the activity as exclusive.",
-      "popular" : true,
-      "items" : [ {
-        "id" : "no",
-        "title" : "No",
-        "title_de" : "Nein",
-        "value" : "No"
-      }, {
-        "id" : "yes",
-        "title" : "Yes",
-        "title_de" : "Ja",
-        "value" : "Yes"
-      } ]
-    } ]
-  }, {
-		"name": "loopcharacteristics",
-		"properties": [{
-			"id": "looptype",
-			"type": "Choice",
-			"title": "Loop type",
-			"title_de": "Schleifentyp",
-			"value": "None",
-			"description": "Repeated activity execution (parallel or sequential) can be displayed through different loop types",
-			"description_de": "Wiederholtes (paralleles oder sequentielles) Ausführen einer Aktivität kann durch die Angabe eines Schleifentyps dargestellt werden. ",
-			"readonly": false,
-			"optional": false,
-			"refToView": "",
-			"items": [{
-				"id": "c1",
-				"title": "None",
-				"title_de": "Keine Schleife",
-				"value": "None",
-				"refToView": "none"
-			},
-			{
-				"id": "c2",
-				"title": "Standard",
-				"title_de": "Standard",
-				"value": "Standard",
-				"icon": "activity/list/looptype.standard.png",
-				"refToView": "loop"
-			},
-			{
-				"id": "c3",
-				"title": "MI Parallel",
-				"title_de": "MI parallel",
-				"value": "Parallel",
-				"icon": "activity/list/mi.parallel.png",
-				"refToView": "parallel"
-			},
-			{
-				"id": "c4",
-				"title": "MI Sequential",
-				"title_de": "MI sequentialisiert",
-				"value": "Sequential",
-				"icon": "activity/list/mi.sequential.png",
-				"refToView": "sequential"
-			}]
-		},
-		{
-      "id" : "multiinstance_sequential",
-      "type" : "Choice",
-      "title" : "Sequential (Multi-instance)",
-			"title_de": "sequentiell",
-      "value" : "Yes",
-      "description" : "Define the multi instance as sequential.",
-			"include": false,
-      "popular" : true,
-      "items" : [ {
-        "id" : "no",
-        "title" : "No",
-        "title_de" : "Nein",
-        "value" : "No"
-      }, {
-        "id" : "yes",
-        "title" : "Yes",
-        "title_de" : "Yes",
-        "value" : "Yes"
-      } ]
-    }, {
-      "id" : "multiinstance_cardinality",
-      "type" : "String",
-      "title" : "Cardinality (Multi-instance)",
-			"title_de": "Schleifen-Kardinalität",
-      "value" : "",
-			"include": false,
-      "description" : "Define the cardinality of multi instance.",
-      "popular" : true
-    }, {
-      "id" : "multiinstance_collection",
-      "type" : "String",
-      "title" : "Collection (Multi-instance)",
-			"title_de": "Schleifenliste",
-      "value" : "",
-      "description" : "Define the collection for the multi instance.",
-      "popular" : true
-    }, {
-      "id" : "multiinstance_variable",
-      "type" : "String",
-      "title" : "Element variable (Multi-instance)",
-			"title_de": "Elementvariable",
-      "value" : "",
-      "description" : "Define the element variable for the multi instance.",
-      "popular" : true
-    }, {
-      "id" : "multiinstance_condition",
-      "type" : "String",
-      "title" : "Completion condition (Multi-instance)",
-			"title_de": "Endebedingung",
-      "value" : "",
-      "description" : "Define the completion condition for the multi instance.",
-      "popular" : true
-    }, {
-      "id" : "isforcompensation",
-      "type" : "Boolean",
-      "title" : "Is for compensation",
-			"title_de": "Ist für Kompensation",
-      "value" : "false",
-      "description" : "A flag that identifies whether this activity is intended for the purposes of compensation.",
-			"include": false,
-      "popular" : false,
-      "refToView" : "compensation"
-    }]
-	},{
-    "name" : "servicetaskbase",
-    "properties" : [ {
-      "id" : "type",
-      "type" : "Choice",
-      "title" : "Type",
-			"title_de": "Typ",
-      "value" : "camel",
-			"include": true,
-      "popular" : true,
-      "items" : [ {
-        "id" : "camel",
-        "title" : "camel",
-        "value" : "camel"
-      }, {
-        "id" : "xxxx",
-        "title" : "xxxx",
-        "value" : "xxxx"
-      } ]
-    },{
-      "id" : "servicetaskclass",
-      "type" : "String",
-      "title" : "Class",
-      "value" : "",
-      "description" : "Class that implements the service task logic.",
-			"include": false,
-      "popular" : true
-    }, {
-      "id" : "servicetaskexpression",
-      "type" : "String",
-      "title" : "Expression",
-      "value" : "",
-      "description" : "Service task logic defined with an expression.",
-			"include": false,
-      "popular" : true
-    }, {
-      "id" : "servicetaskdelegateexpression",
-      "type" : "String",
-      "title" : "Delegate expression",
-      "value" : "",
-      "description" : "Service task logic defined with a delegate expression.",
-			"include": false,
-      "popular" : true
-    }, {
-      "id" : "servicetaskresultvariable",
-      "type" : "String",
-      "title" : "Result variable name",
-      "value" : "",
-      "description" : "Process variable name to store the service task result.",
-      "popular" : true
-    }, {
-      "id" : "servicetaskfields",
-      "type" : "Complex",
-      "title" : "Class fields",
-      "value": "{ \"totalCount\": 1, \"items\": [ { \"servicetask_field_name\": \"camelBehaviorClass\", \"servicetask_field_value\": \"org.ms123.common.workflow.camel.CamelBehaviorDefaultImpl\", \"servicetask_field_expression\": \"\" } ] }",
-      "description" : "Field extensions",
-			"include": true,
-      "popular" : true,
-      "complexItems" : [ {
-        "id" : "servicetask_field_name",
-        "name" : "Name",
-        "type" : "String",
-        "value" : "",
-        "width" : 200,
-        "optional" : false
-      }, {
-        "id" : "servicetask_field_value",
-        "name" : "String value",
-        "type" : "String",
-        "value" : "",
-        "width" : 200,
-        "optional" : false
-      }, {
-        "id" : "servicetask_field_expression",
-        "name" : "Expression",
-        "type" : "String",
-        "value" : "",
-        "width" : 200,
-        "optional" : false
-      } ]
-    } ]
-  },{
-    "name" : "callactivitybase",
-    "properties" : [{
-			"id": "callactivitycalledelement",
-			"type": "ResourceSelector",
-			"config": {"type":"sw.process","prefix":""},
-      "title" : "Called element",
-      "title_de" : "Name des Prozesses",
-			"value": "",
-      "description" : "Process reference.",
-      "popular" : false
-		},
-		{
-      "id" : "callactivityinparameters",
-      "type" : "Complex",
-      "title" : "In parameters",
-      "title_de" : "Eingabeparameter",
-      "value" : "",
-      "description" : "Definition of the input parameters",
-      "popular" : false,
-      "complexItems" : [ {
-        "id" : "ioparameter_source",
-        "name" : "Source",
-        "name_de" : "Quellvariable",
-        "type" : "String",
-        "value" : "",
-        "width" : 200,
-        "optional" : false
-      }, {
-        "id" : "ioparameter_sourceexpression",
-        "name" : "Source expression",
-        "name_de" : "Quellenausdruck",
-        "type" : "String",
-        "value" : "",
-        "width" : 200,
-        "optional" : false
-      }, {
-        "id" : "ioparameter_target",
-        "name" : "Target",
-        "name_de" : "Zielvariable",
-        "type" : "String",
-        "value" : "",
-        "width" : 200,
-        "optional" : false
-      } ]
-    }, {
-      "id" : "callactivityoutparameters",
-      "type" : "Complex",
-      "title" : "Out parameters",
-      "title_de" : "Ausgabeparameter",
-      "value" : "",
-      "description" : "Definition of the output parameters",
-      "popular" : false,
-      "complexItems" : [ {
-        "id" : "ioparameter_source",
-        "name" : "Source",
-        "name_de" : "Quellvariable",
-        "type" : "String",
-        "value" : "",
-        "width" : 200,
-        "optional" : false
-      }, {
-        "id" : "ioparameter_sourceexpression",
-        "name" : "Source expression",
-        "name_de" : "Quellenausdruck",
-        "type" : "String",
-        "value" : "",
-        "width" : 200,
-        "optional" : false
-      }, {
-        "id" : "ioparameter_target",
-        "name" : "Target",
-        "name_de" : "Zielvariable",
-        "type" : "String",
-        "value" : "",
-        "width" : 200,
-        "optional" : false
-      } ]
-    } ,
-		{
-			"id": "tasktype",
-			"type": "String",
-			"include": false,
-			"optional": false,
-			"value": "None"
-		}]
-  }, 
-	{
-    "name" : "timerdefinition",
-    "properties" : [ {
-      "id" : "timerdurationdefinition",
-      "type" : "String",
-      "title" : "Time duration (e.g. PT5M)",
-      "value" : "",
-      "description" : "Define the timer with a ISO-8601 duration.",
-      "popular" : true
-    }, {
-      "id" : "timerdatedefinition",
-      "type" : "String",
-      "title" : "Time date in ISO-8601",
-      "value" : "",
-      "description" : "Define the timer with a ISO-8601 date definition.",
-      "popular" : true
-    }, {
-      "id" : "timercycledefinition",
-      "type" : "String",
-      "title" : "Time cycle (e.g. R3/PT10H)",
-      "value" : "",
-      "description" : "Define the timer with a ISO-8601 cycle.",
-      "popular" : true
-    } ]
-  }, 
-	{
-    "name" : "messagerefdefinition",
-    "properties" : [ {
-      "id" : "messageref",
-      "type" : "String",
-      "title" : "Message reference",
-      "title_de" : "Message Referenz",
-      "value" : "",
-      "description" : "Define the message name.",
-      "popular" : true
-    } ]
-  }, 
+	},
 	{
     "name" : "sequenceflowbase",
     "properties" : [{
@@ -688,60 +170,16 @@
 	}],
 	"stencils": [{
 		"type": "node",
-		"id": "BPMNDiagram",
-		"title": "BPMN-Diagram",
-		"title_de": "BPMN-Diagramm",
+		"id": "Camelrouting",
+		"title": "Camelrouting",
 		"groups": ["Diagram"],
-		"description": "A BPMN 2.0 diagram.",
-		"description_de": "Ein BPMN 2.0 Diagramm",
     "view" : "diagram.svg",
 		"icon": "diagram.png",
 		"mayBeRoot": true,
 		"hide": true,
 		"propertyPackages": ["baseAttributes", "diagram"],
 		"roles": [],
-		"properties": [{
-			"id": "orientation",
-			"type": "String",
-			"title": "_orientation",
-			"value": "horizontal",
-			"description": "Internal flag to set the default orientation",
-			"readonly": false,
-			"include": false
-		},{
-			"id": "startableGroups",
-			"type": "MultiSelect",
-			"config": "permission:getAllRoles:name",
-			"title": "Startable groups",
-			"title_de": "Startbar von(Gruppen)",
-			"value": "",
-			"readonly": false,
-			"optional": false,
-			"popular": true,
-			"length": "50"
-		},{
-			"id": "startableUsers",
-			"type": "ModuleSelector",
-			"config": "user:userid",
-			"title": "Startable users",
-			"title_de": "Startbar von(Usern)",
-			"value": "",
-			"readonly": false,
-			"popular": true,
-			"optional": false,
-			"length": "50"
-		},
-		{
-			"id": "camelRoutes",
-			"type": "ResourceSelector",
-			"config": {"type":"sw.camel","prefix":""},
-			"title": "Camel",
-			"value": "",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},
-		{
+		"properties": [ {
 			"id": "initialParameter",
 			"type": "Complex",
 			"title": "Initialparameter",
@@ -779,7 +217,7 @@
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
-		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
+		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
 	},
 	{
 		"type": "node",
@@ -791,7 +229,7 @@
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
-		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
+		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
 	},
 	{
 		"type": "node",
@@ -804,25 +242,55 @@
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
-		"roles": ["all", "sequence_start", "sequence_end", "GatewaysMorph"]
+		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
 	},
 	{
 		"type": "edge",
-		"id": "SequenceFlow",
-		"title": "Sequence Flow",
-		"title_de": "Sequenzfluss",
+		"id": "SimpleConnection",
+		"title": "Connection",
+		"title_de": "Verbindung",
 		"groups": ["Connecting Objects"],
 		"groups_de": ["Konnektoren"],
-		"view": "sequenceflow.svg",
-		"icon": "sequenceflow.png",
-		"propertyPackages": ["baseAttributes", "sequenceflowbase"],
-		"layout": [{
-			"type": "layout.bpmn2_0.sequenceflow"
-		}],
+		"view": "simpleconnection.svg",
+		"icon": "simpleconnection.png",
+		"propertyPackages": ["baseAttributes"],
 		"roles": ["all", "ConnectingObjectsMorph"],
 		"properties": [
 		]
 	},
+	{
+		"type": "edge",
+		"id": "WhenConnection",
+		"title": "When Connection",
+		"title_de": "Wenn Verbindung",
+		"groups": ["Connecting Objects"],
+		"groups_de": ["Konnektoren"],
+		"view": "whenconnection.svg",
+		"icon": "whenconnection.png",
+		"propertyPackages": ["baseAttributes"],
+		"roles": ["all", "ConnectingObjectsMorph"],
+		"properties": [
+		]
+	},
+	{
+    "type" : "node",
+    "id" : "FileEndpoint",
+    "title" : "File Endpoint",
+    "title_de" : "File Endpunkt",
+    "view" : "endpoint.svg",
+    "icon" : "fileendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor",  "endpoint" ],
+		"properties": [{
+			"id": "type_file",
+			"type":"String",
+			"value": "File",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		}],
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "EndpointsMorph", "all" ]
+	}, 
 	{
     "type" : "node",
     "id" : "FtpEndpoint",
@@ -832,7 +300,7 @@
     "icon" : "ftpendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColorEndpoint", "borderColor",  "activity" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor",  "endpoint" ],
 		"properties": [{
 			"id": "endpoint_type1",
 			"type":"String",
@@ -840,8 +308,9 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
-	}, {
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "EndpointsMorph", "all" ]
+	}, 
+	{
     "type" : "node",
     "id" : "DirectEndpoint",
     "title" : "Direct Endpoint",
@@ -850,7 +319,7 @@
     "icon" : "directendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColorEndpoint", "borderColor", "activity" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "endpoint" ],
 		"properties": [{
 			"id": "endpoint_type2",
 			"type":"String",
@@ -858,7 +327,7 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
     "id" : "MailEndpoint",
@@ -868,7 +337,7 @@
     "icon" : "mailendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColorEndpoint", "borderColor", "activity" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "endpoint" ],
 		"properties": [{
 			"id": "endpoint_type2",
 			"type":"String",
@@ -876,7 +345,7 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
     "id" : "JMSEndpoint",
@@ -886,7 +355,7 @@
     "icon" : "jmsendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColorEndpoint", "borderColor", "activity" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "endpoint" ],
 		"properties": [{
 			"id": "endpoint_type3",
 			"type":"String",
@@ -894,7 +363,7 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
     "id" : "SedaEndpoint",
@@ -904,7 +373,7 @@
     "icon" : "sedaendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "elementbase", "baseAttributes", "bgColorEndpoint", "borderColor", "activity" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "endpoint" ],
 		"properties": [{
 			"id": "endpoint_type4",
 			"type":"String",
@@ -912,80 +381,53 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "EndpointsMorph", "all" ]
 	}
 	],
   "rules" : {
     "cardinalityRules" : [ {
       "role" : "Startevents_all",
       "incomingEdges" : [ {
-        "role" : "SequenceFlow",
+        "role" : "SimpleConnection",
         "maximum" : 0
       } ]
     }, {
       "role" : "Endevents_all",
       "outgoingEdges" : [ {
-        "role" : "SequenceFlow",
+        "role" : "SimpleConnection",
         "maximum" : 0
       } ]
     } ],
     "connectionRules" : [ {
-      "role" : "SequenceFlow",
+      "role" : "SimpleConnection",
       "connects" : [ {
-        "from" : "sequence_start",
-        "to" : [ "sequence_end" ]
+        "from" : "simpleConnectionStart",
+        "to" : [ "simpleConnectionEnd" ]
       } ]
-    }, {
-      "role" : "Association",
+    },{
+      "role" : "WhenConnection",
       "connects" : [ {
-        "from" : "sequence_start",
-        "to" : [ "TextAnnotation" ]
-      } ]
-    }, {
-      "role" : "Association",
-      "connects" : [ {
-        "from" : "TextAnnotation",
-        "to" : [ "sequence_end" ]
-      } ]
-    }, {
-      "role" : "IntermediateEventOnActivityBoundary",
-      "connects" : [ {
-        "from" : "Activity",
-        "to" : [ "IntermediateEventOnActivityBoundary" ]
-      } ]
-    } ],
+        "from" : "whenConnectionStart",
+        "to" : [ "whenConnectionEnd" ]
+      }]
+    }],
     "containmentRules" : [ {
-      "role" : "BPMNDiagram",
+      "role" : "Camelrouting",
       "contains" : [ "all" ]
     }, {
       "role" : "SubProcess",
-      "contains" : [ "sequence_start", "sequence_end", "EventSubprocess", "TextAnnotation" ]
+      "contains" : [ "simpleConnectionStart", "simpleConnectionEnd", "EventSubprocess", "TextAnnotation" ]
     }, {
       "role" : "EventSubProcess",
-      "contains" : [ "sequence_start", "sequence_end", "TextAnnotation" ]
+      "contains" : [ "simpleConnectionStart", "simpleConnectionEnd", "TextAnnotation" ]
     } ],
     "morphingRules" : [ {
-      "role" : "ActivitiesMorph",
+      "role" : "EndpointsMorph",
       "baseMorphs" : [ "FtpEndpoint" ],
       "preserveBounds" : true
     }, {
       "role" : "GatewaysMorph",
       "baseMorphs" : [ "ExclusiveGateway" ]
-    }, {
-      "role" : "StartEventsMorph",
-      "baseMorphs" : [ "StartNoneEvent" ]
-    }, {
-      "role" : "EndEventsMorph",
-      "baseMorphs" : [ "StartNoneEvent" ]
-    }, {
-      "role" : "CatchEventsMorph",
-      "baseMorphs" : [ "CatchTimerEvent" ]
-    }, {
-      "role" : "ThrowEventsMorph",
-      "baseMorphs" : [ "ThrowNoneEvent" ]
-    }, {
-      "role" : "TextAnnotation",
-      "baseMorphs" : [ "TextAnnotation" ]
-    } ]
+    }]
   }
 }
