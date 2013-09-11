@@ -229,11 +229,11 @@
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
-		"roles": ["all", "whenConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
+		"roles": ["all", "whenConnectionStart", "whenConnectionEnd", "simpleConnectionEnd", "GatewaysMorph"]
 	},
 	{
 		"type": "node",
-		"id": "AggregatRoute",
+		"id": "Aggregat",
 		"title": "Aggregat",
 		"title_de": "Aggregat",
 		"groups": ["Router"],
@@ -257,7 +257,7 @@
 		"layout": [{
 			"type": "layout.bpmn2_0.sequenceflow"
 		}],
-		"roles": ["all", "ConnectingObjectsMorph"],
+		"roles": ["all", "Connection", "ConnectingObjectsMorph"],
 		"properties": [
 		]
 	},
@@ -271,7 +271,7 @@
 		"view": "whenconnection.svg",
 		"icon": "whenconnection.png",
 		"propertyPackages": ["baseAttributes"],
-		"roles": ["all", "ConnectingObjectsMorph"],
+		"roles": ["all", "Connection", "ConnectingObjectsMorph"],
 		"properties": [
 		]
 	},
@@ -389,16 +389,16 @@
 	],
   "rules" : {
     "cardinalityRules" : [ {
-      "role" : "Startevents_all",
+      "role" : "MessageRouter",
       "incomingEdges" : [ {
-        "role" : "SimpleConnection",
-        "maximum" : 0
+        "role" : "Connection",
+        "maximum" : 1
       } ]
     }, {
-      "role" : "Endevents_all",
+      "role" : "Aggregat",
       "outgoingEdges" : [ {
-        "role" : "SimpleConnection",
-        "maximum" : 0
+        "role" : "Connection",
+        "maximum" : 1
       } ]
     } ],
     "connectionRules" : [ {
