@@ -13,7 +13,7 @@
   	
   	<oryx:magnet oryx:cx="40" oryx:cy="23" oryx:default="yes" />
   </oryx:magnets>
-  <g pointer-events="fill" transform="xcale(0.7,0.7)" stroke-width="0.25" class="SlideGroup">
+  <g pointer-events="fill" stroke-width="0.25" class="SlideGroup">
     <defs>
       <radialGradient id="background" cx="10%" cy="10%" r="100%" fx="10%" fy="10%">
         <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
