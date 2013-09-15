@@ -97,7 +97,7 @@
         <stop
            id="fill_el"
            offset="100%"
-           stop-color="yellow"
+           stop-color="white"
            stop-opacity="1" />
       </radialGradient>
     </defs>

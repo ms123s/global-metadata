@@ -22,21 +22,35 @@
 			"wrapLines": true,
 			"popular": true
 		}]
-	},{
+	}, {
 		"name": "bgColorRouter",
 		"properties": [{
 			"id": "bgcolor",
 			"type": "Color",
 			"title": "BackgroundColor",
 			"title_de": "Hintergrundfarbe",
-			"value": "yellow",
+			"value": "white",
 			"readonly": false,
 			"optional": false,
 			"refToView": "fill_el",
 			"fill": true,
 			"stroke": false
 		}]
-	},{
+	}, {
+		"name": "bgColorSetHeader",
+		"properties": [{
+			"id": "bgcolor",
+			"type": "Color",
+			"title": "BackgroundColor",
+			"title_de": "Hintergrundfarbe",
+			"value": "white",
+			"readonly": false,
+			"optional": false,
+			"refToView": "fill_el",
+			"fill": true,
+			"stroke": false
+		}]
+	}, {
 		"name": "bgColorEndpoint",
 		"properties": [{
 			"id": "bgcolor",
@@ -209,6 +223,54 @@
 	},
 	{
 		"type": "node",
+		"id": "SetHeader",
+		"title": "SetHeader",
+		"groups": ["Router"],
+    "view" : "setheader.svg",
+		"icon": "setheader.png",
+		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor"],
+		"properties": [{
+			"id": "headers",
+			"type": "Complex",
+			"title": "Headers",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Parametername",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			},{
+				"id": "language",
+				"name": "Language",
+				"name_de": "Sprache",
+				"readonly": false,
+				"type": "Choice",
+				"value": "groovy",
+				"items": [{
+					"id": "groovy",
+					"title": "Groovy",
+					"value": "groovy"
+				}],
+				"width": 80,
+				"optional": true
+			}]
+		}],
+		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+	},
+	{
+		"type": "node",
 		"id": "MessageFilter",
 		"title": "Messagefilter",
 		"groups": ["Router"],
@@ -229,7 +291,7 @@
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
-		"roles": ["all", "whenConnectionStart", "whenConnectionEnd", "simpleConnectionEnd", "GatewaysMorph"]
+		"roles": ["all", "whenConnectionStart", "whenConnectionEnd", "simpleConnectionEnd"]
 	},
 	{
 		"type": "node",
@@ -272,8 +334,14 @@
 		"icon": "whenconnection.png",
 		"propertyPackages": ["baseAttributes"],
 		"roles": ["all", "Connection", "ConnectingObjectsMorph"],
-		"properties": [
-		]
+		"properties": [{
+			"id": "expression",
+			"title":"Expression",
+			"title_":"Ausdruck",
+			"type":"Text",
+			"value": "",
+			"visible": true
+		}]
 	},
 	{
     "type" : "node",
@@ -455,7 +523,17 @@
       "role" : "Endpoint",
       "incomingEdges" : [ {
         "role" : "Connection",
-        "maximum" : 2
+        "maximum" : 1
+      } ],
+      "outgoingEdges" : [ {
+        "role" : "Connection",
+        "maximum" : 1
+      } ]
+    }, {
+      "role" : "SetHeader",
+      "incomingEdges" : [ {
+        "role" : "Connection",
+        "maximum" : 1
       } ],
       "outgoingEdges" : [ {
         "role" : "Connection",
