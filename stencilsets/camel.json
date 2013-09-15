@@ -233,8 +233,8 @@
 	},
 	{
 		"type": "node",
-		"id": "Aggregat",
-		"title": "Aggregat",
+		"id": "Aggregate",
+		"title": "Aggregate",
 		"title_de": "Aggregat",
 		"groups": ["Router"],
     "view" : "aggregat.svg",
@@ -291,6 +291,25 @@
 			"value": "File",
 			"visible": false,
 			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "file://${path}" ,
+			"visible": false
+		},{
+			"id": "urivalue_path",
+			"title":"Path",
+			"title_":"Pfad",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_file_name",
+			"title":"Filename",
+			"title_":"Dateiname",
+			"type":"String",
+			"value": "",
+			"visible": true
 		}],
     "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, 
@@ -310,7 +329,44 @@
 			"value": "FTP",
 			"visible": false,
 			"refToView": ["endpoint_type"]
-		}],
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "ftp://${host}:${port}",
+			"visible": false
+		},{
+			"id": "urivalue_host",
+			"title":"Host",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "urivalue_port",
+			"title":"Port",
+			"type":"Integer",
+			"value": "21",
+			"visible": true
+		},{
+			"id": "uriparam_username",
+			"title":"Username",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_password",
+			"title":"Password",
+			"title_de":"Passwort",
+			"type":"String",
+			"value": "",
+			"visible": true
+		}, {
+			"id": "uriparam_directory",
+			"title":"Directory",
+			"title_de":"Verzeichnis",
+			"type":"String",
+			"value": "",
+			"visible": true
+		} ],
     "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, 
 	{
@@ -329,7 +385,14 @@
 			"value": "Direct",
 			"visible": false,
 			"refToView": ["endpoint_type"]
-		}],
+		},
+		{
+			"id": "uri_template",
+			"type":"String",
+			"value": "direct:direct1",
+			"visible": false
+		},
+		],
     "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -389,18 +452,29 @@
 	],
   "rules" : {
     "cardinalityRules" : [ {
+      "role" : "Endpoint",
+      "incomingEdges" : [ {
+        "role" : "Connection",
+        "maximum" : 2
+      } ],
+      "outgoingEdges" : [ {
+        "role" : "Connection",
+        "maximum" : 1
+      } ]
+    }, {
       "role" : "MessageRouter",
       "incomingEdges" : [ {
         "role" : "Connection",
         "maximum" : 1
       } ]
     }, {
-      "role" : "Aggregat",
+      "role" : "Aggregate",
       "outgoingEdges" : [ {
         "role" : "Connection",
         "maximum" : 1
       } ]
-    } ],
+    } 
+		],
     "connectionRules" : [ {
       "role" : "SimpleConnection",
       "connects" : [ {
