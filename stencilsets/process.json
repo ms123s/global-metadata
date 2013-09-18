@@ -9,7 +9,7 @@
       "id" : "overrideid",
       "type" : "String",
       "title" : "Id",
-      "value" : "",
+      "value" : null,
 			"include":true,
       "description" : "Unique identifier of the element.",
       "popular" : true
