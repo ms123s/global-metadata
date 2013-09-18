@@ -919,7 +919,7 @@
 			"optional": false
 		  }]
 		,
-		"propertyPackages": ["baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
 	},
 	{
 		"type": "node",
@@ -1005,7 +1005,7 @@
 			"include": false,
 			"optional": false
 		}],
-		"propertyPackages": ["baseAttributes", "borderColor","bgColor", "loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor","bgColor", "loopcharacteristics" ]
 	},
 	{
 		"type": "node",
@@ -1098,7 +1098,7 @@
 			"include": false,
 			"optional": false
 		}],
-		"propertyPackages": ["baseAttributes", "borderColor", "bgColor","loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor","loopcharacteristics" ]
 	},
 	{
 		"type": "node",
@@ -1157,7 +1157,7 @@
 			"include": false,
 			"optional": false
 		}],
-		"propertyPackages": ["baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
 	},
 	{
 		"type": "node",
@@ -1241,7 +1241,7 @@
 			"include": false,
 			"optional": false
 		}],
-		"propertyPackages": ["baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
 	},
 	{
 		"type": "node",
@@ -1355,7 +1355,7 @@
 			"value": "Send"
 			}
 		],
-		"propertyPackages": ["baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
 	},
 	{
 		"type": "node",
@@ -1367,7 +1367,7 @@
 		"groups": ["Gateways"],
     "view" : "gateway/exclusive.databased.svg",
 		"icon": "gateway/exclusive.databased.png",
-		"propertyPackages": ["baseAttributes", "bgColor", "processid"],
+		"propertyPackages": ["elementbase", "baseAttributes", "bgColor", "processid"],
 		"properties": [{
 			"id": "gatewaytype",
 			"type": "String",
@@ -1429,7 +1429,7 @@
 		"description_de": "Bei einer verzweigenden Verwendung werden sämtliche nachfolgenden Zweige gleichzeitig ausgeführt. Bei der Zusammenführung wird auf alle eingehenden Kanten gewartet, bevor der Prozessfluss fortgesetzt wird.",
     "view" : "gateway/parallel.svg",
 		"icon": "gateway/parallel.png",
-		"propertyPackages": ["baseAttributes", "bgColor", "processid"],
+		"propertyPackages": ["elementbase", "baseAttributes", "bgColor", "processid"],
 		"properties": [{
 			"id": "gatewaytype",
 			"type": "String",
@@ -1468,7 +1468,7 @@
 		"description_de": "Bei einer inclusiven Verwendung werden einige der nachfolgenden Zweige ausgeführt.",
     "view" : "gateway/inclusive.svg",
 		"icon": "gateway/inclusive.png",
-		"propertyPackages": ["baseAttributes", "bgColor", "processid"],
+		"propertyPackages": ["elementbase", "baseAttributes", "bgColor", "processid"],
 		"properties": [{
 			"id": "gatewaytype",
 			"type": "String",
@@ -1508,7 +1508,7 @@
 		"description_de": "Hier beginnt der normale Prozessfluss durch eine nicht näher beschriebene Auslösebedingung.",
 		"view": "startevent/none.svg",
 		"icon": "startevent/none.png",
-		"propertyPackages": ["baseAttributes", "formAttributes", "bgColor", "borderColor", "processid"],
+		"propertyPackages": ["elementbase", "baseAttributes", "formAttributes", "bgColor", "borderColor", "processid"],
     "roles" : [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ],
 		"properties": [{
 			"id": "trigger",
@@ -1577,7 +1577,7 @@
 		"description_de": "Untypisiertes Endereignis, welches ein normales Ende eines Prozesses markiert.",
 		"view": "endevent/none.svg",
 		"icon": "endevent/none.png",
-		"propertyPackages": ["baseAttributes", "bgColor", "borderColor"],
+		"propertyPackages": ["elementbase", "baseAttributes", "bgColor", "borderColor"],
 		"roles": ["all", "sequence_end", "Endevents_all", "EndEventsMorph"],
 		"properties": [{
 			"id": "trigger",
@@ -1602,7 +1602,7 @@
 		"groups_de": ["Konnektoren"],
 		"view": "connector/sequenceflow.svg",
 		"icon": "connector/sequenceflow.png",
-		"propertyPackages": ["baseAttributes", "sequenceflowbase"],
+		"propertyPackages": ["elementbase", "baseAttributes", "sequenceflowbase"],
 		"layout": [{
 			"type": "layout.bpmn2_0.sequenceflow"
 		}],
