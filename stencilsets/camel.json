@@ -257,12 +257,16 @@
 				"name_de": "Sprache",
 				"readonly": false,
 				"type": "Choice",
-				"value": "groovy",
-				"items": [{
+				"value": "simple",
+				"items": [ {
+					"id": "simple",
+					"title": "Simple",
+					"value": "simple"
+				}, {
 					"id": "groovy",
 					"title": "Groovy",
 					"value": "groovy"
-				}],
+				} ],
 				"width": 80,
 				"optional": true
 			}]
@@ -400,7 +404,7 @@
 		},{
 			"id": "uri_template",
 			"type":"String",
-			"value": "ftp://${host}:${port}",
+			"value": "ftp://${host}:${port}/${directory}",
 			"visible": false
 		},{
 			"id": "urivalue_host",
@@ -427,14 +431,36 @@
 			"type":"String",
 			"value": "",
 			"visible": true
-		}, {
-			"id": "uriparam_directory",
+		},{
+			"id": "urivalue_directory",
 			"title":"Directory",
 			"title_de":"Verzeichnis",
 			"type":"String",
 			"value": "",
 			"visible": true
-		} ],
+		},
+		{
+			"id": "uriparam_passive_mode",
+			"title":"Passive",
+			"type":"Boolean",
+			"value": false,
+			"visible": true
+		},
+		{
+			"id": "uriparam_binary",
+			"title":"Binary",
+			"type":"Boolean",
+			"value": true,
+			"visible": true
+		},
+		{
+			"id": "uriparam_consumer.delay",
+			"title":"Poll(milliSec)",
+			"type":"Integer",
+			"value": 1000,
+			"visible": true
+		} 
+		],
     "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, 
 	{
