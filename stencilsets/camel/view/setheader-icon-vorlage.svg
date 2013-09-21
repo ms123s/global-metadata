@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:oryx="http://www.b3mn.org/oryx"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30.375"
+   height="22.5px"
+   version="1.0"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="setheader.svg">
+  <metadata
+     id="metadata21">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1301"
+     inkscape:window-height="754"
+     id="namedview19"
+     showgrid="false"
+     inkscape:zoom="10.488889"
+     inkscape:cx="15.378178"
+     inkscape:cy="11.25"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#background"
+       id="radialGradient2998"
+       cx="3.9835352"
+       cy="4.2997299"
+       fx="3.9835352"
+       fy="4.2997299"
+       r="36.172331"
+       gradientTransform="scale(1.3649936,0.73260416)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#background"
+       id="radialGradient3000"
+       cx="2.9648358"
+       cy="3.6282843"
+       fx="2.9648358"
+       fy="3.6282843"
+       r="24.574885"
+       gradientTransform="scale(1.9710367,0.50734723)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <oryx:magnets>
+    <oryx:magnet
+       oryx:cx="0"
+       oryx:cy="10.25"
+       oryx:anchors="left" />
+    <oryx:magnet
+       oryx:cx="14.15"
+       oryx:cy="20.5"
+       oryx:anchors="bottom" />
+    <oryx:magnet
+       oryx:cx="28.375"
+       oryx:cy="10.25"
+       oryx:anchors="right" />
+    <oryx:magnet
+       oryx:cx="14.15"
+       oryx:cy="0"
+       oryx:anchors="top" />
+    <oryx:magnet
+       oryx:cx="14.15"
+       oryx:cy="10.25"
+       oryx:default="yes" />
+  </oryx:magnets>
+  <g
+     pointer-events="fill"
+     id="g6"
+     transform="matrix(1,0,0,1.5318949,0,-14.095214)">
+    <defs
+       id="defs8">
+      <radialGradient
+         id="background"
+         cx="0.1"
+         cy="0.1"
+         r="1"
+         fx="0.1"
+         fy="0.1">
+        <stop
+           offset="0%"
+           stop-color="#ffffff"
+           stop-opacity="1"
+           id="stop11" />
+        <stop
+           id="fill_el"
+           offset="100%"
+           stop-color="white"
+           stop-opacity="1" />
+      </radialGradient>
+    </defs>
+    <rect
+       id="bg_frame"
+       x="1"
+       y="1"
+       width="48.375"
+       height="25.5"
+       style="fill:url(#radialGradient2998);stroke:#000000;stroke-width:1" />
+    <polygon
+       id="nonInitiating2"
+       points="25.219,12.562 48.938,1.094 1.5,1.188 "
+       style="fill:url(#radialGradient3000);stroke:#000000;stroke-width:1;stroke-linejoin:round" />
+    <text
+       font-size="8"
+       x="1"
+       y="22"
+       font-weight="bold"
+       id="text16"
+       style="font-size:8px;font-weight:bold;fill:#0000ff">SetHeader</text>
+    <text
+       font-size="12"
+       id="text_name"
+       x="14"
+       y="32"
+       oryx:align="top center"
+       style="font-size:12px;stroke:#000000" />
+  </g>
+</svg>
