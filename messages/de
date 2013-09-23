@@ -3743,7 +3743,7 @@
         "msgstr": "on new records"
     },
     {
-        "msgid": "ruleseditor.edit_undo",
+        "msgid": "baseeditor.edit_undo",
         "msgstr": "rückgängig machen"
     },
     {
@@ -3795,7 +3795,7 @@
         "msgstr": "wenn Datensatz gespeichert wird"
     },
     {
-        "msgid": "ruleseditor.edit_redo",
+        "msgid": "baseeditor.edit_redo",
         "msgstr": "wieder herstellen"
     },
     {
