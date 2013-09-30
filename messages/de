@@ -83,6 +83,10 @@
         "msgstr": "Abhängige Datensätze im sekundären Modul mitlöschen"
     },
     {
+        "msgid": "entitytypes.delete_not_possible:entitytypes.entitytype_exists_in_relations",
+        "msgstr": "Entitytype muss erst in den Relations gelöscht werden"
+    },
+    {
         "msgid": "entitytypes.class_not_created",
         "msgstr": "Klasse noch nicht erstellt"
     },
@@ -3447,6 +3451,10 @@
         "msgstr": "Camelroute"
     },
     {
+        "msgid": "shell.nt_datamapper",
+        "msgstr": "Datamapper"
+    },
+    {
         "msgid": "shell.nt_website",
         "msgstr": "Website"
     },
@@ -4073,5 +4081,73 @@
     {
         "msgid": "processscript.insert_filter_list",
         "msgstr": "executeNamedFilter/List"
+    },
+    {
+        "msgid": "datamapper.user_defined",
+        "msgstr": "User definiert"
+    },
+    {
+        "msgid": "datamapper.edit_fields",
+        "msgstr": "Felder erfassen"
+    },
+    {
+        "msgid": "datamapper.input",
+        "msgstr": "Eingang"
+    },
+    {
+        "msgid": "datamapper.output",
+        "msgstr": "Ausgang"
+    },
+    {
+        "msgid": "datamapper.type",
+        "msgstr": "Typ"
+    },
+    {
+        "msgid": "datamapper.fixed_width",
+        "msgstr": "Feste Breite"
+    },
+    {
+        "msgid": "datamapper.children_fields",
+        "msgstr": "Kindfelder"
+    },
+    {
+        "msgid": "datamapper.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "datamapper.width",
+        "msgstr": "Breite"
+    },
+    {
+        "msgid": "datamapper.min_1_row",
+        "msgstr": "Mindestens eine Zeile erforderlich"
+    },
+    {
+        "msgid": "datamapper.configuration",
+        "msgstr": "Konfiguration"
+    },
+    {
+        "msgid": "datamapper.create_mapping",
+        "msgstr": "Mapping erstellen"
+    },
+    {
+        "msgid": "datamapper.from_example",
+        "msgstr": "Von Beispieldatei"
+    },
+    {
+        "msgid": "datamapper.define",
+        "msgstr": "Definiere Format: "
+    },
+    {
+        "msgid": "datamapper.viewswitch_editor",
+        "msgstr": "Editor"
+    },
+    {
+        "msgid": "datamapper.viewswitch_preview",
+        "msgstr": "Preview"
+    },
+    {
+        "msgid": "datamapper.viewswitch_script",
+        "msgstr": "Script"
     }
 ]
