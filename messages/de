@@ -83,8 +83,12 @@
         "msgstr": "Abhängige Datensätze im sekundären Modul mitlöschen"
     },
     {
-        "msgid": "entitytypes.delete_not_possible:entitytypes.entitytype_exists_in_relations",
-        "msgstr": "Entitytype muss erst in den Relations gelöscht werden"
+        "msgid": "entitytypes.delete_not_possible",
+        "msgstr": "Entitytype kann nicht gelöscht werden"
+    },
+    {
+        "msgid": "entitytypes.entitytype_exists_in_relations",
+        "msgstr": "Entitytype ist in Relation(s) enthalten"
     },
     {
         "msgid": "entitytypes.class_not_created",
