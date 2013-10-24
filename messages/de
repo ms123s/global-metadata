@@ -4091,6 +4091,10 @@
         "msgstr": "User definiert"
     },
     {
+        "msgid": "datamapper.entity",
+        "msgstr": "Entity(Pojo)"
+    },
+    {
         "msgid": "datamapper.edit_fields",
         "msgstr": "Felder erfassen"
     },
@@ -4115,8 +4119,56 @@
         "msgstr": "Kindfelder"
     },
     {
+        "msgid": "datamapper.edit",
+        "msgstr": "Editieren"
+    },
+    {
+        "msgid": "datamapper.down",
+        "msgstr": "Nach unten"
+    },
+    {
+        "msgid": "datamapper.up",
+        "msgstr": "Nach oben"
+    },
+    {
+        "msgid": "datamapper.add",
+        "msgstr": "Neu"
+    },
+    {
+        "msgid": "datamapper.output",
+        "msgstr": "Ausgang"
+    },
+    {
+        "msgid": "datamapper.input",
+        "msgstr": "Eingang"
+    },
+    {
+        "msgid": "datamapper.remove",
+        "msgstr": "Entfernen"
+    },
+    {
+        "msgid": "datamapper.edit_attribute",
+        "msgstr": "Editiere Attribute"
+    },
+    {
+        "msgid": "datamapper.new_attribute",
+        "msgstr": "Neues Attribute"
+    },
+    {
+        "msgid": "datamapper.datatype",
+        "msgstr": "Datatype"
+    },
+    {
         "msgid": "datamapper.name",
         "msgstr": "Name"
+    },
+    {
+        "msgid": "datamapper.structure_editor",
+        "msgstr": "Struktureditor"
+    },
+    {
+        "msgid": "datamapper.condition",
+        "msgstr": "Bedingung"
     },
     {
         "msgid": "datamapper.width",
@@ -4125,6 +4177,14 @@
     {
         "msgid": "datamapper.min_1_row",
         "msgstr": "Mindestens eine Zeile erforderlich"
+    },
+    {
+        "msgid": "datamapper.element_mapping",
+        "msgstr": "Struktur Mapping"
+    },
+    {
+        "msgid": "datamapper.foreach",
+        "msgstr": "Foreach"
     },
     {
         "msgid": "datamapper.configuration",
@@ -4153,5 +4213,29 @@
     {
         "msgid": "datamapper.viewswitch_script",
         "msgstr": "Script"
+    },
+    {
+        "msgid": "datamapper.text",
+        "msgstr": "Ergebnis(Text)"
+    },
+    {
+        "msgid": "datamapper.tree",
+        "msgstr": "Ergebnis(Baum)"
+    },
+    {
+        "msgid": "datamapper.preview_load",
+        "msgstr": "Laden eines Testfiles"
+    },
+    {
+        "msgid": "datamapper.execute",
+        "msgstr": "Ausführen"
+    },
+    {
+        "msgid": "filtercheck.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "filtercheck.Message",
+        "msgstr": "Message"
     }
 ]
