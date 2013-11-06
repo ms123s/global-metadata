@@ -4187,6 +4187,10 @@
         "msgstr": "Foreach"
     },
     {
+        "msgid": "datamapper.map2parent",
+        "msgstr": "Map2Parent"
+    },
+    {
         "msgid": "datamapper.configuration",
         "msgstr": "Konfiguration"
     },
@@ -4213,6 +4217,10 @@
     {
         "msgid": "datamapper.viewswitch_script",
         "msgstr": "Script"
+    },
+    {
+        "msgid": "datamapper.default_script",
+        "msgstr": "Defaultscript"
     },
     {
         "msgid": "datamapper.text",
