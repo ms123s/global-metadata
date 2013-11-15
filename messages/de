@@ -3123,6 +3123,18 @@
         "msgstr": "Sucheinstellungen erzeugen"
     },
     {
+        "msgid": "entitytypes.delete_class",
+        "msgstr": "Klasse löschen"
+    },
+    {
+        "msgid": "entitytypes.delete_settings",
+        "msgstr": "Settings ebenfalls löschen"
+    },
+    {
+        "msgid": "entitytypes.delete_messages",
+        "msgstr": "Messages ebenfalls löschen"
+    },
+    {
         "msgid": "data.field.search_options",
         "msgstr": "Suchmöglichkeiten"
     },
@@ -4220,7 +4232,7 @@
     },
     {
         "msgid": "datamapper.default_script",
-        "msgstr": "Defaultscript"
+        "msgstr": "Defaultscript übernehmen"
     },
     {
         "msgid": "datamapper.text",
@@ -4237,6 +4249,10 @@
     {
         "msgid": "datamapper.execute",
         "msgstr": "Ausführen"
+    },
+    {
+        "msgid": "datamapper.format",
+        "msgstr": "Format"
     },
     {
         "msgid": "filtercheck.name",
