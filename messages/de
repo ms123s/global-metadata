@@ -4099,6 +4099,14 @@
         "msgstr": "executeNamedFilter/List"
     },
     {
+        "msgid": "datamapper.entitytypes_create",
+        "msgstr": "Erstellen von Klassen(Entitytypes)"
+    },
+    {
+        "msgid": "datamapper.metadata_edit",
+        "msgstr": "Ändern der Metadaten"
+    },
+    {
         "msgid": "datamapper.user_defined",
         "msgstr": "User definiert"
     },
@@ -4249,6 +4257,42 @@
     {
         "msgid": "datamapper.execute",
         "msgstr": "Ausführen"
+    },
+    {
+        "msgid": "datamapper.create_classes",
+        "msgstr": "Erstellen von Klassen(Entitytypes)"
+    },
+    {
+        "msgid": "datamapper.classes_exists",
+        "msgstr": "Folgende Klassen sind schon im System vorhanden"
+    },
+    {
+        "msgid": "datamapper.generate_classes",
+        "msgstr": "Klassen erzeugen"
+    },
+    {
+        "msgid": "datamapper.exist_classes",
+        "msgstr": "Vorgehensweise bei existierenden Klassen"
+    },
+    {
+        "msgid": "datamapper.with_msgs_and_settings",
+        "msgstr": "Default Messages und Settings erstellen"
+    },
+    {
+        "msgid": "datamapper.overwrite_classes",
+        "msgstr": "Neu erstellen,vorher löschen(Achtung Datenverlust!!!)"
+    },
+    {
+        "msgid": "datamapper.change_classes",
+        "msgstr": "Klassen anpassen(Kann zu Problem bei Datentypeänderungen führen)"
+    },
+    {
+        "msgid": "datamapper.nothing",
+        "msgstr": "Klassen so lassen(evt.kann nicht importiert werden)"
+    },
+    {
+        "msgid": "datamapper.new_classes",
+        "msgstr": "Folgende Klassen werden neu erstellt"
     },
     {
         "msgid": "datamapper.format",
