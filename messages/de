@@ -1007,8 +1007,28 @@
         "msgstr": "Dokumente"
     },
     {
-        "msgid": "data.documents",
-        "msgstr": "Dokumente"
+        "msgid": "data.document",
+        "msgstr": "Dokument"
+    },
+    {
+        "msgid": "data.document.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.document.docid",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "data.document.filename",
+        "msgstr": "Dateiname"
+    },
+    {
+        "msgid": "data.document.type",
+        "msgstr": "Typ"
+    },
+    {
+        "msgid": "data.document.content",
+        "msgstr": "Inhalt"
     },
     {
         "msgid": "tasks.usertasks.dublettencheck.delete_dublette",
@@ -4123,6 +4143,10 @@
         "msgstr": "Eingang"
     },
     {
+        "msgid": "datamapper.format_not_possible",
+        "msgstr": "Zu diesen Format kann nicht gewechselt werden"
+    },
+    {
         "msgid": "datamapper.output",
         "msgstr": "Ausgang"
     },
@@ -4285,10 +4309,6 @@
     {
         "msgid": "datamapper.change_classes",
         "msgstr": "Klassen anpassen(Kann zu Problem bei Datentypeänderungen führen)"
-    },
-    {
-        "msgid": "datamapper.nothing",
-        "msgstr": "Klassen so lassen(evt.kann nicht importiert werden)"
     },
     {
         "msgid": "datamapper.new_classes",
