@@ -303,6 +303,10 @@
         "msgstr": "Anzeige"
     },
     {
+        "msgid": "shell.datamapper.saved",
+        "msgstr": "Mapping gespeichert"
+    },
+    {
         "msgid": "shell.jsoneditor",
         "msgstr": "Anzeigen Quelle"
     },
@@ -4129,6 +4133,10 @@
     {
         "msgid": "datamapper.user_defined",
         "msgstr": "User definiert"
+    },
+    {
+        "msgid": "datamapper.save",
+        "msgstr": "Speichern"
     },
     {
         "msgid": "datamapper.entity",
