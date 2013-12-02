@@ -4,7 +4,7 @@
 {
     "fields": [
         {
-            "name": "traitid",
+            "name": "teamid",
             "enabled": true
         },
         {
@@ -12,11 +12,11 @@
             "enabled": true
         },
         {
-            "name": "valid_from",
+            "name": "validFrom",
             "enabled": true
         },
         {
-            "name": "valid_to",
+            "name": "validTo",
             "enabled": true
         },
         {

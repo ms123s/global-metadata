@@ -4,7 +4,7 @@
 {
     "fields": [
         {
-            "name": "traitid",
+            "name": "teamid",
             "enabled": true
         },
         {
@@ -22,9 +22,6 @@
         {
             "name": "disabled",
             "enabled": true
-        },
-        {
-            "name": "_team_list"
         }
     ]
 }
