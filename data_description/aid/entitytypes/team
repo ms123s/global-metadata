@@ -23,9 +23,9 @@
             "name": "teamid",
             "datatype": "string"
         },
-        "valid_from": {
+        "validFrom": {
             "enabled": true,
-            "name": "valid_from",
+            "name": "validFrom",
             "datatype": "date"
         },
         "description": {
@@ -39,9 +39,9 @@
             "edittype": "checkbox",
             "datatype": "boolean"
         },
-        "valid_to": {
+        "validTo": {
             "enabled": true,
-            "name": "valid_to",
+            "name": "validTo",
             "datatype": "date"
         }
     }
