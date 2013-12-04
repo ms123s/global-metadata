@@ -667,6 +667,34 @@
         "msgstr": "Beschreibung"
     },
     {
+        "msgid": "team.count_assignments",
+        "msgstr": "Zuweisungen"
+    },
+    {
+        "msgid": "team.team",
+        "msgstr": "Team"
+    },
+    {
+        "msgid": "team.entityName",
+        "msgstr": "Entitätname"
+    },
+    {
+        "msgid": "team.usageTotal",
+        "msgstr": "Total"
+    },
+    {
+        "msgid": "team.active",
+        "msgstr": "Aktiv"
+    },
+    {
+        "msgid": "team.inactive",
+        "msgstr": "Inaktiv"
+    },
+    {
+        "msgid": "team.select_entities",
+        "msgstr": "Entitätenauswahl "
+    },
+    {
         "msgid": "data.group.description",
         "msgstr": "Beschreibung 2"
     },
