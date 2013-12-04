@@ -675,6 +675,10 @@
         "msgstr": "Team"
     },
     {
+        "msgid": "team.today",
+        "msgstr": "Heute"
+    },
+    {
         "msgid": "team.entityName",
         "msgstr": "Entitätname"
     },
