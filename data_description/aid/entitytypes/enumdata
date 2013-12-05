@@ -18,12 +18,6 @@
 
     },
     "fields": {
-        "sort": {
-            "enabled": true,
-            "default_value": 1,
-            "name": "sort",
-            "datatype": "integer"
-        },
         "invalid_from": {
             "enabled": true,
             "default_value": "31.12.2101",
