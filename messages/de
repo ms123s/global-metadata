@@ -683,6 +683,10 @@
         "msgstr": "gültig bis"
     },
     {
+        "msgid": "team.description",
+        "msgstr": "Beschreibung"
+    },
+    {
         "msgid": "team.team",
         "msgstr": "Team"
     },
