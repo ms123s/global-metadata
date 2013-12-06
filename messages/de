@@ -671,6 +671,18 @@
         "msgstr": "Zuweisungen"
     },
     {
+        "msgid": "team.validFrom",
+        "msgstr": "gültig ab"
+    },
+    {
+        "msgid": "team.disabled",
+        "msgstr": "deaktiviert"
+    },
+    {
+        "msgid": "team.validTo",
+        "msgstr": "gültig bis"
+    },
+    {
         "msgid": "team.team",
         "msgstr": "Team"
     },
