@@ -11,6 +11,13 @@
         "relation": "one-to-many"
     },
     {
+        "leftfield": "teamintern",
+        "leftmodule": "aid.Team",
+        "rightmodule": "aid.Teamintern",
+        "dependent": false,
+        "relation": "one-to-one"
+    },
+    {
         "leftmodule": "aid.Trigger",
         "rightmodule": "aid.Taction",
         "dependent": true,
