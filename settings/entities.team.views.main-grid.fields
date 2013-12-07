@@ -4,10 +4,6 @@
 {
     "fields": [
         {
-            "name": "teamid",
-            "enabled": true
-        },
-        {
             "name": "description",
             "enabled": true
         },

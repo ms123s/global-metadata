@@ -4,14 +4,6 @@
 {
     "fields": [
         {
-            "name": "teamid",
-            "enabled": true
-        },
-        {
-            "name": "description",
-            "enabled": true
-        },
-        {
             "name": "validFrom",
             "enabled": true
         },
