@@ -3648,7 +3648,7 @@
     },
     {
         "msgid": "meta.lists.odata",
-        "msgstr": "['gleich', 'ungleich', 'kleiner', 'kleiner gleich','größer','größer gleich', 'beginnt mit','beginnt nicht mit','ist in','ist nicht in','endet mit','endet nicht mit','enthält','enthält nicht']"
+        "msgstr": "['gleich', 'ungleich', 'kleiner', 'kleiner gleich','größer','größer gleich', 'beginnt mit','beginnt nicht mit','ist leer','ist nicht leer','endet mit','endet nicht mit','enthält','enthält nicht']"
     },
     {
         "msgid": "meta.lists.sub_from_filter",
@@ -3769,6 +3769,10 @@
     {
         "msgid": "meta.lists.ge",
         "msgstr": "größer gleich"
+    },
+    {
+        "msgid": "meta.lists.inn",
+        "msgstr": "ist not null"
     },
     {
         "msgid": "meta.lists.in",

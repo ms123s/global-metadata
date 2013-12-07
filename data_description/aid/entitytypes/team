@@ -24,6 +24,7 @@
             "datatype": "string"
         },
         "validFrom": {
+            "search_options": "['gt','eq', 'lt', 'ne','in','inn']",
             "enabled": true,
             "name": "validFrom",
             "datatype": "date"
@@ -40,6 +41,7 @@
             "datatype": "boolean"
         },
         "validTo": {
+            "search_options": "['gt','eq', 'lt', 'ne','in','inn']",
             "enabled": true,
             "name": "validTo",
             "datatype": "date"
