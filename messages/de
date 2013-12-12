@@ -2923,6 +2923,10 @@
         "msgstr": "Ressourcen"
     },
     {
+        "msgid": "util.remote.session-timeout",
+        "msgstr": "Session timeout"
+    },
+    {
         "msgid": "processexplorer.revision",
         "msgstr": "Revision"
     },
