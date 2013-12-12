@@ -4413,5 +4413,9 @@
     {
         "msgid": "filtercheck.Message",
         "msgstr": "Message"
+    },
+    {
+        "msgid": "upload.download_file",
+        "msgstr": "Download"
     }
 ]
