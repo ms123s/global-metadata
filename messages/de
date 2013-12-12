@@ -1099,6 +1099,10 @@
         "msgstr": "Typ"
     },
     {
+        "msgid": "data.document.text",
+        "msgstr": "Text"
+    },
+    {
         "msgid": "data.document.content",
         "msgstr": "Inhalt"
     },
