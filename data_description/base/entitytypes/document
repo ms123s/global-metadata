@@ -37,9 +37,9 @@
             "enabled": true,
             "form_enabled_expr": false,
             "name": "filename",
-            "edittype": "text",
-            "readonly": true,
-            "datatype": "string"
+            "edittype": "functional",
+            "datatype": "string",
+            "formula_client": "if(_mode=='add'){ content}else{filename}"
         },
         "type": {
             "enabled": true,
