@@ -4411,8 +4411,12 @@
         "msgstr": "Name"
     },
     {
-        "msgid": "filtercheck.Message",
-        "msgstr": "Message"
+        "msgid": "usebox.use",
+        "msgstr": "berücksichtigen"
+    },
+    {
+        "msgid": "upload.download_file",
+        "msgstr": "Download"
     },
     {
         "msgid": "upload.download_file",
