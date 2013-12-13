@@ -3031,6 +3031,14 @@
         "msgstr": "Service ausführen"
     },
     {
+        "msgid": "tactions.processlabel",
+        "msgstr": "Prozess"
+    },
+    {
+        "msgid": "tactions.processaction",
+        "msgstr": "Prozess ausführen"
+    },
+    {
         "msgid": "settings.views",
         "msgstr": "Views"
     },
@@ -4097,6 +4105,14 @@
     {
         "msgid": "data.tcondition.active",
         "msgstr": "Aktiv"
+    },
+    {
+        "msgid": "data.tcondition.tab1",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "data.tcondition.tab2",
+        "msgstr": "Bedingungen"
     },
     {
         "msgid": "data.tcondition.description",
