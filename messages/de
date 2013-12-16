@@ -2928,7 +2928,7 @@
     },
     {
         "msgid": "util.remote.session-timeout",
-        "msgstr": "Session timeout"
+				"msgstr": "Die Sitzung ist abgelaufen, Sie müssen sich neu anmelden"
     },
     {
         "msgid": "processexplorer.revision",
