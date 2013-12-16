@@ -31,7 +31,7 @@
         "setup": {
             "enabled": true,
             "name": "setup",
-            "datatype": "string"
+            "datatype": "text"
         }
     }
 }

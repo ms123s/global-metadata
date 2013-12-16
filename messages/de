@@ -139,7 +139,7 @@
         "msgstr": "Adressen"
     },
     {
-        "msgid": "meta.tactions.type",
+        "msgid": "tactions.type",
         "msgstr": "Aktion"
     },
     {
@@ -151,7 +151,7 @@
         "msgstr": "Aktion"
     },
     {
-        "msgid": "data.tactions.created",
+        "msgid": "tactions.created",
         "msgstr": "Aktion angelegt"
     },
     {
@@ -1231,7 +1231,7 @@
         "msgstr": "Felder"
     },
     {
-        "msgid": "meta.tactions.editfields",
+        "msgid": "tactions.editfields",
         "msgstr": "Felder auswählen"
     },
     {
@@ -1239,7 +1239,7 @@
         "msgstr": "Felder bearbeiten"
     },
     {
-        "msgid": "data.tactions.saved",
+        "msgid": "tactions.saved",
         "msgstr": "Felder gespeichert"
     },
     {
@@ -1247,7 +1247,7 @@
         "msgstr": "Felder gespeichert"
     },
     {
-        "msgid": "meta.tactions.uebernehmen",
+        "msgid": "tactions.uebernehmen",
         "msgstr": "Felder übernehmen"
     },
     {
@@ -1375,7 +1375,7 @@
         "msgstr": "Erledigte Prozesse"
     },
     {
-        "msgid": "meta.tactions.create-record",
+        "msgid": "tactions.create-record",
         "msgstr": "Erstellen eines Datensatzes in einem verbundenen Modul"
     },
     {
@@ -2227,7 +2227,7 @@
         "msgstr": "Modul"
     },
     {
-        "msgid": "meta.tactions.targetmodule",
+        "msgid": "tactions.targetmodule",
         "msgstr": "Modul"
     },
     {
@@ -3135,11 +3135,11 @@
         "msgstr": "Speichern"
     },
     {
-        "msgid": "meta.tactions.save",
+        "msgid": "tactions.save",
         "msgstr": "Speichern"
     },
     {
-        "msgid": "data.tactions.active",
+        "msgid": "tactions.active",
         "msgstr": "Aktiv"
     },
     {
@@ -3951,11 +3951,11 @@
         "msgstr": "Ändern  aller Sätze des Filters"
     },
     {
-        "msgid": "meta.tactions.update-target",
+        "msgid": "tactions.update-target",
         "msgstr": "Ändern von Eigenschaften im Zielmodul"
     },
     {
-        "msgid": "meta.tactions.update-related",
+        "msgid": "tactions.update-related",
         "msgstr": "Ändern von Eigenschaften in einem verknüpften Modul"
     },
     {
@@ -4137,6 +4137,18 @@
     {
         "msgid": "data.taction.value",
         "msgstr": "Wert"
+    },
+    {
+        "msgid": "tactions.startProcessUser",
+        "msgstr": "Startender User"
+    },
+    {
+        "msgid": "tactions.process.admin",
+        "msgstr": "Admin"
+    },
+    {
+        "msgid": "tactions.process.callinguser",
+        "msgstr": "User"
     },
     {
         "msgid": "meta.triggers.new-and-updated-records",

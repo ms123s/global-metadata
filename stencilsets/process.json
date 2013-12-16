@@ -1157,7 +1157,7 @@
 			"include": false,
 			"optional": false
 		}],
-		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "asynchronousbase", "loopcharacteristics" ]
 	},
 	{
 		"type": "node",
