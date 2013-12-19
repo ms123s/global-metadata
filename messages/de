@@ -4451,6 +4451,14 @@
         "msgstr": "Download"
     },
     {
+        "msgid": "data.multiedit.finished",
+        "msgstr": "Alle Sätze geändert"
+    },
+    {
+        "msgid": "data.multiedit.start",
+        "msgstr": "Start"
+    },
+    {
         "msgid": "data._team_list",
         "msgstr": "Teams"
     }
