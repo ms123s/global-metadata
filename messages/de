@@ -2928,7 +2928,7 @@
     },
     {
         "msgid": "util.remote.session-timeout",
-				"msgstr": "Die Sitzung ist abgelaufen, Sie müssen sich neu anmelden"
+        "msgstr": "Die Sitzung ist abgelaufen, Sie müssen sich neu anmelden"
     },
     {
         "msgid": "processexplorer.revision",
@@ -4449,5 +4449,9 @@
     {
         "msgid": "upload.download_file",
         "msgstr": "Download"
+    },
+    {
+        "msgid": "data._team_list",
+        "msgstr": "Teams"
     }
 ]
