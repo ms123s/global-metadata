@@ -488,7 +488,7 @@
     },
     {
         "msgid": "data.entity.no_add_del_in_master",
-        "msgstr": "Keine Add/Del-Buttons in Master"
+        "msgstr": "Keine Add/Del-Buttons als Master"
     },
     {
         "msgid": "data.entity.not_in_menu",
