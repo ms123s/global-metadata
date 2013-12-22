@@ -4473,5 +4473,9 @@
     {
         "msgid": "data._team_list",
         "msgstr": "Teams"
+    },
+    {
+        "msgid": "permissions.role_permission_saved",
+        "msgstr": "Die Permission für die Rolle wurde gespeichert"
     }
 ]
