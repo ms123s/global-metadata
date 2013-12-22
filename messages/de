@@ -492,7 +492,7 @@
     },
     {
         "msgid": "data.entity.not_in_menu",
-        "msgstr": "Kein Eintrag in Hauptmenü"
+        "msgstr": "Kein Eintrag im Hauptmenü"
     },
     {
         "msgid": "composite.exclusion_list",
