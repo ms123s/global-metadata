@@ -80,7 +80,7 @@
     },
     {
         "msgid": "entitytypes.dependent",
-        "msgstr": "Abhängige Datensätze im sekundären Modul mitlöschen"
+        "msgstr": "Abhängig"
     },
     {
         "msgid": "entitytypes.delete_not_possible",
@@ -165,6 +165,10 @@
     {
         "msgid": "permissions.actions",
         "msgstr": "Aktionen"
+    },
+    {
+        "msgid": "permissions.permission_save",
+        "msgstr": "Gespeichert"
     },
     {
         "msgid": "meta.workflows.wactions",
@@ -481,6 +485,14 @@
     {
         "msgid": "data.entity.exclusion_list",
         "msgstr": "Ausschlussliste"
+    },
+    {
+        "msgid": "data.entity.no_add_del_in_master",
+        "msgstr": "Keine Add/Del-Buttons in Master"
+    },
+    {
+        "msgid": "data.entity.not_in_menu",
+        "msgstr": "Kein Eintrag in Hauptmenü"
     },
     {
         "msgid": "composite.exclusion_list",
