@@ -259,15 +259,7 @@
         "msgstr": "Ansicht"
     },
     {
-        "msgid": "window.users",
-        "msgstr": "Anwender"
-    },
-    {
-        "msgid": "meta.traits.user",
-        "msgstr": "Anwender"
-    },
-    {
-        "msgid": "mainmenu.users",
+        "msgid": "ms123.Users",
         "msgstr": "Anwender"
     },
     {
@@ -359,11 +351,7 @@
         "msgstr": "Applikationen"
     },
     {
-        "msgid": "mainmenu.projectshellNamespaces",
-        "msgstr": "Applikationen"
-    },
-    {
-        "msgid": "mainmenu.namespaces",
+        "msgid": "ms123.namespaces.Manager",
         "msgstr": "Applikationen verwalten"
     },
     {
@@ -419,11 +407,7 @@
         "msgstr": "Aufgabe übernohmen"
     },
     {
-        "msgid": "mainmenu.tasks",
-        "msgstr": "Aufgaben"
-    },
-    {
-        "msgid": "window.tasks",
+        "msgid": "ms123.Task",
         "msgstr": "Aufgaben"
     },
     {
@@ -440,10 +424,6 @@
     },
     {
         "msgid": "enumerations.enumeration_dir",
-        "msgstr": "Aufzählungen"
-    },
-    {
-        "msgid": "mainmenu.enumeditor",
         "msgstr": "Aufzählungen"
     },
     {
@@ -927,19 +907,7 @@
         "msgstr": "Datenbeschreibung"
     },
     {
-        "msgid": "window.dataimports",
-        "msgstr": "Datenimporte"
-    },
-    {
-        "msgid": "mainmenu.dataimports",
-        "msgstr": "Datenimporte"
-    },
-    {
-        "msgid": "window.data.dataimports",
-        "msgstr": "Datenimporte"
-    },
-    {
-        "msgid": "menu.data.dataimports",
+        "msgid": "ms123.importing.Importing",
         "msgstr": "Datenimporte"
     },
     {
@@ -1583,23 +1551,15 @@
         "msgstr": "Global suchbare Felder"
     },
     {
-        "msgid": "mainmenu.settings",
+        "msgid": "ms123.settings.SettingEditor",
         "msgstr": "Globale Einstellungen"
     },
     {
-        "msgid": "window.settings",
-        "msgstr": "Globale Einstellungen"
-    },
-    {
-        "msgid": "mainmenu.globalsearch",
+        "msgid": "ms123.GlobalSearch",
         "msgstr": "Globale Suche"
     },
     {
         "msgid": "moduleeditor.global-search",
-        "msgstr": "Globale Suche"
-    },
-    {
-        "msgid": "window.globalsearch",
         "msgstr": "Globale Suche"
     },
     {
@@ -1641,26 +1601,6 @@
     {
         "msgid": "security.group.save",
         "msgstr": "Gruppe speichern"
-    },
-    {
-        "msgid": "window.groups",
-        "msgstr": "Gruppen"
-    },
-    {
-        "msgid": "mainmenu.groups",
-        "msgstr": "Gruppen"
-    },
-    {
-        "msgid": "data.users.groups",
-        "msgstr": "Gruppen"
-    },
-    {
-        "msgid": "data.group.groupid",
-        "msgstr": "Gruppen-ID"
-    },
-    {
-        "msgid": "data.groups.groupname",
-        "msgstr": "Gruppenname"
     },
     {
         "msgid": "meta.teams.valid_from",
@@ -1753,10 +1693,6 @@
     {
         "msgid": "import.import_button",
         "msgstr": "Import"
-    },
-    {
-        "msgid": "window.meta.importcsv",
-        "msgstr": "Import CSV"
     },
     {
         "msgid": "import.import_created",
@@ -1943,10 +1879,6 @@
         "msgstr": "Klassen"
     },
     {
-        "msgid": "mainmenu.moduleadmin",
-        "msgstr": "Klassen / Beziehungen verwalten"
-    },
-    {
         "msgid": "data.entity.field_list",
         "msgstr": "Klasseneigenschaften"
     },
@@ -1981,22 +1913,6 @@
     {
         "msgid": "configeditor.config_created",
         "msgstr": "Konfiguration erzeugt"
-    },
-    {
-        "msgid": "mainmenu.configeditor",
-        "msgstr": "Konfigurations  Editor"
-    },
-    {
-        "msgid": "window.configeditor",
-        "msgstr": "Konfigurations Editor"
-    },
-    {
-        "msgid": "window.data.configeditor",
-        "msgstr": "Konfigurations Editor"
-    },
-    {
-        "msgid": "configeditor.create_config",
-        "msgstr": "Konfigurationsname"
     },
     {
         "msgid": "import.table.header_row",
@@ -2047,11 +1963,7 @@
         "msgstr": "Liste löschen"
     },
     {
-        "msgid": "window.reports",
-        "msgstr": "Listen/Reporte"
-    },
-    {
-        "msgid": "mainmenu.reports",
+        "msgid": "ms123.report.Report",
         "msgstr": "Listen/Reports"
     },
     {
@@ -2163,24 +2075,8 @@
         "msgstr": "Merkmale"
     },
     {
-        "msgid": "window.meta.traits",
-        "msgstr": "Merkmale"
-    },
-    {
-        "msgid": "meta.traits.traitid",
-        "msgstr": "Merkmalname"
-    },
-    {
-        "msgid": "meta.datatraits.description",
-        "msgstr": "Merkmalname"
-    },
-    {
         "msgid": "data.messages.msgstr",
         "msgstr": "Message"
-    },
-    {
-        "msgid": "mainmenu.messages",
-        "msgstr": "Message Editor"
     },
     {
         "msgid": "data.message.msgid",
@@ -2205,10 +2101,6 @@
     {
         "msgid": "data.messages.msgid",
         "msgstr": "MessageId"
-    },
-    {
-        "msgid": "window.messages",
-        "msgstr": "Messageeditor"
     },
     {
         "msgid": "entitytypes.create_messages",
@@ -2245,66 +2137,6 @@
     {
         "msgid": "moduleaccesseditor.module",
         "msgstr": "Modul"
-    },
-    {
-        "msgid": "data.app.moduleeditor",
-        "msgstr": "Modul Editor"
-    },
-    {
-        "msgid": "mainmenu.moduleeditor",
-        "msgstr": "Modul Editor"
-    },
-    {
-        "msgid": "window.moduleeditor",
-        "msgstr": "Modul Editor"
-    },
-    {
-        "msgid": "import.create_module",
-        "msgstr": "Modul erkennen/erstellen"
-    },
-    {
-        "msgid": "data.module.created",
-        "msgstr": "Modul erstellt"
-    },
-    {
-        "msgid": "moduleeditor.module_created",
-        "msgstr": "Modul erstellt"
-    },
-    {
-        "msgid": "data.module.saved",
-        "msgstr": "Modul gespeichert"
-    },
-    {
-        "msgid": "meta.tree.root.modules",
-        "msgstr": "Module"
-    },
-    {
-        "msgid": "data.module.modules",
-        "msgstr": "Module"
-    },
-    {
-        "msgid": "data.app.module_list",
-        "msgstr": "Module"
-    },
-    {
-        "msgid": "data.module",
-        "msgstr": "Module"
-    },
-    {
-        "msgid": "data.app.modules",
-        "msgstr": "Module"
-    },
-    {
-        "msgid": "window.data.moduleeditor",
-        "msgstr": "Module Editor"
-    },
-    {
-        "msgid": "data.filter.modulename",
-        "msgstr": "Modulname"
-    },
-    {
-        "msgid": "moduleeditor.create_module",
-        "msgstr": "Modulname"
     },
     {
         "msgid": "tasks.usertasks.dublettencheck.mode",
@@ -2731,7 +2563,7 @@
         "msgstr": "Projektname"
     },
     {
-        "msgid": "mainmenu.projectshell",
+        "msgid": "ms123.shell.ProjectShell",
         "msgstr": "Projektverwaltung"
     },
     {
@@ -2775,11 +2607,7 @@
         "msgstr": "Prozesse"
     },
     {
-        "msgid": "window.processes",
-        "msgstr": "Prozesse"
-    },
-    {
-        "msgid": "mainmenu.processes",
+        "msgid": "ms123.processexplorer.ProcessExplorer",
         "msgstr": "Prozesse"
     },
     {
@@ -2925,18 +2753,6 @@
     {
         "msgid": "namespacesmanager.reload",
         "msgstr": "Reload"
-    },
-    {
-        "msgid": "moduleeditor.report",
-        "msgstr": "Report"
-    },
-    {
-        "msgid": "mainmenu.resources",
-        "msgstr": "Resourcen"
-    },
-    {
-        "msgid": "util.resources",
-        "msgstr": "Ressourcen"
     },
     {
         "msgid": "util.remote.session-timeout",
@@ -3311,11 +3127,7 @@
         "msgstr": "Team (und alle darunter liegenden Teams) wirklich löschen? <br /><div style='color:red'>Es werden auch sämtliche Zuweisungen dieser Teams,<br \\> in allen Datensätzen entfernt!</div>"
     },
     {
-        "msgid": "window.teameditor",
-        "msgstr": "Team Editor"
-    },
-    {
-        "msgid": "mainmenu.teameditor",
+        "msgid": "ms123.team.TeamEditor",
         "msgstr": "Team Editor"
     },
     {
@@ -3359,10 +3171,6 @@
         "msgstr": "Teammitglieder"
     },
     {
-        "msgid": "window.meta.teams",
-        "msgstr": "Teams"
-    },
-    {
         "msgid": "meta.teams.root.title",
         "msgstr": "Teams"
     },
@@ -3387,11 +3195,7 @@
         "msgstr": "Testen"
     },
     {
-        "msgid": "mainmenu.triggereditor",
-        "msgstr": "Trigger Editor"
-    },
-    {
-        "msgid": "window.data.triggereditor",
+        "msgid": "ms123.Triggereditor",
         "msgstr": "Trigger Editor"
     },
     {
@@ -3535,11 +3339,7 @@
         "msgstr": "Verwalten"
     },
     {
-        "msgid": "window.permissions",
-        "msgstr": "Verwalten Permissions"
-    },
-    {
-        "msgid": "mainmenu.permissions",
+        "msgid": "ms123.permissions.PermissionEditor",
         "msgstr": "Verwalten Permissions"
     },
     {
@@ -4007,7 +3807,7 @@
         "msgstr": "Übernehmen(Der Satz muss dann noch abgespeichert werden)"
     },
     {
-        "msgid": "mainmenu.projectshellMessages",
+        "msgid": "ms123.shell.Messages",
         "msgstr": "Übersetzungen"
     },
     {
@@ -4471,8 +4271,16 @@
         "msgstr": "Start"
     },
     {
+        "msgid": "util.resources",
+        "msgstr": "Resourcen"
+    },
+    {
         "msgid": "data._team_list",
         "msgstr": "Teams"
+    },
+    {
+        "msgid": "composite.open_record_in_window",
+        "msgstr": "Anzeige in eigenen Fenster"
     },
     {
         "msgid": "permissions.role_permission_saved",
