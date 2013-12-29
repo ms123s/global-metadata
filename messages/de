@@ -1239,11 +1239,35 @@
         "msgstr": "Fieldsets gespeichert"
     },
     {
+        "msgid": "settings.dupcheck_saved",
+        "msgstr": "Dublettencheck gespeichert"
+    },
+    {
         "msgid": "meta.fieldset.fsname",
         "msgstr": "Fieldset Name"
     },
     {
-        "msgid": "meta.fieldsets.save",
+        "msgid": "meta.dupcheck.dupname",
+        "msgstr": "Dublettencheck"
+    },
+    {
+        "msgid": "meta.dupcheck.mode",
+        "msgstr": "Prüfmodus"
+    },
+    {
+        "msgid": "meta.dupcheck.threshold",
+        "msgstr": "Schwelle"
+    },
+    {
+        "msgid": "meta.dupcheck.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "settings.dupcheck.save",
+        "msgstr": "Dublettencheck speichern"
+    },
+    {
+        "msgid": "settings.fieldset.save",
         "msgstr": "Fieldset übernehmen, abschließend muss noch gespeichert werden"
     },
     {
@@ -2437,6 +2461,14 @@
     {
         "msgid": "meta.fieldsets.search_options",
         "msgstr": "Operatoren"
+    },
+    {
+        "msgid": "data.dupcheck.tab1",
+        "msgstr": "Einstellungen"
+    },
+    {
+        "msgid": "data.dupcheck.tab2",
+        "msgstr": "Felder"
     },
     {
         "msgid": "data.fieldset.tab3",
@@ -4285,5 +4317,13 @@
     {
         "msgid": "permissions.role_permission_saved",
         "msgstr": "Die Permission für die Rolle wurde gespeichert"
+    },
+    {
+        "msgid": "settings.check_type",
+        "msgstr": "Prüfung"
+    },
+    {
+        "msgid": "settings.threshold",
+        "msgstr": "Schwelle(0-1)"
     }
 ]
