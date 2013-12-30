@@ -231,6 +231,10 @@
         "msgstr": "Angezeigter Name (aus Messages)"
     },
     {
+        "msgid": "settings.search_options",
+        "msgstr": "Suchoptionen"
+    },
+    {
         "msgid": "settings.properties_saved",
         "msgstr": "Properties gespeichert"
     },
@@ -3641,6 +3645,14 @@
     {
         "msgid": "meta.lists.in",
         "msgstr": "ist in"
+    },
+    {
+        "msgid": "meta.lists.not_empty",
+        "msgstr": "ist nicht leer"
+    },
+    {
+        "msgid": "meta.lists.empty",
+        "msgstr": "ist leer"
     },
     {
         "msgid": "meta.lists.ni",
