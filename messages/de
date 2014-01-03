@@ -1403,6 +1403,10 @@
         "msgstr": "Excel kompatibel"
     },
     {
+        "msgid": "moduleeditor.report",
+        "msgstr": "Report"
+    },
+    {
         "msgid": "moduleeditor.export",
         "msgstr": "Export"
     },
