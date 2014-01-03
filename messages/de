@@ -591,6 +591,10 @@
         "msgstr": "Erstellt am"
     },
     {
+        "msgid": "data.record_exists",
+        "msgstr": "<b>Datensatz vorhanden</b>"
+    },
+    {
         "msgid": "data._created_by",
         "msgstr": "Erstellt von"
     },
@@ -4333,6 +4337,10 @@
     {
         "msgid": "settings.check_type",
         "msgstr": "Prüfung"
+    },
+    {
+        "msgid": "settings.modal",
+        "msgstr": "modal"
     },
     {
         "msgid": "settings.threshold",
