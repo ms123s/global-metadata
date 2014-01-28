@@ -25,15 +25,11 @@
         },
         {
             "name": "processing_order",
-            "enabled": true
+            "enabled": false
         },
         {
             "name": "applies_to",
             "enabled": true
-        },
-        {
-            "name": "_team_list",
-            "tab": "tab2"
         }
     ]
 }

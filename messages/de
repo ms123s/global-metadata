@@ -3560,11 +3560,11 @@
     },
     {
         "msgid": "meta.lists.team_changed",
-        "msgstr": "Team geändert"
+        "msgstr": "Team(o. -Zuweisung) geändert"
     },
     {
         "msgid": "meta.lists.team_hierarchy_changed",
-        "msgstr": "Team(und Subteams) geändert"
+        "msgstr": "Team/Sub-Team.(o. -Zuweisung) geändert"
     },
     {
         "msgid": "meta.lists.bw",
