@@ -3559,6 +3559,10 @@
         "msgstr": "ausgewähltes Merkmal"
     },
     {
+        "msgid": "meta.lists.team_removed",
+        "msgstr": "beginnt mit"
+    },
+    {
         "msgid": "meta.lists.bw",
         "msgstr": "beginnt mit"
     },
