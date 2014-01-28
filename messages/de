@@ -3559,8 +3559,12 @@
         "msgstr": "ausgewähltes Merkmal"
     },
     {
-        "msgid": "meta.lists.team_removed",
-        "msgstr": "wird entfernt"
+        "msgid": "meta.lists.team_changed",
+        "msgstr": "Team geändert"
+    },
+    {
+        "msgid": "meta.lists.team_hierarchy_changed",
+        "msgstr": "Team(und Subteams) geändert"
     },
     {
         "msgid": "meta.lists.bw",
