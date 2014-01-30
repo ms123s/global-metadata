@@ -23,6 +23,11 @@
             "name": "teamid",
             "datatype": "string"
         },
+        "name": {
+            "enabled": true,
+            "name": "name",
+            "datatype": "string"
+        },
         "validFrom": {
             "search_options": "['gt','eq', 'lt', 'ne','in','inn']",
             "enabled": true,
