@@ -4355,6 +4355,14 @@
         "msgstr": "modal"
     },
     {
+        "msgid": "deploy Process",
+        "msgstr": "Prozess deployen"
+    },
+    {
+        "msgid": "save Process",
+        "msgstr": "Prozess speichern"
+    },
+    {
         "msgid": "settings.threshold",
         "msgstr": "Schwelle(0-1)"
     }
