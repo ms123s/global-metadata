@@ -542,6 +542,72 @@
 			"refToView": ["endpoint_type"]
 		}],
     "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, 
+	{
+    "type" : "node",
+    "id" : "Http4Endpoint",
+    "title" : "Http4 Endpoint",
+    "title_de" : "Http4 Endpunkt",
+    "view" : "endpoint.svg",
+    "icon" : "http4endpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "endpoint" ],
+		"properties": [{
+			"id": "endpoint_type5",
+			"type":"String",
+			"value": "http4",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		}],
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	},
+	{
+    "type" : "node",
+    "id" : "LogEndpoint",
+    "title" : "Log Endpoint",
+    "title_de" : "Log Endpunkt",
+    "view" : "endpoint.svg",
+    "icon" : "logendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "endpoint" ],
+		"properties": [{
+			"id": "endpoint_type6",
+			"type":"String",
+			"value": "log",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "param_message",
+			"title":"Message",
+			"type":"Text",
+			"value": "",
+			"visible": true
+    }, {
+      "id" : "param_level",
+      "type" : "Choice",
+      "title" : "Level",
+      "value" : "INFO",
+      "items" : [ {
+        "id" : "info",
+        "title" : "Info",
+        "value" : "INFO"
+      }, {
+        "id" : "debug",
+        "title" : "Debug",
+        "value" : "DEBUG"
+      }, {
+        "id" : "warn",
+        "title" : "Warn",
+        "value" : "WARN"
+      }, {
+        "id" : "error",
+        "title" : "Error",
+        "value" : "ERROR"
+      }]
+		}],
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}
 	],
   "rules" : {
