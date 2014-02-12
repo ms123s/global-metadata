@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<svg 
+xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="svg2" >
+
+<g>
+  <defs>
+    <radialGradient id="background" cx="10%" cy="10%" r="100%" fx="10%" fy="10%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop id="fill_el" offset="100%" stop-color="#ffffcc" stop-opacity="1" />
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="83" height="47" id="bg_frame" fill="url(#background)" stroke="none" stroke-width="0.5" />
+  <path style="fill:#ffffff;stroke:none" id="path10" d="m 10.859674,40.280805 24.761633,0 0,-33.4236143 -24.761633,0 0,33.4236143 z" />
+  <path style="fill:none;stroke:#0f0f0f;stroke-width:0.4919235" id="path12" d="m 10.859674,40.280805 24.761633,0 0,-33.4236143 -24.761633,0 0,33.4236143 z" />
+  <path style="fill:#ffffff;stroke:none" id="path14" d="m 48.07999,40.280805 24.761633,0 0,-33.4236143 -24.761633,0 0,33.4236143 z" />
+  <path style="fill:none;stroke:#0f0f0f;stroke-width:0.4919235" id="path16" d="m 48.07999,40.280805 24.761633,0 0,-33.4236143 -24.761633,0 0,33.4236143 z" />
+  <path style="fill:none;stroke:#0f0f0f;stroke-width:1.22980881" id="path18" d="M 23.162624,12.311253 63.549522,34.640279" />
+  <path style="fill:none;stroke:#0f0f0f;stroke-width:1.22980881" id="path20" d="M 23.162624,34.640279 63.549522,12.311253" />
+</g>
+</svg>

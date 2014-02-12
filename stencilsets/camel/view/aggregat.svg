@@ -7,7 +7,7 @@
         <stop id="fill_el" offset="100%" stop-color="#ffffcc" stop-opacity="1" />
       </radialGradient>
     </defs>
-    <rect x="0" y="0" width="77" height="47" id="bg_frame" fill="url(#background)" stroke="none" stroke-width="0.5" />
+    <rect x="0" y="0" width="77" height="47" id="xg_frame" fill="url(#background)" stroke="none" stroke-width="0.5" />
     <path d="M 67,28 L 58,28 58,19 67,19 67,28 Z" fill="rgb(255,255,255)" stroke="none" />
     <path d="M 67,28 L 58,28 58,19 67,19 67,28 Z" fill="none" stroke="rgb(15,15,15)" />
     <path d="M 50,23 L 37,28 37,19 50,23 Z" fill="rgb(15,15,15)" stroke="none" />

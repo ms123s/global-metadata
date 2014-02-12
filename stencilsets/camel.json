@@ -37,6 +37,36 @@
 			"stroke": false
 		}]
 	}, {
+		"name": "expression",
+		"properties": [ {
+			"id": "expression",
+			"title":"Expression",
+			"title_de":"Ausdruck",
+			"type":"Text",
+			"value": "",
+      "popular" : false,
+			"visible": "defaultflow=='none'"
+		},{
+			"id": "language",
+			"title": "Language",
+			"title_de": "Sprache",
+			"readonly": false,
+			"type": "Choice",
+			"value": "simple",
+			"visible": "defaultflow=='none'",
+			"items": [ {
+				"id": "simple",
+				"title": "Simple",
+				"value": "simple"
+			}, {
+				"id": "groovy",
+				"title": "Groovy",
+				"value": "groovy"
+			} ],
+			"width": 80,
+			"optional": true
+		}]
+	}, {
 		"name": "bgColorSetHeader",
 		"properties": [{
 			"id": "bgcolor",
@@ -124,63 +154,6 @@
 			"optional": true,
 			"dateFormat": "j/m/y"
 		}]
-	},
-	{
-    "name" : "sequenceflowbase",
-    "properties" : [{
-      "id" : "defaultflow",
-      "type" : "Choice",
-      "title" : "Default flow",
-      "title_de" : "Standardfluß",
-      "value" : "None",
-      "description" : "Define the sequence flow as default",
-      "readonly" : false,
-      "popular" : true,
-      "items" : [ {
-        "id" : "none",
-        "title" : "No",
-        "title_de" : "Nein",
-        "value" : "None"
-      }, {
-        "id" : "default",
-        "title" : "Yes",
-        "title_de" : "Ja",
-        "value" : "Default",
-        "icon" : "connector/list/type.default.png",
-        "refToView" : "default"
-      } ]
-    }, {
-      "id" : "conditionalflow",
-      "type" : "Choice",
-      "title" : "Conditional flow",
-      "title_de" : "Bedingter Fluß",
-      "value" : "None",
-      "description" : "Define the sequence flow with a condition",
-      "readonly" : false,
-      "popular" : true,
-      "items" : [ {
-        "id" : "none",
-        "title" : "No",
-        "title_de" : "Nein",
-        "value" : "None"
-      }, {
-        "id" : "default",
-        "title" : "Yes",
-        "title_de" : "Ja",
-        "value" : "Conditional",
-        "icon" : "connector/list/type.expression.png",
-        "refToView" : "conditional"
-      } ]
-    },{
-      "id" : "conditionsequenceflow",
-      "type" : "Text",
-      "title" : "Flow condition",
-      "title_de" : "Flußbedingung",
-			"visible": "conditionalflow!='None'",
-      "value" : "",
-      "description" : "The condition of the sequence flow",
-      "popular" : true
-    }]
 	}],
 	"stencils": [{
 		"type": "node",
@@ -288,7 +261,7 @@
 	{
 		"type": "node",
 		"id": "MessageRouter",
-		"title": "Messagerouter",
+		"title": "Messagerouter(Choice)",
 		"groups": ["Router"],
     "view" : "messagerouter.svg",
 		"icon": "messagerouter.png",
@@ -305,6 +278,18 @@
 		"groups": ["Router"],
     "view" : "aggregat.svg",
 		"icon": "aggregat.png",
+		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
+		"properties": [
+		],
+		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
+	},
+	{
+		"type": "node",
+		"id": "ConvertBodyTo",
+		"title": "ConvertBodyTo",
+		"groups": ["Router"],
+    "view" : "convertBodyTo.svg",
+		"icon": "convertBodyTo.png",
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
@@ -336,15 +321,28 @@
 		"groups_de": ["Konnektoren"],
 		"view": "whenconnection.svg",
 		"icon": "whenconnection.png",
-		"propertyPackages": ["baseAttributes"],
+		"propertyPackages": ["baseAttributes", "expression"],
 		"roles": ["all", "Connection", "ConnectingObjectsMorph"],
 		"properties": [{
-			"id": "expression",
-			"title":"Expression",
-			"title_":"Ausdruck",
-			"type":"Text",
-			"value": "",
-			"visible": true
+      "id" : "defaultflow",
+      "type" : "Choice",
+      "title" : "Default flow",
+      "title_de" : "Standardfluß",
+      "value" : "none",
+      "popular" : true,
+      "items" : [ {
+        "id" : "none",
+        "title" : "No",
+        "title_de" : "Nein",
+        "value" : "none"
+      }, {
+        "id" : "default",
+        "title" : "Yes",
+        "title_de" : "Ja",
+        "value" : "default",
+        "icon" : "type.default.png",
+        "refToView" : "default"
+      }]
 		}]
 	},
 	{
@@ -559,6 +557,29 @@
 			"value": "http4",
 			"visible": false,
 			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "http4://${host}:${port}/${path}",
+			"visible": false
+		},{
+			"id": "urivalue_host",
+			"title":"Host",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "urivalue_port",
+			"title":"Port",
+			"type":"Integer",
+			"value": "80",
+			"visible": true
+		},{
+			"id": "urivalue_path",
+			"title":"Path",
+			"type":"String",
+			"value": "",
+			"visible": true
 		}],
     "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	},
@@ -634,6 +655,16 @@
     }, {
       "role" : "MessageRouter",
       "incomingEdges" : [ {
+        "role" : "Connection",
+        "maximum" : 1
+      } ]
+    }, {
+      "role" : "ConvertBodyTo",
+      "incomingEdges" : [ {
+        "role" : "Connection",
+        "maximum" : 1
+      } ],
+      "outgoingEdges" : [ {
         "role" : "Connection",
         "maximum" : 1
       } ]
