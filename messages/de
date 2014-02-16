@@ -47,10 +47,6 @@
         "msgstr": "<div style='color:blue'>Der Originalsatz .</div>"
     },
     {
-        "msgid": "processexplorer.activityId",
-        "msgstr": "A-Id"
-    },
-    {
         "msgid": "meta.traits.acl_users",
         "msgstr": "ACL Anwender"
     },
@@ -831,10 +827,6 @@
         "msgstr": "BlackListet"
     },
     {
-        "msgid": "processexplorer.history.businesskey",
-        "msgstr": "Businesskey"
-    },
-    {
         "msgid": "data.app.configeditor",
         "msgstr": "Configeditor"
     },
@@ -991,14 +983,6 @@
         "msgstr": "Datentyp"
     },
     {
-        "msgid": "processexplorer.date",
-        "msgstr": "Datum"
-    },
-    {
-        "msgid": "processexplorer.duration",
-        "msgstr": "Dauer"
-    },
-    {
         "msgid": "import.mapping.decoder",
         "msgstr": "Decoder"
     },
@@ -1029,10 +1013,6 @@
     {
         "msgid": "data.filter.description",
         "msgstr": "Description"
-    },
-    {
-        "msgid": "processexplorer.details_log",
-        "msgstr": "Detail Log"
     },
     {
         "msgid": "messages.german",
@@ -1351,10 +1331,6 @@
         "msgstr": "Entitäten(Klassen)"
     },
     {
-        "msgid": "processexplorer.endTime",
-        "msgstr": "Endezeit"
-    },
-    {
         "msgid": "data.projects.end_date",
         "msgstr": "Endtermin Projekt"
     },
@@ -1377,14 +1353,6 @@
     {
         "msgid": "ruleseditor.ergebnis",
         "msgstr": "Ergebnis"
-    },
-    {
-        "msgid": "processexplorer.completed",
-        "msgstr": "Erledigt"
-    },
-    {
-        "msgid": "processexplorer.finished_only",
-        "msgstr": "Erledigte Prozesse"
     },
     {
         "msgid": "tactions.create-record",
@@ -1444,10 +1412,6 @@
     },
     {
         "msgid": "meta.lists.which_filter",
-        "msgstr": "Filter"
-    },
-    {
-        "msgid": "processexplorer.filter",
         "msgstr": "Filter"
     },
     {
@@ -1703,14 +1667,6 @@
         "msgstr": "Id"
     },
     {
-        "msgid": "processexplorer.id",
-        "msgstr": "Id"
-    },
-    {
-        "msgid": "processes.table.id",
-        "msgstr": "Id"
-    },
-    {
         "msgid": "data.field.id",
         "msgstr": "Id"
     },
@@ -1787,10 +1743,6 @@
         "msgstr": "Index"
     },
     {
-        "msgid": "processexplorer.details_info",
-        "msgstr": "Information"
-    },
-    {
         "msgid": "namespacesmanager.install",
         "msgstr": "Install App"
     },
@@ -1801,10 +1753,6 @@
     {
         "msgid": "namespacesmanager.is_installed",
         "msgstr": "Installiert?"
-    },
-    {
-        "msgid": "processexplorer.instance_diagram",
-        "msgstr": "Instanz Diagramm"
     },
     {
         "msgid": "settings.views.propertyedit.isblack",
@@ -2627,8 +2575,16 @@
         "msgstr": "Prozess starten"
     },
     {
-        "msgid": "processexplorer.start_process",
+        "msgid": "processexplorer.definition.start_process",
         "msgstr": "Prozess starten"
+    },
+    {
+        "msgid": "processexplorer.definition.history",
+        "msgstr": "Historie"
+    },
+    {
+        "msgid": "processexplorer.definition.show_history",
+        "msgstr": "Historie anzeigen"
     },
     {
         "msgid": "tactions.processaction",
@@ -2643,8 +2599,120 @@
         "msgstr": "Prozess,Alarm,Aktion"
     },
     {
+        "msgid": "processexplorer.history.started_from",
+        "msgstr": "Gestarted ab:"
+    },
+    {
+        "msgid": "processexplorer.history.started_to",
+        "msgstr": "Gestarted bis"
+    },
+    {
         "msgid": "processexplorer.history.id",
-        "msgstr": "Prozess-ID"
+        "msgstr": "PID"
+    },
+    {
+        "msgid": "processexplorer.history.processDefinitionId",
+        "msgstr": "DEFID"
+    },
+    {
+        "msgid": "processexplorer.history.endtime",
+        "msgstr": "Ende"
+    },
+    {
+        "msgid": "processexplorer.history.duration",
+        "msgstr": "Dauer"
+    },
+    {
+        "msgid": "processexplorer.history.startUserId",
+        "msgstr": "User"
+    },
+    {
+        "msgid": "processexplorer.details_info",
+        "msgstr": "Information"
+    },
+    {
+        "msgid": "processexplorer.id",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "processes.table.id",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "processexplorer.filter",
+        "msgstr": "Filter"
+    },
+    {
+        "msgid": "processexplorer.completed",
+        "msgstr": "Erledigt"
+    },
+    {
+        "msgid": "processexplorer.finished_only",
+        "msgstr": "Erledigte Prozesse"
+    },
+    {
+        "msgid": "processexplorer.endTime",
+        "msgstr": "Endezeit"
+    },
+    {
+        "msgid": "processexplorer.details_log",
+        "msgstr": "Detail Log"
+    },
+    {
+        "msgid": "processexplorer.date",
+        "msgstr": "Datum"
+    },
+    {
+        "msgid": "processexplorer.duration",
+        "msgstr": "Dauer"
+    },
+    {
+        "msgid": "processexplorer.history.state",
+        "msgstr": "Prozessstatus"
+    },
+    {
+        "msgid": "processexplorer.history.businesskey",
+        "msgstr": "Businesskey"
+    },
+    {
+        "msgid": "processexplorer.activityId",
+        "msgstr": "A-Id"
+    },
+    {
+        "msgid": "processexplorer.instance_diagram",
+        "msgstr": "Instanz Diagramm"
+    },
+    {
+        "msgid": "processexplorer.definition.category",
+        "msgstr": "Namespace"
+    },
+    {
+        "msgid": "processexplorer.definition.version",
+        "msgstr": "Version"
+    },
+    {
+        "msgid": "processexplorer.definition.confirm_delete",
+        "msgstr": "Ausgewählte Prozessdefinitionen löschen"
+    },
+    {
+        "msgid": "processexplorer.definition.definitions_deleted",
+        "msgstr": "Prozessdefinitionen gelöscht"
+    },
+    {
+        "msgid": "processexplorer.definition.selected",
+        "msgstr": "Auswahl"
+    },
+    {
+        "msgid": "processexplorer.definition.key",
+        "msgstr": "Schlüssel"
+    },
+    {
+        "msgid": "processexplorer.definition.start",
+        "msgstr": "Start"
+    },
+    {
+        "msgid": "processexplorer.definition.onlyLatest",
+        "msgstr": "Nur letzte Version"
     },
     {
         "msgid": "shell.processes_dir",
@@ -3277,10 +3345,6 @@
     {
         "msgid": "processexplorer.activityType",
         "msgstr": "Tätigkeitsart"
-    },
-    {
-        "msgid": "processexplorer.unfinished_only",
-        "msgstr": "Unerledigte Prozess"
     },
     {
         "msgid": "meta.enumdata.invalid",
