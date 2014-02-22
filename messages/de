@@ -1063,6 +1063,14 @@
         "msgstr": "Dateiname"
     },
     {
+        "msgid": "data.document.no_filename",
+        "msgstr": "Kein Filename"
+    },
+    {
+        "msgid": "data.document.cannot_read",
+        "msgstr": "Kann Datei nicht lesen"
+    },
+    {
         "msgid": "data.document.type",
         "msgstr": "Typ"
     },
