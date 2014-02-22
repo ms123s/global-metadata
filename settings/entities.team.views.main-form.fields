@@ -18,6 +18,18 @@
         {
             "name": "disabled",
             "enabled": true
+        },
+        {
+            "name": "property1",
+            "enabled": true
+        },
+        {
+            "name": "property2",
+            "enabled": true
+        },
+        {
+            "name": "property3",
+            "enabled": true
         }
     ]
 }

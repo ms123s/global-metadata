@@ -39,6 +39,21 @@
             "name": "description",
             "datatype": "string"
         },
+        "property1": {
+            "enabled": true,
+            "name": "property1",
+            "datatype": "string"
+        },
+        "property2": {
+            "enabled": true,
+            "name": "property2",
+            "datatype": "string"
+        },
+        "property3": {
+            "enabled": true,
+            "name": "property3",
+            "datatype": "string"
+        },
         "disabled": {
             "enabled": true,
             "name": "disabled",
