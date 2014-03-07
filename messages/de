@@ -4437,5 +4437,13 @@
     {
         "msgid": "settings.threshold",
         "msgstr": "Schwelle(0-1)"
+    },
+    {
+        "msgid": "composite.stateselect.normal",
+        "msgstr": "Normal"
+    },
+    {
+        "msgid": "composite.stateselect.dup",
+        "msgstr": "Dublettenkandidaten"
     }
 ]
