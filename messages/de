@@ -1199,6 +1199,10 @@
         "msgstr": "Felder"
     },
     {
+        "msgid": "settings.readonly",
+        "msgstr": "Readonly"
+    },
+    {
         "msgid": "settings.properties",
         "msgstr": "Properties"
     },
@@ -1329,6 +1333,10 @@
     {
         "msgid": "settings.enabled",
         "msgstr": "Enabled"
+    },
+    {
+        "msgid": "settings.fillin",
+        "msgstr": "Übernahme aus Selektion"
     },
     {
         "msgid": "permissions.enabled",
@@ -4444,6 +4452,10 @@
     },
     {
         "msgid": "composite.stateselect.dup",
-        "msgstr": "Dublettenkandidaten"
+        "msgstr": "Dublettenkandidat"
+    },
+    {
+        "msgid": "data.entity.stateselect",
+        "msgstr": "Statusumschaltung(Dublettenkandidaten<br/> und/oder gelöschte Datensätze)"
     }
 ]
