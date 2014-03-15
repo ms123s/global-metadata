@@ -815,6 +815,18 @@
         "msgstr": "Bitte einen Filter auswählen"
     },
     {
+        "msgid": "meta.teams.member_list",
+        "msgstr": "Wer ist wo Mitglied"
+    },
+    {
+        "msgid": "meta.teams.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "meta.teams.teamid",
+        "msgstr": "Teamid"
+    },
+    {
         "msgid": "meta.teams.select_user",
         "msgstr": "Bitte einen User auswählen"
     },

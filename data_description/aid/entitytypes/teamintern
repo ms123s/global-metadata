@@ -23,15 +23,10 @@
             "name": "validTo",
             "datatype": "date"
         },
-        "groupRead": {
-            "enabled": true,
-            "name": "groupRead",
-            "datatype": "array/string"
-        },
         "userCreate": {
             "enabled": true,
             "name": "userCreate",
-            "datatype": "array/string"
+            "datatype": "list_string"
         },
         "teamid": {
             "enabled": true,
@@ -39,15 +34,10 @@
             "primary_key": true,
             "datatype": "string"
         },
-        "groupManage": {
-            "enabled": true,
-            "name": "groupManage",
-            "datatype": "array/string"
-        },
         "userRead": {
             "enabled": true,
             "name": "userRead",
-            "datatype": "array/string"
+            "datatype": "list_string"
         },
         "description": {
             "enabled": true,
@@ -62,17 +52,12 @@
         "userManage": {
             "enabled": true,
             "name": "userManage",
-            "datatype": "array/string"
+            "datatype": "list_string"
         },
         "validFrom": {
             "enabled": true,
             "name": "validFrom",
             "datatype": "date"
-        },
-        "groupCreate": {
-            "enabled": true,
-            "name": "groupCreate",
-            "datatype": "array/string"
         }
     }
 }
