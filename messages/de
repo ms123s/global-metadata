@@ -659,6 +659,22 @@
         "msgstr": "Beschreibung"
     },
     {
+        "msgid": "meta.teams.user_create",
+        "msgstr": "User(create)"
+    },
+    {
+        "msgid": "meta.teams.user_read",
+        "msgstr": "User(read)"
+    },
+    {
+        "msgid": "meta.teams.all_user",
+        "msgstr": "Teams mit Mitgliedern"
+    },
+    {
+        "msgid": "meta.teams.user_manage",
+        "msgstr": "User(manage)"
+    },
+    {
         "msgid": "meta.teams.create_team2",
         "msgstr": "Beschreibung"
     },
