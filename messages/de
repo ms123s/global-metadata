@@ -19,6 +19,10 @@
         "msgstr": "1.Quelle"
     },
     {
+        "msgid": "import.drop_file",
+        "msgstr": "<div style='position:relative;left:30%;top:50%;font-size:300%;'>Please drop a file</div>"
+    },
+    {
         "msgid": "import.upload_exportfile",
         "msgstr": "2.Upload"
     },
@@ -2449,6 +2453,10 @@
     {
         "msgid": "relations.one-to-many",
         "msgstr": "One-to-Many: Primäres Modul hat einen Subpanel des sekundärenen Moduls ."
+    },
+    {
+        "msgid": "relations.one-to-many-map",
+        "msgstr": "One-to-Many(Map): Primäres Modul hat einen Subpanel des sekundärenen Moduls ."
     },
     {
         "msgid": "relations.one-to-one-bi",
