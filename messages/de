@@ -20,7 +20,7 @@
     },
     {
         "msgid": "import.drop_file",
-        "msgstr": "<div style='position:relative;left:30%;top:50%;font-size:300%;'>Please drop a file</div>"
+        "msgstr": "<div style='position:relative;left:15%;top:50%;font-size:300%;'>Please drop a file</div>"
     },
     {
         "msgid": "import.upload_exportfile",
@@ -4363,6 +4363,18 @@
         "msgstr": "Preview"
     },
     {
+        "msgid": "datamapper.viewswitch_defaults",
+        "msgstr": "Defaults"
+    },
+    {
+        "msgid": "datamapper.viewswitch_import",
+        "msgstr": "Import"
+    },
+    {
+        "msgid": "datamapper.upload_file",
+        "msgstr": "Fileupload"
+    },
+    {
         "msgid": "datamapper.viewswitch_script",
         "msgstr": "Script"
     },
@@ -4379,12 +4391,16 @@
         "msgstr": "Ergebnis(Baum)"
     },
     {
-        "msgid": "datamapper.preview_load",
-        "msgstr": "Laden eines Testfiles"
+        "msgid": "datamapper.load_import_file",
+        "msgstr": "Laden eines Importfiles"
     },
     {
         "msgid": "datamapper.execute",
-        "msgstr": "Ausführen"
+        "msgstr": "Daten importieren"
+    },
+    {
+        "msgid": "datamapper.execute_preview",
+        "msgstr": "Voransicht"
     },
     {
         "msgid": "datamapper.create_classes",
