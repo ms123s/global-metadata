@@ -599,6 +599,18 @@
         "msgstr": "Erstellt von"
     },
     {
+        "msgid": "data._state",
+        "msgstr": "Status(ok,dup,..)"
+    },
+    {
+        "msgid": "composite.quality.start_batch",
+        "msgstr": "Start Qualitätscheck"
+    },
+    {
+        "msgid": "composite.quality.batch_ok",
+        "msgstr": "Qualitätscheck durchgeführt"
+    },
+    {
         "msgid": "data.enumfield.description",
         "msgstr": "Beschreibung"
     },
@@ -4499,8 +4511,16 @@
         "msgstr": "Schwelle(0-1)"
     },
     {
-        "msgid": "composite.stateselect.normal",
-        "msgstr": "Normal"
+        "msgid": "composite.stateselect.ok",
+        "msgstr": "Ok"
+    },
+    {
+        "msgid": "composite.stateselect.new",
+        "msgstr": "Neu"
+    },
+    {
+        "msgid": "composite.stateselect.ok_new",
+        "msgstr": "OK/Neu"
     },
     {
         "msgid": "composite.stateselect.dup",
