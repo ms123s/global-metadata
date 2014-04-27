@@ -3363,6 +3363,10 @@
         "msgstr": "Teams auf Ebene 1 anlegen"
     },
     {
+        "msgid": "data.entity.state_fields",
+        "msgstr": "Statusfelder"
+    },
+    {
         "msgid": "data.entity.team_security",
         "msgstr": "Teamverwaltung"
     },
@@ -4528,6 +4532,6 @@
     },
     {
         "msgid": "data.entity.stateselect",
-        "msgstr": "Statusumschaltung(Dublettenkandidaten<br/> und/oder gelöschte Datensätze)"
+        "msgstr": "Statusumschaltung(Dublettenkandidaten)"
     }
 ]

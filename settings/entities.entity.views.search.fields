@@ -24,6 +24,10 @@
             "enabled": true
         },
         {
+            "name": "state_fields",
+            "enabled": true
+        },
+        {
             "name": "team_security",
             "enabled": true
         },

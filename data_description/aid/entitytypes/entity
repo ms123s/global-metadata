@@ -5,6 +5,7 @@
     "enabled": true,
     "index": 1000,
     "default_fields": false,
+    "state_fields": false,
     "pack": "admin",
     "team_security": false,
     "add_self_to_subpanel": false,
@@ -61,6 +62,12 @@
             "enabled": true,
             "default_value": false,
             "name": "default_fields",
+            "datatype": "boolean"
+        },
+        "state_fields": {
+            "enabled": true,
+            "default_value": false,
+            "name": "state_fields",
             "datatype": "boolean"
         },
         "xpack": {
