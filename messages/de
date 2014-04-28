@@ -4523,6 +4523,10 @@
         "msgstr": "Schwelle(0-1)"
     },
     {
+        "msgid": "settings.innerThreshold",
+        "msgstr": "innere Schwelle"
+    },
+    {
         "msgid": "composite.stateselect.ok",
         "msgstr": "Ok"
     },
