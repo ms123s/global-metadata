@@ -4527,6 +4527,10 @@
         "msgstr": "innere Schwelle"
     },
     {
+        "msgid": "meta.dupcheck.innerThreshold",
+        "msgstr": "innere Schwelle"
+    },
+    {
         "msgid": "composite.stateselect.ok",
         "msgstr": "Ok"
     },
