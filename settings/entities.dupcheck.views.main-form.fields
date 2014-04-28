@@ -4,22 +4,17 @@
 {
     "fields": [
         {
-            "name": "dupname",
-            "enabled": true,
-            "tab": "tab1"
-        },
-        {
             "name": "description",
             "enabled": true,
             "tab": "tab1"
         },
         {
-            "name": "mode",
+            "name": "threshold",
             "enabled": true,
             "tab": "tab1"
         },
         {
-            "name": "threshold",
+            "name": "innerThreshold",
             "enabled": true,
             "tab": "tab1"
         },
