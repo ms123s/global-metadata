@@ -603,11 +603,19 @@
         "msgstr": "Status(ok,dup,..)"
     },
     {
-        "msgid": "composite.quality.start_batch",
+        "msgid": "composite.quality.start_dupcheck",
         "msgstr": "Start Qualitätscheck"
     },
     {
-        "msgid": "composite.quality.batch_ok",
+        "msgid": "quality.dup_candidate",
+        "msgstr": "<b>Dublettenkandidat</b>"
+    },
+    {
+        "msgid": "quality.ref_record",
+        "msgstr": "<b>Referenz</b>"
+    },
+    {
+        "msgid": "composite.quality.dupcheck_ok",
         "msgstr": "Qualitätscheck durchgeführt"
     },
     {
