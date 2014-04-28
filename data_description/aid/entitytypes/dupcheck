@@ -23,25 +23,17 @@
             "name": "description",
             "datatype": "string"
         },
-        "dupname": {
-            "enabled": true,
-            "name": "dupname",
-            "constraints": "[{\"annotation\":\"NotEmpty\",\"parameter1\":\"\"}]",
-            "primary_key": true,
-            "datatype": "string"
-        },
         "threshold": {
             "enabled": true,
             "name": "threshold",
-            "default_value": 0.9,
+            "default_value": 0.85,
             "datatype": "decimal"
         },
-        "mode": {
+        "innerThreshold": {
             "enabled": true,
-            "name": "mode",
-            "edittype": "select",
-            "datatype": "string",
-            "selectable_items": "[\n\t\t\t\t{\"value\":\"fuzzy\",\"label\":\"Fuzzy\"},\n\t\t\t\t{\"value\":\"equal\",\"label\":\"Exakt\"}\n\t\t\t\t]"
+            "name": "innerThreshold",
+            "default_value": 0.85,
+            "datatype": "decimal"
         },
         "fields": {
             "enabled": true,
