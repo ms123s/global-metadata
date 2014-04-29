@@ -19,6 +19,11 @@
             "tab": "tab1"
         },
         {
+            "name": "expression",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
             "name": "fields",
             "enabled": true,
             "tab": "tab2"

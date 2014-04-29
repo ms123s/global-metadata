@@ -35,6 +35,11 @@
             "default_value": 0.85,
             "datatype": "decimal"
         },
+        "expression": {
+            "enabled": true,
+            "name": "expression",
+            "datatype": "string"
+        },
         "fields": {
             "enabled": true,
             "name": "fields",
