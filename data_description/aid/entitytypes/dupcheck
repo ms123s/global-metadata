@@ -38,7 +38,8 @@
         "expression": {
             "enabled": true,
             "name": "expression",
-            "datatype": "string"
+            "edittype": "textarea",
+            "datatype": "text"
         },
         "fields": {
             "enabled": true,
