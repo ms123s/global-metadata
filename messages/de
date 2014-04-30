@@ -607,6 +607,10 @@
         "msgstr": "Start Qualitätscheck"
     },
     {
+        "msgid": "composite.quality.dupcheck.started",
+        "msgstr": "Qualitätscheck gestartet.Bitte warten!"
+    },
+    {
         "msgid": "quality.dup_candidate",
         "msgstr": "<b>Dublettenkandidat</b>"
     },
@@ -1299,8 +1303,8 @@
         "msgstr": "Fieldset Name"
     },
     {
-        "msgid": "meta.dupcheck.dupname",
-        "msgstr": "Dublettencheck"
+        "msgid": "meta.dupcheck.expression",
+        "msgstr": "oder als Expression"
     },
     {
         "msgid": "meta.dupcheck.mode",
