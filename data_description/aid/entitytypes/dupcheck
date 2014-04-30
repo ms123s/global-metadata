@@ -39,6 +39,7 @@
             "enabled": true,
             "name": "expression",
             "edittype": "textarea",
+						"editoptions_rows": "4",
             "datatype": "text"
         },
         "fields": {
