@@ -475,6 +475,14 @@
         "msgstr": "Ausschlussliste"
     },
     {
+        "msgid": "data.entity.no_resultset_count",
+        "msgstr": "Zeilenanzahl nicht anzeigen"
+    },
+    {
+        "msgid": "data.entity.titel_expression",
+        "msgstr": "Titel"
+    },
+    {
         "msgid": "data.entity.no_add_del_in_master",
         "msgstr": "Keine Add/Del-Buttons als Master"
     },
@@ -617,6 +625,10 @@
     {
         "msgid": "quality.dup_candidate",
         "msgstr": "<b>Dublettenkandidat</b>"
+    },
+    {
+        "msgid": "quality.maybe_exists",
+        "msgstr": "<b>Ähnlicher Eintrag vorhanden</b>"
     },
     {
         "msgid": "quality.ref_record",
@@ -1328,7 +1340,7 @@
     },
     {
         "msgid": "settings.fieldset.save",
-        "msgstr": "Fieldset übernehmen, abschließend muss noch gespeichert werden"
+        "msgstr": "Fieldset speichern"
     },
     {
         "msgid": "configeditor.fieldsets",
