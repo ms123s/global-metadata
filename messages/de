@@ -480,7 +480,7 @@
     },
     {
         "msgid": "data.entity.titel_expression",
-        "msgstr": "Titel"
+        "msgstr": "Titelausdruck(z.B:vorname+' '+nachname)"
     },
     {
         "msgid": "data.entity.no_add_del_in_master",
