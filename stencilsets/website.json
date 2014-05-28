@@ -179,6 +179,19 @@
 			"length": "128"
 		},
 		{
+      "id": "ws_target",
+      "type": "String",
+      "title": "Target",
+      "title_de": "Ziel",
+      "prefix": "oryx",
+      "visible": "ws_linktype=='internet'",
+      "value": "blank",
+      "popular": true,
+      "optional": true,
+      "refToView": "",
+      "length": "128"
+    },
+		{
 			"id": "ws_workflow",
 			"type": "ResourceSelector",
 			"config": {"type":"sw.process","editable":true, "prefix":""},
