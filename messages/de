@@ -199,6 +199,14 @@
         "msgstr": "Aktiv"
     },
     {
+        "msgid": "namespacesmanager.url_meta",
+        "msgstr": "Clone Url(Meta-Repository)"
+    },
+    {
+        "msgid": "namespacesmanager.url_data",
+        "msgstr": "Clone Url(Data-Repository)"
+    },
+    {
         "msgid": "namespacesmanager.confirm_pull",
         "msgstr": "Aktualisiere die App?"
     },
