@@ -3735,6 +3735,10 @@
         "msgstr": "ausgewähltes Merkmal"
     },
     {
+        "msgid": "meta.lists.field_changed",
+        "msgstr": "geändert"
+    },
+    {
         "msgid": "meta.lists.team_changed",
         "msgstr": "Team(o. -Zuweisung) geändert"
     },
