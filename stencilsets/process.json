@@ -958,6 +958,18 @@
 			"length": "50"
 		},
 		{
+			"id": "el$activiti$filtervarname",
+			"type": "String",
+			"title": "Filter Varname",
+			"title_de": "Filter Varname",
+			"value": "",
+			"description": "Name of a processvariable that points to the filter",
+			"description_de": "Name einer Prozessvariablen die auf den  Filter zeigt",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},
+		{
 			"id": "el$activiti$variablesmapping",
 			"type": "Complex",
 			"config": {"helperTree":["sw.form"]},
