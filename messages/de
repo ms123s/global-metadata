@@ -482,6 +482,10 @@
         "msgid": "data.entity.exclusion_list",
         "msgstr": "Ausschlussliste"
     },
+		{
+        "msgid": "data.entity.workflow_list",
+        "msgstr": "Workflows im Aktionmenu"
+    },
     {
         "msgid": "data.entity.no_resultset_count",
         "msgstr": "Zeilenanzahl nicht anzeigen"
