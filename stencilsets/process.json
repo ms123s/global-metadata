@@ -48,13 +48,40 @@
 					"title" : "Body",
 					"title_de" : "Body",
 					"value" : "body"
-				}, {
+				}, 
+				{
+					"id" : "header",
+					"title" : "Header",
+					"title_de" : "Header",
+					"value" : "header"
+				},{
 					"id" : "property",
 					"title" : "Property",
 					"title_de" : "Property",
 					"value" : "property"
-				} ]
+				}]
 			},{
+				"id": "direction",
+				"name": "Direction",
+				"name_de": "Richtung",
+				"description": "incoming(from Camel), outgoing(to Camel)",
+				"readonly": false,
+				"type": "Choice",
+				"value": "outgoing",
+				"items": [{
+					"id": "incoming",
+					"title": "Incoming",
+					"title_de": "Eingehend",
+					"value": "incoming"
+				}, {
+					"id": "outgoing",
+					"title": "Outgoing",
+					"title_de": "Ausgehend",
+					"value": "outgoing"
+				}],
+				"width": 80,
+				"optional": true
+			}, {
 				"id": "camelvar",
 				"name_de": "Camelvariable",
 				"name": "Camelvariable",
