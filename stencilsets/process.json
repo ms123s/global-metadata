@@ -36,7 +36,15 @@
 				"value": "",
 				"width": 150,
 				"optional": false
-			  },{
+			  }, {
+					"id": "camelvar",
+					"name_de": "Camelvariable",
+					"name": "Camelvariable",
+					"type": "String",
+					"value": "",
+					"width": 150,
+					"optional": false
+				},{
 				"id" : "destination",
 				"type" : "Choice",
 				"name" : "Destination",
@@ -81,15 +89,7 @@
 					"title_de": "Eingehend",
 					"value": "incoming"
 				}]
-			}, {
-				"id": "camelvar",
-				"name_de": "Camelvariable",
-				"name": "Camelvariable",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			} ]
+			}]
 		}]
     }, 
 		{
