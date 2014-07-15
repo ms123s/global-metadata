@@ -42,7 +42,8 @@
 				"name" : "Destination",
 				"name_de" : "Ziel",
 				"value" : "body",
-				"popular" : true,
+				"width": 80,
+				"optional": false,
 				"items" : [ {
 					"id" : "body",
 					"title" : "Body",
@@ -80,7 +81,7 @@
 					"value": "outgoing"
 				}],
 				"width": 80,
-				"optional": true
+				"optional": false
 			}, {
 				"id": "camelvar",
 				"name_de": "Camelvariable",
