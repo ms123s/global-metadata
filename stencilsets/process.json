@@ -16,6 +16,56 @@
     }]
     }, 
 		{
+    "name" : "camelbase",
+    "properties" : [ {
+			"id": "variablesmapping",
+			"type": "Complex",
+			"config": {"helperTree":["sw.form"]},
+			"title": "Parameter-Mapping",
+			"title_de": "Variablen Zuordnung",
+			"value": "",
+			"description": "Mapping processvariables to filter",
+			"description_de": "Zuordnung von Prozessvariablen zum Filter",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "processvar",
+				"name_de": "Prozessvariable",
+				"name": "Processvariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			  },{
+				"id" : "destination",
+				"type" : "Choice",
+				"title" : "Destination",
+				"title_de" : "Ziel",
+				"value" : "body",
+				"popular" : true,
+				"items" : [ {
+					"id" : "body",
+					"title" : "Body",
+					"title_de" : "Body",
+					"value" : "body"
+				}, {
+					"id" : "property",
+					"title" : "Property",
+					"title_de" : "Property",
+					"value" : "property"
+				} ]
+			},{
+				"id": "camelvar",
+				"name_de": "Camelvariable",
+				"name": "Camelvariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			} ]
+		}]
+    }, 
+		{
 		"name": "baseAttributes",
 		"properties": [{
 			"id": "name",
@@ -263,7 +313,8 @@
 		}]
 	},{
     "name" : "asynchronousbase",
-    "properties" : [ {
+    "properties" : [ 
+{
       "id" : "asynchronousdefinition",
       "type" : "Choice",
       "title" : "Asynchronous",
