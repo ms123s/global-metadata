@@ -63,25 +63,24 @@
 				}]
 			},{
 				"id": "direction",
+				"type": "Choice",
 				"name": "Direction",
 				"name_de": "Richtung",
 				"description": "incoming(from Camel), outgoing(to Camel)",
-				"readonly": false,
-				"type": "Choice",
 				"value": "outgoing",
-				"items": [{
-					"id": "incoming",
-					"title": "Incoming",
-					"title_de": "Eingehend",
-					"value": "incoming"
-				}, {
+				"width": 80,
+				"optional": false,
+				"items": [ {
 					"id": "outgoing",
 					"title": "Outgoing",
 					"title_de": "Ausgehend",
 					"value": "outgoing"
-				}],
-				"width": 80,
-				"optional": false
+				}, {
+					"id": "incoming",
+					"title": "Incoming",
+					"title_de": "Eingehend",
+					"value": "incoming"
+				}]
 			}, {
 				"id": "camelvar",
 				"name_de": "Camelvariable",
