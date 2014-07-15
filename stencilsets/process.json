@@ -39,8 +39,8 @@
 			  },{
 				"id" : "destination",
 				"type" : "Choice",
-				"title" : "Destination",
-				"title_de" : "Ziel",
+				"name" : "Destination",
+				"name_de" : "Ziel",
 				"value" : "body",
 				"popular" : true,
 				"items" : [ {
