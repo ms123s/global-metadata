@@ -24,8 +24,8 @@
 			"title": "Parameter-Mapping",
 			"title_de": "Variablen Zuordnung",
 			"value": "",
-			"description": "Mapping processvariables to filter",
-			"description_de": "Zuordnung von Prozessvariablen zum Filter",
+			"description": "Mapping processvariables to camel",
+			"description_de": "Zuordnung von Prozessvariablen zu camel",
 			"readonly": false,
 			"optional": true,
 			"complexItems": [{
@@ -69,28 +69,7 @@
 					"title_de" : "Property",
 					"value" : "property"
 				}]
-			},{
-				"id": "direction",
-				"type": "Choice",
-				"name": "Direction",
-				"name_de": "Richtung",
-				"description": "incoming(from Camel), outgoing(to Camel)",
-				"value": "outgoing",
-				"width": 80,
-				"include": false,
-				"optional": false,
-				"items": [ {
-					"id": "outgoing",
-					"title": "Outgoing",
-					"title_de": "Ausgehend",
-					"value": "outgoing"
-				}, {
-					"id": "incoming",
-					"title": "Incoming",
-					"title_de": "Eingehend",
-					"value": "incoming"
-				}]
-			}]
+			} ]
 		},{
       "id" : "resultvar",
       "type" : "String",
