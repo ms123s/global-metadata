@@ -18,23 +18,6 @@
 
     },
 
-   protected Date timestamp;
-    protected String fromEndpointUri;
-    protected String previousNode;
-    protected String toNode;
-    protected String exchangeId;
-    protected String shortExchangeId;
-    protected String exchangePattern;
-    protected String properties;
-    protected String headers;
-    protected String body;
-    protected String bodyType;
-    protected String outHeaders;
-    protected String outBody;
-    protected String outBodyType;
-    protected String causedByException;
-    protected String routeId;
-
     "fields": {
         "fromEndpointUri": {
             "enabled": true,
