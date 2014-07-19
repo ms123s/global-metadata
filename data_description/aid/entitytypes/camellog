@@ -1,0 +1,115 @@
+[sw]
+	type = sw.entitytype
+--
+{
+    "enabled": true,
+    "index": 1000,
+    "default_fields": false,
+    "pack": "aid",
+    "team_security": false,
+    "add_self_to_subpanel": false,
+    "description": "",
+    "name": "user",
+    "multi_add": false,
+    "multiple_tabs": false,
+    "exclusion_list": false,
+    "filter": "",
+    "__hints__": {
+
+    },
+
+   protected Date timestamp;
+    protected String fromEndpointUri;
+    protected String previousNode;
+    protected String toNode;
+    protected String exchangeId;
+    protected String shortExchangeId;
+    protected String exchangePattern;
+    protected String properties;
+    protected String headers;
+    protected String body;
+    protected String bodyType;
+    protected String outHeaders;
+    protected String outBody;
+    protected String outBodyType;
+    protected String causedByException;
+    protected String routeId;
+
+    "fields": {
+        "fromEndpointUri": {
+            "enabled": true,
+            "name": "fromEndpointUri",
+            "datatype": "string"
+        },
+        "previousNode": {
+            "enabled": true,
+            "name": "previousNode",
+            "datatype": "string"
+        },
+        "toNode": {
+            "enabled": true,
+            "name": "toNode",
+            "datatype": "string"
+        },
+        "exchangeId": {
+            "enabled": true,
+            "name": "exchangeId",
+            "datatype": "string"
+        },
+        "shortExchangeId": {
+            "enabled": true,
+            "name": "shortExchangeId",
+            "datatype": "string"
+        },
+        "exchangePattern": {
+            "enabled": true,
+            "name": "exchangePattern",
+            "datatype": "string"
+        },
+        "properties": {
+            "enabled": true,
+            "name": "properties",
+            "datatype": "string"
+        },
+        "headers": {
+            "enabled": true,
+            "name": "headers",
+            "datatype": "string"
+        },
+        "body": {
+            "enabled": true,
+            "name": "body",
+            "datatype": "text"
+        },
+        "bodyType": {
+            "enabled": true,
+            "name": "bodyType",
+            "datatype": "string"
+        },
+        "outHeaders": {
+            "enabled": true,
+            "name": "outHeaders",
+            "datatype": "string"
+        },
+        "outBody": {
+            "enabled": true,
+            "name": "outBody",
+            "datatype": "string"
+        },
+        "outBodyType": {
+            "enabled": true,
+            "name": "outBodyType",
+            "datatype": "string"
+        },
+        "causedByException": {
+            "enabled": true,
+            "name": "causedByException",
+            "datatype": "string"
+        },
+        "routeId": {
+            "enabled": true,
+            "name": "routeId",
+            "datatype": "string"
+        }
+    }
+}
