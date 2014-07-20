@@ -19,6 +19,11 @@
     },
 
     "fields": {
+        "activitikey": {
+            "enabled": true,
+            "name": "activitikey",
+            "datatype": "string"
+        },
         "fromEndpointUri": {
             "enabled": true,
             "name": "fromEndpointUri",
