@@ -2759,6 +2759,18 @@
         "msgstr": "from"
     },
     {
+        "msgid": "processexplorer.body",
+        "msgstr": "Body"
+    },
+    {
+        "msgid": "processexplorer.headers",
+        "msgstr": "Headers"
+    },
+    {
+        "msgid": "processexplorer.properties",
+        "msgstr": "Properties"
+    },
+    {
         "msgid": "processexplorer.id",
         "msgstr": "Id"
     },
