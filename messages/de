@@ -2743,6 +2743,22 @@
         "msgstr": "Information"
     },
     {
+        "msgid": "processexplorer.details_camel",
+        "msgstr": "Camel"
+    },
+    {
+        "msgid": "processexplorer.routeId",
+        "msgstr": "Route"
+    },
+    {
+        "msgid": "processexplorer.toNode",
+        "msgstr": "toNode"
+    },
+    {
+        "msgid": "processexplorer.fromEndpointUri",
+        "msgstr": "from"
+    },
+    {
         "msgid": "processexplorer.id",
         "msgstr": "Id"
     },
