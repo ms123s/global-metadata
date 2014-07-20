@@ -9,7 +9,7 @@
     "team_security": false,
     "add_self_to_subpanel": false,
     "description": "",
-    "name": "user",
+    "name": "camellog",
     "multi_add": false,
     "multiple_tabs": false,
     "exclusion_list": false,
