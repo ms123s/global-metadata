@@ -52,12 +52,12 @@
         "properties": {
             "enabled": true,
             "name": "properties",
-            "datatype": "string"
+            "datatype": "text"
         },
         "headers": {
             "enabled": true,
             "name": "headers",
-            "datatype": "string"
+            "datatype": "text"
         },
         "body": {
             "enabled": true,
@@ -72,12 +72,12 @@
         "outHeaders": {
             "enabled": true,
             "name": "outHeaders",
-            "datatype": "string"
+            "datatype": "text"
         },
         "outBody": {
             "enabled": true,
             "name": "outBody",
-            "datatype": "string"
+            "datatype": "text"
         },
         "outBodyType": {
             "enabled": true,
@@ -87,7 +87,7 @@
         "causedByException": {
             "enabled": true,
             "name": "causedByException",
-            "datatype": "string"
+            "datatype": "text"
         },
         "routeId": {
             "enabled": true,
