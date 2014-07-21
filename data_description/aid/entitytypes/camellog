@@ -24,44 +24,14 @@
             "name": "activitikey",
             "datatype": "string"
         },
-        "fromEndpointUri": {
+        "time": {
             "enabled": true,
-            "name": "fromEndpointUri",
-            "datatype": "string"
+            "name": "time",
+            "datatype": "date"
         },
-        "previousNode": {
+        "json": {
             "enabled": true,
-            "name": "previousNode",
-            "datatype": "string"
-        },
-        "toNode": {
-            "enabled": true,
-            "name": "toNode",
-            "datatype": "string"
-        },
-        "exchangeId": {
-            "enabled": true,
-            "name": "exchangeId",
-            "datatype": "string"
-        },
-        "shortExchangeId": {
-            "enabled": true,
-            "name": "shortExchangeId",
-            "datatype": "string"
-        },
-        "exchangePattern": {
-            "enabled": true,
-            "name": "exchangePattern",
-            "datatype": "string"
-        },
-        "properties": {
-            "enabled": true,
-            "name": "properties",
-            "datatype": "text"
-        },
-        "headers": {
-            "enabled": true,
-            "name": "headers",
+            "name": "json",
             "datatype": "text"
         },
         "body": {
@@ -69,35 +39,10 @@
             "name": "body",
             "datatype": "text"
         },
-        "bodyType": {
+        "history": {
             "enabled": true,
-            "name": "bodyType",
-            "datatype": "string"
-        },
-        "outHeaders": {
-            "enabled": true,
-            "name": "outHeaders",
+            "name": "history",
             "datatype": "text"
-        },
-        "outBody": {
-            "enabled": true,
-            "name": "outBody",
-            "datatype": "text"
-        },
-        "outBodyType": {
-            "enabled": true,
-            "name": "outBodyType",
-            "datatype": "string"
-        },
-        "causedByException": {
-            "enabled": true,
-            "name": "causedByException",
-            "datatype": "text"
-        },
-        "routeId": {
-            "enabled": true,
-            "name": "routeId",
-            "datatype": "string"
         }
     }
 }
