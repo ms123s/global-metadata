@@ -4621,5 +4621,21 @@
     {
         "msgid": "data.entity.stateselect",
         "msgstr": "Statusumschaltung(Dublettenkandidaten)"
+    },
+    {
+        "msgid": "stencileditor.routes",
+        "msgstr": "Routen"
+    },
+    {
+        "msgid": "stencileditor.properties",
+        "msgstr": "Properties"
+    },
+    {
+        "msgid": "stencileditor.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "stencileditor.title",
+        "msgstr": "Titel"
     }
 ]
