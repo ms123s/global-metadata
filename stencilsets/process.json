@@ -63,12 +63,17 @@
 					"title" : "Header",
 					"title_de" : "Header",
 					"value" : "header"
-				},{
+				}, {
 					"id" : "property",
 					"title" : "Property",
 					"title_de" : "Property",
 					"value" : "property"
-				}]
+				}, {
+					"id" : "routing",
+					"title" : "Routing",
+					"title_de" : "Routing",
+					"value" : "routing"
+				} ]
 			} ]
 		},{
       "id" : "resultvar",
