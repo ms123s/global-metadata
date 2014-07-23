@@ -35,7 +35,7 @@
         },
         "hint": {
             "enabled": true,
-            "name": "type",
+            "name": "hint",
             "datatype": "string"
         },
         "msg": {
