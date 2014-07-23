@@ -1,5 +1,5 @@
 [sw]
-	type = sw.entitytype
+  type = sw.entitytype
 --
 {
     "enabled": true,
@@ -18,30 +18,30 @@
 
     },
     "fields": {
-        "topic": {
+        "key": {
             "enabled": true,
-            "name": "topic",
+            "name": "key",
             "datatype": "string"
         },
-        "param1": {
+        "time": {
             "enabled": true,
-            "name": "param1",
-            "datatype": "string"
-        },
-        "param2": {
-            "enabled": true,
-            "name": "param2",
-            "datatype": "string"
-        },
-        "date": {
-            "enabled": true,
-            "name": "date",
+            "name": "time",
             "datatype": "date"
+        },
+        "type": {
+            "enabled": true,
+            "name": "type",
+            "datatype": "string"
+        },
+        "hint": {
+            "enabled": true,
+            "name": "type",
+            "datatype": "string"
         },
         "msg": {
             "enabled": true,
             "name": "msg",
-            "datatype": "string"
+            "datatype": "text"
         }
     }
 }
