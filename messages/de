@@ -2727,6 +2727,10 @@
         "msgstr": "DEFID"
     },
     {
+        "msgid": "processexplorer.history.status",
+        "msgstr": "Status"
+    },
+    {
         "msgid": "processexplorer.history.endtime",
         "msgstr": "Ende"
     },
