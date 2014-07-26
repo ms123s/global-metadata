@@ -2675,6 +2675,14 @@
         "msgstr": "Prozess Definitionen"
     },
     {
+        "msgid": "processexplorer.processes",
+        "msgstr": "Prozesse"
+    },
+    {
+        "msgid": "processexplorer.camel",
+        "msgstr": "Camel"
+    },
+    {
         "msgid": "shell.process_saved",
         "msgstr": "Prozess gespeichert"
     },
