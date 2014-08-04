@@ -8,9 +8,9 @@
       "type" : "String",
       "title" : "Id",
       "value" : "",
-			"include":true,
+			"include":false,
       "popular" : true
-    },{
+		},{
 			"id": "documentation",
 			"type": "Text",
 			"title": "Documentation",
@@ -22,7 +22,20 @@
 			"wrapLines": true,
 			"popular": true
 		}]
-	}, {
+	},{
+		"name": "endpoint",
+		"properties": [{
+			"id": "Name",
+			"type": "String",
+			"title": "Name",
+			"title_de": "Name",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"refToView": ["endpoint_type"],
+			"popular": true
+		}]
+	},{
 		"name": "bgColorRouter",
 		"properties": [{
 			"id": "bgcolor",
@@ -62,6 +75,46 @@
 				"id": "groovy",
 				"title": "Groovy",
 				"value": "groovy"
+			}, {
+				"id": "constant",
+				"title": "Constant",
+				"value": "constant"
+			}, {
+				"id": "header",
+				"title": "Header",
+				"value": "header"
+			}, {
+				"id": "property",
+				"title": "Property",
+				"value": "property"
+			}, {
+				"id": "javascript",
+				"title": "Javascrip",
+				"value": "javascript"
+			}, {
+				"id": "el",
+				"title": "El",
+				"value": "el"
+			}, {
+				"id": "sql",
+				"title": "SQL",
+				"value": "sql"
+			}, {
+				"id": "xpath",
+				"title": "XPath",
+				"value": "xpath"
+			}, {
+				"id": "mvel",
+				"title": "Mvel",
+				"value": "mvel"
+			}, {
+				"id": "ognl",
+				"title": "Ognl",
+				"value": "ognl"
+			}, {
+				"id": "bean",
+				"title": "Bean",
+				"value": "bean"
 			} ],
 			"width": 80,
 			"optional": true
@@ -167,31 +220,16 @@
 		"propertyPackages": ["baseAttributes", "diagram"],
 		"roles": [],
 		"properties": [ {
-			"id": "initialParameter",
-			"type": "Complex",
-			"title": "Initialparameter",
-			"title_de": "Startparameter",
-			"value": "",
+			"id": "camelContext",
+			"type": "String",
+			"title": "Camelcontext",
+			"title_de": "Camelcontext",
+			"description": "Context to which the route belongs,when the context does not exist, then it is created",
+			"description_de": "Camelcontext zu dem diese Route gehört, wenn der Context nicht existiert dann wird er erstellt",
+			"value": "default",
 			"readonly": false,
 			"popular": false,
-			"optional": true,
-			"complexItems": [{
-				"id": "name",
-				"name_de": "Name",
-				"name": "Name",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			}, {
-				"id": "value",
-				"name_de": "Wert",
-				"name": "Value",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			}]
+			"optional": true
 		}]
 	},
 	{
@@ -231,15 +269,55 @@
 				"readonly": false,
 				"type": "Choice",
 				"value": "simple",
-				"items": [ {
+				"items": [{
 					"id": "simple",
 					"title": "Simple",
 					"value": "simple"
-				}, {
+				},{
 					"id": "groovy",
 					"title": "Groovy",
 					"value": "groovy"
-				} ],
+				},{
+					"id": "constant",
+					"title": "Constant",
+					"value": "constant"
+				},{
+					"id": "header",
+					"title": "Header",
+					"value": "header"
+				},{
+					"id": "property",
+					"title": "Property",
+					"value": "property"
+				},{
+					"id": "javascript",
+					"title": "Javascrip",
+					"value": "javascript"
+				},{
+					"id": "el",
+					"title": "El",
+					"value": "el"
+				},{
+					"id": "sql",
+					"title": "SQL",
+					"value": "sql"
+				},{
+					"id": "xpath",
+					"title": "XPath",
+					"value": "xpath"
+				},{
+					"id": "mvel",
+					"title": "Mvel",
+					"value": "mvel"
+				},{
+					"id": "ognl",
+					"title": "Ognl",
+					"value": "ognl"
+				},{
+					"id": "bean",
+					"title": "Bean",
+					"value": "bean"
+				}],
 				"width": 80,
 				"optional": true
 			}]
@@ -347,6 +425,27 @@
 	},
 	{
     "type" : "node",
+    "id" : "Endpoint",
+    "title" : "Endpoint",
+    "title_de" : "Endpunkt",
+    "description" : "Generic Endpoint",
+    "description_de" : "Allgemeiner Endpunkt",
+    "view" : "endpoint.svg",
+    "icon" : "genericendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "endpoint", "baseAttributes", "bgColorEndpoint", "borderColor"],
+		"properties": [{
+			"id": "uri",
+			"title":"Uri",
+			"value": "" ,
+			"type":"String",
+			"visible": true
+		}],
+    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, 
+	{
+    "type" : "node",
     "id" : "FileEndpoint",
     "title" : "File Endpoint",
     "title_de" : "File Endpunkt",
@@ -354,7 +453,7 @@
     "icon" : "fileendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor",  "endpoint" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
 		"properties": [{
 			"id": "type_file",
 			"type":"String",
@@ -364,21 +463,58 @@
 		},{
 			"id": "uri_template",
 			"type":"String",
-			"value": "file://${path}" ,
+			"value": "file:/${path}",
 			"visible": false
 		},{
 			"id": "urivalue_path",
 			"title":"Path",
-			"title_":"Pfad",
+			"title_de":"Pfad",
 			"type":"String",
 			"value": "",
 			"visible": true
 		},{
-			"id": "uriparam_file_name",
+			"id": "uriparam_filename",
 			"title":"Filename",
-			"title_":"Dateiname",
+			"title_de":"Dateiname",
 			"type":"String",
 			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_charset",
+			"type": "Combo",
+			"title": "Encoding",
+			"description":"specify the encoding of the file",
+			"value": "UTF-8",
+			"items": [{
+				"id": "c1",
+				"value": "UTF-8",
+				"title": "UTF-8"
+			},{
+				"id": "c2",
+				"value": "ISO-8859-15",
+				"title": "ISO-8859-15"
+			}]
+		},{
+			"id": "uriparam_noop",
+			"title":"Noop",
+			"title_de":"Noop",
+			"description":"If true, the file is not moved or deleted in any way",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		},{
+			"id": "uriparam_flatten",
+			"title":"Flatten",
+			"description":"Flatten is used to flatten the file name path to strip any leading paths, so it's just the file name",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		},{
+			"id": "uriparam_autoCreate",
+			"title":"Autocreate",
+			"description":"Automatically create missing directories in the file's pathname",
+			"type":"boolean",
+			"value": true,
 			"visible": true
 		}],
     "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
@@ -392,7 +528,7 @@
     "icon" : "ftpendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor",  "endpoint" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
 		"properties": [{
 			"id": "endpoint_type1",
 			"type":"String",
@@ -470,7 +606,7 @@
     "icon" : "directendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "endpoint" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
 		"properties": [{
 			"id": "endpoint_type2",
 			"type":"String",
@@ -495,7 +631,7 @@
     "icon" : "mailendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "endpoint" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
 		"properties": [{
 			"id": "endpoint_type2",
 			"type":"String",
@@ -513,7 +649,7 @@
     "icon" : "jmsendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "endpoint" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
 		"properties": [{
 			"id": "endpoint_type3",
 			"type":"String",
@@ -531,7 +667,7 @@
     "icon" : "sedaendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "endpoint" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
 		"properties": [{
 			"id": "endpoint_type4",
 			"type":"String",
@@ -550,7 +686,7 @@
     "icon" : "http4endpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "endpoint" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
 		"properties": [{
 			"id": "endpoint_type5",
 			"type":"String",
@@ -592,7 +728,7 @@
     "icon" : "logendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "endpoint" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
 		"properties": [{
 			"id": "endpoint_type6",
 			"type":"String",
