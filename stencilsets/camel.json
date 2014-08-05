@@ -249,7 +249,99 @@
 			"optional": true,
 			"complexItems": [{
 				"id": "name",
-				"name": "Parametername",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			},{
+				"id": "language",
+				"name": "Language",
+				"name_de": "Sprache",
+				"readonly": false,
+				"type": "Choice",
+				"value": "simple",
+				"items": [{
+					"id": "simple",
+					"title": "Simple",
+					"value": "simple"
+				},{
+					"id": "groovy",
+					"title": "Groovy",
+					"value": "groovy"
+				},{
+					"id": "constant",
+					"title": "Constant",
+					"value": "constant"
+				},{
+					"id": "header",
+					"title": "Header",
+					"value": "header"
+				},{
+					"id": "property",
+					"title": "Property",
+					"value": "property"
+				},{
+					"id": "javascript",
+					"title": "Javascrip",
+					"value": "javascript"
+				},{
+					"id": "el",
+					"title": "El",
+					"value": "el"
+				},{
+					"id": "sql",
+					"title": "SQL",
+					"value": "sql"
+				},{
+					"id": "xpath",
+					"title": "XPath",
+					"value": "xpath"
+				},{
+					"id": "mvel",
+					"title": "Mvel",
+					"value": "mvel"
+				},{
+					"id": "ognl",
+					"title": "Ognl",
+					"value": "ognl"
+				},{
+					"id": "bean",
+					"title": "Bean",
+					"value": "bean"
+				}],
+				"width": 80,
+				"optional": true
+			}]
+		}],
+		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+	},
+	{
+		"type": "node",
+		"id": "SetProperty",
+		"title": "SetProperty",
+		"groups": ["Router"],
+    "view" : "setproperty.svg",
+		"icon": "setproperty.png",
+		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor"],
+		"properties": [{
+			"id": "properties",
+			"type": "Complex",
+			"title": "Properties",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
 				"type": "String",
 				"value": "",
 				"width": 150,

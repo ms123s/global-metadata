@@ -21,7 +21,7 @@
 		<polygon id="nonInitiating2" fill="url(#background) #969696" stroke="#000000" stroke-width="1" stroke-linejoin="round" points="1.5,1.188 
 			27.219,12.562 52.938,1.094 "/>
 			
-		<text font-size="9"  x="1" y="22" fill="blue" font-weight="normal" >SetHeader</text>
+		<text font-size="9"  x="1" y="22" fill="green" font-weight="normal" >SetProperty</text>
 		<text font-size="12" id="text_name" x="14" y="32" oryx:align="top center" stroke="black" />	
 	</g>
 </svg>
