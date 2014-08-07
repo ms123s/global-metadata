@@ -136,6 +136,74 @@
 			"stroke": false
 		}]
 	},{
+		"name": "fileProperties",
+		"properties": [{
+			"id": "type_file",
+			"type":"String",
+			"value": "File",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "file:${path}",
+			"visible": false
+		},{
+			"id": "urivalue_path",
+			"title":"Path",
+			"title_de":"Pfad",
+			"type":"String",
+			"value": "",
+			"visible": true
+		}]
+	},{
+		"name": "commonFileProperties",
+		"properties": [{
+			"id": "uriparam_fileName",
+			"title":"Filename",
+			"title_de":"Dateiname",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_charset",
+			"type": "Combo",
+			"title": "Encoding",
+			"description":"specify the encoding of the file",
+			"value": "UTF-8",
+			"items": [{
+				"id": "c1",
+				"value": "UTF-8",
+				"title": "UTF-8"
+			},{
+				"id": "c2",
+				"value": "ISO-8859-15",
+				"title": "ISO-8859-15"
+			}]
+		},{
+			"id": "uriparam_noop",
+			"title":"Noop",
+			"title_de":"Noop",
+			"description":"If true, the file is not moved or deleted in any way",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		},{
+			"id": "uriparam_flatten",
+			"title":"Flatten",
+			"description":"Flatten is used to flatten the file name path to strip any leading paths, so it's just the file name",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		},{
+			"id": "uriparam_autoCreate",
+			"title":"Autocreate",
+			"description":"Automatically create missing directories in the file's pathname",
+			"type":"boolean",
+			"value": true,
+			"visible": true
+		}]
+	},{
 		"name": "directProperties",
 		"properties": [{
 			"id": "type_direct",
@@ -154,7 +222,7 @@
 			"type":"String",
 			"value": "direct1",
 			"visible": true
-		}],
+		}]
 	},{
 		"name": "sedaProperties",
 		"properties": [{
@@ -174,7 +242,7 @@
 			"type":"String",
 			"value": "seda1",
 			"visible": true
-		}],
+		}]
 	},{
 		"name": "vmProperties",
 		"properties": [{
@@ -194,7 +262,7 @@
 			"type":"String",
 			"value": "vm1",
 			"visible": true
-		}],
+		}]
 	},{
 		"name": "sedaVmProperties",
 		"properties": [{
@@ -251,7 +319,7 @@
 			"type":"boolean",
 			"value": false,
 			"visible": true
-		}],
+		}]
 	},{ 
 		"name": "ftpProperties",
 		"properties": [{
@@ -334,7 +402,7 @@
 			"type":"Integer",
 			"value": 1000,
 			"visible": true
-		}],
+		}]
 	},{ 
 		"name": "mailProperties",
 		"properties": [{
@@ -443,7 +511,7 @@
 			"type":"String",
 			"value": "text/plain",
 			"visible": true
-		}],
+		}]
 	},{ 
 		"name": "borderColor",
 		"properties": [{
@@ -758,70 +826,7 @@
     "icon" : "fileendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
-		"properties": [{
-			"id": "type_file",
-			"type":"String",
-			"value": "File",
-			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
-			"id": "uri_template",
-			"type":"String",
-			"value": "file:${path}",
-			"visible": false
-		},{
-			"id": "urivalue_path",
-			"title":"Path",
-			"title_de":"Pfad",
-			"type":"String",
-			"value": "",
-			"visible": true
-		},{
-			"id": "uriparam_fileName",
-			"title":"Filename",
-			"title_de":"Dateiname",
-			"type":"String",
-			"value": "",
-			"visible": true
-		},{
-			"id": "uriparam_charset",
-			"type": "Combo",
-			"title": "Encoding",
-			"description":"specify the encoding of the file",
-			"value": "UTF-8",
-			"items": [{
-				"id": "c1",
-				"value": "UTF-8",
-				"title": "UTF-8"
-			},{
-				"id": "c2",
-				"value": "ISO-8859-15",
-				"title": "ISO-8859-15"
-			}]
-		},{
-			"id": "uriparam_noop",
-			"title":"Noop",
-			"title_de":"Noop",
-			"description":"If true, the file is not moved or deleted in any way",
-			"type":"boolean",
-			"value": false,
-			"visible": true
-		},{
-			"id": "uriparam_flatten",
-			"title":"Flatten",
-			"description":"Flatten is used to flatten the file name path to strip any leading paths, so it's just the file name",
-			"type":"boolean",
-			"value": false,
-			"visible": true
-		},{
-			"id": "uriparam_autoCreate",
-			"title":"Autocreate",
-			"description":"Automatically create missing directories in the file's pathname",
-			"type":"boolean",
-			"value": true,
-			"visible": true
-		}],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "fileProperties", "commonFileProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -937,55 +942,7 @@
 			"visible": true
 		}],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	},
-	{
-    "type" : "node",
-    "id" : "LogEndpoint",
-    "title" : "Log Endpoint",
-    "title_de" : "Log Endpunkt",
-    "view" : "endpoint.svg",
-    "icon" : "logendpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
-		"properties": [{
-			"id": "endpoint_type6",
-			"type":"String",
-			"value": "log",
-			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
-			"id": "param_message",
-			"title":"Message",
-			"type":"Text",
-			"value": "",
-			"visible": true
-    }, {
-      "id" : "param_level",
-      "type" : "Choice",
-      "title" : "Level",
-      "value" : "INFO",
-      "items" : [ {
-        "id" : "info",
-        "title" : "Info",
-        "value" : "INFO"
-      }, {
-        "id" : "debug",
-        "title" : "Debug",
-        "value" : "DEBUG"
-      }, {
-        "id" : "warn",
-        "title" : "Warn",
-        "value" : "WARN"
-      }, {
-        "id" : "error",
-        "title" : "Error",
-        "value" : "ERROR"
-      }]
-		}],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}
-	],
+	}],
   "rules" : {
     "cardinalityRules" : [ {
       "role" : "OneInOutRole",
