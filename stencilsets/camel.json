@@ -1,6 +1,8 @@
 {
 	"title": "BPMN 2.0",
 	"namespace": "http://b3mn.org/stencilset/camel#",
+	"idIsCaseSensitiv":true,
+	"prefix":"sw",
 	"propertyPackages": [{
 		"name": "baseAttributes",
 		"properties": [{
@@ -23,9 +25,43 @@
 			"popular": true
 		}]
 	},{
+		"name": "routeBaseAttributes",
+		"properties": [{
+      "id" : "overrideid",
+      "type" : "String",
+      "title" : "Id",
+      "value" : "",
+			"include":true,
+      "popular" : true
+		},{
+			"id": "documentation",
+			"type": "Text",
+			"title": "Documentation",
+			"title_de": "Dokumentation",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"length": "",
+			"wrapLines": true,
+			"popular": true
+		},{
+			"id": "autostart",
+			"title":"Autostart",
+			"type":"boolean",
+			"value": true,
+			"visible": true
+		},{
+			"id": "enabled",
+			"title":"Enabled",
+			"title_de":"Aktiviert",
+			"type":"boolean",
+			"value": true,
+			"visible": true
+		}]
+	},{
 		"name": "endpoint",
 		"properties": [{
-			"id": "Name",
+			"id": "name",
 			"type": "String",
 			"title": "Name",
 			"title_de": "Name",
@@ -67,55 +103,7 @@
 			"type": "Choice",
 			"value": "simple",
 			"visible": "defaultflow=='none'",
-			"items": [ {
-				"id": "simple",
-				"title": "Simple",
-				"value": "simple"
-			}, {
-				"id": "groovy",
-				"title": "Groovy",
-				"value": "groovy"
-			}, {
-				"id": "constant",
-				"title": "Constant",
-				"value": "constant"
-			}, {
-				"id": "header",
-				"title": "Header",
-				"value": "header"
-			}, {
-				"id": "property",
-				"title": "Property",
-				"value": "property"
-			}, {
-				"id": "javascript",
-				"title": "Javascrip",
-				"value": "javascript"
-			}, {
-				"id": "el",
-				"title": "El",
-				"value": "el"
-			}, {
-				"id": "sql",
-				"title": "SQL",
-				"value": "sql"
-			}, {
-				"id": "xpath",
-				"title": "XPath",
-				"value": "xpath"
-			}, {
-				"id": "mvel",
-				"title": "Mvel",
-				"value": "mvel"
-			}, {
-				"id": "ognl",
-				"title": "Ognl",
-				"value": "ognl"
-			}, {
-				"id": "bean",
-				"title": "Bean",
-				"value": "bean"
-			} ],
+			"items": "###language_items",
 			"width": 80,
 			"optional": true
 		}]
@@ -217,10 +205,10 @@
 		"icon": "diagram.png",
 		"mayBeRoot": true,
 		"hide": true,
-		"propertyPackages": ["baseAttributes", "diagram"],
+		"propertyPackages": ["routeBaseAttributes", "diagram"],
 		"roles": [],
 		"properties": [ {
-			"id": "camelContext",
+			"id": "camelcontext",
 			"type": "String",
 			"title": "Camelcontext",
 			"title_de": "Camelcontext",
@@ -236,7 +224,7 @@
 		"type": "node",
 		"id": "SetHeader",
 		"title": "SetHeader",
-		"groups": ["Router"],
+		"groups": ["Transformation"],
     "view" : "setheader.svg",
 		"icon": "setheader.png",
 		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor"],
@@ -269,55 +257,7 @@
 				"readonly": false,
 				"type": "Choice",
 				"value": "simple",
-				"items": [{
-					"id": "simple",
-					"title": "Simple",
-					"value": "simple"
-				},{
-					"id": "groovy",
-					"title": "Groovy",
-					"value": "groovy"
-				},{
-					"id": "constant",
-					"title": "Constant",
-					"value": "constant"
-				},{
-					"id": "header",
-					"title": "Header",
-					"value": "header"
-				},{
-					"id": "property",
-					"title": "Property",
-					"value": "property"
-				},{
-					"id": "javascript",
-					"title": "Javascrip",
-					"value": "javascript"
-				},{
-					"id": "el",
-					"title": "El",
-					"value": "el"
-				},{
-					"id": "sql",
-					"title": "SQL",
-					"value": "sql"
-				},{
-					"id": "xpath",
-					"title": "XPath",
-					"value": "xpath"
-				},{
-					"id": "mvel",
-					"title": "Mvel",
-					"value": "mvel"
-				},{
-					"id": "ognl",
-					"title": "Ognl",
-					"value": "ognl"
-				},{
-					"id": "bean",
-					"title": "Bean",
-					"value": "bean"
-				}],
+				"items": "###language_items",
 				"width": 80,
 				"optional": true
 			}]
@@ -328,7 +268,7 @@
 		"type": "node",
 		"id": "SetProperty",
 		"title": "SetProperty",
-		"groups": ["Router"],
+		"groups": ["Transformation"],
     "view" : "setproperty.svg",
 		"icon": "setproperty.png",
 		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor"],
@@ -361,55 +301,7 @@
 				"readonly": false,
 				"type": "Choice",
 				"value": "simple",
-				"items": [{
-					"id": "simple",
-					"title": "Simple",
-					"value": "simple"
-				},{
-					"id": "groovy",
-					"title": "Groovy",
-					"value": "groovy"
-				},{
-					"id": "constant",
-					"title": "Constant",
-					"value": "constant"
-				},{
-					"id": "header",
-					"title": "Header",
-					"value": "header"
-				},{
-					"id": "property",
-					"title": "Property",
-					"value": "property"
-				},{
-					"id": "javascript",
-					"title": "Javascrip",
-					"value": "javascript"
-				},{
-					"id": "el",
-					"title": "El",
-					"value": "el"
-				},{
-					"id": "sql",
-					"title": "SQL",
-					"value": "sql"
-				},{
-					"id": "xpath",
-					"title": "XPath",
-					"value": "xpath"
-				},{
-					"id": "mvel",
-					"title": "Mvel",
-					"value": "mvel"
-				},{
-					"id": "ognl",
-					"title": "Ognl",
-					"value": "ognl"
-				},{
-					"id": "bean",
-					"title": "Bean",
-					"value": "bean"
-				}],
+				"items": "###language_items",
 				"width": 80,
 				"optional": true
 			}]
@@ -419,8 +311,8 @@
 	{
 		"type": "node",
 		"id": "MessageFilter",
-		"title": "Messagefilter",
-		"groups": ["Router"],
+		"title": "Filter",
+		"groups": ["Routing"],
     "view" : "messagefilter.svg",
 		"icon": "messagefilter.png",
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
@@ -431,8 +323,8 @@
 	{
 		"type": "node",
 		"id": "MessageRouter",
-		"title": "Messagerouter(Choice)",
-		"groups": ["Router"],
+		"title": "Choice",
+		"groups": ["Routing"],
     "view" : "messagerouter.svg",
 		"icon": "messagerouter.png",
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
@@ -445,7 +337,7 @@
 		"id": "Aggregate",
 		"title": "Aggregate",
 		"title_de": "Aggregat",
-		"groups": ["Router"],
+		"groups": ["Routing"],
     "view" : "aggregat.svg",
 		"icon": "aggregat.png",
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
@@ -457,12 +349,24 @@
 		"type": "node",
 		"id": "ConvertBodyTo",
 		"title": "ConvertBodyTo",
-		"groups": ["Router"],
+		"groups": ["Transformation"],
     "view" : "convertBodyTo.svg",
 		"icon": "convertBodyTo.png",
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
-		"properties": [
-		],
+		"properties": [{
+			"id": "type",
+			"title":"Type",
+			"value": "java.lang.String" ,
+			"type":"String",
+			"visible": true
+		},{
+			"id": "charset",
+			"title":"Charset",
+			"title_de":"Zeichensatz",
+			"value": "utf-8" ,
+			"type":"String",
+			"visible": true
+		}],
 		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
 	},
 	{
@@ -555,7 +459,7 @@
 		},{
 			"id": "uri_template",
 			"type":"String",
-			"value": "file:/${path}",
+			"value": "file:${path}",
 			"visible": false
 		},{
 			"id": "urivalue_path",
@@ -565,7 +469,7 @@
 			"value": "",
 			"visible": true
 		},{
-			"id": "uriparam_filename",
+			"id": "uriparam_fileName",
 			"title":"Filename",
 			"title_de":"Dateiname",
 			"type":"String",
@@ -935,5 +839,60 @@
       "role" : "GatewaysMorph",
       "baseMorphs" : [ "ExclusiveGateway" ]
     }]
+  },
+  "definitions":{
+		"language_items": [ {
+			"id": "simple",
+			"title": "Simple",
+			"value": "simple"
+		},{
+			"id": "groovy",
+			"title": "Groovy",
+			"value": "groovy"
+		},{
+			"id": "constant",
+			"title": "Constant",
+			"value": "constant"
+		},{
+			"id": "header",
+			"title": "Header",
+			"value": "header"
+		},{
+			"id": "property",
+			"title": "Property",
+			"value": "property"
+		},{
+			"id": "javascript",
+			"title": "Javascrip",
+			"value": "javascript"
+		},{
+			"id": "el",
+			"title": "El",
+			"value": "el"
+		},{
+			"id": "sql",
+			"title": "SQL",
+			"value": "sql"
+		},{
+			"id": "xpath",
+			"title": "XPath",
+			"value": "xpath"
+		},{
+			"id": "mvel",
+			"title": "Mvel",
+			"value": "mvel"
+		},{
+			"id": "ognl",
+			"title": "Ognl",
+			"value": "ognl"
+		},{
+			"id": "bean",
+			"title": "Bean",
+			"value": "bean"
+		},{
+			"id": "tokenize",
+			"title": "Tokenize",
+			"value": "tokenize"
+		} ]
   }
 }
