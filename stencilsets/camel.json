@@ -136,6 +136,206 @@
 			"stroke": false
 		}]
 	},{
+		"name": "directProperties",
+		"properties": [{
+			"id": "type_direct",
+			"type":"String",
+			"value": "Direct",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "direct:${name}",
+			"visible": false
+		},{
+			"id": "urivalue_name",
+			"title":"Name",
+			"type":"String",
+			"value": "direct1",
+			"visible": true
+		}],
+	},{
+		"name": "sedaProperties",
+		"properties": [{
+			"id": "type_seda",
+			"type":"String",
+			"value": "Seda",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "seda:${name}",
+			"visible": false
+		},{
+			"id": "urivalue_name",
+			"title":"Name",
+			"type":"String",
+			"value": "seda1",
+			"visible": true
+		}],
+	},{
+		"name": "vmProperties",
+		"properties": [{
+			"id": "type_vm",
+			"type":"String",
+			"value": "VM",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "vm:${name}",
+			"visible": false
+		},{
+			"id": "urivalue_name",
+			"title":"Name",
+			"type":"String",
+			"value": "vm1",
+			"visible": true
+		}],
+	},{
+		"name": "sedaVmProperties",
+		"properties": [{
+			"id": "urivalue_concurrentConsumers",
+			"title":"ConcurrentConsumers",
+			"description":"Number of concurrent threads processing exchanges.",
+			"type":"Integer",
+			"value": "1",
+			"visible": true
+		},{
+			"id": "urivalue_timeout",
+			"title":"Timeout",
+			"description":"Timeout (in milliseconds) before a SEDA producer will stop waiting for an asynchronous task to complete.",
+			"type":"Integer",
+			"value": "30000",
+			"visible": true
+		},{
+			"id": "urivalue_pollTimeout",
+			"title":"PollTimeout",
+			"description":"Consumer only – The timeout used when polling.",
+			"type":"Integer",
+			"value": "1000",
+			"visible": true
+		},{
+			"id": "uriparam_waitForTaskToComplete",
+			"type": "Combo",
+			"title": "WaitForTaskToComplete",
+			"description":"Option to specify whether the caller should wait for the async task to complete or not before continuing.",
+			"value": "IfReplyExpected",
+			"items": [{
+				"id": "c1",
+				"value": "IfReplyExpected",
+				"title": "IfReplyExpected"
+			},{
+				"id": "c2",
+				"value": "Always",
+				"title": "Always"
+			},{
+				"id": "c3",
+				"value": "Never",
+				"title": "Never"
+			}]
+		},{
+			"id": "uriparam_multipleConsumers",
+			"title":"MultipleConsumers",
+			"description":"Specifies whether multiple consumers are allowed.<br/>If enabled, you can use SEDA for Publish-Subscribe messaging.<br/>That is, you can send a message to the SEDA queue and have each<br/> consumer receive a copy of the message.",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		},{
+			"id": "uriparam_blockWhenFull",
+			"title":"BlockWhenFull",
+			"description":"Whether a thread that sends messages to a full SEDA queue will<br/>block until the queue's capacity is no longer exhausted.<br/>By default, an exception will be thrown stating that the queue is full.",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		}],
+	},{ 
+		"name": "ftpProperties",
+		"properties": [{
+			"id": "endpoint_ftp",
+			"type":"String",
+			"value": "FTP",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "${protocol}://${host}:${port}/${directory}",
+			"visible": false
+    },{
+      "id" : "urivalue_protocol",
+      "type" : "Choice",
+      "title" : "Protocol",
+      "title_de" : "Protokoll",
+      "value" : "sftp",
+      "items" : [ {
+        "id" : "c1",
+        "title" : "SFTP",
+        "value" : "sftp"
+      }, {
+        "id" : "c2",
+        "title" : "FTPS",
+        "value" : "ftps"
+      }, {
+        "id" : "c3",
+        "title" : "FTP",
+        "value" : "ftp"
+      }]
+		},{
+			"id": "urivalue_host",
+			"title":"Host",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "urivalue_port",
+			"title":"Port",
+			"type":"Integer",
+			"value": "21",
+			"visible": true
+		},{
+			"id": "urivalue_directory",
+			"title":"Directory",
+			"title_de":"Verzeichnis",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_username",
+			"title":"Username",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_password",
+			"title":"Password",
+			"title_de":"Passwort",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_passiveMode",
+			"title":"Passive",
+			"type":"Boolean",
+			"value": false,
+			"visible": true
+		},{
+			"id": "uriparam_binary",
+			"title":"Binary",
+			"type":"Boolean",
+			"value": true,
+			"visible": true
+		},{
+			"id": "uriparam_consumer.delay",
+			"title":"Poll(milliSec)",
+			"type":"Integer",
+			"value": 1000,
+			"visible": true
+		}],
+	},{ 
 		"name": "borderColor",
 		"properties": [{
 			"id": "bordercolor",
@@ -514,86 +714,7 @@
 			"visible": true
 		}],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, 
-	{
-    "type" : "node",
-    "id" : "FtpEndpoint",
-    "title" : "FTP Endpoint",
-    "title_de" : "FTP Endpunkt",
-    "view" : "endpoint.svg",
-    "icon" : "ftpendpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
-		"properties": [{
-			"id": "endpoint_type1",
-			"type":"String",
-			"value": "FTP",
-			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
-			"id": "uri_template",
-			"type":"String",
-			"value": "ftp://${host}:${port}/${directory}",
-			"visible": false
-		},{
-			"id": "urivalue_host",
-			"title":"Host",
-			"type":"String",
-			"value": "",
-			"visible": true
-		},{
-			"id": "urivalue_port",
-			"title":"Port",
-			"type":"Integer",
-			"value": "21",
-			"visible": true
-		},{
-			"id": "uriparam_username",
-			"title":"Username",
-			"type":"String",
-			"value": "",
-			"visible": true
-		},{
-			"id": "uriparam_password",
-			"title":"Password",
-			"title_de":"Passwort",
-			"type":"String",
-			"value": "",
-			"visible": true
-		},{
-			"id": "urivalue_directory",
-			"title":"Directory",
-			"title_de":"Verzeichnis",
-			"type":"String",
-			"value": "",
-			"visible": true
-		},
-		{
-			"id": "uriparam_passive_mode",
-			"title":"Passive",
-			"type":"Boolean",
-			"value": false,
-			"visible": true
-		},
-		{
-			"id": "uriparam_binary",
-			"title":"Binary",
-			"type":"Boolean",
-			"value": true,
-			"visible": true
-		},
-		{
-			"id": "uriparam_consumer.delay",
-			"title":"Poll(milliSec)",
-			"type":"Integer",
-			"value": 1000,
-			"visible": true
-		} 
-		],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, 
-	{
+	}, {
     "type" : "node",
     "id" : "DirectEndpoint",
     "title" : "Direct Endpoint",
@@ -602,21 +723,40 @@
     "icon" : "directendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
-		"properties": [{
-			"id": "endpoint_type2",
-			"type":"String",
-			"value": "Direct",
-			"visible": false,
-			"refToView": ["endpoint_type"]
-		},
-		{
-			"id": "uri_template",
-			"type":"String",
-			"value": "direct:direct1",
-			"visible": false
-		},
-		],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "directProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "SedaEndpoint",
+    "title" : "Seda Endpoint",
+    "title_de" : "Seda Endpunkt",
+    "view" : "endpoint.svg",
+    "icon" : "sedaendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "sedaProperties", "sedaVmProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "VMEndpoint",
+    "title" : "VM Endpoint",
+    "title_de" : "VM Endpunkt",
+    "view" : "endpoint.svg",
+    "icon" : "vmendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "vmProperties", "sedaVmProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "FtpEndpoint",
+    "title" : "FTP Endpoint",
+    "title_de" : "FTP Endpunkt",
+    "view" : "endpoint.svg",
+    "icon" : "ftpendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "ftpProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -655,25 +795,6 @@
 		}],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "SedaEndpoint",
-    "title" : "Seda Endpoint",
-    "title_de" : "Seda Endpunkt",
-    "view" : "endpoint.svg",
-    "icon" : "sedaendpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
-		"properties": [{
-			"id": "endpoint_type4",
-			"type":"String",
-			"value": "Seda",
-			"visible": false,
-			"refToView": ["endpoint_type"]
-		}],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, 
-	{
     "type" : "node",
     "id" : "Http4Endpoint",
     "title" : "Http4 Endpoint",
