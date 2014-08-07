@@ -262,7 +262,7 @@
 				"optional": true
 			}]
 		}],
-		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
 		"type": "node",
@@ -306,7 +306,31 @@
 				"optional": true
 			}]
 		}],
-		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+	},
+	{
+		"type": "node",
+		"id": "ConvertBodyTo",
+		"title": "ConvertBodyTo",
+		"groups": ["Transformation"],
+    "view" : "convertBodyTo.svg",
+		"icon": "convertBodyTo.png",
+		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
+		"properties": [{
+			"id": "type",
+			"title":"Type",
+			"value": "java.lang.String" ,
+			"type":"String",
+			"visible": true
+		},{
+			"id": "charset",
+			"title":"Charset",
+			"title_de":"Zeichensatz",
+			"value": "utf-8" ,
+			"type":"String",
+			"visible": true
+		}],
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
 	},
 	{
 		"type": "node",
@@ -343,30 +367,6 @@
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
-		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
-	},
-	{
-		"type": "node",
-		"id": "ConvertBodyTo",
-		"title": "ConvertBodyTo",
-		"groups": ["Transformation"],
-    "view" : "convertBodyTo.svg",
-		"icon": "convertBodyTo.png",
-		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
-		"properties": [{
-			"id": "type",
-			"title":"Type",
-			"value": "java.lang.String" ,
-			"type":"String",
-			"visible": true
-		},{
-			"id": "charset",
-			"title":"Charset",
-			"title_de":"Zeichensatz",
-			"value": "utf-8" ,
-			"type":"String",
-			"visible": true
-		}],
 		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
 	},
 	{
@@ -438,7 +438,7 @@
 			"type":"String",
 			"visible": true
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, 
 	{
     "type" : "node",
@@ -513,7 +513,7 @@
 			"value": true,
 			"visible": true
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, 
 	{
     "type" : "node",
@@ -591,7 +591,7 @@
 			"visible": true
 		} 
 		],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, 
 	{
     "type" : "node",
@@ -617,7 +617,7 @@
 			"visible": false
 		},
 		],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
     "id" : "MailEndpoint",
@@ -635,7 +635,7 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
     "id" : "JMSEndpoint",
@@ -653,7 +653,7 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
     "id" : "SedaEndpoint",
@@ -671,7 +671,7 @@
 			"visible": false,
 			"refToView": ["endpoint_type"]
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, 
 	{
     "type" : "node",
@@ -713,7 +713,7 @@
 			"value": "",
 			"visible": true
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	},
 	{
     "type" : "node",
@@ -760,22 +760,12 @@
         "value" : "ERROR"
       }]
 		}],
-    "roles" : [ "simpleConnectionStart", "Endpoint", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}
 	],
   "rules" : {
     "cardinalityRules" : [ {
-      "role" : "Endpoint",
-      "incomingEdges" : [ {
-        "role" : "Connection",
-        "maximum" : 1
-      } ],
-      "outgoingEdges" : [ {
-        "role" : "Connection",
-        "maximum" : 1
-      } ]
-    }, {
-      "role" : "SetHeader",
+      "role" : "OneInOutRole",
       "incomingEdges" : [ {
         "role" : "Connection",
         "maximum" : 1
@@ -787,16 +777,6 @@
     }, {
       "role" : "MessageRouter",
       "incomingEdges" : [ {
-        "role" : "Connection",
-        "maximum" : 1
-      } ]
-    }, {
-      "role" : "ConvertBodyTo",
-      "incomingEdges" : [ {
-        "role" : "Connection",
-        "maximum" : 1
-      } ],
-      "outgoingEdges" : [ {
         "role" : "Connection",
         "maximum" : 1
       } ]
