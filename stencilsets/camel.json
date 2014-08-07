@@ -255,7 +255,7 @@
 	},{ 
 		"name": "ftpProperties",
 		"properties": [{
-			"id": "endpoint_ftp",
+			"id": "type_ftp",
 			"type":"String",
 			"value": "FTP",
 			"visible": false,
@@ -333,6 +333,115 @@
 			"title":"Poll(milliSec)",
 			"type":"Integer",
 			"value": 1000,
+			"visible": true
+		}],
+	},{ 
+		"name": "mailProperties",
+		"properties": [{
+			"id": "type_mail",
+			"type":"String",
+			"value": "Mail",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "${protocol}://${host}:${port}",
+			"visible": false
+    },{
+      "id" : "urivalue_protocol",
+      "type" : "Choice",
+      "title" : "Protocol",
+      "title_de" : "Protokoll",
+      "value" : "smtp",
+      "items" : [{
+        "id" : "c1",
+        "title" : "SMTP",
+        "value" : "smtp"
+      }, {
+        "id" : "c2",
+        "title" : "IMAP",
+        "value" : "imap"
+      }, {
+        "id" : "c3",
+        "title" : "POP3",
+        "value" : "pop3"
+      }, {
+        "id" : "c4",
+        "title" : "SMTPS",
+        "value" : "smtps"
+      }, {
+        "id" : "c5",
+        "title" : "IMAPS",
+        "value" : "imaps"
+      }, {
+        "id" : "c6",
+        "title" : "POP3S",
+        "value" : "pop3s"
+      }]
+		},{
+			"id": "urivalue_host",
+			"title":"Host",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "urivalue_port",
+			"title":"Port",
+			"type":"Integer",
+			"value": "21",
+			"visible": true
+		},{
+			"id": "uriparam_username",
+			"title":"Username",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_password",
+			"title":"Password",
+			"title_de":"Passwort",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_subject",
+			"title":"Subject",
+			"title_de":"Betreff",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_from",
+			"title":"From",
+			"title_de":"Von",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_to",
+			"title":"To",
+			"title_de":"An",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_cc",
+			"title":"CC",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_bcc",
+			"title":"BCC",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_contenType",
+			"title":"ContentType",
+			"type":"String",
+			"value": "text/plain",
 			"visible": true
 		}],
 	},{ 
@@ -767,14 +876,7 @@
     "icon" : "mailendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
-		"properties": [{
-			"id": "endpoint_type2",
-			"type":"String",
-			"value": "Mail",
-			"visible": false,
-			"refToView": ["endpoint_type"]
-		}],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "mailProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
