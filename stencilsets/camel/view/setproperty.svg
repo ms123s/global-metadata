@@ -17,11 +17,12 @@
 				<stop id="fill_el" offset="100%" stop-color="#969696" stop-opacity="1"/>
 			</radialGradient>
 		</defs>
-		<rect id="bg_frame" x="1" y="1" fill="url(#background) #969696" stroke="#000000" stroke-width="1" width="53.375" height="26.5"/>
+		<rect id="bg_frame" rx="2" ry="2" x="1" y="1" fill="url(#background) #969696" stroke="#000000" stroke-width="1" width="53.375" height="26.5"/>
 		<polygon id="nonInitiating2" fill="url(#background) #969696" stroke="#000000" stroke-width="1" stroke-linejoin="round" points="1.5,1.188 
 			27.219,12.562 52.938,1.094 "/>
 			
-		<text font-size="9"  x="1" y="22" fill="green" font-weight="normal" >SetProperty</text>
+		<text font-size="9"  x="2" y="15" fill="green" font-weight="normal" >Set</text>
+		<text font-size="9"  x="2" y="23" fill="green" font-weight="normal" >Property</text>
 		<text font-size="12" id="text_name" x="14" y="32" oryx:align="top center" stroke="black" />	
 	</g>
 </svg>

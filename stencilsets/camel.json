@@ -108,6 +108,34 @@
 			"optional": true
 		}]
 	}, {
+		"name": "delayProperties",
+		"properties": [ {
+			"id": "expression",
+			"title":"Expression",
+			"title_de":"Ausdruck",
+			"description":"Expression defining the length of the delay",
+			"type":"Text",
+			"value": "",
+      "popular" : false
+		},{
+			"id": "language",
+			"title": "Language",
+			"title_de": "Sprache",
+			"readonly": false,
+			"type": "Choice",
+			"value": "simple",
+			"items": "###language_items",
+			"width": 80,
+			"optional": true
+		},{
+			"id": "async",
+			"title":"Async delayed",
+			"description":"If enabled then delayed messages happens asynchronously using a scheduled thread pool.",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		}]
+	}, {
 		"name": "bgColorSetHeader",
 		"properties": [{
 			"id": "bgcolor",
@@ -698,6 +726,16 @@
 			"popular": false,
 			"optional": true
 		}]
+	},
+	{
+		"type": "node",
+		"id": "Delay",
+		"title": "Delay",
+		"groups": ["Transformation"],
+    "view" : "delay.svg",
+		"icon": "delay.png",
+		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "delayProperties"],
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
 		"type": "node",
