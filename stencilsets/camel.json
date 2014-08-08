@@ -457,6 +457,7 @@
 			"title":"Host",
 			"type":"String",
 			"value": "",
+			"optional": false,
 			"visible": true
 		},{
 			"id": "urivalue_port",
@@ -552,12 +553,13 @@
 			"title":"Host",
 			"type":"String",
 			"value": "",
+			"optional": false,
 			"visible": true
 		},{
 			"id": "urivalue_port",
 			"title":"Port",
 			"type":"Integer",
-			"value": "21",
+			"value": "",
 			"visible": true
 		},{
 			"id": "uriparam_username",
@@ -606,7 +608,7 @@
 			"value": "",
 			"visible": true
 		},{
-			"id": "uriparam_contenType",
+			"id": "uriparam_contentType",
 			"title":"ContentType",
 			"type":"String",
 			"value": "text/plain",
