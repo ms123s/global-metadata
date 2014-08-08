@@ -135,6 +135,106 @@
 			"fill": true,
 			"stroke": false
 		}]
+	}, {
+		"name": "extraParamsProperties",
+		"properties": [{
+			"id": "extraParams",
+			"type": "Complex",
+			"title": "Extra Parameter",
+			"description": "Extra Parameter",
+			"description_de": "Zusätzliche Parameter",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 250,
+				"optional": false
+			}]
+		}]
+	}, {
+		"name": "headersProperties",
+		"properties": [{
+			"id": "headers",
+			"type": "Complex",
+			"title": "Headers",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			},{
+				"id": "language",
+				"name": "Language",
+				"name_de": "Sprache",
+				"readonly": false,
+				"type": "Choice",
+				"value": "simple",
+				"items": "###language_items",
+				"width": 80,
+				"optional": true
+			}]
+		}]
+	}, {
+		"name": "propertiesProperties",
+		"properties": [{
+			"id": "properties",
+			"type": "Complex",
+			"title": "Properties",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			},{
+				"id": "language",
+				"name": "Language",
+				"name_de": "Sprache",
+				"readonly": false,
+				"type": "Choice",
+				"value": "simple",
+				"items": "###language_items",
+				"width": 80,
+				"optional": true
+			}]
+		}]
 	},{
 		"name": "fileProperties",
 		"properties": [{
@@ -604,41 +704,7 @@
 		"groups": ["Transformation"],
     "view" : "setheader.svg",
 		"icon": "setheader.png",
-		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor"],
-		"properties": [{
-			"id": "headers",
-			"type": "Complex",
-			"title": "Headers",
-			"value": "",
-			"readonly": false,
-			"optional": true,
-			"complexItems": [{
-				"id": "name",
-				"name": "Name",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			}, {
-				"id": "value",
-				"name_de": "Wert",
-				"name": "Value",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			},{
-				"id": "language",
-				"name": "Language",
-				"name_de": "Sprache",
-				"readonly": false,
-				"type": "Choice",
-				"value": "simple",
-				"items": "###language_items",
-				"width": 80,
-				"optional": true
-			}]
-		}],
+		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "headersProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
@@ -648,41 +714,7 @@
 		"groups": ["Transformation"],
     "view" : "setproperty.svg",
 		"icon": "setproperty.png",
-		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor"],
-		"properties": [{
-			"id": "properties",
-			"type": "Complex",
-			"title": "Properties",
-			"value": "",
-			"readonly": false,
-			"optional": true,
-			"complexItems": [{
-				"id": "name",
-				"name": "Name",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			}, {
-				"id": "value",
-				"name_de": "Wert",
-				"name": "Value",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			},{
-				"id": "language",
-				"name": "Language",
-				"name_de": "Sprache",
-				"readonly": false,
-				"type": "Choice",
-				"value": "simple",
-				"items": "###language_items",
-				"width": 80,
-				"optional": true
-			}]
-		}],
+		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "propertiesProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
@@ -826,7 +858,7 @@
     "icon" : "fileendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "fileProperties", "commonFileProperties" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "fileProperties", "commonFileProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -848,7 +880,7 @@
     "icon" : "sedaendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "sedaProperties", "sedaVmProperties" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "sedaProperties", "sedaVmProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -870,7 +902,7 @@
     "icon" : "ftpendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "ftpProperties" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "ftpProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -881,7 +913,7 @@
     "icon" : "mailendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "mailProperties" ],
+    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "mailProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
