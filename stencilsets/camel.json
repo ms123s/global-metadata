@@ -263,6 +263,27 @@
 				"optional": true
 			}]
 		}]
+	}, {
+		"name": "transactedProperties",
+		"properties": [{
+      "id" : "propagationBehavior",
+      "type" : "Choice",
+      "title" : "PropagationBehavior",
+      "value" : "PROPAGATION_REQUIRES_NEW",
+      "items" : [ {
+        "id" : "c1",
+        "title" : "Propagation requires new",
+        "value" : "PROPAGATION_REQUIRES_NEW"
+      }, {
+        "id" : "c2",
+        "title" : "Propagation required",
+        "value" : "PROPAGATION_REQUIRED"
+      }, {
+        "id" : "c3",
+        "title" : "Propagation never",
+        "value" : "PROPAGATION_NEVER"
+			}]
+		}]
 	},{
 		"name": "fileProperties",
 		"properties": [{
@@ -798,6 +819,16 @@
 	},
 	{
 		"type": "node",
+		"id": "Transacted",
+		"title": "Transacted",
+		"groups": ["Transformation"],
+    "view" : "transacted.svg",
+		"icon": "transacted.png",
+		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "transactedProperties"],
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+	},
+	{
+		"type": "node",
 		"id": "ConvertBodyTo",
 		"title": "ConvertBodyTo",
 		"groups": ["Transformation"],
@@ -1014,9 +1045,9 @@
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
-    "id" : "Http4Endpoint",
-    "title" : "Http4 Endpoint",
-    "title_de" : "Http4 Endpunkt",
+		"id" : "Http4Endpoint",
+		"title" : "Http4 Endpoint",
+		"title_de" : "Http4 Endpunkt",
     "view" : "endpoint.svg",
     "icon" : "http4endpoint.png",
     "groups" : [ "Endpoints" ],
