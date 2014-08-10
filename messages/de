@@ -2751,6 +2751,30 @@
         "msgstr": "User"
     },
     {
+        "msgid": "processexplorer.details_headers",
+        "msgstr": "Headers"
+    },
+    {
+        "msgid": "processexplorer.details_properties",
+        "msgstr": "Properties"
+    },
+    {
+        "msgid": "processexplorer.details_body",
+        "msgstr": "Body"
+    },
+    {
+        "msgid": "processexplorer.details_exception",
+        "msgstr": "Exception"
+    },
+    {
+        "msgid": "processexplorer.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "processexplorer.value",
+        "msgstr": "Wert"
+    },
+    {
         "msgid": "processexplorer.details_info",
         "msgstr": "Information"
     },
@@ -2763,8 +2787,8 @@
         "msgstr": "Route"
     },
     {
-        "msgid": "processexplorer.toNode",
-        "msgstr": "toNode"
+        "msgid": "processexplorer.node",
+        "msgstr": "Knoten"
     },
     {
         "msgid": "processexplorer.fromEndpointUri",

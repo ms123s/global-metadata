@@ -9,7 +9,7 @@ xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xml:sp
       <stop id="fill_el" offset="100%" stop-color="#ffffcc" stop-opacity="1" />
     </radialGradient>
   </defs>
-  <rect x="0" y="0" width="83" height="47" id="bg_frame" fill="url(#background)" stroke="none" stroke-width="0.5" />
+  <rect x="0" y="0" rx="2" ry="2" width="83" height="47" id="bg_frame" fill="url(#background)" stroke="none" stroke-width="0.5" />
   <path style="fill:#ffffff;stroke:none" id="path10" d="m 10.859674,40.280805 24.761633,0 0,-33.4236143 -24.761633,0 0,33.4236143 z" />
   <path style="fill:none;stroke:#0f0f0f;stroke-width:0.4919235" id="path12" d="m 10.859674,40.280805 24.761633,0 0,-33.4236143 -24.761633,0 0,33.4236143 z" />
   <path style="fill:#ffffff;stroke:none" id="path14" d="m 48.07999,40.280805 24.761633,0 0,-33.4236143 -24.761633,0 0,33.4236143 z" />

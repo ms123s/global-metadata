@@ -114,9 +114,9 @@
 			"title":"Expression",
 			"title_de":"Ausdruck",
 			"description":"Expression defining the length of the delay",
+      "optional" : false;
 			"type":"Text",
-			"value": "",
-      "popular" : false
+			"value": "1000"
 		},{
 			"id": "language",
 			"title": "Language",
@@ -290,6 +290,7 @@
 			"id": "uriparam_fileName",
 			"title":"Filename",
 			"title_de":"Dateiname",
+			"description":"Use Expression such as <a  target='_blank' href='http://camel.apache.org/file-language.html'>File Language</a> to dynamically set the filename.<br/>For consumers, it's used as a filename filter.<br/>For producers, it's used to evaluate the filename to write.<br/>If an expression is set, it take precedence over the CamelFileName header.",
 			"type":"String",
 			"value": "",
 			"visible": true
@@ -308,6 +309,22 @@
 				"value": "ISO-8859-15",
 				"title": "ISO-8859-15"
 			}]
+		},{
+			"id": "uriparam_delete",
+			"title":"Delete",
+			"title_de":"Entfernen",
+			"description":"If true, the file will be deleted after it is processed successfully.",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		},{
+			"id": "uriparam_recursive",
+			"title":"Recursive",
+			"title_de":"Rekursiv",
+			"description":"If a directory, will look for files in all the sub-directories as well.",
+			"type":"boolean",
+			"value": false,
+			"visible": true
 		},{
 			"id": "uriparam_noop",
 			"title":"Noop",
@@ -329,6 +346,28 @@
 			"description":"Automatically create missing directories in the file's pathname",
 			"type":"boolean",
 			"value": true,
+			"visible": true
+		},{
+			"id": "uriparam_consumer.delay",
+			"title":"Delay",
+			"title_de":"Verzögerung",
+			"description":"Milliseconds before the next poll of the file/directory.",
+			"type":"string",
+			"value": "5000",
+			"visible": true
+		},{
+			"id": "uriparam_antInclude",
+			"title":"Include",
+			"description":"Ant style filter inclusion, for example antInclude=*.txt.<br/> Multiple inclusions may be specified in comma-delimited format.<br/><ul><li>? matches one character</li><li>* matches zero or more characters</li><li>** matches zero or more directories in a path</li></ul>",
+			"type":"string",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparam_antExclude",
+			"title":"Exclude",
+			"description":"Ant style filter exclusion.<br/>If both antInclude and antExclude are used, antExclude takes precedence over antInclude.<br/>Multiple exclusions may be specified in comma-delimited format.",
+			"type":"string",
+			"value": "",
 			"visible": true
 		}]
 	},{
