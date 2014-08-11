@@ -12,7 +12,19 @@
       "value" : "",
 			"include":false,
       "popular" : true
-		},{
+		}, {
+			"id": "name",
+			"type": "String",
+			"title": "Name",
+			"value": "",
+			"description": "The descriptive name.",
+			"description_de": "Bezeichnung.",
+			"readonly": false,
+			"optional": true,
+			"length": "32",
+			"wrapLines": true,
+			"refToView": "text1"
+		}, {
 			"id": "documentation",
 			"type": "Text",
 			"title": "Documentation",
