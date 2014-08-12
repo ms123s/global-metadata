@@ -19,10 +19,9 @@
 			"value": "",
 			"description": "The descriptive name.",
 			"description_de": "Bezeichnung.",
-			"readonly": false,
 			"optional": true,
 			"length": "32",
-			"wrapLines": true,
+			"include":false,
 			"refToView": "text1"
 		}, {
 			"id": "documentation",
@@ -862,6 +861,16 @@
 			"visible": true
 		}],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
+	},
+	{
+		"type": "node",
+		"id": "Processor",
+		"title": "Processor",
+		"groups": ["Transformation"],
+    "view" : "processor.svg",
+		"icon": "processor.png",
+		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "headersProperties"],
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
 		"type": "node",
