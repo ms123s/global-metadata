@@ -403,6 +403,25 @@
 			"visible": true
 		}]
 	},{
+		"name": "processorProperties",
+		"properties": [{
+			"id": "ref",
+			"type":"String",
+			"title": "Reference",
+			"description": "Reference to the bean implementing the processor's logic",
+			"value": "",
+			"visible": true,
+			"optional": true
+		},{
+			"id": "code",
+			"config":{"mode":"text/x-groovy", "xelper":"ProcessScript"},
+			"type": "Text",
+			"title": "Code",
+			"value": "",
+			"description": "anonymous inner class implementing the processor's logic",
+			"optional": true
+		}]
+	},{
 		"name": "directProperties",
 		"properties": [{
 			"id": "type_direct",
@@ -869,7 +888,7 @@
 		"groups": ["Transformation"],
     "view" : "processor.svg",
 		"icon": "processor.png",
-		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "headersProperties"],
+		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "processorProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
