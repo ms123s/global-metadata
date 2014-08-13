@@ -1,5 +1,5 @@
 {
-	"title": "BPMN 2.0",
+	"title": "Camel",
 	"namespace": "http://b3mn.org/stencilset/camel#",
 	"idIsCaseSensitiv":true,
 	"prefix":"sw",
@@ -127,7 +127,7 @@
 			"description":"Expression defining the length of the delay",
       "optional" : false;
 			"type":"Text",
-			"value": "1000"
+			"value": ""
 		},{
 			"id": "language",
 			"title": "Language",
@@ -145,6 +145,27 @@
 			"type":"boolean",
 			"value": false,
 			"visible": true
+		}]
+	}, {
+		"name": "messageFilterProperties",
+		"properties": [ {
+			"id": "expression",
+			"title":"Expression",
+			"title_de":"Ausdruck",
+			"description":"Specifies the expression used to determine if the message is to be filtered from the route.",
+      "optional" : false;
+			"type":"Text",
+			"value": "1000"
+		},{
+			"id": "language",
+			"title": "Language",
+			"title_de": "Sprache",
+			"readonly": false,
+			"type": "Choice",
+			"value": "simple",
+			"items": "###language_items",
+			"width": 80,
+			"optional": true
 		}]
 	}, {
 		"name": "bgColorSetHeader",
@@ -182,6 +203,39 @@
 			"title": "Extra Parameter",
 			"description": "Extra Parameter",
 			"description_de": "Zusätzliche Parameter",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 250,
+				"optional": false
+			}]
+		}]
+	}, {
+		"name": "genericEndpointProperties",
+		"properties": [{
+			"id": "uri",
+			"title":"Uri",
+			"value": "" ,
+			"type":"String",
+			"visible": true
+		}, {
+			"id": "extraParams",
+			"type": "Complex",
+			"title": "UriParameter",
+			"description": "UriParameter",
 			"value": "",
 			"readonly": false,
 			"optional": true,
@@ -921,9 +975,7 @@
 		"groups": ["Routing"],
     "view" : "messagefilter.svg",
 		"icon": "messagefilter.png",
-		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
-		"properties": [
-		],
+		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor", "messageFilterProperties"],
 		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
 	},
 	{
@@ -1012,14 +1064,7 @@
     "icon" : "genericendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "endpoint", "baseAttributes", "bgColorEndpoint", "borderColor"],
-		"properties": [{
-			"id": "uri",
-			"title":"Uri",
-			"value": "" ,
-			"type":"String",
-			"visible": true
-		}],
+    "propertyPackages" : [ "endpoint", "baseAttributes", "bgColorEndpoint", "borderColor", "genericEndpointProperties"],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, 
 	{

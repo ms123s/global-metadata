@@ -15,7 +15,7 @@
     </defs>
     <rect x="0" y="0" width="83" rx="2" ry="2" height="47" id="bg_frame" fill="url(#background)" stroke="none" stroke-width="0.5" />
     <text id="endpoint_type" xml:space="preserve" text-anchor="middle" font-weight="bold" xont-family="serif" font-size="12" y="18" x="3" stroke-width="0" stroke="#000000" fill="black">
-FTP
+Generic
 </text>
     <line x1="1" y1="33" x2="42" y2="33" stroke="black" stroke-width="1" marker-end="url(#end)" />
     <rect x="52" y="24" width="27" height="18" rx="1" ry="1" fill="#ffffff" stroke="#000000" stroke-width="0.5" />
