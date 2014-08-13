@@ -943,6 +943,14 @@
         "msgstr": "Datei erstellt"
     },
     {
+        "msgid": "shell.camel_save_failed",
+        "msgstr": "Fehler beim Speichern"
+    },
+    {
+        "msgid": "shell.camel_saved",
+        "msgstr": "Route gespeichert"
+    },
+    {
         "msgid": "shell.node_deleted",
         "msgstr": "Datei gelöscht"
     },

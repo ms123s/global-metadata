@@ -422,6 +422,19 @@
 			"optional": true
 		}]
 	},{
+		"name": "datamapperProperties",
+		"properties": [{
+			"id": "strategy",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.datamapper","prefix":""},
+			"title": "Strategy",
+			"title_de": "Strategie",
+			"value": "",
+			"description": "",
+			"readonly": false,
+			"optional": true
+		}]
+	},{
 		"name": "directProperties",
 		"properties": [{
 			"id": "type_direct",
@@ -889,6 +902,16 @@
     "view" : "processor.svg",
 		"icon": "processor.png",
 		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "processorProperties"],
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+	},
+	{
+		"type": "node",
+		"id": "Datamapper",
+		"title": "Datamapper",
+		"groups": ["Transformation"],
+    "view" : "datamapper.svg",
+		"icon": "datamapper.png",
+		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "datamapperProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
