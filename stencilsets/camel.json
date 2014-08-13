@@ -980,11 +980,11 @@
 	},
 	{
 		"type": "node",
-		"id": "MessageRouter",
+		"id": "MessageChoice",
 		"title": "Choice",
 		"groups": ["Routing"],
-    "view" : "messagerouter.svg",
-		"icon": "messagerouter.png",
+    "view" : "messagechoice.svg",
+		"icon": "messagechoice.png",
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
@@ -992,12 +992,11 @@
 	},
 	{
 		"type": "node",
-		"id": "Aggregate",
+		"id": "MessageAggregate",
 		"title": "Aggregate",
-		"title_de": "Aggregat",
 		"groups": ["Routing"],
-    "view" : "aggregat.svg",
-		"icon": "aggregat.png",
+    "view" : "messageaggregate.svg",
+		"icon": "messageaggregate.png",
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
 		"properties": [
 		],
@@ -1205,13 +1204,13 @@
         "maximum" : 1
       } ]
     }, {
-      "role" : "MessageRouter",
+      "role" : "MessageChoice",
       "incomingEdges" : [ {
         "role" : "Connection",
         "maximum" : 1
       } ]
     }, {
-      "role" : "Aggregate",
+      "role" : "MessageAggregate",
       "outgoingEdges" : [ {
         "role" : "Connection",
         "maximum" : 1
