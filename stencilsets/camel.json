@@ -240,6 +240,105 @@
 			}]
 		}]
 	}, {
+		"name": "splitterProperties",
+		"properties": [ {
+			"id": "expression",
+			"title":"Expression",
+			"title_de":"Ausdruck",
+			"description":"Specifies the expression used to split the message.",
+      "optional" : false,
+			"type":"Text"
+		},{
+			"id": "language",
+			"title": "Language",
+			"title_de": "Sprache",
+			"description":"Specifies the expression language used to process the expression.",
+			"readonly": false,
+			"type": "Choice",
+			"value": "simple",
+			"items": "###language_items",
+			"width": 80,
+			"optional": true
+		},{
+			"id": "option_onPrepareRef",
+			"title":"On Prepare ref",
+			"description":"Specifies a reference to a bean implementing a custom onPrepare processor<br/> that processes the original message before it is split up and passed to the next step in the route<br/> This property enables you to deep clone mutable message bodies, so the splitter creates separate, self-contained fragments of the message<br/> You can use this property to execute any kind of logic on a message exchange<br/>",
+			"type":"String",
+			"value": "",
+			"visible": true
+		}, {
+			"id": "extraOptions",
+			"type": "Complex",
+			"title": "Extra Options",
+			"description": "Extra Options",
+			"description_de": "Zusätzliche Optionen",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 250,
+				"optional": false
+			}]
+		}]
+	}, {
+		"name": "aggregateProperties",
+		"properties": [ {
+			"id": "expression",
+			"title":"Expression",
+			"title_de":"Ausdruck",
+			"description":"Specifies the expression used to correlate the messages that are aggregated.",
+      "optional" : false,
+			"type":"Text"
+		},{
+			"id": "language",
+			"title": "Language",
+			"title_de": "Sprache",
+			"description":"Specifies the expression language used to process the correlation expression.",
+			"readonly": false,
+			"type": "Choice",
+			"value": "simple",
+			"items": "###language_items",
+			"width": 80,
+			"optional": true
+		}, {
+			"id": "extraOptions",
+			"type": "Complex",
+			"title": "Extra Options",
+			"description": "Extra Options",
+			"description_de": "Zusätzliche Optionen",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 250,
+				"optional": false
+			}]
+		}]
+	}, {
 		"name": "extraParamsProperties",
 		"properties": [{
 			"id": "extraParams",
@@ -1025,7 +1124,7 @@
 		"groups": ["Routing"],
     "view" : "messageaggregate.svg",
 		"icon": "messageaggregate.png",
-		"propertyPackages": ["baseProperties", "colorProperties"],
+		"propertyPackages": ["baseProperties", "colorProperties", "aggregateProperties"],
 		"properties": [
 		],
 		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
@@ -1037,7 +1136,7 @@
 		"groups": ["Routing"],
     "view" : "messagesplitter.svg",
 		"icon": "messagesplitter.png",
-		"propertyPackages": ["baseProperties", "colorProperties"],
+		"propertyPackages": ["baseProperties", "colorProperties", "splitterProperties"],
 		"properties": [
 		],
 		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
