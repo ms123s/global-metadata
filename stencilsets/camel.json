@@ -294,25 +294,64 @@
 		}]
 	}, {
 		"name": "aggregateProperties",
-		"properties": [ {
-			"id": "expression",
-			"title":"Expression",
-			"title_de":"Ausdruck",
+		"properties": [ 
+			{
+			"id": "correlationExpression",
+			"title":"Correlation Expression",
 			"description":"Specifies the expression used to correlate the messages that are aggregated.",
       "optional" : false,
 			"type":"Text"
 		},{
-			"id": "language",
+			"id": "correlationLanguage",
 			"title": "Language",
-			"title_de": "Sprache",
 			"description":"Specifies the expression language used to process the correlation expression.",
-			"readonly": false,
 			"type": "Choice",
 			"value": "simple",
 			"items": "###language_items",
-			"width": 80,
 			"optional": true
 		}, {
+			"id": "completionPredicate",
+			"title":"Completion Predicate",
+			"description":"Specifies the expression used to determine when the aggregated message is complete based on it's contents.",
+      "optional" : false,
+			"type":"Text"
+		},{
+			"id": "completionLanguage",
+			"title": "Language",
+			"description":"Specifies the expression language used to process the completion predicate expression.",
+			"type": "Choice",
+			"value": "simple",
+			"items": "###language_items",
+			"optional": true
+		}, {
+			"id": "completionSizeExpression",
+			"title":"Completion Size",
+			"description":"Specifies an expression used to determine when aggregation is complete based on the number of exchanges processed.",
+      "optional" : false,
+			"type":"Text"
+		},{
+			"id": "completionSizeLanguage",
+			"title": "Language",
+			"description":"Specifies the expression language used to process the completion size expression.",
+			"type": "Choice",
+			"value": "simple",
+			"items": "###language_items",
+			"optional": true
+		}, {
+			"id": "completionTimeoutExpression",
+			"title":"Completion Timeout",
+			"description":"Specifies an expression used to determine when aggregation is complete based on the amount of time,<br/> in milliseconds, the aggregator has been inactive.",
+      "optional" : false,
+			"type":"Text"
+		},{
+			"id": "completionTimeoutLanguage",
+			"title": "Language",
+			"description":"Specifies the expression language used to process the completion timeout expression.",
+			"type": "Choice",
+			"value": "simple",
+			"items": "###language_items",
+			"optional": true
+		},{
 			"id": "extraOptions",
 			"type": "Complex",
 			"title": "Extra Options",
