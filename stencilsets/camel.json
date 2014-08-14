@@ -1032,6 +1032,18 @@
 	},
 	{
 		"type": "node",
+		"id": "MessageSplitter",
+		"title": "Splitter",
+		"groups": ["Routing"],
+    "view" : "messagesplitter.svg",
+		"icon": "messagesplitter.png",
+		"propertyPackages": ["baseProperties", "colorProperties"],
+		"properties": [
+		],
+		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
+	},
+	{
+		"type": "node",
 		"id": "Recipientlist",
 		"title": "Recipientlist",
 		"groups": ["Routing"],
