@@ -168,6 +168,65 @@
 			"optional": true
 		}]
 	}, {
+		"name": "recipientListProperties",
+		"properties": [ {
+			"id": "expression",
+			"title":"Expression",
+			"title_de":"Ausdruck",
+			"description":"Specifies the expression used to generate the list of recipients.",
+      "optional" : false;
+			"type":"Text"
+		},{
+			"id": "language",
+			"title": "Language",
+			"title_de": "Sprache",
+			"readonly": false,
+			"type": "Choice",
+			"value": "simple",
+			"items": "###language_items",
+			"width": 80,
+			"optional": true
+		},{
+			"id": "option_ignoreInvalidEndpoints",
+			"title":"Ignore invalid EP",
+			"description":"Whether to ignore an endpoint URI that could not be resolved.<br/>If disabled, Camel will throw an exception identifying the invalid endpoint URI.",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		}, {
+			"id": "option_delimiter",
+			"title": "Delimiter",
+			"description":"Delimiter used if the Expression returned multiple endpoints.",
+			"type": "String",
+			"value": ",",
+			"optional": true
+		}, {
+			"id": "extraOptions",
+			"type": "Complex",
+			"title": "Extra Options",
+			"description": "Extra Options",
+			"description_de": "Zusätzliche Optionen",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 250,
+				"optional": false
+			}]
+		}]
+	}, {
 		"name": "bgColorSetHeader",
 		"properties": [{
 			"id": "bgcolor",
@@ -998,6 +1057,18 @@
     "view" : "messageaggregate.svg",
 		"icon": "messageaggregate.png",
 		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
+		"properties": [
+		],
+		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
+	},
+	{
+		"type": "node",
+		"id": "Recipientlist",
+		"title": "Recipientlist",
+		"groups": ["Routing"],
+    "view" : "recipientlist.svg",
+		"icon": "recipientlist.png",
+		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor", "recipientListProperties"],
 		"properties": [
 		],
 		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
