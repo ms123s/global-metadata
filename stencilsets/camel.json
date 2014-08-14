@@ -4,7 +4,7 @@
 	"idIsCaseSensitiv":true,
 	"prefix":"sw",
 	"propertyPackages": [{
-		"name": "baseAttributes",
+		"name": "baseProperties",
 		"properties": [{
       "id" : "overrideid",
       "type" : "String",
@@ -70,7 +70,7 @@
 			"visible": true
 		}]
 	},{
-		"name": "endpoint",
+		"name": "endpointProperties",
 		"properties": [{
 			"id": "name",
 			"type": "String",
@@ -83,7 +83,7 @@
 			"popular": true
 		}]
 	},{
-		"name": "bgColorRouter",
+		"name": "colorProperties",
 		"properties": [{
 			"id": "bgcolor",
 			"type": "Color",
@@ -95,9 +95,22 @@
 			"refToView": "fill_el",
 			"fill": true,
 			"stroke": false
+		},{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"description": "Change the border color for a visual differentiation.",
+			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": ["bg_frame"],
+			"fill": false,
+			"stroke": true
 		}]
-	}, {
-		"name": "expression",
+	},{
+		"name": "expressionProperties",
 		"properties": [ {
 			"id": "expression",
 			"title":"Expression",
@@ -225,34 +238,6 @@
 				"width": 250,
 				"optional": false
 			}]
-		}]
-	}, {
-		"name": "bgColorSetHeader",
-		"properties": [{
-			"id": "bgcolor",
-			"type": "Color",
-			"title": "BackgroundColor",
-			"title_de": "Hintergrundfarbe",
-			"value": "white",
-			"readonly": false,
-			"optional": false,
-			"refToView": "fill_el",
-			"fill": true,
-			"stroke": false
-		}]
-	}, {
-		"name": "bgColorEndpoint",
-		"properties": [{
-			"id": "bgcolor",
-			"type": "Color",
-			"title": "BackgroundColor",
-			"title_de": "Hintergrundfarbe",
-			"value": "#ffffcc",
-			"readonly": false,
-			"optional": false,
-			"refToView": "fill_el",
-			"fill": true,
-			"stroke": false
 		}]
 	}, {
 		"name": "extraParamsProperties",
@@ -858,22 +843,6 @@
 			"value": "text/plain",
 			"visible": true
 		}]
-	},{ 
-		"name": "borderColor",
-		"properties": [{
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"description": "Change the border color for a visual differentiation.",
-			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": ["callActivity", "bg_frame", "hand", "finger", "finger1", "finger2", "thumb", "top", "rect", "row", "col", "paper", "line1", "line2", "line3", "line4", "userTaskpath", "userTaskpath2", "userTaskpath3", "userTaskpath4", "userTaskcircle", "teethForeground", "ringForeground", "teethBackground", "ringBackground", "receiveTaskpath", "instantiate", "sendTaskpath", "sendTaskpath2", "path2396", "parallelpath", "sequentialpath", "compensationpath"],
-			"fill": false,
-			"stroke": true
-		}]
 	},{
 		"name": "diagram",
 		"properties": [{
@@ -950,7 +919,7 @@
 		"groups": ["Transformation"],
     "view" : "delay.svg",
 		"icon": "delay.png",
-		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "delayProperties"],
+		"propertyPackages": ["baseProperties", "colorProperties", "delayProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
@@ -960,7 +929,7 @@
 		"groups": ["Transformation"],
     "view" : "setheader.svg",
 		"icon": "setheader.png",
-		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "headersProperties"],
+		"propertyPackages": ["baseProperties", "colorProperties", "headersProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
@@ -970,7 +939,7 @@
 		"groups": ["Transformation"],
     "view" : "setproperty.svg",
 		"icon": "setproperty.png",
-		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "propertiesProperties"],
+		"propertyPackages": ["baseProperties", "colorProperties", "propertiesProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
@@ -980,7 +949,7 @@
 		"groups": ["Transformation"],
     "view" : "transacted.svg",
 		"icon": "transacted.png",
-		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "transactedProperties"],
+		"propertyPackages": ["baseProperties", "colorProperties", "transactedProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
@@ -990,7 +959,7 @@
 		"groups": ["Transformation"],
     "view" : "convertBodyTo.svg",
 		"icon": "convertBodyTo.png",
-		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
+		"propertyPackages": ["baseProperties", "colorProperties"],
 		"properties": [{
 			"id": "type",
 			"title":"Type",
@@ -1014,7 +983,7 @@
 		"groups": ["Transformation"],
     "view" : "processor.svg",
 		"icon": "processor.png",
-		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "processorProperties"],
+		"propertyPackages": ["baseProperties", "colorProperties", "processorProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
@@ -1024,7 +993,7 @@
 		"groups": ["Transformation"],
     "view" : "datamapper.svg",
 		"icon": "datamapper.png",
-		"propertyPackages": ["baseAttributes", "bgColorSetHeader", "borderColor", "datamapperProperties"],
+		"propertyPackages": ["baseProperties", "colorProperties", "datamapperProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
@@ -1034,7 +1003,7 @@
 		"groups": ["Routing"],
     "view" : "messagefilter.svg",
 		"icon": "messagefilter.png",
-		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor", "messageFilterProperties"],
+		"propertyPackages": ["baseProperties", "colorProperties", "messageFilterProperties"],
 		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
 	},
 	{
@@ -1044,7 +1013,7 @@
 		"groups": ["Routing"],
     "view" : "messagechoice.svg",
 		"icon": "messagechoice.png",
-		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
+		"propertyPackages": ["baseProperties", "colorProperties"],
 		"properties": [
 		],
 		"roles": ["all", "whenConnectionStart", "whenConnectionEnd", "simpleConnectionEnd"]
@@ -1056,7 +1025,7 @@
 		"groups": ["Routing"],
     "view" : "messageaggregate.svg",
 		"icon": "messageaggregate.png",
-		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor"],
+		"propertyPackages": ["baseProperties", "colorProperties"],
 		"properties": [
 		],
 		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
@@ -1068,7 +1037,7 @@
 		"groups": ["Routing"],
     "view" : "recipientlist.svg",
 		"icon": "recipientlist.png",
-		"propertyPackages": ["baseAttributes", "bgColorRouter", "borderColor", "recipientListProperties"],
+		"propertyPackages": ["baseProperties", "colorProperties", "recipientListProperties"],
 		"properties": [
 		],
 		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
@@ -1082,7 +1051,7 @@
 		"groups_de": ["Konnektoren"],
 		"view": "simpleconnection.svg",
 		"icon": "simpleconnection.png",
-		"propertyPackages": ["baseAttributes"],
+		"propertyPackages": ["baseProperties"],
 		"layout": [{
 			"type": "layout.bpmn2_0.sequenceflow"
 		}],
@@ -1099,7 +1068,7 @@
 		"groups_de": ["Konnektoren"],
 		"view": "whenconnection.svg",
 		"icon": "whenconnection.png",
-		"propertyPackages": ["baseAttributes", "expression"],
+		"propertyPackages": ["baseProperties", "expressionProperties"],
 		"roles": ["all", "Connection", "ConnectingObjectsMorph"],
 		"properties": [{
       "id" : "defaultflow",
@@ -1134,7 +1103,7 @@
     "icon" : "genericendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "endpoint", "baseAttributes", "bgColorEndpoint", "borderColor", "genericEndpointProperties"],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "genericEndpointProperties"],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, 
 	{
@@ -1146,7 +1115,7 @@
     "icon" : "fileendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "fileProperties", "commonFileProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "fileProperties", "commonFileProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1157,7 +1126,7 @@
     "icon" : "directendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "directProperties" ],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "directProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1168,7 +1137,7 @@
     "icon" : "sedaendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "sedaProperties", "sedaVmProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "sedaProperties", "sedaVmProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1179,7 +1148,7 @@
     "icon" : "vmendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "vmProperties", "sedaVmProperties" ],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "vmProperties", "sedaVmProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1190,7 +1159,7 @@
     "icon" : "ftpendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "ftpProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "ftpProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1201,7 +1170,7 @@
     "icon" : "mailendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor", "mailProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "mailProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1212,7 +1181,7 @@
     "icon" : "jmsendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
+    "propertyPackages" : [ "baseProperties", "colorProperties" ],
 		"properties": [{
 			"id": "endpoint_type3",
 			"type":"String",
@@ -1230,7 +1199,7 @@
     "icon" : "http4endpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseAttributes", "bgColorEndpoint", "borderColor" ],
+    "propertyPackages" : [ "baseProperties", "colorProperties" ],
 		"properties": [{
 			"id": "endpoint_type5",
 			"type":"String",
