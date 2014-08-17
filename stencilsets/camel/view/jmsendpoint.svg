@@ -9,7 +9,7 @@
     </defs>
     <rect id="text_frame" oryx:anchors="bottom top right left" x="1" y="1" width="78" height="58" rx="10" ry="10" stroke="none" stroke-width="2" fill="none" />
     <rect id="bg_frame" oryx:resize="vertical horizontal" x="0" y="0" width="80" height="60" rx="4" ry="4" stroke="black" stroke-width="1" fill="url(#background) #ffffcc" />
-    <text id="text2" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="9" x="40" y="40" fill="blue">Generic</text>
+    <text id="text2" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="9" x="40" y="40" fill="blue">JMS</text>
     <g transform="scale(0.8,0.8) translate(5,2)">
       <defs id="defs32">
         <marker id="arrow" viewBox="0 0 10 10" refX="1" refY="5" markerUnits="strokeWidth" orient="auto" markerWidth="8" markerHeight="14">
@@ -19,11 +19,7 @@
           <path id="arrowhead2" d="M 0 0 L 10 5 L 0 10 L 0 0" fill="black" stroke="black" />
         </marker>
       </defs>
-      <g transform="scale(0.8,0.8) translate(0,0)">
-        <text font-weight="bold" id="text2985" letter-spacing="0" line-height="125%" word-spacing="0" x="1.803" y="25.921" font-family="Arial" font-size="32.682">
-          <tspan x="1.803" y="25.921" id="tspan2987">G</tspan>
-        </text>
-      </g>
+      <image x="1.656" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAYAAABqBU3hAAAABHNCSVQICAgIfAhkiAAAA3ZJREFU SImlVs2qXEUQ/qqr+sxPJvcSDdGAEHDnSs1rCLpyd1HfLyB5AEH0AYJrFyFILmSRqDfeuTOn/8rF merpM/fMJGJDcWa6q+v7uv668ezZb1BVlKL1G0KCqlYppRwV1XxSBh09Ku7p0x+1lAJAAQBEADMB AHLOuzk6Kv93yOXlJZxzuLm5wWKxqEZDCOi6DgO528P0iNxJgHdxlJcv/wBQsFzOkXMCADAzuk4A FDh3GkBVT4C/20PCvsPPv/yK1WqFGCMAwHuPUgpSSvAyG7nbYlcNeHeaiLrR2qEd+uqbr/Xs7Ax9 32M2m6HrOoQQGiI4SoCIkHMcEWjBBl0aJZ3ZseQUWSywPD/HQhUhBBQi+OUSzAwAmDuGc66GojVE RCNCLVBLZl8x+/mchwqRu6tzfPTgIVJKICJ475FzRkoJzAwWAvNAwgDt9IMH8tESAwDnHHLOI71S yp7A2fkH+PjhJ4gxjhgyM4gIIgIiqgT22b9PMMsXA2nXyClSStULRirGiPV6Dbl//wHu3fsQKaUR QzNiwK0XWkLOubrPTmXf4SBUf5snnHMopWC5WEFijNhsNrXpHLrUSJgceqOdM/AYY7VjTY2IqqeY GcwMEYG8fvMKszlXMMuFtgG1QO2wnHDOgZlHp7T9KaV6CFWtBERkyIGrqz8hsi+xGCOYuYbhsO0e 9gHTM4A2280rpmMEbOScIZvtGn9fUd3c932thKnkm6r1lkxbphY2s2Wg7WEl9AVr9HVxs9nA+1RD MUXgMARm8LDWjZQlnnnE9uacIevrLfptqhMDAY8Y43vdflONp73CLZ/sIBYCIy9/Xb/FfD6HpoxS hlLc5h4hBDhhlKSTwGakzZXD94OqQnm6TduQ1G/x6s1rlJzRdR1SCAgpDklFQMnjzncYEm0ITIUi ax6Bj5oUEeT6n7f44bvv8fjzL+C9R4o9nHPws+5J3/ffzhZ3nuyUnzvnftp9nxtox1LL0KQlOeNx IxORqkdEwGePv9TfX7xAnwtCzLWWrTOmrMhlkKL/XTSXaSkKLQrpWPDpo0cgDMBQB0cOKfcAE3ji QTJ1v7drbROzW/VWwu505O6dFTQrnAO8eEAVIILsegHzbQKjiygNJWZvLwKB3Ri0zaFDwnJxcTFc GFnBDBRVxBAgnYdjf/LJBQBOePT/vT2w+/4LvwqIZgbFb8cAAAAASUVORK5CYII=" y="1.066" height="28.11" id="image3060" width="39.11" />
       <line x1="1" y1="33" x2="42" y2="33" stroke="black" stroke-width="1" marker-end="url(#end)" />
       <rect x="52" y="24" width="27" height="18" rx="1" ry="1" fill="#ffffff" stroke="#000000" stroke-width="0.5" />
     </g>

@@ -166,9 +166,8 @@
 			"title":"Expression",
 			"title_de":"Ausdruck",
 			"description":"Specifies the expression used to determine if the message is to be filtered from the route.",
-      "optional" : false;
 			"type":"Text",
-			"value": "1000"
+			"value": ""
 		},{
 			"id": "language",
 			"title": "Language",
@@ -176,9 +175,7 @@
 			"readonly": false,
 			"type": "Choice",
 			"value": "simple",
-			"items": "###language_items",
-			"width": 80,
-			"optional": true
+			"items": "###language_items"
 		}]
 	}, {
 		"name": "recipientListProperties",
@@ -351,6 +348,13 @@
 			"value": "simple",
 			"items": "###language_items",
 			"optional": true
+		},{
+			"id": "option_strategyRef",
+			"title": "StrategyRef",
+			"description":"Specifies a reference for looking up the AggregationStrategy in the registry.",
+			"type": "String",
+			"value": null,
+			"optional": false
 		},{
 			"id": "extraOptions",
 			"type": "Complex",
@@ -532,6 +536,52 @@
 			}]
 		}]
 	},{
+		"name": "databaseProperties",
+		"properties": [{
+			"id": "type_database",
+			"type":"String",
+			"value": "Database",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "swdata:${operation}",
+			"visible": false
+		},{
+			"id": "urivalue_operation",
+			"title":"Operation",
+			"title_de":"Operation",
+			"type":"String",
+			"value": "",
+      "items" : [ {
+        "id" : "c1",
+        "title" : "Insert",
+        "value" : "insert"
+      }, {
+        "id" : "c2",
+        "title" : "Update",
+        "value" : "update"
+      }, {
+        "id" : "c3",
+        "title" : "Delete",
+        "value" : "delete"
+      }, {
+        "id" : "c4",
+        "title" : "FindById",
+        "value" : "findById"
+      }, {
+        "id" : "c5",
+        "title" : "FindByFilter",
+        "value" : "findByFilter"
+      }, {
+        "id" : "c6",
+        "title" : "FindOneByFilter",
+        "value" : "findOneByFilter"
+			}],
+			"visible": true
+		}]
+	},{
 		"name": "fileProperties",
 		"properties": [{
 			"id": "type_file",
@@ -599,44 +649,44 @@
 			"title_de":"Noop",
 			"description":"If true, the file is not moved or deleted in any way",
 			"type":"boolean",
-			"value": false,
-			"visible": true
+			"value": false
 		},{
 			"id": "uriparam_flatten",
 			"title":"Flatten",
 			"description":"Flatten is used to flatten the file name path to strip any leading paths, so it's just the file name",
 			"type":"boolean",
-			"value": false,
-			"visible": true
+			"value": false
 		},{
 			"id": "uriparam_autoCreate",
 			"title":"Autocreate",
 			"description":"Automatically create missing directories in the file's pathname",
 			"type":"boolean",
-			"value": true,
-			"visible": true
+			"value": true
 		},{
 			"id": "uriparam_consumer.delay",
 			"title":"Delay",
 			"title_de":"Verzögerung",
 			"description":"Milliseconds before the next poll of the file/directory.",
 			"type":"string",
-			"value": "5000",
-			"visible": true
+			"value": "5000"
+		},{
+			"id": "uriparam_moveFailed",
+			"title":"MoveFailed",
+			"description":"Expression (such as File Language) used to dynamically set a different target directory<br/> when moving files in case of processing (configured via move defined above) failed.<br/>For example, to move files into a .error subdirectory use: .error.<br/>Note: When moving the files to the “fail” location<br/> Camel will handle the error and will not pick up the file again.",
+			"type":"string",
+			"value": ".error"
 		},{
 			"id": "uriparam_antInclude",
 			"title":"Include",
 			"description":"Ant style filter inclusion, for example antInclude=*.txt.<br/> Multiple inclusions may be specified in comma-delimited format.<br/><ul><li>? matches one character</li><li>* matches zero or more characters</li><li>** matches zero or more directories in a path</li></ul>",
 			"type":"string",
-			"value": "",
-			"visible": true
+			"value": ""
 		},{
 			"id": "uriparam_antExclude",
 			"title":"Exclude",
 			"description":"Ant style filter exclusion.<br/>If both antInclude and antExclude are used, antExclude takes precedence over antInclude.<br/>Multiple exclusions may be specified in comma-delimited format.",
 			"type":"string",
-			"value": "",
-			"visible": true
+			"value": ""
 		}]
 	},{
 		"name": "processorProperties",
@@ -824,21 +874,18 @@
 			"title":"Host",
 			"type":"String",
 			"value": "",
-			"optional": false,
-			"visible": true
+			"optional": false
 		},{
 			"id": "urivalue_port",
 			"title":"Port",
 			"type":"Integer",
-			"value": "21",
-			"visible": true
+			"value": "21"
 		},{
 			"id": "urivalue_directory",
 			"title":"Directory",
 			"title_de":"Verzeichnis",
 			"type":"String",
-			"value": "",
-			"visible": true
+			"value": ""
 		},{
 			"id": "uriparam_username",
 			"title":"Username",
@@ -850,26 +897,22 @@
 			"title":"Password",
 			"title_de":"Passwort",
 			"type":"String",
-			"value": "",
-			"visible": true
+			"value": ""
 		},{
 			"id": "uriparam_passiveMode",
 			"title":"Passive",
 			"type":"Boolean",
-			"value": false,
-			"visible": true
+			"value": false
 		},{
 			"id": "uriparam_binary",
 			"title":"Binary",
 			"type":"Boolean",
-			"value": true,
-			"visible": true
+			"value": true
 		},{
 			"id": "uriparam_consumer.delay",
 			"title":"Poll(milliSec)",
 			"type":"Integer",
-			"value": 1000,
-			"visible": true
+			"value": 1000
 		}]
 	},{ 
 		"name": "mailProperties",
@@ -919,67 +962,57 @@
 			"id": "urivalue_host",
 			"title":"Host",
 			"type":"String",
-			"value": "",
-			"optional": false,
-			"visible": true
+			"value": "127.0.0.1",
+			"optional": false
 		},{
 			"id": "urivalue_port",
 			"title":"Port",
 			"type":"Integer",
-			"value": "",
-			"visible": true
+			"value": ""
 		},{
 			"id": "uriparam_username",
 			"title":"Username",
 			"type":"String",
-			"value": "",
-			"visible": true
+			"value": ""
 		},{
 			"id": "uriparam_password",
 			"title":"Password",
 			"title_de":"Passwort",
 			"type":"String",
-			"value": "",
-			"visible": true
+			"value": ""
 		},{
 			"id": "uriparam_subject",
 			"title":"Subject",
 			"title_de":"Betreff",
 			"type":"String",
-			"value": "",
-			"visible": true
+			"value": ""
 		},{
 			"id": "uriparam_from",
 			"title":"From",
 			"title_de":"Von",
 			"type":"String",
-			"value": "",
-			"visible": true
+			"value": ""
 		},{
 			"id": "uriparam_to",
 			"title":"To",
 			"title_de":"An",
 			"type":"String",
-			"value": "",
-			"visible": true
+			"value": ""
 		},{
 			"id": "uriparam_cc",
 			"title":"CC",
 			"type":"String",
-			"value": "",
-			"visible": true
+			"value": ""
 		},{
 			"id": "uriparam_bcc",
 			"title":"BCC",
 			"type":"String",
-			"value": "",
-			"visible": true
+			"value": ""
 		},{
 			"id": "uriparam_contentType",
 			"title":"ContentType",
 			"type":"String",
-			"value": "text/plain",
-			"visible": true
+			"value": "text/plain"
 		}]
 	},{
 		"name": "diagram",
@@ -1255,13 +1288,12 @@
 		"groups_de": ["Endpunkte"],
     "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "genericEndpointProperties"],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, 
-	{
+	}, {
     "type" : "node",
     "id" : "FileEndpoint",
     "title" : "File Endpoint",
     "title_de" : "File Endpunkt",
-    "view" : "endpoint.svg",
+    "view" : "fileendpoint.svg",
     "icon" : "fileendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
@@ -1269,10 +1301,21 @@
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
+    "id" : "DatabaseEndpoint",
+    "title" : "Database Endpoint",
+    "title_de" : "Database Endpunkt",
+    "view" : "database.svg",
+    "icon" : "databaseendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "databaseProperties", "extraParamsProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
     "id" : "DirectEndpoint",
     "title" : "Direct Endpoint",
     "title_de" : "Direkt Endpunkt",
-    "view" : "endpoint.svg",
+    "view" : "directendpoint.svg",
     "icon" : "directendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
@@ -1283,7 +1326,7 @@
     "id" : "SedaEndpoint",
     "title" : "Seda Endpoint",
     "title_de" : "Seda Endpunkt",
-    "view" : "endpoint.svg",
+    "view" : "sedaendpoint.svg",
     "icon" : "sedaendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
@@ -1294,7 +1337,7 @@
     "id" : "VMEndpoint",
     "title" : "VM Endpoint",
     "title_de" : "VM Endpunkt",
-    "view" : "endpoint.svg",
+    "view" : "vmendpoint.svg",
     "icon" : "vmendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
@@ -1305,7 +1348,7 @@
     "id" : "FtpEndpoint",
     "title" : "FTP Endpoint",
     "title_de" : "FTP Endpunkt",
-    "view" : "endpoint.svg",
+    "view" : "ftpendpoint.svg",
     "icon" : "ftpendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
@@ -1316,7 +1359,7 @@
     "id" : "MailEndpoint",
     "title" : "Mail Endpoint",
     "title_de" : "Mail Endpunkt",
-    "view" : "endpoint.svg",
+    "view" : "mailendpoint.svg",
     "icon" : "mailendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
@@ -1327,7 +1370,7 @@
     "id" : "JMSEndpoint",
     "title" : "JMS Endpoint",
     "title_de" : "JMS Endpunkt",
-    "view" : "endpoint.svg",
+    "view" : "jmsendpoint.svg",
     "icon" : "jmsendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
@@ -1345,7 +1388,7 @@
 		"id" : "Http4Endpoint",
 		"title" : "Http4 Endpoint",
 		"title_de" : "Http4 Endpunkt",
-    "view" : "endpoint.svg",
+    "view" : "http4endpoint.svg",
     "icon" : "http4endpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
