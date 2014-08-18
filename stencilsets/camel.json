@@ -632,6 +632,23 @@
         "value" : "PROPAGATION_NEVER"
 			}]
 		}]
+	}, {
+		"name": "rollbackProperties",
+		"properties": [{
+      "id" : "markRollbackOnly",
+      "title" : "RollbackOnly",
+      "description" : "Specifies whether the entire transaction is rolled back, without throwing a RollbackExchangeException.<br/>This property cannot be enabled when Rollback Only Last is enabled.",
+      "type" : "boolean",
+			"readonly": "markRollbackOnlyLast!=false",
+      "value" : false
+		},{
+      "id" : "markRollbackOnlyLast",
+      "title" : "RollbackOnlyLast",
+      "description" : "Specifies whether the current transaction is rolled back, without throwing a RollbackExchangeException.<br/>This property cannot be enabled when Rollback Only is enabled..",
+      "type" : "boolean",
+			"readonly": "markRollbackOnly!=false",
+      "value" : false
+		}]
 	},{
 		"name": "databaseProperties",
 		"properties": [{
@@ -1218,6 +1235,16 @@
     "view" : "transacted.svg",
 		"icon": "transacted.png",
 		"propertyPackages": ["baseProperties", "colorProperties", "transactedProperties"],
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+	},
+	{
+		"type": "node",
+		"id": "Rollback",
+		"title": "Rollback",
+		"groups": ["Transformation"],
+    "view" : "rollback.svg",
+		"icon": "rollback.png",
+		"propertyPackages": ["baseProperties", "colorProperties", "rollbackProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
