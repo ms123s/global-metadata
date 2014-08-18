@@ -633,21 +633,64 @@
 			}]
 		}]
 	}, {
-		"name": "exceptionProperties",
+		"name": "onExceptionProperties",
 		"properties": [{
-      "id" : "markRollbackOnly",
-      "title" : "RollbackOnly",
-      "description" : "Specifies whether the entire transaction is rolled back, without throwing a RollbackExchangeException.<br/>This property cannot be enabled when Rollback Only Last is enabled.",
-      "type" : "boolean",
-			"readonly": "markRollbackOnlyLast!=false",
-      "value" : false
+			"id": "continued",
+			"title":"Continued",
+			"description":"Specifies an expression that determines whether the exception is ignored and<br/> processing of the original route continues after the onException route completes.",
+      "optional" : false,
+			"type":"Text"
 		},{
-      "id" : "markRollbackOnlyLast",
-      "title" : "RollbackOnlyLast",
-      "description" : "Specifies whether the current transaction is rolled back, without throwing a RollbackExchangeException.<br/>This property cannot be enabled when Rollback Only is enabled..",
-      "type" : "boolean",
-			"readonly": "markRollbackOnly!=false",
-      "value" : false
+			"id": "continuedLanguage",
+			"title": "Language",
+			"description":"Specifies the expression language used to process the continued expression.",
+			"type": "Choice",
+			"value": "simple",
+			"items": "###language_items",
+			"optional": true
+		},{
+			"id": "handled",
+			"title":"Handled",
+			"description":"Specifies an expression that determines if the exception is marked as handled.",
+      "optional" : false,
+			"type":"Text"
+		},{
+			"id": "handledLanguage",
+			"title": "Language",
+			"description":"Specifies the expression language used to process the handled expression.",
+			"type": "Choice",
+			"value": "simple",
+			"items": "###language_items",
+			"optional": true
+		},{
+			"id": "retryWhile",
+			"title":"RetryWhile",
+			"description":"Specifies an expression that determines if the message causing the exception should be redelivered.<br/>The message is redelivered until the expression evaluates to false.",
+      "optional" : false,
+			"type":"Text"
+		},{
+			"id": "retryWhileLanguage",
+			"title": "Language",
+			"description":"Specifies the expression language used to process the retryWhile expression.",
+			"type": "Choice",
+			"value": "simple",
+			"items": "###language_items",
+			"optional": true
+		},{
+      "id" : "exceptions",
+      "type" : "Complex",
+      "title" : "Exceptions",
+      "value": "{ \"totalCount\": 1, \"items\": [ { \"exception\": \"java.lang.Exception\" } ] }",
+      "description" : "Specifies the list of exceptions the node handles.<br/>The Add button adds an entry typed in the field.<br/>The Delete button removes the selected entry from the list.",
+      "popular" : false,
+      "complexItems" : [ {
+        "id" : "exception",
+        "name" : "Name",
+        "type" : "String",
+        "value" : "",
+        "width" : 200,
+        "optional" : false
+      } ]
 		}]
 	}, {
 		"name": "rollbackProperties",
@@ -1400,7 +1443,7 @@
 		"groups": ["Control Flow"],
     "view" : "exception.svg",
 		"icon": "exception.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "exceptionProperties"],
+		"propertyPackages": ["baseProperties", "colorProperties", "onExceptionProperties"],
 		"roles": ["all", "OneOutRole", "simpleConnectionStart"]
 	},
 	{
