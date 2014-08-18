@@ -1454,7 +1454,7 @@
     "view" : "setheader.svg",
 		"icon": "setheader.png",
 		"propertyPackages": ["baseProperties", "colorProperties", "headersProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph"]
 	},
 	{
 		"type": "node",
@@ -1464,7 +1464,7 @@
     "view" : "setproperty.svg",
 		"icon": "setproperty.png",
 		"propertyPackages": ["baseProperties", "colorProperties", "propertiesProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph"]
 	},
 	{
 		"type": "node",
@@ -1479,7 +1479,7 @@
 			"value": "marshal" ,
 			"visible": false
 		}],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph"]
 	},
 	{
 		"type": "node",
@@ -1494,7 +1494,7 @@
 			"value": "unmarshal" ,
 			"visible": false
 		}],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph"]
 	},
 	{
 		"type": "node",
@@ -1518,7 +1518,7 @@
 			"type":"String",
 			"visible": true
 		}],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "TransformerMorph"]
 	},
 	{
 		"type": "node",
@@ -1528,7 +1528,7 @@
     "view" : "processor.svg",
 		"icon": "processor.png",
 		"propertyPackages": ["baseProperties", "colorProperties", "processorProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph"]
 	},
 	{
 		"type": "node",
@@ -1538,7 +1538,7 @@
     "view" : "datamapper.svg",
 		"icon": "datamapper.png",
 		"propertyPackages": ["baseProperties", "colorProperties", "datamapperProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph"]
 	},
 	{
 		"type": "node",
@@ -1548,7 +1548,7 @@
     "view" : "messagefilter.svg",
 		"icon": "messagefilter.png",
 		"propertyPackages": ["baseProperties", "colorProperties", "messageFilterProperties"],
-		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
+		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "RoutingMorph"]
 	},
 	{
 		"type": "node",
@@ -1560,7 +1560,7 @@
 		"propertyPackages": ["baseProperties", "colorProperties"],
 		"properties": [
 		],
-		"roles": ["all", "whenConnectionStart", "whenConnectionEnd", "simpleConnectionEnd"]
+		"roles": ["all", "whenConnectionStart", "whenConnectionEnd", "simpleConnectionEnd", "RoutingMorph"]
 	},
 	{
 		"type": "node",
@@ -1572,7 +1572,7 @@
 		"propertyPackages": ["baseProperties", "colorProperties", "aggregateProperties"],
 		"properties": [
 		],
-		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
+		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "RoutingMorph"]
 	},
 	{
 		"type": "node",
@@ -1584,7 +1584,7 @@
 		"propertyPackages": ["baseProperties", "colorProperties", "splitterProperties"],
 		"properties": [
 		],
-		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
+		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "RoutingMorph"]
 	},
 	{
 		"type": "node",
@@ -1596,7 +1596,7 @@
 		"propertyPackages": ["baseProperties", "colorProperties", "recipientListProperties"],
 		"properties": [
 		],
-		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "GatewaysMorph"]
+		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "RoutingMorph"]
 	},
 	{
 		"type": "edge",
@@ -1708,11 +1708,15 @@
     } ],
     "morphingRules" : [ {
       "role" : "EndpointsMorph",
-      "baseMorphs" : [ "FtpEndpoint" ],
+      "baseMorphs" : [ "GenericEndpoint" ],
       "preserveBounds" : true
     }, {
-      "role" : "GatewaysMorph",
-      "baseMorphs" : [ "ExclusiveGateway" ]
+      "role" : "TransformerMorph",
+      "baseMorphs" : [ "Processor" ],
+      "preserveBounds" : true
+    }, {
+      "role" : "RoutingMorph",
+      "baseMorphs" : [ "MessageChoice" ]
     }]
   },
   "definitions":{
