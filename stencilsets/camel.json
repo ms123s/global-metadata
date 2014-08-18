@@ -633,6 +633,23 @@
 			}]
 		}]
 	}, {
+		"name": "exceptionProperties",
+		"properties": [{
+      "id" : "markRollbackOnly",
+      "title" : "RollbackOnly",
+      "description" : "Specifies whether the entire transaction is rolled back, without throwing a RollbackExchangeException.<br/>This property cannot be enabled when Rollback Only Last is enabled.",
+      "type" : "boolean",
+			"readonly": "markRollbackOnlyLast!=false",
+      "value" : false
+		},{
+      "id" : "markRollbackOnlyLast",
+      "title" : "RollbackOnlyLast",
+      "description" : "Specifies whether the current transaction is rolled back, without throwing a RollbackExchangeException.<br/>This property cannot be enabled when Rollback Only is enabled..",
+      "type" : "boolean",
+			"readonly": "markRollbackOnly!=false",
+      "value" : false
+		}]
+	}, {
 		"name": "rollbackProperties",
 		"properties": [{
       "id" : "markRollbackOnly",
@@ -1198,14 +1215,193 @@
 		}]
 	},
 	{
+    "type" : "node",
+    "id" : "Endpoint",
+    "title" : "Endpoint",
+    "title_de" : "Endpunkt",
+    "description" : "Generic Endpoint",
+    "description_de" : "Allgemeiner Endpunkt",
+    "view" : "endpoint.svg",
+    "icon" : "genericendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "genericEndpointProperties"],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "FileEndpoint",
+    "title" : "File Endpoint",
+    "title_de" : "File Endpunkt",
+    "view" : "fileendpoint.svg",
+    "icon" : "fileendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "fileProperties", "commonFileProperties", "extraParamsProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "DatabaseEndpoint",
+    "title" : "Database Endpoint",
+    "title_de" : "Database Endpunkt",
+    "view" : "database.svg",
+    "icon" : "databaseendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "databaseProperties", "extraParamsProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "DirectEndpoint",
+    "title" : "Direct Endpoint",
+    "title_de" : "Direkt Endpunkt",
+    "view" : "directendpoint.svg",
+    "icon" : "directendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "directProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "SedaEndpoint",
+    "title" : "Seda Endpoint",
+    "title_de" : "Seda Endpunkt",
+    "view" : "sedaendpoint.svg",
+    "icon" : "sedaendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "sedaProperties", "sedaVmProperties", "extraParamsProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "VMEndpoint",
+    "title" : "VM Endpoint",
+    "title_de" : "VM Endpunkt",
+    "view" : "vmendpoint.svg",
+    "icon" : "vmendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "vmProperties", "sedaVmProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "FtpEndpoint",
+    "title" : "FTP Endpoint",
+    "title_de" : "FTP Endpunkt",
+    "view" : "ftpendpoint.svg",
+    "icon" : "ftpendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "ftpProperties", "extraParamsProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "MailEndpoint",
+    "title" : "Mail Endpoint",
+    "title_de" : "Mail Endpunkt",
+    "view" : "mailendpoint.svg",
+    "icon" : "mailendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "mailProperties", "extraParamsProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "JMSEndpoint",
+    "title" : "JMS Endpoint",
+    "title_de" : "JMS Endpunkt",
+    "view" : "jmsendpoint.svg",
+    "icon" : "jmsendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties" ],
+		"properties": [{
+			"id": "endpoint_type3",
+			"type":"String",
+			"value": "JMS",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		}],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+		"id" : "Http4Endpoint",
+		"title" : "Http4 Endpoint",
+		"title_de" : "Http4 Endpunkt",
+    "view" : "http4endpoint.svg",
+    "icon" : "http4endpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties" ],
+		"properties": [{
+			"id": "endpoint_type5",
+			"type":"String",
+			"value": "http4",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "http4://${host}:${port}/${path}",
+			"visible": false
+		},{
+			"id": "urivalue_host",
+			"title":"Host",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "urivalue_port",
+			"title":"Port",
+			"type":"Integer",
+			"value": "80",
+			"visible": true
+		},{
+			"id": "urivalue_path",
+			"title":"Path",
+			"type":"String",
+			"value": "",
+			"visible": true
+		}],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
 		"type": "node",
 		"id": "Delay",
 		"title": "Delay",
-		"groups": ["Transformation"],
+		"groups": ["Control Flow"],
     "view" : "delay.svg",
 		"icon": "delay.png",
 		"propertyPackages": ["baseProperties", "colorProperties", "delayProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+	},
+	{
+		"type": "node",
+		"id": "Transacted",
+		"title": "Transacted",
+		"groups": ["Control Flow"],
+    "view" : "transacted.svg",
+		"icon": "transacted.png",
+		"propertyPackages": ["baseProperties", "colorProperties", "transactedProperties"],
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+	},
+	{
+		"type": "node",
+		"id": "Rollback",
+		"title": "Rollback",
+		"groups": ["Control Flow"],
+    "view" : "rollback.svg",
+		"icon": "rollback.png",
+		"propertyPackages": ["baseProperties", "colorProperties", "rollbackProperties"],
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+	},
+	{
+		"type": "node",
+		"id": "onException",
+		"title": "onException",
+		"groups": ["Control Flow"],
+    "view" : "exception.svg",
+		"icon": "exception.png",
+		"propertyPackages": ["baseProperties", "colorProperties", "exceptionProperties"],
+		"roles": ["all", "OneOutRole", "simpleConnectionStart"]
 	},
 	{
 		"type": "node",
@@ -1225,26 +1421,6 @@
     "view" : "setproperty.svg",
 		"icon": "setproperty.png",
 		"propertyPackages": ["baseProperties", "colorProperties", "propertiesProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
-	},
-	{
-		"type": "node",
-		"id": "Transacted",
-		"title": "Transacted",
-		"groups": ["Transformation"],
-    "view" : "transacted.svg",
-		"icon": "transacted.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "transactedProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
-	},
-	{
-		"type": "node",
-		"id": "Rollback",
-		"title": "Rollback",
-		"groups": ["Transformation"],
-    "view" : "rollback.svg",
-		"icon": "rollback.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "rollbackProperties"],
 		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
 	},
 	{
@@ -1428,156 +1604,6 @@
         "refToView" : "default"
       }]
 		}]
-	},
-	{
-    "type" : "node",
-    "id" : "Endpoint",
-    "title" : "Endpoint",
-    "title_de" : "Endpunkt",
-    "description" : "Generic Endpoint",
-    "description_de" : "Allgemeiner Endpunkt",
-    "view" : "endpoint.svg",
-    "icon" : "genericendpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "genericEndpointProperties"],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-    "type" : "node",
-    "id" : "FileEndpoint",
-    "title" : "File Endpoint",
-    "title_de" : "File Endpunkt",
-    "view" : "fileendpoint.svg",
-    "icon" : "fileendpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "fileProperties", "commonFileProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-    "type" : "node",
-    "id" : "DatabaseEndpoint",
-    "title" : "Database Endpoint",
-    "title_de" : "Database Endpunkt",
-    "view" : "database.svg",
-    "icon" : "databaseendpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "databaseProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-    "type" : "node",
-    "id" : "DirectEndpoint",
-    "title" : "Direct Endpoint",
-    "title_de" : "Direkt Endpunkt",
-    "view" : "directendpoint.svg",
-    "icon" : "directendpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "directProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-    "type" : "node",
-    "id" : "SedaEndpoint",
-    "title" : "Seda Endpoint",
-    "title_de" : "Seda Endpunkt",
-    "view" : "sedaendpoint.svg",
-    "icon" : "sedaendpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "sedaProperties", "sedaVmProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-    "type" : "node",
-    "id" : "VMEndpoint",
-    "title" : "VM Endpoint",
-    "title_de" : "VM Endpunkt",
-    "view" : "vmendpoint.svg",
-    "icon" : "vmendpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "vmProperties", "sedaVmProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-    "type" : "node",
-    "id" : "FtpEndpoint",
-    "title" : "FTP Endpoint",
-    "title_de" : "FTP Endpunkt",
-    "view" : "ftpendpoint.svg",
-    "icon" : "ftpendpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "ftpProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-    "type" : "node",
-    "id" : "MailEndpoint",
-    "title" : "Mail Endpoint",
-    "title_de" : "Mail Endpunkt",
-    "view" : "mailendpoint.svg",
-    "icon" : "mailendpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "mailProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-    "type" : "node",
-    "id" : "JMSEndpoint",
-    "title" : "JMS Endpoint",
-    "title_de" : "JMS Endpunkt",
-    "view" : "jmsendpoint.svg",
-    "icon" : "jmsendpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties" ],
-		"properties": [{
-			"id": "endpoint_type3",
-			"type":"String",
-			"value": "JMS",
-			"visible": false,
-			"refToView": ["endpoint_type"]
-		}],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-    "type" : "node",
-		"id" : "Http4Endpoint",
-		"title" : "Http4 Endpoint",
-		"title_de" : "Http4 Endpunkt",
-    "view" : "http4endpoint.svg",
-    "icon" : "http4endpoint.png",
-    "groups" : [ "Endpoints" ],
-		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties" ],
-		"properties": [{
-			"id": "endpoint_type5",
-			"type":"String",
-			"value": "http4",
-			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
-			"id": "uri_template",
-			"type":"String",
-			"value": "http4://${host}:${port}/${path}",
-			"visible": false
-		},{
-			"id": "urivalue_host",
-			"title":"Host",
-			"type":"String",
-			"value": "",
-			"visible": true
-		},{
-			"id": "urivalue_port",
-			"title":"Port",
-			"type":"Integer",
-			"value": "80",
-			"visible": true
-		},{
-			"id": "urivalue_path",
-			"title":"Path",
-			"type":"String",
-			"value": "",
-			"visible": true
-		}],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}],
   "rules" : {
     "cardinalityRules" : [ {
@@ -1585,6 +1611,16 @@
       "incomingEdges" : [ {
         "role" : "Connection",
         "maximum" : 1
+      } ],
+      "outgoingEdges" : [ {
+        "role" : "Connection",
+        "maximum" : 1
+      } ]
+    }, {
+      "role" : "OneOutRole",
+      "incomingEdges" : [ {
+        "role" : "Connection",
+        "maximum" : 0
       } ],
       "outgoingEdges" : [ {
         "role" : "Connection",
