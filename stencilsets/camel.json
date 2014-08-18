@@ -131,6 +131,103 @@
 			"width": 80,
 			"optional": true
 		}]
+	},{
+		"name": "marshalProperties",
+		"properties": [{
+			"id": "format",
+			"title":"Dataformattype",
+			"type":"Choice",
+      "popular" : false,
+			"refToView": ["text2"],
+			"value": "csv",
+      "items" : [ {
+        "id" : "c1",
+        "title" : "csv",
+        "value" : "csv"
+      }, {
+        "id" : "c2",
+        "title" : "json",
+        "value" : "json"
+      }, {
+        "id" : "c3",
+        "title" : "base64",
+        "value" : "base64"
+			}],
+			"visible": true
+		},{
+			"id": "csv_configRef",
+			"title":"ConfigRef",
+			"type":"String",
+			"value": "",
+      "popular" : false,
+			"visible": "format=='csv'"
+		},{
+			"id": "csv_strategyRef",
+			"title":"StrategyRef",
+			"type":"String",
+			"value": "",
+      "popular" : false,
+			"visible": "format=='csv'"
+		},{
+			"id": "csv_delimiter",
+			"title":"Delimiter",
+			"title_de":"Begrenzer",
+			"description":"The column delimiter to use.",
+			"type":"String",
+			"value": ",",
+      "popular" : false,
+			"visible": "format=='csv'"
+		},{
+			"id": "csv_skipFirstLine",
+			"title":"Skip first line",
+			"title_":"Erste Zeile überg.",
+			"description":"Whether or not to skip the first line of CSV input when unmarshalling<br/> (e.g. if the content has headers on the first line)",
+			"type":"boolean",
+			"value": false,
+      "popular" : false,
+			"visible": "format=='csv'"
+		},{
+			"id": "csv_lazyLoad",
+			"title":"LazyLoad",
+			"description":"Whether or not to Sequential access CSV input through an iterator<br/> which could avoid OOM exception when processing huge CSV file.",
+			"type":"boolean",
+			"value": false,
+      "popular" : false,
+			"visible": "format=='csv'"
+		},{
+			"id": "csv_useMaps",
+			"title":"UseMaps",
+			"description":"Whether to use List<Map> when unmarshalling instead of List<List>.",
+			"type":"boolean",
+			"value": false,
+      "popular" : false,
+			"visible": "format=='csv' && func=='unmarshal'"
+		},{
+			"id": "json_prettyPrint",
+			"title":"PrettyPrint",
+			"description":"Enables pretty printing, which adds white space as needed to tidy up the resulting XML for easy reading.",
+			"type":"boolean",
+			"value": true,
+      "popular" : false,
+			"visible": "format=='json' && func=='marshal'"
+		},{
+			"id": "json_library",
+			"title":"Library",
+			"description":"",
+			"type":"Choice",
+			"value": "gson",
+      "popular" : false,
+      "items" : [ {
+        "id" : "c1",
+        "title" : "xstream",
+        "value" : "xstream"
+      }, {
+        "id" : "c2",
+        "title" : "gson",
+        "value" : "gson"
+			}],
+			"visible": "format=='json'"
+		}]
 	}, {
 		"name": "delayProperties",
 		"properties": [ {
@@ -552,8 +649,8 @@
 			"id": "urivalue_operation",
 			"title":"Operation",
 			"title_de":"Operation",
-			"type":"String",
-			"value": "",
+			"type":"Choice",
+			"value": "insert",
       "items" : [ {
         "id" : "c1",
         "title" : "Insert",
@@ -1125,11 +1222,41 @@
 	},
 	{
 		"type": "node",
+		"id": "Marshal",
+		"title": "Marshal",
+		"groups": ["Transformation"],
+    "view" : "marshal.svg",
+		"icon": "marshal.png",
+		"propertyPackages": ["baseProperties", "colorProperties", "marshalProperties"],
+		"properties": [{
+			"id": "func",
+			"value": "marshal" ,
+			"visible": false
+		}],
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+	},
+	{
+		"type": "node",
+		"id": "Unmarshal",
+		"title": "Unmarshal",
+		"groups": ["Transformation"],
+    "view" : "unmarshal.svg",
+		"icon": "marshal.png",
+		"propertyPackages": ["baseProperties", "colorProperties", "marshalProperties"],
+		"properties": [{
+			"id": "func",
+			"value": "unmarshal" ,
+			"visible": false
+		}],
+		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
+	},
+	{
+		"type": "node",
 		"id": "ConvertBodyTo",
 		"title": "ConvertBodyTo",
 		"groups": ["Transformation"],
     "view" : "convertBodyTo.svg",
-		"icon": "convertBodyTo.png",
+		"icon": "marshal.png",
 		"propertyPackages": ["baseProperties", "colorProperties"],
 		"properties": [{
 			"id": "type",
