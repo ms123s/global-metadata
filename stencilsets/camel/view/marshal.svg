@@ -11,8 +11,8 @@
     </defs>
     <rect id="text_frame" oryx:anchors="bottom top right left" x="1" y="1" width="78" height="58" rx="10" ry="10" stroke="none" stroke-width="2" fill="none" />
     <rect id="bg_frame" oryx:resize="vertical horizontal" x="0" y="0" width="80" height="60" rx="4" ry="4" stroke="black" stroke-width="1" fill="url(#background) #ffffcc" />
-		<text id="" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="9" x="40" y="38" fill="blue">Marshal</text>
-		<text id="text2" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="9" x="40" y="45" fill="blue"></text>
+		<text id="" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="9" x="40" y="38" fill="black">Marshal</text>
+		<text id="text2" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="9" x="40" y="45" fill="black"></text>
 
     <g transform="scale(1.0,1.0) translate(13,3)">
       <path d="m 0.8657051,28.044983 c 6.6031023,0 13.2062049,0 19.8093069,0 0,-8.912964 0,-17.825928 0,-26.7388914 -6.603102,0 -13.2062046,0 -19.8093069,0 0,8.9129634 0,17.8259274 0,26.7388914 z" fill="#ffffff" id="path10" />

@@ -9,7 +9,7 @@
     </defs>
     <rect id="text_frame" oryx:anchors="bottom top right left" x="1" y="1" width="78" height="58" rx="10" ry="10" stroke="none" stroke-width="2" fill="none" />
     <rect id="bg_frame" oryx:resize="vertical horizontal" x="0" y="0" width="80" height="60" rx="4" ry="4" stroke="black" stroke-width="1" fill="url(#background) #ffffcc" />
-    <text id="" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="11" x="40" y="40" fill="blue">Filter</text>
+    <text id="" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="11" x="40" y="40" fill="black">Filter</text>
     <g transform="scale(1.2,1.2) translate(19,3)">
       <defs id="defs35">
         <radialGradient cx="6.595" cy="6.453" r="70.29" gradientTransform="matrix(1.1523319,0,0,0.86780552,33.889831,-1.3135593)" gradientUnits="userSpaceOnUse" id="radialGradient15113" />

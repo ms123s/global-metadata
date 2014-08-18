@@ -11,7 +11,7 @@
     </defs>
     <rect id="text_frame" oryx:anchors="bottom top right left" x="1" y="1" width="78" height="58" rx="10" ry="10" stroke="none" stroke-width="2" fill="none" />
     <rect id="bg_frame" oryx:resize="vertical horizontal" x="0" y="0" width="80" height="60" rx="4" ry="4" stroke="black" stroke-width="1" fill="url(#background) #ffffcc" />
-		<text id="text1" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="11" x="40" y="40" fill="blue">Splitter</text>
+		<text id="text1" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="11" x="40" y="40" fill="black">Splitter</text>
 
 	<g transform="scale(0.8,0.8) translate(13,2)">
     <path style="fill:#ccffff;stroke:none" d="M 35.162685,43.740474 C 25.660474,43.733492 15.527326,41.072073 8.7718903,34.042794 4.7649945,29.967153 3.2148104,23.455192 5.9256427,18.25396 10.024673,10.347478 18.982219,6.5889411 27.323809,5.0623447 c 10.733005,-1.7358163 22.535603,-0.082937 31.4173,6.5132263 4.793583,3.561701 8.309221,9.757233 6.540217,15.81316 -1.891385,6.990681 -8.600496,11.433367 -15.049198,13.809194 -4.824745,1.714753 -9.947764,2.59025 -15.069443,2.542549 z" id="path1318" inkscape:connector-curvature="0" />
