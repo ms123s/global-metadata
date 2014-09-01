@@ -453,6 +453,7 @@
 			"title_de": "Schleifenliste",
       "value" : "",
       "description" : "Define the collection for the multi instance.",
+			"visible": "looptype!='None'",
       "popular" : true
     }, {
       "id" : "multiinstance_variable",
@@ -461,6 +462,7 @@
 			"title_de": "Elementvariable",
       "value" : "",
       "description" : "Define the element variable for the multi instance.",
+			"visible": "looptype!='None'",
       "popular" : true
     }, {
       "id" : "multiinstance_condition",
@@ -469,6 +471,7 @@
 			"title_de": "Endebedingung",
       "value" : "",
       "description" : "Define the completion condition for the multi instance.",
+			"visible": "looptype!='None'",
       "popular" : true
     }, {
       "id" : "isforcompensation",
