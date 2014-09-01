@@ -415,9 +415,11 @@
 				"value": "Sequential",
 				"icon": "activity/list/mi.sequential.png",
 				"refToView": "sequential"
-			}]
-		},
-		{
+		 }]
+		}]
+	}, {
+		"name" : "activity",
+		"properties" : [ {
       "id" : "multiinstance_sequential",
       "type" : "Choice",
       "title" : "Sequential (Multi-instance)",
@@ -992,7 +994,7 @@
 			"optional": false
 		  }]
 		,
-		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics", "activity" ]
 	},
 	{
 		"type": "node",
@@ -1090,7 +1092,7 @@
 			"include": false,
 			"optional": false
 		}],
-		"propertyPackages": ["elementbase", "baseAttributes", "borderColor","bgColor", "loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor","bgColor", "loopcharacteristics", "activity" ]
 	},
 	{
 		"type": "node",
@@ -1183,7 +1185,7 @@
 			"include": false,
 			"optional": false
 		}],
-		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor","loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor","loopcharacteristics", "activity" ]
 	},
 	{
 		"type": "node",
@@ -1242,7 +1244,7 @@
 			"include": false,
 			"optional": false
 		}],
-		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "asynchronousbase", "loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "asynchronousbase", "loopcharacteristics", "activity" ]
 	},
 	{
 		"type": "node",
@@ -1326,7 +1328,7 @@
 			"include": false,
 			"optional": false
 		}],
-		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics", "activity" ]
 	},
 	{
 		"type": "node",
@@ -1440,7 +1442,7 @@
 			"value": "Send"
 			}
 		],
-		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics" ]
+		"propertyPackages": ["elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics", "activity" ]
 	},
 	{
 		"type": "node",
