@@ -512,11 +512,11 @@
     },
     {
         "msgid": "composite.exclusion_list",
-        "msgstr": "Aussschlu\u00DFliste"
+        "msgstr": "Exclusion list"
     },
     {
         "msgid": "composite.quality.start_dupcheck",
-        "msgstr": "Start Quality Check"
+        "msgstr": "Start quality check"
     },
     {
         "msgid": "composite.select_dialog.cancel",
@@ -557,58 +557,6 @@
     {
         "msgid": "data.auftrag",
         "msgstr": "order"
-    },
-    {
-        "msgid": "data.buchungen.bisdatum",
-        "msgstr": "up to Date"
-    },
-    {
-        "msgid": "data.buchungen.fahrer",
-        "msgstr": "driver"
-    },
-    {
-        "msgid": "data.buchungen.fahrzeuge",
-        "msgstr": "vehicle"
-    },
-    {
-        "msgid": "data.buchungen",
-        "msgstr": "Vehicle / driver assignments"
-    },
-    {
-        "msgid": "data.buchungen.id",
-        "msgstr": "data.buchungen.id"
-    },
-    {
-        "msgid": "data.buchungen._team_list",
-        "msgstr": "data.buchungen._team_list"
-    },
-    {
-        "msgid": "data.buchungen.vondatum",
-        "msgstr": "date"
-    },
-    {
-        "msgid": "data.buchungsvoraussetzungen.beschreibung",
-        "msgstr": "description"
-    },
-    {
-        "msgid": "data.buchungsvoraussetzungen",
-        "msgstr": "booking conditions"
-    },
-    {
-        "msgid": "data.buchungsvoraussetzungen.fahrer_list",
-        "msgstr": "driver"
-    },
-    {
-        "msgid": "data.buchungsvoraussetzungen.fahrzeuge_list",
-        "msgstr": "rolling stock"
-    },
-    {
-        "msgid": "data.buchungsvoraussetzungen.schluessel",
-        "msgstr": "key"
-    },
-    {
-        "msgid": "data.buchungsvoraussetzungen._team_list",
-        "msgstr": "data.buchungsvoraussetzungen._team_list"
     },
     {
         "msgid": "data.communication",
@@ -719,156 +667,12 @@
         "msgstr": "Workflows in Aktionmenu"
     },
     {
-        "msgid": "data.fahrer.buchungen_list",
-        "msgstr": "bookings"
+        "msgid": "data.enumfield.description",
+        "msgstr": "Description"
     },
     {
-        "msgid": "data.fahrer.buchungsvoraussetzungen_list",
-        "msgstr": "booking conditions"
-    },
-    {
-        "msgid": "data.fahrer.email",
-        "msgstr": "eMail"
-    },
-    {
-        "msgid": "data.fahrer",
-        "msgstr": "driver"
-    },
-    {
-        "msgid": "data.fahrer.fieldset.set1",
-        "msgstr": "First / last name"
-    },
-    {
-        "msgid": "data.fahrer.firma",
-        "msgstr": "company"
-    },
-    {
-        "msgid": "data.fahrer.geburtsdatum",
-        "msgstr": "date of birth"
-    },
-    {
-        "msgid": "data.fahrer.geschlecht",
-        "msgstr": "sex"
-    },
-    {
-        "msgid": "data.fahrer.name",
-        "msgstr": "name"
-    },
-    {
-        "msgid": "data.fahrer.tab1",
-        "msgstr": "data"
-    },
-    {
-        "msgid": "data.fahrer.tab2",
-        "msgstr": "Teams"
-    },
-    {
-        "msgid": "data.fahrer._team_list",
-        "msgstr": "Teams"
-    },
-    {
-        "msgid": "data.fahrer.telefonnummer",
-        "msgstr": "Tel ."
-    },
-    {
-        "msgid": "data.fahrer.vorname",
-        "msgstr": "first name"
-    },
-    {
-        "msgid": "data.fahrzeuge.absenkung",
-        "msgstr": "reduction"
-    },
-    {
-        "msgid": "data.fahrzeuge.anhaengerkupplung",
-        "msgstr": "Towbar"
-    },
-    {
-        "msgid": "data.fahrzeuge.auffahrrampe",
-        "msgstr": "ramp"
-    },
-    {
-        "msgid": "data.fahrzeuge.erstzulassung",
-        "msgstr": "first registration"
-    },
-    {
-        "msgid": "data.fahrzeuge.fahrgastplaetze",
-        "msgstr": "passenger seats"
-    },
-    {
-        "msgid": "data.fahrzeuge.fahrgestellnummer",
-        "msgstr": "VIN"
-    },
-    {
-        "msgid": "data.fahrzeuge",
-        "msgstr": "rolling stock"
-    },
-    {
-        "msgid": "data.fahrzeuge.fahrzeugtyp",
-        "msgstr": "vehicle type"
-    },
-    {
-        "msgid": "data.fahrzeuge.farbe",
-        "msgstr": "vehicle color"
-    },
-    {
-        "msgid": "data.fahrzeuge.fieldset.set1",
-        "msgstr": "data.fahrzeuge.fieldset.set1"
-    },
-    {
-        "msgid": "data.fahrzeuge.hersteller",
-        "msgstr": "manufacturer"
-    },
-    {
-        "msgid": "data.fahrzeuge.kennzeichen",
-        "msgstr": "flag"
-    },
-    {
-        "msgid": "data.fahrzeuge.klimaanlage",
-        "msgstr": "air conditioning"
-    },
-    {
-        "msgid": "data.fahrzeuge.leistung",
-        "msgstr": "Power in kW"
-    },
-    {
-        "msgid": "data.fahrzeuge.modell",
-        "msgstr": "model"
-    },
-    {
-        "msgid": "data.fahrzeuge.palettenplaetze",
-        "msgstr": "pallets"
-    },
-    {
-        "msgid": "data.fahrzeuge.rollstuhlplaetze",
-        "msgstr": "wheelchair spaces"
-    },
-    {
-        "msgid": "data.fahrzeuge.schneeketten",
-        "msgstr": "Snow chains"
-    },
-    {
-        "msgid": "data.fahrzeuge.sitzheizung",
-        "msgstr": "Heated seats"
-    },
-    {
-        "msgid": "data.fahrzeuge.stablebeladung",
-        "msgstr": "Stablerbeladung"
-    },
-    {
-        "msgid": "data.fahrzeuge.standheizung",
-        "msgstr": "heater"
-    },
-    {
-        "msgid": "data.fahrzeuge._team_list",
-        "msgstr": "data.fahrzeuge._team_list"
-    },
-    {
-        "msgid": "data.fahrzeuge.treibstoff",
-        "msgstr": "fuel"
-    },
-    {
-        "msgid": "data.fahrzeuge.zuordnung",
-        "msgstr": "assignment"
+        "msgid": "data.enumfield.fieldname",
+        "msgstr": "Name"
     },
     {
         "msgid": "data.field.constraints",
@@ -963,44 +767,12 @@
         "msgstr": "plausibility"
     },
     {
-        "msgid": "data.firma.email",
-        "msgstr": "eMail"
-    },
-    {
-        "msgid": "data.firma.faxnummer",
-        "msgstr": "fax"
-    },
-    {
-        "msgid": "data.firma.firma",
-        "msgstr": "company"
-    },
-    {
-        "msgid": "data.firma",
-        "msgstr": "Company"
-    },
-    {
-        "msgid": "data.firma.ort",
-        "msgstr": "place"
-    },
-    {
-        "msgid": "data.firma.plz",
-        "msgstr": "zip code"
-    },
-    {
-        "msgid": "data.firma.strasse",
-        "msgstr": "road"
-    },
-    {
-        "msgid": "data.firma.tab1",
-        "msgstr": "data.firma.tab1"
-    },
-    {
-        "msgid": "data.firma._team_list",
-        "msgstr": "data.firma._team_list"
-    },
-    {
         "msgid": "data.form.save",
         "msgstr": "save"
+    },
+    {
+        "msgid": "data.form.saved",
+        "msgstr": "Form saved"
     },
     {
         "msgid": "data.form.select",
@@ -1140,19 +912,19 @@
     },
     {
         "msgid": "data.taction.active",
-        "msgstr": "active"
+        "msgstr": "Active"
     },
     {
         "msgid": "data.taction",
-        "msgstr": "data.taction"
+        "msgstr": "Action"
     },
     {
         "msgid": "data.taction.description",
-        "msgstr": "description"
+        "msgstr": "Description"
     },
     {
         "msgid": "data.taction.tab1",
-        "msgstr": "data.taction.tab1"
+        "msgstr": "Tab1"
     },
     {
         "msgid": "data.taction.value",
@@ -1160,23 +932,23 @@
     },
     {
         "msgid": "data.tcondition.active",
-        "msgstr": "active"
+        "msgstr": "Active"
     },
     {
         "msgid": "data.tcondition",
-        "msgstr": "data.tcondition"
+        "msgstr": "Condition"
     },
     {
         "msgid": "data.tcondition.description",
-        "msgstr": "description"
+        "msgstr": "Description"
     },
     {
         "msgid": "data.tcondition.tab1",
-        "msgstr": "description"
+        "msgstr": "Description"
     },
     {
         "msgid": "data.tcondition.tab2",
-        "msgstr": "conditions"
+        "msgstr": "Conditions"
     },
     {
         "msgid": "data.tcondition.value",
@@ -1405,18 +1177,6 @@
     {
         "msgid": "export.export_button",
         "msgstr": "export"
-    },
-    {
-        "msgid": "fahrer-1",
-        "msgstr": "driver - 1"
-    },
-    {
-        "msgid": "fahrer.name",
-        "msgstr": "fahrer.name"
-    },
-    {
-        "msgid": "fahrer.vorname",
-        "msgstr": "fahrer.vorname"
     },
     {
         "msgid": "fieldselector.removeall",
@@ -1699,20 +1459,36 @@
         "msgstr": "threshold"
     },
     {
+        "msgid": "meta.enumdata.invalid",
+        "msgstr": "Invalid"
+    },
+    {
+        "msgid": "meta.enumdata.invalid_from",
+        "msgstr": "Invalid from"
+    },
+    {
+        "msgid": "meta.enums.data",
+        "msgstr": "Data"
+    },
+    {
+        "msgid": "meta.enums.fields",
+        "msgstr": "Fields"
+    },
+    {
         "msgid": "meta.fieldset.description",
-        "msgstr": "description"
+        "msgstr": "Description"
     },
     {
         "msgid": "meta.fieldset.fields",
-        "msgstr": "fields"
+        "msgstr": "Fields"
     },
     {
         "msgid": "meta.fieldset.fsname",
-        "msgstr": "fieldset name"
+        "msgstr": "Fieldset name"
     },
     {
         "msgid": "meta.fieldset.search_options",
-        "msgstr": "search options"
+        "msgstr": "Search options"
     },
     {
         "msgid": "meta.lists.bn",
@@ -1744,7 +1520,7 @@
     },
     {
         "msgid": "meta.lists.fieldtab",
-        "msgstr": "fields"
+        "msgstr": "Fields"
     },
     {
         "msgid": "meta.lists.filter_name",
@@ -1756,11 +1532,11 @@
     },
     {
         "msgid": "meta.lists.fs.column",
-        "msgstr": "column"
+        "msgstr": "Column"
     },
     {
         "msgid": "meta.lists.fs.display",
-        "msgstr": "display"
+        "msgstr": "Display"
     },
     {
         "msgid": "meta.lists.fs.down",
@@ -1768,7 +1544,7 @@
     },
     {
         "msgid": "meta.lists.fs.mapping",
-        "msgstr": "mapping"
+        "msgstr": "Mapping"
     },
     {
         "msgid": "meta.lists.fs.save",
@@ -1828,7 +1604,7 @@
     },
     {
         "msgid": "meta.lists.resulttab",
-        "msgstr": "result"
+        "msgstr": "Result"
     },
     {
         "msgid": "meta.lists.savebutton",
@@ -2472,11 +2248,11 @@
     },
     {
         "msgid": "settings.entities",
-        "msgstr": "classes"
+        "msgstr": "Classes"
     },
     {
         "msgid": "settings.fieldset.save",
-        "msgstr": "fieldset save"
+        "msgstr": "Fieldset save"
     },
     {
         "msgid": "settings.fieldsets",
@@ -2500,7 +2276,7 @@
     },
     {
         "msgid": "settings.name",
-        "msgstr": "field Name"
+        "msgstr": "Fieldname"
     },
     {
         "msgid": "settings.properties",
@@ -2512,7 +2288,7 @@
     },
     {
         "msgid": "settings.tab",
-        "msgstr": "tab"
+        "msgstr": "Tab"
     },
     {
         "msgid": "settings.threshold",
@@ -2524,7 +2300,7 @@
     },
     {
         "msgid": "settings.views.propertyedit.formlayout",
-        "msgstr": "masks layout"
+        "msgstr": "Form layout"
     },
     {
         "msgid": "settings.views",
@@ -2544,7 +2320,7 @@
     },
     {
         "msgid": "shell.file_created",
-        "msgstr": "created file"
+        "msgstr": "created File"
     },
     {
         "msgid": "shell.file_name",
@@ -2792,7 +2568,7 @@
     },
     {
         "msgid": "util.resources",
-        "msgstr": "resources"
+        "msgstr": "Resources"
     },
     {
         "msgid": "Vertikal ausrichten",
