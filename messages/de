@@ -2432,7 +2432,7 @@
     },
     {
         "msgid": "entitytypes.new_fast_entitytype_create",
-        "msgstr": "Neue Klasse(Fast)"
+        "msgstr": "Neue Klasse(Quickmodus)"
     },
     {
         "msgid": "entitytypes.new_entitytype_wizard_form",
@@ -3172,7 +3172,7 @@
     },
     {
         "msgid": "export.csv.order_first_n_field",
-        "msgstr": "Sortiere die ersten N-Eigenschaften"
+        "msgstr": "Sortiere die ersten N-Spalten"
     },
     {
         "msgid": "meta.enumdata.sort",

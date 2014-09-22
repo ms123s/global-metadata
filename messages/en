@@ -8,11 +8,11 @@
     },
     {
         "msgid": "baseeditor.edit_redo",
-        "msgstr": "restore"
+        "msgstr": "Restore"
     },
     {
         "msgid": "baseeditor.edit_undo",
-        "msgstr": "undo"
+        "msgstr": "Undo"
     },
     {
         "msgid": "Basic Colors",
@@ -532,7 +532,7 @@
     },
     {
         "msgid": "data.activity",
-        "msgstr": "activity"
+        "msgstr": "Activity"
     },
     {
         "msgid": "data.address",
@@ -548,15 +548,15 @@
     },
     {
         "msgid": "data.anfrage",
-        "msgstr": "inquiry"
+        "msgstr": "Inquiry"
     },
     {
         "msgid": "data.artikel",
-        "msgstr": "article"
+        "msgstr": "Article"
     },
     {
         "msgid": "data.auftrag",
-        "msgstr": "order"
+        "msgstr": "Order"
     },
     {
         "msgid": "data.communication",
@@ -564,11 +564,11 @@
     },
     {
         "msgid": "data.company",
-        "msgstr": "company"
+        "msgstr": "Company"
     },
     {
         "msgid": "data.contact",
-        "msgstr": "contact"
+        "msgstr": "Contact"
     },
     {
         "msgid": "data._created_at",
@@ -580,11 +580,11 @@
     },
     {
         "msgid": "data.dupcheck.tab1",
-        "msgstr": "settings"
+        "msgstr": "Settings"
     },
     {
         "msgid": "data.dupcheck.tab2",
-        "msgstr": "fields"
+        "msgstr": "Fields"
     },
     {
         "msgid": "data.employee",
@@ -604,19 +604,19 @@
     },
     {
         "msgid": "data.entity.enabled",
-        "msgstr": "class enabled"
+        "msgstr": "Class enabled"
     },
     {
         "msgid": "data.entity.exclusion_list",
-        "msgstr": "exclusion list"
+        "msgstr": "Exclusion list"
     },
     {
         "msgid": "data.entity.multi_add",
-        "msgstr": "series production"
+        "msgstr": "Series production"
     },
     {
         "msgid": "data.entity.multiple_tabs",
-        "msgstr": "combine filters"
+        "msgstr": "Combine filters"
     },
     {
         "msgid": "data.entity.name",
@@ -636,7 +636,7 @@
     },
     {
         "msgid": "data.entity.sidebar",
-        "msgstr": "sidebar"
+        "msgstr": "Sidebar"
     },
     {
         "msgid": "data.entity.state_fields",
@@ -648,11 +648,11 @@
     },
     {
         "msgid": "data.entity.tab1",
-        "msgstr": "data.entity.tab1"
+        "msgstr": "Tab1"
     },
     {
         "msgid": "data.entity.team_security",
-        "msgstr": "team management"
+        "msgstr": "Team management"
     },
     {
         "msgid": "data.entity.teams_in_subpanel",
@@ -676,11 +676,11 @@
     },
     {
         "msgid": "data.field.constraints",
-        "msgstr": "plausibility"
+        "msgstr": "Plausibility"
     },
     {
         "msgid": "data.field.datatype",
-        "msgstr": "data type"
+        "msgstr": "Data type"
     },
     {
         "msgid": "data.field.default_value",
@@ -688,7 +688,7 @@
     },
     {
         "msgid": "data.field.description",
-        "msgstr": "description"
+        "msgstr": "Description"
     },
     {
         "msgid": "data.field.editoptions_cols",
@@ -704,7 +704,7 @@
     },
     {
         "msgid": "data.field.enabled",
-        "msgstr": "used"
+        "msgstr": "Used"
     },
     {
         "msgid": "data.field.form_enabled_expr",
@@ -724,11 +724,11 @@
     },
     {
         "msgid": "data.field.name",
-        "msgstr": "name"
+        "msgstr": "Name"
     },
     {
         "msgid": "data.field.primary_key",
-        "msgstr": "primary key"
+        "msgstr": "Primary key"
     },
     {
         "msgid": "data.field.searchable_items",
@@ -736,31 +736,31 @@
     },
     {
         "msgid": "data.field.search_options",
-        "msgstr": "search options"
+        "msgstr": "Search options"
     },
     {
         "msgid": "data.field.selectable_items",
-        "msgstr": "enumeration"
+        "msgstr": "Enumeration"
     },
     {
         "msgid": "data.fieldset.tab1",
-        "msgstr": "description"
+        "msgstr": "Description"
     },
     {
         "msgid": "data.fieldset.tab2",
-        "msgstr": "fields"
+        "msgstr": "Fields"
     },
     {
         "msgid": "data.fieldset.tab3",
-        "msgstr": "operators"
+        "msgstr": "Operators"
     },
     {
         "msgid": "data.field.tab1",
-        "msgstr": "primarily"
+        "msgstr": "Primarily"
     },
     {
         "msgid": "data.field.tab2",
-        "msgstr": "scripts"
+        "msgstr": "Scripts"
     },
     {
         "msgid": "data.field.tab3",
@@ -768,7 +768,7 @@
     },
     {
         "msgid": "data.form.save",
-        "msgstr": "save"
+        "msgstr": "Save"
     },
     {
         "msgid": "data.form.saved",
@@ -776,15 +776,15 @@
     },
     {
         "msgid": "data.form.select",
-        "msgstr": "select"
+        "msgstr": "Select"
     },
     {
         "msgid": "data.kunde",
-        "msgstr": "customer"
+        "msgstr": "Customer"
     },
     {
         "msgid": "datamapper.add",
-        "msgstr": "new"
+        "msgstr": "New"
     },
     {
         "msgid": "datamapper.children_fields",
@@ -804,19 +804,19 @@
     },
     {
         "msgid": "datamapper.down",
-        "msgstr": "down"
+        "msgstr": "Down"
     },
     {
         "msgid": "datamapper.edit",
-        "msgstr": "editing"
+        "msgstr": "Editing"
     },
     {
         "msgid": "datamapper.edit_fields",
-        "msgstr": "mapping fields"
+        "msgstr": "Mapping fields"
     },
     {
         "msgid": "datamapper.element_mapping",
-        "msgstr": "structure mapping"
+        "msgstr": "Structure mapping"
     },
     {
         "msgid": "datamapper.entitytypes_create",
@@ -824,7 +824,7 @@
     },
     {
         "msgid": "datamapper.execute",
-        "msgstr": "import data"
+        "msgstr": "Import data"
     },
     {
         "msgid": "datamapper.execute_preview",
@@ -836,7 +836,7 @@
     },
     {
         "msgid": "datamapper.input",
-        "msgstr": "entrance"
+        "msgstr": "Input"
     },
     {
         "msgid": "datamapper.load_import_file",
@@ -848,7 +848,7 @@
     },
     {
         "msgid": "datamapper.name",
-        "msgstr": "name"
+        "msgstr": "Name"
     },
     {
         "msgid": "datamapper.output",
@@ -856,11 +856,11 @@
     },
     {
         "msgid": "datamapper.remove",
-        "msgstr": "remove"
+        "msgstr": "Remove"
     },
     {
         "msgid": "datamapper.save",
-        "msgstr": "save"
+        "msgstr": "Save"
     },
     {
         "msgid": "datamapper.text",
@@ -868,11 +868,11 @@
     },
     {
         "msgid": "datamapper.type",
-        "msgstr": "type"
+        "msgstr": "Type"
     },
     {
         "msgid": "datamapper.up",
-        "msgstr": "up"
+        "msgstr": "Up"
     },
     {
         "msgid": "datamapper.user_defined",
@@ -884,11 +884,11 @@
     },
     {
         "msgid": "datamapper.viewswitch_editor",
-        "msgstr": "editor"
+        "msgstr": "Editor"
     },
     {
         "msgid": "datamapper.viewswitch_import",
-        "msgstr": "import"
+        "msgstr": "Import"
     },
     {
         "msgid": "datamapper.viewswitch_preview",
@@ -928,7 +928,7 @@
     },
     {
         "msgid": "data.taction.value",
-        "msgstr": "value"
+        "msgstr": "Value"
     },
     {
         "msgid": "data.tcondition.active",
@@ -956,7 +956,7 @@
     },
     {
         "msgid": "data.team.disabled",
-        "msgstr": "disabled"
+        "msgstr": "Disabled"
     },
     {
         "msgid": "data._team_list",
@@ -964,11 +964,11 @@
     },
     {
         "msgid": "data._team",
-        "msgstr": "team"
+        "msgstr": "Team"
     },
     {
         "msgid": "data.team.validFrom",
-        "msgstr": "valid from"
+        "msgstr": "Valid from"
     },
     {
         "msgid": "data.team.validTo",
@@ -976,79 +976,79 @@
     },
     {
         "msgid": "data.trigger.active",
-        "msgstr": "active"
+        "msgstr": "Active"
     },
     {
         "msgid": "data.trigger.applies_to",
-        "msgstr": "applied to"
+        "msgstr": "Applied to"
     },
     {
         "msgid": "data.trigger.description",
-        "msgstr": "description"
+        "msgstr": "Description"
     },
     {
         "msgid": "data.trigger.execution_occurs",
-        "msgstr": "executed if"
+        "msgstr": "Executed if"
     },
     {
         "msgid": "data.trigger.processing_order",
-        "msgstr": "order"
+        "msgstr": "Order"
     },
     {
         "msgid": "data.trigger.tab1",
-        "msgstr": "data.trigger.tab1"
+        "msgstr": "Tab1"
     },
     {
         "msgid": "data.trigger.targetmodule",
-        "msgstr": "target entity"
+        "msgstr": "Target entity"
     },
     {
         "msgid": "data.trigger.trigger_id",
-        "msgstr": "id"
+        "msgstr": "Id"
     },
     {
         "msgid": "data._updated_at",
-        "msgstr": "modified on"
+        "msgstr": "Modified on"
     },
     {
         "msgid": "data._updated_by",
-        "msgstr": "modified by"
+        "msgstr": "Modified by"
     },
     {
         "msgid": "data.user.admin",
-        "msgstr": "administrator rights"
+        "msgstr": "Administrator rights"
     },
     {
         "msgid": "data.user.email",
-        "msgstr": "eMail"
+        "msgstr": "EMail"
     },
     {
         "msgid": "data.user.givenname",
-        "msgstr": "first name"
+        "msgstr": "First name"
     },
     {
         "msgid": "data.user.password",
-        "msgstr": "password"
+        "msgstr": "Password"
     },
     {
         "msgid": "data.user.roles",
-        "msgstr": "data.user.roles"
+        "msgstr": "Roles"
     },
     {
         "msgid": "data.user.surname",
-        "msgstr": "name"
+        "msgstr": "Name"
     },
     {
         "msgid": "data.user.tab1",
-        "msgstr": "user data"
+        "msgstr": "Data"
     },
     {
         "msgid": "data.user.tab2",
-        "msgstr": "rights"
+        "msgstr": "Rights"
     },
     {
         "msgid": "data.user.tab3",
-        "msgstr": "roll"
+        "msgstr": "Roles"
     },
     {
         "msgid": "data.user.team_manage",
@@ -1076,7 +1076,7 @@
     },
     {
         "msgid": "entitytypes.create_messages",
-        "msgstr": "generate messages"
+        "msgstr": "Generate messages"
     },
     {
         "msgid": "entitytypes.create_search_settings",
@@ -1091,8 +1091,68 @@
         "msgstr": "Data Description"
     },
     {
+        "msgid": "entitytypes.databasescheme_clean.confirm",
+        "msgstr": "Delete the scheme? <b>You lost all data!</b>"
+    },
+    {
+        "msgid": "entitytypes.databasescheme_clean.klass_confirm",
+        "msgstr": "Delete the scheme for selected classes? <b>Yout lost all data for this class!</b>"
+    },
+    {
+        "msgid": "entitytypes.databasescheme_clean",
+        "msgstr": "Delete the databasescheme complete"
+    },
+    {
+        "msgid": "entitytypes.databasescheme_table_clean",
+        "msgstr": "Delete databasescheme for selected classes"
+    },
+    {
+        "msgid": "entitytypes.leftmodule",
+        "msgstr": "Primary class"
+    },
+    {
+        "msgid": "entitytypes.leftfield",
+        "msgstr": "Field in primary class"
+    },
+    {
+        "msgid": "entitytypes.rightmodule",
+        "msgstr": "Secondary class"
+    },
+    {
+        "msgid": "entitytypes.rightfield",
+        "msgstr": "Field in secondary class"
+    },
+    {
+        "msgid": "entitytypes.relation",
+        "msgstr": "Relation"
+    },
+    {
+        "msgid": "entitytypes.dependent",
+        "msgstr": "Dependent"
+    },
+    {
+        "msgid": "relations.one-to-many-bi",
+        "msgstr": "One-to-Many-Bi: Primary class has an subpanel from the secondary class. The secondary have a reference to the primary"
+    },
+    {
+        "msgid": "relations.one-to-many",
+        "msgstr": "One-to-Many: Primary class has an subpanel from the secondary class ."
+    },
+    {
+        "msgid": "relations.one-to-many-map",
+        "msgstr": "One-to-Many(Map): Primary class has an subpanel from the secondary class ."
+    },
+    {
+        "msgid": "relations.one-to-one-bi",
+        "msgstr": "One-to-One-Bi: Both classes have a reference to the respective other class."
+    },
+    {
+        "msgid": "relations.one-to-one",
+        "msgstr": "One-to-One: Primary class have an reference from the secondary class."
+    },
+    {
         "msgid": "entitytypes.delete",
-        "msgstr": "delete"
+        "msgstr": "Delete"
     },
     {
         "msgid": "entitytypes.edit_entitytype",
@@ -1100,31 +1160,31 @@
     },
     {
         "msgid": "entitytypes.entitytypes",
-        "msgstr": "classes"
+        "msgstr": "Classes"
     },
     {
         "msgid": "entitytypes.generate_class",
-        "msgstr": "generate class"
+        "msgstr": "Generate classes"
     },
     {
         "msgid": "entitytypes.new_entitytype",
-        "msgstr": "new Class"
+        "msgstr": "New Class"
     },
     {
         "msgid": "entitytypes.new_fast_entitytype_create",
-        "msgstr": "New Class ( Almost )"
+        "msgstr": "New Class (Quickmode)"
     },
     {
         "msgid": "entitytypes.new_field",
-        "msgstr": "new Field"
+        "msgstr": "New Field"
     },
     {
         "msgid": "entitytypes.relations",
-        "msgstr": "relations"
+        "msgstr": "Relations"
     },
     {
         "msgid": "entitytypes.update_db",
-        "msgstr": "customize database"
+        "msgstr": "Update database"
     },
     {
         "msgid": "enumerations.enumeration_dir",
@@ -1132,19 +1192,19 @@
     },
     {
         "msgid": "enumerations.new_enum",
-        "msgstr": "new enumeration"
+        "msgstr": "New Enumeration"
     },
     {
         "msgid": "export.close_button",
-        "msgstr": "close"
+        "msgstr": "Close"
     },
     {
         "msgid": "export.csv.always_quote",
-        "msgstr": "Always use odd characters"
+        "msgstr": "Always use quotes"
     },
     {
         "msgid": "export.csv.col_delimeter",
-        "msgstr": "column separator"
+        "msgstr": "Column separator"
     },
     {
         "msgid": "export.csv.excel_compatible",
@@ -1164,7 +1224,7 @@
     },
     {
         "msgid": "export.csv.order_first_n_field",
-        "msgstr": "Sort the first N - properties"
+        "msgstr": "Sort the first n-columns"
     },
     {
         "msgid": "export.csv.quote",
@@ -1172,11 +1232,11 @@
     },
     {
         "msgid": "export.csv.row_delimeter",
-        "msgstr": "newline"
+        "msgstr": "Newline"
     },
     {
         "msgid": "export.export_button",
-        "msgstr": "export"
+        "msgstr": "Export"
     },
     {
         "msgid": "fieldselector.removeall",
@@ -1236,7 +1296,7 @@
     },
     {
         "msgid": "filter.text.new_condition",
-        "msgstr": "new Condition"
+        "msgstr": "New Condition"
     },
     {
         "msgid": "filter.text.new_exists_subselect",
@@ -1244,11 +1304,11 @@
     },
     {
         "msgid": "filter.text.new_search",
-        "msgstr": "new Search"
+        "msgstr": "New Search"
     },
     {
         "msgid": "filter.text.new_win",
-        "msgstr": "new Window"
+        "msgstr": "New Window"
     },
     {
         "msgid": "filter.text.not_help",
@@ -1272,19 +1332,19 @@
     },
     {
         "msgid": "graphicaleditor.add_record",
-        "msgstr": "graphicaleditor.add_record"
+        "msgstr": "Add record"
     },
     {
         "msgid": "graphicaleditor.delete_record",
-        "msgstr": "graphicaleditor.delete_record"
+        "msgstr": "Delete record"
     },
     {
         "msgid": "graphicaleditor.plugins.save.formtest",
-        "msgstr": "graphicaleditor.plugins.save.formtest"
+        "msgstr": "Formtest"
     },
     {
         "msgid": "Groovy/Bean",
-        "msgstr": "Groovy / Bean"
+        "msgstr": "Groovy/Bean"
     },
     {
         "msgid": "Groovy",
@@ -1300,11 +1360,11 @@
     },
     {
         "msgid": "importing.deleteImport",
-        "msgstr": "delete"
+        "msgstr": "Delete"
     },
     {
         "msgid": "importing.fileType",
-        "msgstr": "importing.fileType"
+        "msgstr": "Filetype"
     },
     {
         "msgid": "importing.importingCreated",
@@ -1316,19 +1376,19 @@
     },
     {
         "msgid": "importing.mainEntity",
-        "msgstr": "importing.mainEntity"
+        "msgstr": "Mainclass"
     },
     {
         "msgid": "importing.newImport",
-        "msgstr": "new Import"
+        "msgstr": "New Import"
     },
     {
         "msgid": "Importing.title",
-        "msgstr": "imports"
+        "msgstr": "Imports"
     },
     {
         "msgid": "import.select_button",
-        "msgstr": "search"
+        "msgstr": "Search"
     },
     {
         "msgid": "import.select_file",
@@ -1392,11 +1452,11 @@
     },
     {
         "msgid": "MAP(k,v)",
-        "msgstr": "MAP (k , v)"
+        "msgstr": "MAP(k,v)"
     },
     {
         "msgid": "messages.filter",
-        "msgstr": "Filter ( incremental)"
+        "msgstr": "Filter (incremental)"
     },
     {
         "msgid": "messages.messages_dir",
@@ -1412,11 +1472,11 @@
     },
     {
         "msgid": "messages.new_messageslang",
-        "msgstr": "new Language"
+        "msgstr": "New Language"
     },
     {
         "msgid": "messages.takeover",
-        "msgstr": "Takeover ( then still save)"
+        "msgstr": "Takeover (then still save)"
     },
     {
         "msgid": "messages.title",
@@ -1424,11 +1484,11 @@
     },
     {
         "msgid": "meta.constraint.annotation",
-        "msgstr": "plausibility"
+        "msgstr": "Plausibility"
     },
     {
         "msgid": "meta.constraint.message",
-        "msgstr": "message"
+        "msgstr": "Message"
     },
     {
         "msgid": "meta.constraint.parameter1",
@@ -1436,11 +1496,11 @@
     },
     {
         "msgid": "meta.constraint.parameter2",
-        "msgstr": "parameter2"
+        "msgstr": "Parameter2"
     },
     {
         "msgid": "meta.dupcheck.description",
-        "msgstr": "description"
+        "msgstr": "Description"
     },
     {
         "msgid": "meta.dupcheck.expression",
@@ -1448,15 +1508,15 @@
     },
     {
         "msgid": "meta.dupcheck.fields",
-        "msgstr": "meta.dupcheck.fields"
+        "msgstr": "Fields"
     },
     {
         "msgid": "meta.dupcheck.innerThreshold",
-        "msgstr": "internal threshold"
+        "msgstr": "Internal threshold"
     },
     {
         "msgid": "meta.dupcheck.threshold",
-        "msgstr": "threshold"
+        "msgstr": "Threshold"
     },
     {
         "msgid": "meta.enumdata.invalid",
@@ -1540,7 +1600,7 @@
     },
     {
         "msgid": "meta.lists.fs.down",
-        "msgstr": "down"
+        "msgstr": "Down"
     },
     {
         "msgid": "meta.lists.fs.mapping",
@@ -1548,11 +1608,11 @@
     },
     {
         "msgid": "meta.lists.fs.save",
-        "msgstr": "save"
+        "msgstr": "Save"
     },
     {
         "msgid": "meta.lists.fs.up",
-        "msgstr": "up"
+        "msgstr": "Up"
     },
     {
         "msgid": "meta.lists.ge",
@@ -1588,11 +1648,11 @@
     },
     {
         "msgid": "meta.lists.new_filter",
-        "msgstr": "new filter"
+        "msgstr": "New filter"
     },
     {
         "msgid": "meta.lists.new_list",
-        "msgstr": "new list"
+        "msgstr": "New list"
     },
     {
         "msgid": "meta.lists.ni",
@@ -1608,11 +1668,11 @@
     },
     {
         "msgid": "meta.lists.savebutton",
-        "msgstr": "save"
+        "msgstr": "Save"
     },
     {
         "msgid": "meta.lists.takeit",
-        "msgstr": "take"
+        "msgstr": "Take"
     },
     {
         "msgid": "meta.lists.team_changed",
@@ -1624,7 +1684,7 @@
     },
     {
         "msgid": "meta.lists.windowtitle",
-        "msgstr": "filter rules"
+        "msgstr": "Filter rules"
     },
     {
         "msgid": "meta.teams.add_member",
@@ -1644,11 +1704,11 @@
     },
     {
         "msgid": "meta.teams.create_team2",
-        "msgstr": "description"
+        "msgstr": "Description"
     },
     {
         "msgid": "meta.teams.delete_member",
-        "msgstr": "delete Member"
+        "msgstr": "Delete Member"
     },
     {
         "msgid": "meta.teams.delete_team",
@@ -1676,7 +1736,7 @@
     },
     {
         "msgid": "meta.teams.name",
-        "msgstr": "name"
+        "msgstr": "Name"
     },
     {
         "msgid": "meta.teams.root.title",
@@ -1684,7 +1744,7 @@
     },
     {
         "msgid": "meta.teams.save_team",
-        "msgstr": "save Team"
+        "msgstr": "Save Team"
     },
     {
         "msgid": "meta.teams.select_user",
@@ -1692,7 +1752,7 @@
     },
     {
         "msgid": "meta.teams.teamid",
-        "msgstr": "teamid"
+        "msgstr": "Teamid"
     },
     {
         "msgid": "meta.teams.team_saved",
@@ -1736,11 +1796,11 @@
     },
     {
         "msgid": "meta.triggers.new-and-updated-records",
-        "msgstr": "new and updated records"
+        "msgstr": "New and updated records"
     },
     {
         "msgid": "meta.triggers.new-records",
-        "msgstr": "new records"
+        "msgstr": "New records"
     },
     {
         "msgid": "meta.triggers.processes-actions-alerts",
@@ -1756,11 +1816,11 @@
     },
     {
         "msgid": "meta.triggers.tconditions",
-        "msgstr": "conditions"
+        "msgstr": "Conditions"
     },
     {
         "msgid": "meta.triggers.updated-records",
-        "msgstr": "updated records"
+        "msgstr": "Updated records"
     },
     {
         "msgid": "meta.triggers.when-record-saved",
@@ -1768,7 +1828,7 @@
     },
     {
         "msgid": "moduleeditor.duplicate-check",
-        "msgstr": "duplicate check"
+        "msgstr": "Duplicate check"
     },
     {
         "msgid": "moduleeditor.export",
@@ -1864,15 +1924,15 @@
     },
     {
         "msgid": "multiusebox.remove",
-        "msgstr": "remove elements"
+        "msgstr": "Remove elements"
     },
     {
         "msgid": "multiusebox.replace",
-        "msgstr": "replace elements"
+        "msgstr": "Replace elements"
     },
     {
         "msgid": "namespacesmanager.add",
-        "msgstr": "new App"
+        "msgstr": "New App"
     },
     {
         "msgid": "namespacesmanager.create_namespace",
@@ -1880,7 +1940,7 @@
     },
     {
         "msgid": "namespacesmanager.del",
-        "msgstr": "remove App"
+        "msgstr": "Remove App"
     },
     {
         "msgid": "namespacesmanager.install",
@@ -1896,15 +1956,15 @@
     },
     {
         "msgid": "namespacesmanager.name",
-        "msgstr": "name"
+        "msgstr": "Name"
     },
     {
         "msgid": "namespacesmanager.namespace_name",
-        "msgstr": "application Name"
+        "msgstr": "Application Name"
     },
     {
         "msgid": "namespacesmanager.pull",
-        "msgstr": "update App"
+        "msgstr": "Update App"
     },
     {
         "msgid": "namespacesmanager.push",
@@ -1916,7 +1976,7 @@
     },
     {
         "msgid": "namespacesmanager.title",
-        "msgstr": "application management"
+        "msgstr": "Application management"
     },
     {
         "msgid": "namespacesmanager.uninstall",
@@ -1972,7 +2032,7 @@
     },
     {
         "msgid": "permissions.roles",
-        "msgstr": "roll"
+        "msgstr": "Roles"
     },
     {
         "msgid": "PM",
@@ -1984,19 +2044,19 @@
     },
     {
         "msgid": "processes.startform.started",
-        "msgstr": "started process"
+        "msgstr": "Started process"
     },
     {
         "msgid": "processexplorer.activityName",
-        "msgstr": "activity"
+        "msgstr": "Activity"
     },
     {
         "msgid": "processexplorer.activityType",
-        "msgstr": "type of activity"
+        "msgstr": "Type of activity"
     },
     {
         "msgid": "processexplorer.assignee",
-        "msgstr": "Allocator"
+        "msgstr": "Assignee"
     },
     {
         "msgid": "processexplorer.camel",
@@ -2004,11 +2064,11 @@
     },
     {
         "msgid": "processexplorer.completed",
-        "msgstr": "done"
+        "msgstr": "Done"
     },
     {
         "msgid": "processexplorer.definition.key",
-        "msgstr": "key"
+        "msgstr": "Key"
     },
     {
         "msgid": "processexplorer.definition.onlyLatest",
@@ -2016,11 +2076,11 @@
     },
     {
         "msgid": "processexplorer.definition.start_process",
-        "msgstr": "start Process"
+        "msgstr": "Start Process"
     },
     {
         "msgid": "processexplorer.details_activity",
-        "msgstr": "activities"
+        "msgstr": "Activities"
     },
     {
         "msgid": "processexplorer.details_camel",
@@ -2028,15 +2088,15 @@
     },
     {
         "msgid": "processexplorer.details_info",
-        "msgstr": "information"
+        "msgstr": "Information"
     },
     {
         "msgid": "processexplorer.details_variables",
-        "msgstr": "variables"
+        "msgstr": "Variables"
     },
     {
         "msgid": "processexplorer.duration",
-        "msgstr": "duration"
+        "msgstr": "Duration"
     },
     {
         "msgid": "processexplorer.endTime",
@@ -2048,11 +2108,11 @@
     },
     {
         "msgid": "processexplorer.history.duration",
-        "msgstr": "duration"
+        "msgstr": "Duration"
     },
     {
         "msgid": "processexplorer.history.endtime",
-        "msgstr": "end"
+        "msgstr": "End"
     },
     {
         "msgid": "processexplorer.history.id",
@@ -2060,7 +2120,7 @@
     },
     {
         "msgid": "processexplorer.history.processDefinitionId",
-        "msgstr": "defId"
+        "msgstr": "DefId"
     },
     {
         "msgid": "processexplorer.history.started_from",
@@ -2080,23 +2140,23 @@
     },
     {
         "msgid": "processexplorer.history.state",
-        "msgstr": "process status"
+        "msgstr": "Process status"
     },
     {
         "msgid": "processexplorer.history.status",
-        "msgstr": "status"
+        "msgstr": "Status"
     },
     {
         "msgid": "processexplorer.id",
-        "msgstr": "id"
+        "msgstr": "Id"
     },
     {
         "msgid": "processexplorer.instance_diagram",
-        "msgstr": "instance diagram"
+        "msgstr": "Instance diagram"
     },
     {
         "msgid": "processexplorer.processes",
-        "msgstr": "processes"
+        "msgstr": "Processes"
     },
     {
         "msgid": "processexplorer.startTime",
@@ -2104,19 +2164,19 @@
     },
     {
         "msgid": "processexplorer.time",
-        "msgstr": "time"
+        "msgstr": "Time"
     },
     {
         "msgid": "processexplorer.variableName",
-        "msgstr": "variable name"
+        "msgstr": "Variable name"
     },
     {
         "msgid": "processexplorer.variableType",
-        "msgstr": "variable type"
+        "msgstr": "Variable type"
     },
     {
         "msgid": "processexplorer.variableValue",
-        "msgstr": "variable value"
+        "msgstr": "Variable value"
     },
     {
         "msgid": "Recent Colors",
@@ -2128,15 +2188,15 @@
     },
     {
         "msgid": "ruleseditor.bedingung",
-        "msgstr": "condition"
+        "msgstr": "Condition"
     },
     {
         "msgid": "ruleseditor.cancel",
-        "msgstr": "abort"
+        "msgstr": "Abort"
     },
     {
         "msgid": "ruleseditor.change_column",
-        "msgstr": "change column"
+        "msgstr": "Change column"
     },
     {
         "msgid": "ruleseditor.condition_column_config",
@@ -2144,11 +2204,11 @@
     },
     {
         "msgid": "ruleseditor.delete_column",
-        "msgstr": "delete Column"
+        "msgstr": "Delete Column"
     },
     {
         "msgid": "ruleseditor.inputvariables",
-        "msgstr": "input variables"
+        "msgstr": "Input variables"
     },
     {
         "msgid": "ruleseditor.insert_action_column",
@@ -2160,7 +2220,7 @@
     },
     {
         "msgid": "ruleseditor.insert_rule",
-        "msgstr": "new Rule"
+        "msgstr": "New Rule"
     },
     {
         "msgid": "ruleseditor.no_variables_defined",
@@ -2176,7 +2236,7 @@
     },
     {
         "msgid": "ruleseditor.remove_rule",
-        "msgstr": "delete rule"
+        "msgstr": "Delete rule"
     },
     {
         "msgid": "ruleseditor.rule_down",
@@ -2188,23 +2248,23 @@
     },
     {
         "msgid": "ruleseditor.save",
-        "msgstr": "ruleseditor.save"
+        "msgstr": "Save rule"
     },
     {
         "msgid": "ruleseditor.test",
-        "msgstr": "testing"
+        "msgstr": "Testing"
     },
     {
         "msgid": "ruleseditor.variables",
-        "msgstr": "rule variables"
+        "msgstr": "Rule variables"
     },
     {
         "msgid": "ruleseditor.variable",
-        "msgstr": "variable type"
+        "msgstr": "Variable type"
     },
     {
         "msgid": "ruleseditor.vartype",
-        "msgstr": "variable type"
+        "msgstr": "Variable type"
     },
     {
         "msgid": "searchfilter.actionbutton",
@@ -2216,23 +2276,23 @@
     },
     {
         "msgid": "searchfilter.resetbutton",
-        "msgstr": "reset"
+        "msgstr": "Reset"
     },
     {
         "msgid": "searchfilter.savebutton",
-        "msgstr": "save"
+        "msgstr": "Save"
     },
     {
         "msgid": "searchfilter.searchbutton",
-        "msgstr": "search"
+        "msgstr": "Search"
     },
     {
         "msgid": "searchfilter.selectbutton",
-        "msgstr": "select"
+        "msgstr": "Select"
     },
     {
         "msgid": "settings.check_type",
-        "msgstr": "examination"
+        "msgstr": "Examination"
     },
     {
         "msgid": "settings.displayname",
@@ -2260,7 +2320,7 @@
     },
     {
         "msgid": "settings.fields",
-        "msgstr": "fields"
+        "msgstr": "Fields"
     },
     {
         "msgid": "settings.fillin",
@@ -2268,11 +2328,11 @@
     },
     {
         "msgid": "settings.innerThreshold",
-        "msgstr": "internal threshold"
+        "msgstr": "Internal threshold"
     },
     {
         "msgid": "settings.modal",
-        "msgstr": "modal"
+        "msgstr": "Modal"
     },
     {
         "msgid": "settings.name",
@@ -2340,11 +2400,11 @@
     },
     {
         "msgid": "shell.new_directory",
-        "msgstr": "new Directory"
+        "msgstr": "New Directory"
     },
     {
         "msgid": "shell.new_file",
-        "msgstr": "new File"
+        "msgstr": "New File"
     },
     {
         "msgid": "shell.node_type",
@@ -2396,7 +2456,7 @@
     },
     {
         "msgid": "shell.rename_node",
-        "msgstr": "move"
+        "msgstr": "Move"
     },
     {
         "msgid": "shell.rules_dir",
@@ -2408,15 +2468,15 @@
     },
     {
         "msgid": "ss.process.description",
-        "msgstr": "ss.process.description"
+        "msgstr": "Description"
     },
     {
         "msgid": "ss.process.groups",
-        "msgstr": "ss.process.groups"
+        "msgstr": "Groups"
     },
     {
         "msgid": "ss.process.title",
-        "msgstr": "ss.process.title"
+        "msgstr": "Title"
     },
     {
         "msgid": "Stencil",
@@ -2428,7 +2488,7 @@
     },
     {
         "msgid": "tactions.active",
-        "msgstr": "active"
+        "msgstr": "Active"
     },
     {
         "msgid": "tactions.create-record",
@@ -2440,11 +2500,11 @@
     },
     {
         "msgid": "tactions.fieldaction",
-        "msgstr": "edit fields"
+        "msgstr": "Edit fields"
     },
     {
         "msgid": "tactions.processaction",
-        "msgstr": "execute Process"
+        "msgstr": "Execute Process"
     },
     {
         "msgid": "tactions.process.admin",
@@ -2456,15 +2516,15 @@
     },
     {
         "msgid": "tactions.processlabel",
-        "msgstr": "process"
+        "msgstr": "Process"
     },
     {
         "msgid": "tactions.serviceaction",
-        "msgstr": "perform service"
+        "msgstr": "Perform service"
     },
     {
         "msgid": "tactions.servicelabel",
-        "msgstr": "service"
+        "msgstr": "Service"
     },
     {
         "msgid": "tactions.startProcessUser",
@@ -2472,11 +2532,11 @@
     },
     {
         "msgid": "tactions.targetmodule",
-        "msgstr": "module"
+        "msgstr": "Class"
     },
     {
         "msgid": "tactions.type",
-        "msgstr": "action"
+        "msgstr": "Action"
     },
     {
         "msgid": "tactions.update-related",
@@ -2488,11 +2548,11 @@
     },
     {
         "msgid": "tasks.form.cancel",
-        "msgstr": "abort"
+        "msgstr": "Abort"
     },
     {
         "msgid": "tasks.form.start",
-        "msgstr": "start Task"
+        "msgstr": "Start Task"
     },
     {
         "msgid": "tasks.table.assigned",
@@ -2504,19 +2564,19 @@
     },
     {
         "msgid": "tasks.table.description",
-        "msgstr": "description"
+        "msgstr": "Description"
     },
     {
         "msgid": "tasks.table.name",
-        "msgstr": "task Name"
+        "msgstr": "Task Name"
     },
     {
         "msgid": "tasks.table.not_assigned",
-        "msgstr": "queued"
+        "msgstr": "Queued"
     },
     {
         "msgid": "tasks.table.processCategory",
-        "msgstr": "application"
+        "msgstr": "Application"
     },
     {
         "msgid": "tasks.table.processInstanceId",
@@ -2524,7 +2584,7 @@
     },
     {
         "msgid": "tasks.table.processName",
-        "msgstr": "workflow"
+        "msgstr": "Workflow"
     },
     {
         "msgid": "tasks.table.taskid",
@@ -2536,11 +2596,11 @@
     },
     {
         "msgid": "tasks.usertasks.dublettencheck.checkit",
-        "msgstr": "check"
+        "msgstr": "Check"
     },
     {
         "msgid": "team.description",
-        "msgstr": "description"
+        "msgstr": "Description"
     },
     {
         "msgid": "This field is required",
@@ -2552,7 +2612,7 @@
     },
     {
         "msgid": "trigger-1",
-        "msgstr": "trigger- 1"
+        "msgstr": "trigger-1"
     },
     {
         "msgid": "Typewriter",
@@ -2560,11 +2620,11 @@
     },
     {
         "msgid": "usebox.use",
-        "msgstr": "consider"
+        "msgstr": "use"
     },
     {
         "msgid": "user-1",
-        "msgstr": "user - 1"
+        "msgstr": "user-1"
     },
     {
         "msgid": "util.resources",
@@ -2576,27 +2636,27 @@
     },
     {
         "msgid": "widgets.table.add_button",
-        "msgstr": "new record"
+        "msgstr": "New record"
     },
     {
         "msgid": "widgets.table.copy_button",
-        "msgstr": "duplicate Record"
+        "msgstr": "Duplicate Record"
     },
     {
         "msgid": "widgets.table.del_button",
-        "msgstr": "delete Record"
+        "msgstr": "Delete Record"
     },
     {
         "msgid": "widgets.table.edit_button",
-        "msgstr": "edit record"
+        "msgstr": "Edit record"
     },
     {
         "msgid": "widgets.table.export_button",
-        "msgstr": "export records"
+        "msgstr": "Export records"
     },
     {
         "msgid": "widgets.table.import_button",
-        "msgstr": "import Records"
+        "msgstr": "Import Records"
     },
     {
         "msgid": "widgets.table.select_button",
@@ -2608,7 +2668,7 @@
     },
     {
         "msgid": "widgets.table.unassign_button",
-        "msgstr": "unassign record"
+        "msgstr": "Unassign record"
     },
     {
         "msgid": "XML",
