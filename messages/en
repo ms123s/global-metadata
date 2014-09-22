@@ -779,6 +779,14 @@
         "msgstr": "Customer"
     },
     {
+        "msgid": "data.process.deployed",
+        "msgstr": "The process was deployed"
+    },
+    {
+        "msgid": "data.process.undeployed",
+        "msgstr": "The process was undeployed"
+    },
+    {
         "msgid": "datamapper.add",
         "msgstr": "New"
     },
