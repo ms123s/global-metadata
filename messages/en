@@ -1728,7 +1728,7 @@
     },
     {
         "msgid": "meta.teams.member_list",
-        "msgstr": "Who Is Where Member"
+        "msgstr": "Who Is where member"
     },
     {
         "msgid": "meta.teams.member_users",
@@ -1744,7 +1744,7 @@
     },
     {
         "msgid": "meta.teams.save_team",
-        "msgstr": "Save Team"
+        "msgstr": "Save team"
     },
     {
         "msgid": "meta.teams.select_user",
@@ -2292,11 +2292,11 @@
     },
     {
         "msgid": "settings.check_type",
-        "msgstr": "Examination"
+        "msgstr": "Compare mechanism"
     },
     {
         "msgid": "settings.displayname",
-        "msgstr": "Display Name ( from Messages)"
+        "msgstr": "Display name (from messages)"
     },
     {
         "msgid": "settings.dupcheck.save",
@@ -2368,11 +2368,11 @@
     },
     {
         "msgid": "shell.copy_node",
-        "msgstr": "copy"
+        "msgstr": "Copy"
     },
     {
         "msgid": "shell.del_node",
-        "msgstr": "delete"
+        "msgstr": "Delete"
     },
     {
         "msgid": "shell.editor",
@@ -2380,7 +2380,7 @@
     },
     {
         "msgid": "shell.file_created",
-        "msgstr": "created File"
+        "msgstr": "Created File"
     },
     {
         "msgid": "shell.file_name",
@@ -2588,7 +2588,7 @@
     },
     {
         "msgid": "tasks.table.taskid",
-        "msgstr": "AufgabenId"
+        "msgstr": "TaskId"
     },
     {
         "msgid": "tasks.table.time",
