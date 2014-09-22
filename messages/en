@@ -2379,12 +2379,20 @@
         "msgstr": "Views"
     },
     {
+        "msgid": "shell.camel_saved",
+        "msgstr": "Route saved"
+    },
+    {
         "msgid": "shell.copy_node",
         "msgstr": "Copy"
     },
     {
         "msgid": "shell.del_node",
         "msgstr": "Delete"
+    },
+    {
+        "msgid": "shell.document_saved",
+        "msgstr": "Document save"
     },
     {
         "msgid": "shell.editor",
@@ -2403,8 +2411,16 @@
         "msgstr": "Filter"
     },
     {
+        "msgid": "shell.filter_saved",
+        "msgstr": "Filter saved"
+    },
+    {
         "msgid": "shell.forms_dir",
         "msgstr": "Forms"
+    },
+    {
+        "msgid": "shell.form_saved",
+        "msgstr": "Form saved"
     },
     {
         "msgid": "shell.jsoneditor",
@@ -2417,6 +2433,10 @@
     {
         "msgid": "shell.new_file",
         "msgstr": "New File"
+    },
+    {
+        "msgid": "shell.node_deleted",
+        "msgstr": "File deletet"
     },
     {
         "msgid": "shell.node_type",
@@ -2463,6 +2483,10 @@
         "msgstr": "Processes"
     },
     {
+        "msgid": "shell.process_saved",
+        "msgstr": "Process saved"
+    },
+    {
         "msgid": "shell.project",
         "msgstr": "Project"
     },
@@ -2479,6 +2503,14 @@
         "msgstr": "Rules saved"
     },
     {
+        "msgid": "shell.webpage_saved",
+        "msgstr": "Webpage saved"
+    },
+    {
+        "msgid": "shell.website_saved",
+        "msgstr": "Website saved"
+    },
+    {
         "msgid": "Small",
         "msgstr": "small"
     },
@@ -2489,6 +2521,10 @@
     {
         "msgid": "Strike",
         "msgstr": "Strike"
+    },
+    {
+        "msgid": "table.confirm.delete",
+        "msgstr": "Delete the record?"
     },
     {
         "msgid": "tactions.active",
