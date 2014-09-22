@@ -2471,6 +2471,10 @@
         "msgstr": "Rule"
     },
     {
+        "msgid": "shell.stencil_saved",
+        "msgstr": "Stencil saved"
+    },
+    {
         "msgid": "shell.nt_webpage",
         "msgstr": "Webpage"
     },
