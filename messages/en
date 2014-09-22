@@ -1180,7 +1180,11 @@
     },
     {
         "msgid": "entitytypes.update_db",
-        "msgstr": "Update database"
+        "msgstr": "Update databasescheme"
+    },
+    {
+        "msgid": "entitytypes.update_db_successfull",
+        "msgstr": "Databasescheme updated"
     },
     {
         "msgid": "enumerations.enumeration_dir",
