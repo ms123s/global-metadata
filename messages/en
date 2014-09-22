@@ -644,7 +644,7 @@
     },
     {
         "msgid": "data.entity.stateselect",
-        "msgstr": "Status change ( duplicate candidates )"
+        "msgstr": "Status change (duplicate candidates)"
     },
     {
         "msgid": "data.entity.tab1",
@@ -660,7 +660,7 @@
     },
     {
         "msgid": "data.entity.titel_expression",
-        "msgstr": "Title expression ( e.g. : first name + '' + last_name)"
+        "msgstr": "Title expression (e.g.: first name + '' + last_name)"
     },
     {
         "msgid": "data.entity.workflow_list",
@@ -712,15 +712,15 @@
     },
     {
         "msgid": "data.field.formula_client",
-        "msgstr": "Formula ( client )"
+        "msgstr": "Formula (client)"
     },
     {
         "msgid": "data.field.formula_in",
-        "msgstr": "Formula ( detail )"
+        "msgstr": "Formula (detail)"
     },
     {
         "msgid": "data.field.formula_out",
-        "msgstr": "Formula ( outgoing)"
+        "msgstr": "Formula (outgoing)"
     },
     {
         "msgid": "data.field.name",
@@ -732,7 +732,7 @@
     },
     {
         "msgid": "data.field.searchable_items",
-        "msgstr": "Search ( list )"
+        "msgstr": "Search (list)"
     },
     {
         "msgid": "data.field.search_options",
@@ -820,7 +820,7 @@
     },
     {
         "msgid": "datamapper.entitytypes_create",
-        "msgstr": "Creating classes ( EntityTypes )"
+        "msgstr": "Creating classes (Entitytypes)"
     },
     {
         "msgid": "datamapper.execute",
@@ -864,7 +864,7 @@
     },
     {
         "msgid": "datamapper.text",
-        "msgstr": "Result ( text )"
+        "msgstr": "Result (text)"
     },
     {
         "msgid": "datamapper.type",
@@ -1248,7 +1248,7 @@
     },
     {
         "msgid": "fieldselector.selectall_without",
-        "msgstr": "All (No system properties )"
+        "msgstr": "All (No system properties)"
     },
     {
         "msgid": "filter.text.add_to",
@@ -1676,7 +1676,7 @@
     },
     {
         "msgid": "meta.lists.team_changed",
-        "msgstr": "Changed Team ( without assignment tasks )"
+        "msgstr": "Changed Team (without assignment tasks)"
     },
     {
         "msgid": "meta.lists.team_hierarchy_changed",
@@ -1720,7 +1720,7 @@
     },
     {
         "msgid": "meta.teams.manage_header",
-        "msgstr": "Manage team ( change)"
+        "msgstr": "Manage team (change)"
     },
     {
         "msgid": "meta.teams.member_groups",
@@ -1760,7 +1760,7 @@
     },
     {
         "msgid": "meta.teams.user_create",
-        "msgstr": "User ( create)"
+        "msgstr": "User (create)"
     },
     {
         "msgid": "meta.teams.user_exists",
@@ -1772,11 +1772,11 @@
     },
     {
         "msgid": "meta.teams.user_manage",
-        "msgstr": "User (manage )"
+        "msgstr": "User (manage)"
     },
     {
         "msgid": "meta.teams.user_read",
-        "msgstr": "User ( read)"
+        "msgstr": "User (read)"
     },
     {
         "msgid": "meta.triggers.actions-alerts-processes",
@@ -1988,11 +1988,11 @@
     },
     {
         "msgid": "namespacesmanager.url_data",
-        "msgstr": "Clone url (data repository )"
+        "msgstr": "Clone url (data repository)"
     },
     {
         "msgid": "namespacesmanager.url_meta",
-        "msgstr": "Clone url ( meta - repository )"
+        "msgstr": "Clone url (meta-repository)"
     },
     {
         "msgid": "Next month",
@@ -2024,7 +2024,7 @@
     },
     {
         "msgid": "permissions.entities",
-        "msgstr": "Entities ( classes )"
+        "msgstr": "Entities (classes)"
     },
     {
         "msgid": "permissions.permission",
@@ -2316,7 +2316,7 @@
     },
     {
         "msgid": "settings.fieldsets",
-        "msgstr": "Field Sets ( common search)"
+        "msgstr": "Field Sets (common search)"
     },
     {
         "msgid": "settings.fields",
