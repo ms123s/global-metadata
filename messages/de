@@ -482,7 +482,7 @@
         "msgid": "data.entity.exclusion_list",
         "msgstr": "Ausschlussliste"
     },
-		{
+    {
         "msgid": "data.entity.workflow_list",
         "msgstr": "Workflows im Aktionmenu"
     },
@@ -4681,5 +4681,273 @@
     {
         "msgid": "stencileditor.title",
         "msgstr": "Titel"
+    },
+    {
+        "msgid": "ge.AddDocker.addDesc",
+        "msgstr": "Fügen Sie einer Kante einen Docker hinzu, indem Sie auf die Kante klicken"
+    },
+    {
+        "msgid": "ge.AddDocker.add",
+        "msgstr": "Docker Hinzufügen"
+    },
+    {
+        "msgid": "ge.AddDocker.delDesc",
+        "msgstr": "Löscht einen Docker durch Klicken auf den zu löschenden Docker"
+    },
+    {
+        "msgid": "ge.AddDocker.del",
+        "msgstr": "Docker Löschen"
+    },
+    {
+        "msgid": "ge.AddDocker.group",
+        "msgstr": "Docker"
+    },
+    {
+        "msgid": "ge.Arrangement.acDesc",
+        "msgstr": "Vertikal ausrichten"
+    },
+    {
+        "msgid": "ge.Arrangement.ac",
+        "msgstr": "Vertikal ausrichten"
+    },
+    {
+        "msgid": "ge.Arrangement.amDesc",
+        "msgstr": "Horizontal ausrichten"
+    },
+    {
+        "msgid": "ge.Arrangement.am",
+        "msgstr": "Horizontal ausrichten"
+    },
+    {
+        "msgid": "ge.Arrangement.asDesc",
+        "msgstr": "Größenangleichung"
+    },
+    {
+        "msgid": "ge.Arrangement.as",
+        "msgstr": "Größenangleichung"
+    },
+    {
+        "msgid": "ge.Arrangement.groupA",
+        "msgstr": "Alignment"
+    },
+    {
+        "msgid": "ge.Edge",
+        "msgstr": "Kante"
+    },
+    {
+        "msgid": "ge.Edit.copyDesc",
+        "msgstr": "Kopieren der selektierten Elemente"
+    },
+    {
+        "msgid": "ge.Edit.copy",
+        "msgstr": "Kopieren"
+    },
+    {
+        "msgid": "ge.Edit.cut",
+        "msgstr": "Ausschneiden"
+    },
+    {
+        "msgid": "ge.Edit.cutDesc",
+        "msgstr": "Ausschneiden der selektierten Elemente"
+    },
+    {
+        "msgid": "ge.Edit.delDesc",
+        "msgstr": "Löschen der selektierten Elemente"
+    },
+    {
+        "msgid": "ge.Edit.del",
+        "msgstr": "Löschen"
+    },
+    {
+        "msgid": "ge.Edit.group",
+        "msgstr": "Edit"
+    },
+    {
+        "msgid": "ge.Edit.pasteDesc",
+        "msgstr": "Einfügen von kopierten/ausgeschnittenen Elementen"
+    },
+    {
+        "msgid": "ge.Edit.paste",
+        "msgstr": "Einfügen"
+    },
+    {
+        "msgid": "ge.Grouping.groupDesc",
+        "msgstr": "Gruppierung der selektierten Elemente"
+    },
+    {
+        "msgid": "ge.Grouping.group",
+        "msgstr": "Gruppieren"
+    },
+    {
+        "msgid": "ge.Grouping.grouping",
+        "msgstr": "Grouping"
+    },
+    {
+        "msgid": "ge.Grouping.ungroupDesc",
+        "msgstr": "Aufheben aller Gruppierungen der selektierten Elemente"
+    },
+    {
+        "msgid": "ge.Grouping.ungroup",
+        "msgstr": "Gruppierung aufheben"
+    },
+    {
+        "msgid": "ge.JSONImport.title",
+        "msgstr": "JSON Import"
+    },
+    {
+        "msgid": "ge.Node",
+        "msgstr": "Knoten"
+    },
+    {
+        "msgid": "ge.PropertyWindow.dateFormat",
+        "msgstr": "d/m/y"
+    },
+    {
+        "msgid": "ge.PropertyWindow.moreProps",
+        "msgstr": "Mehr Attribute"
+    },
+    {
+        "msgid": "ge.PropertyWindow.oftenUsed",
+        "msgstr": "Hauptattribute"
+    },
+    {
+        "msgid": "ge.PropertyWindow.title",
+        "msgstr": "Eigenschaften"
+    },
+    {
+        "msgid": "ge.Save.deploy",
+        "msgstr": "Deploy"
+    },
+    {
+        "msgid": "ge.Save.group",
+        "msgstr": "File"
+    },
+    {
+        "msgid": "ge.Save.renewResourceIdsDesc",
+        "msgstr": "Ids erneuern"
+    },
+    {
+        "msgid": "ge.Save.renewResourceIds",
+        "msgstr": "Ids erneueren"
+    },
+    {
+        "msgid": "ge.Save.saveAs",
+        "msgstr": "Speichern als..."
+    },
+    {
+        "msgid": "ge.Save.saveDesc",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "ge.Save.saved",
+        "msgstr": "Gespeichert"
+    },
+    {
+        "msgid": "ge.Save.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "ge.Save.saving",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "ge.Save.showJsonDesc",
+        "msgstr": "json anzeigen"
+    },
+    {
+        "msgid": "ge.Save.showJson",
+        "msgstr": "json anzeigen"
+    },
+    {
+        "msgid": "ge.Save.undeploy",
+        "msgstr": "Undeploy"
+    },
+    {
+        "msgid": "ge.ShapeMenuPlugin.clickDrag",
+        "msgstr": "Klicken oder ziehen"
+    },
+    {
+        "msgid": "ge.ShapeMenuPlugin.drag",
+        "msgstr": "Ziehen"
+    },
+    {
+        "msgid": "ge.ShapeMenuPlugin.morphMsg",
+        "msgstr": "Shape morphen"
+    },
+    {
+        "msgid": "ge.SyntaxChecker.desc",
+        "msgstr": "Überprüfung der Verbindungen"
+    },
+    {
+        "msgid": "ge.SyntaxChecker.group",
+        "msgstr": "Verification"
+    },
+    {
+        "msgid": "ge.SyntaxChecker.name",
+        "msgstr": "Verbindungs-Checker"
+    },
+    {
+        "msgid": "ge.SyntaxChecker.noErrors",
+        "msgstr": "Es wurden keine Fehler gefunden."
+    },
+    {
+        "msgid": "ge.SyntaxChecker.notice",
+        "msgstr": "Fehler bei roten Kreuz(en)."
+    },
+    {
+        "msgid": "ge.Undo.group",
+        "msgstr": "Undo"
+    },
+    {
+        "msgid": "ge.Undo.redoDesc",
+        "msgstr": "Wiederherstellen"
+    },
+    {
+        "msgid": "ge.Undo.redo",
+        "msgstr": "Wiederherstellen"
+    },
+    {
+        "msgid": "ge.Undo.undoDesc",
+        "msgstr": "Rückgängig"
+    },
+    {
+        "msgid": "ge.Undo.undo",
+        "msgstr": "Rückgängig"
+    },
+    {
+        "msgid": "ge.View.group",
+        "msgstr": "Zoom"
+    },
+    {
+        "msgid": "ge.View.zoomFitToModelDesc",
+        "msgstr": "Modelgröße"
+    },
+    {
+        "msgid": "ge.View.zoomFitToModel",
+        "msgstr": "Modelgröße"
+    },
+    {
+        "msgid": "ge.View.zoomInDesc",
+        "msgstr": "Vergrößern"
+    },
+    {
+        "msgid": "ge.View.zoomIn",
+        "msgstr": "Vergrößern"
+    },
+    {
+        "msgid": "ge.View.zoomOutDesc",
+        "msgstr": "Verkleinern"
+    },
+    {
+        "msgid": "ge.View.zoomOut",
+        "msgstr": "Verkleinern"
+    },
+    {
+        "msgid": "ge.View.zoomStandardDesc",
+        "msgstr": "Originalgröße"
+    },
+    {
+        "msgid": "ge.View.zoomStandard",
+        "msgstr": "Originalgröße"
     }
 ]

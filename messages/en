@@ -2232,7 +2232,7 @@
     },
     {
         "msgid": "ruleseditor.outputvariables",
-        "msgstr": "output variables"
+        "msgstr": "Output variables"
     },
     {
         "msgid": "ruleseditor.remove_rule",
@@ -2463,20 +2463,12 @@
         "msgstr": "Rules"
     },
     {
+        "msgid": "shell.rule_saved",
+        "msgstr": "Rules saved"
+    },
+    {
         "msgid": "Small",
         "msgstr": "small"
-    },
-    {
-        "msgid": "ss.process.description",
-        "msgstr": "Description"
-    },
-    {
-        "msgid": "ss.process.groups",
-        "msgstr": "Groups"
-    },
-    {
-        "msgid": "ss.process.title",
-        "msgstr": "Title"
     },
     {
         "msgid": "Stencil",
@@ -2677,5 +2669,274 @@
     {
         "msgid": "yes",
         "msgstr": "yes"
+    },
+   {
+        "msgid": "ge.AddDocker.addDesc",
+        "msgstr": "Add an Docker by clicking on the edge"
+    },
+    {
+        "msgid": "ge.AddDocker.add",
+        "msgstr": "Add Docker"
+    },
+    {
+        "msgid": "ge.AddDocker.delDesc",
+        "msgstr": "Delete an docker by clicking the Docker"
+    },
+    {
+        "msgid": "ge.AddDocker.del",
+        "msgstr": "Docker Delete"
+    },
+    {
+        "msgid": "ge.AddDocker.group",
+        "msgstr": "Docker"
+    },
+    {
+        "msgid": "ge.Arrangement.acDesc",
+        "msgstr": "Align vertical"
+    },
+    {
+        "msgid": "ge.Arrangement.ac",
+        "msgstr": "Align vertical"
+    },
+    {
+        "msgid": "ge.Arrangement.amDesc",
+        "msgstr": "Align horizontal"
+    },
+    {
+        "msgid": "ge.Arrangement.am",
+        "msgstr": "Align horizontal"
+    },
+    {
+        "msgid": "ge.Arrangement.asDesc",
+        "msgstr": "Size approximation"
+    },
+    {
+        "msgid": "ge.Arrangement.as",
+        "msgstr": "Size approximation"
+    },
+    {
+        "msgid": "ge.Arrangement.groupA",
+        "msgstr": "Alignment"
+    },
+    {
+        "msgid": "ge.Edge",
+        "msgstr": "Edge"
+    },
+    {
+        "msgid": "ge.Edit.copyDesc",
+        "msgstr": "Copy the selected elements"
+    },
+    {
+        "msgid": "ge.Edit.copy",
+        "msgstr": "copy"
+    },
+    {
+        "msgid": "ge.Edit.cut",
+        "msgstr": "cut out"
+    },
+    {
+        "msgid": "ge.Edit.cutDesc",
+        "msgstr": "Cut the selected elements"
+    },
+    {
+        "msgid": "ge.Edit.delDesc",
+        "msgstr": "Delete the selected elements"
+    },
+    {
+        "msgid": "ge.Edit.del",
+        "msgstr": "delete"
+    },
+    {
+        "msgid": "ge.Edit.group",
+        "msgstr": "Edit"
+    },
+    {
+        "msgid": "ge.Edit.pasteDesc",
+        "msgstr": "Pasting copied / cut items"
+    },
+    {
+        "msgid": "ge.Edit.paste",
+        "msgstr": "insert"
+    },
+    {
+        "msgid": "ge.Grouping.groupDesc",
+        "msgstr": "Grouping of the selected elements"
+    },
+    {
+        "msgid": "ge.Grouping.group",
+        "msgstr": "group"
+    },
+    {
+        "msgid": "ge.Grouping.grouping",
+        "msgstr": "Grouping"
+    },
+    {
+        "msgid": "ge.Grouping.ungroupDesc",
+        "msgstr": "Cancel all groups of selected elements"
+    },
+    {
+        "msgid": "ge.Grouping.ungroup",
+        "msgstr": "Ungroup"
+    },
+    {
+        "msgid": "ge.JSONImport.title",
+        "msgstr": "JSON Import"
+    },
+    {
+        "msgid": "ge.Node",
+        "msgstr": "node"
+    },
+    {
+        "msgid": "ge.PropertyWindow.dateFormat",
+        "msgstr": "d/m/y"
+    },
+    {
+        "msgid": "ge.PropertyWindow.moreProps",
+        "msgstr": "More attributes"
+    },
+    {
+        "msgid": "ge.PropertyWindow.oftenUsed",
+        "msgstr": "Main attributes"
+    },
+    {
+        "msgid": "ge.PropertyWindow.title",
+        "msgstr": "Properties"
+    },
+    {
+        "msgid": "ge.Save.deploy",
+        "msgstr": "Deploy"
+    },
+    {
+        "msgid": "ge.Save.group",
+        "msgstr": "File"
+    },
+    {
+        "msgid": "ge.Save.renewResourceIdsDesc",
+        "msgstr": "Renew IDs"
+    },
+    {
+        "msgid": "ge.Save.renewResourceIds",
+        "msgstr": "The renovated Ids"
+    },
+    {
+        "msgid": "ge.Save.saveAs",
+        "msgstr": "Save as ..."
+    },
+    {
+        "msgid": "ge.Save.saveDesc",
+        "msgstr": "Save"
+    },
+    {
+        "msgid": "ge.Save.saved",
+        "msgstr": "Saved"
+    },
+    {
+        "msgid": "ge.Save.save",
+        "msgstr": "Save"
+    },
+    {
+        "msgid": "ge.Save.saving",
+        "msgstr": "Save"
+    },
+    {
+        "msgid": "ge.Save.showJsonDesc",
+        "msgstr": "View json"
+    },
+    {
+        "msgid": "ge.Save.showJson",
+        "msgstr": "View json"
+    },
+    {
+        "msgid": "ge.Save.undeploy",
+        "msgstr": "Undeploy"
+    },
+    {
+        "msgid": "ge.ShapeMenuPlugin.clickDrag",
+        "msgstr": "Click or drag"
+    },
+    {
+        "msgid": "ge.ShapeMenuPlugin.drag",
+        "msgstr": "Pull"
+    },
+    {
+        "msgid": "ge.ShapeMenuPlugin.morphMsg",
+        "msgstr": "Morph shape"
+    },
+    {
+        "msgid": "ge.SyntaxChecker.desc",
+        "msgstr": "Checking the connections"
+    },
+    {
+        "msgid": "ge.SyntaxChecker.group",
+        "msgstr": "Verification"
+    },
+    {
+        "msgid": "ge.SyntaxChecker.name",
+        "msgstr": "Link Checker"
+    },
+    {
+        "msgid": "ge.SyntaxChecker.noErrors",
+        "msgstr": "There were no errors ."
+    },
+    {
+        "msgid": "ge.SyntaxChecker.notice",
+        "msgstr": "Error in red cross ( s) ."
+    },
+    {
+        "msgid": "ge.Undo.group",
+        "msgstr": "Undo"
+    },
+    {
+        "msgid": "ge.Undo.redoDesc",
+        "msgstr": "Restore"
+    },
+    {
+        "msgid": "ge.Undo.redo",
+        "msgstr": "Restore"
+    },
+    {
+        "msgid": "ge.Undo.undoDesc",
+        "msgstr": "Undo"
+    },
+    {
+        "msgid": "ge.Undo.undo",
+        "msgstr": "Undo"
+    },
+    {
+        "msgid": "ge.View.group",
+        "msgstr": "Zoom"
+    },
+    {
+        "msgid": "ge.View.zoomFitToModelDesc",
+        "msgstr": "Model size"
+    },
+    {
+        "msgid": "ge.View.zoomFitToModel",
+        "msgstr": "Model size"
+    },
+    {
+        "msgid": "ge.View.zoomInDesc",
+        "msgstr": "Enlarge"
+    },
+    {
+        "msgid": "ge.View.zoomIn",
+        "msgstr": "Enlarge"
+    },
+    {
+        "msgid": "ge.View.zoomOutDesc",
+        "msgstr": "Reduce"
+    },
+    {
+        "msgid": "ge.View.zoomOut",
+        "msgstr": "Reduce"
+    },
+    {
+        "msgid": "ge.View.zoomStandardDesc",
+        "msgstr": "Original size"
+    },
+    {
+        "msgid": "ge.View.zoomStandard",
+        "msgstr": "Original size"
     }
+
 ]
