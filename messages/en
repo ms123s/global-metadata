@@ -1147,6 +1147,10 @@
         "msgstr": "One-to-One: Primary class have an reference from the secondary class."
     },
     {
+        "msgid": "entitytypes.confirm_delete",
+        "msgstr": "Delete class?"
+    },
+    {
         "msgid": "entitytypes.delete",
         "msgstr": "Delete"
     },
@@ -1177,6 +1181,10 @@
     {
         "msgid": "entitytypes.relations",
         "msgstr": "Relations"
+    },
+    {
+        "msgid": "entitytypes.entitytype_saved",
+        "msgstr": "Class saved"
     },
     {
         "msgid": "entitytypes.update_db",
