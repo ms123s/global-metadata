@@ -1463,6 +1463,10 @@
         "msgstr": "Translations"
     },
     {
+        "msgid": "messages.messages_saved",
+        "msgstr": "Messages saved"
+    },
+    {
         "msgid": "messages.msgid",
         "msgstr": "Message - ID"
     },
@@ -2670,7 +2674,7 @@
         "msgid": "yes",
         "msgstr": "yes"
     },
-   {
+    {
         "msgid": "ge.AddDocker.addDesc",
         "msgstr": "Add an Docker by clicking on the edge"
     },
@@ -2816,7 +2820,7 @@
     },
     {
         "msgid": "ge.Save.renewResourceIds",
-        "msgstr": "The renovated Ids"
+        "msgstr": "Renew the IDs"
     },
     {
         "msgid": "ge.Save.saveAs",
@@ -2938,5 +2942,4 @@
         "msgid": "ge.View.zoomStandard",
         "msgstr": "Original size"
     }
-
 ]
