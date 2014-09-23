@@ -2011,6 +2011,10 @@
         "msgstr": "Uninstall App"
     },
     {
+        "msgid": "namespacesmanager.confirm_uninstall",
+        "msgstr": "Deinstall?"
+    },
+    {
         "msgid": "namespacesmanager.update_available",
         "msgstr": "Updates available ?"
     },
