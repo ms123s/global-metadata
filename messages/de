@@ -199,6 +199,10 @@
         "msgstr": "Aktiv"
     },
     {
+        "msgid": "namespacesmanager.app_updated",
+        "msgstr": "Die App wurde geupdated"
+    },
+    {
         "msgid": "namespacesmanager.url_meta",
         "msgstr": "Clone Url(Meta-Repository)"
     },

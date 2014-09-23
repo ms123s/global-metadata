@@ -1955,12 +1955,20 @@
         "msgstr": "New App"
     },
     {
+        "msgid": "namespacesmanager.app_updated",
+        "msgstr": "The app was updated"
+    },
+    {
         "msgid": "namespacesmanager.create_namespace",
         "msgstr": "Create application"
     },
     {
         "msgid": "namespacesmanager.del",
         "msgstr": "Remove App"
+    },
+    {
+        "msgid": "namespacesmanager.confirm_pull",
+        "msgstr": "Update the App?"
     },
     {
         "msgid": "namespacesmanager.install",
