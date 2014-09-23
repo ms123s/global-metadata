@@ -1972,7 +1972,7 @@
     },
     {
         "msgid": "namespacesmanager.install",
-        "msgstr": "Install App"
+        "msgstr": "Install app"
     },
     {
         "msgid": "namespacesmanager.is_installed",
@@ -1992,11 +1992,11 @@
     },
     {
         "msgid": "namespacesmanager.pull",
-        "msgstr": "Update App"
+        "msgstr": "Update app(pull)"
     },
     {
         "msgid": "namespacesmanager.push",
-        "msgstr": "Write the changes to the repository"
+        "msgstr": "Update repo(push)"
     },
     {
         "msgid": "namespacesmanager.reload",
@@ -2008,7 +2008,7 @@
     },
     {
         "msgid": "namespacesmanager.uninstall",
-        "msgstr": "Uninstall App"
+        "msgstr": "Uninstall app"
     },
     {
         "msgid": "namespacesmanager.uninstalled",

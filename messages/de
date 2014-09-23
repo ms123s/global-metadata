@@ -1092,7 +1092,7 @@
     },
     {
         "msgid": "namespacesmanager.uninstall",
-        "msgstr": "Deinstall App"
+        "msgstr": "Entferne App"
     },
     {
         "msgid": "namespacesmanager.confirm_uninstall",
@@ -3556,7 +3556,7 @@
     },
     {
         "msgid": "namespacesmanager.pull",
-        "msgstr": "Update App"
+        "msgstr": "Update App(Pull)"
     },
     {
         "msgid": "namespacesmanager.update_available",
@@ -4100,7 +4100,7 @@
     },
     {
         "msgid": "namespacesmanager.push",
-        "msgstr": "Änderungen ins Repository schreiben"
+        "msgstr": "Update Repo(Push)"
     },
     {
         "msgid": "filter.text.insert_parent",
