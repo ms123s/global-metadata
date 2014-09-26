@@ -791,12 +791,24 @@
         "msgstr": "New"
     },
     {
+        "msgid": "datamapper.change_classes",
+        "msgstr": "Classes adjust (May be problems by data type changes)"
+    },
+    {
         "msgid": "datamapper.children_fields",
         "msgstr": "child fields"
     },
     {
+        "msgid": "datamapper.classes_exists",
+        "msgstr": "This classes exists"
+    },
+    {
         "msgid": "datamapper.create_mapping",
         "msgstr": "Create the mapping"
+    },
+    {
+        "msgid": "datamapper.exist_classes",
+        "msgstr": "Approach to existing classes"
     },
     {
         "msgid": "datamapper.default_script",
@@ -863,8 +875,16 @@
         "msgstr": "Name"
     },
     {
+        "msgid": "datamapper.new_classes",
+        "msgstr": "The following classes will be created"
+    },
+    {
         "msgid": "datamapper.output",
         "msgstr": "Output"
+    },
+    {
+        "msgid": "datamapper.overwrite_classes",
+        "msgstr": "Create new, first delete (Caution data loss!)"
     },
     {
         "msgid": "datamapper.remove",
