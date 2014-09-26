@@ -899,6 +899,10 @@
         "msgstr": "User defined"
     },
     {
+        "msgid": "datamapper.with_msgs_and_settings",
+        "msgstr": "Create default messages and settings"
+    },
+    {
         "msgid": "datamapper.viewswitch_defaults",
         "msgstr": "Defaults"
     },
