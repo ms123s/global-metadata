@@ -796,7 +796,7 @@
     },
     {
         "msgid": "datamapper.create_mapping",
-        "msgstr": "Create a mapping"
+        "msgstr": "Create the mapping"
     },
     {
         "msgid": "datamapper.default_script",
