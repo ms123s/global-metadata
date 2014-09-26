@@ -847,6 +847,10 @@
         "msgstr": "Input"
     },
     {
+        "msgid": "datamapper.like_input",
+        "msgstr": "Like input"
+    },
+    {
         "msgid": "datamapper.load_import_file",
         "msgstr": "Loading a Import Files"
     },

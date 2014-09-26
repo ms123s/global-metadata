@@ -4395,6 +4395,10 @@
         "msgstr": "Eingang"
     },
     {
+        "msgid": "datamapper.like_input",
+        "msgstr": "Wie Eingang"
+    },
+    {
         "msgid": "datamapper.format_not_possible",
         "msgstr": "Zu diesen Format kann nicht gewechselt werden"
     },
