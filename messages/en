@@ -827,6 +827,10 @@
         "msgstr": "Creating classes (Entitytypes)"
     },
     {
+        "msgid": "datamapper.entity",
+        "msgstr": "Entity(Pojo)"
+    },
+    {
         "msgid": "datamapper.execute",
         "msgstr": "Import data"
     },
@@ -836,7 +840,7 @@
     },
     {
         "msgid": "datamapper.from_example",
-        "msgstr": "Sample Files"
+        "msgstr": "Sample file"
     },
     {
         "msgid": "datamapper.input",
@@ -856,7 +860,7 @@
     },
     {
         "msgid": "datamapper.output",
-        "msgstr": "exit"
+        "msgstr": "Output"
     },
     {
         "msgid": "datamapper.remove",
@@ -865,6 +869,14 @@
     {
         "msgid": "datamapper.save",
         "msgstr": "Save"
+    },
+    {
+        "msgid": "datamapper.status_ready",
+        "msgstr": "Ready"
+    },
+    {
+        "msgid": "datamapper.status_notready",
+        "msgstr": "Not ready"
     },
     {
         "msgid": "datamapper.text",
@@ -1375,6 +1387,10 @@
         "msgstr": "<div style='position:relative;left:15%;top:50%;font-size:300%;'>Please drop a file</div>"
     },
     {
+        "msgid": "import.no_filename",
+        "msgstr": "Filename missing"
+    },
+    {
         "msgid": "importing.deleteImport",
         "msgstr": "Delete"
     },
@@ -1401,6 +1417,10 @@
     {
         "msgid": "Importing.title",
         "msgstr": "Imports"
+    },
+    {
+        "msgid": "import.import_saved",
+        "msgstr": "Setup saved"
     },
     {
         "msgid": "import.select_button",
@@ -1959,6 +1979,10 @@
         "msgstr": "The app was updated"
     },
     {
+        "msgid": "namespacesmanager.changes_pushed",
+        "msgstr": "The repository updated"
+    },
+    {
         "msgid": "namespacesmanager.create_namespace",
         "msgstr": "Create application"
     },
@@ -1969,6 +1993,10 @@
     {
         "msgid": "namespacesmanager.confirm_pull",
         "msgstr": "Update the App?"
+    },
+    {
+        "msgid": "namespacesmanager.confirm_push",
+        "msgstr": "Update the Repository?"
     },
     {
         "msgid": "namespacesmanager.install",

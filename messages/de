@@ -4407,6 +4407,14 @@
         "msgstr": "Typ"
     },
     {
+        "msgid": "datamapper.status_ready",
+        "msgstr": "Fertig"
+    },
+    {
+        "msgid": "datamapper.status_notready",
+        "msgstr": "Nicht fertig"
+    },
+    {
         "msgid": "datamapper.fixed_width",
         "msgstr": "Feste Breite"
     },
