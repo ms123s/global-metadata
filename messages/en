@@ -519,6 +519,10 @@
         "msgstr": "abort"
     },
     {
+        "msgid": "composite.select_dialog.confirm_delete",
+        "msgstr": "Please confirm the delete?"
+    },
+    {
         "msgid": "Computer Code",
         "msgstr": "computer code"
     },
@@ -1437,6 +1441,10 @@
     {
         "msgid": "importing.importingCreated",
         "msgstr": "Import was created"
+    },
+    {
+        "msgid": "importing.importingDeleted",
+        "msgstr": "Import deleted"
     },
     {
         "msgid": "importing.importName",
