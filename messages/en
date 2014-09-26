@@ -855,6 +855,10 @@
         "msgstr": "Sample file"
     },
     {
+        "msgid": "datamapper.generate_classes",
+        "msgstr": "Generate classes"
+    },
+    {
         "msgid": "datamapper.input",
         "msgstr": "Input"
     },
