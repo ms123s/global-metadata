@@ -803,6 +803,10 @@
         "msgstr": "This classes exists"
     },
     {
+        "msgid": "datamapper.create_classes",
+        "msgstr": "Creating classes (EntityTypes)"
+    },
+    {
         "msgid": "datamapper.create_mapping",
         "msgstr": "Create the mapping"
     },
