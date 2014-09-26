@@ -819,6 +819,10 @@
         "msgstr": "Approach to existing classes"
     },
     {
+        "msgid": "datamapper.datatype",
+        "msgstr": "Datatype"
+    },
+    {
         "msgid": "datamapper.default_script",
         "msgstr": "Accept the default scripts"
     },
@@ -833,6 +837,10 @@
     {
         "msgid": "datamapper.edit",
         "msgstr": "Editing"
+    },
+    {
+        "msgid": "datamapper.edit_attribute",
+        "msgstr": "Edit attribute"
     },
     {
         "msgid": "datamapper.edit_fields",
@@ -861,6 +869,10 @@
     {
         "msgid": "datamapper.from_example",
         "msgstr": "Sample file"
+    },
+    {
+        "msgid": "datamapper.format",
+        "msgstr": "Format"
     },
     {
         "msgid": "datamapper.generate_classes",
