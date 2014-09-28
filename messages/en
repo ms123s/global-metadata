@@ -888,7 +888,7 @@
     },
     {
         "msgid": "datamapper.load_import_file",
-        "msgstr": "Loading a Import Files"
+        "msgstr": "Upload a import file"
     },
     {
         "msgid": "datamapper.metadata_edit",
@@ -905,6 +905,10 @@
     {
         "msgid": "datamapper.output",
         "msgstr": "Output"
+    },
+    {
+        "msgid": "datamapper.please_wait",
+        "msgstr": "Please wait ..."
     },
     {
         "msgid": "datamapper.overwrite_classes",
@@ -1175,12 +1179,28 @@
         "msgstr": "Delete databasescheme for selected classes"
     },
     {
+        "msgid": "entitytypes.delete_class",
+        "msgstr": "Delete class"
+    },
+    {
+        "msgid": "entitytypes.delete_settings",
+        "msgstr": "Delete settings"
+    },
+    {
+        "msgid": "entitytypes.delete_messages",
+        "msgstr": "Delete messages"
+    },
+    {
         "msgid": "entitytypes.leftmodule",
         "msgstr": "Primary class"
     },
     {
         "msgid": "entitytypes.leftfield",
         "msgstr": "Field in primary class"
+    },
+    {
+        "msgid": "entitytypes.relations_saved",
+        "msgstr": "Relations saved"
     },
     {
         "msgid": "entitytypes.rightmodule",
@@ -2436,7 +2456,11 @@
     },
     {
         "msgid": "settings.fieldsets",
-        "msgstr": "Field Sets (common search)"
+        "msgstr": "Fieldsets (common search)"
+    },
+    {
+        "msgid": "settings.fieldsets_saved",
+        "msgstr": "Fieldsets saved"
     },
     {
         "msgid": "settings.fields",
@@ -2463,6 +2487,10 @@
         "msgstr": "Properties"
     },
     {
+        "msgid": "settings.properties_saved",
+        "msgstr": "Properties gespeichert"
+    },
+    {
         "msgid": "settings.readonly",
         "msgstr": "Read Only"
     },
@@ -2473,6 +2501,14 @@
     {
         "msgid": "settings.threshold",
         "msgstr": "Threshold(0-1)"
+    },
+    {
+        "msgid": "settings.views.propertyedit.orderby",
+        "msgstr": "Order by"
+    },
+    {
+        "msgid": "settings.views_selected_items_saved",
+        "msgstr": "Settings saved"
     },
     {
         "msgid": "settings.view_properties",

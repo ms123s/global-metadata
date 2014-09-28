@@ -4379,6 +4379,10 @@
         "msgstr": "Ändern der Metadaten"
     },
     {
+        "msgid": "datamapper.please_wait",
+        "msgstr": "Bitte warten ..."
+    },
+    {
         "msgid": "datamapper.user_defined",
         "msgstr": "User definiert"
     },
@@ -4556,7 +4560,7 @@
     },
     {
         "msgid": "datamapper.load_import_file",
-        "msgstr": "Laden eines Importfiles"
+        "msgstr": "Upload ein Importfile"
     },
     {
         "msgid": "datamapper.execute",
