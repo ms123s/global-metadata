@@ -2175,6 +2175,10 @@
         "msgstr": "Roles"
     },
     {
+        "msgid": "permissions.role_permission_saved",
+        "msgstr": "Permissions saved"
+    },
+    {
         "msgid": "PM",
         "msgstr": "PM"
     },
