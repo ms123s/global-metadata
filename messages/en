@@ -1143,6 +1143,10 @@
         "msgstr": "Take field"
     },
     {
+        "msgid": "entitytypes.class_not_created",
+        "msgstr": "Not yet created class"
+    },
+    {
         "msgid": "entitytypes.create_form_settings",
         "msgstr": "Generate form settings"
     },
@@ -1183,12 +1187,20 @@
         "msgstr": "Delete class"
     },
     {
+        "msgid": "entitytypes.delete_not_possible",
+        "msgstr": "Entitytype can not be deleted"
+    },
+    {
         "msgid": "entitytypes.delete_settings",
         "msgstr": "Delete settings"
     },
     {
         "msgid": "entitytypes.delete_messages",
         "msgstr": "Delete messages"
+    },
+    {
+        "msgid": "entitytypes.entitytype_exists_in_relations",
+        "msgstr": "EntityType is contained in relation(s)"
     },
     {
         "msgid": "entitytypes.leftmodule",
