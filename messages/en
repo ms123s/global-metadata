@@ -1463,6 +1463,14 @@
         "msgstr": "Formtest"
     },
     {
+        "msgid": "graphicaleditor.fieldselectorfield.db_fieldname",
+        "msgstr": "Database fieldname"
+    },
+    {
+        "msgid": "graphicaleditor.fieldselectorfield.form_fieldname",
+        "msgstr": "Form fieldname"
+    },
+    {
         "msgid": "graphicaleditor.select_resource",
         "msgstr": "Select a ressource"
     },
