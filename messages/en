@@ -1463,6 +1463,18 @@
         "msgstr": "Formtest"
     },
     {
+        "msgid": "graphicaleditor.select_resource",
+        "msgstr": "Select a ressource"
+    },
+    {
+        "msgid": "graphicaleditor.select_entity",
+        "msgstr": "Select the datatype"
+    },
+    {
+        "msgid": "graphicaleditor.constraints",
+        "msgstr": "Constraints"
+    },
+    {
         "msgid": "Groovy/Bean",
         "msgstr": "Groovy/Bean"
     },
