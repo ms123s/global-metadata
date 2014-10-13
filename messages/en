@@ -796,11 +796,11 @@
     },
     {
         "msgid": "datamapper.change_classes",
-        "msgstr": "Classes adjust (May be problems by data type changes)"
+        "msgstr": "Classes adjust (Problematic by data type changes)"
     },
     {
         "msgid": "datamapper.children_fields",
-        "msgstr": "child fields"
+        "msgstr": "Child fields"
     },
     {
         "msgid": "datamapper.classes_exists",
@@ -856,7 +856,15 @@
     },
     {
         "msgid": "datamapper.entity",
-        "msgstr": "Entity(Pojo)"
+        "msgstr": "Class"
+    },
+    {
+        "msgid": "datamapper.entity_create",
+        "msgstr": "Create"
+    },
+    {
+        "msgid": "datamapper.entity_depend",
+        "msgstr": "Dependent"
     },
     {
         "msgid": "datamapper.execute",
@@ -1457,6 +1465,26 @@
     {
         "msgid": "graphicaleditor.plugins.save.formtest",
         "msgstr": "Formtest"
+    },
+    {
+        "msgid": "graphicaleditor.fieldselectorfield.db_fieldname",
+        "msgstr": "Database fieldname"
+    },
+    {
+        "msgid": "graphicaleditor.fieldselectorfield.form_fieldname",
+        "msgstr": "Form fieldname"
+    },
+    {
+        "msgid": "graphicaleditor.select_resource",
+        "msgstr": "Select a ressource"
+    },
+    {
+        "msgid": "graphicaleditor.select_entity",
+        "msgstr": "Select the datatype"
+    },
+    {
+        "msgid": "graphicaleditor.constraints",
+        "msgstr": "Constraints"
     },
     {
         "msgid": "Groovy/Bean",

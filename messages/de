@@ -4395,8 +4395,16 @@
         "msgstr": "Speichern"
     },
     {
+        "msgid": "datamapper.entity_create",
+        "msgstr": "Erstellen"
+    },
+    {
+        "msgid": "datamapper.entity_depend",
+        "msgstr": "Abhängig"
+    },
+    {
         "msgid": "datamapper.entity",
-        "msgstr": "Entity(Pojo)"
+        "msgstr": "Class"
     },
     {
         "msgid": "datamapper.edit_fields",
@@ -4600,7 +4608,7 @@
     },
     {
         "msgid": "datamapper.change_classes",
-        "msgstr": "Klassen anpassen(Kann zu Problem bei Datentypeänderungen führen)"
+        "msgstr": "Klassen anpassen(Problematisch bei Datentypeänderungen)"
     },
     {
         "msgid": "datamapper.new_classes",

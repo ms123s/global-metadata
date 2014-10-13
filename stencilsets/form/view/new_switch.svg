@@ -9,7 +9,7 @@
   version="1.0">
   <defs></defs>
 <g pointer-events="fill" oryx:minimumSize="60 50">
-	<rect id="c" oryx:resize="vertical horizontal" x="0" y="0" width="120" height="90" rx="5" ry="5" stroke="black" stroke-dasharray="2, 4, 10, 4" stroke-width="1" fill="none" />
+	<rect id="c" oryx:resize="vertical horizontal" x="0" y="0" width="120" height="90" rx="5" ry="5" stroke="black" stroke-width="1" fill="none" />
 	<g id="arrows">
 	<path oryx:anchors="bottom" fill="none" stroke="black" stroke-width="2" d="M61.467,74.461l0.521-2.955L59.033,70.984
 		 M61.083,72.223c-6.667,3.5,1.333,5.072-11,5.072"/>

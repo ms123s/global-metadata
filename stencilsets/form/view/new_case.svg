@@ -9,7 +9,7 @@
   version="1.0">
   <defs></defs>
   <g pointer-events="fill" oryx:minimumSize="60 50">
-    <rect id="c" oryx:resize="vertical horizontal" x="0" y="0" width="120" height="90" stroke="black" stroke-dasharray="2, 4, 10, 4" stroke-width="1" fill="none" />
+    <rect id="c" oryx:resize="vertical horizontal" x="0" y="0" width="120" height="90" stroke="#5c7d97" rx="5" ry="5"  stroke-dasharray="5,5" stroke-width="1" fill="#fafafa" />
 
   </g>
 </svg>
