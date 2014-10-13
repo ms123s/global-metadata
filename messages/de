@@ -751,6 +751,10 @@
         "msgstr": "Team"
     },
     {
+        "msgid": "data.team",
+        "msgstr": "Team"
+    },
+    {
         "msgid": "data.team.disabled",
         "msgstr": "deaktiviert"
     },

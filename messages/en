@@ -1039,6 +1039,10 @@
         "msgstr": "Team"
     },
     {
+        "msgid": "data.team",
+        "msgstr": "Team"
+    },
+    {
         "msgid": "data.team.validFrom",
         "msgstr": "Valid from"
     },
