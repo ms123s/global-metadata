@@ -747,6 +747,14 @@
         "msgstr": "gültig ab"
     },
     {
+        "msgid": "data.team.teamid",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "data.team.name",
+        "msgstr": "Name"
+    },
+    {
         "msgid": "data._team",
         "msgstr": "Team"
     },
