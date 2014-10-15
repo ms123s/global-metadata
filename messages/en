@@ -1047,6 +1047,18 @@
         "msgstr": "Team"
     },
     {
+        "msgid": "data.team",
+        "msgstr": "Team"
+    },
+    {
+        "msgid": "data.team.teamid",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "data.team.name",
+        "msgstr": "Name"
+    },
+    {
         "msgid": "data.team.validFrom",
         "msgstr": "Valid from"
     },
