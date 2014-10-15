@@ -2904,15 +2904,15 @@
     },
     {
         "msgid": "widgets.table.select_button",
-        "msgstr": "Select existing record"
-    },
-    {
-        "msgid": "widgets.table.select_record",
-        "msgstr": "Record selection"
+        "msgstr": "Assign record"
     },
     {
         "msgid": "widgets.table.unassign_button",
         "msgstr": "Unassign record"
+    },
+    {
+        "msgid": "widgets.table.select_record",
+        "msgstr": "Record selection"
     },
     {
         "msgid": "XML",

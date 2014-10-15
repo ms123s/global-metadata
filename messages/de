@@ -1060,7 +1060,11 @@
     },
     {
         "msgid": "widgets.table.unassign_button",
-        "msgstr": "Datensatzzuordnung aufheben"
+        "msgstr": "Zuweisung aufheben"
+    },
+    {
+        "msgid": "widgets.table.select_button",
+        "msgstr": "Datensatz zuweisen"
     },
     {
         "msgid": "widgets.table.export_button",
@@ -4069,10 +4073,6 @@
     {
         "msgid": "composite.contextmenu.sub_from_tab",
         "msgstr": "von welchen Tab abziehen?"
-    },
-    {
-        "msgid": "widgets.table.select_button",
-        "msgstr": "vorhandenen Datensatz auswählen"
     },
     {
         "msgid": "meta.workflows.when-record-saved",
