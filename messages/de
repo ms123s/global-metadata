@@ -1060,7 +1060,7 @@
     },
     {
         "msgid": "widgets.table.unassign_button",
-        "msgstr": "Datensatzzuordnung trennen"
+        "msgstr": "Datensatzzuordnung aufheben"
     },
     {
         "msgid": "widgets.table.export_button",
@@ -4053,10 +4053,6 @@
     {
         "msgid": "select.yesno",
         "msgstr": "true:Ja;false:Nein"
-    },
-    {
-        "msgid": "widgets.table.unassign_button",
-        "msgstr": "Zuweisung aufheben"
     },
     {
         "msgid": "meta.lists.ne",
