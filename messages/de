@@ -3344,7 +3344,7 @@
     },
     {
         "msgid": "filter.text.new_exists_subselect",
-        "msgstr": "Subselect brücksichtigen"
+        "msgstr": "Subselect"
     },
     {
         "msgid": "filter.text.except",
