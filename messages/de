@@ -4387,6 +4387,14 @@
         "msgstr": "Ändern der Metadaten"
     },
     {
+        "msgid": "datamapper.parent_entity",
+        "msgstr": "Parent(Wird nur bei Pojo verwendet)"
+    },
+    {
+        "msgid": "datamapper.parent_entity_lookup",
+        "msgstr": "Parent lookup e.g. countryId==${countryId}<br/>countryId: field in parententity"
+    },
+    {
         "msgid": "datamapper.please_wait",
         "msgstr": "Bitte warten ..."
     },

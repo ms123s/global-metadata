@@ -915,6 +915,14 @@
         "msgstr": "Output"
     },
     {
+        "msgid": "datamapper.parent_entity",
+        "msgstr": "Parent relation(only pojo case)"
+    },
+    {
+        "msgid": "datamapper.parent_entity_lookup",
+        "msgstr": "Parent relation lookup e.g. countryId==${countryId}<br/>country: field in parententity"
+    },
+    {
         "msgid": "datamapper.please_wait",
         "msgstr": "Please wait ..."
     },
