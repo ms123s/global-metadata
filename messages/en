@@ -1444,7 +1444,7 @@
     },
     {
         "msgid": "filter.text.new_exists_subselect",
-        "msgstr": "considered to avoid recurrences subselect"
+        "msgstr": "Subselect"
     },
     {
         "msgid": "filter.text.new_search",
