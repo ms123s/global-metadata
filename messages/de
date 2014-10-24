@@ -4387,12 +4387,12 @@
         "msgstr": "Ändern der Metadaten"
     },
     {
-        "msgid": "datamapper.parent_entity",
-        "msgstr": "Parent(Wird nur bei Pojo verwendet)"
+        "msgid": "datamapper.parent_relation",
+        "msgstr": "Relation"
     },
     {
-        "msgid": "datamapper.parent_entity_lookup",
-        "msgstr": "Parent lookup e.g. countryId==${countryId}<br/>countryId: field in parententity"
+        "msgid": "datamapper.parent_lookup",
+        "msgstr": "Parent lookup, Möglichkeiten der Eingabe<ul><li>feldname: Bei einem Feld muß das Vergleichsfeld in Parent und Child gleich sein </li><li>parentfeld,childfeld</li><li>countryId==${countryId}: JDO-Filterausdruck</li></ul>"
     },
     {
         "msgid": "datamapper.please_wait",
