@@ -1475,6 +1475,14 @@
         "msgstr": "subtract from"
     },
     {
+        "msgid": "filtereditor.mainmodule",
+        "msgstr": "Mainentity"
+    },
+    {
+        "msgid": "filtereditor.sorthelp",
+        "msgstr": "Sortfield is the first field without an dot"
+    },
+    {
         "msgid": "graphicaleditor.add_record",
         "msgstr": "Add record"
     },

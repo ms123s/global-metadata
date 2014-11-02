@@ -1571,6 +1571,10 @@
         "msgstr": "Hauptentität"
     },
     {
+        "msgid": "filtereditor.sorthelp",
+        "msgstr": "Sortierungsfeld ist das erste Feld,das keinen Punkt enthält"
+    },
+    {
         "msgid": "meta.lists.filter_deleted",
         "msgstr": "Filter gelöscht"
     },
