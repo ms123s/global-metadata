@@ -1721,10 +1721,6 @@
   },
   "definitions":{
 		"language_items": [ {
-			"id": "simple",
-			"title": "Simple",
-			"value": "simple"
-		},{
 			"id": "groovy",
 			"title": "Groovy",
 			"value": "groovy"
@@ -1740,6 +1736,18 @@
 			"id": "property",
 			"title": "Property",
 			"value": "property"
+		},{
+			"id": "tokenize",
+			"title": "Tokenize",
+			"value": "tokenize"
+		},{
+			"id": "bean",
+			"title": "Bean",
+			"value": "bean"
+		},{
+			"id": "simple",
+			"title": "Simple",
+			"value": "simple"
 		},{
 			"id": "javascript",
 			"title": "Javascrip",
@@ -1764,14 +1772,6 @@
 			"id": "ognl",
 			"title": "Ognl",
 			"value": "ognl"
-		},{
-			"id": "bean",
-			"title": "Bean",
-			"value": "bean"
-		},{
-			"id": "tokenize",
-			"title": "Tokenize",
-			"value": "tokenize"
-		} ]
+		}]
   }
 }
