@@ -68,6 +68,15 @@
 			"type":"boolean",
 			"value": true,
 			"visible": true
+		},{
+			"id": "logExceptionsOnly",
+			"title":"Log exceptions only",
+			"title_de":"Nur Ausnah. loggen",
+			"description":"Log exceptions only",
+			"description_de":"Nur Ausnahmen loggen",
+			"type":"boolean",
+			"value": false,
+			"visible": true
 		}]
 	},{
 		"name": "endpointProperties",
@@ -385,6 +394,14 @@
 				"width": 250,
 				"optional": false
 			}]
+		},{
+      "id" : "loggingOff",
+      "title" : "Logging off",
+      "title_" : "Logging aus",
+      "description" : "",
+      "type" : "boolean",
+			"readonly": false,
+      "value" : false
 		}]
 	}, {
 		"name": "aggregateProperties",
