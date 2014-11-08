@@ -919,6 +919,10 @@
         "msgstr": "Beziehung"
     },
     {
+        "msgid": "datamapper.parent_update",
+        "msgstr": "Update Object, when exist, insteed create always a new one"
+    },
+    {
         "msgid": "datamapper.parent_lookup",
         "msgstr": "Parent relation lookup e.g. countryId==${countryId}<br/>country: field in parententity"
     },
