@@ -171,8 +171,8 @@
         "msgstr": "Aktionen"
     },
     {
-        "msgid": "permissions.permission_save",
-        "msgstr": "Gespeichert"
+        "msgid": "permissions.role_permission_saved",
+        "msgstr": "Permissions gespeichert"
     },
     {
         "msgid": "meta.workflows.wactions",
@@ -3179,8 +3179,16 @@
         "msgstr": "Service"
     },
     {
+        "msgid": "tactions.camellabel",
+        "msgstr": "Camel"
+    },
+    {
         "msgid": "tactions.serviceaction",
         "msgstr": "Service ausführen"
+    },
+    {
+        "msgid": "tactions.camelaction",
+        "msgstr": "Camel ausführen"
     },
     {
         "msgid": "tactions.processlabel",

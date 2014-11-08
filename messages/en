@@ -2755,6 +2755,14 @@
         "msgstr": "Active"
     },
     {
+        "msgid": "tactions.camelaction",
+        "msgstr": "Execute Camel"
+    },
+    {
+        "msgid": "tactions.camellabel",
+        "msgstr": "Camel"
+    },
+    {
         "msgid": "tactions.create-record",
         "msgstr": "Create a record in a related module"
     },
