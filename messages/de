@@ -4400,11 +4400,15 @@
     },
     {
         "msgid": "datamapper.parent_relation",
-        "msgstr": "Relation"
+        "msgstr": "<b>Relation</b>"
     },
     {
         "msgid": "datamapper.parent_update",
-        "msgstr": "Update Objekt, wenn vorhanden, ansonsten erzeuge immer ein Neues"
+        "msgstr": "<b>Update Objekt</b>, wenn vorhanden, ansonsten erzeuge immer ein Neues"
+    },
+    {
+        "msgid": "datamapper.parent_update_expr",
+        "msgstr": "Objekt lookup:, Möglichkeiten der Eingabe<ul><li>Feldname</li><li>JDO-Filterausdruck<br/>Integer: <b>countryId==${countryId}</b><br/>String: <b>countryId=='${countryId}'</b></li></ul>"
     },
     {
         "msgid": "datamapper.parent_lookup",
