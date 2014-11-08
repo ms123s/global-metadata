@@ -2760,7 +2760,7 @@
     },
     {
         "msgid": "tactions.camellabel",
-        "msgstr": "Camel"
+        "msgstr": "Endpoint uri"
     },
     {
         "msgid": "tactions.create-record",
