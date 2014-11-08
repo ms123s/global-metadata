@@ -224,14 +224,18 @@
 			"title":"Library",
 			"description":"",
 			"type":"Choice",
-			"value": "gson",
+			"value": "flexjson",
       "popular" : false,
       "items" : [ {
         "id" : "c1",
+        "title" : "flexjson",
+        "value" : "flexjson"
+      }, {
+        "id" : "c2",
         "title" : "xstream",
         "value" : "xstream"
       }, {
-        "id" : "c2",
+        "id" : "c3",
         "title" : "gson",
         "value" : "gson"
 			}],

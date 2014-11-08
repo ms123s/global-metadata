@@ -2603,6 +2603,10 @@
         "msgstr": "Route saved"
     },
     {
+        "msgid": "shell.datamapper_saved",
+        "msgstr": "Mapping saved"
+    },
+    {
         "msgid": "shell.copy_node",
         "msgstr": "Copy"
     },
