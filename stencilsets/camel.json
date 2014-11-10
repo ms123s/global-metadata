@@ -789,7 +789,7 @@
       "items" : [],
 			"visible": "urivalue_operation=='multiInsertUpdate'"
 		},{
-			"id": "urivalue_lookup",
+			"id": "urivalue_lookupRelationObjectExpr",
 			"title":"Parent lookup",
 			"title_de":"Parent lookup",
       "description_de": "Parent lookup, Möglichkeiten der Eingabe<ul><li>feldname: Bei einem Feld muß das Vergleichsfeld in Parent und Child gleich sein </li><li>parentfeld,childfeld</li><li>countryId==${countryId}: JDO-Filterausdruck</li></ul>",
@@ -807,7 +807,7 @@
 			"value": false,
 			"visible": "urivalue_operation=='multiInsertUpdate'"
 		},{
-			"id": "urivalue_update",
+			"id": "urivalue_lookupUpdateObjectExpr",
 			"title":"Object lookup",
 			"title_de":"Objekt lookup",
       "description_de": "Objekt lookup:, Möglichkeiten der Eingabe<ul><li>Feldname</li><li>JDO-Filterausdruck<br/>Integer: <b>countryId==${countryId}</b><br/>String: <b>countryId=='${countryId}'</b></li></ul>",
