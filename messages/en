@@ -923,15 +923,11 @@
         "msgstr": "<b>Update Object</b>, when exist, insteed create always a new one"
     },
     {
-        "msgid": "datamapper.parent_lookup",
-        "msgstr": "Parent relation lookup e.g. countryId==${countryId}<br/>country: field in parententity"
-    },
-    {
         "msgid": "datamapper.parent_update_expr",
         "msgstr": "Object lookup:, ways of entering<ul><li>Fieldname</li><li>JDO-Filterexpression<br/>Integer: <b>countryId==${countryId}</b><br/> String: <b>countryId=='${countryId}'</b></li></ul>"
     },
     {
-        "msgid": "datamapper.parent_entity_lookup",
+        "msgid": "datamapper.parent_lookup",
         "msgstr": "Parent lookup, ways of entering<ul><li>fieldname: One field, comparison field has the same name in parent and child</li><li>parentfield,childfield</li><li>countryId==${countryId}: JDO-Filterexpression</li></ul>"
     },
     {
