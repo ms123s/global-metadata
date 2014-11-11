@@ -789,16 +789,16 @@
       "items" : [],
 			"visible": "urivalue_operation=='multiInsertUpdate'"
 		},{
-			"id": "urivalue_lookup",
-			"title":"Parent lookup",
-			"title_de":"Parent lookup",
-      "description_de": "Parent lookup, Möglichkeiten der Eingabe<ul><li>feldname: Bei einem Feld muß das Vergleichsfeld in Parent und Child gleich sein </li><li>parentfeld,childfeld</li><li>countryId==${countryId}: JDO-Filterausdruck</li></ul>",
-      "description": "Parent lookup, ways of entering<ul><li>fieldname: One field, comparison field has the same name in parent and child</li><li>parentfield,childfield</li><li>countryId==${countryId}: JDO-Filterexpression</li></ul>",
+			"id": "urivalue_lookupRelationObjectExpr",
+			"title":"Object lookup",
+			"title_de":"Objekt lookup",
+      "description_de": "Relation Objekt  lookup, Möglichkeiten der Eingabe<ul><li>feldname: Bei einem Feld muß das Vergleichsfeld in Parent und Child gleich sein </li><li>parentfeld,childfeld</li><li>countryId==${countryId}: JDO-Filterausdruck</li></ul>",
+      "description": "Relation object lookup, ways of entering<ul><li>fieldname: One field, comparison field has the same name in parent and child</li><li>parentfield,childfield</li><li>countryId==${countryId}: JDO-Filterexpression</li></ul>",
 			"type":"String",
 			"value": "",
 			"visible": "urivalue_operation=='multiInsertUpdate' && urivalue_relation!='-'"
 		},{
-			"id": "update",
+			"id": "isupdate",
 			"title":"Update",
 			"title_de":"Update",
 			"description": "<b>Update Object</b>, when exist, insteed create always a new one",
@@ -807,14 +807,14 @@
 			"value": false,
 			"visible": "urivalue_operation=='multiInsertUpdate'"
 		},{
-			"id": "urivalue_update",
+			"id": "urivalue_lookupUpdateObjectExpr",
 			"title":"Object lookup",
 			"title_de":"Objekt lookup",
-      "description_de": "Objekt lookup:, Möglichkeiten der Eingabe<ul><li>Feldname</li><li>JDO-Filterausdruck<br/>Integer: <b>countryId==${countryId}</b><br/>String: <b>countryId=='${countryId}'</b></li></ul>",
-      "description": "Object lookup:, ways of entering<ul><li>Fieldname</li><li>JDO-Filterexpression<br/>Integer: <b>countryId==${countryId}</b><br/> String: <b>countryId=='${countryId}'</b></li></ul>",
+      "description_de": "Update Objekt lookup:, Möglichkeiten der Eingabe<ul><li>Feldname</li><li>JDO-Filterausdruck<br/>Integer: <b>countryId==${countryId}</b><br/>String: <b>countryId=='${countryId}'</b></li></ul>",
+      "description": "Update object lookup:, ways of entering<ul><li>Fieldname</li><li>JDO-Filterexpression<br/>Integer: <b>countryId==${countryId}</b><br/> String: <b>countryId=='${countryId}'</b></li></ul>",
 			"type":"String",
 			"value": "",
-			"visible": "urivalue_operation=='multiInsertUpdate' && update==true"
+			"visible": "urivalue_operation=='multiInsertUpdate' && isupdate==true"
 		}]
 	},{
 		"name": "fileProperties",
