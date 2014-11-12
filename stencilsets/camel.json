@@ -780,7 +780,7 @@
 			}],
 			"visible": true
 		},{
-			"id": "urivalue_relation",
+			"id": "uriparam_relation",
 			"title":"Relation",
 			"title_de":"Relation",
 			"config":{type:"ms123.util.RelationList"},
@@ -789,14 +789,14 @@
       "items" : [],
 			"visible": "urivalue_operation=='multiInsertUpdate'"
 		},{
-			"id": "urivalue_lookupRelationObjectExpr",
+			"id": "uriparam_lookupRelationObjectExpr",
 			"title":"Parent lookup",
 			"title_de":"Parent lookup",
       "description_de": "Parent lookup, Möglichkeiten der Eingabe<ul><li>feldname: Bei einem Feld muß das Vergleichsfeld in Parent und Child gleich sein </li><li>parentfeld,childfeld</li><li>countryId==${countryId}: JDO-Filterausdruck</li></ul>",
       "description": "Parent lookup, ways of entering<ul><li>fieldname: One field, comparison field has the same name in parent and child</li><li>parentfield,childfield</li><li>countryId==${countryId}: JDO-Filterexpression</li></ul>",
 			"type":"String",
-			"value": "",
-			"visible": "urivalue_operation=='multiInsertUpdate' && urivalue_relation!='-'"
+			"value": null,
+			"visible": "urivalue_operation=='multiInsertUpdate' && uriparam_relation!='-'"
 		},{
 			"id": "update",
 			"title":"Update",
@@ -807,13 +807,13 @@
 			"value": false,
 			"visible": "urivalue_operation=='multiInsertUpdate'"
 		},{
-			"id": "urivalue_lookupUpdateObjectExpr",
+			"id": "uriparam_lookupUpdateObjectExpr",
 			"title":"Object lookup",
 			"title_de":"Objekt lookup",
       "description_de": "Objekt lookup:, Möglichkeiten der Eingabe<ul><li>Feldname</li><li>JDO-Filterausdruck<br/>Integer: <b>countryId==${countryId}</b><br/>String: <b>countryId=='${countryId}'</b></li></ul>",
       "description": "Object lookup:, ways of entering<ul><li>Fieldname</li><li>JDO-Filterexpression<br/>Integer: <b>countryId==${countryId}</b><br/> String: <b>countryId=='${countryId}'</b></li></ul>",
 			"type":"String",
-			"value": "",
+			"value": null,
 			"visible": "urivalue_operation=='multiInsertUpdate' && update==true"
 		}]
 	},{
