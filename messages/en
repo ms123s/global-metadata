@@ -1288,7 +1288,7 @@
     },
     {
         "msgid": "entitytypes.confirm_delete",
-        "msgstr": "Delete class?"
+        "msgstr": "Really delete?"
     },
     {
         "msgid": "entitytypes.delete",
@@ -2649,6 +2649,10 @@
     {
         "msgid": "shell.form_saved",
         "msgstr": "Form saved"
+    },
+    {
+        "msgid": "shell.groovy_saved",
+        "msgstr": "File saved and compilied"
     },
     {
         "msgid": "shell.jsoneditor",

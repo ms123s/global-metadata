@@ -950,6 +950,11 @@
 			"value": "",
 			"description": "anonymous inner class implementing the processor's logic",
 			"optional": true
+		},{
+			"id": "isEndpoint",
+			"title":"Endpoint",
+			"type":"Boolean",
+			"value": false
 		}]
 	},{
 		"name": "datamapperProperties",

@@ -327,6 +327,10 @@
         "msgstr": "Anzeigen Quelle"
     },
     {
+        "msgid": "shell.groovy_saved",
+        "msgstr": "Datei gespeichert und compiliert"
+    },
+    {
         "msgid": "meta.lists.fs.displayname",
         "msgstr": "Anzeigename"
     },
@@ -1976,7 +1980,7 @@
     },
     {
         "msgid": "entitytypes.confirm_delete",
-        "msgstr": "Klasse löschen?"
+        "msgstr": "Wirklich löschen?"
     },
     {
         "msgid": "data.entity.save",
