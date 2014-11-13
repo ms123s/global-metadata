@@ -134,7 +134,7 @@
 			"title_de": "Sprache",
 			"readonly": false,
 			"type": "Choice",
-			"value": "simple",
+			"value": "groovy",
 			"visible": "defaultflow=='none'",
 			"items": "###language_items",
 			"width": 80,
