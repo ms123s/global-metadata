@@ -815,6 +815,15 @@
 			"type":"String",
 			"value": "",
 			"visible": "urivalue_operation=='multiInsertUpdate' && isupdate==true"
+		},{
+			"id": "uriparam_noUpdate",
+			"title":"No update",
+			"title_de":"Kein update",
+      "description_de": "Vorhandene Objekte nicht updaten, nur neue Objekte erzeugen",
+      "description": "Not update existing objects, create new objects only",
+			"type":"boolean",
+			"value": false,
+			"visible": "urivalue_operation=='multiInsertUpdate' && isupdate==true"
 		}]
 	},{
 		"name": "fileProperties",
