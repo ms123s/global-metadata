@@ -638,7 +638,7 @@
       "id" : "propagationBehavior",
       "type" : "Choice",
       "title" : "PropagationBehavior",
-      "value" : "PROPAGATION_REQUIRES_NEW",
+      "value" : "PROPAGATION_REQUIRED",
       "items" : [ {
         "id" : "c1",
         "title" : "Propagation requires new",
