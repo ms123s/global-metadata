@@ -4267,6 +4267,10 @@
         "msgstr": "Id"
     },
     {
+        "msgid": "data.tcondition",
+        "msgstr": "Bedingung"
+    },
+    {
         "msgid": "data.tcondition.active",
         "msgstr": "Aktiv"
     },
@@ -4289,6 +4293,10 @@
     {
         "msgid": "meta.triggers.tactions",
         "msgstr": "Aktionen"
+    },
+    {
+        "msgid": "data.taction",
+        "msgstr": "Aktion"
     },
     {
         "msgid": "data.taction.active",

@@ -1027,6 +1027,10 @@
         "msgstr": "Value"
     },
     {
+        "msgid": "data.tcondition",
+        "msgstr": "Condition"
+    },
+    {
         "msgid": "data.tcondition.active",
         "msgstr": "Active"
     },
