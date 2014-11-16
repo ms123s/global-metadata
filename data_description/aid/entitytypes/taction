@@ -32,7 +32,7 @@
             "enabled": true,
             "name": "value",
             "edittype": "TriggerActionEdit",
-            "datatype": "string"
+            "datatype": "text"
         },
         "active": {
             "enabled": true,
