@@ -257,7 +257,7 @@
 			"title_de": "Sprache",
 			"readonly": false,
 			"type": "Choice",
-			"value": "camel",
+			"value": "groovy",
 			"items": "###language_items",
 			"width": 80,
 			"optional": true
@@ -284,7 +284,7 @@
 			"title_de": "Sprache",
 			"readonly": false,
 			"type": "Choice",
-			"value": "camel",
+			"value": "groovy",
 			"items": "###language_items"
 		}]
 	}, {
@@ -302,7 +302,7 @@
 			"title_de": "Sprache",
 			"readonly": false,
 			"type": "Choice",
-			"value": "camel",
+			"value": "groovy",
 			"items": "###language_items",
 			"width": 80,
 			"optional": true
@@ -362,7 +362,7 @@
 			"description":"Specifies the expression language used to process the expression.",
 			"readonly": false,
 			"type": "Choice",
-			"value": "camel",
+			"value": "groovy",
 			"items": "###language_items",
 			"width": 80,
 			"optional": true
@@ -421,7 +421,7 @@
 			"title": "Language",
 			"description":"Specifies the expression language used to process the correlation expression.",
 			"type": "Choice",
-			"value": "camel",
+			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
 		}, {
@@ -435,7 +435,7 @@
 			"title": "Language",
 			"description":"Specifies the expression language used to process the completion predicate expression.",
 			"type": "Choice",
-			"value": "camel",
+			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
 		}, {
@@ -449,7 +449,7 @@
 			"title": "Language",
 			"description":"Specifies the expression language used to process the completion size expression.",
 			"type": "Choice",
-			"value": "camel",
+			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
 		}, {
@@ -463,7 +463,7 @@
 			"title": "Language",
 			"description":"Specifies the expression language used to process the completion timeout expression.",
 			"type": "Choice",
-			"value": "camel",
+			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
 		},{
@@ -590,7 +590,7 @@
 				"name_de": "Sprache",
 				"readonly": false,
 				"type": "Choice",
-				"value": "camel",
+				"value": "groovy",
 				"items": "###language_items",
 				"width": 80,
 				"optional": true
@@ -626,7 +626,7 @@
 				"name_de": "Sprache",
 				"readonly": false,
 				"type": "Choice",
-				"value": "camel",
+				"value": "groovy",
 				"items": "###language_items",
 				"width": 80,
 				"optional": true
@@ -666,7 +666,7 @@
 			"title": "Language",
 			"description":"Specifies the expression language used to process the continued expression.",
 			"type": "Choice",
-			"value": "camel",
+			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
 		},{
@@ -680,7 +680,7 @@
 			"title": "Language",
 			"description":"Specifies the expression language used to process the handled expression.",
 			"type": "Choice",
-			"value": "camel",
+			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
 		},{
@@ -694,7 +694,7 @@
 			"title": "Language",
 			"description":"Specifies the expression language used to process the retryWhile expression.",
 			"type": "Choice",
-			"value": "camel",
+			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
 		},{
