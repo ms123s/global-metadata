@@ -2923,6 +2923,10 @@
         "msgstr": "Align vertical"
     },
     {
+        "msgid": "widgets.form.multiedit_expression",
+        "msgstr": "Expression"
+    },
+    {
         "msgid": "widgets.table.add_button",
         "msgstr": "New record"
     },
