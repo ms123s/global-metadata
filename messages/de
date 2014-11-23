@@ -1027,6 +1027,10 @@
         "msgstr": "Import wurde erstellt"
     },
     {
+        "msgid": "widgets.form.multiedit_expression",
+        "msgstr": "Formel"
+    },
+    {
         "msgid": "widgets.table.view_button",
         "msgstr": "Datensatz anzeigen"
     },
