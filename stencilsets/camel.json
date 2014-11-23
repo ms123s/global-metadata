@@ -1387,15 +1387,15 @@
 			"id": "startableGroups",
 			"type": "MultiSelect",
 			"config": "permission:getAllRoles:name",
-			"title": "Permission (roles)",
+			"title": "Permission (groups)",
 			"title_de": "Erlaubt (Rollen)",
 			"value": "",
 			"visible": "rpc==true",
 			"length": "50"
 		},{
 			"id": "startableUsers",
-			"type": "ModuleSelector",
-			"config": "user:userid",
+			"type": "MultiSelect",
+			"config": "auth:getUsers:userid",
 			"title": "Permission (user)",
 			"title_de": "Erlaubt (User)",
 			"value": "",

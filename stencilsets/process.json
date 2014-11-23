@@ -783,8 +783,8 @@
 			"length": "50"
 		},{
 			"id": "startableUsers",
-			"type": "ModuleSelector",
-			"config": "user:userid",
+			"type": "MultiSelect",
+			"config": "auth:getUsers:userid",
 			"title": "Startable users",
 			"title_de": "Startbar von(Usern)",
 			"value": "",
