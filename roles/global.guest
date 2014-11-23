@@ -23,6 +23,21 @@
             "enabled": true,
             "permission": "website:entities:data:addressgroup",
             "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "imp2:entities:data:country",
+            "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "imp2:entities:data:customer",
+            "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "imp2:entities:data:ansprechpartner",
+            "actions": "read"
         }
     ]
 }

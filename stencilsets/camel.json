@@ -1330,6 +1330,77 @@
 			"readonly": false,
 			"popular": false,
 			"optional": true
+		},{
+			"id": "rpc",
+			"title":"RPC",
+			"description_de": "Soll die Route über rpc erreichbar sein?",
+			"description": "Should be the route reachable via rpc?",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		},{
+			"id": "rpcParameter",
+			"type": "Complex",
+			"title": "RPC-Parameter",
+			"value": "",
+			"visible": "rpc==true",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"filter": "[a-zA-Z0-9]",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "defaultvalue",
+				"name_de": "Defaultwert",
+				"name": "Defaultvalue",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			},{
+				"id": "type",
+				"name": "Type",
+				"name_de": "Typ",
+				"readonly": false,
+				"type": "Choice",
+				"value": "string",
+				"items": "###parametertype_items",
+				"width": 80,
+				"optional": true
+			},{
+				"id": "destination",
+				"name": "Destination",
+				"name_de": "Ziel",
+				"readonly": false,
+				"type": "Choice",
+				"value": "property",
+				"items": "###destination_items",
+				"width": 80,
+				"optional": true
+			}]
+		},{
+			"id": "startableGroups",
+			"type": "MultiSelect",
+			"config": "permission:getAllRoles:name",
+			"title": "Startable groups",
+			"title_de": "Startbar von(Gruppen)",
+			"value": "",
+			"visible": "rpc==true",
+			"length": "50"
+		},{
+			"id": "startableUsers",
+			"type": "ModuleSelector",
+			"config": "user:userid",
+			"title": "Startable users",
+			"title_de": "Startbar von(Usern)",
+			"value": "",
+			"visible": "rpc==true",
+			"length": "50"
 		}]
 	},
 	{
@@ -1847,6 +1918,44 @@
 			"id": "ognl",
 			"title": "Ognl",
 			"value": "ognl"
+		}],
+		"parametertype_items": [ {
+			"id": "string",
+			"title": "String",
+			"value": "string"
+		},{
+			"id": "integer",
+			"title": "Integer",
+			"value": "integer"
+		},{
+			"id": "double",
+			"title": "Double",
+			"value": "double"
+		},{
+			"id": "boolean",
+			"title": "Boolean",
+			"value": "boolean"
+		},{
+			"id": "list",
+			"title": "List",
+			"value": "list"
+		},{
+			"id": "map",
+			"title": "Map",
+			"value": "map"
+		}],
+		"destination_items": [ {
+			"id": "property",
+			"title": "Property",
+			"value": "property"
+		},{
+			"id": "header",
+			"title": "Header",
+			"value": "header"
+		},{
+			"id": "body",
+			"title": "Body",
+			"value": "body"
 		}]
   }
 }
