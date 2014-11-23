@@ -1387,8 +1387,8 @@
 			"id": "startableGroups",
 			"type": "MultiSelect",
 			"config": "permission:getAllRoles:name",
-			"title": "Startable groups",
-			"title_de": "Startbar von(Gruppen)",
+			"title": "Permission (roles)",
+			"title_de": "Erlaubt (Rollen)",
 			"value": "",
 			"visible": "rpc==true",
 			"length": "50"
@@ -1396,8 +1396,8 @@
 			"id": "startableUsers",
 			"type": "ModuleSelector",
 			"config": "user:userid",
-			"title": "Startable users",
-			"title_de": "Startbar von(Usern)",
+			"title": "Permission (user)",
+			"title_de": "Erlaubt (User)",
 			"value": "",
 			"visible": "rpc==true",
 			"length": "50"
