@@ -1359,8 +1359,16 @@
 				"name_de": "Defaultwert",
 				"name": "Defaultvalue",
 				"type": "String",
-				"value": "",
+				"value": null,
 				"width": 150,
+				"optional": false
+			}, {
+				"id": "optional",
+				"name_de": "Optional",
+				"name": "Optional",
+				"type": "boolean",
+				"value": false,
+				"width": 50,
 				"optional": false
 			},{
 				"id": "type",
