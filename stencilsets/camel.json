@@ -1397,6 +1397,8 @@
 			"config": "permission:getAllRoles:name",
 			"title": "Permission (groups)",
 			"title_de": "Erlaubt (Rollen)",
+			"destination": "User with a min. one of these roles may start the route",
+			"description_de": "User mit einer min. einer dieser  Rollen dürfen die Route starten",
 			"value": "",
 			"visible": "rpc==true",
 			"length": "50"
@@ -1406,6 +1408,8 @@
 			"config": "auth:getUsers:userid",
 			"title": "Permission (user)",
 			"title_de": "Erlaubt (User)",
+			"destination": "This users are able to start the route",
+			"description_de": "Diese User dürfen die Route starten",
 			"value": "",
 			"visible": "rpc==true",
 			"length": "50"
