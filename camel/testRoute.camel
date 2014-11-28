@@ -1,0 +1,173 @@
+[sw]
+	type = sw.camel
+--
+{
+  "resourceId": "oryx_8A851C39-5CD5-4AE7-9582-1FDA5D8B5530",
+  "properties": {
+    "overrideid": "globalTest",
+    "documentation": null,
+    "autostart": true,
+    "enabled": true,
+    "logExceptionsOnly": false,
+    "version": "",
+    "author": "",
+    "creationdate": null,
+    "modificationdate": null,
+    "camelcontext": "default",
+    "rpc": false,
+    "rpcParameter": null,
+    "startableGroups": null,
+    "startableUsers": null
+  },
+  "stencil": {
+    "id": "Camelrouting"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_34D5A56F-A2D7-4810-94F9-999BCF7C4A56",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "type_file": "File",
+        "uri_template": "file:${path}",
+        "urivalue_path": "/root/globaltest",
+        "uriparam_fileName": "",
+        "uriparam_charset": "UTF-8",
+        "uriparam_delete": false,
+        "uriparam_recursive": false,
+        "uriparam_noop": false,
+        "uriparam_flatten": false,
+        "uriparam_autoCreate": true,
+        "uriparam_consumer.delay": "5000",
+        "uriparam_moveFailed": ".error",
+        "uriparam_antInclude": "",
+        "uriparam_antExclude": "",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "FileEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_3E34BD18-EB74-45BB-803C-69DD02BA6E91"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 193,
+          "y": 224
+        },
+        "upperLeft": {
+          "x": 113,
+          "y": 164
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_0ECCC39B-2EA8-4D2E-BD9B-CE41BE6F7842",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "type_file": "File",
+        "uri_template": "file:${path}",
+        "urivalue_path": "/root/globalout",
+        "uriparam_fileName": "",
+        "uriparam_charset": "UTF-8",
+        "uriparam_delete": false,
+        "uriparam_recursive": false,
+        "uriparam_noop": false,
+        "uriparam_flatten": false,
+        "uriparam_autoCreate": true,
+        "uriparam_consumer.delay": "5000",
+        "uriparam_moveFailed": ".error",
+        "uriparam_antInclude": "",
+        "uriparam_antExclude": "",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "FileEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 260,
+          "y": 364
+        },
+        "upperLeft": {
+          "x": 180,
+          "y": 304
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_3E34BD18-EB74-45BB-803C-69DD02BA6E91",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_0ECCC39B-2EA8-4D2E-BD9B-CE41BE6F7842"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 220,
+          "y": 303.46875
+        },
+        "upperLeft": {
+          "x": 193.78125,
+          "y": 194
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 220,
+          "y": 194
+        },
+        {
+          "x": 40,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_0ECCC39B-2EA8-4D2E-BD9B-CE41BE6F7842"
+      }
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 2485,
+      "y": 3050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "camel",
+    "namespace": "http://b3mn.org/stencilset/camel#"
+  },
+  "ssextensions": [],
+  "zoomLevel": 1
+}

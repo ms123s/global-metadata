@@ -659,6 +659,10 @@
         "msgstr": "Display Team in subpanel"
     },
     {
+        "msgid": "data.entity.record_validation",
+        "msgstr": "Record validation"
+    },
+    {
         "msgid": "data.entity.titel_expression",
         "msgstr": "Title expression (e.g.: first name + '' + last_name)"
     },

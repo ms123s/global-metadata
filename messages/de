@@ -515,6 +515,10 @@
         "msgstr": "Zeilenanzahl nicht anzeigen"
     },
     {
+        "msgid": "data.entity.record_validation",
+        "msgstr": "Datensatzvalidierung"
+    },
+    {
         "msgid": "data.entity.titel_expression",
         "msgstr": "Titelausdruck(z.B:vorname+' '+nachname)"
     },
