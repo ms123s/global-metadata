@@ -324,7 +324,23 @@
     },
     {
         "msgid": "shell.jsoneditor",
-        "msgstr": "Anzeigen Quelle"
+        "msgstr": "Edit Quelle"
+    },
+    {
+        "msgid": "shell.save",
+        "msgstr": "Speichern"
+    },
+    {
+        "msgid": "shell.saved",
+        "msgstr": "Inhalt gespeichert"
+    },
+    {
+        "msgid": "shell.save_failed",
+        "msgstr": "Save failed"
+    },
+    {
+        "msgid": "shell.texteditor",
+        "msgstr": "Edit Text"
     },
     {
         "msgid": "shell.groovy_saved",

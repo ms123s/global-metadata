@@ -2660,7 +2660,11 @@
     },
     {
         "msgid": "shell.jsoneditor",
-        "msgstr": "View source"
+        "msgstr": "Edit source"
+    },
+    {
+        "msgid": "shell.texteditor",
+        "msgstr": "Edit text"
     },
     {
         "msgid": "shell.new_directory",
@@ -2741,6 +2745,18 @@
     {
         "msgid": "shell.rule_saved",
         "msgstr": "Rules saved"
+    },
+    {
+        "msgid": "shell.save",
+        "msgstr": "Save"
+    },
+    {
+        "msgid": "shell.saved",
+        "msgstr": "Content saved"
+    },
+    {
+        "msgid": "shell.save_failed",
+        "msgstr": "Speichern fehlgeschlagen"
     },
     {
         "msgid": "shell.webpage_saved",
