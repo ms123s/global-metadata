@@ -2796,7 +2796,7 @@
     },
     {
         "msgid": "tactions.camellabel",
-        "msgstr": "Endpoint uri"
+        "msgstr": "RouteId"
     },
     {
         "msgid": "tactions.create-record",
