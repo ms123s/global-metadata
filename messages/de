@@ -4723,10 +4723,6 @@
         "msgstr": "Anzeige in eigenen Fenster"
     },
     {
-        "msgid": "permissions.role_permission_saved",
-        "msgstr": "Die Permission für die Rolle wurde gespeichert"
-    },
-    {
         "msgid": "settings.check_type",
         "msgstr": "Prüfung"
     },

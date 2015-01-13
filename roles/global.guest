@@ -38,6 +38,21 @@
             "enabled": true,
             "permission": "imp2:entities:data:ansprechpartner",
             "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "firstapp:entities:data:address",
+            "actions": "read,write"
+        },
+        {
+            "enabled": true,
+            "permission": "firstapp:entities:data:contact",
+            "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "firstapp:entities:data:customer",
+            "actions": "read"
         }
     ]
 }
