@@ -1427,6 +1427,10 @@
         "msgstr": "Feldname"
     },
     {
+        "msgid": "settings.hide",
+        "msgstr": "Verstecken auf"
+    },
+    {
         "msgid": "moduleaccesseditor.owner",
         "msgstr": "Eigentümer"
     },

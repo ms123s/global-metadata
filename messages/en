@@ -2559,6 +2559,10 @@
         "msgstr": "Transfer from selection"
     },
     {
+        "msgid": "settings.hide",
+        "msgstr": "Hide on"
+    },
+    {
         "msgid": "settings.innerThreshold",
         "msgstr": "Internal threshold"
     },

@@ -42,7 +42,7 @@
         {
             "enabled": true,
             "permission": "firstapp:entities:data:address",
-            "actions": "read,write"
+            "actions": "read"
         },
         {
             "enabled": true,
