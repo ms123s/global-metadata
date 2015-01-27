@@ -67,6 +67,10 @@
         "msgstr": "<b>Bitte warten!</b>"
     },
     {
+        "msgid": "form.execute",
+        "msgstr": "Ausführen"
+    },
+    {
         "msgid": "tasks.form.cancel",
         "msgstr": "Abbrechen"
     },
@@ -5057,5 +5061,78 @@
     {
         "msgid": "ge.View.zoomStandard",
         "msgstr": "Originalgröße"
-    }
+    },
+		{
+				"msgid": "validation.AssertFalse",
+				"msgstr": "muss falsch sein"
+		},
+		{
+				"msgid": "validation.AssertTrue",
+				"msgstr": "muss wahr sein"
+		},
+		{
+				"msgid": "validation.Digits",
+				"msgstr": "numerischer Wert außerhalb erlaubten Wertebereichs (<{integer} Ziffern>,<{fraction} Ziffern> erwartet)"
+		},
+		{
+				"msgid": "validation.Future",
+				"msgstr": "muss in der Zukunft liegen"
+		},
+		{
+				"msgid": "validation.Max",
+				"msgstr": "muss kleiner oder gleich {value} sein"
+		},
+		{
+				"msgid": "validation.Min",
+				"msgstr": "muss größer oder gleich {value} sein"
+		},
+		{
+				"msgid": "validation.NotNull",
+				"msgstr": "darf nicht null sein"
+		},
+		{
+				"msgid": "validation.Null",
+				"msgstr": "muss null sein"
+		},
+		{
+				"msgid": "validation.Past",
+				"msgstr": "muss in der Vergangenheit liegen"
+		},
+		{
+				"msgid": "validation.Pattern",
+				"msgstr": "muss auf Ausdruck '{regexp}' passen"
+		},
+		{
+				"msgid": "validation.Size",
+				"msgstr": "muss zwischen {min} und {max} liegen"
+		},
+		{
+				"msgid": "validation.CreditCardNumber",
+				"msgstr": "ungültige Kreditkartennummer"
+		},
+		{
+				"msgid": "validation.Email",
+				"msgstr": "keine gültige E-Mail-Adresse"
+		},
+		{
+				"msgid": "validation.Length",
+				"msgstr": "muss zwischen {min} und {max} liegen"
+		},
+		{
+				"msgid": "validation.NotBlank",
+				"msgstr": "darf nicht leer sein"
+		},
+		{
+				"msgid": "validation.NotEmpty",
+				"msgstr": "darf nicht leer sein"
+		},
+		{
+				"msgid": "validation.Range",
+				"msgstr": "muss zwischen {min} und {max} liegen"
+		},
+		{
+				"msgid": "validation.URL",
+				"msgstr": "muss eine gültige URL sein"
+		}
+
 ]

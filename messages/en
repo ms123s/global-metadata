@@ -1495,6 +1495,10 @@
         "msgstr": "Sortfield is the first field without an dot"
     },
     {
+        "msgid": "form.execute",
+        "msgstr": "Execute"
+    },
+    {
         "msgid": "graphicaleditor.add_record",
         "msgstr": "Add record"
     },
@@ -3261,5 +3265,77 @@
     {
         "msgid": "ge.View.zoomStandard",
         "msgstr": "Original size"
-    }
+    },
+		{
+				"msgid": "validation.AssertFalse",
+				"msgstr": "must be false"
+		},
+		{
+				"msgid": "validation.AssertTrue",
+				"msgstr": "must be true"
+		},
+		{
+				"msgid": "validation.Digits",
+				"msgstr": "numeric value out of bounds (<{integer} digits>.<{fraction} digits> expected)"
+		},
+		{
+				"msgid": "validation.Future",
+				"msgstr": "must be in the future"
+		},
+		{
+				"msgid": "validation.Max",
+				"msgstr": "must be less than or equal to {value}"
+		},
+		{
+				"msgid": "validation.Min",
+				"msgstr": "must be greater than or equal to {value}"
+		},
+		{
+				"msgid": "validation.NotNull",
+				"msgstr": "may not be null"
+		},
+		{
+				"msgid": "validation.Null",
+				"msgstr": "must be null"
+		},
+		{
+				"msgid": "validation.Past",
+				"msgstr": "must be in the past"
+		},
+		{
+				"msgid": "validation.Pattern",
+				"msgstr": "must match '{regexp}'"
+		},
+		{
+				"msgid": "validation.Size",
+				"msgstr": "size must be between {min} and {max}"
+		},
+		{
+				"msgid": "validation.CreditCardNumber",
+				"msgstr": "invalid credit card number"
+		},
+		{
+				"msgid": "validation.Email",
+				"msgstr": "not a well-formed email address"
+		},
+		{
+				"msgid": "validation.Length",
+				"msgstr": "length must be between {min} and {max}"
+		},
+		{
+				"msgid": "validation.NotBlank",
+				"msgstr": "may not be empty"
+		},
+		{
+				"msgid": "validation.NotEmpty",
+				"msgstr": "may not be empty"
+		},
+		{
+				"msgid": "validation.Range",
+				"msgstr": "must be between {min} and {max}"
+		},
+		{
+				"msgid": "validation.URL",
+				"msgstr": "must be a valid URL"
+		}
 ]
