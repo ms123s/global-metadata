@@ -53,6 +53,11 @@
             "enabled": true,
             "permission": "firstapp:entities:data:customer",
             "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "tutorials:entities:data:employee",
+            "actions": "read"
         }
     ]
 }

@@ -235,6 +235,10 @@
         "msgstr": "Alle Module zusammen"
     },
     {
+        "msgid": "field_not_in_database",
+        "msgstr": "Wert in Datenbank nicht gefunden"
+    },
+    {
         "msgid": "fieldselector.selectall",
         "msgstr": "Alle auswählen"
     },

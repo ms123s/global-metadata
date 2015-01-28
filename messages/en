@@ -1395,6 +1395,10 @@
         "msgstr": "Export"
     },
     {
+        "msgid": "field_not_in_database",
+        "msgstr": "Value not found in database"
+    },
+    {
         "msgid": "fieldselector.removeall",
         "msgstr": "Remove all"
     },
