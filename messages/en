@@ -3345,5 +3345,109 @@
 		{
 				"msgid": "validation.URL",
 				"msgstr": "must be a valid URL"
+		},
+		{
+				"msgid": "querybuilder.add_rule",
+				"msgstr": "Add rule"
+		},
+		{
+			 "msgid": "querybuilder.add_group",
+			 "msgstr": "Add group"
+		},
+		{
+			 "msgid": "querybuilder.delete_rule",
+			 "msgstr": "Delete"
+		},
+		{
+			 "msgid": "querybuilder.delete_group",
+			 "msgstr": "Delete"
+		},
+		{
+			 "msgid": "querybuilder.condition_and",
+			 "msgstr": "AND"
+		},
+		{
+			 "msgid": "querybuilder.condition_or",
+			 "msgstr": "OR"
+		},
+		{
+			 "msgid": "querybuilder.filter_select_placeholder",
+			 "msgstr": "------"
+		},
+		{
+			 "msgid": "querybuilder.equal",
+			 "msgstr": "equal"
+		},
+		{
+			 "msgid": "querybuilder.not_equal",
+			 "msgstr": "not equal"
+		},
+		{
+			 "msgid": "querybuilder.in",
+			 "msgstr": "in"
+		},
+		{
+			 "msgid": "querybuilder.not_in",
+			 "msgstr": "not in"
+		},
+		{
+			 "msgid": "querybuilder.less",
+			 "msgstr": "less"
+		},
+		{
+			 "msgid": "querybuilder.less_or_equal",
+			 "msgstr": "less or equal"
+		},
+		{
+			 "msgid": "querybuilder.greater",
+			 "msgstr": "greater"
+		},
+		{
+			 "msgid": "querybuilder.greater_or_equal",
+			 "msgstr": "greater or equal"
+		},
+		{
+			 "msgid": "querybuilder.between",
+			 "msgstr": "between"
+		},
+		{
+			 "msgid": "querybuilder.begins_with",
+			 "msgstr": "begins with"
+		},
+		{
+			 "msgid": "querybuilder.not_begins_with",
+			 "msgstr": "doesn't begin with"
+		},
+		{
+			 "msgid": "querybuilder.contains",
+			 "msgstr": "contains"
+		},
+		{
+			 "msgid": "querybuilder.not_contains",
+			 "msgstr": "doesn't contain"
+		},
+		{
+			 "msgid": "querybuilder.ends_with",
+			 "msgstr": "ends with"
+		},
+		{
+			 "msgid": "querybuilder.not_ends_with",
+			 "msgstr": "doesn't end with"
+		},
+		{
+			 "msgid": "querybuilder.is_empty",
+			 "msgstr": "is empty"
+		},
+		{
+			 "msgid": "querybuilder.is_not_empty",
+			 "msgstr": "is not empty"
+		},
+		{
+			 "msgid": "querybuilder.is_null",
+			 "msgstr": "is null"
+		},
+		{
+			 "msgid": "querybuilder.is_not_null",
+			 "msgstr": "is not null"
 		}
 ]

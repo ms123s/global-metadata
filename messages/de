@@ -5141,6 +5141,105 @@
 		{
 				"msgid": "validation.URL",
 				"msgstr": "muss eine gültige URL sein"
+		},
+		{
+				"msgid": "querybuilder.add_rule",
+				"msgstr": "Regel"
+		},
+		{
+				"msgid": "querybuilder.add_group",
+				"msgstr": "Gruppe"
+		},
+		{
+				"msgid": "querybuilder.delete_rule",
+				"msgstr": ""
+		},
+		{
+				"msgid": "querybuilder.delete_group",
+				"msgstr": ""
+		},
+		{
+				"msgid": "querybuilder.condition_and",
+				"msgstr": "UND"
+		},
+		{
+				"msgid": "querybuilder.condition_or",
+				"msgstr": "ODER"
+		},
+		{
+				"msgid": "querybuilder.filter_select_placeholder",
+				"msgstr": "------"
+		},
+		{
+				"msgid": "querybuilder.equal",
+				"msgstr": "gleich"
+		},
+		{
+				"msgid": "querybuilder.not_equal",
+				"msgstr": "ungleich"
+		},
+		{
+				"msgid": "querybuilder.in",
+				"msgstr": "in"
+		},
+		{
+				"msgid": "querybuilder.not_in",
+				"msgstr": "nicht in"
+		},
+		{
+				"msgid": "querybuilder.less",
+				"msgstr": "kleiner"
+		},
+		{
+				"msgid": "querybuilder.less_or_equal",
+				"msgstr": "kleiner gleich"
+		},
+		{
+				"msgid": "querybuilder.greater",
+				"msgstr": "größer"
+		},
+		{
+				"msgid": "querybuilder.greater_or_equal",
+				"msgstr": "größer gleich"
+		},
+		{
+				"msgid": "querybuilder.begins_with",
+				"msgstr": "beginnt mit"
+		},
+		{
+				"msgid": "querybuilder.not_begins_with",
+				"msgstr": "beginnt nicht mit"
+		},
+		{
+				"msgid": "querybuilder.contains",
+				"msgstr": "enthält"
+		},
+		{
+				"msgid": "querybuilder.not_contains",
+				"msgstr": "enthält nicht"
+		},
+		{
+				"msgid": "querybuilder.ends_with",
+				"msgstr": "endet mit"
+		},
+		{
+				"msgid": "querybuilder.not_ends_with",
+				"msgstr": "endet nicht mit"
+		},
+		{
+				"msgid": "querybuilder.is_empty",
+				"msgstr": "ist leer"
+		},
+		{
+				"msgid": "querybuilder.is_not_empty",
+				"msgstr": "ist nicht leer"
+		},
+		{
+				"msgid": "querybuilder.is_null",
+				"msgstr": "ist null"
+		},
+		{
+				"msgid": "querybuilder.is_not_null",
+				"msgstr": "ist nicht null"
 		}
-
 ]
