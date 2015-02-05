@@ -2315,6 +2315,10 @@
         "msgstr": "Start Process"
     },
     {
+        "msgid": "processexplorer.definition.start_workflow",
+        "msgstr": "Execute workflow"
+    },
+    {
         "msgid": "processexplorer.details_activity",
         "msgstr": "Activities"
     },

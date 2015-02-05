@@ -2775,6 +2775,10 @@
         "msgstr": "Prozess starten"
     },
     {
+        "msgid": "processexplorer.definition.start_workflow",
+        "msgstr": "Workflow starten"
+    },
+    {
         "msgid": "processexplorer.definition.history",
         "msgstr": "Historie"
     },
