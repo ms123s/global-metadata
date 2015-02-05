@@ -3449,5 +3449,73 @@
 		{
 			 "msgid": "querybuilder.is_not_null",
 			 "msgstr": "is not null"
+		},
+		{
+				"msgid": "datatables.sEmptyTable",
+				"msgstr": "No data available in table"
+		},
+		{
+				"msgid": "datatables.sInfo",
+				"msgstr": "Showing _START_ to _END_ of _TOTAL_ entries"
+		},
+		{
+				"msgid": "datatables.sInfoEmpty",
+				"msgstr": "Showing 0 to 0 of 0 entries"
+		},
+		{
+				"msgid": "datatables.sInfoFiltered",
+				"msgstr": "(filtered from _MAX_ total entries)"
+		},
+		{
+				"msgid": "datatables.sInfoPostFix",
+				"msgstr": ""
+		},
+		{
+				"msgid": "datatables.sInfoThousands",
+				"msgstr": "."
+		},
+		{
+				"msgid": "datatables.sLengthMenu",
+				"msgstr": "Show _MENU_ entries"
+		},
+		{
+				"msgid": "datatables.sLoadingRecords",
+				"msgstr": "Loading..."
+		},
+		{
+				"msgid": "datatables.sProcessing",
+				"msgstr": "Please wait..."
+		},
+		{
+				"msgid": "datatables.sSearch",
+				"msgstr": "Filter Result"
+		},
+		{
+				"msgid": "datatables.sZeroRecords",
+				"msgstr": "No matching records found."
+		},
+		{
+				"msgid": "datatables.sFirst",
+				"msgstr": "First"
+		},
+		{
+				"msgid": "datatables.sPrevious",
+				"msgstr": "Back"
+		},
+		{
+				"msgid": "datatables.sNext",
+				"msgstr": "Next"
+		},
+		{
+				"msgid": "datatables.sLast",
+				"msgstr": "Last"
+		},
+		{
+				"msgid": "datatables.sSortAscending",
+				"msgstr" :": activate to sort column ascending"
+		},
+		{
+			"msgid": "datatables.sSortDescending",
+			"msgstr":": activate to sort column descending"
 		}
 ]

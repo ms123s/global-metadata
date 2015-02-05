@@ -5241,5 +5241,73 @@
 		{
 				"msgid": "querybuilder.is_not_null",
 				"msgstr": "ist nicht null"
+		},
+		{
+				"msgid": "datatables.sEmptyTable",
+				"msgstr": "Keine Daten in der Tabelle vorhanden"
+		},
+		{
+				"msgid": "datatables.sInfo",
+				"msgstr": "_START_ bis _END_ von _TOTAL_ Einträgen"
+		},
+		{
+				"msgid": "datatables.sInfoEmpty",
+				"msgstr": "0 bis 0 von 0 Einträgen"
+		},
+		{
+				"msgid": "datatables.sInfoFiltered",
+				"msgstr": "(gefiltert von _MAX_ Einträgen)"
+		},
+		{
+				"msgid": "datatables.sInfoPostFix",
+				"msgstr": ""
+		},
+		{
+				"msgid": "datatables.sInfoThousands",
+				"msgstr": "."
+		},
+		{
+				"msgid": "datatables.sLengthMenu",
+				"msgstr": "_MENU_ Einträge"
+		},
+		{
+				"msgid": "datatables.sLoadingRecords",
+				"msgstr": "Wird geladen..."
+		},
+		{
+				"msgid": "datatables.sProcessing",
+				"msgstr": "Bitte warten..."
+		},
+		{
+				"msgid": "datatables.sSearch",
+				"msgstr": "Ergebnis filtern"
+		},
+		{
+				"msgid": "datatables.sZeroRecords",
+				"msgstr": "Keine Einträge vorhanden."
+		},
+		{
+				"msgid": "datatables.sFirst",
+				"msgstr": "Erste"
+		},
+		{
+				"msgid": "datatables.sPrevious",
+				"msgstr": "Zurück"
+		},
+		{
+				"msgid": "datatables.sNext",
+				"msgstr": "Nächste"
+		},
+		{
+				"msgid": "datatables.sLast",
+				"msgstr": "Letzte"
+		},
+		{
+				"msgid": "datatables.sSortAscending",
+				"msgstr" :": aktivieren, um Spalte aufsteigend zu sortieren"
+		},
+		{
+			"msgid": "datatables.sSortDescending",
+			"msgstr":": aktivieren, um Spalte absteigend zu sortieren"
 		}
 ]
