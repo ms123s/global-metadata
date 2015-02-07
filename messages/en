@@ -1247,6 +1247,10 @@
         "msgstr": "EntityType is contained in relation(s)"
     },
     {
+        "msgid": "entitytypes.field_saved",
+        "msgstr": "Field saved"
+    },
+    {
         "msgid": "entitytypes.leftmodule",
         "msgstr": "Primary class"
     },
