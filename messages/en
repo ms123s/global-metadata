@@ -22,6 +22,18 @@
         "msgid": "Big",
         "msgstr": "Big"
     },
+		{
+				"msgid": "button.new",
+				"msgstr": "New"
+		},
+		{
+				"msgid": "button.edit",
+				"msgstr": "Edit"
+		},
+		{
+				"msgid": "button.copy",
+				"msgstr": "Copy"
+		},
     {
         "msgid": "Cancel",
         "msgstr": "Cancel"

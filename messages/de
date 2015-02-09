@@ -5287,6 +5287,18 @@
 				"msgstr": "Keine Einträge vorhanden."
 		},
 		{
+				"msgid": "button.new",
+				"msgstr": "Neu"
+		},
+		{
+				"msgid": "button.edit",
+				"msgstr": "Ändern"
+		},
+		{
+				"msgid": "button.copy",
+				"msgstr": "Kopieren"
+		},
+		{
 				"msgid": "datatables.sFirst",
 				"msgstr": "Erste"
 		},
