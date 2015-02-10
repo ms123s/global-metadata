@@ -787,8 +787,12 @@
         "msgstr": "Save"
     },
     {
+        "msgid": "data.form.created",
+        "msgstr": "data set created"
+    },
+    {
         "msgid": "data.form.saved",
-        "msgstr": "Data saved"
+        "msgstr": "data set stored"
     },
     {
         "msgid": "data.form.select",
@@ -2608,7 +2612,7 @@
     },
     {
         "msgid": "settings.properties_saved",
-        "msgstr": "Properties gespeichert"
+        "msgstr": "Properties saved"
     },
     {
         "msgid": "settings.readonly",
@@ -2997,6 +3001,10 @@
     {
         "msgid": "widgets.table.export_button",
         "msgstr": "Export records"
+    },
+    {
+        "msgid": "widgets.table.form_incomplete",
+        "msgstr": "Form is not filled out completely"
     },
     {
         "msgid": "widgets.table.import_button",
