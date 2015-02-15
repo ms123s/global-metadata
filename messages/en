@@ -34,6 +34,18 @@
 				"msgid": "button.copy",
 				"msgstr": "Copy"
 		},
+		{
+				"msgid": "button.save-search",
+				"msgstr": "Save search"
+		},
+		{
+				"msgid": "button.load-search",
+				"msgstr": "Load search"
+		},
+		{
+				"msgid": "button.complex-search",
+				"msgstr": "Complex search"
+		},
     {
         "msgid": "Cancel",
         "msgstr": "Cancel"

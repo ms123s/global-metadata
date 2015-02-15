@@ -5287,6 +5287,18 @@
 				"msgstr": "Keine Einträge vorhanden."
 		},
 		{
+				"msgid": "button.save-search",
+				"msgstr": "Suche speichern"
+		},
+		{
+				"msgid": "button.load-search",
+				"msgstr": "Suche laden"
+		},
+		{
+				"msgid": "button.complex-search",
+				"msgstr": "Komplexe Suche"
+		},
+		{
 				"msgid": "button.new",
 				"msgstr": "Neu"
 		},
