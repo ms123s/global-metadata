@@ -99,6 +99,10 @@
         "msgstr": "Entitytype ist in Relation(s) enthalten"
     },
     {
+        "msgid": "entitytypes.form_incomplete",
+        "msgstr": "Form nicht komplett ausgefüllt"
+    },
+    {
         "msgid": "entitytypes.class_not_created",
         "msgstr": "Klasse noch nicht erstellt"
     },
@@ -5299,6 +5303,10 @@
 				"msgstr": "Komplexe Suche"
 		},
 		{
+				"msgid": "button.simple-search",
+				"msgstr": "Einfache Suche"
+		},
+		{
 				"msgid": "button.new",
 				"msgstr": "Neu"
 		},
@@ -5309,6 +5317,10 @@
 		{
 				"msgid": "button.copy",
 				"msgstr": "Kopieren"
+		},
+		{
+				"msgid": "button.details",
+				"msgstr": "Detail"
 		},
 		{
 				"msgid": "datatables.sFirst",

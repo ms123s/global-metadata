@@ -35,6 +35,10 @@
 				"msgstr": "Copy"
 		},
 		{
+				"msgid": "button.details",
+				"msgstr": "Detail"
+		},
+		{
 				"msgid": "button.save-search",
 				"msgstr": "Save search"
 		},
@@ -45,6 +49,10 @@
 		{
 				"msgid": "button.complex-search",
 				"msgstr": "Complex search"
+		},
+		{
+				"msgid": "button.simple-search",
+				"msgstr": "Simple search"
 		},
     {
         "msgid": "Cancel",
@@ -1277,6 +1285,10 @@
     {
         "msgid": "entitytypes.field_saved",
         "msgstr": "Field saved"
+    },
+    {
+        "msgid": "entitytypes.form_incomplete",
+        "msgstr": "Form incomplete"
     },
     {
         "msgid": "entitytypes.leftmodule",
