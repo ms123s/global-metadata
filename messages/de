@@ -5252,11 +5252,11 @@
 		},
 		{
 				"msgid": "datatables.sInfo",
-				"msgstr": "_START_ bis _END_ von _TOTAL_ Einträgen"
+				"msgstr": "_START_ bis _END_ von _TOTAL_"
 		},
 		{
 				"msgid": "datatables.sInfoEmpty",
-				"msgstr": "0 bis 0 von 0 Einträgen"
+				"msgstr": "0 bis 0 von 0"
 		},
 		{
 				"msgid": "datatables.sInfoFiltered",
