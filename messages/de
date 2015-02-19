@@ -5323,6 +5323,14 @@
 				"msgstr": "Detail"
 		},
 		{
+				"msgid": "button.select",
+				"msgstr": "Auswählen"
+		},
+		{
+				"msgid": "button.cancel",
+				"msgstr": "Abbrechen"
+		},
+		{
 				"msgid": "datatables.sFirst",
 				"msgstr": "Erste"
 		},

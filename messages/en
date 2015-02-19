@@ -27,6 +27,14 @@
 				"msgstr": "New"
 		},
 		{
+				"msgid": "button.select",
+				"msgstr": "Select"
+		},
+		{
+				"msgid": "button.cancel",
+				"msgstr": "Cancel"
+		},
+		{
 				"msgid": "button.edit",
 				"msgstr": "Edit"
 		},
