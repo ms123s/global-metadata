@@ -2543,6 +2543,14 @@
         "msgstr": "Neues Login"
     },
     {
+        "msgid": "login.error",
+        "msgstr": "Unbekannter Username oder Passwort falsch"
+    },
+    {
+        "msgid": "login.ok",
+        "msgstr": "Sie sind nun eingeloggt"
+    },
+    {
         "msgid": "meta.traits.new_trait",
         "msgstr": "Neues Merkmal"
     },
@@ -4431,6 +4439,10 @@
         "msgstr": "Task kann nicht gestartet werden"
     },
     {
+        "msgid": "processes.taskform.started",
+        "msgstr": "Task gestartet"
+    },
+    {
         "msgid": "processscript.insert_create_object",
         "msgstr": "createObject"
     },
@@ -5100,7 +5112,7 @@
 		},
 		{
 				"msgid": "validation.NotNull",
-				"msgstr": "darf nicht null sein"
+				"msgstr": "darf nicht leer sein"
 		},
 		{
 				"msgid": "validation.Null",
@@ -5311,6 +5323,14 @@
 				"msgstr": "Neu"
 		},
 		{
+				"msgid": "button.next",
+				"msgstr": "Nächster"
+		},
+		{
+				"msgid": "button.prev",
+				"msgstr": "Vorheriger"
+		},
+		{
 				"msgid": "button.edit",
 				"msgstr": "Ändern"
 		},
@@ -5325,6 +5345,10 @@
 		{
 				"msgid": "button.select",
 				"msgstr": "Auswählen"
+		},
+		{
+				"msgid": "button.show",
+				"msgstr": "Anzeigen"
 		},
 		{
 				"msgid": "button.cancel",
