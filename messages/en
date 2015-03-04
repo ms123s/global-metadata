@@ -2351,6 +2351,10 @@
         "msgstr": "POJO"
     },
     {
+        "msgid": "process.form_incomplete",
+        "msgstr": "The form is not fully completed."
+    },
+    {
         "msgid": "processes.startform.started",
         "msgstr": "Started process"
     },
