@@ -5377,5 +5377,9 @@
 		{
 			"msgid": "datatables.sSortDescending",
 			"msgstr":": aktivieren, um Spalte absteigend zu sortieren"
-		}
+		},
+    {
+        "msgid": "tr.loading",
+        "msgstr": "Lade ..."
+    }
 ]

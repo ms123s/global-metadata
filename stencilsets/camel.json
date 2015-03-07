@@ -730,6 +730,47 @@
 			"readonly": "markRollbackOnly!=false",
       "value" : false
 		}]
+	}, {
+		"name": "sqlProperties",
+		"properties": [{
+			"id": "type_sql",
+			"type":"String",
+			"value": "SQL",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "sql://${statement}",
+			"visible": false
+		},{
+			"id": "urivalue_statement",
+			"title":"SQL Statement",
+			"type":"text",
+			"value": "",
+			"visible": true
+		},{
+      "id" : "uriparam_dataSource",
+      "title" : "Datasource",
+      "description" : "Reference to a DataSource",
+      "description_de" : "Referenz zur Datenquelle",
+      "type" : "string",
+      "value" : null
+		},{
+			"id": "uriparam_template.maxRows",
+			"title":"Max. rows",
+			"title_de":"Max. Zeilen",
+			"description":"Set the maximum number of rows",
+			"description_de":"Maximale Anzahl Zeilen",
+			"type":"Integer",
+			"value": null
+		},{
+      "id" : "uriparam_outputClass",
+      "title" : "OutputClass",
+      "description" : "Fill this object with values from resultset.one line per object",
+      "type" : "string",
+      "value" : null
+		}]
 	},{
 		"name": "databaseProperties",
 		"properties": [{
@@ -1449,6 +1490,17 @@
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
     "propertyPackages" : [ "baseProperties", "colorProperties", "databaseProperties", "extraParamsProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "SQLEndpoint",
+    "title" : "SQL Endpoint",
+    "title_de" : "SQL Endpunkt",
+    "view" : "sqlendpoint.svg",
+    "icon" : "sqlendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "sqlProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",

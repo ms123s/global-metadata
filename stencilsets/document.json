@@ -566,18 +566,23 @@
 			"title_de": "Syntax",
 			"prefix": "oryx",
 			"visible": "xf_type=='markdown'",
-			"value": "xwiki",
+			"value": "asciidoctor",
 			"popular": true,
 			"readonly": false,
 			"optional": false,
 			"refToView": "",
 			"items": [{
 				"id": "c1",
+				"title": "Asciidoctor",
+				"value": "asciidoctor",
+				"refToView": ""
+			},{
+				"id": "c2",
 				"title": "XWiki",
 				"value": "xwiki",
 				"refToView": ""
 			},{
-				"id": "c2",
+				"id": "c3",
 				"title": "Mediawiki",
 				"value": "mediawiki",
 				"refToView": ""

@@ -3025,6 +3025,10 @@
     {
         "msgid": "Typewriter",
         "msgstr": "Typewriter"
+		},
+    {
+        "msgid": "tr.loading",
+        "msgstr": "Loading ..."
     },
     {
         "msgid": "usebox.use",
