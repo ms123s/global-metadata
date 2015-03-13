@@ -867,6 +867,97 @@
 			"visible": "urivalue_operation=='multiInsertUpdate' && isupdate==true"
 		}]
 	},{
+		"name": "repoProperties",
+		"properties": [{
+			"id": "type_repo",
+			"type":"String",
+			"value": "Repo",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "repo:${operation}",
+			"visible": false
+		},{
+			"id": "urivalue_operation",
+			"title":"Operation",
+			"title_de":"Operation",
+			"type":"Choice",
+			"value": "get",
+      "items" : [ {
+        "id" : "c1",
+        "title" : "Get",
+        "value" : "get"
+			}],
+			"visible": true
+		},{
+			"id": "uriparm_target",
+			"title":"Target",
+			"title_de":"Ziel",
+			"type": "Choice",
+			"value": "body",
+      "items" : [ 
+				{
+        "id" : "c1",
+        "title" : "Body",
+        "value" : "body"
+			},{
+        "id" : "c2",
+        "title" : "Header",
+        "value" : "header"
+			}],
+			"visible": "urivalue_operation=='get'"
+		},{
+			"id": "uriparm_header",
+			"title":"Targetheader",
+			"title_de":"Ziel Header",
+			"type": "string",
+			"value": null,
+			"visible": "urivalue_operation=='get' && uriparm_target=='header'"
+		},{
+			"id": "uriparam_repo",
+			"title":"Reponame",
+			"config":{type:"ms123.util.RepoList"},
+			"type":"Choice",
+			"value": null,
+      "items" : [],
+			"visible": true
+		},{
+			"id": "uriparam_path",
+			"title":"Path",
+			"title_de":"Pfad",
+			"type":"String",
+			"value": "",
+			"visible": true
+		},{
+			"id": "uriparm_type",
+			"title":"Type",
+			"title_de":"Typ",
+			"type": "Choice",
+			"value": "application/vnd.oasis.opendocument.text",
+      "items" : [ 
+				{
+        "id" : "c1",
+        "title" : "Opendocument-text",
+        "value" : "application/vnd.oasis.opendocument.text"
+			},{
+        "id" : "c2",
+        "title" : "Asciidoc",
+        "value" : "text/x-asciidoc"
+			},{
+        "id" : "c3",
+        "title" : "JSON",
+        "value" : "application/json"
+			},{
+        "id" : "c4",
+        "title" : "none",
+        "title_de" : "keiner",
+        "value" : null
+			}],
+			"visible": true
+		}]
+	},{
 		"name": "fileProperties",
 		"properties": [{
 			"id": "type_file",
@@ -1501,6 +1592,17 @@
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
     "propertyPackages" : [ "baseProperties", "colorProperties", "sqlProperties", "extraParamsProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "RepoEndpoint",
+    "title" : "Repo Endpoint",
+    "title_de" : "Repo Endpunkt",
+    "view" : "repoendpoint.svg",
+    "icon" : "repoendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "repoProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
