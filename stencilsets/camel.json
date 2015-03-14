@@ -731,6 +731,34 @@
       "value" : false
 		}]
 	}, {
+		"name": "xdocreportProperties",
+		"properties": [{
+			"id": "type_xdocreport",
+			"type":"String",
+			"value": "XdocReport",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "xdocreport:${kind}",
+			"visible": false
+		},{
+			"id": "urivalue_kind",
+			"title":"TemplateEngine",
+			"type":"Choice",
+			"value": "Freemarker",
+      "items" : [ {
+        "id" : "c1",
+        "title" : "Freemarker",
+        "value" : "Freemarker"
+      }, {
+        "id" : "c2",
+        "title" : "Velocity",
+        "value" : "Velocity"
+			}]
+		}]
+	}, {
 		"name": "sqlProperties",
 		"properties": [{
 			"id": "type_sql",
@@ -892,7 +920,7 @@
 			}],
 			"visible": true
 		},{
-			"id": "uriparm_target",
+			"id": "uriparam_target",
 			"title":"Target",
 			"title_de":"Ziel",
 			"type": "Choice",
@@ -909,12 +937,12 @@
 			}],
 			"visible": "urivalue_operation=='get'"
 		},{
-			"id": "uriparm_header",
+			"id": "uriparam_header",
 			"title":"Targetheader",
 			"title_de":"Ziel Header",
 			"type": "string",
 			"value": null,
-			"visible": "urivalue_operation=='get' && uriparm_target=='header'"
+			"visible": "urivalue_operation=='get' && uriparam_target=='header'"
 		},{
 			"id": "uriparam_repo",
 			"title":"Reponame",
@@ -931,7 +959,7 @@
 			"value": "",
 			"visible": true
 		},{
-			"id": "uriparm_type",
+			"id": "uriparam_type",
 			"title":"Type",
 			"title_de":"Typ",
 			"type": "Choice",
@@ -951,9 +979,9 @@
         "value" : "application/json"
 			},{
         "id" : "c4",
-        "title" : "none",
-        "title_de" : "keiner",
-        "value" : null
+        "title" : "all",
+        "title_de" : "alle",
+        "value" : "all"
 			}],
 			"visible": true
 		}]
@@ -1603,6 +1631,17 @@
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
     "propertyPackages" : [ "baseProperties", "colorProperties", "repoProperties", "extraParamsProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "XDocReportEndpoint",
+    "title" : "XDocReport Endpoint",
+    "title_de" : "XDocReport Endpunkt",
+    "view" : "xdocreportendpoint.svg",
+    "icon" : "xdocreportendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "xdocreportProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
