@@ -757,6 +757,15 @@
         "title" : "Velocity",
         "value" : "Velocity"
 			}]
+		},{
+			"id": "urivalue_headerfields",
+			"title_de": "Headerfelder",
+			"title": "Headerfields",
+			"description_de":"Angebene Headerfelder in das Datenmodel des Reports kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.",
+			"description":"Copy specified headerfields into the data model of the report, or all if nothing is specified.<br/>separated by commas.",
+			"type":"String",
+			"value": null,
+			"readonly": false,
 		}]
 	}, {
 		"name": "sqlProperties",
