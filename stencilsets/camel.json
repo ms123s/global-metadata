@@ -893,6 +893,22 @@
 			"type":"boolean",
 			"value": false,
 			"visible": "urivalue_operation=='multiInsertUpdate' && isupdate==true"
+		},{
+			"id": "uriparam_filterName",
+			"title":"Filtername",
+      "description_de": "Der Filter der ausgeführt werden soll",
+      "description": "The filter to be executed",
+			"type":"String",
+			"value": null,
+			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter'"
+		},{
+			"id": "uriparam_headerName",
+			"title":"Headername",
+      "description_de": "Das Ergebniss, statt in den Body, in den Header unter diesem Namen kopieren",
+      "description": "Copying the result, instead of in the body, in the header under this name",
+			"type":"String",
+			"value": null,
+			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' ||  urivalue_operation=='findById'"
 		}]
 	},{
 		"name": "repoProperties",
