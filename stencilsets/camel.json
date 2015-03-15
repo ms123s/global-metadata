@@ -747,7 +747,7 @@
 			"id": "urivalue_kind",
 			"title":"TemplateEngine",
 			"type":"Choice",
-			"value": "Freemarker",
+			"value": "Velocity",
       "items" : [ {
         "id" : "c1",
         "title" : "Freemarker",
@@ -907,11 +907,12 @@
 			"title":"Filtername",
       "description_de": "Der Filter der ausgeführt werden soll",
       "description": "The filter to be executed",
-			"type":"String",
+			"type": "ResourceSelector",
+			"config": {"type":"sw.filter","prefix":""},
 			"value": null,
 			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter'"
 		},{
-			"id": "uriparam_headerName",
+			"id": "uriparam_resultHeader",
 			"title":"Headername",
       "description_de": "Das Ergebniss, statt in den Body, in den Header unter diesem Namen kopieren",
       "description": "Copying the result, instead of in the body, in the header under this name",
