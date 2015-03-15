@@ -758,6 +758,20 @@
         "value" : "Velocity"
 			}]
 		},{
+			"id": "uriparam_outputformat",
+			"title":"Outputformat",
+			"type":"Choice",
+			"value": "odf",
+      "items" : [ {
+        "id" : "c1",
+        "title" : "ODF",
+        "value" : "odf"
+      }, {
+        "id" : "c2",
+        "title" : "PDF",
+        "value" : "pdf"
+			}]
+		},{
 			"id": "urivalue_headerfields",
 			"title_de": "Headerfelder",
 			"title": "Headerfields",
