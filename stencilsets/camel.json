@@ -1552,6 +1552,49 @@
 				"optional": true
 			}]
 		},{
+			"id": "rpcReturn",
+			"title": "RPC Return",
+			"readonly": false,
+			"type": "Choice",
+			"value": "body",
+			"visible": "rpc==true",
+			"items": [ {
+				"id": "body",
+				"title": "Body",
+				"value": "body"
+			},{
+				"id": "headers",
+				"title": "Headers",
+				"value": "headers"
+			},{
+				"id": "bodyAndHeaders",
+				"title": "Body/Headers",
+				"value": "bodyAndHeaders"
+			},{
+				"id": "none",
+				"title": "-----",
+				"value": "none"
+			}],
+			"width": 80,
+			"optional": true
+		},{
+			"id": "rpcReturnHeaders",
+			"type": "Complex",
+			"title": "Return Headers",
+			"value": "",
+			"visible": "rpc==true && (rpcReturn=='headers' || rpcReturn=='bodyAndHeaders')",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"filter": "[a-zA-Z0-9]",
+				"value": "",
+				"width": 250,
+				"optional": false
+			}]
+		},{
 			"id": "startableGroups",
 			"type": "MultiSelect",
 			"config": "permission:getAllRoles:name",
