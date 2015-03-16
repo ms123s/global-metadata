@@ -1,0 +1,244 @@
+[sw]
+	type = sw.camel
+--
+{
+  "resourceId": "oryx_D615F1FF-5634-46B7-9B28-52B988E86480",
+  "properties": {
+    "overrideid": "asciidoctor.camel",
+    "documentation": null,
+    "autostart": true,
+    "enabled": true,
+    "logExceptionsOnly": false,
+    "version": "",
+    "author": "",
+    "creationdate": null,
+    "modificationdate": null,
+    "camelcontext": "default",
+    "rpc": true,
+    "rpcParameter": {
+      "totalCount": 2,
+      "items": [
+        {
+          "name": "template",
+          "defaultvalue": null,
+          "optional": false,
+          "type": "string",
+          "destination": "body"
+        },
+        {
+          "name": "data",
+          "defaultvalue": null,
+          "optional": false,
+          "type": "map",
+          "destination": "header"
+        }
+      ]
+    },
+    "rpcReturn": "body",
+    "rpcReturnHeaders": null,
+    "startableGroups": null,
+    "startableUsers": "admin"
+  },
+  "stencil": {
+    "id": "Camelrouting"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_F419B5D3-BE2E-4082-A281-5DB2CB0E2819",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "type_groovytemplate": "GroovyTemplate",
+        "uri_template": "groovytemplate:${type}",
+        "urivalue_type": "simple",
+        "urivalue_headerfields": "data",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "GroovyTemplateEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_FB085398-63DA-4469-B31E-D3508E7D51B6"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 241.5000002094,
+          "y": 180
+        },
+        "upperLeft": {
+          "x": 161.5000002094,
+          "y": 120
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_67E457AF-CC91-42C1-9FAE-49F6137C8CB8",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "type_direct": "Direct",
+        "uri_template": "direct:${name}",
+        "urivalue_name": "direct4"
+      },
+      "stencil": {
+        "id": "DirectEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_5C8C233A-79FB-492D-8D00-E0A8D38DF6FA"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 241.50000034900003,
+          "y": 300.363110895
+        },
+        "upperLeft": {
+          "x": 161.50000006980002,
+          "y": 239.63688910500002
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_5C8C233A-79FB-492D-8D00-E0A8D38DF6FA",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_F419B5D3-BE2E-4082-A281-5DB2CB0E2819"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 201.5000002094,
+          "y": 239.9375
+        },
+        "upperLeft": {
+          "x": 201.5000002094,
+          "y": 181
+        }
+      },
+      "dockers": [
+        {
+          "x": 40.000000139600004,
+          "y": 30.363110894999977
+        },
+        {
+          "x": 40,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_F419B5D3-BE2E-4082-A281-5DB2CB0E2819"
+      }
+    },
+    {
+      "resourceId": "oryx_6458716F-4875-4DF9-870C-F42A9BF370AC",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "type_asciidoctor": "Asciidoctor",
+        "uri_template": "asciidoctor:dummy",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "AsciidoctorEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 140,
+          "y": 90
+        },
+        "upperLeft": {
+          "x": 60,
+          "y": 30
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_FB085398-63DA-4469-B31E-D3508E7D51B6",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_6458716F-4875-4DF9-870C-F42A9BF370AC"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 160.85156262760313,
+          "y": 150
+        },
+        "upperLeft": {
+          "x": 100,
+          "y": 90.53125
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 100,
+          "y": 150
+        },
+        {
+          "x": 40,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_6458716F-4875-4DF9-870C-F42A9BF370AC"
+      }
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 2485,
+      "y": 3050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "camel",
+    "namespace": "http://b3mn.org/stencilset/camel#"
+  },
+  "ssextensions": [],
+  "zoomLevel": 1
+}
