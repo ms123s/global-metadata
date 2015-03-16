@@ -824,6 +824,20 @@
 			"readonly": false,
 		}]
 	}, {
+		"name": "asciidoctorProperties",
+		"properties": [{
+			"id": "type_asciidoctor",
+			"type":"String",
+			"value": "Asciidoctor",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "asciidoctor:dummy",
+			"visible": false
+		}]
+	}, {
 		"name": "sqlProperties",
 		"properties": [{
 			"id": "type_sql",
@@ -1778,6 +1792,17 @@
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
     "propertyPackages" : [ "baseProperties", "colorProperties", "groovyTemplateProperties", "extraParamsProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "AsciidoctorEndpoint",
+    "title" : "Asciidoctor Endpoint",
+    "title_de" : "Asciidoctor Endpunkt",
+    "view" : "asciidoctorendpoint.svg",
+    "icon" : "asciidoctorendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "asciidoctorProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
