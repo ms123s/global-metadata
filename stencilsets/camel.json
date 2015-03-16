@@ -782,6 +782,48 @@
 			"readonly": false,
 		}]
 	}, {
+		"name": "groovyTemplateProperties",
+		"properties": [{
+			"id": "type_groovytemplate",
+			"type":"String",
+			"value": "GroovyTemplate",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "groovytemplate:${type}",
+			"visible": false
+		},{
+			"id": "urivalue_type",
+			"title":"Enginetype",
+			"title_de":"Type der Engine",
+			"type":"Choice",
+			"value": "simple",
+      "items" : [ {
+        "id" : "c1",
+        "title" : "Simple",
+        "value" : "simple"
+      }, {
+        "id" : "c2",
+        "title" : "GString",
+        "value" : "gstring"
+      }, {
+        "id" : "c3",
+        "title" : "XML",
+        "value" : "xml"
+			}]
+		},{
+			"id": "urivalue_headerfields",
+			"title_de": "Headerfelder",
+			"title": "Headerfields",
+			"description_de":"Angebene Headerfelder in das Datenmodel des Templates kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.",
+			"description":"Copy specified headerfields into the data model of the template, or all if nothing is specified.<br/>separated by commas.",
+			"type":"String",
+			"value": null,
+			"readonly": false,
+		}]
+	}, {
 		"name": "sqlProperties",
 		"properties": [{
 			"id": "type_sql",
@@ -1725,6 +1767,17 @@
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
     "propertyPackages" : [ "baseProperties", "colorProperties", "xdocreportProperties", "extraParamsProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "GroovyTemplateEndpoint",
+    "title" : "GroovyTemplate Endpoint",
+    "title_de" : "GroovyTemplate Endpunkt",
+    "view" : "groovytemplateendpoint.svg",
+    "icon" : "groovytemplateendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "groovyTemplateProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
