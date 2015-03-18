@@ -49,11 +49,11 @@
         "overrideid": "",
         "name": "",
         "documentation": null,
-        "bgcolor": "white",
+        "bgcolor": "yellow",
         "bordercolor": "#000000",
         "type_groovytemplate": "GroovyTemplate",
         "uri_template": "groovytemplate:${type}",
-        "urivalue_type": "simple",
+        "urivalue_type": "gstring",
         "urivalue_headerfields": "data",
         "extraParams": null
       },
@@ -68,12 +68,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 241.5000002094,
-          "y": 180
+          "x": 290,
+          "y": 315
         },
         "upperLeft": {
-          "x": 161.5000002094,
-          "y": 120
+          "x": 210,
+          "y": 255
         }
       },
       "dockers": []
@@ -84,7 +84,7 @@
         "overrideid": "",
         "name": "",
         "documentation": null,
-        "bgcolor": "white",
+        "bgcolor": "#CCC",
         "bordercolor": "#000000",
         "type_direct": "Direct",
         "uri_template": "direct:${name}",
@@ -101,12 +101,12 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 241.50000034900003,
-          "y": 300.363110895
+          "x": 140.00000027919998,
+          "y": 315.363110895
         },
         "upperLeft": {
-          "x": 161.50000006980002,
-          "y": 239.63688910500002
+          "x": 60,
+          "y": 254.63688910500002
         }
       },
       "dockers": []
@@ -129,17 +129,17 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 201.5000002094,
-          "y": 239.9375
+          "x": 209.15625003708124,
+          "y": 285
         },
         "upperLeft": {
-          "x": 201.5000002094,
-          "y": 181
+          "x": 140.84375010251875,
+          "y": 285
         }
       },
       "dockers": [
         {
-          "x": 40.000000139600004,
+          "x": 40.00000013959999,
           "y": 30.363110894999977
         },
         {
@@ -157,7 +157,7 @@
         "overrideid": "",
         "name": "",
         "documentation": null,
-        "bgcolor": "white",
+        "bgcolor": "yellow",
         "bordercolor": "#000000",
         "type_asciidoctor": "Asciidoctor",
         "uri_template": "asciidoctor:dummy",
@@ -170,12 +170,12 @@
       "outgoing": [],
       "bounds": {
         "lowerRight": {
-          "x": 140,
-          "y": 90
+          "x": 290,
+          "y": 180
         },
         "upperLeft": {
-          "x": 60,
-          "y": 30
+          "x": 210,
+          "y": 120
         }
       },
       "dockers": []
@@ -198,22 +198,18 @@
       ],
       "bounds": {
         "lowerRight": {
-          "x": 160.85156262760313,
-          "y": 150
+          "x": 250,
+          "y": 254.46875
         },
         "upperLeft": {
-          "x": 100,
-          "y": 90.53125
+          "x": 250,
+          "y": 180.53125
         }
       },
       "dockers": [
         {
           "x": 40,
           "y": 30
-        },
-        {
-          "x": 100,
-          "y": 150
         },
         {
           "x": 40,
