@@ -5318,6 +5318,10 @@
 				"msgid": "button.simple-search",
 				"msgstr": "Einfache Suche"
 		},
+    {
+        "msgid": "button.help",
+        "msgstr": "Hilfe"
+    },
 		{
 				"msgid": "button.new",
 				"msgstr": "Neu"

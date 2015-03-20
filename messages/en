@@ -22,6 +22,10 @@
         "msgid": "Big",
         "msgstr": "Big"
     },
+    {
+        "msgid": "button.help",
+        "msgstr": "Hilfe"
+    },
 		{
 				"msgid": "button.new",
 				"msgstr": "New"
