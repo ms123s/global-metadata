@@ -58,6 +58,66 @@
             "enabled": true,
             "permission": "tutorials:entities:data:employee",
             "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "firstapp:entities",
+            "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "firstapp:entities:data:feature",
+            "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "crm:entities:data:activity",
+            "actions": "read,write"
+        },
+        {
+            "enabled": true,
+            "permission": "crm:entities:data:address",
+            "actions": "read,write"
+        },
+        {
+            "enabled": true,
+            "permission": "crm:entities:data:contact",
+            "actions": "read,write"
+        },
+        {
+            "enabled": true,
+            "permission": "crm:entities:data:product",
+            "actions": "read,write"
+        },
+        {
+            "enabled": true,
+            "permission": "crm:entities:data:account",
+            "actions": "read,write"
+        },
+        {
+            "enabled": true,
+            "permission": "kfzplan:entities:data:fahrzeuge",
+            "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "kfzplan:entities:data:fahrer",
+            "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "kfzplan:entities:data:buchungsvoraussetzungen",
+            "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "kfzplan:entities:data:firma",
+            "actions": "read"
+        },
+        {
+            "enabled": true,
+            "permission": "kfzplan:entities:data:buchungen",
+            "actions": "read,write"
         }
     ]
 }

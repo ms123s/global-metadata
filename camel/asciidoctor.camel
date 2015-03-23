@@ -37,7 +37,7 @@
     "rpcReturn": "body",
     "rpcReturnHeaders": null,
     "startableGroups": null,
-    "startableUsers": "admin"
+    "startableUsers": "admin,guest"
   },
   "stencil": {
     "id": "Camelrouting"
@@ -53,7 +53,7 @@
         "bordercolor": "#000000",
         "type_groovytemplate": "GroovyTemplate",
         "uri_template": "groovytemplate:${type}",
-        "urivalue_type": "gstring",
+        "urivalue_type": "simple",
         "urivalue_headerfields": "data",
         "extraParams": null
       },
