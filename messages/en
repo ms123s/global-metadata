@@ -24,7 +24,7 @@
     },
     {
         "msgid": "button.help",
-        "msgstr": "Hilfe"
+        "msgstr": "Help"
     },
 		{
 				"msgid": "button.new",
@@ -32,11 +32,11 @@
 		},
 		{
 				"msgid": "button.next",
-				"msgstr": "Nächster"
+				"msgstr": "Next"
 		},
 		{
 				"msgid": "button.prev",
-				"msgstr": "Vorheriger"
+				"msgstr": "Previos"
 		},
 		{
 				"msgid": "button.select",
