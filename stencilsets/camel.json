@@ -1556,13 +1556,13 @@
 			"description_de":"Benutzername (ohne Server-Namen). Wenn nicht angegeben, wird eine anonyme Anmeldung versucht.",
 			"title":"User",
 			"type":"String",
-			"value": ""
+			"value":null
 		},{
 			"id": "uriparam_password",
 			"title":"Password",
 			"title_de":"Passwort",
 			"type":"String",
-			"value": ""
+			"value": null
 		},{
 			"id": "uriparam_room",
 			"description":"If this option is specified, the component will connect to MUC (Multi User Chat).<br/> Usually, the domain name for MUC is different from the login domain.<br/> For example, if you are superman@jabber.org and want to join the krypton room,<br/> then the room URL is krypton@conference.jabber.org. Note the conference part.<br/> It is not a requirement to provide the full room JID.<br/> If the room parameter does not contain the @ symbol,<br />the domain part will be discovered and added.",
@@ -1570,34 +1570,29 @@
 			"title":"Room",
 			"title_de":"Raum",
 			"type":"String",
-			"value": ""
+			"value":null 
 		},{
-			"id": "uriparam_from",
-			"title":"From",
-			"title_de":"Von",
+			"id": "uriparam_participant",
+			"description":"JID (Jabber ID) of person to receive messages. Room parameter has precedence over participant.",
+			"description_de":"JID (Jabber ID) des Empfängers. Raum  Parameter hat Vorrang vor Teilnehmer",
+			"title":"Participant",
+			"title_de":"Teilnehmer",
 			"type":"String",
-			"value": ""
+			"value": null
 		},{
-			"id": "uriparam_to",
-			"title":"To",
-			"title_de":"An",
+			"id": "uriparam_nickname",
+			"title":"Nickname",
+			"description":"Use nickname when joining room.<br/>If room is specified and nickname is not,<br/>user will be used for the nickname.",
+			"description_de":"Nickname im Raum.<br/> Wenn der Raum angegeben ist und der Nickname nicht,<br/>wird User verwendet",
 			"type":"String",
-			"value": ""
+			"value": null
 		},{
-			"id": "uriparam_cc",
-			"title":"CC",
+			"id": "uriparam_serviceName",
+			"title":"Servicename",
+			"description":"The name of the service you are connecting to.<br/> For Google Talk, this would be gmail.com.",
+			"description_de":"Der Name des Services, mit dem sie eine Verbindung herstellen.<br/> Für Google Talk, ist dies gmail.com.",
 			"type":"String",
-			"value": ""
-		},{
-			"id": "uriparam_bcc",
-			"title":"BCC",
-			"type":"String",
-			"value": ""
-		},{
-			"id": "uriparam_contentType",
-			"title":"ContentType",
-			"type":"String",
-			"value": "text/plain"
+			"value": null
 		}]
 	},{
 		"name": "diagram",
