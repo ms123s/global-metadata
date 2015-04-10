@@ -1519,6 +1519,86 @@
 			"type":"String",
 			"value": "text/plain"
 		}]
+	},{ 
+		"name": "xmppProperties",
+		"properties": [{
+			"id": "type_xmpp",
+			"type":"String",
+			"value": "XMPP",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "${protocol}://${host}:${port}",
+			"visible": false
+    },{
+      "id" : "urivalue_protocol",
+      "type" : "String",
+      "title" : "Protocol",
+      "title_de" : "Protokoll",
+			"visible": false,
+      "value" : "xmpp"
+		},{
+			"id": "urivalue_hostname",
+			"title":"Hostname",
+			"type":"String",
+			"value": "127.0.0.1",
+			"optional": false
+		},{
+			"id": "urivalue_port",
+			"title":"Port",
+			"type":"Integer",
+			"value": "5222"
+		},{
+			"id": "uriparam_user",
+			"description":"User name (without server name). If not specified, anonymous login will be attempted.",
+			"description_de":"Benutzername (ohne Server-Namen). Wenn nicht angegeben, wird eine anonyme Anmeldung versucht.",
+			"title":"User",
+			"type":"String",
+			"value": ""
+		},{
+			"id": "uriparam_password",
+			"title":"Password",
+			"title_de":"Passwort",
+			"type":"String",
+			"value": ""
+		},{
+			"id": "uriparam_room",
+			"description":"If this option is specified, the component will connect to MUC (Multi User Chat).<br/> Usually, the domain name for MUC is different from the login domain.<br/> For example, if you are superman@jabber.org and want to join the krypton room,<br/> then the room URL is krypton@conference.jabber.org. Note the conference part.<br/> It is not a requirement to provide the full room JID.<br/> If the room parameter does not contain the @ symbol,<br />the domain part will be discovered and added.",
+			"description_de":"Wenn dises Option angeben ist, wird eine Verbing zu einem MUC(Multi User Chat) aufgebaut.<br/>Üblicherweise ist der Domänenname für einen MUC anders als der Login-Domänenname.<br/>Zum Beispiel, wenn Sie superman@jabber.org sind und wollen den  Krypton Raum betreten,<br /> so ist die Raum URL krypton@conference.jabber.org.<br/>Der Konferenz Teil ist nicht erforderlich für die volle Raum JID.<br/> Wenn der Parameter 'Raum' das @ -Symbol enthält, wird der Domänenteil automatisch angehängt.",
+			"title":"Room",
+			"title_de":"Raum",
+			"type":"String",
+			"value": ""
+		},{
+			"id": "uriparam_from",
+			"title":"From",
+			"title_de":"Von",
+			"type":"String",
+			"value": ""
+		},{
+			"id": "uriparam_to",
+			"title":"To",
+			"title_de":"An",
+			"type":"String",
+			"value": ""
+		},{
+			"id": "uriparam_cc",
+			"title":"CC",
+			"type":"String",
+			"value": ""
+		},{
+			"id": "uriparam_bcc",
+			"title":"BCC",
+			"type":"String",
+			"value": ""
+		},{
+			"id": "uriparam_contentType",
+			"title":"ContentType",
+			"type":"String",
+			"value": "text/plain"
+		}]
 	},{
 		"name": "diagram",
 		"properties": [{
@@ -1858,6 +1938,17 @@
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
     "propertyPackages" : [ "baseProperties", "colorProperties", "mailProperties", "extraParamsProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "XmppEndpoint",
+    "title" : "Xmpp Endpoint",
+    "title_de" : "Xmpp Endpunkt",
+    "view" : "xmppendpoint.svg",
+    "icon" : "xmppendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "baseProperties", "colorProperties", "xmppProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
