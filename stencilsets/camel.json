@@ -1540,7 +1540,7 @@
 			"visible": false,
       "value" : "xmpp"
 		},{
-			"id": "urivalue_hostname",
+			"id": "urivalue_host",
 			"title":"Hostname",
 			"type":"String",
 			"value": "127.0.0.1",
@@ -1593,6 +1593,12 @@
 			"description_de":"Der Name des Services, mit dem sie eine Verbindung herstellen.<br/> Für Google Talk, ist dies gmail.com.",
 			"type":"String",
 			"value": null
+    },{
+      "id" : "uriparam_testConnectionOnStartup",
+      "title" : "Testconnection",
+			"type":"boolean",
+			"value": false,
+			"visible": true
 		}]
 	},{
 		"name": "diagram",
