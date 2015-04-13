@@ -1793,6 +1793,51 @@
 			"value": "",
 			"visible": "rpc==true",
 			"length": "50"
+ 		},{
+      "id": "settings",
+      "type": "Complex",
+      "title": "Settings",
+      "title_de": "Einstellungen",
+      "value": "",
+      "readonly": false,
+      "optional": true,
+      "complexItems": [{
+        "id": "name",
+        "name": "Name",
+        "type": "String",
+        "filter": "[a-zA-Z0-9]",
+        "value": "",
+        "width": 150,
+        "optional": false
+      }, {
+        "id": "const",
+        "name": "Constant",
+        "name_de": "Konstante",
+        "type": "String",
+        "value": null,
+        "width": 150,
+        "optional": false
+      },{
+        "id": "source",
+        "name": "Source",
+        "name_de": "Quelle",
+        "readonly": false,
+        "type": "Choice",
+        "value": "const",
+        "items": "###settingssources_items",
+        "width": 80,
+        "optional": true
+      },{
+        "id": "destination",
+        "name": "Destination",
+        "name_de": "Ziel",
+        "readonly": false,
+        "type": "Choice",
+        "value": "property",
+        "items": "###destination2_items",
+        "width": 80,
+        "optional": true
+      }]
 		}]
 	},
 	{
@@ -2402,6 +2447,15 @@
 			"title": "Map",
 			"value": "map"
 		}],
+		"settingssources_items": [ {
+      "id": "const",
+      "title": "Const",
+      "value": "const"
+    },{
+      "id": "branding",
+      "title": "Branding",
+      "value": "branding"
+    }],
 		"destination_items": [ {
 			"id": "property",
 			"title": "Property",
@@ -2414,6 +2468,15 @@
 			"id": "body",
 			"title": "Body",
 			"value": "body"
+		}],
+    "destination2_items": [ {
+      "id": "property",
+      "title": "Property",
+      "value": "property"
+    },{
+      "id": "header",
+      "title": "Header",
+      "value": "header"
 		}]
   }
 }
