@@ -81,14 +81,38 @@
 	},{
 		"name": "endpointProperties",
 		"properties": [{
-			"id": "name",
+			"id": "shared",
+			"title":"Shared",
+			"title_de":"Geteilt",
+			"description_de":"Wenn 'Ursprung' ausgewählt ist,  kann der Endpunkt an anderen Stellen verwendet werden.<br />Die Verbindung wird über den 'Linkname' hergstellt.Beliebig viele Links können auf einen Ursprung verweisen.<br />Die Einstellungen des Ursprungs werden verwendet.",
+			"description": "If 'origin' is selected,one endpoint can be used elsewhere<br/> The link is established via the 'linkname'.<br/>Any number of links can point to the 'origin'.<br /> The 'origin' settings will be used.",
+			"type":"Choice",
+      "popular" : true,
+			"visible": true,
+			"value": "no",
+      "items" : [ {
+        "id" : "c1",
+        "title" : "No",
+        "title_de" : "Nein",
+        "value" : "no"
+      }, {
+        "id" : "c2",
+        "title" : "Origin",
+        "title_de" : "Ursprung",
+        "value" : "origin"
+      }, {
+        "id" : "c3",
+        "title" : "Link",
+        "value" : "link"
+			}]
+		},{
+			"id": "shareRef",
 			"type": "String",
-			"title": "Name",
-			"title_de": "Name",
-			"value": "",
+			"title": "Linkname",
+			"visible": "shared!='no'",
+			"value": null,
 			"readonly": false,
 			"optional": true,
-			"refToView": ["endpoint_type"],
 			"popular": true
 		}]
 	},{
@@ -1862,7 +1886,7 @@
     "icon" : "fileendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "fileProperties", "commonFileProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "fileProperties", "commonFileProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1873,7 +1897,7 @@
     "icon" : "databaseendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "databaseProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "databaseProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1884,7 +1908,7 @@
     "icon" : "sqlendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "sqlProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "sqlProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1895,7 +1919,7 @@
     "icon" : "repoendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "repoProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "repoProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1906,7 +1930,7 @@
     "icon" : "xdocreportendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "xdocreportProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "xdocreportProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1917,7 +1941,7 @@
     "icon" : "groovytemplateendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "groovyTemplateProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "groovyTemplateProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1928,7 +1952,7 @@
     "icon" : "asciidoctorendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "asciidoctorProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "asciidoctorProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1939,7 +1963,7 @@
     "icon" : "directendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "directProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "directProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1950,7 +1974,7 @@
     "icon" : "sedaendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "sedaProperties", "sedaVmProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "sedaProperties", "sedaVmProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1961,7 +1985,7 @@
     "icon" : "vmendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "vmProperties", "sedaVmProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "vmProperties", "sedaVmProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1972,7 +1996,7 @@
     "icon" : "ftpendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "ftpProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "ftpProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1983,7 +2007,7 @@
     "icon" : "mailendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "mailProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "mailProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -1994,7 +2018,7 @@
     "icon" : "xmppendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties", "xmppProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "xmppProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -2005,7 +2029,7 @@
     "icon" : "jmsendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties" ],
 		"properties": [{
 			"id": "endpoint_type3",
 			"type":"String",
@@ -2023,7 +2047,7 @@
     "icon" : "http4endpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "baseProperties", "colorProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties" ],
 		"properties": [{
 			"id": "endpoint_type5",
 			"type":"String",

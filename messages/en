@@ -2719,6 +2719,10 @@
         "msgstr": "Route saved"
     },
     {
+        "msgid": "shell.camel_save_failed",
+        "msgstr": "Error in route(s)"
+    },
+    {
         "msgid": "shell.datamapper_saved",
         "msgstr": "Mapping saved"
     },
