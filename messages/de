@@ -2879,6 +2879,10 @@
         "msgstr": "Route"
     },
     {
+        "msgid": "processexplorer.route",
+        "msgstr": "Route"
+    },
+    {
         "msgid": "processexplorer.node",
         "msgstr": "Knoten"
     },

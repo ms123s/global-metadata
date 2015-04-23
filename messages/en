@@ -2411,12 +2411,28 @@
         "msgstr": "Activities"
     },
     {
+        "msgid": "processexplorer.details_body",
+        "msgstr": "Body"
+    },
+    {
         "msgid": "processexplorer.details_camel",
         "msgstr": "Camel"
     },
     {
+        "msgid": "processexplorer.details_exception",
+        "msgstr": "Exception"
+    },
+    {
+        "msgid": "processexplorer.details_headers",
+        "msgstr": "Headers"
+    },
+    {
         "msgid": "processexplorer.details_info",
         "msgstr": "Information"
+    },
+    {
+        "msgid": "processexplorer.details_properties",
+        "msgstr": "Properties"
     },
     {
         "msgid": "processexplorer.details_variables",
@@ -2483,8 +2499,20 @@
         "msgstr": "Instance diagram"
     },
     {
+        "msgid": "processexplorer.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "processexplorer.node",
+        "msgstr": "Node"
+    },
+    {
         "msgid": "processexplorer.processes",
         "msgstr": "Processes"
+    },
+    {
+        "msgid": "processexplorer.route",
+        "msgstr": "Route"
     },
     {
         "msgid": "processexplorer.startTime",
@@ -2505,6 +2533,10 @@
     {
         "msgid": "processexplorer.variableValue",
         "msgstr": "Variable value"
+    },
+    {
+        "msgid": "processexplorer.value",
+        "msgstr": "Value"
     },
     {
         "msgid": "Recent Colors",
