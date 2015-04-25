@@ -1796,6 +1796,32 @@
 				"optional": false
 			}]
 		},{
+			"id": "websocket",
+			"title":"Websocket",
+			"description_de": "Sollen die Routen mit einem Websocket verwendet werden?",
+			"description": "Routes should be used with a WebSocket?",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		},{
+			"id": "recvEndpoint",
+			"title_de":"Endpoint/empfangen",
+			"title":"Endpoint/receive",
+      "description_de": "Uri  des EmpfangsEndpoints(Fluß: Endpoint zum Websocket,empfangen). Normalerweise ein Direktendpoint.",
+      "description": "Uri of the ReceiveEndpoints(Flow: from endpoint to websocket,receive). Normally, a Direktendpoint.",
+			"type":"String",
+			"value": "",
+			"visible": "websocket==true"
+		},{
+			"id": "sendEndpoint",
+			"title_de":"Endpoint/senden",
+			"title":"Endpoint/send",
+      "description_de": "Uri  des SendeEndpoints(Fluß: vom  Websocket zum Endpoint,senden). Normalerweise ein Direktendpoint.",
+      "description": "Uri of the SendEndpoints(Flow: from websocket to endpoint,send). Normally, a Direktendpoint.",
+			"type":"String",
+			"value": "",
+			"visible": "websocket==true"
+		},{
 			"id": "startableGroups",
 			"type": "MultiSelect",
 			"config": "permission:getAllRoles:name",
@@ -1804,7 +1830,7 @@
 			"destination": "User with a min. one of these roles may start the route",
 			"description_de": "User mit einer min. einer dieser  Rollen dürfen die Route starten",
 			"value": "",
-			"visible": "rpc==true",
+			"visible": "rpc==true||websocket==true",
 			"length": "50"
 		},{
 			"id": "startableUsers",
@@ -1815,7 +1841,7 @@
 			"destination": "This users are able to start the route",
 			"description_de": "Diese User dürfen die Route starten",
 			"value": "",
-			"visible": "rpc==true",
+			"visible": "rpc==true||websocket==true",
 			"length": "50"
  		},{
       "id": "settings",
