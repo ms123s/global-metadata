@@ -5383,8 +5383,20 @@
 				"msgstr": "Verbinden"
 		},
 		{
+				"msgid": "chat.login",
+				"msgstr": "Login"
+		},
+		{
+				"msgid": "chat.participant",
+				"msgstr": "Chatpartner"
+		},
+		{
 				"msgid": "chat.sendButton",
 				"msgstr": "Senden"
+		},
+		{
+				"msgid": "chat.state",
+				"msgstr": "Chatstatus"
 		},
 		{
 				"msgid": "chat.disconnectButton",
