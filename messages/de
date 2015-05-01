@@ -5379,6 +5379,18 @@
 				"msgstr": "Letzte"
 		},
 		{
+				"msgid": "chat.connectButton",
+				"msgstr": "Verbinden"
+		},
+		{
+				"msgid": "chat.sendButton",
+				"msgstr": "Senden"
+		},
+		{
+				"msgid": "chat.disconnectButton",
+				"msgstr": "Trennen"
+		},
+		{
 				"msgid": "datatables.sSortAscending",
 				"msgstr" :": aktivieren, um Spalte aufsteigend zu sortieren"
 		},

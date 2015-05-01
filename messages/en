@@ -82,6 +82,18 @@
         "msgid": "Cancel",
         "msgstr": "Cancel"
     },
+		{
+				"msgid": "chat.connectButton",
+				"msgstr": "Connect"
+		},
+		{
+				"msgid": "chat.disconnectButton",
+				"msgstr": "Disconnect"
+		},
+		{
+				"msgid": "chat.sendButton",
+				"msgstr": "Send"
+		},
     {
         "msgid": "cldr_am",
         "msgstr": "vorm."
