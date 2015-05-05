@@ -5379,6 +5379,22 @@
 				"msgstr": "Letzte"
 		},
 		{
+				"msgid": "chat.add",
+				"msgstr": "Hinzufügen"
+		},
+		{
+				"msgid": "chat.add_contact",
+				"msgstr": "Neuer Kontakt"
+		},
+		{
+				"msgid": "chat.add_group",
+				"msgstr": "Neue Gruppe"
+		},
+		{
+				"msgid": "chat.cancel",
+				"msgstr": "Abbrechen"
+		},
+		{
 				"msgid": "chat.connectButton",
 				"msgstr": "Verbinden"
 		},
@@ -5391,6 +5407,18 @@
 				"msgstr": "Chatpartner"
 		},
 		{
+				"msgid": "chat.new_group_header",
+				"msgstr": "Neue Gruppe hinzufügen"
+		},
+		{
+				"msgid": "chat.new_contact_header1",
+				"msgstr": "Neuen Kontakt hinzufügen"
+		},
+		{
+				"msgid": "chat.new_contact_header2",
+				"msgstr": "Teilnehmer zur Kontaktliste hinzufügen"
+		},
+		{
 				"msgid": "chat.sendButton",
 				"msgstr": "Senden"
 		},
@@ -5399,8 +5427,36 @@
 				"msgstr": "Chatstatus"
 		},
 		{
+				"msgid": "chat.state_active",
+				"msgstr": "aktiv"
+		},
+		{
+				"msgid": "chat.state_composing",
+				"msgstr": "schreibt"
+		},
+		{
+				"msgid": "chat.state_inactive",
+				"msgstr": "inaktiv"
+		},
+		{
+				"msgid": "chat.state_gone",
+				"msgstr": "weg"
+		},
+		{
+				"msgid": "chat.state_paused",
+				"msgstr": "pausiert"
+		},
+		{
 				"msgid": "chat.disconnectButton",
 				"msgstr": "Trennen"
+		},
+		{
+				"msgid": "chat.username",
+				"msgstr": "Teilnehmer"
+		},
+		{
+				"msgid": "chat.groupname",
+				"msgstr": "Gruppe"
 		},
 		{
 				"msgid": "datatables.sSortAscending",

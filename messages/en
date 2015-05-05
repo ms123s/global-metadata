@@ -83,6 +83,22 @@
         "msgstr": "Cancel"
     },
 		{
+				"msgid": "chat.add",
+				"msgstr": "Add"
+		},
+		{
+				"msgid": "chat.add_contact",
+				"msgstr": "New contact"
+		},
+		{
+				"msgid": "chat.add_group",
+				"msgstr": "New group"
+		},
+		{
+				"msgid": "chat.cancel",
+				"msgstr": "Cancel"
+		},
+		{
 				"msgid": "chat.connectButton",
 				"msgstr": "Connect"
 		},
@@ -91,8 +107,24 @@
 				"msgstr": "Disconnect"
 		},
 		{
+				"msgid": "chat.groupname",
+				"msgstr": "Group"
+		},
+		{
 				"msgid": "chat.login",
 				"msgstr": "Login"
+		},
+		{
+				"msgid": "chat.new_contact_header1",
+				"msgstr": "Adding a new contact"
+		},
+		{
+				"msgid": "chat.new_contact_header2",
+				"msgstr": "Adding a participant to your contact list"
+		},
+		{
+				"msgid": "chat.new_group_header",
+				"msgstr": "Adding new group"
 		},
 		{
 				"msgid": "chat.sendButton",
@@ -105,6 +137,30 @@
 		{
 				"msgid": "chat.state",
 				"msgstr": "Chatstate"
+		},
+		{
+				"msgid": "chat.state_active",
+				"msgstr": "active"
+		},
+		{
+				"msgid": "chat.state_composing",
+				"msgstr": "composing"
+		},
+		{
+				"msgid": "chat.state_inactive",
+				"msgstr": "inactive"
+		},
+		{
+				"msgid": "chat.state_gone",
+				"msgstr": "gone"
+		},
+		{
+				"msgid": "chat.state_paused",
+				"msgstr": "paused"
+		},
+		{
+				"msgid": "chat.username",
+				"msgstr": "Name"
 		},
     {
         "msgid": "cldr_am",
