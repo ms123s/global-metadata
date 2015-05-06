@@ -1,0 +1,281 @@
+[sw]
+	type = sw.camel
+--
+{
+  "resourceId": "oryx_1D3A15EB-ACBA-4490-BA6F-0ED35C3E9499",
+  "properties": {
+    "overrideid": "xmpp.camel",
+    "documentation": null,
+    "autostart": true,
+    "enabled": true,
+    "logExceptionsOnly": false,
+    "version": "",
+    "author": "",
+    "creationdate": null,
+    "modificationdate": null,
+    "camelcontext": "default",
+    "rpc": false,
+    "rpcParameter": null,
+    "rpcReturn": "body",
+    "rpcReturnHeaders": null,
+    "websocket": true,
+    "recvEndpoint": "direct:xmpp_recv",
+    "sendEndpoint": "direct:xmpp_send",
+    "startableGroups": "global.guest",
+    "startableUsers": "guest",
+    "settings": {
+      "totalCount": 1,
+      "items": [
+        {
+          "name": "username",
+          "const": null,
+          "source": "branding",
+          "destination": "property"
+        }
+      ]
+    }
+  },
+  "stencil": {
+    "id": "Camelrouting"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_AF4D5F00-7E17-4BE3-8FBF-0F3045A30AE5",
+      "properties": {
+        "shared": "origin",
+        "shareRef": "xmpp_endpoint",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "type_xmpp": "XMPP",
+        "uri_template": "${protocol}://${host}:${port}",
+        "urivalue_protocol": "xmpp",
+        "urivalue_host": "127.0.0.1",
+        "urivalue_port": "5222",
+        "uriparam_user": "",
+        "uriparam_password": "",
+        "uriparam_room": "",
+        "uriparam_participant": "",
+        "uriparam_nickname": "",
+        "uriparam_serviceName": "",
+        "uriparam_testConnectionOnStartup": false,
+        "extraParams": null,
+        "urivalue_hostname": "127.0.0.1"
+      },
+      "stencil": {
+        "id": "XmppEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_44089DAD-9005-4840-8555-40E57F7711F6"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 177.00027083902,
+          "y": 162
+        },
+        "upperLeft": {
+          "x": 96.99972916098,
+          "y": 102
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_44089DAD-9005-4840-8555-40E57F7711F6",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_B22C7784-3979-4AC7-AABF-B1A621AB9023"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 137,
+          "y": 215.609375
+        },
+        "upperLeft": {
+          "x": 137,
+          "y": 162.390625
+        }
+      },
+      "dockers": [
+        {
+          "x": 40.000270839020004,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_B22C7784-3979-4AC7-AABF-B1A621AB9023"
+      }
+    },
+    {
+      "resourceId": "oryx_EF816AD8-DEC4-48D1-A7D5-5E3525F70D71",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_D6B32783-9381-4652-B038-FA1906E4E884"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 273.4998646669584,
+          "y": 246.546875
+        },
+        "upperLeft": {
+          "x": 273.4998646669584,
+          "y": 162.453125
+        }
+      },
+      "dockers": [
+        {
+          "x": 40.00000008646839,
+          "y": 30
+        },
+        {
+          "x": 40.00000008646839,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_D6B32783-9381-4652-B038-FA1906E4E884"
+      }
+    },
+    {
+      "resourceId": "oryx_D6B32783-9381-4652-B038-FA1906E4E884",
+      "properties": {
+        "shared": "link",
+        "shareRef": "xmpp_endpoint",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "uri": "",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "Endpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 313.4998647534268,
+          "y": 307
+        },
+        "upperLeft": {
+          "x": 233.49986458049,
+          "y": 247
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_FA61E74A-B7AE-41DD-A0A4-F675FAEE7275",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "type_direct": "Direct",
+        "uri_template": "direct:${name}",
+        "urivalue_name": "xmpp_send"
+      },
+      "stencil": {
+        "id": "DirectEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_EF816AD8-DEC4-48D1-A7D5-5E3525F70D71"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 313.4998647534268,
+          "y": 162
+        },
+        "upperLeft": {
+          "x": 233.49986458049,
+          "y": 102
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_B22C7784-3979-4AC7-AABF-B1A621AB9023",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "type_direct": "Direct",
+        "uri_template": "direct:${name}",
+        "urivalue_name": "xmpp_recv"
+      },
+      "stencil": {
+        "id": "DirectEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 177,
+          "y": 276
+        },
+        "upperLeft": {
+          "x": 97,
+          "y": 216
+        }
+      },
+      "dockers": []
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 2485,
+      "y": 3050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "camel",
+    "namespace": "http://b3mn.org/stencilset/camel#"
+  },
+  "ssextensions": [],
+  "zoomLevel": 1
+}
