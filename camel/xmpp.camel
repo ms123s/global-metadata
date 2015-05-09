@@ -8,7 +8,7 @@
     "documentation": null,
     "autostart": true,
     "enabled": true,
-    "logExceptionsOnly": false,
+    "logExceptionsOnly": true,
     "version": "",
     "author": "",
     "creationdate": null,
@@ -59,7 +59,7 @@
         "uriparam_room": "",
         "uriparam_participant": "",
         "uriparam_nickname": "",
-        "uriparam_serviceName": "",
+        "uriparam_serviceName": "simpl4.org",
         "uriparam_testConnectionOnStartup": false,
         "extraParams": null,
         "urivalue_hostname": "127.0.0.1"

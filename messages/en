@@ -103,6 +103,10 @@
 				"msgstr": "Connect"
 		},
 		{
+				"msgid": "chat.description",
+				"msgstr": "Beschreibung"
+		},
+		{
 				"msgid": "chat.disconnectButton",
 				"msgstr": "Disconnect"
 		},
@@ -115,6 +119,10 @@
 				"msgstr": "Login"
 		},
 		{
+				"msgid": "chat.name",
+				"msgstr": "Name"
+		},
+		{
 				"msgid": "chat.new_contact_header1",
 				"msgstr": "Adding a new contact"
 		},
@@ -125,6 +133,18 @@
 		{
 				"msgid": "chat.new_group_header",
 				"msgstr": "Adding new group"
+		},
+		{
+				"msgid": "chat.roomlist",
+				"msgstr": "Roomlist"
+		},
+		{
+				"msgid": "chat.leaveRoom",
+				"msgstr": "Leave room"
+		},
+		{
+				"msgid": "chat.joinRoom",
+				"msgstr": "Join room"
 		},
 		{
 				"msgid": "chat.sendButton",

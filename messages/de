@@ -5399,8 +5399,16 @@
 				"msgstr": "Verbinden"
 		},
 		{
+				"msgid": "chat.description",
+				"msgstr": "Description"
+		},
+		{
 				"msgid": "chat.login",
 				"msgstr": "Login"
+		},
+		{
+				"msgid": "chat.name",
+				"msgstr": "Name"
 		},
 		{
 				"msgid": "chat.participant",
@@ -5417,6 +5425,14 @@
 		{
 				"msgid": "chat.new_contact_header2",
 				"msgstr": "Teilnehmer zur Kontaktliste hinzufügen"
+		},
+		{
+				"msgid": "chat.leaveRoom",
+				"msgstr": "Raum verlassen"
+		},
+		{
+				"msgid": "chat.joinRoom",
+				"msgstr": "Raum betreten"
 		},
 		{
 				"msgid": "chat.sendButton",
