@@ -5411,8 +5411,12 @@
 				"msgstr": "Name"
 		},
 		{
+				"msgid": "chat.occupiants",
+				"msgstr": "Teilnehmer"
+		},
+		{
 				"msgid": "chat.participant",
-				"msgstr": "Chatpartner"
+				"msgstr": "Sende an"
 		},
 		{
 				"msgid": "chat.new_group_header",

@@ -147,12 +147,16 @@
 				"msgstr": "Join room"
 		},
 		{
-				"msgid": "chat.sendButton",
-				"msgstr": "Send"
+				"msgid": "chat.occupiants",
+				"msgstr": "Participiants"
 		},
 		{
 				"msgid": "chat.participant",
-				"msgstr": "Participant"
+				"msgstr": "send to"
+		},
+		{
+				"msgid": "chat.sendButton",
+				"msgstr": "Send"
 		},
 		{
 				"msgid": "chat.state",
