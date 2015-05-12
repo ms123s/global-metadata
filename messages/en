@@ -123,6 +123,10 @@
 				"msgstr": "Name"
 		},
 		{
+				"msgid": "chat.not-authorized",
+				"msgstr": "Not authorized"
+		},
+		{
 				"msgid": "chat.new_contact_header1",
 				"msgstr": "Adding a new contact"
 		},
@@ -157,6 +161,10 @@
 		{
 				"msgid": "chat.sendButton",
 				"msgstr": "Send"
+		},
+		{
+				"msgid": "chat.singleChat",
+				"msgstr": "or single chat"
 		},
 		{
 				"msgid": "chat.state",

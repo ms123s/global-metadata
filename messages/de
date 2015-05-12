@@ -5431,6 +5431,10 @@
 				"msgstr": "Teilnehmer zur Kontaktliste hinzufügen"
 		},
 		{
+				"msgid": "chat.not-authorized",
+				"msgstr": "Nicht autorisiert"
+		},
+		{
 				"msgid": "chat.leaveRoom",
 				"msgstr": "Raum verlassen"
 		},
@@ -5441,6 +5445,10 @@
 		{
 				"msgid": "chat.sendButton",
 				"msgstr": "Senden"
+		},
+		{
+				"msgid": "chat.singleChat",
+				"msgstr": "oder Single Chat"
 		},
 		{
 				"msgid": "chat.state",
