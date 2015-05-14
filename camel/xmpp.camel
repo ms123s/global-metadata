@@ -19,7 +19,7 @@
     "rpcReturn": "body",
     "rpcReturnHeaders": null,
     "websocket": true,
-    "recvEndpoint": "direct:xmpp_recv",
+    "recvEndpoint": "eventbus:xmpp_recv",
     "sendEndpoint": "direct:xmpp_send",
     "startableGroups": "global.guest",
     "startableUsers": "guest",
@@ -98,7 +98,7 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_B22C7784-3979-4AC7-AABF-B1A621AB9023"
+          "resourceId": "oryx_A0CC47FB-47BA-4CC1-BF77-EB047288A68E"
         }
       ],
       "bounds": {
@@ -122,7 +122,7 @@
         }
       ],
       "target": {
-        "resourceId": "oryx_B22C7784-3979-4AC7-AABF-B1A621AB9023"
+        "resourceId": "oryx_A0CC47FB-47BA-4CC1-BF77-EB047288A68E"
       }
     },
     {
@@ -231,7 +231,7 @@
       "dockers": []
     },
     {
-      "resourceId": "oryx_B22C7784-3979-4AC7-AABF-B1A621AB9023",
+      "resourceId": "oryx_A0CC47FB-47BA-4CC1-BF77-EB047288A68E",
       "properties": {
         "shared": "no",
         "shareRef": "",
@@ -240,12 +240,12 @@
         "documentation": null,
         "bgcolor": "white",
         "bordercolor": "#000000",
-        "type_direct": "Direct",
-        "uri_template": "direct:${name}",
-        "urivalue_name": "xmpp_recv"
+        "type_eventbus": "EventBus",
+        "uri_template": "eventbus:${address}",
+        "urivalue_address": "xmpp_recv"
       },
       "stencil": {
-        "id": "DirectEndpoint"
+        "id": "EventBusEndpoint"
       },
       "childShapes": [],
       "outgoing": [],

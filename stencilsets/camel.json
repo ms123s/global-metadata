@@ -1270,6 +1270,27 @@
 			"visible": true
 		}]
 	},{
+		"name": "eventbusProperties",
+		"properties": [{
+			"id": "type_eventbus",
+			"type":"String",
+			"value": "EventBus",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "eventbus:${address}",
+			"visible": false
+		},{
+			"id": "urivalue_address",
+			"title":"Address",
+			"title_de":"Adresse",
+			"type":"String",
+			"value": "bus1",
+			"visible": true
+		}]
+	},{
 		"name": "sedaProperties",
 		"properties": [{
 			"id": "type_seda",
@@ -1308,6 +1329,11 @@
 			"type":"String",
 			"value": "vm1",
 			"visible": true
+		},{
+			"id": "uriparam_pubrSub",
+			"title":"PubSub",
+			"type":"Boolean",
+			"value": true
 		}]
 	},{
 		"name": "sedaVmProperties",
@@ -1990,6 +2016,17 @@
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
     "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "directProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "EventBusEndpoint",
+    "title" : "EventBus Endpoint",
+    "title_de" : "EventBus Endpunkt",
+    "view" : "eventbusendpoint.svg",
+    "icon" : "eventbusendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "eventbusProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
