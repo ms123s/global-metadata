@@ -1291,6 +1291,27 @@
 			"visible": true
 		}]
 	},{
+		"name": "websocketProperties",
+		"properties": [{
+			"id": "type_websocket",
+			"type":"String",
+			"value": "Websocket",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "websocket:${name}",
+			"visible": false
+		},{
+			"id": "urivalue_name",
+			"title":"Name",
+			"title_de":"Name",
+			"type":"String",
+			"value": "ws1",
+			"visible": true
+		}]
+	},{
 		"name": "sedaProperties",
 		"properties": [{
 			"id": "type_seda",
@@ -2027,6 +2048,17 @@
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
     "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "eventbusProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "WebsocketEndpoint",
+    "title" : "Websocket Endpoint",
+    "title_de" : "Websocket Endpunkt",
+    "view" : "websocketendpoint.svg",
+    "icon" : "websocketendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "websocketProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
