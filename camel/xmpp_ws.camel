@@ -90,7 +90,7 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_65D985C8-665D-4305-9B27-462F0C07BF46"
+          "resourceId": "oryx_00CF9934-D438-4BAB-84A2-4F322D26C25C"
         }
       ],
       "bounds": {
@@ -104,46 +104,6 @@
         }
       },
       "dockers": []
-    },
-    {
-      "resourceId": "oryx_65D985C8-665D-4305-9B27-462F0C07BF46",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": null
-      },
-      "stencil": {
-        "id": "SimpleConnection"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_E4C6E888-8DB9-4D17-878E-7F66FDACE799"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 206,
-          "y": 554.890625
-        },
-        "upperLeft": {
-          "x": 206,
-          "y": 390.3203125
-        }
-      },
-      "dockers": [
-        {
-          "x": 40,
-          "y": 30
-        },
-        {
-          "x": 40,
-          "y": 48
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_E4C6E888-8DB9-4D17-878E-7F66FDACE799"
-      }
     },
     {
       "resourceId": "oryx_DF032C84-5CB4-4F5A-A916-2BECA2CBB24E",
@@ -415,39 +375,6 @@
       }
     },
     {
-      "resourceId": "oryx_E4C6E888-8DB9-4D17-878E-7F66FDACE799",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": null,
-        "bgcolor": "white",
-        "bordercolor": "#000000",
-        "ref": "",
-        "code": "public void  process(Exchange exchange){      \n  def map = exchange.getIn().getBody();\n  println(\"\\nFromWebsocketSocket.message: \" + map);\n}",
-        "isEndpoint": false
-      },
-      "stencil": {
-        "id": "Processor"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_00CF9934-D438-4BAB-84A2-4F322D26C25C"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 246,
-          "y": 390
-        },
-        "upperLeft": {
-          "x": 166,
-          "y": 330
-        }
-      },
-      "dockers": []
-    },
-    {
       "resourceId": "oryx_00CF9934-D438-4BAB-84A2-4F322D26C25C",
       "properties": {
         "overrideid": "",
@@ -466,17 +393,17 @@
       "bounds": {
         "lowerRight": {
           "x": 206,
-          "y": 329.5625
+          "y": 554.3828125
         },
         "upperLeft": {
           "x": 206,
-          "y": 210.1328125
+          "y": 210.5390625
         }
       },
       "dockers": [
         {
           "x": 40,
-          "y": 30
+          "y": 20
         },
         {
           "x": 40.000270839020004,
