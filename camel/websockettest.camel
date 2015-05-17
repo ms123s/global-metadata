@@ -96,11 +96,11 @@
       "bounds": {
         "lowerRight": {
           "x": 246,
-          "y": 495
+          "y": 615
         },
         "upperLeft": {
           "x": 166,
-          "y": 435
+          "y": 555
         }
       },
       "dockers": []
@@ -118,17 +118,17 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_1EA535FA-E74E-4D67-8C2D-486217B80E24"
+          "resourceId": "oryx_E4C6E888-8DB9-4D17-878E-7F66FDACE799"
         }
       ],
       "bounds": {
         "lowerRight": {
           "x": 206,
-          "y": 434.5
+          "y": 554.890625
         },
         "upperLeft": {
           "x": 206,
-          "y": 349.84375
+          "y": 390.3203125
         }
       },
       "dockers": [
@@ -138,11 +138,11 @@
         },
         {
           "x": 40,
-          "y": 58
+          "y": 48
         }
       ],
       "target": {
-        "resourceId": "oryx_1EA535FA-E74E-4D67-8C2D-486217B80E24"
+        "resourceId": "oryx_E4C6E888-8DB9-4D17-878E-7F66FDACE799"
       }
     },
     {
@@ -342,91 +342,6 @@
       }
     },
     {
-      "resourceId": "oryx_1EA535FA-E74E-4D67-8C2D-486217B80E24",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": null,
-        "bgcolor": "white",
-        "bordercolor": "#000000",
-        "headers": {
-          "totalCount": 2,
-          "items": [
-            {
-              "name": "CamelXmppCommand",
-              "value": "request.body.xmppCommand ? request.body.xmppCommand : null",
-              "language": "groovy"
-            },
-            {
-              "name": "CamelXmppTo",
-              "value": "request.body.xmppTo ? request.body.xmppTo : request.header[\"CamelXmppTo\"]",
-              "language": "groovy"
-            }
-          ]
-        }
-      },
-      "stencil": {
-        "id": "SetHeader"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_83475E9D-9A3C-4509-B7D8-20453F4B4360"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 246,
-          "y": 349
-        },
-        "upperLeft": {
-          "x": 166,
-          "y": 289
-        }
-      },
-      "dockers": []
-    },
-    {
-      "resourceId": "oryx_83475E9D-9A3C-4509-B7D8-20453F4B4360",
-      "properties": {
-        "overrideid": "",
-        "name": "",
-        "documentation": null
-      },
-      "stencil": {
-        "id": "SimpleConnection"
-      },
-      "childShapes": [],
-      "outgoing": [
-        {
-          "resourceId": "oryx_7490B322-D32F-42A4-BEF2-A9B3AAC86D2D"
-        }
-      ],
-      "bounds": {
-        "lowerRight": {
-          "x": 206,
-          "y": 288.6796875
-        },
-        "upperLeft": {
-          "x": 206,
-          "y": 210.3203125
-        }
-      },
-      "dockers": [
-        {
-          "x": 40,
-          "y": 30
-        },
-        {
-          "x": 40.000270839020004,
-          "y": 30
-        }
-      ],
-      "target": {
-        "resourceId": "oryx_7490B322-D32F-42A4-BEF2-A9B3AAC86D2D"
-      }
-    },
-    {
       "resourceId": "oryx_4162B5A9-C6E0-4589-B912-D5EE147EE30F",
       "properties": {
         "overrideid": "",
@@ -497,6 +412,79 @@
       ],
       "target": {
         "resourceId": "oryx_DF032C84-5CB4-4F5A-A916-2BECA2CBB24E"
+      }
+    },
+    {
+      "resourceId": "oryx_E4C6E888-8DB9-4D17-878E-7F66FDACE799",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "ref": "",
+        "code": "public void  process(Exchange exchange){      \n  def map = exchange.getIn().getBody();\n  try{  \n    println(\"\\nFromWebsocketSocket.message: \" + map);\n    if (map.command != null && \"close\" == map.command) {\n      //CloseStatus cs = new CloseStatus(4001, \"close on  client demand\");\n      //m_session.close(cs);\n    } else {\n      def body = map.body;\n      def command = map.command;\n      def participant = map.participant;\n      def room = map.room;\n      if (body != null) {\n        exchange.getIn().setHeader(\"CamelXmppTo\", participant);\n        exchange.getIn().setHeader(\"CamelXmppRoom\", room);\n        exchange.getIn().setBody(body);\n      } else if (command != null) {\n        exchange.getIn().setHeader(\"CamelXmppCommand\", command);\n        exchange.getIn().setHeader(\"CamelXmppParameter\", map.parameter);\n        exchange.getIn().setHeader(\"CamelXmppTo\", participant);\n      } \n    }   \n  }catch(Throwable e){\n    e.printStackTrace();\n    String msg = e.getMessage();\n    while (e.getCause() != null) {\n      e = e.getCause();\n      msg = e.getMessage();\n    }   \n    if( msg == null){\n      msg = e.toString();\n    }\n    map.errorMessage= msg;\n    //def sendString = js.deepSerialize(map);\n    //m_session.getRemote().sendStringByFuture(sendString);\n  }     \n}",
+        "isEndpoint": false
+      },
+      "stencil": {
+        "id": "Processor"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_00CF9934-D438-4BAB-84A2-4F322D26C25C"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 246,
+          "y": 390
+        },
+        "upperLeft": {
+          "x": 166,
+          "y": 330
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_00CF9934-D438-4BAB-84A2-4F322D26C25C",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_7490B322-D32F-42A4-BEF2-A9B3AAC86D2D"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 206,
+          "y": 329.5625
+        },
+        "upperLeft": {
+          "x": 206,
+          "y": 210.1328125
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 40.000270839020004,
+          "y": 53
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_7490B322-D32F-42A4-BEF2-A9B3AAC86D2D"
       }
     }
   ],
