@@ -4,7 +4,7 @@
 {
   "resourceId": "oryx_2012EA92-6E0B-41F9-A848-2867FE26134C",
   "properties": {
-    "overrideid": "websockettest.camel",
+    "overrideid": "xmpp_ws.camel",
     "documentation": null,
     "autostart": true,
     "enabled": true,
@@ -274,7 +274,7 @@
           "items": [
             {
               "name": "websocket.connectionKey",
-              "value": "request.getHeader(\"CamelXmppSessionid\")",
+              "value": "request.getHeader(\"xmppSessionid\")",
               "language": "groovy"
             }
           ]
@@ -423,7 +423,7 @@
         "bgcolor": "white",
         "bordercolor": "#000000",
         "ref": "",
-        "code": "public void  process(Exchange exchange){      \n  def map = exchange.getIn().getBody();\n  try{  \n    println(\"\\nFromWebsocketSocket.message: \" + map);\n    if (map.command != null && \"close\" == map.command) {\n      //CloseStatus cs = new CloseStatus(4001, \"close on  client demand\");\n      //m_session.close(cs);\n    } else {\n      def body = map.body;\n      def command = map.command;\n      def participant = map.participant;\n      def room = map.room;\n      if (body != null) {\n        exchange.getIn().setHeader(\"CamelXmppTo\", participant);\n        exchange.getIn().setHeader(\"CamelXmppRoom\", room);\n        exchange.getIn().setBody(body);\n      } else if (command != null) {\n        exchange.getIn().setHeader(\"CamelXmppCommand\", command);\n        exchange.getIn().setHeader(\"CamelXmppParameter\", map.parameter);\n        exchange.getIn().setHeader(\"CamelXmppTo\", participant);\n      } \n    }   \n  }catch(Throwable e){\n    e.printStackTrace();\n    String msg = e.getMessage();\n    while (e.getCause() != null) {\n      e = e.getCause();\n      msg = e.getMessage();\n    }   \n    if( msg == null){\n      msg = e.toString();\n    }\n    map.errorMessage= msg;\n    //def sendString = js.deepSerialize(map);\n    //m_session.getRemote().sendStringByFuture(sendString);\n  }     \n}",
+        "code": "public void  process(Exchange exchange){      \n  def map = exchange.getIn().getBody();\n  println(\"\\nFromWebsocketSocket.message: \" + map);\n}",
         "isEndpoint": false
       },
       "stencil": {
