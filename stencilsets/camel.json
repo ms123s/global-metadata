@@ -1351,7 +1351,7 @@
 			"value": "vm1",
 			"visible": true
 		},{
-			"id": "uriparam_pubrSub",
+			"id": "uriparam_pubSub",
 			"title":"PubSub",
 			"type":"Boolean",
 			"value": true

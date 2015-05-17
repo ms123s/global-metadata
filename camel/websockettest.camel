@@ -1,0 +1,519 @@
+[sw]
+	type = sw.camel
+--
+{
+  "resourceId": "oryx_2012EA92-6E0B-41F9-A848-2867FE26134C",
+  "properties": {
+    "overrideid": "websockettest.camel",
+    "documentation": null,
+    "autostart": true,
+    "enabled": true,
+    "logExceptionsOnly": false,
+    "version": "",
+    "author": "",
+    "creationdate": null,
+    "modificationdate": null,
+    "camelcontext": "default",
+    "rpc": false,
+    "rpcParameter": null,
+    "rpcReturn": "body",
+    "rpcReturnHeaders": null,
+    "websocket": true,
+    "recvEndpoint": "",
+    "sendEndpoint": "",
+    "startableGroups": null,
+    "startableUsers": null,
+    "settings": null
+  },
+  "stencil": {
+    "id": "Camelrouting"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_7490B322-D32F-42A4-BEF2-A9B3AAC86D2D",
+      "properties": {
+        "shared": "origin",
+        "shareRef": "link_xmpp",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "yellow",
+        "bordercolor": "#000000",
+        "type_xmpp": "XMPP",
+        "uri_template": "${protocol}://${host}:${port}",
+        "urivalue_protocol": "xmpp",
+        "urivalue_host": "127.0.0.1",
+        "urivalue_port": "5222",
+        "uriparam_user": "",
+        "uriparam_password": "",
+        "uriparam_room": "",
+        "uriparam_participant": "",
+        "uriparam_nickname": "",
+        "uriparam_serviceName": "simpl4.org",
+        "uriparam_testConnectionOnStartup": false,
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "XmppEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 246.00027083902,
+          "y": 210
+        },
+        "upperLeft": {
+          "x": 165.99972916098,
+          "y": 150
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_1AABEC6A-C5B9-4A12-846F-9E51B13DB10E",
+      "properties": {
+        "shared": "origin",
+        "shareRef": "link_ws1",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "red",
+        "bordercolor": "#000000",
+        "type_websocket": "Websocket",
+        "uri_template": "websocket:${name}",
+        "urivalue_name": "ws1"
+      },
+      "stencil": {
+        "id": "WebsocketEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_65D985C8-665D-4305-9B27-462F0C07BF46"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 246,
+          "y": 495
+        },
+        "upperLeft": {
+          "x": 166,
+          "y": 435
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_65D985C8-665D-4305-9B27-462F0C07BF46",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_1EA535FA-E74E-4D67-8C2D-486217B80E24"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 206,
+          "y": 434.5
+        },
+        "upperLeft": {
+          "x": 206,
+          "y": 349.84375
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 58
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_1EA535FA-E74E-4D67-8C2D-486217B80E24"
+      }
+    },
+    {
+      "resourceId": "oryx_DF032C84-5CB4-4F5A-A916-2BECA2CBB24E",
+      "properties": {
+        "shared": "link",
+        "shareRef": "link_ws1",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "red",
+        "bordercolor": "#000000",
+        "type_websocket": "Websocket",
+        "uri_template": "websocket:${name}",
+        "urivalue_name": "ws1"
+      },
+      "stencil": {
+        "id": "WebsocketEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 395.00027083902,
+          "y": 615
+        },
+        "upperLeft": {
+          "x": 315.00027083902,
+          "y": 555
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_CE50FE3A-9004-4FA8-9DB5-990C49D4FC92",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_24E9190C-51F1-4295-8104-C90FD64E638E"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 355.00027083902,
+          "y": 288.46875
+        },
+        "upperLeft": {
+          "x": 355.00027083902,
+          "y": 210.1328125
+        }
+      },
+      "dockers": [
+        {
+          "x": 40.000270839020004,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 4
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_24E9190C-51F1-4295-8104-C90FD64E638E"
+      }
+    },
+    {
+      "resourceId": "oryx_6D6600BE-D3F0-4FE9-B9FA-24C39D5D1A7E",
+      "properties": {
+        "shared": "link",
+        "shareRef": "link_xmpp",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "yellow",
+        "bordercolor": "#000000",
+        "type_xmpp": "XMPP",
+        "uri_template": "${protocol}://${host}:${port}",
+        "urivalue_protocol": "xmpp",
+        "urivalue_host": "127.0.0.1",
+        "urivalue_port": "5222",
+        "uriparam_user": "",
+        "uriparam_password": "",
+        "uriparam_room": "",
+        "uriparam_participant": "",
+        "uriparam_nickname": "",
+        "uriparam_serviceName": "",
+        "uriparam_testConnectionOnStartup": false,
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "XmppEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_CE50FE3A-9004-4FA8-9DB5-990C49D4FC92"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 395.00054167804,
+          "y": 210
+        },
+        "upperLeft": {
+          "x": 315,
+          "y": 150
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_24E9190C-51F1-4295-8104-C90FD64E638E",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "headers": {
+          "totalCount": 1,
+          "items": [
+            {
+              "name": "websocket.connectionKey",
+              "value": "request.getHeader(\"CamelXmppSessionid\")",
+              "language": "groovy"
+            }
+          ]
+        }
+      },
+      "stencil": {
+        "id": "SetHeader"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_03929118-25DB-47DF-884F-B167A8CEA0BD"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 395.00027083902,
+          "y": 349
+        },
+        "upperLeft": {
+          "x": 315.00027083902,
+          "y": 289
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_03929118-25DB-47DF-884F-B167A8CEA0BD",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_4162B5A9-C6E0-4589-B912-D5EE147EE30F"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 355.00027083902,
+          "y": 404.953125
+        },
+        "upperLeft": {
+          "x": 355.00027083902,
+          "y": 349.53125
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 19
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_4162B5A9-C6E0-4589-B912-D5EE147EE30F"
+      }
+    },
+    {
+      "resourceId": "oryx_1EA535FA-E74E-4D67-8C2D-486217B80E24",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "headers": {
+          "totalCount": 2,
+          "items": [
+            {
+              "name": "CamelXmppCommand",
+              "value": "request.body.xmppCommand ? request.body.xmppCommand : null",
+              "language": "groovy"
+            },
+            {
+              "name": "CamelXmppTo",
+              "value": "request.body.xmppTo ? request.body.xmppTo : request.header[\"CamelXmppTo\"]",
+              "language": "groovy"
+            }
+          ]
+        }
+      },
+      "stencil": {
+        "id": "SetHeader"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_83475E9D-9A3C-4509-B7D8-20453F4B4360"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 246,
+          "y": 349
+        },
+        "upperLeft": {
+          "x": 166,
+          "y": 289
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_83475E9D-9A3C-4509-B7D8-20453F4B4360",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_7490B322-D32F-42A4-BEF2-A9B3AAC86D2D"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 206,
+          "y": 288.6796875
+        },
+        "upperLeft": {
+          "x": 206,
+          "y": 210.3203125
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 40.000270839020004,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_7490B322-D32F-42A4-BEF2-A9B3AAC86D2D"
+      }
+    },
+    {
+      "resourceId": "oryx_4162B5A9-C6E0-4589-B912-D5EE147EE30F",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "ref": "",
+        "code": "public void  process(Exchange exchange){\n  def camelMessage = exchange.getIn();\n\n  if( camelMessage instanceof org.ms123.common.xmpp.camel.XmppMessage){\n    org.jivesoftware.smack.packet.Message message = camelMessage.getXmppMessage();\n\n    println(\"Mrxessage:\"+message)\n    def sendMap = [:];\n    def defaultSubject = message.getSubject();\n    def subList = [];\n    for (org.jivesoftware.smack.packet.Message.Subject subject : message.getSubjects()) {\n      def sub = subject.getSubject();\n      if (defaultSubject.equals(sub)){\n        continue;\n      }\n      subList.add(sub);\n    }\n    sendMap[\"from\"] = message.getFrom();\n    sendMap[\"to\"] =  message.getTo();\n    sendMap[\"packetId\"] = message.getPacketID();\n    if (defaultSubject != null) {\n      sendMap[\"subject\"] = defaultSubject;\n    }\n    if (subList.size() > 0) {\n      sendMap[\"subjects\"] =  subList;\n    }\n    sendMap[\"thread\"] = message.getThread();\n    sendMap[\"type\"] = message.getType();\n    sendMap[\"language\"] = message.getLanguage();\n    sendMap[\"body\"] = message.getBody();\n    def extensionList = [];\n    for (org.jivesoftware.smack.packet.ExtensionElement ep : message.getExtensions()) {\n      if (ep instanceof org.jivesoftware.smackx.chatstates.packet.ChatStateExtension) {\n        sendMap[\"chatState\"] = ep.getElementName();\n      }\n    }\n    println(\"sendMap:\"+sendMap);\n    exchange.getIn().setBody(sendMap);\n  } else {\n    def js = new JSONSerializer();\n    def sendMap = camelMessage.getBody();\n    exchange.getIn().setBody(js.deepSerialize(sendMap));\n  }\n}\n",
+        "isEndpoint": false
+      },
+      "stencil": {
+        "id": "Processor"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_5F7BCB36-CA36-4917-8CD0-021512E7E0BC"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 395.00027083902,
+          "y": 465
+        },
+        "upperLeft": {
+          "x": 315.00027083902,
+          "y": 405
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_5F7BCB36-CA36-4917-8CD0-021512E7E0BC",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_DF032C84-5CB4-4F5A-A916-2BECA2CBB24E"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 355.00027083902,
+          "y": 554.703125
+        },
+        "upperLeft": {
+          "x": 355.00027083902,
+          "y": 465.296875
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 30
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_DF032C84-5CB4-4F5A-A916-2BECA2CBB24E"
+      }
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 2485,
+      "y": 3050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "camel",
+    "namespace": "http://b3mn.org/stencilset/camel#"
+  },
+  "ssextensions": [],
+  "zoomLevel": 1
+}
