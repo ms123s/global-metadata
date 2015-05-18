@@ -82,7 +82,8 @@
         "bordercolor": "#000000",
         "type_websocket": "Websocket",
         "uri_template": "websocket:${name}",
-        "urivalue_name": "ws1"
+        "urivalue_name": "ws1",
+        "urivalue_sendToAll": false
       },
       "stencil": {
         "id": "WebsocketEndpoint"
@@ -117,7 +118,8 @@
         "bordercolor": "#000000",
         "type_websocket": "Websocket",
         "uri_template": "websocket:${name}",
-        "urivalue_name": "ws1"
+        "urivalue_name": "ws1",
+        "urivalue_sendToAll": false
       },
       "stencil": {
         "id": "WebsocketEndpoint"
@@ -227,7 +229,7 @@
         "overrideid": "",
         "name": "",
         "documentation": null,
-        "bgcolor": "white",
+        "bgcolor": "#CCC",
         "bordercolor": "#000000",
         "headers": {
           "totalCount": 1,
@@ -307,7 +309,7 @@
         "overrideid": "",
         "name": "",
         "documentation": null,
-        "bgcolor": "white",
+        "bgcolor": "#CCC",
         "bordercolor": "#000000",
         "ref": "",
         "code": "public void  process(Exchange exchange){\n  def camelMessage = exchange.getIn();\n\n  if( camelMessage instanceof org.ms123.common.xmpp.camel.XmppMessage){\n    org.jivesoftware.smack.packet.Message message = camelMessage.getXmppMessage();\n\n    println(\"Mrxessage:\"+message)\n    def sendMap = [:];\n    def defaultSubject = message.getSubject();\n    def subList = [];\n    for (org.jivesoftware.smack.packet.Message.Subject subject : message.getSubjects()) {\n      def sub = subject.getSubject();\n      if (defaultSubject.equals(sub)){\n        continue;\n      }\n      subList.add(sub);\n    }\n    sendMap[\"from\"] = message.getFrom();\n    sendMap[\"to\"] =  message.getTo();\n    sendMap[\"packetId\"] = message.getPacketID();\n    if (defaultSubject != null) {\n      sendMap[\"subject\"] = defaultSubject;\n    }\n    if (subList.size() > 0) {\n      sendMap[\"subjects\"] =  subList;\n    }\n    sendMap[\"thread\"] = message.getThread();\n    sendMap[\"type\"] = message.getType();\n    sendMap[\"language\"] = message.getLanguage();\n    sendMap[\"body\"] = message.getBody();\n    def extensionList = [];\n    for (org.jivesoftware.smack.packet.ExtensionElement ep : message.getExtensions()) {\n      if (ep instanceof org.jivesoftware.smackx.chatstates.packet.ChatStateExtension) {\n        sendMap[\"chatState\"] = ep.getElementName();\n      }\n    }\n    println(\"sendMap:\"+sendMap);\n    exchange.getIn().setBody(sendMap);\n  } else {\n    def js = new JSONSerializer();\n    def sendMap = camelMessage.getBody();\n    exchange.getIn().setBody(js.deepSerialize(sendMap));\n  }\n}\n",

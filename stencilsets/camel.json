@@ -1310,6 +1310,13 @@
 			"type":"String",
 			"value": "ws1",
 			"visible": true
+		},{
+			"id": "urivalue_sendToAll",
+			"title":"Send to all",
+			"title_de":"Sende an alle",
+			"type":"Boolean",
+			"value": false,
+			"visible": true
 		}]
 	},{
 		"name": "sedaProperties",
