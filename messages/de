@@ -5435,6 +5435,10 @@
 				"msgstr": "Nicht autorisiert"
 		},
 		{
+				"msgid": "chat.registration-required",
+				"msgstr": "Registration erforderlich"
+		},
+		{
 				"msgid": "chat.leaveRoom",
 				"msgstr": "Raum verlassen"
 		},

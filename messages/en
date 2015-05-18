@@ -139,6 +139,10 @@
 				"msgstr": "Adding new group"
 		},
 		{
+				"msgid": "chat.registration-required",
+				"msgstr": "Registration required"
+		},
+		{
 				"msgid": "chat.roomlist",
 				"msgstr": "Roomlist"
 		},
