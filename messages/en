@@ -195,6 +195,10 @@
 				"msgstr": "paused"
 		},
 		{
+				"msgid": "chat.usage",
+				"msgstr": "Chat usage"
+		},
+		{
 				"msgid": "chat.username",
 				"msgstr": "Name"
 		},
