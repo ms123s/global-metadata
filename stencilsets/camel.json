@@ -1319,6 +1319,26 @@
 			"visible": true
 		}]
 	},{
+		"name": "wampProperties",
+		"properties": [{
+			"id": "type_wamp",
+			"type":"String",
+			"value": "Wamp",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "wamp:${name}",
+			"visible": false
+		},{
+			"id": "urivalue_name",
+			"title":"Name",
+			"type":"String",
+			"value": "wamp1",
+			"visible": true
+		}]
+	},{
 		"name": "sedaProperties",
 		"properties": [{
 			"id": "type_seda",
@@ -2066,6 +2086,17 @@
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
     "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "websocketProperties" ],
+    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+    "type" : "node",
+    "id" : "WampEndpoint",
+    "title" : "Wamp Endpoint",
+    "title_de" : "Wamp Endpunkt",
+    "view" : "wampendpoint.svg",
+    "icon" : "wampendpoint.png",
+    "groups" : [ "Endpoints" ],
+		"groups_de": ["Endpunkte"],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties",  "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
