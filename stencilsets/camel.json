@@ -1293,19 +1293,11 @@
 	},{
 		"name": "rpcProperties",
 		"properties": [{
-			"id": "rpc",
-			"title":"RPC",
-			"description_de": "Soll die Route über rpc erreichbar sein?",
-			"description": "Should be the route reachable via rpc?",
-			"type":"boolean",
-			"value": false,
-			"visible": "'undefined' === typeof type_wamp"
-		},{
-			"id": "rpcParameter",
+			"id": "uriparam_rpcParameter",
 			"type": "Complex",
 			"title": "RPC-Parameter",
 			"value": "",
-			"visible": "rpc==true || urivalue_mode=='rpc'",
+			"visible": "urivalue_mode=='rpc'",
 			"readonly": false,
 			"optional": true,
 			"complexItems": [{
@@ -1354,12 +1346,12 @@
 				"optional": true
 			}]
 		},{
-			"id": "rpcReturn",
+			"id": "uriparam_rpcReturn",
 			"title": "RPC Return",
 			"readonly": false,
 			"type": "Choice",
 			"value": "body",
-			"visible": "rpc==true|| urivalue_mode=='rpc'",
+			"visible": "urivalue_mode=='rpc'",
 			"items": [ {
 				"id": "body",
 				"title": "Body",
@@ -1380,11 +1372,11 @@
 			"width": 80,
 			"optional": true
 		},{
-			"id": "rpcReturnHeaders",
+			"id": "uriparam_rpcReturnHeaders",
 			"type": "Complex",
 			"title": "Return Headers",
 			"value": "",
-			"visible": "(rpc==true || urivalue_mode=='rpc') && (rpcReturn=='headers' || rpcReturn=='bodyAndHeaders')",
+			"visible": "(urivalue_mode=='rpc') && (uriparam_rpcReturn=='headers' || uriparam_rpcReturn=='bodyAndHeaders')",
 			"readonly": false,
 			"optional": true,
 			"complexItems": [{
@@ -1428,7 +1420,7 @@
 	},{
 		"name": "permissionProperties",
 		"properties": [{
-			"id": "startableGroups",
+			"id": "uriparam_startableGroups",
 			"type": "MultiSelect",
 			"config": "permission:getAllRoles:name",
 			"title": "Permission (groups)",
@@ -1436,10 +1428,10 @@
 			"destination": "User with a min. one of these roles may start the route",
 			"description_de": "User mit einer min. einer dieser  Rollen dürfen die Route starten",
 			"value": "",
-			"visible": "rpc==true|| urivalue_mode=='rpc'",
+			"visible": "urivalue_mode=='rpc'",
 			"length": "50"
 		},{
-			"id": "startableUsers",
+			"id": "uriparam_startableUsers",
 			"type": "MultiSelect",
 			"config": "auth:getUsers:userid",
 			"title": "Permission (user)",
@@ -1447,7 +1439,7 @@
 			"destination": "This users are able to start the route",
 			"description_de": "Diese User dürfen die Route starten",
 			"value": "",
-			"visible": "rpc==true|| urivalue_mode=='rpc'",
+			"visible": "urivalue_mode=='rpc'",
 			"length": "50"
  		}]
 	},{
@@ -1900,7 +1892,7 @@
 		"icon": "diagram.png",
 		"mayBeRoot": true,
 		"hide": true,
-		"propertyPackages": ["routeBaseAttributes", "diagram", "rpcProperties", "permissionProperties"],
+		"propertyPackages": ["routeBaseAttributes", "diagram"],
 		"roles": [],
 		"properties": [ {
 			"id": "camelcontext",
@@ -1914,6 +1906,110 @@
 			"popular": false,
 			"optional": true
 		},{
+			"id": "rpc",
+			"title":"RPC",
+			"description_de": "Soll die Route über rpc erreichbar sein?",
+			"description": "Should be the route reachable via rpc?",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		},{
+			"id": "rpcParameter",
+			"type": "Complex",
+			"title": "RPC-Parameter",
+			"value": "",
+			"visible": "rpc==true",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"filter": "[a-zA-Z0-9]",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "defaultvalue",
+				"name_de": "Defaultwert",
+				"name": "Defaultvalue",
+				"type": "String",
+				"value": null,
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "optional",
+				"name_de": "Optional",
+				"name": "Optional",
+				"type": "boolean",
+				"value": false,
+				"width": 50,
+				"optional": false
+			},{
+				"id": "type",
+				"name": "Type",
+				"name_de": "Typ",
+				"readonly": false,
+				"type": "Choice",
+				"value": "string",
+				"items": "###parametertype_items",
+				"width": 80,
+				"optional": true
+			},{
+				"id": "destination",
+				"name": "Destination",
+				"name_de": "Ziel",
+				"readonly": false,
+				"type": "Choice",
+				"value": "property",
+				"items": "###destination_items",
+				"width": 80,
+				"optional": true
+			}]
+		},{
+			"id": "rpcReturn",
+			"title": "RPC Return",
+			"readonly": false,
+			"type": "Choice",
+			"value": "body",
+			"visible": "rpc==true",
+			"items": [ {
+				"id": "body",
+				"title": "Body",
+				"value": "body"
+			},{
+				"id": "headers",
+				"title": "Headers",
+				"value": "headers"
+			},{
+				"id": "bodyAndHeaders",
+				"title": "Body/Headers",
+				"value": "bodyAndHeaders"
+			},{
+				"id": "none",
+				"title": "-----",
+				"value": "none"
+			}],
+			"width": 80,
+			"optional": true
+		},{
+			"id": "rpcReturnHeaders",
+			"type": "Complex",
+			"title": "Return Headers",
+			"value": "",
+			"visible": "rpc==true && (rpcReturn=='headers' || rpcReturn=='bodyAndHeaders')",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"filter": "[a-zA-Z0-9]",
+				"value": "",
+				"width": 250,
+				"optional": false
+			}]
+		},{
 			"id": "websocket",
 			"title":"Websocket",
 			"description_de": "Sollen die Routen mit einem Websocket verwendet werden?",
@@ -1921,11 +2017,6 @@
 			"type":"boolean",
 			"value": false,
 			"visible": true
-		},{
-			"id": "urivalue_mode",
-			"type":"string",
-			"value": "dummy",
-			"visible": false
 		},{
 			"id": "recvEndpoint",
 			"title_de":"Endpoint/empfangen",
@@ -1944,6 +2035,28 @@
 			"type":"String",
 			"value": "",
 			"visible": "websocket==true"
+		},{
+			"id": "startableGroups",
+			"type": "MultiSelect",
+			"config": "permission:getAllRoles:name",
+			"title": "Permission (groups)",
+			"title_de": "Erlaubt (Rollen)",
+			"destination": "User with a min. one of these roles may start the route",
+			"description_de": "User mit einer min. einer dieser  Rollen dürfen die Route starten",
+			"value": "",
+			"visible": "rpc==true||websocket==true",
+			"length": "50"
+		},{
+			"id": "startableUsers",
+			"type": "MultiSelect",
+			"config": "auth:getUsers:userid",
+			"title": "Permission (user)",
+			"title_de": "Erlaubt (User)",
+			"destination": "This users are able to start the route",
+			"description_de": "Diese User dürfen die Route starten",
+			"value": "",
+			"visible": "rpc==true||websocket==true",
+			"length": "50"
  		},{
       "id": "settings",
       "type": "Complex",
