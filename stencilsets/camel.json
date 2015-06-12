@@ -1305,7 +1305,7 @@
 			"type": "Complex",
 			"title": "RPC-Parameter",
 			"value": "",
-			"visible": "rpc==true || 'undefined' !== typeof type_wamp",
+			"visible": "rpc==true || urivalue_mode=='rpc'",
 			"readonly": false,
 			"optional": true,
 			"complexItems": [{
@@ -1359,7 +1359,7 @@
 			"readonly": false,
 			"type": "Choice",
 			"value": "body",
-			"visible": "rpc==true|| 'undefined' !== typeof type_wamp",
+			"visible": "rpc==true|| urivalue_mode=='rpc'",
 			"items": [ {
 				"id": "body",
 				"title": "Body",
@@ -1384,7 +1384,7 @@
 			"type": "Complex",
 			"title": "Return Headers",
 			"value": "",
-			"visible": "(rpc==true || 'undefined' !== typeof type_wamp) && (rpcReturn=='headers' || rpcReturn=='bodyAndHeaders')",
+			"visible": "(rpc==true || urivalue_mode=='rpc') && (rpcReturn=='headers' || rpcReturn=='bodyAndHeaders')",
 			"readonly": false,
 			"optional": true,
 			"complexItems": [{
@@ -1425,6 +1425,31 @@
 			"value": false,
 			"visible": true
 		}]
+	},{
+		"name": "permissionProperties",
+		"properties": [{
+			"id": "startableGroups",
+			"type": "MultiSelect",
+			"config": "permission:getAllRoles:name",
+			"title": "Permission (groups)",
+			"title_de": "Erlaubt (Rollen)",
+			"destination": "User with a min. one of these roles may start the route",
+			"description_de": "User mit einer min. einer dieser  Rollen dürfen die Route starten",
+			"value": "",
+			"visible": "rpc==true|| urivalue_mode=='rpc'",
+			"length": "50"
+		},{
+			"id": "startableUsers",
+			"type": "MultiSelect",
+			"config": "auth:getUsers:userid",
+			"title": "Permission (user)",
+			"title_de": "Erlaubt (User)",
+			"destination": "This users are able to start the route",
+			"description_de": "Diese User dürfen die Route starten",
+			"value": "",
+			"visible": "rpc==true|| urivalue_mode=='rpc'",
+			"length": "50"
+ 		}]
 	},{
 		"name": "wampProperties",
 		"properties": [{
@@ -1875,7 +1900,7 @@
 		"icon": "diagram.png",
 		"mayBeRoot": true,
 		"hide": true,
-		"propertyPackages": ["routeBaseAttributes", "diagram", "rpcProperties"],
+		"propertyPackages": ["routeBaseAttributes", "diagram", "rpcProperties", "permissionProperties"],
 		"roles": [],
 		"properties": [ {
 			"id": "camelcontext",
@@ -1897,6 +1922,11 @@
 			"value": false,
 			"visible": true
 		},{
+			"id": "urivalue_mode",
+			"type":"string",
+			"value": "dummy",
+			"visible": false
+		},{
 			"id": "recvEndpoint",
 			"title_de":"Endpoint/empfangen",
 			"title":"Endpoint/receive",
@@ -1914,28 +1944,6 @@
 			"type":"String",
 			"value": "",
 			"visible": "websocket==true"
-		},{
-			"id": "startableGroups",
-			"type": "MultiSelect",
-			"config": "permission:getAllRoles:name",
-			"title": "Permission (groups)",
-			"title_de": "Erlaubt (Rollen)",
-			"destination": "User with a min. one of these roles may start the route",
-			"description_de": "User mit einer min. einer dieser  Rollen dürfen die Route starten",
-			"value": "",
-			"visible": "rpc==true||websocket==true",
-			"length": "50"
-		},{
-			"id": "startableUsers",
-			"type": "MultiSelect",
-			"config": "auth:getUsers:userid",
-			"title": "Permission (user)",
-			"title_de": "Erlaubt (User)",
-			"destination": "This users are able to start the route",
-			"description_de": "Diese User dürfen die Route starten",
-			"value": "",
-			"visible": "rpc==true||websocket==true",
-			"length": "50"
  		},{
       "id": "settings",
       "type": "Complex",
@@ -2115,7 +2123,7 @@
     "icon" : "wampendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties",  "rpcProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties",  "rpcProperties", "permissionProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
