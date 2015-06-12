@@ -1291,6 +1291,113 @@
 			"visible": true
 		}]
 	},{
+		"name": "rpcProperties",
+		"properties": [{
+			"id": "rpc",
+			"title":"RPC",
+			"description_de": "Soll die Route über rpc erreichbar sein?",
+			"description": "Should be the route reachable via rpc?",
+			"type":"boolean",
+			"value": false,
+			"visible": "'undefined' === typeof type_wamp"
+		},{
+			"id": "rpcParameter",
+			"type": "Complex",
+			"title": "RPC-Parameter",
+			"value": "",
+			"visible": "rpc==true || 'undefined' !== typeof type_wamp",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"filter": "[a-zA-Z0-9]",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "defaultvalue",
+				"name_de": "Defaultwert",
+				"name": "Defaultvalue",
+				"type": "String",
+				"value": null,
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "optional",
+				"name_de": "Optional",
+				"name": "Optional",
+				"type": "boolean",
+				"value": false,
+				"width": 50,
+				"optional": false
+			},{
+				"id": "type",
+				"name": "Type",
+				"name_de": "Typ",
+				"readonly": false,
+				"type": "Choice",
+				"value": "string",
+				"items": "###parametertype_items",
+				"width": 80,
+				"optional": true
+			},{
+				"id": "destination",
+				"name": "Destination",
+				"name_de": "Ziel",
+				"readonly": false,
+				"type": "Choice",
+				"value": "property",
+				"items": "###destination_items",
+				"width": 80,
+				"optional": true
+			}]
+		},{
+			"id": "rpcReturn",
+			"title": "RPC Return",
+			"readonly": false,
+			"type": "Choice",
+			"value": "body",
+			"visible": "rpc==true|| 'undefined' !== typeof type_wamp",
+			"items": [ {
+				"id": "body",
+				"title": "Body",
+				"value": "body"
+			},{
+				"id": "headers",
+				"title": "Headers",
+				"value": "headers"
+			},{
+				"id": "bodyAndHeaders",
+				"title": "Body/Headers",
+				"value": "bodyAndHeaders"
+			},{
+				"id": "none",
+				"title": "-----",
+				"value": "none"
+			}],
+			"width": 80,
+			"optional": true
+		},{
+			"id": "rpcReturnHeaders",
+			"type": "Complex",
+			"title": "Return Headers",
+			"value": "",
+			"visible": "(rpc==true || 'undefined' !== typeof type_wamp) && (rpcReturn=='headers' || rpcReturn=='bodyAndHeaders')",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"filter": "[a-zA-Z0-9]",
+				"value": "",
+				"width": 250,
+				"optional": false
+			}]
+		}]
+	},{
 		"name": "websocketProperties",
 		"properties": [{
 			"id": "type_websocket",
@@ -1329,14 +1436,30 @@
 		},{
 			"id": "uri_template",
 			"type":"String",
-			"value": "wamp:${name}",
+			"value": "wamp:${mode}",
 			"visible": false
 		},{
-			"id": "urivalue_name",
-			"title":"Name",
-			"type":"String",
-			"value": "wamp1",
+			"id": "urivalue_mode",
+			"title":"Mode",
+			"title_de":"Modus",
+			"type":"Choice",
+			"value": "insert",
+      "items" : [ {
+        "id" : "c1",
+        "title" : "Publishing",
+        "value" : "pub"
+      }, {
+        "id" : "c2",
+        "title" : "RPC",
+        "value" : "rpc"
+			}],
 			"visible": true
+		},{
+			"id": "uriparam_procedure",
+			"title":"Procedure",
+			"title_de":"Prozedur",
+			"type":"String",
+			"value": null
 		}]
 	},{
 		"name": "sedaProperties",
@@ -1752,7 +1875,7 @@
 		"icon": "diagram.png",
 		"mayBeRoot": true,
 		"hide": true,
-		"propertyPackages": ["routeBaseAttributes", "diagram"],
+		"propertyPackages": ["routeBaseAttributes", "diagram", "rpcProperties"],
 		"roles": [],
 		"properties": [ {
 			"id": "camelcontext",
@@ -1765,110 +1888,6 @@
 			"readonly": false,
 			"popular": false,
 			"optional": true
-		},{
-			"id": "rpc",
-			"title":"RPC",
-			"description_de": "Soll die Route über rpc erreichbar sein?",
-			"description": "Should be the route reachable via rpc?",
-			"type":"boolean",
-			"value": false,
-			"visible": true
-		},{
-			"id": "rpcParameter",
-			"type": "Complex",
-			"title": "RPC-Parameter",
-			"value": "",
-			"visible": "rpc==true",
-			"readonly": false,
-			"optional": true,
-			"complexItems": [{
-				"id": "name",
-				"name": "Name",
-				"type": "String",
-				"filter": "[a-zA-Z0-9]",
-				"value": "",
-				"width": 150,
-				"optional": false
-			}, {
-				"id": "defaultvalue",
-				"name_de": "Defaultwert",
-				"name": "Defaultvalue",
-				"type": "String",
-				"value": null,
-				"width": 150,
-				"optional": false
-			}, {
-				"id": "optional",
-				"name_de": "Optional",
-				"name": "Optional",
-				"type": "boolean",
-				"value": false,
-				"width": 50,
-				"optional": false
-			},{
-				"id": "type",
-				"name": "Type",
-				"name_de": "Typ",
-				"readonly": false,
-				"type": "Choice",
-				"value": "string",
-				"items": "###parametertype_items",
-				"width": 80,
-				"optional": true
-			},{
-				"id": "destination",
-				"name": "Destination",
-				"name_de": "Ziel",
-				"readonly": false,
-				"type": "Choice",
-				"value": "property",
-				"items": "###destination_items",
-				"width": 80,
-				"optional": true
-			}]
-		},{
-			"id": "rpcReturn",
-			"title": "RPC Return",
-			"readonly": false,
-			"type": "Choice",
-			"value": "body",
-			"visible": "rpc==true",
-			"items": [ {
-				"id": "body",
-				"title": "Body",
-				"value": "body"
-			},{
-				"id": "headers",
-				"title": "Headers",
-				"value": "headers"
-			},{
-				"id": "bodyAndHeaders",
-				"title": "Body/Headers",
-				"value": "bodyAndHeaders"
-			},{
-				"id": "none",
-				"title": "-----",
-				"value": "none"
-			}],
-			"width": 80,
-			"optional": true
-		},{
-			"id": "rpcReturnHeaders",
-			"type": "Complex",
-			"title": "Return Headers",
-			"value": "",
-			"visible": "rpc==true && (rpcReturn=='headers' || rpcReturn=='bodyAndHeaders')",
-			"readonly": false,
-			"optional": true,
-			"complexItems": [{
-				"id": "name",
-				"name": "Name",
-				"type": "String",
-				"filter": "[a-zA-Z0-9]",
-				"value": "",
-				"width": 250,
-				"optional": false
-			}]
 		},{
 			"id": "websocket",
 			"title":"Websocket",
@@ -2096,7 +2115,7 @@
     "icon" : "wampendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties",  "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties",  "rpcProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
