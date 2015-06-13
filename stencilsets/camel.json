@@ -1293,6 +1293,13 @@
 	},{
 		"name": "rpcProperties",
 		"properties": [{
+			"id": "uriparam_procedure",
+			"title":"Procedurename",
+			"title_de":"Prozedurname",
+			"visible": "urivalue_mode=='rpc'",
+			"type":"String",
+			"value": null
+		},{
 			"id": "uriparam_rpcParameter",
 			"type": "Complex",
 			"title": "RPC-Parameter",
@@ -1471,12 +1478,6 @@
         "value" : "rpc"
 			}],
 			"visible": true
-		},{
-			"id": "uriparam_procedure",
-			"title":"Procedure",
-			"title_de":"Prozedur",
-			"type":"String",
-			"value": null
 		}]
 	},{
 		"name": "sedaProperties",
