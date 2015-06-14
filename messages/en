@@ -2923,8 +2923,16 @@
         "msgstr": "File saved and compilied"
     },
     {
+        "msgid": "shell.groovy_save_failed",
+        "msgstr": "Error compiling groovy file"
+    },
+    {
         "msgid": "shell.java_saved",
         "msgstr": "File saved and compilied"
+    },
+    {
+        "msgid": "shell.java_save_failed",
+        "msgstr": "Error compiling java file"
     },
     {
         "msgid": "shell.jsoneditor",

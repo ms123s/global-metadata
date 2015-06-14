@@ -1003,6 +1003,14 @@
         "msgstr": "Fehler beim Speichern"
     },
     {
+        "msgid": "shell.groovy_save_failed",
+        "msgstr": "Fehler beim Compilieren/Speichern"
+    },
+    {
+        "msgid": "shell.java_save_failed",
+        "msgstr": "Fehler beim Compilieren/Speichern"
+    },
+    {
         "msgid": "shell.camel_saved",
         "msgstr": "Route gespeichert"
     },
