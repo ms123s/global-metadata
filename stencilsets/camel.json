@@ -1231,6 +1231,23 @@
 			"description": "anonymous inner class implementing the processor's logic",
 			"optional": true
 		},{
+			"id": "codeLanguage",
+			"title": "Codelanguage",
+			"title_de": "Kode Sprache",
+			"readonly": false,
+			"type": "Choice",
+			"value": "groovy",
+			"items": [ {
+				"id": "groovy",
+				"title": "Groovy",
+				"value": "groovy"
+			},{
+				"id": "java",
+				"title": "Java8",
+				"value": "java"
+			}],
+			"optional": true
+		},{
 			"id": "isEndpoint",
 			"title":"Endpoint",
 			"type":"Boolean",

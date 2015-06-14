@@ -2923,6 +2923,10 @@
         "msgstr": "File saved and compilied"
     },
     {
+        "msgid": "shell.java_saved",
+        "msgstr": "File saved and compilied"
+    },
+    {
         "msgid": "shell.jsoneditor",
         "msgstr": "Edit source"
     },
