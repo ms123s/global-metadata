@@ -141,6 +141,15 @@
 			"refToView": ["bg_frame"],
 			"fill": false,
 			"stroke": true
+		},{
+			"id": "caption",
+			"type": "String",
+			"title": "Caption",
+			"title_de": "Beschriftung",
+			"value": null,
+			"readonly": false,
+			"optional": true,
+			"refToView": ["text2"]
 		}]
 	},{
 		"name": "expressionProperties",
