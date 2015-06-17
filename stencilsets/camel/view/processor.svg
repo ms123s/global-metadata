@@ -9,7 +9,7 @@
     </defs>
     <rect id="text_frame" oryx:anchors="bottom top right left" x="1" y="1" width="78" height="58" rx="10" ry="10" stroke="none" stroke-width="2" fill="none" />
     <rect id="bg_frame" oryx:resize="vertical horizontal" x="0" y="0" width="80" height="60" rx="4" ry="4" stroke="black" stroke-width="1" fill="url(#background) #ffffcc" />
-    <text id="" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="11" x="40" y="40" fill="black">Processor</text>
+    <text id="text2" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="11" x="40" y="40" fill="black">Processor</text>
     <g transform="scale(1.3,1.3) translate(17,4)">
       <path d="m 13.483077,3.663721 c 2.761318,0 5.522636,0 8.283954,0 0,5.5226363 0,11.045273 0,16.567909 -5.522636,0 -11.045272,0 -16.567908,0 0,-5.522636 0,-11.0452727 0,-16.567909 2.761318,0 5.522636,0 8.283954,0 z" stroke-width="0.978" fill="white" stroke="#000000" id="path1327" stroke-linejoin="round" />
       <path d="M 6.650183,1.1518218 C 4.9721203,1.1076621 3.2940577,1.0635023 1.615995,1.0193426 1.4835163,8.3498271 1.3510377,15.680312 1.218559,23.010796 c 1.6780627,0 3.3561253,0 5.034188,0" fill="none" stroke="#000000" id="path3005" />
