@@ -3175,6 +3175,22 @@
         "msgstr": "Created on"
     },
     {
+        "msgid": "tasks.task.completed",
+        "msgstr": "Task completed"
+    },
+    {
+        "msgid": "tasks.task.complete",
+        "msgstr": "Task complete"
+    },
+    {
+        "msgid": "tasks.task.claim",
+        "msgstr": "Task claim?"
+    },
+    {
+        "msgid": "tasks.task.claimed",
+        "msgstr": "Task claimed"
+    },
+    {
         "msgid": "tasks.usertasks.dublettencheck.checkit",
         "msgstr": "Check"
     },
