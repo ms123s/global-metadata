@@ -162,7 +162,7 @@
         "xf_id": "domain",
         "xf_type": "text",
         "xf_default": "simpl4.org",
-        "xf_exclude": "true",
+        "xf_exclude": "",
         "xf_invisible": "",
         "xf_readonly": null,
         "xf_required": null,
