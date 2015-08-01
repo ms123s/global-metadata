@@ -5517,5 +5517,13 @@
     {
         "msgid": "tr.loading",
         "msgstr": "Lade ..."
+    },
+    {
+        "msgid": "mmenu.title",
+        "msgstr": "Menü"
+    },
+    {
+        "msgid": "mmenu.noResults",
+        "msgstr": "Kein Ergebnis"
     }
 ]

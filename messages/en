@@ -2231,6 +2231,14 @@
         "msgstr": "If data is stored"
     },
     {
+        "msgid": "mmenu.title",
+        "msgstr": "Menu"
+    },
+    {
+        "msgid": "mmenu.noResults",
+        "msgstr": "No result"
+    },
+    {
         "msgid": "moduleeditor.duplicate-check",
         "msgstr": "Duplicate check"
     },
