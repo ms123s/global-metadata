@@ -2463,6 +2463,10 @@
         "msgstr": "Entities (classes)"
     },
     {
+        "msgid": "permissions.file",
+        "msgstr": "Fileaccess"
+    },
+    {
         "msgid": "permissions.permission",
         "msgstr": "Permission"
     },

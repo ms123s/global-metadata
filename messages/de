@@ -1519,6 +1519,10 @@
         "msgstr": "Entitäten(Klassen)"
     },
     {
+        "msgid": "permissions.file",
+        "msgstr": "Dateizugriff"
+    },
+    {
         "msgid": "data.projects.end_date",
         "msgstr": "Endtermin Projekt"
     },
