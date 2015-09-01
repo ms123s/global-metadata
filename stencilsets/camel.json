@@ -1423,6 +1423,58 @@
 			}]
 		}]
 	},{
+		"name": "publishProperties",
+		"properties": [{
+			"id": "uriparam_topic",
+			"title":"Topic",
+			"visible": "urivalue_mode=='pub'",
+			"type":"String",
+			"value": null
+		},{
+			"id": "uriparam_publish",
+			"title": "Publish",
+			"readonly": false,
+			"type": "Choice",
+			"value": "body",
+			"visible": "urivalue_mode=='pub'",
+			"items": [ {
+				"id": "body",
+				"title": "Body",
+				"value": "body"
+			},{
+				"id": "headers",
+				"title": "Headers",
+				"value": "headers"
+			},{
+				"id": "bodyAndHeaders",
+				"title": "Body/Headers",
+				"value": "bodyAndHeaders"
+			},{
+				"id": "none",
+				"title": "-----",
+				"value": "none"
+			}],
+			"width": 80,
+			"optional": true
+		},{
+			"id": "uriparam_publishHeaders",
+			"type": "Complex",
+			"title": "PublishHeaders",
+			"value": "",
+			"visible": "(urivalue_mode=='pub') && (uriparam_publish=='headers' || uriparam_publish=='bodyAndHeaders')",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"filter": "[a-zA-Z0-9]",
+				"value": "",
+				"width": 250,
+				"optional": false
+			}]
+		}]
+	},{
 		"name": "websocketProperties",
 		"properties": [{
 			"id": "type_websocket",
@@ -1493,7 +1545,7 @@
 			"title":"Mode",
 			"title_de":"Modus",
 			"type":"Choice",
-			"value": "insert",
+			"value": "rpc",
       "items" : [ {
         "id" : "c1",
         "title" : "Publishing",
@@ -2263,7 +2315,7 @@
     "icon" : "wampendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties",  "rpcProperties", "permissionProperties", "extraParamsProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties",  "rpcProperties", "publishProperties", "permissionProperties", "extraParamsProperties" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
