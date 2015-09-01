@@ -1426,6 +1426,7 @@
 		"name": "publishProperties",
 		"properties": [{
 			"id": "uriparam_topic",
+			"description":"The topic without the namspace, on the client the topic must be pefixed with the namespace:<b>namespace.topic</b> ",
 			"title":"Topic",
 			"visible": "urivalue_mode=='pub'",
 			"type":"String",
