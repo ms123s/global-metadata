@@ -5524,7 +5524,11 @@
     },
     {
         "msgid": "mmenu.title",
-        "msgstr": "Menü"
+        "msgstr": "&#160;"
+    },
+    {
+        "msgid": "mmenu.search.placeholder",
+        "msgstr": "Menü Filter"
     },
     {
         "msgid": "mmenu.noResults",

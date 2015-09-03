@@ -2232,11 +2232,15 @@
     },
     {
         "msgid": "mmenu.title",
-        "msgstr": "Menu"
+        "msgstr": "&#160;"
     },
     {
         "msgid": "mmenu.noResults",
         "msgstr": "No result"
+    },
+    {
+        "msgid": "mmenu.search.placeholder",
+        "msgstr": "Menufilter"
     },
     {
         "msgid": "moduleeditor.duplicate-check",
