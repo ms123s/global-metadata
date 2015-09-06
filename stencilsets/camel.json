@@ -1918,6 +1918,42 @@
 			"value": false,
 			"visible": true
 		}]
+	},{ 
+		"name": "jmsProperties",
+		"properties": [{
+			"id": "type_jms",
+			"type":"String",
+			"value": "JMS",
+			"visible": false,
+			"refToView": ["endpoint_type"]
+		},{
+			"id": "uri_template",
+			"type":"String",
+			"value": "${protocol}:${kind}:${destname}",
+			"visible": false
+    },{
+      "id" : "urivalue_protocol",
+      "type" : "String",
+      "title" : "Protocol",
+      "title_de" : "Protokoll",
+			"visible": false,
+      "value" : "activemq"
+		},{
+			"id": "urivalue_kind",
+			"title": "Queue|Topic",
+			"readonly": false,
+			"type": "Choice",
+			"value": "queue",
+			"items": "###jms_items",
+			"optional": false
+		},{
+			"id": "urivalue_destname",
+			"title":"Destinationname",
+			"title_de":"Zielname",
+			"type":"String",
+			"value": null ,
+			"optional": false
+		}]
 	},{
 		"name": "diagram",
 		"properties": [{
@@ -2382,7 +2418,7 @@
     "icon" : "jmsendpoint.png",
     "groups" : [ "Endpoints" ],
 		"groups_de": ["Endpunkte"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "jmsProperties", "extraParamsProperties" ],
 		"properties": [{
 			"id": "endpoint_type3",
 			"type":"String",
@@ -2854,6 +2890,15 @@
       "id": "header",
       "title": "Header",
       "value": "header"
+		}],
+    "jms_items": [ {
+      "id": "queue",
+      "title": "Queue",
+      "value": "queue"
+    },{
+      "id": "topic",
+      "title": "Topic",
+      "value": "Topic"
 		}]
   }
 }
