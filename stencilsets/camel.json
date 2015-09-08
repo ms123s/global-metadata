@@ -1022,7 +1022,7 @@
 			"title_de":"Entitätstyp",
 			"type":"String",
 			"value": null,
-			"visible": "urivalue_operation=='update' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
+			"visible": "urivalue_operation=='insert' || urivalue_operation=='update' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
 		},{
 			"id": "uriparam_namespace",
 			"title":"Namespace",
