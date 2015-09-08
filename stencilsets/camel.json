@@ -928,6 +928,8 @@
 			"id": "urivalue_operation",
 			"title":"Operation",
 			"title_de":"Operation",
+			"description_de":"<h4>Header</h4>Update,Delete,FindById<ul style='margin-top:0px;'><li>objectId</li></ul>FindByFilter,FindOneByFilter<ul style='margin-top:0px;'><li>Alle Headerfelder als Filterparameter</li></ul>",
+			"description":"<h4>Header</h4>Update,Delete,FindById<ul style='margin-top:0px;'><li>objectId</li></ul>FindByFilter,FindOneByFilter<ul style='margin-top:0px;'><li>All headerfields as Filterparameter</li></ul>",
 			"type":"Choice",
 			"value": "insert",
       "items" : [ {
@@ -1014,6 +1016,19 @@
 			"config": {"type":"sw.filter","prefix":""},
 			"value": null,
 			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter'"
+		},{
+			"id": "uriparam_entityType",
+			"title":"Entitytype",
+			"title_de":"Entitätstyp",
+			"type":"String",
+			"value": null,
+			"visible": "urivalue_operation=='update' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
+		},{
+			"id": "uriparam_namespace",
+			"title":"Namespace",
+			"description":"optional",
+			"type":"String",
+			"value": null
 		},{
 			"id": "uriparam_resultHeader",
 			"title":"Headername",
