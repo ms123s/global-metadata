@@ -1342,6 +1342,13 @@
 			"value": false,
 			"visible": true
 		},{
+			"id": "procedureName",
+			"title":"Procedurename",
+			"title_de":"Prozedurname",
+			"type":"String",
+			"value": null,
+			"visible": "rpc==true"
+		},{
 			"id": "rpcParameter",
 			"type": "Complex",
 			"title": "RPC-Parameter",
