@@ -2871,6 +2871,10 @@
         "msgstr": "Body"
     },
     {
+        "msgid": "processexplorer.details_outbody",
+        "msgstr": "Out-Body"
+    },
+    {
         "msgid": "processexplorer.details_exception",
         "msgstr": "Exception"
     },

@@ -1332,6 +1332,135 @@
 			"visible": true
 		}]
 	},{
+		"name": "rpcProperties2",
+		"properties": [{
+			"id": "rpc",
+			"title":"RPC",
+			"description_de": "Soll die Route über rpc erreichbar sein?",
+			"description": "Should be the route reachable via rpc?",
+			"type":"boolean",
+			"value": false,
+			"visible": true
+		},{
+			"id": "rpcParameter",
+			"type": "Complex",
+			"title": "RPC-Parameter",
+			"value": "",
+			"visible": "rpc==true",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"filter": "[a-zA-Z0-9]",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "defaultvalue",
+				"name_de": "Defaultwert",
+				"name": "Defaultvalue",
+				"type": "String",
+				"value": null,
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "optional",
+				"name_de": "Optional",
+				"name": "Optional",
+				"type": "boolean",
+				"value": false,
+				"width": 50,
+				"optional": false
+			},{
+				"id": "type",
+				"name": "Type",
+				"name_de": "Typ",
+				"readonly": false,
+				"type": "Choice",
+				"value": "string",
+				"items": "###parametertype_items",
+				"width": 80,
+				"optional": true
+			},{
+				"id": "destination",
+				"name": "Destination",
+				"name_de": "Ziel",
+				"readonly": false,
+				"type": "Choice",
+				"value": "property",
+				"items": "###destination_items",
+				"width": 80,
+				"optional": true
+			}]
+		},{
+			"id": "rpcReturn",
+			"title": "RPC Return",
+			"readonly": false,
+			"type": "Choice",
+			"value": "body",
+			"visible": "rpc==true",
+			"items": [ {
+				"id": "body",
+				"title": "Body",
+				"value": "body"
+			},{
+				"id": "headers",
+				"title": "Headers",
+				"value": "headers"
+			},{
+				"id": "bodyAndHeaders",
+				"title": "Body/Headers",
+				"value": "bodyAndHeaders"
+			},{
+				"id": "none",
+				"title": "-----",
+				"value": "none"
+			}],
+			"width": 80,
+			"optional": true
+		},{
+			"id": "rpcReturnHeaders",
+			"type": "Complex",
+			"title": "Return Headers",
+			"value": "",
+			"visible": "rpc==true && (rpcReturn=='headers' || rpcReturn=='bodyAndHeaders')",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [{
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"filter": "[a-zA-Z0-9]",
+				"value": "",
+				"width": 250,
+				"optional": false
+			}]
+		},{
+			"id": "startableGroups",
+			"type": "MultiSelect",
+			"config": "permission:getAllRoles:name",
+			"title": "Permission (groups)",
+			"title_de": "Erlaubt (Rollen)",
+			"destination": "User with a min. one of these roles may start the route",
+			"description_de": "User mit einer min. einer dieser  Rollen dürfen die Route starten",
+			"value": "",
+			"visible": "rpc==true",
+			"length": "50"
+		},{
+			"id": "startableUsers",
+			"type": "MultiSelect",
+			"config": "auth:getUsers:userid",
+			"title": "Permission (user)",
+			"title_de": "Erlaubt (User)",
+			"destination": "This users are able to start the route",
+			"description_de": "Diese User dürfen die Route starten",
+			"value": "",
+			"visible": "rpc==true",
+			"length": "50"
+		}]
+	},{
 		"name": "rpcProperties",
 		"properties": [{
 			"id": "uriparam_procedure",
@@ -2302,7 +2431,7 @@
     "icon" : "directendpoint.png",
     "groups" : [ "Endpoints A-L" ],
 		"groups_de": ["Endpunkte A-L"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "directProperties" ],
+    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "directProperties", "rpcProperties2" ],
     "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
     "type" : "node",
@@ -2674,6 +2803,38 @@
 		]
 	},
 	{
+		"type": "node",
+		"id": "Group",
+		"title": "Group",
+		"title_de": "Gruppe",
+		"groups": ["Containers"],
+		"description": "A container for defining a hierarchy of form controls.",
+		"view": "new_group.svg",
+		"icon": "new_group.png",
+		"roles": [ "container"],
+
+		"layout": [{
+			"type": "layout.rows",
+			"marginTop": 30,
+			"marginLeft": 30,
+			"spacingX": 30,
+			"spacingY": 30,
+			"exclude": ["http://b3mn.org/stencilset/xforms#Label"]
+		}],
+		"properties": [{
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		}]
+	},
+	{
 		"type": "edge",
 		"id": "WhenConnection",
 		"title": "When Connection",
@@ -2756,6 +2917,9 @@
     }],
     "containmentRules" : [ {
       "role" : "Camelrouting",
+      "contains" : [ "all", "container" ]
+    }, {
+      "role" : "container",
       "contains" : [ "all" ]
     }, {
       "role" : "SubProcess",
