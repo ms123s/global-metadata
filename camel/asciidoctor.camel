@@ -122,8 +122,7 @@
         "rpcReturn": "body",
         "rpcReturnHeaders": null,
         "startableGroups": null,
-        "startableUsers": "admin,guest",
-        "procedureName": "asciidoctor"
+        "startableUsers": "admin,guest"
       },
       "stencil": {
         "id": "DirectEndpoint"
