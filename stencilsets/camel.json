@@ -1355,8 +1355,17 @@
 				"id": "name",
 				"name": "Name",
 				"type": "String",
-				"filter": "[a-zA-Z0-9]",
+				"filter": "[a-zA-Z0-9_]",
 				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "destname",
+				"name": "Destinationname",
+				"name_de": "Zielname",
+				"type": "String",
+				"filter": "[a-zA-Z0-9_]",
+				"value": null,
 				"width": 150,
 				"optional": false
 			}, {
@@ -1485,6 +1494,15 @@
 				"type": "String",
 				"filter": "[a-zA-Z0-9]",
 				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "destname",
+				"name": "Destinationname",
+				"name_de": "Zielname",
+				"type": "String",
+				"filter": "[a-zA-Z0-9_]",
+				"value": null,
 				"width": 150,
 				"optional": false
 			}, {
