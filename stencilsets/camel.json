@@ -1306,6 +1306,8 @@
 		},{
 			"id": "urivalue_name",
 			"title":"Name",
+			"description": "Wenn der Endpoint als RPC-Eingang benutzt wird, dann ist dieser Parameter der Prozedurname",
+			"description_de": "In case of rpc this is also the procedure name",
 			"type":"String",
 			"value": "direct1",
 			"visible": true
@@ -1341,13 +1343,6 @@
 			"type":"boolean",
 			"value": false,
 			"visible": true
-		},{
-			"id": "procedureName",
-			"title":"Procedurename",
-			"title_de":"Prozedurname",
-			"type":"String",
-			"value": null,
-			"visible": "rpc==true"
 		},{
 			"id": "rpcParameter",
 			"type": "Complex",

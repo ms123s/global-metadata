@@ -14,7 +14,7 @@
     "creationdate": null,
     "modificationdate": null,
     "camelcontext": "default",
-    "rpc": true,
+    "rpc": false,
     "rpcParameter": {
       "totalCount": 2,
       "items": [
@@ -36,8 +36,12 @@
     },
     "rpcReturn": "body",
     "rpcReturnHeaders": null,
+    "websocket": false,
+    "recvEndpoint": "",
+    "sendEndpoint": "",
     "startableGroups": null,
-    "startableUsers": "admin,guest"
+    "startableUsers": "admin,guest",
+    "settings": null
   },
   "stencil": {
     "id": "Camelrouting"
@@ -46,11 +50,14 @@
     {
       "resourceId": "oryx_F419B5D3-BE2E-4082-A281-5DB2CB0E2819",
       "properties": {
+        "shared": "no",
+        "shareRef": "",
         "overrideid": "",
         "name": "",
         "documentation": null,
         "bgcolor": "yellow",
         "bordercolor": "#000000",
+        "caption": "",
         "type_groovytemplate": "GroovyTemplate",
         "uri_template": "groovytemplate:${type}",
         "urivalue_type": "simple",
@@ -81,14 +88,42 @@
     {
       "resourceId": "oryx_67E457AF-CC91-42C1-9FAE-49F6137C8CB8",
       "properties": {
+        "shared": "no",
+        "shareRef": "",
         "overrideid": "",
         "name": "",
         "documentation": null,
         "bgcolor": "#CCC",
         "bordercolor": "#000000",
+        "caption": "",
         "type_direct": "Direct",
         "uri_template": "direct:${name}",
-        "urivalue_name": "direct4"
+        "urivalue_name": "asciidoctor",
+        "rpc": true,
+        "rpcParameter": {
+          "totalCount": 2,
+          "items": [
+            {
+              "name": "template",
+              "defaultvalue": null,
+              "optional": false,
+              "type": "string",
+              "destination": "body"
+            },
+            {
+              "name": "data",
+              "defaultvalue": null,
+              "optional": false,
+              "type": "map",
+              "destination": "header"
+            }
+          ]
+        },
+        "rpcReturn": "body",
+        "rpcReturnHeaders": null,
+        "startableGroups": null,
+        "startableUsers": "admin,guest",
+        "procedureName": "asciidoctor"
       },
       "stencil": {
         "id": "DirectEndpoint"
@@ -154,11 +189,14 @@
     {
       "resourceId": "oryx_6458716F-4875-4DF9-870C-F42A9BF370AC",
       "properties": {
+        "shared": "no",
+        "shareRef": "",
         "overrideid": "",
         "name": "",
         "documentation": null,
         "bgcolor": "yellow",
         "bordercolor": "#000000",
+        "caption": "",
         "type_asciidoctor": "Asciidoctor",
         "uri_template": "asciidoctor:dummy",
         "extraParams": null
