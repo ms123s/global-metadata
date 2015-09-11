@@ -888,12 +888,14 @@
 			"title":"SQL Statement",
 			"type":"text",
 			"value": "",
+			"optional": false,
 			"visible": true
 		},{
       "id" : "uriparam_dataSource",
       "title" : "Datasource",
       "description" : "Reference to a DataSource",
       "description_de" : "Referenz zur Datenquelle",
+			"optional": false,
       "type" : "string",
       "value" : null
 		},{
@@ -1014,6 +1016,7 @@
       "description": "The filter to be executed",
 			"type": "ResourceSelector",
 			"config": {"type":"sw.filter","prefix":""},
+			"optional": false,
 			"value": null,
 			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter'"
 		},{
@@ -1022,6 +1025,7 @@
 			"title_de":"Entitätstyp",
 			"type":"String",
 			"value": null,
+			"optional": false,
 			"visible": "urivalue_operation=='insert' || urivalue_operation=='update' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
 		},{
 			"id": "uriparam_namespace",
@@ -1148,6 +1152,7 @@
 			"title_de":"Pfad",
 			"type":"String",
 			"value": "",
+			"optional": false,
 			"visible": true
 		}]
 	},{
@@ -1308,7 +1313,9 @@
 			"title":"Name",
 			"description_de": "Im Falle von  RPC ist dieser Parameter gleichzeitig der Prozedurname",
 			"description": "In case of rpc this is also the procedure name",
+			"filter": "[a-zA-Z0-9_]",
 			"type":"String",
+			"optional": false,
 			"value": "direct1",
 			"visible": true
 		}]
@@ -1477,7 +1484,9 @@
 			"id": "uriparam_procedure",
 			"title":"Procedurename",
 			"title_de":"Prozedurname",
+			"filter": "[a-zA-Z0-9_]",
 			"visible": "urivalue_mode=='rpc'",
+			"optional": false,
 			"type":"String",
 			"value": null
 		},{
@@ -1656,6 +1665,8 @@
 			"id": "urivalue_name",
 			"title":"Name",
 			"title_de":"Name",
+			"optional": false,
+			"description":  "websocket:${name}",
 			"type":"String",
 			"value": "ws1",
 			"visible": true
@@ -2141,8 +2152,11 @@
 		},{
 			"id": "urivalue_host",
 			"title":"Host",
+			"description_de":"Wenn die Uri dynamisch gesetzt wird,dann wird das Feld nicht benutzt, aber es muss ein Dummy-Wert angeben werden.",
+			"description":"If the URI is set dynamically, then the field is not used, but a dummy value is needed.",
 			"type":"String",
-			"value": "",
+			"optional": false,
+			"value": "localhost",
 			"visible": true
 		},{
 			"id": "urivalue_port",
@@ -2715,6 +2729,7 @@
 			"id": "type",
 			"title":"Type",
 			"value": "java.lang.String" ,
+			"optional": false,
 			"type":"String",
 			"visible": true
 		},{
@@ -2722,6 +2737,7 @@
 			"title":"Charset",
 			"title_de":"Zeichensatz",
 			"value": "utf-8" ,
+			"optional": false,
 			"type":"String",
 			"visible": true
 		}],
