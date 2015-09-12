@@ -1432,12 +1432,22 @@
 				"title": "Body/Headers",
 				"value": "bodyAndHeaders"
 			},{
+				"id": "bodyWithMime",
+				"title": "Body/Mimetype",
+				"value": "bodyWithMime"
+			},{
 				"id": "none",
 				"title": "-----",
 				"value": "none"
 			}],
 			"width": 80,
 			"optional": true
+		},{
+			"id": "mimetype",
+			"title":"Mimetype",
+			"type":"String",
+			"value": null,
+			"visible": "rpc==true && rpcReturn=='bodyWithMime'"
 		},{
 			"id": "rpcReturnHeaders",
 			"type": "Complex",
