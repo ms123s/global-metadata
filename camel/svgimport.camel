@@ -4,7 +4,7 @@
 {
   "resourceId": "oryx_E426CF3D-DD05-4C93-9411-0184EE0B6BD8",
   "properties": {
-    "overrideid": "svgTemplate.camel",
+    "overrideid": "svgimport.camel",
     "documentation": null,
     "autostart": true,
     "enabled": true,
@@ -30,7 +30,7 @@
   },
   "childShapes": [
     {
-      "resourceId": "oryx_1CD7041E-8F56-4062-B215-D654EBF574F6",
+      "resourceId": "oryx_AF8B5E3A-BDD3-4593-B965-2C32A396892E",
       "properties": {
         "shared": "no",
         "shareRef": "",
@@ -42,7 +42,7 @@
         "caption": "",
         "type_direct": "Direct",
         "uri_template": "direct:${name}",
-        "urivalue_name": "svgTemplate",
+        "urivalue_name": "svgimport",
         "rpc": true,
         "rpcParameter": {
           "totalCount": 3,
@@ -85,7 +85,7 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_1F924174-71EB-4881-8ED9-84B6150CF982"
+          "resourceId": "oryx_5E9FAD7C-AB94-48B9-9E77-838468571C48"
         }
       ],
       "bounds": {
@@ -101,7 +101,7 @@
       "dockers": []
     },
     {
-      "resourceId": "oryx_1F924174-71EB-4881-8ED9-84B6150CF982",
+      "resourceId": "oryx_5E9FAD7C-AB94-48B9-9E77-838468571C48",
       "properties": {
         "overrideid": "",
         "name": "",
@@ -113,7 +113,7 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_3BEED165-EEC9-469D-9DCD-606FE17DC72E"
+          "resourceId": "oryx_5ECB6A2E-5287-4661-9162-0D24298A7339"
         }
       ],
       "bounds": {
@@ -137,11 +137,11 @@
         }
       ],
       "target": {
-        "resourceId": "oryx_3BEED165-EEC9-469D-9DCD-606FE17DC72E"
+        "resourceId": "oryx_5ECB6A2E-5287-4661-9162-0D24298A7339"
       }
     },
     {
-      "resourceId": "oryx_3BEED165-EEC9-469D-9DCD-606FE17DC72E",
+      "resourceId": "oryx_5ECB6A2E-5287-4661-9162-0D24298A7339",
       "properties": {
         "shared": "no",
         "shareRef": "",
@@ -167,7 +167,7 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_FE3DBF9E-3EF9-4ED4-AF18-453CDF31A3F4"
+          "resourceId": "oryx_970484BA-7A53-4BB2-A20A-75DC3FF1A5DB"
         }
       ],
       "bounds": {
@@ -183,7 +183,7 @@
       "dockers": []
     },
     {
-      "resourceId": "oryx_FE3DBF9E-3EF9-4ED4-AF18-453CDF31A3F4",
+      "resourceId": "oryx_970484BA-7A53-4BB2-A20A-75DC3FF1A5DB",
       "properties": {
         "overrideid": "",
         "name": "",
@@ -195,7 +195,7 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_970D480E-FB72-4976-842C-E88BFDF9512F"
+          "resourceId": "oryx_B7B765F5-D870-422B-A468-F6F848209EEF"
         }
       ],
       "bounds": {
@@ -219,11 +219,11 @@
         }
       ],
       "target": {
-        "resourceId": "oryx_970D480E-FB72-4976-842C-E88BFDF9512F"
+        "resourceId": "oryx_B7B765F5-D870-422B-A468-F6F848209EEF"
       }
     },
     {
-      "resourceId": "oryx_970D480E-FB72-4976-842C-E88BFDF9512F",
+      "resourceId": "oryx_B7B765F5-D870-422B-A468-F6F848209EEF",
       "properties": {
         "shared": "no",
         "shareRef": "",
