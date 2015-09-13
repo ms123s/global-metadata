@@ -1,0 +1,276 @@
+[sw]
+	type = sw.camel
+--
+{
+  "resourceId": "oryx_E426CF3D-DD05-4C93-9411-0184EE0B6BD8",
+  "properties": {
+    "overrideid": "svgTemplate.camel",
+    "documentation": null,
+    "autostart": true,
+    "enabled": true,
+    "logExceptionsOnly": false,
+    "version": "",
+    "author": "",
+    "creationdate": null,
+    "modificationdate": null,
+    "camelcontext": "default",
+    "rpc": false,
+    "rpcParameter": null,
+    "rpcReturn": "body",
+    "rpcReturnHeaders": null,
+    "websocket": false,
+    "recvEndpoint": "",
+    "sendEndpoint": "",
+    "startableGroups": null,
+    "startableUsers": null,
+    "settings": null
+  },
+  "stencil": {
+    "id": "Camelrouting"
+  },
+  "childShapes": [
+    {
+      "resourceId": "oryx_1CD7041E-8F56-4062-B215-D654EBF574F6",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "green",
+        "bordercolor": "#000000",
+        "caption": "",
+        "type_direct": "Direct",
+        "uri_template": "direct:${name}",
+        "urivalue_name": "svgTemplate",
+        "rpc": true,
+        "rpcParameter": {
+          "totalCount": 3,
+          "items": [
+            {
+              "name": "path",
+              "destname": null,
+              "defaultvalue": null,
+              "optional": false,
+              "type": "string",
+              "destination": "header"
+            },
+            {
+              "name": "colors",
+              "destname": null,
+              "defaultvalue": null,
+              "optional": true,
+              "type": "map",
+              "destination": "header"
+            },
+            {
+              "name": "repo",
+              "destname": null,
+              "defaultvalue": null,
+              "optional": false,
+              "type": "string",
+              "destination": "header"
+            }
+          ]
+        },
+        "rpcReturn": "bodyWithMime",
+        "mimetype": "text/html",
+        "rpcReturnHeaders": null,
+        "startableGroups": null,
+        "startableUsers": "admin,guest"
+      },
+      "stencil": {
+        "id": "DirectEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_1F924174-71EB-4881-8ED9-84B6150CF982"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 280.5,
+          "y": 200
+        },
+        "upperLeft": {
+          "x": 200.5,
+          "y": 140
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_1F924174-71EB-4881-8ED9-84B6150CF982",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_3BEED165-EEC9-469D-9DCD-606FE17DC72E"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 240.5,
+          "y": 254.676513671875
+        },
+        "upperLeft": {
+          "x": 240.5,
+          "y": 200.518798828125
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 7.15625
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_3BEED165-EEC9-469D-9DCD-606FE17DC72E"
+      }
+    },
+    {
+      "resourceId": "oryx_3BEED165-EEC9-469D-9DCD-606FE17DC72E",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "#999",
+        "bordercolor": "#000000",
+        "caption": "",
+        "type_repo": "Repo",
+        "uri_template": "repo:${operation}",
+        "urivalue_operation": "get",
+        "uriparam_target": "body",
+        "uriparam_header": "",
+        "uriparam_repo": "-",
+        "uriparam_path": "",
+        "uriparam_type": "all",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "RepoEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_FE3DBF9E-3EF9-4ED4-AF18-453CDF31A3F4"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 280.5,
+          "y": 315
+        },
+        "upperLeft": {
+          "x": 200.5,
+          "y": 255
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "oryx_FE3DBF9E-3EF9-4ED4-AF18-453CDF31A3F4",
+      "properties": {
+        "overrideid": "",
+        "name": "",
+        "documentation": null
+      },
+      "stencil": {
+        "id": "SimpleConnection"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "oryx_970D480E-FB72-4976-842C-E88BFDF9512F"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 240.5,
+          "y": 374.598388671875
+        },
+        "upperLeft": {
+          "x": 240.5,
+          "y": 315.462890625
+        }
+      },
+      "dockers": [
+        {
+          "x": 40,
+          "y": 30
+        },
+        {
+          "x": 40,
+          "y": 4.28125
+        }
+      ],
+      "target": {
+        "resourceId": "oryx_970D480E-FB72-4976-842C-E88BFDF9512F"
+      }
+    },
+    {
+      "resourceId": "oryx_970D480E-FB72-4976-842C-E88BFDF9512F",
+      "properties": {
+        "shared": "no",
+        "shareRef": "",
+        "overrideid": "",
+        "name": "",
+        "documentation": null,
+        "bgcolor": "green",
+        "bordercolor": "#000000",
+        "caption": "",
+        "type_groovytemplate": "GroovyTemplate",
+        "uri_template": "groovytemplate:${type}",
+        "urivalue_type": "simple",
+        "urivalue_headerfields": "colors",
+        "extraParams": null
+      },
+      "stencil": {
+        "id": "GroovyTemplateEndpoint"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 280.5,
+          "y": 435
+        },
+        "upperLeft": {
+          "x": 200.5,
+          "y": 375
+        }
+      },
+      "dockers": []
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 2485,
+      "y": 3050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "camel",
+    "namespace": "http://b3mn.org/stencilset/camel#"
+  },
+  "ssextensions": [],
+  "zoomLevel": 1
+}
