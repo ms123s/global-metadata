@@ -832,17 +832,13 @@
 			"title":"Enginetype",
 			"title_de":"Type der Engine",
 			"type":"Choice",
-			"value": "simple",
+			"value": "streaming",
       "items" : [ {
         "id" : "c1",
-        "title" : "Simple",
-        "value" : "simple"
+        "title" : "Streaming",
+        "value" : "streaming"
       }, {
         "id" : "c2",
-        "title" : "GString",
-        "value" : "gstring"
-      }, {
-        "id" : "c3",
         "title" : "XML",
         "value" : "xml"
 			}]

@@ -201,11 +201,11 @@
       "bounds": {
         "lowerRight": {
           "x": 240.5,
-          "y": 374.598388671875
+          "y": 374.625
         },
         "upperLeft": {
           "x": 240.5,
-          "y": 315.462890625
+          "y": 315.6875
         }
       },
       "dockers": [
@@ -215,7 +215,7 @@
         },
         {
           "x": 40,
-          "y": 4.28125
+          "y": 10
         }
       ],
       "target": {
@@ -235,7 +235,7 @@
         "caption": "",
         "type_groovytemplate": "GroovyTemplate",
         "uri_template": "groovytemplate:${type}",
-        "urivalue_type": "simple",
+        "urivalue_type": "streaming",
         "urivalue_headerfields": "colors",
         "extraParams": null
       },
