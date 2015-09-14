@@ -1082,8 +1082,10 @@
 			"visible": "urivalue_operation=='get'"
 		},{
 			"id": "uriparam_header",
-			"title":"Targetheader",
-			"title_de":"Ziel Header",
+			"title":"Targetheaderfield",
+			"title_de":"Ziel Headerfeld",
+			"description":"Name of the header field on which the file should be copied",
+			"description_de":"Name des Headerfeldes, in den das File kopiert werden soll ",
 			"type": "string",
 			"value": null,
 			"visible": "urivalue_operation=='get' && uriparam_target=='header'"
@@ -1099,6 +1101,8 @@
 			"id": "uriparam_path",
 			"title":"Path",
 			"title_de":"Pfad",
+			"description":"Name or path of the file",
+			"description_de":"Name oder Pfad der Datei",
 			"type":"String",
 			"value": "",
 			"visible": true
@@ -1106,8 +1110,10 @@
 			"id": "uriparam_type",
 			"title":"Type",
 			"title_de":"Typ",
+			"description":"Type of the file",
+			"description_de":"Typ der Datei",
 			"type": "Choice",
-			"value": "application/vnd.oasis.opendocument.text",
+			"value": "all",
       "items" : [ 
 				{
         "id" : "c1",
