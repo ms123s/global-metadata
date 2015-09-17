@@ -58,14 +58,14 @@
         "bgcolor": "yellow",
         "bordercolor": "#000000",
         "caption": "",
-        "type_groovytemplate": "GroovyTemplate",
-        "uri_template": "groovytemplate:${type}",
-        "urivalue_type": "simple",
+        "type_template": "Template",
+        "uri_template": "template:${type}",
+        "urivalue_type": "groovy",
         "urivalue_headerfields": "data",
         "extraParams": null
       },
       "stencil": {
-        "id": "GroovyTemplateEndpoint"
+        "id": "TemplateEndpoint"
       },
       "childShapes": [],
       "outgoing": [
@@ -120,6 +120,7 @@
           ]
         },
         "rpcReturn": "body",
+        "mimetype": "",
         "rpcReturnHeaders": null,
         "startableGroups": null,
         "startableUsers": "admin,guest"
