@@ -1,17 +1,17 @@
 {
 	"title": "Camel",
 	"namespace": "http://b3mn.org/stencilset/camel#",
-	"idIsCaseSensitiv":true,
-	"prefix":"sw",
-	"propertyPackages": [{
+	"idIsCaseSensitiv": true,
+	"prefix": "sw",
+	"propertyPackages": [ {
 		"name": "baseProperties",
-		"properties": [{
-      "id" : "overrideid",
-      "type" : "String",
-      "title" : "Id",
-      "value" : "",
-			"include":false,
-      "popular" : true
+		"properties": [ {
+			"id": "overrideid",
+			"type": "String",
+			"title": "Id",
+			"value": "",
+			"include": false,
+			"popular": true
 		}, {
 			"id": "name",
 			"type": "String",
@@ -21,7 +21,7 @@
 			"description_de": "Bezeichnung.",
 			"optional": true,
 			"length": "32",
-			"include":false,
+			"include": false,
 			"refToView": "text1"
 		}, {
 			"id": "documentation",
@@ -34,17 +34,17 @@
 			"length": "",
 			"wrapLines": true,
 			"popular": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "routeBaseAttributes",
-		"properties": [{
-      "id" : "overrideid",
-      "type" : "String",
-      "title" : "Id",
-      "value" : "",
-			"include":true,
-      "popular" : true
-		},{
+		"properties": [ {
+			"id": "overrideid",
+			"type": "String",
+			"title": "Id",
+			"value": "",
+			"include": true,
+			"popular": true
+		}, {
 			"id": "documentation",
 			"type": "Text",
 			"title": "Documentation",
@@ -55,57 +55,57 @@
 			"length": "",
 			"wrapLines": true,
 			"popular": true
-		},{
+		}, {
 			"id": "autostart",
-			"title":"Autostart",
-			"type":"boolean",
+			"title": "Autostart",
+			"type": "boolean",
 			"value": true,
 			"visible": true
-		},{
+		}, {
 			"id": "enabled",
-			"title":"Enabled",
-			"title_de":"Aktiviert",
-			"type":"boolean",
+			"title": "Enabled",
+			"title_de": "Aktiviert",
+			"type": "boolean",
 			"value": true,
 			"visible": true
-		},{
+		}, {
 			"id": "logExceptionsOnly",
-			"title":"Log exceptions only",
-			"title_de":"Nur Ausnah. loggen",
-			"description":"Log exceptions only",
-			"description_de":"Nur Ausnahmen loggen",
-			"type":"boolean",
+			"title": "Log exceptions only",
+			"title_de": "Nur Ausnah. loggen",
+			"description": "Log exceptions only",
+			"description_de": "Nur Ausnahmen loggen",
+			"type": "boolean",
 			"value": false,
 			"visible": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "endpointProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "shared",
-			"title":"Shared",
-			"title_de":"Geteilt",
-			"description_de":"Wenn 'Ursprung' ausgewählt ist,  kann der Endpunkt an anderen Stellen verwendet werden.<br />Die Verbindung wird über den 'Linkname' hergstellt.Beliebig viele Links können auf einen Ursprung verweisen.<br />Die Einstellungen des Ursprungs werden verwendet.",
+			"title": "Shared",
+			"title_de": "Geteilt",
+			"description_de": "Wenn 'Ursprung' ausgewählt ist,  kann der Endpunkt an anderen Stellen verwendet werden.<br />Die Verbindung wird über den 'Linkname' hergstellt.Beliebig viele Links können auf einen Ursprung verweisen.<br />Die Einstellungen des Ursprungs werden verwendet.",
 			"description": "If 'origin' is selected,one endpoint can be used elsewhere<br/> The link is established via the 'linkname'.<br/>Any number of links can point to the 'origin'.<br /> The 'origin' settings will be used.",
-			"type":"Choice",
-      "popular" : true,
+			"type": "Choice",
+			"popular": true,
 			"visible": true,
 			"value": "no",
-      "items" : [ {
-        "id" : "c1",
-        "title" : "No",
-        "title_de" : "Nein",
-        "value" : "no"
-      }, {
-        "id" : "c2",
-        "title" : "Origin",
-        "title_de" : "Ursprung",
-        "value" : "origin"
-      }, {
-        "id" : "c3",
-        "title" : "Link",
-        "value" : "link"
-			}]
-		},{
+			"items": [ {
+				"id": "c1",
+				"title": "No",
+				"title_de": "Nein",
+				"value": "no"
+			}, {
+				"id": "c2",
+				"title": "Origin",
+				"title_de": "Ursprung",
+				"value": "origin"
+			}, {
+				"id": "c3",
+				"title": "Link",
+				"value": "link"
+			} ]
+		}, {
 			"id": "shareRef",
 			"type": "String",
 			"title": "Linkname",
@@ -114,10 +114,10 @@
 			"readonly": false,
 			"optional": true,
 			"popular": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "colorProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "bgcolor",
 			"type": "Color",
 			"title": "BackgroundColor",
@@ -128,7 +128,7 @@
 			"refToView": "fill_el",
 			"fill": true,
 			"stroke": false
-		},{
+		}, {
 			"id": "bordercolor",
 			"type": "Color",
 			"title": "Border color",
@@ -138,10 +138,10 @@
 			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
 			"readonly": false,
 			"optional": false,
-			"refToView": ["bg_frame"],
+			"refToView": [ "bg_frame" ],
 			"fill": false,
 			"stroke": true
-		},{
+		}, {
 			"id": "caption",
 			"type": "String",
 			"title": "Caption",
@@ -149,19 +149,19 @@
 			"value": null,
 			"readonly": false,
 			"optional": true,
-			"refToView": ["text2"]
-		}]
-	},{
+			"refToView": [ "text2" ]
+		} ]
+	}, {
 		"name": "expressionProperties",
 		"properties": [ {
 			"id": "expression",
-			"title":"Expression",
-			"title_de":"Ausdruck",
-			"type":"Text",
+			"title": "Expression",
+			"title_de": "Ausdruck",
+			"type": "Text",
 			"value": "",
-      "popular" : false,
+			"popular": false,
 			"visible": "defaultflow=='none'"
-		},{
+		}, {
 			"id": "language",
 			"title": "Language",
 			"title_de": "Sprache",
@@ -172,119 +172,119 @@
 			"items": "###language_items",
 			"width": 80,
 			"optional": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "marshalProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "format",
-			"title":"Dataformattype",
-			"type":"Choice",
-      "popular" : false,
-			"refToView": ["text2"],
+			"title": "Dataformattype",
+			"type": "Choice",
+			"popular": false,
+			"refToView": [ "text2" ],
 			"value": "csv",
-      "items" : [ {
-        "id" : "c1",
-        "title" : "csv",
-        "value" : "csv"
-      }, {
-        "id" : "c2",
-        "title" : "json",
-        "value" : "json"
-      }, {
-        "id" : "c3",
-        "title" : "base64",
-        "value" : "base64"
-			}],
+			"items": [ {
+				"id": "c1",
+				"title": "csv",
+				"value": "csv"
+			}, {
+				"id": "c2",
+				"title": "json",
+				"value": "json"
+			}, {
+				"id": "c3",
+				"title": "base64",
+				"value": "base64"
+			} ],
 			"visible": true
-		},{
+		}, {
 			"id": "csv_configRef",
-			"title":"ConfigRef",
-			"type":"String",
+			"title": "ConfigRef",
+			"type": "String",
 			"value": "",
-      "popular" : false,
+			"popular": false,
 			"visible": "format=='csv'"
-		},{
+		}, {
 			"id": "csv_strategyRef",
-			"title":"StrategyRef",
-			"type":"String",
+			"title": "StrategyRef",
+			"type": "String",
 			"value": "",
-      "popular" : false,
+			"popular": false,
 			"visible": "format=='csv'"
-		},{
+		}, {
 			"id": "csv_delimiter",
-			"title":"Delimiter",
-			"title_de":"Begrenzer",
-			"description":"The column delimiter to use.",
-			"type":"String",
+			"title": "Delimiter",
+			"title_de": "Begrenzer",
+			"description": "The column delimiter to use.",
+			"type": "String",
 			"value": ",",
-      "popular" : false,
+			"popular": false,
 			"visible": "format=='csv'"
-		},{
+		}, {
 			"id": "csv_skipFirstLine",
-			"title":"Skip first line",
-			"title_":"Erste Zeile überg.",
-			"description":"Whether or not to skip the first line of CSV input when unmarshalling<br/> (e.g. if the content has headers on the first line)",
-			"type":"boolean",
+			"title": "Skip first line",
+			"title_": "Erste Zeile überg.",
+			"description": "Whether or not to skip the first line of CSV input when unmarshalling<br/> (e.g. if the content has headers on the first line)",
+			"type": "boolean",
 			"value": false,
-      "popular" : false,
+			"popular": false,
 			"visible": "format=='csv'"
-		},{
+		}, {
 			"id": "csv_lazyLoad",
-			"title":"LazyLoad",
-			"description":"Whether or not to Sequential access CSV input through an iterator<br/> which could avoid OOM exception when processing huge CSV file.",
-			"type":"boolean",
+			"title": "LazyLoad",
+			"description": "Whether or not to Sequential access CSV input through an iterator<br/> which could avoid OOM exception when processing huge CSV file.",
+			"type": "boolean",
 			"value": false,
-      "popular" : false,
+			"popular": false,
 			"visible": "format=='csv'"
-		},{
+		}, {
 			"id": "csv_useMaps",
-			"title":"UseMaps",
-			"description":"Whether to use List<Map> when unmarshalling instead of List<List>.",
-			"type":"boolean",
+			"title": "UseMaps",
+			"description": "Whether to use List<Map> when unmarshalling instead of List<List>.",
+			"type": "boolean",
 			"value": false,
-      "popular" : false,
+			"popular": false,
 			"visible": "format=='csv' && func=='unmarshal'"
-		},{
+		}, {
 			"id": "json_prettyPrint",
-			"title":"PrettyPrint",
-			"description":"Enables pretty printing, which adds white space as needed to tidy up the resulting XML for easy reading.",
-			"type":"boolean",
+			"title": "PrettyPrint",
+			"description": "Enables pretty printing, which adds white space as needed to tidy up the resulting XML for easy reading.",
+			"type": "boolean",
 			"value": true,
-      "popular" : false,
+			"popular": false,
 			"visible": "format=='json' && func=='marshal'"
-		},{
+		}, {
 			"id": "json_library",
-			"title":"Library",
-			"description":"",
-			"type":"Choice",
+			"title": "Library",
+			"description": "",
+			"type": "Choice",
 			"value": "flexjson",
-      "popular" : false,
-      "items" : [ {
-        "id" : "c1",
-        "title" : "flexjson",
-        "value" : "flexjson"
-      }, {
-        "id" : "c2",
-        "title" : "xstream",
-        "value" : "xstream"
-      }, {
-        "id" : "c3",
-        "title" : "gson",
-        "value" : "gson"
-			}],
+			"popular": false,
+			"items": [ {
+				"id": "c1",
+				"title": "flexjson",
+				"value": "flexjson"
+			}, {
+				"id": "c2",
+				"title": "xstream",
+				"value": "xstream"
+			}, {
+				"id": "c3",
+				"title": "gson",
+				"value": "gson"
+			} ],
 			"visible": "format=='json'"
-		}]
+		} ]
 	}, {
 		"name": "delayProperties",
 		"properties": [ {
 			"id": "expression",
-			"title":"Expression",
-			"title_de":"Ausdruck",
-			"description":"Expression defining the length of the delay",
-      "optional" : false;
-			"type":"Text",
+			"title": "Expression",
+			"title_de": "Ausdruck",
+			"description": "Expression defining the length of the delay",
+			"optional": false;
+			"type": "Text",
 			"value": ""
-		},{
+		}, {
 			"id": "language",
 			"title": "Language",
 			"title_de": "Sprache",
@@ -294,24 +294,24 @@
 			"items": "###language_items",
 			"width": 80,
 			"optional": true
-		},{
+		}, {
 			"id": "async",
-			"title":"Async delayed",
-			"description":"If enabled then delayed messages happens asynchronously using a scheduled thread pool.",
-			"type":"boolean",
+			"title": "Async delayed",
+			"description": "If enabled then delayed messages happens asynchronously using a scheduled thread pool.",
+			"type": "boolean",
 			"value": false,
 			"visible": true
-		}]
+		} ]
 	}, {
 		"name": "messageFilterProperties",
 		"properties": [ {
 			"id": "expression",
-			"title":"Expression",
-			"title_de":"Ausdruck",
-			"description":"Specifies the expression used to determine if the message is to be filtered from the route.",
-			"type":"Text",
+			"title": "Expression",
+			"title_de": "Ausdruck",
+			"description": "Specifies the expression used to determine if the message is to be filtered from the route.",
+			"type": "Text",
 			"value": ""
-		},{
+		}, {
 			"id": "language",
 			"title": "Language",
 			"title_de": "Sprache",
@@ -319,17 +319,17 @@
 			"type": "Choice",
 			"value": "groovy",
 			"items": "###language_items"
-		}]
+		} ]
 	}, {
 		"name": "recipientListProperties",
 		"properties": [ {
 			"id": "expression",
-			"title":"Expression",
-			"title_de":"Ausdruck",
-			"description":"Specifies the expression used to generate the list of recipients.",
-      "optional" : false;
-			"type":"Text"
-		},{
+			"title": "Expression",
+			"title_de": "Ausdruck",
+			"description": "Specifies the expression used to generate the list of recipients.",
+			"optional": false;
+			"type": "Text"
+		}, {
 			"id": "language",
 			"title": "Language",
 			"title_de": "Sprache",
@@ -339,17 +339,17 @@
 			"items": "###language_items",
 			"width": 80,
 			"optional": true
-		},{
+		}, {
 			"id": "option_ignoreInvalidEndpoints",
-			"title":"Ignore invalid EP",
-			"description":"Whether to ignore an endpoint URI that could not be resolved.<br/>If disabled, Camel will throw an exception identifying the invalid endpoint URI.",
-			"type":"boolean",
+			"title": "Ignore invalid EP",
+			"description": "Whether to ignore an endpoint URI that could not be resolved.<br/>If disabled, Camel will throw an exception identifying the invalid endpoint URI.",
+			"type": "boolean",
 			"value": false,
 			"visible": true
 		}, {
 			"id": "option_delimiter",
 			"title": "Delimiter",
-			"description":"Delimiter used if the Expression returned multiple endpoints.",
+			"description": "Delimiter used if the Expression returned multiple endpoints.",
 			"type": "String",
 			"value": ",",
 			"optional": true
@@ -362,7 +362,7 @@
 			"value": "",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -377,33 +377,33 @@
 				"value": "",
 				"width": 250,
 				"optional": false
-			}]
-		}]
+			} ]
+		} ]
 	}, {
 		"name": "splitterProperties",
 		"properties": [ {
 			"id": "expression",
-			"title":"Expression",
-			"title_de":"Ausdruck",
-			"description":"Specifies the expression used to split the message.",
-      "optional" : false,
-			"type":"Text"
-		},{
+			"title": "Expression",
+			"title_de": "Ausdruck",
+			"description": "Specifies the expression used to split the message.",
+			"optional": false,
+			"type": "Text"
+		}, {
 			"id": "language",
 			"title": "Language",
 			"title_de": "Sprache",
-			"description":"Specifies the expression language used to process the expression.",
+			"description": "Specifies the expression language used to process the expression.",
 			"readonly": false,
 			"type": "Choice",
 			"value": "groovy",
 			"items": "###language_items",
 			"width": 80,
 			"optional": true
-		},{
+		}, {
 			"id": "option_onPrepareRef",
-			"title":"On Prepare ref",
-			"description":"Specifies a reference to a bean implementing a custom onPrepare processor<br/> that processes the original message before it is split up and passed to the next step in the route<br/> This property enables you to deep clone mutable message bodies, so the splitter creates separate, self-contained fragments of the message<br/> You can use this property to execute any kind of logic on a message exchange<br/>",
-			"type":"String",
+			"title": "On Prepare ref",
+			"description": "Specifies a reference to a bean implementing a custom onPrepare processor<br/> that processes the original message before it is split up and passed to the next step in the route<br/> This property enables you to deep clone mutable message bodies, so the splitter creates separate, self-contained fragments of the message<br/> You can use this property to execute any kind of logic on a message exchange<br/>",
+			"type": "String",
 			"value": "",
 			"visible": true
 		}, {
@@ -415,7 +415,7 @@
 			"value": "",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -430,83 +430,82 @@
 				"value": "",
 				"width": 250,
 				"optional": false
-			}]
-		},{
-      "id" : "loggingOff",
-      "title" : "Logging off",
-      "title_" : "Logging aus",
-      "description" : "",
-      "type" : "boolean",
+			} ]
+		}, {
+			"id": "loggingOff",
+			"title": "Logging off",
+			"title_": "Logging aus",
+			"description": "",
+			"type": "boolean",
 			"readonly": false,
-      "value" : false
-		}]
+			"value": false
+		} ]
 	}, {
 		"name": "aggregateProperties",
-		"properties": [ 
-			{
+		"properties": [ {
 			"id": "correlationExpression",
-			"title":"Correlation Expression",
-			"description":"Specifies the expression used to correlate the messages that are aggregated.",
-      "optional" : false,
-			"type":"Text"
-		},{
+			"title": "Correlation Expression",
+			"description": "Specifies the expression used to correlate the messages that are aggregated.",
+			"optional": false,
+			"type": "Text"
+		}, {
 			"id": "correlationLanguage",
 			"title": "Language",
-			"description":"Specifies the expression language used to process the correlation expression.",
+			"description": "Specifies the expression language used to process the correlation expression.",
 			"type": "Choice",
 			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
 		}, {
 			"id": "completionPredicate",
-			"title":"Completion Predicate",
-			"description":"Specifies the expression used to determine when the aggregated message is complete based on it's contents.",
-      "optional" : false,
-			"type":"Text"
-		},{
+			"title": "Completion Predicate",
+			"description": "Specifies the expression used to determine when the aggregated message is complete based on it's contents.",
+			"optional": false,
+			"type": "Text"
+		}, {
 			"id": "completionLanguage",
 			"title": "Language",
-			"description":"Specifies the expression language used to process the completion predicate expression.",
+			"description": "Specifies the expression language used to process the completion predicate expression.",
 			"type": "Choice",
 			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
 		}, {
 			"id": "completionSizeExpression",
-			"title":"Completion Size",
-			"description":"Specifies an expression used to determine when aggregation is complete based on the number of exchanges processed.",
-      "optional" : false,
-			"type":"Text"
-		},{
+			"title": "Completion Size",
+			"description": "Specifies an expression used to determine when aggregation is complete based on the number of exchanges processed.",
+			"optional": false,
+			"type": "Text"
+		}, {
 			"id": "completionSizeLanguage",
 			"title": "Language",
-			"description":"Specifies the expression language used to process the completion size expression.",
+			"description": "Specifies the expression language used to process the completion size expression.",
 			"type": "Choice",
 			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
 		}, {
 			"id": "completionTimeoutExpression",
-			"title":"Completion Timeout",
-			"description":"Specifies an expression used to determine when aggregation is complete based on the amount of time,<br/> in milliseconds, the aggregator has been inactive.",
-      "optional" : false,
-			"type":"Text"
-		},{
+			"title": "Completion Timeout",
+			"description": "Specifies an expression used to determine when aggregation is complete based on the amount of time,<br/> in milliseconds, the aggregator has been inactive.",
+			"optional": false,
+			"type": "Text"
+		}, {
 			"id": "completionTimeoutLanguage",
 			"title": "Language",
-			"description":"Specifies the expression language used to process the completion timeout expression.",
+			"description": "Specifies the expression language used to process the completion timeout expression.",
 			"type": "Choice",
 			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
-		},{
+		}, {
 			"id": "option_strategyRef",
 			"title": "StrategyRef",
-			"description":"Specifies a reference for looking up the AggregationStrategy in the registry.",
+			"description": "Specifies a reference for looking up the AggregationStrategy in the registry.",
 			"type": "String",
 			"value": null,
 			"optional": false
-		},{
+		}, {
 			"id": "extraOptions",
 			"type": "Complex",
 			"title": "Extra Options",
@@ -515,7 +514,7 @@
 			"value": "",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -530,11 +529,11 @@
 				"value": "",
 				"width": 250,
 				"optional": false
-			}]
-		}]
+			} ]
+		} ]
 	}, {
 		"name": "extraParamsProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "extraParams",
 			"type": "Complex",
 			"title": "Extra Parameter",
@@ -543,7 +542,7 @@
 			"value": "",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -558,15 +557,15 @@
 				"value": "",
 				"width": 250,
 				"optional": false
-			}]
-		}]
+			} ]
+		} ]
 	}, {
 		"name": "genericEndpointProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "uri",
-			"title":"Uri",
-			"value": "" ,
-			"type":"String",
+			"title": "Uri",
+			"value": "",
+			"type": "String",
 			"visible": true
 		}, {
 			"id": "extraParams",
@@ -576,7 +575,7 @@
 			"value": "",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -591,18 +590,18 @@
 				"value": "",
 				"width": 250,
 				"optional": false
-			}]
-		}]
+			} ]
+		} ]
 	}, {
 		"name": "headersProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "headers",
 			"type": "Complex",
 			"title": "Headers",
 			"value": "",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -617,7 +616,7 @@
 				"value": "",
 				"width": 150,
 				"optional": false
-			},{
+			}, {
 				"id": "language",
 				"name": "Language",
 				"name_de": "Sprache",
@@ -627,18 +626,18 @@
 				"items": "###language_items",
 				"width": 80,
 				"optional": true
-			}]
-		}]
+			} ]
+		} ]
 	}, {
 		"name": "propertiesProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "properties",
 			"type": "Complex",
 			"title": "Properties",
 			"value": "",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -653,7 +652,7 @@
 				"value": "",
 				"width": 150,
 				"optional": false
-			},{
+			}, {
 				"id": "language",
 				"name": "Language",
 				"name_de": "Sprache",
@@ -663,605 +662,617 @@
 				"items": "###language_items",
 				"width": 80,
 				"optional": true
-			}]
-		}]
+			} ]
+		} ]
 	}, {
 		"name": "transactedProperties",
-		"properties": [{
-      "id" : "propagationBehavior",
-      "type" : "Choice",
-      "title" : "PropagationBehavior",
-      "value" : "PROPAGATION_REQUIRED",
-      "items" : [ {
-        "id" : "c1",
-        "title" : "Propagation requires new",
-        "value" : "PROPAGATION_REQUIRES_NEW"
-      }, {
-        "id" : "c2",
-        "title" : "Propagation required",
-        "value" : "PROPAGATION_REQUIRED"
-      }, {
-        "id" : "c3",
-        "title" : "Propagation never",
-        "value" : "PROPAGATION_NEVER"
-			}]
-		}]
+		"properties": [ {
+			"id": "propagationBehavior",
+			"type": "Choice",
+			"title": "PropagationBehavior",
+			"value": "PROPAGATION_REQUIRED",
+			"items": [ {
+				"id": "c1",
+				"title": "Propagation requires new",
+				"value": "PROPAGATION_REQUIRES_NEW"
+			}, {
+				"id": "c2",
+				"title": "Propagation required",
+				"value": "PROPAGATION_REQUIRED"
+			}, {
+				"id": "c3",
+				"title": "Propagation never",
+				"value": "PROPAGATION_NEVER"
+			} ]
+		} ]
 	}, {
 		"name": "onExceptionProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "continued",
-			"title":"Continued",
-			"description":"Specifies an expression that determines whether the exception is ignored and<br/> processing of the original route continues after the onException route completes.",
-      "optional" : false,
-			"type":"Text"
-		},{
+			"title": "Continued",
+			"description": "Specifies an expression that determines whether the exception is ignored and<br/> processing of the original route continues after the onException route completes.",
+			"optional": false,
+			"type": "Text"
+		}, {
 			"id": "continuedLanguage",
 			"title": "Language",
-			"description":"Specifies the expression language used to process the continued expression.",
+			"description": "Specifies the expression language used to process the continued expression.",
 			"type": "Choice",
 			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
-		},{
+		}, {
 			"id": "handled",
-			"title":"Handled",
-			"description":"Specifies an expression that determines if the exception is marked as handled.",
-      "optional" : false,
-			"type":"Text"
-		},{
+			"title": "Handled",
+			"description": "Specifies an expression that determines if the exception is marked as handled.",
+			"optional": false,
+			"type": "Text"
+		}, {
 			"id": "handledLanguage",
 			"title": "Language",
-			"description":"Specifies the expression language used to process the handled expression.",
+			"description": "Specifies the expression language used to process the handled expression.",
 			"type": "Choice",
 			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
-		},{
+		}, {
 			"id": "retryWhile",
-			"title":"RetryWhile",
-			"description":"Specifies an expression that determines if the message causing the exception should be redelivered.<br/>The message is redelivered until the expression evaluates to false.",
-      "optional" : false,
-			"type":"Text"
-		},{
+			"title": "RetryWhile",
+			"description": "Specifies an expression that determines if the message causing the exception should be redelivered.<br/>The message is redelivered until the expression evaluates to false.",
+			"optional": false,
+			"type": "Text"
+		}, {
 			"id": "retryWhileLanguage",
 			"title": "Language",
-			"description":"Specifies the expression language used to process the retryWhile expression.",
+			"description": "Specifies the expression language used to process the retryWhile expression.",
 			"type": "Choice",
 			"value": "groovy",
 			"items": "###language_items",
 			"optional": true
-		},{
-      "id" : "exceptions",
-      "type" : "Complex",
-      "title" : "Exceptions",
-      "value": "{ \"totalCount\": 1, \"items\": [ { \"exception\": \"java.lang.Exception\" } ] }",
-      "description" : "Specifies the list of exceptions the node handles.<br/>The Add button adds an entry typed in the field.<br/>The Delete button removes the selected entry from the list.",
-      "popular" : false,
-      "complexItems" : [ {
-        "id" : "exception",
-        "name" : "Name",
-        "type" : "String",
-        "value" : "",
-        "width" : 200,
-        "optional" : false
-      } ]
-		}]
+		}, {
+			"id": "exceptions",
+			"type": "Complex",
+			"title": "Exceptions",
+			"value": "{ \"totalCount\": 1, \"items\": [ { \"exception\": \"java.lang.Exception\" } ] }",
+			"description": "Specifies the list of exceptions the node handles.<br/>The Add button adds an entry typed in the field.<br/>The Delete button removes the selected entry from the list.",
+			"popular": false,
+			"complexItems": [ {
+				"id": "exception",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 200,
+				"optional": false
+			} ]
+		} ]
 	}, {
 		"name": "rollbackProperties",
-		"properties": [{
-      "id" : "markRollbackOnly",
-      "title" : "RollbackOnly",
-      "description" : "Specifies whether the entire transaction is rolled back, without throwing a RollbackExchangeException.<br/>This property cannot be enabled when Rollback Only Last is enabled.",
-      "type" : "boolean",
+		"properties": [ {
+			"id": "markRollbackOnly",
+			"title": "RollbackOnly",
+			"description": "Specifies whether the entire transaction is rolled back, without throwing a RollbackExchangeException.<br/>This property cannot be enabled when Rollback Only Last is enabled.",
+			"type": "boolean",
 			"readonly": "markRollbackOnlyLast!=false",
-      "value" : false
-		},{
-      "id" : "markRollbackOnlyLast",
-      "title" : "RollbackOnlyLast",
-      "description" : "Specifies whether the current transaction is rolled back, without throwing a RollbackExchangeException.<br/>This property cannot be enabled when Rollback Only is enabled..",
-      "type" : "boolean",
+			"value": false
+		}, {
+			"id": "markRollbackOnlyLast",
+			"title": "RollbackOnlyLast",
+			"description": "Specifies whether the current transaction is rolled back, without throwing a RollbackExchangeException.<br/>This property cannot be enabled when Rollback Only is enabled..",
+			"type": "boolean",
 			"readonly": "markRollbackOnly!=false",
-      "value" : false
-		}]
+			"value": false
+		} ]
 	}, {
 		"name": "xdocreportProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_xdocreport",
-			"type":"String",
+			"type": "String",
 			"value": "XdocReport",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "xdocreport:${kind}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_kind",
-			"title":"TemplateEngine",
-			"type":"Choice",
+			"title": "TemplateEngine",
+			"type": "Choice",
 			"value": "Velocity",
-      "items" : [ {
-        "id" : "c1",
-        "title" : "Freemarker",
-        "value" : "Freemarker"
-      }, {
-        "id" : "c2",
-        "title" : "Velocity",
-        "value" : "Velocity"
-			}]
-		},{
+			"items": [ {
+				"id": "c1",
+				"title": "Freemarker",
+				"value": "Freemarker"
+			}, {
+				"id": "c2",
+				"title": "Velocity",
+				"value": "Velocity"
+			} ]
+		}, {
 			"id": "uriparam_outputformat",
-			"title":"Outputformat",
-			"type":"Choice",
+			"title": "Outputformat",
+			"type": "Choice",
 			"value": "odf",
-      "items" : [ {
-        "id" : "c1",
-        "title" : "ODF",
-        "value" : "odf"
-      }, {
-        "id" : "c2",
-        "title" : "PDF",
-        "value" : "pdf"
-			}]
-		},{
+			"items": [ {
+				"id": "c1",
+				"title": "ODF",
+				"value": "odf"
+			}, {
+				"id": "c2",
+				"title": "PDF",
+				"value": "pdf"
+			} ]
+		}, {
 			"id": "urivalue_headerfields",
 			"title_de": "Headerfelder",
 			"title": "Headerfields",
-			"description_de":"Angebene Headerfelder in das Datenmodell des Reports kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
-			"description":"Copy specified headerfields into the data model of the report, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
-			"type":"String",
+			"description_de": "Angebene Headerfelder in das Datenmodell des Reports kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
+			"description": "Copy specified headerfields into the data model of the report, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
+			"type": "String",
 			"value": null,
 			"readonly": false,
-		}]
+		} ]
 	}, {
-		"name": "groovyTemplateProperties",
-		"properties": [{
-			"id": "type_groovytemplate",
-			"type":"String",
-			"value": "GroovyTemplate",
+		"name": "templateProperties",
+		"properties": [ {
+			"id": "type_template",
+			"type": "String",
+			"value": "Template",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
-			"value": "groovytemplate:${type}",
+			"type": "String",
+			"value": "template:${type}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_type",
-			"title":"Enginetype",
-			"title_de":"Type der Engine",
-			"type":"Choice",
-			"value": "streaming",
-      "items" : [ {
-        "id" : "c1",
-        "title" : "Streaming",
-        "value" : "streaming"
-      }, {
-        "id" : "c2",
-        "title" : "XML",
-        "value" : "xml"
-			}]
-		},{
+			"title": "Enginetype",
+			"title_de": "Type der Engine",
+			"type": "Choice",
+			"value": "groovy",
+			"items": [ {
+				"id": "c1",
+				"title": "Groovy",
+				"value": "groovy"
+			}, {
+				"id": "c2",
+				"title": "Freemarker",
+				"value": "freemarker"
+			} ]
+		}, {
 			"id": "urivalue_headerfields",
 			"title_de": "Headerfelder",
 			"title": "Headerfields",
-			"description_de":"Angebene Headerfelder in das Datenmodell des Templates kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
-			"description":"Copy specified headerfields into the data model of the templates, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
-			"type":"String",
+			"description_de": "Angebene Headerfelder in das Datenmodell des Templates kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
+			"description": "Copy specified headerfields into the data model of the templates, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
+			"type": "String",
 			"value": null,
 			"readonly": false,
-		}]
+		} ]
 	}, {
 		"name": "asciidoctorProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_asciidoctor",
-			"type":"String",
+			"type": "String",
 			"value": "Asciidoctor",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "asciidoctor:dummy",
 			"visible": false
-		}]
+		} ]
 	}, {
 		"name": "sqlProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_sql",
-			"type":"String",
+			"type": "String",
 			"value": "SQL",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "sql://${statement}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_statement",
-			"title":"SQL Statement",
-			"type":"text",
+			"title": "SQL Statement",
+			"type": "text",
 			"value": "",
 			"optional": false,
 			"visible": true
-		},{
-      "id" : "uriparam_dataSource",
-      "title" : "Datasource",
-      "description" : "Reference to a DataSource",
-      "description_de" : "Referenz zur Datenquelle",
+		}, {
+			"id": "uriparam_dataSource",
+			"title": "Datasource",
+			"description": "Reference to a DataSource",
+			"description_de": "Referenz zur Datenquelle",
 			"optional": false,
-      "type" : "string",
-      "value" : null
-		},{
-			"id": "uriparam_template.maxRows",
-			"title":"Max. rows",
-			"title_de":"Max. Zeilen",
-			"description":"Set the maximum number of rows",
-			"description_de":"Maximale Anzahl Zeilen",
-			"type":"Integer",
+			"type": "string",
 			"value": null
-		},{
-      "id" : "uriparam_outputClass",
-      "title" : "OutputClass",
-      "description" : "Fill this object with values from resultset.one line per object",
-      "type" : "string",
-      "value" : null
-		}]
-	},{
+		}, {
+			"id": "uriparam_template.maxRows",
+			"title": "Max. rows",
+			"title_de": "Max. Zeilen",
+			"description": "Set the maximum number of rows",
+			"description_de": "Maximale Anzahl Zeilen",
+			"type": "Integer",
+			"value": null
+		}, {
+			"id": "uriparam_outputClass",
+			"title": "OutputClass",
+			"description": "Fill this object with values from resultset.one line per object",
+			"type": "string",
+			"value": null
+		} ]
+	}, {
 		"name": "databaseProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_database",
-			"type":"String",
+			"type": "String",
 			"value": "Database",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "swdata:${operation}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_operation",
-			"title":"Operation",
-			"title_de":"Operation",
-			"description_de":"<h4>Header</h4>Update,Delete,FindById<ul style='margin-top:0px;'><li>objectId</li></ul>FindByFilter,FindOneByFilter<ul style='margin-top:0px;'><li>Alle Headerfelder als Filterparameter</li></ul>",
-			"description":"<h4>Header</h4>Update,Delete,FindById<ul style='margin-top:0px;'><li>objectId</li></ul>FindByFilter,FindOneByFilter<ul style='margin-top:0px;'><li>All headerfields as Filterparameter</li></ul>",
-			"type":"Choice",
+			"title": "Operation",
+			"title_de": "Operation",
+			"description_de": "<h4>Header</h4>Update,Delete,FindById<ul style='margin-top:0px;'><li>objectId</li></ul>FindByFilter,FindOneByFilter<ul style='margin-top:0px;'><li>Alle Headerfelder als Filterparameter</li></ul>",
+			"description": "<h4>Header</h4>Update,Delete,FindById<ul style='margin-top:0px;'><li>objectId</li></ul>FindByFilter,FindOneByFilter<ul style='margin-top:0px;'><li>All headerfields as Filterparameter</li></ul>",
+			"type": "Choice",
 			"value": "insert",
-      "items" : [ {
-        "id" : "c1",
-        "title" : "Insert",
-        "value" : "insert"
-      }, {
-        "id" : "c2",
-        "title" : "Update",
-        "value" : "update"
-      }, {
-        "id" : "c3",
-        "title" : "Delete",
-        "value" : "delete"
-      }, {
-        "id" : "c4",
-        "title" : "FindById",
-        "value" : "findById"
-      }, {
-        "id" : "c5",
-        "title" : "FindByFilter",
-        "value" : "findByFilter"
-      }, {
-        "id" : "c6",
-        "title" : "FindOneByFilter",
-        "value" : "findOneByFilter"
-      }, {
-        "id" : "c7",
-        "title" : "MultiInsertUpdate",
-        "value" : "multiInsertUpdate"
-			}],
+			"items": [ {
+				"id": "c1",
+				"title": "Insert",
+				"value": "insert"
+			}, {
+				"id": "c2",
+				"title": "Update",
+				"value": "update"
+			}, {
+				"id": "c3",
+				"title": "Delete",
+				"value": "delete"
+			}, {
+				"id": "c4",
+				"title": "FindById",
+				"value": "findById"
+			}, {
+				"id": "c5",
+				"title": "FindByFilter",
+				"value": "findByFilter"
+			}, {
+				"id": "c6",
+				"title": "FindOneByFilter",
+				"value": "findOneByFilter"
+			}, {
+				"id": "c7",
+				"title": "MultiInsertUpdate",
+				"value": "multiInsertUpdate"
+			} ],
 			"visible": true
-		},{
+		}, {
 			"id": "uriparam_relation",
-			"title":"Relation",
-			"title_de":"Relation",
-			"config":{type:"ms123.util.RelationList"},
-			"type":"Choice",
+			"title": "Relation",
+			"title_de": "Relation",
+			"config": {
+				type: "ms123.util.RelationList"
+			},
+			"type": "Choice",
 			"value": null,
-      "items" : [],
+			"items": [],
 			"visible": "urivalue_operation=='multiInsertUpdate'"
-		},{
+		}, {
 			"id": "uriparam_lookupRelationObjectExpr",
-			"title":"Object lookup",
-			"title_de":"Objekt lookup",
-      "description_de": "Relation Objekt lookup, Möglichkeiten der Eingabe<ul><li>feldname: Bei einem Feld muß das Vergleichsfeld in Parent und Child gleich sein </li><li>parentfeld,childfeld</li><li>countryId==${countryId}: JDO-Filterausdruck</li></ul>",
-      "description": "Relation object lookup, ways of entering<ul><li>fieldname: One field, comparison field has the same name in parent and child</li><li>parentfield,childfield</li><li>countryId==${countryId}: JDO-Filterexpression</li></ul>",
-			"type":"String",
+			"title": "Object lookup",
+			"title_de": "Objekt lookup",
+			"description_de": "Relation Objekt lookup, Möglichkeiten der Eingabe<ul><li>feldname: Bei einem Feld muß das Vergleichsfeld in Parent und Child gleich sein </li><li>parentfeld,childfeld</li><li>countryId==${countryId}: JDO-Filterausdruck</li></ul>",
+			"description": "Relation object lookup, ways of entering<ul><li>fieldname: One field, comparison field has the same name in parent and child</li><li>parentfield,childfield</li><li>countryId==${countryId}: JDO-Filterexpression</li></ul>",
+			"type": "String",
 			"value": null,
 			"visible": "urivalue_operation=='multiInsertUpdate' && uriparam_relation!='-'"
-		},{
+		}, {
 			"id": "isupdate",
-			"title":"Update",
-			"title_de":"Update",
+			"title": "Update",
+			"title_de": "Update",
 			"description": "<b>Update Object</b>, when exist, insteed create always a new one",
 			"description_de": "<b>Update Objekt</b>, wenn vorhanden, ansonsten erzeuge immer ein Neues",
-			"type":"boolean",
+			"type": "boolean",
 			"value": false,
 			"visible": "urivalue_operation=='multiInsertUpdate'"
-		},{
+		}, {
 			"id": "uriparam_lookupUpdateObjectExpr",
-			"title":"Object lookup",
-			"title_de":"Objekt lookup",
-      "description_de": "Update Objekt lookup:, Möglichkeiten der Eingabe<ul><li>Feldname</li><li>JDO-Filterausdruck<br/>Integer: <b>countryId==${countryId}</b><br/>String: <b>countryId=='${countryId}'</b></li></ul>",
-      "description": "Update object lookup:, ways of entering<ul><li>Fieldname</li><li>JDO-Filterexpression<br/>Integer: <b>countryId==${countryId}</b><br/> String: <b>countryId=='${countryId}'</b></li></ul>",
-			"type":"String",
+			"title": "Object lookup",
+			"title_de": "Objekt lookup",
+			"description_de": "Update Objekt lookup:, Möglichkeiten der Eingabe<ul><li>Feldname</li><li>JDO-Filterausdruck<br/>Integer: <b>countryId==${countryId}</b><br/>String: <b>countryId=='${countryId}'</b></li></ul>",
+			"description": "Update object lookup:, ways of entering<ul><li>Fieldname</li><li>JDO-Filterexpression<br/>Integer: <b>countryId==${countryId}</b><br/> String: <b>countryId=='${countryId}'</b></li></ul>",
+			"type": "String",
 			"value": "",
 			"visible": "urivalue_operation=='multiInsertUpdate' && isupdate==true"
-		},{
+		}, {
 			"id": "uriparam_noUpdate",
-			"title":"No update",
-			"title_de":"Kein update",
-      "description_de": "Vorhandene Objekte nicht updaten, nur neue Objekte erzeugen",
-      "description": "Not update existing objects, create new objects only",
-			"type":"boolean",
+			"title": "No update",
+			"title_de": "Kein update",
+			"description_de": "Vorhandene Objekte nicht updaten, nur neue Objekte erzeugen",
+			"description": "Not update existing objects, create new objects only",
+			"type": "boolean",
 			"value": false,
 			"visible": "urivalue_operation=='multiInsertUpdate' && isupdate==true"
-		},{
+		}, {
 			"id": "uriparam_filterName",
-			"title":"Filtername",
-      "description_de": "Der Filter der ausgeführt werden soll",
-      "description": "The filter to be executed",
+			"title": "Filtername",
+			"description_de": "Der Filter der ausgeführt werden soll",
+			"description": "The filter to be executed",
 			"type": "ResourceSelector",
-			"config": {"type":"sw.filter","prefix":""},
+			"config": {
+				"type": "sw.filter",
+				"prefix": ""
+			},
 			"optional": false,
 			"value": null,
 			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter'"
-		},{
+		}, {
 			"id": "uriparam_entityType",
-			"title":"Entitytype",
-			"title_de":"Entitätstyp",
-			"type":"String",
+			"title": "Entitytype",
+			"title_de": "Entitätstyp",
+			"type": "String",
 			"value": null,
 			"optional": false,
 			"visible": "urivalue_operation=='insert' || urivalue_operation=='update' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
-		},{
+		}, {
 			"id": "uriparam_namespace",
-			"title":"Namespace",
-			"description":"optional",
-			"type":"String",
-			"value": null
-		},{
+			"title": "Namespace",
+			"description": "optional",
+			"config": {
+				type: "ms123.util.RepoList"
+			},
+			"type": "Choice",
+			"value": null,
+			"items": [],
+		}, {
 			"id": "uriparam_resultHeader",
-			"title":"Headername",
-      "description_de": "Das Ergebniss, statt in den Body, in den Header unter diesem Namen kopieren",
-      "description": "Copying the result, instead of in the body, in the header under this name",
-			"type":"String",
+			"title": "Headername",
+			"description_de": "Das Ergebniss, statt in den Body, in den Header unter diesem Namen kopieren",
+			"description": "Copying the result, instead of in the body, in the header under this name",
+			"type": "String",
 			"value": null,
 			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' ||  urivalue_operation=='findById'"
-		}]
-	},{
+		} ]
+	}, {
 		"name": "repoProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_repo",
-			"type":"String",
+			"type": "String",
 			"value": "Repo",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "repo:${operation}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_operation",
-			"title":"Operation",
-			"title_de":"Operation",
-			"type":"Choice",
+			"title": "Operation",
+			"title_de": "Operation",
+			"type": "Choice",
 			"value": "get",
-      "items" : [ {
-        "id" : "c1",
-        "title" : "Get",
-        "value" : "get"
-			}],
+			"items": [ {
+				"id": "c1",
+				"title": "Get",
+				"value": "get"
+			} ],
 			"visible": true
-		},{
+		}, {
 			"id": "uriparam_target",
-			"title":"Target",
-			"title_de":"Ziel",
+			"title": "Target",
+			"title_de": "Ziel",
 			"type": "Choice",
 			"value": "body",
-      "items" : [ 
-				{
-        "id" : "c1",
-        "title" : "Body",
-        "value" : "body"
-			},{
-        "id" : "c2",
-        "title" : "Header",
-        "value" : "header"
-			}],
+			"items": [ {
+				"id": "c1",
+				"title": "Body",
+				"value": "body"
+			}, {
+				"id": "c2",
+				"title": "Header",
+				"value": "header"
+			} ],
 			"visible": "urivalue_operation=='get'"
-		},{
+		}, {
 			"id": "uriparam_header",
-			"title":"Targetheaderfield",
-			"title_de":"Ziel Headerfeld",
-			"description":"Name of the header field on which the file should be copied",
-			"description_de":"Name des Headerfeldes, in den das File kopiert werden soll ",
+			"title": "Targetheaderfield",
+			"title_de": "Ziel Headerfeld",
+			"description": "Name of the header field on which the file should be copied",
+			"description_de": "Name des Headerfeldes, in den das File kopiert werden soll ",
 			"type": "string",
 			"value": null,
 			"visible": "urivalue_operation=='get' && uriparam_target=='header'"
-		},{
+		}, {
 			"id": "uriparam_repo",
-			"title":"Reponame",
-			"config":{type:"ms123.util.RepoList"},
-			"type":"Choice",
+			"title": "Reponame",
+			"config": {
+				type: "ms123.util.RepoList"
+			},
+			"type": "Choice",
 			"value": null,
-      "items" : [],
+			"items": [],
 			"visible": true
-		},{
+		}, {
 			"id": "uriparam_path",
-			"title":"Path",
-			"title_de":"Pfad",
-			"description":"Name or path of the file",
-			"description_de":"Name oder Pfad der Datei",
-			"type":"String",
+			"title": "Path",
+			"title_de": "Pfad",
+			"description": "Name or path of the file",
+			"description_de": "Name oder Pfad der Datei",
+			"type": "String",
 			"value": "",
 			"visible": true
-		},{
+		}, {
 			"id": "uriparam_type",
-			"title":"Type",
-			"title_de":"Typ",
-			"description":"Type of the file",
-			"description_de":"Typ der Datei",
+			"title": "Type",
+			"title_de": "Typ",
+			"description": "Type of the file",
+			"description_de": "Typ der Datei",
 			"type": "Choice",
 			"value": "all",
-      "items" : [ 
-				{
-        "id" : "c1",
-        "title" : "Opendocument-text",
-        "value" : "application/vnd.oasis.opendocument.text"
-			},{
-        "id" : "c2",
-        "title" : "Asciidoc",
-        "value" : "text/x-asciidoc"
-			},{
-        "id" : "c3",
-        "title" : "JSON",
-        "value" : "application/json"
-			},{
-        "id" : "c4",
-        "title" : "all",
-        "title_de" : "alle",
-        "value" : "all"
-			}],
+			"items": [ {
+				"id": "c1",
+				"title": "Opendocument-text",
+				"value": "application/vnd.oasis.opendocument.text"
+			}, {
+				"id": "c2",
+				"title": "Asciidoc",
+				"value": "text/x-asciidoc"
+			}, {
+				"id": "c3",
+				"title": "JSON",
+				"value": "application/json"
+			}, {
+				"id": "c4",
+				"title": "all",
+				"title_de": "alle",
+				"value": "all"
+			} ],
 			"visible": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "fileProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_file",
-			"type":"String",
+			"type": "String",
 			"value": "File",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "file:${path}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_path",
-			"title":"Path",
-			"title_de":"Pfad",
-			"type":"String",
+			"title": "Path",
+			"title_de": "Pfad",
+			"type": "String",
 			"value": "",
 			"optional": false,
 			"visible": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "commonFileProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "uriparam_fileName",
-			"title":"Filename",
-			"title_de":"Dateiname",
-			"description":"Use Expression such as <a  target='_blank' href='http://camel.apache.org/file-language.html'>File Language</a> to dynamically set the filename.<br/>For consumers, it's used as a filename filter.<br/>For producers, it's used to evaluate the filename to write.<br/>If an expression is set, it take precedence over the CamelFileName header.",
-			"type":"String",
+			"title": "Filename",
+			"title_de": "Dateiname",
+			"description": "Use Expression such as <a  target='_blank' href='http://camel.apache.org/file-language.html'>File Language</a> to dynamically set the filename.<br/>For consumers, it's used as a filename filter.<br/>For producers, it's used to evaluate the filename to write.<br/>If an expression is set, it take precedence over the CamelFileName header.",
+			"type": "String",
 			"value": "",
 			"visible": true
-		},{
+		}, {
 			"id": "uriparam_charset",
 			"type": "Combo",
 			"title": "Encoding",
-			"description":"specify the encoding of the file",
+			"description": "specify the encoding of the file",
 			"value": "UTF-8",
-			"items": [{
+			"items": [ {
 				"id": "c1",
 				"value": "UTF-8",
 				"title": "UTF-8"
-			},{
+			}, {
 				"id": "c2",
 				"value": "ISO-8859-15",
 				"title": "ISO-8859-15"
-			}]
-		},{
+			} ]
+		}, {
 			"id": "uriparam_delete",
-			"title":"Delete",
-			"title_de":"Entfernen",
-			"description":"If true, the file will be deleted after it is processed successfully.",
-			"type":"boolean",
+			"title": "Delete",
+			"title_de": "Entfernen",
+			"description": "If true, the file will be deleted after it is processed successfully.",
+			"type": "boolean",
 			"value": false,
 			"visible": true
-		},{
+		}, {
 			"id": "uriparam_recursive",
-			"title":"Recursive",
-			"title_de":"Rekursiv",
-			"description":"If a directory, will look for files in all the sub-directories as well.",
-			"type":"boolean",
+			"title": "Recursive",
+			"title_de": "Rekursiv",
+			"description": "If a directory, will look for files in all the sub-directories as well.",
+			"type": "boolean",
 			"value": false,
 			"visible": true
-		},{
+		}, {
 			"id": "uriparam_noop",
-			"title":"Noop",
-			"title_de":"Noop",
-			"description":"If true, the file is not moved or deleted in any way",
-			"type":"boolean",
+			"title": "Noop",
+			"title_de": "Noop",
+			"description": "If true, the file is not moved or deleted in any way",
+			"type": "boolean",
 			"value": false
-		},{
+		}, {
 			"id": "uriparam_flatten",
-			"title":"Flatten",
-			"description":"Flatten is used to flatten the file name path to strip any leading paths, so it's just the file name",
-			"type":"boolean",
+			"title": "Flatten",
+			"description": "Flatten is used to flatten the file name path to strip any leading paths, so it's just the file name",
+			"type": "boolean",
 			"value": false
-		},{
+		}, {
 			"id": "uriparam_autoCreate",
-			"title":"Autocreate",
-			"description":"Automatically create missing directories in the file's pathname",
-			"type":"boolean",
+			"title": "Autocreate",
+			"description": "Automatically create missing directories in the file's pathname",
+			"type": "boolean",
 			"value": true
-		},{
+		}, {
 			"id": "uriparam_consumer.delay",
-			"title":"Delay",
-			"title_de":"Verzögerung",
-			"description":"Milliseconds before the next poll of the file/directory.",
-			"type":"string",
+			"title": "Delay",
+			"title_de": "Verzögerung",
+			"description": "Milliseconds before the next poll of the file/directory.",
+			"type": "string",
 			"value": "5000"
-		},{
+		}, {
 			"id": "uriparam_moveFailed",
-			"title":"MoveFailed",
-			"description":"Expression (such as File Language) used to dynamically set a different target directory<br/> when moving files in case of processing (configured via move defined above) failed.<br/>For example, to move files into a .error subdirectory use: .error.<br/>Note: When moving the files to the “fail” location<br/> Camel will handle the error and will not pick up the file again.",
-			"type":"string",
+			"title": "MoveFailed",
+			"description": "Expression (such as File Language) used to dynamically set a different target directory<br/> when moving files in case of processing (configured via move defined above) failed.<br/>For example, to move files into a .error subdirectory use: .error.<br/>Note: When moving the files to the “fail” location<br/> Camel will handle the error and will not pick up the file again.",
+			"type": "string",
 			"value": ".error"
-		},{
+		}, {
 			"id": "uriparam_antInclude",
-			"title":"Include",
-			"description":"Ant style filter inclusion, for example antInclude=*.txt.<br/> Multiple inclusions may be specified in comma-delimited format.<br/><ul><li>? matches one character</li><li>* matches zero or more characters</li><li>** matches zero or more directories in a path</li></ul>",
-			"type":"string",
+			"title": "Include",
+			"description": "Ant style filter inclusion, for example antInclude=*.txt.<br/> Multiple inclusions may be specified in comma-delimited format.<br/><ul><li>? matches one character</li><li>* matches zero or more characters</li><li>** matches zero or more directories in a path</li></ul>",
+			"type": "string",
 			"value": ""
-		},{
+		}, {
 			"id": "uriparam_antExclude",
-			"title":"Exclude",
-			"description":"Ant style filter exclusion.<br/>If both antInclude and antExclude are used, antExclude takes precedence over antInclude.<br/>Multiple exclusions may be specified in comma-delimited format.",
-			"type":"string",
+			"title": "Exclude",
+			"description": "Ant style filter exclusion.<br/>If both antInclude and antExclude are used, antExclude takes precedence over antInclude.<br/>Multiple exclusions may be specified in comma-delimited format.",
+			"type": "string",
 			"value": ""
-		}]
-	},{
+		} ]
+	}, {
 		"name": "processorProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "ref",
-			"type":"String",
+			"type": "String",
 			"title": "Reference",
 			"description": "Reference to the bean implementing the processor's logic",
 			"value": "",
 			"visible": true,
 			"optional": true
-		},{
+		}, {
 			"id": "code",
-			"config":{"mode":"text/x-groovy", "xelper":"ProcessScript"},
+			"config": {
+				"mode": "text/x-groovy",
+				"xelper": "ProcessScript"
+			},
 			"type": "Text",
 			"title": "Code",
 			"value": "",
 			"description": "anonymous inner class implementing the processor's logic",
 			"optional": true
-		},{
+		}, {
 			"id": "codeLanguage",
 			"title": "Codelanguage",
 			"title_de": "Kode Sprache",
@@ -1272,87 +1283,90 @@
 				"id": "groovy",
 				"title": "Groovy",
 				"value": "groovy"
-			},{
+			}, {
 				"id": "java",
 				"title": "Java8",
 				"value": "java"
-			}],
+			} ],
 			"optional": true
-		},{
+		}, {
 			"id": "isEndpoint",
-			"title":"Endpoint",
-			"type":"Boolean",
+			"title": "Endpoint",
+			"type": "Boolean",
 			"value": false
-		}]
-	},{
+		} ]
+	}, {
 		"name": "datamapperProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "strategy",
 			"type": "ResourceSelector",
-			"config": {"type":"sw.datamapper","prefix":""},
+			"config": {
+				"type": "sw.datamapper",
+				"prefix": ""
+			},
 			"title": "Strategy",
 			"title_de": "Strategie",
 			"value": "",
 			"description": "",
 			"readonly": false,
 			"optional": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "directProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_direct",
-			"type":"String",
+			"type": "String",
 			"value": "Direct",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "direct:${name}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_name",
-			"title":"Name",
+			"title": "Name",
 			"description_de": "Im Falle von  RPC ist dieser Parameter gleichzeitig der Prozedurname",
 			"description": "In case of rpc this is also the procedure name",
 			"filter": "[a-zA-Z0-9_]",
-			"type":"String",
+			"type": "String",
 			"optional": false,
 			"value": "direct1",
 			"visible": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "eventbusProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_eventbus",
-			"type":"String",
+			"type": "String",
 			"value": "EventBus",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "eventbus:${address}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_address",
-			"title":"Address",
-			"title_de":"Adresse",
-			"type":"String",
+			"title": "Address",
+			"title_de": "Adresse",
+			"type": "String",
 			"value": "bus1",
 			"visible": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "rpcProperties2",
-		"properties": [{
+		"properties": [ {
 			"id": "rpc",
-			"title":"RPC",
+			"title": "RPC",
 			"description_de": "Soll die Route über rpc erreichbar sein?",
 			"description": "Should be the route reachable via rpc?",
-			"type":"boolean",
+			"type": "boolean",
 			"value": false,
 			"visible": true
-		},{
+		}, {
 			"id": "rpcParameter",
 			"type": "Complex",
 			"title": "RPC-Parameter",
@@ -1360,7 +1374,7 @@
 			"visible": "rpc==true",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -1393,7 +1407,7 @@
 				"value": false,
 				"width": 50,
 				"optional": false
-			},{
+			}, {
 				"id": "type",
 				"name": "Type",
 				"name_de": "Typ",
@@ -1403,7 +1417,7 @@
 				"items": "###parametertype_items",
 				"width": 80,
 				"optional": true
-			},{
+			}, {
 				"id": "destination",
 				"name": "Destination",
 				"name_de": "Ziel",
@@ -1413,8 +1427,8 @@
 				"items": "###destination_items",
 				"width": 80,
 				"optional": true
-			}]
-		},{
+			} ]
+		}, {
 			"id": "rpcReturn",
 			"title": "RPC Return",
 			"readonly": false,
@@ -1425,32 +1439,32 @@
 				"id": "body",
 				"title": "Body",
 				"value": "body"
-			},{
+			}, {
 				"id": "headers",
 				"title": "Headers",
 				"value": "headers"
-			},{
+			}, {
 				"id": "bodyAndHeaders",
 				"title": "Body/Headers",
 				"value": "bodyAndHeaders"
-			},{
+			}, {
 				"id": "bodyWithMime",
 				"title": "Body/Mimetype",
 				"value": "bodyWithMime"
-			},{
+			}, {
 				"id": "none",
 				"title": "-----",
 				"value": "none"
-			}],
+			} ],
 			"width": 80,
 			"optional": true
-		},{
+		}, {
 			"id": "mimetype",
-			"title":"Mimetype",
-			"type":"String",
+			"title": "Mimetype",
+			"type": "String",
 			"value": null,
 			"visible": "rpc==true && rpcReturn=='bodyWithMime'"
-		},{
+		}, {
 			"id": "rpcReturnHeaders",
 			"type": "Complex",
 			"title": "Return Headers",
@@ -1458,7 +1472,7 @@
 			"visible": "rpc==true && (rpcReturn=='headers' || rpcReturn=='bodyAndHeaders')",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -1466,8 +1480,8 @@
 				"value": "",
 				"width": 250,
 				"optional": false
-			}]
-		},{
+			} ]
+		}, {
 			"id": "startableGroups",
 			"type": "MultiSelect",
 			"config": "permission:getAllRoles:name",
@@ -1478,7 +1492,7 @@
 			"value": "",
 			"visible": "rpc==true",
 			"length": "50"
-		},{
+		}, {
 			"id": "startableUsers",
 			"type": "MultiSelect",
 			"config": "auth:getUsers:userid",
@@ -1489,19 +1503,19 @@
 			"value": "",
 			"visible": "rpc==true",
 			"length": "50"
-		}]
-	},{
+		} ]
+	}, {
 		"name": "rpcProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "uriparam_procedure",
-			"title":"Procedurename",
-			"title_de":"Prozedurname",
+			"title": "Procedurename",
+			"title_de": "Prozedurname",
 			"filter": "[a-zA-Z0-9_]",
 			"visible": "urivalue_mode=='rpc'",
 			"optional": false,
-			"type":"String",
+			"type": "String",
 			"value": null
-		},{
+		}, {
 			"id": "uriparam_rpcParameter",
 			"type": "Complex",
 			"title": "RPC-Parameter",
@@ -1509,7 +1523,7 @@
 			"visible": "urivalue_mode=='rpc'",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -1542,7 +1556,7 @@
 				"value": false,
 				"width": 50,
 				"optional": false
-			},{
+			}, {
 				"id": "type",
 				"name": "Type",
 				"name_de": "Typ",
@@ -1552,7 +1566,7 @@
 				"items": "###parametertype_items",
 				"width": 80,
 				"optional": true
-			},{
+			}, {
 				"id": "destination",
 				"name": "Destination",
 				"name_de": "Ziel",
@@ -1562,8 +1576,8 @@
 				"items": "###destination_items",
 				"width": 80,
 				"optional": true
-			}]
-		},{
+			} ]
+		}, {
 			"id": "uriparam_rpcReturn",
 			"title": "RPC Return",
 			"readonly": false,
@@ -1574,22 +1588,22 @@
 				"id": "body",
 				"title": "Body",
 				"value": "body"
-			},{
+			}, {
 				"id": "headers",
 				"title": "Headers",
 				"value": "headers"
-			},{
+			}, {
 				"id": "bodyAndHeaders",
 				"title": "Body/Headers",
 				"value": "bodyAndHeaders"
-			},{
+			}, {
 				"id": "none",
 				"title": "-----",
 				"value": "none"
-			}],
+			} ],
 			"width": 80,
 			"optional": true
-		},{
+		}, {
 			"id": "uriparam_rpcReturnHeaders",
 			"type": "Complex",
 			"title": "Return Headers",
@@ -1597,7 +1611,7 @@
 			"visible": "(urivalue_mode=='rpc') && (uriparam_rpcReturn=='headers' || uriparam_rpcReturn=='bodyAndHeaders')",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -1605,18 +1619,18 @@
 				"value": "",
 				"width": 250,
 				"optional": false
-			}]
-		}]
-	},{
+			} ]
+		} ]
+	}, {
 		"name": "publishProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "uriparam_topic",
-			"description":"The topic without the namspace, on the client the topic must be pefixed with the namespace:<b>namespace.topic</b> ",
-			"title":"Topic",
+			"description": "The topic without the namspace, on the client the topic must be pefixed with the namespace:<b>namespace.topic</b> ",
+			"title": "Topic",
 			"visible": "urivalue_mode=='pub'",
-			"type":"String",
+			"type": "String",
 			"value": null
-		},{
+		}, {
 			"id": "uriparam_publish",
 			"title": "Publish",
 			"readonly": false,
@@ -1627,22 +1641,22 @@
 				"id": "body",
 				"title": "Body",
 				"value": "body"
-			},{
+			}, {
 				"id": "headers",
 				"title": "Headers",
 				"value": "headers"
-			},{
+			}, {
 				"id": "bodyAndHeaders",
 				"title": "Body/Headers",
 				"value": "bodyAndHeaders"
-			},{
+			}, {
 				"id": "none",
 				"title": "-----",
 				"value": "none"
-			}],
+			} ],
 			"width": 80,
 			"optional": true
-		},{
+		}, {
 			"id": "uriparam_publishHeaders",
 			"type": "Complex",
 			"title": "PublishHeaders",
@@ -1650,7 +1664,7 @@
 			"visible": "(urivalue_mode=='pub') && (uriparam_publish=='headers' || uriparam_publish=='bodyAndHeaders')",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -1658,41 +1672,41 @@
 				"value": "",
 				"width": 250,
 				"optional": false
-			}]
-		}]
-	},{
+			} ]
+		} ]
+	}, {
 		"name": "websocketProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_websocket",
-			"type":"String",
+			"type": "String",
 			"value": "Websocket",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "websocket:${name}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_name",
-			"title":"Name",
-			"title_de":"Name",
+			"title": "Name",
+			"title_de": "Name",
 			"optional": false,
-			"description":  "websocket:${name}",
-			"type":"String",
+			"description": "websocket:${name}",
+			"type": "String",
 			"value": "ws1",
 			"visible": true
-		},{
+		}, {
 			"id": "urivalue_sendToAll",
-			"title":"Send to all",
-			"title_de":"Sende an alle",
-			"type":"Boolean",
+			"title": "Send to all",
+			"title_de": "Sende an alle",
+			"type": "Boolean",
 			"value": false,
 			"visible": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "permissionProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "uriparam_startableGroups",
 			"type": "MultiSelect",
 			"config": "permission:getAllRoles:name",
@@ -1703,7 +1717,7 @@
 			"value": "",
 			"visible": "urivalue_mode=='rpc'",
 			"length": "50"
-		},{
+		}, {
 			"id": "uriparam_startableUsers",
 			"type": "MultiSelect",
 			"config": "auth:getUsers:userid",
@@ -1714,418 +1728,418 @@
 			"value": "",
 			"visible": "urivalue_mode=='rpc'",
 			"length": "50"
- 		}]
-	},{
+		} ]
+	}, {
 		"name": "wampProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_wamp",
-			"type":"String",
+			"type": "String",
 			"value": "Wamp",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "wamp:${mode}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_mode",
-			"title":"Mode",
-			"title_de":"Modus",
-			"type":"Choice",
+			"title": "Mode",
+			"title_de": "Modus",
+			"type": "Choice",
 			"value": "rpc",
-      "items" : [ {
-        "id" : "c1",
-        "title" : "Publishing",
-        "value" : "pub"
-      }, {
-        "id" : "c2",
-        "title" : "RPC",
-        "value" : "rpc"
-			}],
+			"items": [ {
+				"id": "c1",
+				"title": "Publishing",
+				"value": "pub"
+			}, {
+				"id": "c2",
+				"title": "RPC",
+				"value": "rpc"
+			} ],
 			"visible": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "sedaProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_seda",
-			"type":"String",
+			"type": "String",
 			"value": "Seda",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "seda:${name}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_name",
-			"title":"Name",
-			"type":"String",
+			"title": "Name",
+			"type": "String",
 			"value": "seda1",
 			"visible": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "vmProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_vm",
-			"type":"String",
+			"type": "String",
 			"value": "VM",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "vm:${name}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_name",
-			"title":"Name",
-			"type":"String",
+			"title": "Name",
+			"type": "String",
 			"value": "vm1",
 			"visible": true
-		},{
+		}, {
 			"id": "uriparam_pubSub",
-			"title":"PubSub",
-			"type":"Boolean",
+			"title": "PubSub",
+			"type": "Boolean",
 			"value": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "sedaVmProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "urivalue_concurrentConsumers",
-			"title":"ConcurrentConsumers",
-			"description":"Number of concurrent threads processing exchanges.",
-			"type":"Integer",
+			"title": "ConcurrentConsumers",
+			"description": "Number of concurrent threads processing exchanges.",
+			"type": "Integer",
 			"value": "1",
 			"visible": true
-		},{
+		}, {
 			"id": "urivalue_timeout",
-			"title":"Timeout",
-			"description":"Timeout (in milliseconds) before a SEDA producer will stop waiting for an asynchronous task to complete.",
-			"type":"Integer",
+			"title": "Timeout",
+			"description": "Timeout (in milliseconds) before a SEDA producer will stop waiting for an asynchronous task to complete.",
+			"type": "Integer",
 			"value": "30000",
 			"visible": true
-		},{
+		}, {
 			"id": "urivalue_pollTimeout",
-			"title":"PollTimeout",
-			"description":"Consumer only – The timeout used when polling.",
-			"type":"Integer",
+			"title": "PollTimeout",
+			"description": "Consumer only – The timeout used when polling.",
+			"type": "Integer",
 			"value": "1000",
 			"visible": true
-		},{
+		}, {
 			"id": "uriparam_waitForTaskToComplete",
 			"type": "Combo",
 			"title": "WaitForTaskToComplete",
-			"description":"Option to specify whether the caller should wait for the async task to complete or not before continuing.",
+			"description": "Option to specify whether the caller should wait for the async task to complete or not before continuing.",
 			"value": "IfReplyExpected",
-			"items": [{
+			"items": [ {
 				"id": "c1",
 				"value": "IfReplyExpected",
 				"title": "IfReplyExpected"
-			},{
+			}, {
 				"id": "c2",
 				"value": "Always",
 				"title": "Always"
-			},{
+			}, {
 				"id": "c3",
 				"value": "Never",
 				"title": "Never"
-			}]
-		},{
+			} ]
+		}, {
 			"id": "uriparam_multipleConsumers",
-			"title":"MultipleConsumers",
-			"description":"Specifies whether multiple consumers are allowed.<br/>If enabled, you can use SEDA for Publish-Subscribe messaging.<br/>That is, you can send a message to the SEDA queue and have each<br/> consumer receive a copy of the message.",
-			"type":"boolean",
+			"title": "MultipleConsumers",
+			"description": "Specifies whether multiple consumers are allowed.<br/>If enabled, you can use SEDA for Publish-Subscribe messaging.<br/>That is, you can send a message to the SEDA queue and have each<br/> consumer receive a copy of the message.",
+			"type": "boolean",
 			"value": false,
 			"visible": true
-		},{
+		}, {
 			"id": "uriparam_blockWhenFull",
-			"title":"BlockWhenFull",
-			"description":"Whether a thread that sends messages to a full SEDA queue will<br/>block until the queue's capacity is no longer exhausted.<br/>By default, an exception will be thrown stating that the queue is full.",
-			"type":"boolean",
+			"title": "BlockWhenFull",
+			"description": "Whether a thread that sends messages to a full SEDA queue will<br/>block until the queue's capacity is no longer exhausted.<br/>By default, an exception will be thrown stating that the queue is full.",
+			"type": "boolean",
 			"value": false,
 			"visible": true
-		}]
-	},{ 
+		} ]
+	}, {
 		"name": "ftpProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_ftp",
-			"type":"String",
+			"type": "String",
 			"value": "FTP",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "${protocol}://${host}:${port}/${directory}",
 			"visible": false
-    },{
-      "id" : "urivalue_protocol",
-      "type" : "Choice",
-      "title" : "Protocol",
-      "title_de" : "Protokoll",
-      "value" : "sftp",
-      "items" : [ {
-        "id" : "c1",
-        "title" : "SFTP",
-        "value" : "sftp"
-      }, {
-        "id" : "c2",
-        "title" : "FTPS",
-        "value" : "ftps"
-      }, {
-        "id" : "c3",
-        "title" : "FTP",
-        "value" : "ftp"
-      }]
-		},{
+		}, {
+			"id": "urivalue_protocol",
+			"type": "Choice",
+			"title": "Protocol",
+			"title_de": "Protokoll",
+			"value": "sftp",
+			"items": [ {
+				"id": "c1",
+				"title": "SFTP",
+				"value": "sftp"
+			}, {
+				"id": "c2",
+				"title": "FTPS",
+				"value": "ftps"
+			}, {
+				"id": "c3",
+				"title": "FTP",
+				"value": "ftp"
+			} ]
+		}, {
 			"id": "urivalue_host",
-			"title":"Host",
-			"type":"String",
+			"title": "Host",
+			"type": "String",
 			"value": "",
 			"optional": false
-		},{
+		}, {
 			"id": "urivalue_port",
-			"title":"Port",
-			"type":"Integer",
+			"title": "Port",
+			"type": "Integer",
 			"value": "21"
-		},{
+		}, {
 			"id": "urivalue_directory",
-			"title":"Directory",
-			"title_de":"Verzeichnis",
-			"type":"String",
+			"title": "Directory",
+			"title_de": "Verzeichnis",
+			"type": "String",
 			"value": ""
-		},{
+		}, {
 			"id": "uriparam_username",
-			"title":"Username",
-			"type":"String",
+			"title": "Username",
+			"type": "String",
 			"value": "",
 			"visible": true
-		},{
+		}, {
 			"id": "uriparam_password",
-			"title":"Password",
-			"title_de":"Passwort",
-			"type":"String",
+			"title": "Password",
+			"title_de": "Passwort",
+			"type": "String",
 			"value": ""
-		},{
+		}, {
 			"id": "uriparam_passiveMode",
-			"title":"Passive",
-			"type":"Boolean",
+			"title": "Passive",
+			"type": "Boolean",
 			"value": false
-		},{
+		}, {
 			"id": "uriparam_binary",
-			"title":"Binary",
-			"type":"Boolean",
+			"title": "Binary",
+			"type": "Boolean",
 			"value": true
-		},{
+		}, {
 			"id": "uriparam_consumer.delay",
-			"title":"Poll(milliSec)",
-			"type":"Integer",
+			"title": "Poll(milliSec)",
+			"type": "Integer",
 			"value": 1000
-		}]
-	},{ 
+		} ]
+	}, {
 		"name": "mailProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_mail",
-			"type":"String",
+			"type": "String",
 			"value": "Mail",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "${protocol}://${host}:${port}",
 			"visible": false
-    },{
-      "id" : "urivalue_protocol",
-      "type" : "Choice",
-      "title" : "Protocol",
-      "title_de" : "Protokoll",
-      "value" : "smtp",
-      "items" : [{
-        "id" : "c1",
-        "title" : "SMTP",
-        "value" : "smtp"
-      }, {
-        "id" : "c2",
-        "title" : "IMAP",
-        "value" : "imap"
-      }, {
-        "id" : "c3",
-        "title" : "POP3",
-        "value" : "pop3"
-      }, {
-        "id" : "c4",
-        "title" : "SMTPS",
-        "value" : "smtps"
-      }, {
-        "id" : "c5",
-        "title" : "IMAPS",
-        "value" : "imaps"
-      }, {
-        "id" : "c6",
-        "title" : "POP3S",
-        "value" : "pop3s"
-      }]
-		},{
+		}, {
+			"id": "urivalue_protocol",
+			"type": "Choice",
+			"title": "Protocol",
+			"title_de": "Protokoll",
+			"value": "smtp",
+			"items": [ {
+				"id": "c1",
+				"title": "SMTP",
+				"value": "smtp"
+			}, {
+				"id": "c2",
+				"title": "IMAP",
+				"value": "imap"
+			}, {
+				"id": "c3",
+				"title": "POP3",
+				"value": "pop3"
+			}, {
+				"id": "c4",
+				"title": "SMTPS",
+				"value": "smtps"
+			}, {
+				"id": "c5",
+				"title": "IMAPS",
+				"value": "imaps"
+			}, {
+				"id": "c6",
+				"title": "POP3S",
+				"value": "pop3s"
+			} ]
+		}, {
 			"id": "urivalue_host",
-			"title":"Host",
-			"type":"String",
+			"title": "Host",
+			"type": "String",
 			"value": "127.0.0.1",
 			"optional": false
-		},{
+		}, {
 			"id": "urivalue_port",
-			"title":"Port",
-			"type":"Integer",
+			"title": "Port",
+			"type": "Integer",
 			"value": ""
-		},{
+		}, {
 			"id": "uriparam_username",
-			"title":"Username",
-			"type":"String",
+			"title": "Username",
+			"type": "String",
 			"value": ""
-		},{
+		}, {
 			"id": "uriparam_password",
-			"title":"Password",
-			"title_de":"Passwort",
-			"type":"String",
+			"title": "Password",
+			"title_de": "Passwort",
+			"type": "String",
 			"value": ""
-		},{
+		}, {
 			"id": "uriparam_subject",
-			"title":"Subject",
-			"title_de":"Betreff",
-			"type":"String",
+			"title": "Subject",
+			"title_de": "Betreff",
+			"type": "String",
 			"value": ""
-		},{
+		}, {
 			"id": "uriparam_from",
-			"title":"From",
-			"title_de":"Von",
-			"type":"String",
+			"title": "From",
+			"title_de": "Von",
+			"type": "String",
 			"value": ""
-		},{
+		}, {
 			"id": "uriparam_to",
-			"title":"To",
-			"title_de":"An",
-			"type":"String",
+			"title": "To",
+			"title_de": "An",
+			"type": "String",
 			"value": ""
-		},{
+		}, {
 			"id": "uriparam_cc",
-			"title":"CC",
-			"type":"String",
+			"title": "CC",
+			"type": "String",
 			"value": ""
-		},{
+		}, {
 			"id": "uriparam_bcc",
-			"title":"BCC",
-			"type":"String",
+			"title": "BCC",
+			"type": "String",
 			"value": ""
-		},{
+		}, {
 			"id": "uriparam_contentType",
-			"title":"ContentType",
-			"type":"String",
+			"title": "ContentType",
+			"type": "String",
 			"value": "text/plain"
-		}]
-	},{ 
+		} ]
+	}, {
 		"name": "xmppProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_xmpp",
-			"type":"String",
+			"type": "String",
 			"value": "XMPP",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "${protocol}://${host}:${port}",
 			"visible": false
-    },{
-      "id" : "urivalue_protocol",
-      "type" : "String",
-      "title" : "Protocol",
-      "title_de" : "Protokoll",
+		}, {
+			"id": "urivalue_protocol",
+			"type": "String",
+			"title": "Protocol",
+			"title_de": "Protokoll",
 			"visible": false,
-      "value" : "xmpp"
-		},{
+			"value": "xmpp"
+		}, {
 			"id": "urivalue_host",
-			"title":"Hostname",
-			"type":"String",
+			"title": "Hostname",
+			"type": "String",
 			"value": "127.0.0.1",
 			"optional": false
-		},{
+		}, {
 			"id": "urivalue_port",
-			"title":"Port",
-			"type":"Integer",
+			"title": "Port",
+			"type": "Integer",
 			"value": "5222"
-		},{
+		}, {
 			"id": "uriparam_user",
-			"description":"User name (without server name). If not specified, anonymous login will be attempted.",
-			"description_de":"Benutzername (ohne Server-Namen). Wenn nicht angegeben, wird eine anonyme Anmeldung versucht.",
-			"title":"User",
-			"type":"String",
-			"value":null
-		},{
+			"description": "User name (without server name). If not specified, anonymous login will be attempted.",
+			"description_de": "Benutzername (ohne Server-Namen). Wenn nicht angegeben, wird eine anonyme Anmeldung versucht.",
+			"title": "User",
+			"type": "String",
+			"value": null
+		}, {
 			"id": "uriparam_password",
-			"title":"Password",
-			"title_de":"Passwort",
-			"type":"String",
+			"title": "Password",
+			"title_de": "Passwort",
+			"type": "String",
 			"value": null
-		},{
+		}, {
 			"id": "uriparam_room",
-			"description":"If this option is specified, the component will connect to MUC (Multi User Chat).<br/> Usually, the domain name for MUC is different from the login domain.<br/> For example, if you are superman@jabber.org and want to join the krypton room,<br/> then the room URL is krypton@conference.jabber.org. Note the conference part.<br/> It is not a requirement to provide the full room JID.<br/> If the room parameter does not contain the @ symbol,<br />the domain part will be discovered and added.",
-			"description_de":"Wenn dises Option angeben ist, wird eine Verbing zu einem MUC(Multi User Chat) aufgebaut.<br/>Üblicherweise ist der Domänenname für einen MUC anders als der Login-Domänenname.<br/>Zum Beispiel, wenn Sie superman@jabber.org sind und wollen den  Krypton Raum betreten,<br /> so ist die Raum URL krypton@conference.jabber.org.<br/>Der Konferenz Teil ist nicht erforderlich für die volle Raum JID.<br/> Wenn der Parameter 'Raum' das @ -Symbol enthält, wird der Domänenteil automatisch angehängt.",
-			"title":"Room",
-			"title_de":"Raum",
-			"type":"String",
-			"value":null 
-		},{
+			"description": "If this option is specified, the component will connect to MUC (Multi User Chat).<br/> Usually, the domain name for MUC is different from the login domain.<br/> For example, if you are superman@jabber.org and want to join the krypton room,<br/> then the room URL is krypton@conference.jabber.org. Note the conference part.<br/> It is not a requirement to provide the full room JID.<br/> If the room parameter does not contain the @ symbol,<br />the domain part will be discovered and added.",
+			"description_de": "Wenn dises Option angeben ist, wird eine Verbing zu einem MUC(Multi User Chat) aufgebaut.<br/>Üblicherweise ist der Domänenname für einen MUC anders als der Login-Domänenname.<br/>Zum Beispiel, wenn Sie superman@jabber.org sind und wollen den  Krypton Raum betreten,<br /> so ist die Raum URL krypton@conference.jabber.org.<br/>Der Konferenz Teil ist nicht erforderlich für die volle Raum JID.<br/> Wenn der Parameter 'Raum' das @ -Symbol enthält, wird der Domänenteil automatisch angehängt.",
+			"title": "Room",
+			"title_de": "Raum",
+			"type": "String",
+			"value": null
+		}, {
 			"id": "uriparam_participant",
-			"description":"JID (Jabber ID) of person to receive messages. Room parameter has precedence over participant.",
-			"description_de":"JID (Jabber ID) des Empfängers. Raum  Parameter hat Vorrang vor Teilnehmer",
-			"title":"Participant",
-			"title_de":"Teilnehmer",
-			"type":"String",
+			"description": "JID (Jabber ID) of person to receive messages. Room parameter has precedence over participant.",
+			"description_de": "JID (Jabber ID) des Empfängers. Raum  Parameter hat Vorrang vor Teilnehmer",
+			"title": "Participant",
+			"title_de": "Teilnehmer",
+			"type": "String",
 			"value": null
-		},{
+		}, {
 			"id": "uriparam_nickname",
-			"title":"Nickname",
-			"description":"Use nickname when joining room.<br/>If room is specified and nickname is not,<br/>user will be used for the nickname.",
-			"description_de":"Nickname im Raum.<br/> Wenn der Raum angegeben ist und der Nickname nicht,<br/>wird User verwendet",
-			"type":"String",
+			"title": "Nickname",
+			"description": "Use nickname when joining room.<br/>If room is specified and nickname is not,<br/>user will be used for the nickname.",
+			"description_de": "Nickname im Raum.<br/> Wenn der Raum angegeben ist und der Nickname nicht,<br/>wird User verwendet",
+			"type": "String",
 			"value": null
-		},{
+		}, {
 			"id": "uriparam_serviceName",
-			"title":"Servicename",
-			"description":"The name of the service you are connecting to.<br/> For Google Talk, this would be gmail.com.",
-			"description_de":"Der Name des Services, mit dem sie eine Verbindung herstellen.<br/> Für Google Talk, ist dies gmail.com.",
-			"type":"String",
+			"title": "Servicename",
+			"description": "The name of the service you are connecting to.<br/> For Google Talk, this would be gmail.com.",
+			"description_de": "Der Name des Services, mit dem sie eine Verbindung herstellen.<br/> Für Google Talk, ist dies gmail.com.",
+			"type": "String",
 			"value": null
-    },{
-      "id" : "uriparam_testConnectionOnStartup",
-      "title" : "Testconnection",
-			"type":"boolean",
+		}, {
+			"id": "uriparam_testConnectionOnStartup",
+			"title": "Testconnection",
+			"type": "boolean",
 			"value": false,
 			"visible": true
-		}]
-	},{ 
+		} ]
+	}, {
 		"name": "jmsProperties",
-		"properties": [{
+		"properties": [ {
 			"id": "type_jms",
-			"type":"String",
+			"type": "String",
 			"value": "JMS",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "${protocol}:${kind}:${destname}",
 			"visible": false
-    },{
-      "id" : "urivalue_protocol",
-      "type" : "String",
-      "title" : "Protocol",
-      "title_de" : "Protokoll",
+		}, {
+			"id": "urivalue_protocol",
+			"type": "String",
+			"title": "Protocol",
+			"title_de": "Protokoll",
 			"visible": false,
-      "value" : "activemq"
-		},{
+			"value": "activemq"
+		}, {
 			"id": "urivalue_kind",
 			"title": "Queue|Topic",
 			"readonly": false,
@@ -2133,59 +2147,59 @@
 			"value": "queue",
 			"items": "###jms_items",
 			"optional": false
-		},{
+		}, {
 			"id": "urivalue_destname",
-			"title":"Destinationname",
-			"title_de":"Zielname",
-			"type":"String",
-			"value": null ,
+			"title": "Destinationname",
+			"title_de": "Zielname",
+			"type": "String",
+			"value": null,
 			"optional": false
-    },{
-      "id" : "uriparam_useMessageIDAsCorrelationID",
-      "title" : "MessageID as CorrelationID",
-			"description":"Specifies whether JMSMessageID should always be used as JMSCorrelationID for InOut messages.",
-			"type":"boolean",
+		}, {
+			"id": "uriparam_useMessageIDAsCorrelationID",
+			"title": "MessageID as CorrelationID",
+			"description": "Specifies whether JMSMessageID should always be used as JMSCorrelationID for InOut messages.",
+			"type": "boolean",
 			"value": false,
 			"visible": true
-		}]
-	},{ 
+		} ]
+	}, {
 		"name": "http4Properties",
-		"properties": [{
+		"properties": [ {
 			"id": "endpoint_http4",
-			"type":"String",
+			"type": "String",
 			"value": "http4",
 			"visible": false,
-			"refToView": ["endpoint_type"]
-		},{
+			"refToView": [ "endpoint_type" ]
+		}, {
 			"id": "uri_template",
-			"type":"String",
+			"type": "String",
 			"value": "http4://${host}:${port}/${path}",
 			"visible": false
-		},{
+		}, {
 			"id": "urivalue_host",
-			"title":"Host",
-			"description_de":"Wenn die Uri dynamisch gesetzt wird,dann wird das Feld nicht benutzt, aber es muss ein Dummy-Wert angeben werden.",
-			"description":"If the URI is set dynamically, then the field is not used, but a dummy value is needed.",
-			"type":"String",
+			"title": "Host",
+			"description_de": "Wenn die Uri dynamisch gesetzt wird,dann wird das Feld nicht benutzt, aber es muss ein Dummy-Wert angeben werden.",
+			"description": "If the URI is set dynamically, then the field is not used, but a dummy value is needed.",
+			"type": "String",
 			"optional": false,
 			"value": "localhost",
 			"visible": true
-		},{
+		}, {
 			"id": "urivalue_port",
-			"title":"Port",
-			"type":"Integer",
+			"title": "Port",
+			"type": "Integer",
 			"value": "80",
 			"visible": true
-		},{
+		}, {
 			"id": "urivalue_path",
-			"title":"Path",
-			"type":"String",
+			"title": "Path",
+			"type": "String",
 			"value": "",
 			"visible": true
-		}]
-	},{
+		} ]
+	}, {
 		"name": "diagram",
-		"properties": [{
+		"properties": [ {
 			"id": "version",
 			"type": "String",
 			"title": "Version",
@@ -2194,7 +2208,7 @@
 			"description_de": "Setzt die Versionsnummer des Diagramms.",
 			"readonly": false,
 			"optional": true
-		},{
+		}, {
 			"id": "author",
 			"type": "String",
 			"title": "Author",
@@ -2204,7 +2218,7 @@
 			"description_de": "Name des Diagrammautors.",
 			"readonly": false,
 			"optional": true
-		},{
+		}, {
 			"id": "creationdate",
 			"type": "Date",
 			"title": "Creation date",
@@ -2215,7 +2229,7 @@
 			"readonly": false,
 			"optional": true,
 			"dateFormat": "j/m/y"
-		},{
+		}, {
 			"id": "modificationdate",
 			"type": "Date",
 			"title": "Modification date",
@@ -2226,18 +2240,18 @@
 			"readonly": false,
 			"optional": true,
 			"dateFormat": "j/m/y"
-		}]
-	}],
-	"stencils": [{
+		} ]
+	} ],
+	"stencils": [ {
 		"type": "node",
 		"id": "Camelrouting",
 		"title": "Camelrouting",
-		"groups": ["Diagram"],
-    "view" : "diagram.svg",
+		"groups": [ "Diagram" ],
+		"view": "diagram.svg",
 		"icon": "diagram.png",
 		"mayBeRoot": true,
 		"hide": true,
-		"propertyPackages": ["routeBaseAttributes", "diagram"],
+		"propertyPackages": [ "routeBaseAttributes", "diagram" ],
 		"roles": [],
 		"properties": [ {
 			"id": "camelcontext",
@@ -2250,15 +2264,15 @@
 			"readonly": false,
 			"popular": false,
 			"optional": true
-		},{
+		}, {
 			"id": "rpc",
-			"title":"RPC",
+			"title": "RPC",
 			"description_de": "Soll die Route über rpc erreichbar sein?",
 			"description": "Should be the route reachable via rpc?",
-			"type":"boolean",
+			"type": "boolean",
 			"value": false,
 			"visible": true
-		},{
+		}, {
 			"id": "rpcParameter",
 			"type": "Complex",
 			"title": "RPC-Parameter",
@@ -2266,7 +2280,7 @@
 			"visible": "rpc==true",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -2290,7 +2304,7 @@
 				"value": false,
 				"width": 50,
 				"optional": false
-			},{
+			}, {
 				"id": "type",
 				"name": "Type",
 				"name_de": "Typ",
@@ -2300,7 +2314,7 @@
 				"items": "###parametertype_items",
 				"width": 80,
 				"optional": true
-			},{
+			}, {
 				"id": "destination",
 				"name": "Destination",
 				"name_de": "Ziel",
@@ -2310,8 +2324,8 @@
 				"items": "###destination_items",
 				"width": 80,
 				"optional": true
-			}]
-		},{
+			} ]
+		}, {
 			"id": "rpcReturn",
 			"title": "RPC Return",
 			"readonly": false,
@@ -2322,22 +2336,22 @@
 				"id": "body",
 				"title": "Body",
 				"value": "body"
-			},{
+			}, {
 				"id": "headers",
 				"title": "Headers",
 				"value": "headers"
-			},{
+			}, {
 				"id": "bodyAndHeaders",
 				"title": "Body/Headers",
 				"value": "bodyAndHeaders"
-			},{
+			}, {
 				"id": "none",
 				"title": "-----",
 				"value": "none"
-			}],
+			} ],
 			"width": 80,
 			"optional": true
-		},{
+		}, {
 			"id": "rpcReturnHeaders",
 			"type": "Complex",
 			"title": "Return Headers",
@@ -2345,7 +2359,7 @@
 			"visible": "rpc==true && (rpcReturn=='headers' || rpcReturn=='bodyAndHeaders')",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -2353,34 +2367,34 @@
 				"value": "",
 				"width": 250,
 				"optional": false
-			}]
-		},{
+			} ]
+		}, {
 			"id": "websocket",
-			"title":"Websocket",
+			"title": "Websocket",
 			"description_de": "Sollen die Routen mit einem Websocket verwendet werden?",
 			"description": "Routes should be used with a WebSocket?",
-			"type":"boolean",
+			"type": "boolean",
 			"value": false,
 			"visible": true
-		},{
+		}, {
 			"id": "recvEndpoint",
-			"title_de":"Endpoint/empfangen",
-			"title":"Endpoint/receive",
-      "description_de": "Uri  des EmpfangsEndpoints(Fluß: Endpoint zum Websocket,empfangen). Normalerweise ein Direktendpoint.",
-      "description": "Uri of the ReceiveEndpoints(Flow: from endpoint to websocket,receive). Normally, a Direktendpoint.",
-			"type":"String",
+			"title_de": "Endpoint/empfangen",
+			"title": "Endpoint/receive",
+			"description_de": "Uri  des EmpfangsEndpoints(Fluß: Endpoint zum Websocket,empfangen). Normalerweise ein Direktendpoint.",
+			"description": "Uri of the ReceiveEndpoints(Flow: from endpoint to websocket,receive). Normally, a Direktendpoint.",
+			"type": "String",
 			"value": "",
 			"visible": "websocket==true"
-		},{
+		}, {
 			"id": "sendEndpoint",
-			"title_de":"Endpoint/senden",
-			"title":"Endpoint/send",
-      "description_de": "Uri  des SendeEndpoints(Fluß: vom  Websocket zum Endpoint,senden). Normalerweise ein Direktendpoint.",
-      "description": "Uri of the SendEndpoints(Flow: from websocket to endpoint,send). Normally, a Direktendpoint.",
-			"type":"String",
+			"title_de": "Endpoint/senden",
+			"title": "Endpoint/send",
+			"description_de": "Uri  des SendeEndpoints(Fluß: vom  Websocket zum Endpoint,senden). Normalerweise ein Direktendpoint.",
+			"description": "Uri of the SendEndpoints(Flow: from websocket to endpoint,send). Normally, a Direktendpoint.",
+			"type": "String",
 			"value": "",
 			"visible": "websocket==true"
-		},{
+		}, {
 			"id": "startableGroups",
 			"type": "MultiSelect",
 			"config": "permission:getAllRoles:name",
@@ -2391,7 +2405,7 @@
 			"value": "",
 			"visible": "rpc==true||websocket==true",
 			"length": "50"
-		},{
+		}, {
 			"id": "startableUsers",
 			"type": "MultiSelect",
 			"config": "auth:getUsers:userid",
@@ -2402,474 +2416,451 @@
 			"value": "",
 			"visible": "rpc==true||websocket==true",
 			"length": "50"
- 		},{
-      "id": "settings",
-      "type": "Complex",
-      "title": "Settings",
-      "title_de": "Einstellungen",
-      "value": "",
-      "readonly": false,
-      "optional": true,
-      "complexItems": [{
-        "id": "name",
-        "name": "Name",
-        "type": "String",
-        "filter": "[a-zA-Z0-9]",
-        "value": "",
-        "width": 150,
-        "optional": false
-      }, {
-        "id": "const",
-        "name": "Constant",
-        "name_de": "Konstante",
-        "type": "String",
-        "value": null,
-        "width": 150,
-        "optional": false
-      },{
-        "id": "source",
-        "name": "Source",
-        "name_de": "Quelle",
-        "readonly": false,
-        "type": "Choice",
-        "value": "const",
-        "items": "###settingssources_items",
-        "width": 80,
-        "optional": true
-      },{
-        "id": "destination",
-        "name": "Destination",
-        "name_de": "Ziel",
-        "readonly": false,
-        "type": "Choice",
-        "value": "property",
-        "items": "###destination2_items",
-        "width": 80,
-        "optional": true
-      }]
-		}]
-	},
-	{
-    "type" : "node",
-    "id" : "AsciidoctorEndpoint",
-    "title" : "Asciidoctor",
-    "view" : "asciidoctorendpoint.svg",
-    "icon" : "asciidoctorendpoint.png",
-    "groups" : [ "Endpoints A-L" ],
-		"groups_de": ["Endpunkte A-L"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "asciidoctorProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		}, {
+			"id": "settings",
+			"type": "Complex",
+			"title": "Settings",
+			"title_de": "Einstellungen",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"filter": "[a-zA-Z0-9]",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "const",
+				"name": "Constant",
+				"name_de": "Konstante",
+				"type": "String",
+				"value": null,
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "source",
+				"name": "Source",
+				"name_de": "Quelle",
+				"readonly": false,
+				"type": "Choice",
+				"value": "const",
+				"items": "###settingssources_items",
+				"width": 80,
+				"optional": true
+			}, {
+				"id": "destination",
+				"name": "Destination",
+				"name_de": "Ziel",
+				"readonly": false,
+				"type": "Choice",
+				"value": "property",
+				"items": "###destination2_items",
+				"width": 80,
+				"optional": true
+			} ]
+		} ]
 	}, {
-    "type" : "node",
-    "id" : "DatabaseEndpoint",
-    "title" : "Database",
-    "view" : "database.svg",
-    "icon" : "databaseendpoint.png",
-    "groups" : [ "Endpoints A-L" ],
-		"groups_de": ["Endpunkte A-L"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "databaseProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "AsciidoctorEndpoint",
+		"title": "Asciidoctor",
+		"view": "asciidoctorendpoint.svg",
+		"icon": "asciidoctorendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "asciidoctorProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "DirectEndpoint",
-    "title" : "Direct",
-    "view" : "directendpoint.svg",
-    "icon" : "directendpoint.png",
-    "groups" : [ "Endpoints A-L" ],
-		"groups_de": ["Endpunkte A-L"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "directProperties", "rpcProperties2" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "DatabaseEndpoint",
+		"title": "Database",
+		"view": "database.svg",
+		"icon": "databaseendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "databaseProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "Endpoint",
-    "title" : "Generic",
-    "view" : "endpoint.svg",
-    "icon" : "genericendpoint.png",
-    "groups" : [ "Endpoints A-L" ],
-		"groups_de": ["Endpunkte A-L"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "genericEndpointProperties"],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "DirectEndpoint",
+		"title": "Direct",
+		"view": "directendpoint.svg",
+		"icon": "directendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "directProperties", "rpcProperties2" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "EventBusEndpoint",
-    "title" : "EventBus",
-    "view" : "eventbusendpoint.svg",
-    "icon" : "eventbusendpoint.png",
-    "groups" : [ "Endpoints A-L" ],
-		"groups_de": ["Endpunkte A-L"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "eventbusProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "Endpoint",
+		"title": "Generic",
+		"view": "endpoint.svg",
+		"icon": "genericendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "genericEndpointProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "FileEndpoint",
-    "title" : "File",
-    "view" : "fileendpoint.svg",
-    "icon" : "fileendpoint.png",
-    "groups" : [ "Endpoints A-L" ],
-		"groups_de": ["Endpunkte A-L"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "fileProperties", "commonFileProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "EventBusEndpoint",
+		"title": "EventBus",
+		"view": "eventbusendpoint.svg",
+		"icon": "eventbusendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "eventbusProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "FtpEndpoint",
-    "title" : "FTP",
-    "view" : "ftpendpoint.svg",
-    "icon" : "ftpendpoint.png",
-    "groups" : [ "Endpoints A-L" ],
-		"groups_de": ["Endpunkte A-L"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "ftpProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "FileEndpoint",
+		"title": "File",
+		"view": "fileendpoint.svg",
+		"icon": "fileendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "fileProperties", "commonFileProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "GroovyTemplateEndpoint",
-    "title" : "GroovyTemplate",
-    "view" : "groovytemplateendpoint.svg",
-    "icon" : "groovytemplateendpoint.png",
-    "groups" : [ "Endpoints A-L" ],
-		"groups_de": ["Endpunkte A-L"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "groovyTemplateProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "FtpEndpoint",
+		"title": "FTP",
+		"view": "ftpendpoint.svg",
+		"icon": "ftpendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "ftpProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-		"id" : "Http4Endpoint",
-		"title" : "Http4",
-    "view" : "http4endpoint.svg",
-    "icon" : "http4endpoint.png",
-    "groups" : [ "Endpoints A-L" ],
-		"groups_de": ["Endpunkte A-L"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "http4Properties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "TemplateEndpoint",
+		"title": "Template",
+		"view": "templateendpoint.svg",
+		"icon": "templateendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "templateProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "JMSEndpoint",
-    "title" : "JMS",
-    "view" : "jmsendpoint.svg",
-    "icon" : "jmsendpoint.png",
-    "groups" : [ "Endpoints A-L" ],
-		"groups_de": ["Endpunkte A-L"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "jmsProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "Http4Endpoint",
+		"title": "Http4",
+		"view": "http4endpoint.svg",
+		"icon": "http4endpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "http4Properties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "MailEndpoint",
-    "title" : "Mail",
-    "view" : "mailendpoint.svg",
-    "icon" : "mailendpoint.png",
-    "groups" : [ "Endpoints M-Z" ],
-		"groups_de": ["Endpunkte M-Z"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "mailProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "JMSEndpoint",
+		"title": "JMS",
+		"view": "jmsendpoint.svg",
+		"icon": "jmsendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "jmsProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "RepoEndpoint",
-    "title" : "Repo",
-    "view" : "repoendpoint.svg",
-    "icon" : "repoendpoint.png",
-    "groups" : [ "Endpoints M-Z" ],
-		"groups_de": ["Endpunkte M-Z"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "repoProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "MailEndpoint",
+		"title": "Mail",
+		"view": "mailendpoint.svg",
+		"icon": "mailendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "mailProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "SedaEndpoint",
-    "title" : "Seda",
-    "view" : "sedaendpoint.svg",
-    "icon" : "sedaendpoint.png",
-    "groups" : [ "Endpoints M-Z" ],
-		"groups_de": ["Endpunkte M-Z"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "sedaProperties", "sedaVmProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "RepoEndpoint",
+		"title": "Repo",
+		"view": "repoendpoint.svg",
+		"icon": "repoendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "repoProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "SQLEndpoint",
-    "title" : "SQL",
-    "view" : "sqlendpoint.svg",
-    "icon" : "sqlendpoint.png",
-    "groups" : [ "Endpoints M-Z" ],
-		"groups_de": ["Endpunkte M-Z"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "sqlProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "SedaEndpoint",
+		"title": "Seda",
+		"view": "sedaendpoint.svg",
+		"icon": "sedaendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "sedaProperties", "sedaVmProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "WampEndpoint",
-    "title" : "Wamp",
-    "view" : "wampendpoint.svg",
-    "icon" : "wampendpoint.png",
-    "groups" : [ "Endpoints M-Z" ],
-		"groups_de": ["Endpunkte M-Z"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties",  "rpcProperties", "publishProperties", "permissionProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "SQLEndpoint",
+		"title": "SQL",
+		"view": "sqlendpoint.svg",
+		"icon": "sqlendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "sqlProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "WebsocketEndpoint",
-    "title" : "Websocket",
-    "view" : "websocketendpoint.svg",
-    "icon" : "websocketendpoint.png",
-    "groups" : [ "Endpoints M-Z" ],
-		"groups_de": ["Endpunkte M-Z"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "websocketProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "WampEndpoint",
+		"title": "Wamp",
+		"view": "wampendpoint.svg",
+		"icon": "wampendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties", "rpcProperties", "publishProperties", "permissionProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "XDocReportEndpoint",
-    "title" : "XDocReport",
-    "view" : "xdocreportendpoint.svg",
-    "icon" : "xdocreportendpoint.png",
-    "groups" : [ "Endpoints M-Z" ],
-		"groups_de": ["Endpunkte M-Z"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "xdocreportProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "WebsocketEndpoint",
+		"title": "Websocket",
+		"view": "websocketendpoint.svg",
+		"icon": "websocketendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "websocketProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "XmppEndpoint",
-    "title" : "Xmpp",
-    "view" : "xmppendpoint.svg",
-    "icon" : "xmppendpoint.png",
-    "groups" : [ "Endpoints M-Z" ],
-		"groups_de": ["Endpunkte M-Z"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "xmppProperties", "extraParamsProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "XDocReportEndpoint",
+		"title": "XDocReport",
+		"view": "xdocreportendpoint.svg",
+		"icon": "xdocreportendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "xdocreportProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
-    "type" : "node",
-    "id" : "VMEndpoint",
-    "title" : "VM",
-    "view" : "vmendpoint.svg",
-    "icon" : "vmendpoint.png",
-    "groups" : [ "Endpoints M-Z" ],
-		"groups_de": ["Endpunkte M-Z"],
-    "propertyPackages" : [ "endpointProperties", "baseProperties", "colorProperties", "vmProperties", "sedaVmProperties" ],
-    "roles" : [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+		"type": "node",
+		"id": "XmppEndpoint",
+		"title": "Xmpp",
+		"view": "xmppendpoint.svg",
+		"icon": "xmppendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "xmppProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "VMEndpoint",
+		"title": "VM",
+		"view": "vmendpoint.svg",
+		"icon": "vmendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "vmProperties", "sedaVmProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
 		"id": "Delay",
 		"title": "Delay",
-		"groups": ["Control Flow"],
-    "view" : "delay.svg",
+		"groups": [ "Control Flow" ],
+		"view": "delay.svg",
 		"icon": "delay.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "delayProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties", "delayProperties" ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd" ]
+	}, {
 		"type": "node",
 		"id": "Transacted",
 		"title": "Transacted",
-		"groups": ["Control Flow"],
-    "view" : "transacted.svg",
+		"groups": [ "Control Flow" ],
+		"view": "transacted.svg",
 		"icon": "transacted.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "transactedProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties", "transactedProperties" ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd" ]
+	}, {
 		"type": "node",
 		"id": "Rollback",
 		"title": "Rollback",
-		"groups": ["Control Flow"],
-    "view" : "rollback.svg",
+		"groups": [ "Control Flow" ],
+		"view": "rollback.svg",
 		"icon": "rollback.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "rollbackProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties", "rollbackProperties" ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd" ]
+	}, {
 		"type": "node",
 		"id": "onException",
 		"title": "onException",
-		"groups": ["Control Flow"],
-    "view" : "exception.svg",
+		"groups": [ "Control Flow" ],
+		"view": "exception.svg",
 		"icon": "exception.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "onExceptionProperties"],
-		"roles": ["all", "OneOutRole", "simpleConnectionStart"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties", "onExceptionProperties" ],
+		"roles": [ "all", "OneOutRole", "simpleConnectionStart" ]
+	}, {
 		"type": "node",
 		"id": "SetHeader",
 		"title": "SetHeader",
-		"groups": ["Transformation"],
-    "view" : "setheader.svg",
+		"groups": [ "Transformation" ],
+		"view": "setheader.svg",
 		"icon": "setheader.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "headersProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties", "headersProperties" ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph" ]
+	}, {
 		"type": "node",
 		"id": "SetProperty",
 		"title": "SetProperty",
-		"groups": ["Transformation"],
-    "view" : "setproperty.svg",
+		"groups": [ "Transformation" ],
+		"view": "setproperty.svg",
 		"icon": "setproperty.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "propertiesProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties", "propertiesProperties" ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph" ]
+	}, {
 		"type": "node",
 		"id": "Marshal",
 		"title": "Marshal",
-		"groups": ["Transformation"],
-    "view" : "marshal.svg",
+		"groups": [ "Transformation" ],
+		"view": "marshal.svg",
 		"icon": "marshal.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "marshalProperties"],
-		"properties": [{
+		"propertyPackages": [ "baseProperties", "colorProperties", "marshalProperties" ],
+		"properties": [ {
 			"id": "func",
-			"value": "marshal" ,
+			"value": "marshal",
 			"visible": false
-		}],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph"]
-	},
-	{
+		} ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph" ]
+	}, {
 		"type": "node",
 		"id": "Unmarshal",
 		"title": "Unmarshal",
-		"groups": ["Transformation"],
-    "view" : "unmarshal.svg",
+		"groups": [ "Transformation" ],
+		"view": "unmarshal.svg",
 		"icon": "marshal.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "marshalProperties"],
-		"properties": [{
+		"propertyPackages": [ "baseProperties", "colorProperties", "marshalProperties" ],
+		"properties": [ {
 			"id": "func",
-			"value": "unmarshal" ,
+			"value": "unmarshal",
 			"visible": false
-		}],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph"]
-	},
-	{
+		} ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph" ]
+	}, {
 		"type": "node",
 		"id": "ConvertBodyTo",
 		"title": "ConvertBodyTo",
-		"groups": ["Transformation"],
-    "view" : "convertBodyTo.svg",
+		"groups": [ "Transformation" ],
+		"view": "convertBodyTo.svg",
 		"icon": "marshal.png",
-		"propertyPackages": ["baseProperties", "colorProperties"],
-		"properties": [{
+		"propertyPackages": [ "baseProperties", "colorProperties" ],
+		"properties": [ {
 			"id": "type",
-			"title":"Type",
-			"value": "java.lang.String" ,
+			"title": "Type",
+			"value": "java.lang.String",
 			"optional": false,
-			"type":"String",
+			"type": "String",
 			"visible": true
-		},{
+		}, {
 			"id": "charset",
-			"title":"Charset",
-			"title_de":"Zeichensatz",
-			"value": "utf-8" ,
+			"title": "Charset",
+			"title_de": "Zeichensatz",
+			"value": "utf-8",
 			"optional": false,
-			"type":"String",
+			"type": "String",
 			"visible": true
-		}],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "TransformerMorph"]
-	},
-	{
+		} ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "TransformerMorph" ]
+	}, {
 		"type": "node",
 		"id": "Processor",
 		"title": "Processor",
-		"groups": ["Transformation"],
-    "view" : "processor.svg",
+		"groups": [ "Transformation" ],
+		"view": "processor.svg",
 		"icon": "processor.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "processorProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties", "processorProperties" ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph" ]
+	}, {
 		"type": "node",
 		"id": "Datamapper",
 		"title": "Datamapper",
-		"groups": ["Transformation"],
-    "view" : "datamapper.svg",
+		"groups": [ "Transformation" ],
+		"view": "datamapper.svg",
 		"icon": "datamapper.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "datamapperProperties"],
-		"roles": ["all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties", "datamapperProperties" ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd", "TransformerMorph" ]
+	}, {
 		"type": "node",
 		"id": "MessageFilter",
 		"title": "Filter",
-		"groups": ["Routing"],
-    "view" : "messagefilter.svg",
+		"groups": [ "Routing" ],
+		"view": "messagefilter.svg",
 		"icon": "messagefilter.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "messageFilterProperties"],
-		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "RoutingMorph"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties", "messageFilterProperties" ],
+		"roles": [ "all", "simpleConnectionStart", "simpleConnectionEnd", "RoutingMorph" ]
+	}, {
 		"type": "node",
 		"id": "MessageChoice",
 		"title": "Choice",
-		"groups": ["Routing"],
-    "view" : "messagechoice.svg",
+		"groups": [ "Routing" ],
+		"view": "messagechoice.svg",
 		"icon": "messagechoice.png",
-		"propertyPackages": ["baseProperties", "colorProperties"],
-		"properties": [
-		],
-		"roles": ["all", "whenConnectionStart", "whenConnectionEnd", "simpleConnectionEnd", "RoutingMorph"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties" ],
+		"properties": [],
+		"roles": [ "all", "whenConnectionStart", "whenConnectionEnd", "simpleConnectionEnd", "RoutingMorph" ]
+	}, {
 		"type": "node",
 		"id": "MessageAggregate",
 		"title": "Aggregate",
-		"groups": ["Routing"],
-    "view" : "messageaggregate.svg",
+		"groups": [ "Routing" ],
+		"view": "messageaggregate.svg",
 		"icon": "messageaggregate.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "aggregateProperties"],
-		"properties": [
-		],
-		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "RoutingMorph"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties", "aggregateProperties" ],
+		"properties": [],
+		"roles": [ "all", "simpleConnectionStart", "simpleConnectionEnd", "RoutingMorph" ]
+	}, {
 		"type": "node",
 		"id": "MessageSplitter",
 		"title": "Splitter",
-		"groups": ["Routing"],
-    "view" : "messagesplitter.svg",
+		"groups": [ "Routing" ],
+		"view": "messagesplitter.svg",
 		"icon": "messagesplitter.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "splitterProperties"],
-		"properties": [
-		],
-		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "RoutingMorph"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties", "splitterProperties" ],
+		"properties": [],
+		"roles": [ "all", "simpleConnectionStart", "simpleConnectionEnd", "RoutingMorph" ]
+	}, {
 		"type": "node",
 		"id": "Recipientlist",
 		"title": "Recipientlist",
-		"groups": ["Routing"],
-    "view" : "recipientlist.svg",
+		"groups": [ "Routing" ],
+		"view": "recipientlist.svg",
 		"icon": "recipientlist.png",
-		"propertyPackages": ["baseProperties", "colorProperties", "recipientListProperties"],
-		"properties": [
-		],
-		"roles": ["all", "simpleConnectionStart", "simpleConnectionEnd", "RoutingMorph"]
-	},
-	{
+		"propertyPackages": [ "baseProperties", "colorProperties", "recipientListProperties" ],
+		"properties": [],
+		"roles": [ "all", "simpleConnectionStart", "simpleConnectionEnd", "RoutingMorph" ]
+	}, {
 		"type": "edge",
 		"id": "SimpleConnection",
 		"title": "Connection",
 		"title_de": "Verbindung",
-		"groups": ["Connecting Objects"],
-		"groups_de": ["Konnektoren"],
+		"groups": [ "Connecting Objects" ],
+		"groups_de": [ "Konnektoren" ],
 		"view": "simpleconnection.svg",
 		"icon": "simpleconnection.png",
-		"propertyPackages": ["baseProperties"],
-		"layout": [{
+		"propertyPackages": [ "baseProperties" ],
+		"layout": [ {
 			"type": "layout.bpmn2_0.sequenceflow"
-		}],
-		"roles": ["all", "Connection", "ConnectingObjectsMorph"],
-		"properties": [
-		]
-	},
-	{
+		} ],
+		"roles": [ "all", "Connection", "ConnectingObjectsMorph" ],
+		"properties": []
+	}, {
 		"type": "node",
 		"id": "Group",
 		"title": "Group",
 		"title_de": "Gruppe",
-		"groups": ["Containers"],
+		"groups": [ "Containers" ],
 		"description": "A container for defining a hierarchy of form controls.",
 		"view": "new_group.svg",
 		"icon": "new_group.png",
-		"roles": [ "container"],
+		"roles": [ "container" ],
 
-		"layout": [{
+		"layout": [ {
 			"type": "layout.rows",
 			"marginTop": 30,
 			"marginLeft": 30,
 			"spacingX": 30,
 			"spacingY": 30,
-			"exclude": ["http://b3mn.org/stencilset/xforms#Label"]
-		}],
-		"properties": [{
+			"exclude": [ "http://b3mn.org/stencilset/xforms#Label" ]
+		} ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -2880,233 +2871,231 @@
 			"optional": true,
 			"refToView": "",
 			"length": "30"
-		}]
-	},
-	{
+		} ]
+	}, {
 		"type": "edge",
 		"id": "WhenConnection",
 		"title": "When Connection",
 		"title_de": "Wenn Verbindung",
-		"groups": ["Connecting Objects"],
-		"groups_de": ["Konnektoren"],
+		"groups": [ "Connecting Objects" ],
+		"groups_de": [ "Konnektoren" ],
 		"view": "whenconnection.svg",
 		"icon": "whenconnection.png",
-		"propertyPackages": ["baseProperties", "expressionProperties"],
-		"roles": ["all", "Connection", "ConnectingObjectsMorph"],
-		"properties": [{
-      "id" : "defaultflow",
-      "type" : "Choice",
-      "title" : "Default flow",
-      "title_de" : "Standardfluß",
-      "value" : "none",
-      "popular" : true,
-      "items" : [ {
-        "id" : "none",
-        "title" : "No",
-        "title_de" : "Nein",
-        "value" : "none"
-      }, {
-        "id" : "default",
-        "title" : "Yes",
-        "title_de" : "Ja",
-        "value" : "default",
-        "icon" : "type.default.png",
-        "refToView" : "default"
-      }]
-		}]
-	}],
-  "rules" : {
-    "cardinalityRules" : [ {
-      "role" : "OneInOutRole",
-      "incomingEdges" : [ {
-        "role" : "Connection",
-        "maximum" : 1
-      } ],
-      "outgoingEdges" : [ {
-        "role" : "Connection",
-        "maximum" : 1
-      } ]
-    }, {
-      "role" : "OneOutRole",
-      "incomingEdges" : [ {
-        "role" : "Connection",
-        "maximum" : 0
-      } ],
-      "outgoingEdges" : [ {
-        "role" : "Connection",
-        "maximum" : 1
-      } ]
-    }, {
-      "role" : "MessageChoice",
-      "incomingEdges" : [ {
-        "role" : "Connection",
-        "maximum" : 1
-      } ]
-    }, {
-      "role" : "MessageAggregate",
-      "outgoingEdges" : [ {
-        "role" : "Connection",
-        "maximum" : 1
-      } ]
-    } 
-		],
-    "connectionRules" : [ {
-      "role" : "SimpleConnection",
-      "connects" : [ {
-        "from" : "simpleConnectionStart",
-        "to" : [ "simpleConnectionEnd" ]
-      } ]
-    },{
-      "role" : "WhenConnection",
-      "connects" : [ {
-        "from" : "whenConnectionStart",
-        "to" : [ "whenConnectionEnd" ]
-      }]
-    }],
-    "containmentRules" : [ {
-      "role" : "Camelrouting",
-      "contains" : [ "all", "container" ]
-    }, {
-      "role" : "container",
-      "contains" : [ "all" ]
-    }, {
-      "role" : "SubProcess",
-      "contains" : [ "simpleConnectionStart", "simpleConnectionEnd", "EventSubprocess", "TextAnnotation" ]
-    }, {
-      "role" : "EventSubProcess",
-      "contains" : [ "simpleConnectionStart", "simpleConnectionEnd", "TextAnnotation" ]
-    } ],
-    "morphingRules" : [ {
-      "role" : "EndpointsMorph",
-      "baseMorphs" : [ "GenericEndpoint" ],
-      "preserveBounds" : true
-    }, {
-      "role" : "TransformerMorph",
-      "baseMorphs" : [ "Processor" ],
-      "preserveBounds" : true
-    }, {
-      "role" : "RoutingMorph",
-      "baseMorphs" : [ "MessageChoice" ]
-    }]
-  },
-  "definitions":{
+		"propertyPackages": [ "baseProperties", "expressionProperties" ],
+		"roles": [ "all", "Connection", "ConnectingObjectsMorph" ],
+		"properties": [ {
+			"id": "defaultflow",
+			"type": "Choice",
+			"title": "Default flow",
+			"title_de": "Standardfluß",
+			"value": "none",
+			"popular": true,
+			"items": [ {
+				"id": "none",
+				"title": "No",
+				"title_de": "Nein",
+				"value": "none"
+			}, {
+				"id": "default",
+				"title": "Yes",
+				"title_de": "Ja",
+				"value": "default",
+				"icon": "type.default.png",
+				"refToView": "default"
+			} ]
+		} ]
+	} ],
+	"rules": {
+		"cardinalityRules": [ {
+			"role": "OneInOutRole",
+			"incomingEdges": [ {
+				"role": "Connection",
+				"maximum": 1
+			} ],
+			"outgoingEdges": [ {
+				"role": "Connection",
+				"maximum": 1
+			} ]
+		}, {
+			"role": "OneOutRole",
+			"incomingEdges": [ {
+				"role": "Connection",
+				"maximum": 0
+			} ],
+			"outgoingEdges": [ {
+				"role": "Connection",
+				"maximum": 1
+			} ]
+		}, {
+			"role": "MessageChoice",
+			"incomingEdges": [ {
+				"role": "Connection",
+				"maximum": 1
+			} ]
+		}, {
+			"role": "MessageAggregate",
+			"outgoingEdges": [ {
+				"role": "Connection",
+				"maximum": 1
+			} ]
+		} ],
+		"connectionRules": [ {
+			"role": "SimpleConnection",
+			"connects": [ {
+				"from": "simpleConnectionStart",
+				"to": [ "simpleConnectionEnd" ]
+			} ]
+		}, {
+			"role": "WhenConnection",
+			"connects": [ {
+				"from": "whenConnectionStart",
+				"to": [ "whenConnectionEnd" ]
+			} ]
+		} ],
+		"containmentRules": [ {
+			"role": "Camelrouting",
+			"contains": [ "all", "container" ]
+		}, {
+			"role": "container",
+			"contains": [ "all" ]
+		}, {
+			"role": "SubProcess",
+			"contains": [ "simpleConnectionStart", "simpleConnectionEnd", "EventSubprocess", "TextAnnotation" ]
+		}, {
+			"role": "EventSubProcess",
+			"contains": [ "simpleConnectionStart", "simpleConnectionEnd", "TextAnnotation" ]
+		} ],
+		"morphingRules": [ {
+			"role": "EndpointsMorph",
+			"baseMorphs": [ "GenericEndpoint" ],
+			"preserveBounds": true
+		}, {
+			"role": "TransformerMorph",
+			"baseMorphs": [ "Processor" ],
+			"preserveBounds": true
+		}, {
+			"role": "RoutingMorph",
+			"baseMorphs": [ "MessageChoice" ]
+		} ]
+	},
+	"definitions": {
 		"language_items": [ {
 			"id": "groovy",
 			"title": "Groovy",
 			"value": "groovy"
-		},{
+		}, {
 			"id": "constant",
 			"title": "Constant",
 			"value": "constant"
-		},{
+		}, {
 			"id": "header",
 			"title": "Header",
 			"value": "header"
-		},{
+		}, {
 			"id": "property",
 			"title": "Property",
 			"value": "property"
-		},{
+		}, {
 			"id": "tokenize",
 			"title": "Tokenize",
 			"value": "tokenize"
-		},{
+		}, {
 			"id": "bean",
 			"title": "Bean",
 			"value": "bean"
-		},{
+		}, {
 			"id": "simple",
 			"title": "Simple",
 			"value": "simple"
-		},{
+		}, {
 			"id": "javascript",
 			"title": "Javascrip",
 			"value": "javascript"
-		},{
+		}, {
 			"id": "el",
 			"title": "El",
 			"value": "el"
-		},{
+		}, {
 			"id": "sql",
 			"title": "SQL",
 			"value": "sql"
-		},{
+		}, {
 			"id": "xpath",
 			"title": "XPath",
 			"value": "xpath"
-		},{
+		}, {
 			"id": "mvel",
 			"title": "Mvel",
 			"value": "mvel"
-		},{
+		}, {
 			"id": "ognl",
 			"title": "Ognl",
 			"value": "ognl"
-		}],
+		} ],
 		"parametertype_items": [ {
 			"id": "string",
 			"title": "String",
 			"value": "string"
-		},{
+		}, {
 			"id": "integer",
 			"title": "Integer",
 			"value": "integer"
-		},{
+		}, {
 			"id": "double",
 			"title": "Double",
 			"value": "double"
-		},{
+		}, {
 			"id": "boolean",
 			"title": "Boolean",
 			"value": "boolean"
-		},{
+		}, {
 			"id": "list",
 			"title": "List",
 			"value": "list"
-		},{
+		}, {
 			"id": "map",
 			"title": "Map",
 			"value": "map"
-		}],
+		} ],
 		"settingssources_items": [ {
-      "id": "const",
-      "title": "Const",
-      "value": "const"
-    },{
-      "id": "branding",
-      "title": "Branding",
-      "value": "branding"
-    }],
+			"id": "const",
+			"title": "Const",
+			"value": "const"
+		}, {
+			"id": "branding",
+			"title": "Branding",
+			"value": "branding"
+		} ],
 		"destination_items": [ {
 			"id": "property",
 			"title": "Property",
 			"value": "property"
-		},{
+		}, {
 			"id": "header",
 			"title": "Header",
 			"value": "header"
-		},{
+		}, {
 			"id": "body",
 			"title": "Body",
 			"value": "body"
-		}],
-    "destination2_items": [ {
-      "id": "property",
-      "title": "Property",
-      "value": "property"
-    },{
-      "id": "header",
-      "title": "Header",
-      "value": "header"
-		}],
-    "jms_items": [ {
-      "id": "queue",
-      "title": "Queue",
-      "value": "queue"
-    },{
-      "id": "topic",
-      "title": "Topic",
-      "value": "topic"
-		}]
-  }
+		} ],
+		"destination2_items": [ {
+			"id": "property",
+			"title": "Property",
+			"value": "property"
+		}, {
+			"id": "header",
+			"title": "Header",
+			"value": "header"
+		} ],
+		"jms_items": [ {
+			"id": "queue",
+			"title": "Queue",
+			"value": "queue"
+		}, {
+			"id": "topic",
+			"title": "Topic",
+			"value": "topic"
+		} ]
+	}
 }
