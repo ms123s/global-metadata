@@ -21,7 +21,7 @@
       </defs>
       <g transform="scale(0.8,0.8) translate(0,0)">
         <text font-weight="bold" id="text2985" letter-spacing="0" line-height="125%" word-spacing="0" x="1.803" y="25.921" font-family="Arial" font-size="32.682">
-          <tspan x="1.803" y="25.921" id="tspan2987">HTTP4</tspan>
+          <tspan x="1.803" y="25.921" id="tspan2987">HTTP</tspan>
         </text>
       </g>
       <line x1="1" y1="33" x2="42" y2="33" stroke="black" stroke-width="1" marker-end="url(#end)" />

@@ -19,28 +19,8 @@
           <path id="arrowhead2" d="M 0 0 L 10 5 L 0 10 L 0 0" fill="black" stroke="black" />
         </marker>
       </defs>
-      <g transform="scale(0.45,0.45)">
-    <ellipse
-       id="path5480"
-       style="fill:none;stroke:#000000;stroke-width:2.286057;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       cx="29.19471"
-       cy="31.577925"
-       rx="27.79575"
-       ry="27.452942" />
-    <ellipse
-       id="path5482"
-       style="fill:#000000;stroke:#666666;stroke-width:1.66298175;stroke-linecap:square;stroke-linejoin:round"
-       cx="18.44804"
-       cy="32.527287"
-       rx="8.1564207"
-       ry="7.3278227" />
-    <ellipse
-       id="path5484"
-       style="color:#000000;fill:#000000;stroke:#666666;stroke-width:1.62435281;stroke-linecap:square;stroke-linejoin:round"
-       cx="40.837734"
-       cy="31.698681"
-       rx="7.7614365"
-       ry="7.3471389" />
+      <g transform="scale(1.4,1.4)">
+  			<path d="M5.68,19.74C7.16,20.95 9,21.75 11,21.95V19.93C9.54,19.75 8.21,19.17 7.1,18.31M13,19.93V21.95C15,21.75 16.84,20.95 18.32,19.74L16.89,18.31C15.79,19.17 14.46,19.75 13,19.93M18.31,16.9L19.74,18.33C20.95,16.85 21.75,15 21.95,13H19.93C19.75,14.46 19.17,15.79 18.31,16.9M15,12A3,3 0 0,0 12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12M4.07,13H2.05C2.25,15 3.05,16.84 4.26,18.32L5.69,16.89C4.83,15.79 4.25,14.46 4.07,13M5.69,7.1L4.26,5.68C3.05,7.16 2.25,9 2.05,11H4.07C4.25,9.54 4.83,8.21 5.69,7.1M19.93,11H21.95C21.75,9 20.95,7.16 19.74,5.68L18.31,7.1C19.17,8.21 19.75,9.54 19.93,11M18.32,4.26C16.84,3.05 15,2.25 13,2.05V4.07C14.46,4.25 15.79,4.83 16.9,5.69M11,4.07V2.05C9,2.25 7.16,3.05 5.68,4.26L7.1,5.69C8.21,4.83 9.54,4.25 11,4.07Z" />
       </g>
       <line x1="1" y1="33" x2="42" y2="33" stroke="black" stroke-width="1" marker-end="url(#end)" />
       <rect x="52" y="24" width="27" height="18" rx="1" ry="1" fill="#ffffff" stroke="#000000" stroke-width="0.5" />
