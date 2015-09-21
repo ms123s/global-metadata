@@ -852,6 +852,34 @@
 			"readonly": false,
 		} ]
 	}, {
+		"name": "activitiProperties",
+		"properties": [ {
+			"id": "type_activiti",
+			"type": "String",
+			"value": "Workflow",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "activiti:${process}:${task}",
+			"visible": false
+		}, {
+			"id": "urivalue_process",
+			"title": "Workflow",
+			"type": "String",
+			"value": "",
+			"optional": false,
+			"visible": true
+		}, {
+			"id": "urivalue_task",
+			"title": "Task",
+			"type": "String",
+			"value": "",
+			"optional": false,
+			"visible": true
+		} ]
+	}, {
 		"name": "asciidoctorProperties",
 		"properties": [ {
 			"id": "type_asciidoctor",
@@ -2462,6 +2490,16 @@
 				"optional": true
 			} ]
 		} ]
+	}, {
+		"type": "node",
+		"id": "ActivitiEndpoint",
+		"title": "Workflow",
+		"view": "activitiendpoint.svg",
+		"icon": "activitiendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "activitiProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
 		"id": "AsciidoctorEndpoint",
