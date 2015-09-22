@@ -947,7 +947,7 @@
 		}, {
 			"id": "uri_template",
 			"type": "String",
-			"value": "swdata:${operation}",
+			"value": "localdata:${operation}",
 			"visible": false
 		}, {
 			"id": "urivalue_operation",
@@ -2492,16 +2492,6 @@
 		} ]
 	}, {
 		"type": "node",
-		"id": "ActivitiEndpoint",
-		"title": "Workflow",
-		"view": "activitiendpoint.svg",
-		"icon": "activitiendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "activitiProperties", "extraParamsProperties" ],
-		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-		"type": "node",
 		"id": "AsciidoctorEndpoint",
 		"title": "Asciidoctor",
 		"view": "asciidoctorendpoint.svg",
@@ -2642,6 +2632,16 @@
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
+		"id": "VMEndpoint",
+		"title": "VM",
+		"view": "vmendpoint.svg",
+		"icon": "vmendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "vmProperties", "sedaVmProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
 		"id": "WampEndpoint",
 		"title": "Wamp",
 		"view": "wampendpoint.svg",
@@ -2662,6 +2662,16 @@
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
+		"id": "ActivitiEndpoint",
+		"title": "Workflow",
+		"view": "activitiendpoint.svg",
+		"icon": "activitiendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "activitiProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
 		"id": "XDocReportEndpoint",
 		"title": "XDocReport",
 		"view": "xdocreportendpoint.svg",
@@ -2679,16 +2689,6 @@
 		"groups": [ "Endpoints M-Z" ],
 		"groups_de": [ "Endpunkte M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "xmppProperties", "extraParamsProperties" ],
-		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-		"type": "node",
-		"id": "VMEndpoint",
-		"title": "VM",
-		"view": "vmendpoint.svg",
-		"icon": "vmendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "vmProperties", "sedaVmProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
