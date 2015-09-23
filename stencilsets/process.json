@@ -500,10 +500,6 @@
         "id" : "camel",
         "title" : "camel",
         "value" : "camel"
-      }, {
-        "id" : "xxxx",
-        "title" : "xxxx",
-        "value" : "xxxx"
       } ]
     },{
       "id" : "servicetaskclass",
@@ -540,7 +536,7 @@
       "id" : "servicetaskfields",
       "type" : "Complex",
       "title" : "Class fields",
-      "value": "{ \"totalCount\": 1, \"items\": [ { \"servicetask_field_name\": \"camelBehaviorClass\", \"servicetask_field_value\": \"org.ms123.common.camel.components.CamelBehaviorDefaultImpl\", \"servicetask_field_expression\": \"\" } ] }",
+      "value": "{ \"totalCount\": 1, \"items\": [ { \"servicetask_field_name\": \"camelBehaviorClass\", \"servicetask_field_value\": \"org.ms123.common.camel.components.activiti.CamelBehaviorDefaultImpl\", \"servicetask_field_expression\": \"\" } ] }",
       "description" : "Field extensions",
 			"include": true,
       "popular" : true,

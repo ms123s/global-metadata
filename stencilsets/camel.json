@@ -937,11 +937,11 @@
 			"value": null
 		} ]
 	}, {
-		"name": "databaseProperties",
+		"name": "localdataProperties",
 		"properties": [ {
-			"id": "type_database",
+			"id": "type_localdata",
 			"type": "String",
-			"value": "Database",
+			"value": "Localdata",
 			"visible": false,
 			"refToView": [ "endpoint_type" ]
 		}, {
@@ -2502,16 +2502,6 @@
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
-		"id": "DatabaseEndpoint",
-		"title": "Database",
-		"view": "database.svg",
-		"icon": "databaseendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "databaseProperties", "extraParamsProperties" ],
-		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-		"type": "node",
 		"id": "DirectEndpoint",
 		"title": "Direct",
 		"view": "directendpoint.svg",
@@ -2562,6 +2552,16 @@
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
+		"id": "LocaldataEndpoint",
+		"title": "Localdata",
+		"view": "localdataendpoint.svg",
+		"icon": "databaseendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "localdataProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
 		"id": "TemplateEndpoint",
 		"title": "Template",
 		"view": "templateendpoint.svg",
@@ -2573,7 +2573,7 @@
 	}, {
 		"type": "node",
 		"id": "Http4Endpoint",
-		"title": "Http4",
+		"title": "Http",
 		"view": "http4endpoint.svg",
 		"icon": "http4endpoint.png",
 		"groups": [ "Endpoints A-L" ],
