@@ -71,76 +71,6 @@
 			"stroke": true
 		} ]
 	}, {
-		"name": "camelbase",
-		"properties": [ {
-			"id": "variablesmapping",
-			"type": "Complex",
-			"config": {
-				"helperTree": [ "sw.form" ]
-			},
-			"title": "Parameter-Mapping",
-			"title_de": "Variablen Zuordnung",
-			"value": "",
-			"description": "Mapping processvariables to camel",
-			"description_de": "Zuordnung von Prozessvariablen zu camel",
-			"readonly": false,
-			"optional": true,
-			"complexItems": [ {
-				"id": "processvar",
-				"name_de": "Prozessvariable",
-				"name": "Processvariable",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			}, {
-				"id": "camelvar",
-				"name_de": "Camelvariable",
-				"name": "Camelvariable",
-				"type": "String",
-				"value": "",
-				"width": 150,
-				"optional": false
-			}, {
-				"id": "destination",
-				"type": "Choice",
-				"name": "Destination",
-				"name_de": "Ziel",
-				"value": "body",
-				"width": 80,
-				"optional": false,
-				"items": [ {
-					"id": "body",
-					"title": "Body",
-					"title_de": "Body",
-					"value": "body"
-				}, {
-					"id": "header",
-					"title": "Header",
-					"title_de": "Header",
-					"value": "header"
-				}, {
-					"id": "property",
-					"title": "Property",
-					"title_de": "Property",
-					"value": "property"
-				}, {
-					"id": "routing",
-					"title": "Routing",
-					"title_de": "Routing",
-					"value": "routing"
-				} ]
-			} ]
-		}, {
-			"id": "resultvar",
-			"type": "String",
-			"title": "Result",
-			"title_de": "Ergebnis",
-			"value": "camelbody",
-			"optional": true,
-			"description": "Process variable name to store the camel body."
-		} ]
-	}, {
 		"name": "processid",
 		"properties": [ {
 			"id": "processid",
@@ -992,7 +922,103 @@
 			"id": "el$activiti$variablesmapping",
 			"type": "Complex",
 			"config": {
-				"helperTree": [ "sw.form" ]
+				"helperTree": [ "sw.filter" ]
+			},
+			"title": "Parameter-Mapping",
+			"title_de": "Variablen Zuordnung",
+			"value": "",
+			"description": "Mapping processvariables to filter",
+			"description_de": "Zuordnung von Prozessvariablen zum Filter",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "processvar",
+				"name_de": "Prozessvariable",
+				"name": "Processvariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "filtervar",
+				"name_de": "Filtervariable",
+				"name": "Filtervariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			} ]
+		}, {
+			"id": "el$activiti$listname",
+			"type": "String",
+			"title": "Listname",
+			"title_de": "Listenname",
+			"value": "",
+			"description": "Name of the generated list",
+			"description_de": "Name des erzeugten Liste",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		}, {
+			"id": "tasktype",
+			"type": "String",
+			"value": "Filter",
+			"include": false,
+			"optional": false
+		} ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "loopcharacteristics", "activity" ]
+	}, {
+		"type": "node",
+		"id": "CamelTask",
+		"title": "Camel Task",
+		"title_de": "Camelaufgabe",
+		"groups": [ "Activities" ],
+		"groups_de": [ "Aktivitäten" ],
+		"description": "A camel task is a task that executes  a route.",
+		"view": "activity/cameltask.svg",
+		"icon": "activity/list/type.camel.png",
+		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
+		"properties": [ {
+			"id": "el$activiti$filtername",
+			"type": "ResourceSelector",
+			"config": {
+				"type": "sw.camel",
+				"prefix": ""
+			},
+			"title": "Filtername",
+			"title_de": "Filtername",
+			"value": "",
+			"description": "Filtername",
+			"description_de": "Name des Filters",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		}, {
+			"id": "namespace",
+			"type": "String",
+			"title": "Namespace",
+			"value": "-",
+			"description": "Namespace",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		}, {
+			"id": "el$activiti$filtervarname",
+			"type": "String",
+			"title": "Filter Varname",
+			"title_de": "Filter Varname",
+			"value": "",
+			"description": "Name of a processvariable that points to the filter",
+			"description_de": "Name einer Prozessvariablen die auf den  Filter zeigt",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		}, {
+			"id": "el$activiti$variablesmapping",
+			"type": "Complex",
+			"config": {
+				"helperTree": [ "sw.camel"],
+				"namespace": "${namespace}"
 			},
 			"title": "Parameter-Mapping",
 			"title_de": "Variablen Zuordnung",
