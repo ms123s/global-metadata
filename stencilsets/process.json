@@ -4,15 +4,71 @@
 	"description": "This is the BPMN 2.0 stencil set specification.",
 	"description_de": "Dies ist die BPMN 2.0 Stencilset Spezifikation.",
 	"propertyPackages": [ {
-		"name": "elementbase",
-		"properties": [ {
+		"name": "baseProperties",
+		"properties": [{
 			"id": "overrideid",
 			"type": "String",
 			"title": "Id",
 			"value": null,
-			"include": true,
+			"include": "stencil !=  'bpmndiagram' && stencil != 'textannotation'",
 			"description": "Unique identifier of the element.",
+			"description_de": "Die eindeutige Id des elements.",
 			"popular": true
+		}, {
+			"id": "name",
+			"type": "String",
+			"title": "Name",
+			"value": "",
+			"description": "The descriptive name of the BPMN element.",
+			"description_de": "Bezeichnung des BPMN-Elementes.",
+			"readonly": false,
+			"optional": true,
+			"length": "64",
+			"wrapLines": true,
+			"refToView": "text_name"
+		}, {
+			"id": "documentation",
+			"type": "Text",
+			"title": "Documentation",
+			"title_de": "Dokumentation",
+			"value": "",
+			"description": "This attribute is used to annotate the BPMN element, such as descriptions and other documentation.",
+			"description_de": "Der Modellierer kann weiteren Text zur Dokumentation des BPMN-Elementes einfügen.",
+			"readonly": false,
+			"optional": true,
+			"length": "",
+			"wrapLines": true,
+			"popular": true
+		} ]
+	}, {
+		"name": "colorProperties",
+		"properties": [{
+			"id": "bgcolor",
+			"type": "Color",
+			"title": "BackgroundColor",
+			"title_de": "Hintergrundfarbe",
+			"value": "#ffffff",
+			"description": "Change the background color for a visual differentiation.",
+			"description_de": "Verändern Sie die Hintergrundfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": "fill_el",
+			"fill": true,
+			"include": "stencil != 'sequenceflow' && stencil != 'textannotation'",
+			"stroke": false
+		},{
+			"id": "bordercolor",
+			"type": "Color",
+			"title": "Border color",
+			"title_de": "Rahmenfarbe",
+			"value": "#000000",
+			"description": "Change the border color for a visual differentiation.",
+			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
+			"readonly": false,
+			"optional": false,
+			"refToView": [ "callActivity", "bg_frame", "frame", "hand", "finger", "finger1", "finger2", "thumb", "top", "rect", "row", "col", "paper", "line1", "line2", "line3", "line4", "userTaskpath", "userTaskpath2", "userTaskpath3", "userTaskpath4", "userTaskcircle", "teethForeground", "ringForeground", "teethBackground", "ringBackground", "receiveTaskpath", "instantiate", "sendTaskpath", "sendTaskpath2", "path2396", "parallelpath", "sequentialpath", "compensationpath", "path9", "crosspath", "crosspath2", "arrowhead", "conditional", "default" ],
+			"fill": false,
+			"stroke": true
 		} ]
 	}, {
 		"name": "camelbase",
@@ -85,34 +141,6 @@
 			"description": "Process variable name to store the camel body."
 		} ]
 	}, {
-		"name": "baseAttributes",
-		"properties": [{
-			"id": "name",
-			"type": "String",
-			"title": "Name",
-			"value": "",
-			"description": "The descriptive name of the BPMN element.",
-			"description_de": "Bezeichnung des BPMN-Elementes.",
-			"readonly": false,
-			"optional": true,
-			"length": "64",
-			"wrapLines": true,
-			"refToView": "text_name"
-		}, {
-			"id": "documentation",
-			"type": "Text",
-			"title": "Documentation",
-			"title_de": "Dokumentation",
-			"value": "",
-			"description": "This attribute is used to annotate the BPMN element, such as descriptions and other documentation.",
-			"description_de": "Der Modellierer kann weiteren Text zur Dokumentation des BPMN-Elementes einfügen.",
-			"readonly": false,
-			"optional": true,
-			"length": "",
-			"wrapLines": true,
-			"popular": true
-		} ]
-	}, {
 		"name": "processid",
 		"properties": [ {
 			"id": "processid",
@@ -125,38 +153,6 @@
 			"include": false,
 			"optional": true,
 			"wraplines": false
-		} ]
-	}, {
-		"name": "bgColor",
-		"properties": [ {
-			"id": "bgcolor",
-			"type": "Color",
-			"title": "BackgroundColor",
-			"title_de": "Hintergrundfarbe",
-			"value": "#ffffff",
-			"description": "Change the background color for a visual differentiation.",
-			"description_de": "Verändern Sie die Hintergrundfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": "fill_el",
-			"fill": true,
-			"stroke": false
-		} ]
-	}, {
-		"name": "borderColor",
-		"properties": [ {
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"description": "Change the border color for a visual differentiation.",
-			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": [ "callActivity", "bg_frame", "hand", "finger", "finger1", "finger2", "thumb", "top", "rect", "row", "col", "paper", "line1", "line2", "line3", "line4", "userTaskpath", "userTaskpath2", "userTaskpath3", "userTaskpath4", "userTaskcircle", "teethForeground", "ringForeground", "teethBackground", "ringBackground", "receiveTaskpath", "instantiate", "sendTaskpath", "sendTaskpath2", "path2396", "parallelpath", "sequentialpath", "compensationpath" ],
-			"fill": false,
-			"stroke": true
 		} ]
 	}, {
 		"name": "boundaryevent",
@@ -736,7 +732,7 @@
 		"icon": "diagram.png",
 		"mayBeRoot": true,
 		"hide": true,
-		"propertyPackages": [ "baseAttributes", "diagram" ],
+		"propertyPackages": [ "baseProperties", "diagram" ],
 		"roles": [],
 		"properties": [ {
 			"id": "orientation",
@@ -817,7 +813,7 @@
 		"icon": "activity/list/type.receive.png",
 		"groups": [ "Activities" ],
 		"groups_de": [ "Aktivitäten" ],
-		"propertyPackages": [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
 	}, {
 		"type": "node",
@@ -829,7 +825,7 @@
 		"icon": "activity/list/type.service.png",
 		"groups": [ "Activities" ],
 		"groups_de": [ "Aktivitäten" ],
-		"propertyPackages": [ "elementbase", "baseAttributes", "bgColor", "borderColor", "servicetaskbase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "servicetaskbase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
 	}, {
 		"type": "node",
@@ -841,7 +837,7 @@
 		"icon": "activity/list/subprocess.png",
 		"groups": [ "Structural" ],
 		"groups_de": [ "Struktur" ],
-		"propertyPackages": [ "elementbase", "baseAttributes", "bgColor", "borderColor", "callactivitybase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "callactivitybase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
 		"roles": [ "sequence_start", "Activity", "sequence_end", "all" ]
 	}, {
 		"type": "node",
@@ -853,7 +849,7 @@
 		"icon": "activity/expanded.subprocess.png",
 		"groups": [ "Structural" ],
 		"groups_de": [ "Struktur" ],
-		"propertyPackages": [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase", "loopcharacteristics" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "executionlistenersbase", "loopcharacteristics" ],
 		"roles": [ "sequence_start", "Activity", "sequence_end", "all" ]
 	}, {
 		"type": "node",
@@ -865,7 +861,7 @@
 		"icon": "activity/event.subprocess.png",
 		"groups": [ "Structural" ],
 		"groups_de": [ "Struktur" ],
-		"propertyPackages": [ "elementbase", "baseAttributes", "bgColor", "borderColor", "asynchronousbase", "executionlistenersbase" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "executionlistenersbase" ],
 		"_roles": [ "sequence_start", "Activity", "sequence_end", "all" ]
 	}, {
 		"type": "node",
@@ -954,7 +950,7 @@
 			"include": false,
 			"optional": false
 		} ],
-		"propertyPackages": [ "elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics", "activity" ]
+		"propertyPackages": [ "baseProperties", "colorProperties", "loopcharacteristics", "activity" ]
 	}, {
 		"type": "node",
 		"id": "FilterTask",
@@ -1040,7 +1036,7 @@
 			"include": false,
 			"optional": false
 		} ],
-		"propertyPackages": [ "elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics", "activity" ]
+		"propertyPackages": [ "baseProperties", "colorProperties", "loopcharacteristics", "activity" ]
 	}, {
 		"type": "node",
 		"id": "RulesTask",
@@ -1124,7 +1120,7 @@
 			"include": false,
 			"optional": false
 		} ],
-		"propertyPackages": [ "elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics", "activity" ]
+		"propertyPackages": [ "baseProperties", "colorProperties", "loopcharacteristics", "activity" ]
 	}, {
 		"type": "node",
 		"id": "ScriptTask",
@@ -1137,19 +1133,6 @@
 		"icon": "activity/list/type.script.png",
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"description": "Change the border color for a visual differentiation.",
-			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": [ "callActivity", "bg_frame", "hand", "finger", "finger1", "finger2", "thumb", "top", "rect", "row", "col", "paper", "line1", "line2", "line3", "line4", "userTaskpath", "userTaskpath2", "userTaskpath3", "userTaskpath4", "userTaskcircle", "teethForeground", "ringForeground", "teethBackground", "ringBackground", "receiveTaskpath", "instantiate", "sendTaskpath", "sendTaskpath2", "path2396", "parallelpath", "sequentialpath", "compensationpath" ],
-			"fill": false,
-			"stroke": true
-		}, {
 			"id": "el$activiti$script",
 			"config": {
 				"mode": "text/x-groovy",
@@ -1171,7 +1154,7 @@
 			"include": false,
 			"optional": false
 		} ],
-		"propertyPackages": [ "elementbase", "baseAttributes", "borderColor", "bgColor", "asynchronousbase", "loopcharacteristics", "activity" ]
+		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "loopcharacteristics", "activity" ]
 	}, {
 		"type": "node",
 		"id": "DocumentTask",
@@ -1244,7 +1227,7 @@
 			"include": false,
 			"optional": false
 		} ],
-		"propertyPackages": [ "elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics", "activity" ]
+		"propertyPackages": [ "baseProperties", "colorProperties", "loopcharacteristics", "activity" ]
 	}, {
 		"type": "node",
 		"id": "SendTask",
@@ -1348,7 +1331,7 @@
 			"optional": false,
 			"value": "Send"
 		} ],
-		"propertyPackages": [ "elementbase", "baseAttributes", "borderColor", "bgColor", "loopcharacteristics", "activity" ]
+		"propertyPackages": [ "baseProperties", "colorProperties", "loopcharacteristics", "activity" ]
 	}, {
 		"type": "node",
 		"id": "ExclusiveGateway",
@@ -1359,7 +1342,7 @@
 		"groups": [ "Gateways" ],
 		"view": "gateway/exclusive.databased.svg",
 		"icon": "gateway/exclusive.databased.png",
-		"propertyPackages": [ "elementbase", "baseAttributes", "bgColor", "processid" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "processid" ],
 		"properties": [ {
 			"id": "gatewaytype",
 			"type": "String",
@@ -1392,19 +1375,6 @@
 			"include": false,
 			"optional": false,
 			"refToView": "cross"
-		}, {
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"description": "Change the border color for a visual differentiation.",
-			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": [ "bg_frame", "crosspath", "crosspath2" ],
-			"fill": false,
-			"stroke": true
 		} ],
 		"roles": [ "all", "sequence_start", "sequence_end", "GatewaysMorph" ]
 	}, {
@@ -1417,7 +1387,7 @@
 		"description_de": "Bei einer verzweigenden Verwendung werden sämtliche nachfolgenden Zweige gleichzeitig ausgeführt. Bei der Zusammenführung wird auf alle eingehenden Kanten gewartet, bevor der Prozessfluss fortgesetzt wird.",
 		"view": "gateway/parallel.svg",
 		"icon": "gateway/parallel.png",
-		"propertyPackages": [ "elementbase", "baseAttributes", "bgColor", "processid" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "processid" ],
 		"properties": [ {
 			"id": "gatewaytype",
 			"type": "String",
@@ -1429,19 +1399,6 @@
 			"include": false,
 			"optional": false,
 			"length": ""
-		}, {
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"description": "Change the border color for a visual differentiation.",
-			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": [ "bg_frame", "path9" ],
-			"fill": false,
-			"stroke": true
 		} ],
 		"roles": [ "all", "sequence_start", "sequence_end", "GatewaysMorph" ]
 	}, {
@@ -1454,7 +1411,7 @@
 		"description_de": "Bei einer inclusiven Verwendung werden einige der nachfolgenden Zweige ausgeführt.",
 		"view": "gateway/inclusive.svg",
 		"icon": "gateway/inclusive.png",
-		"propertyPackages": [ "elementbase", "baseAttributes", "bgColor", "processid" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "processid" ],
 		"properties": [ {
 			"id": "gatewaytype",
 			"type": "String",
@@ -1466,19 +1423,6 @@
 			"include": false,
 			"optional": false,
 			"length": ""
-		}, {
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"description": "Change the border color for a visual differentiation.",
-			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": [ "bg_frame", "path9" ],
-			"fill": false,
-			"stroke": true
 		} ],
 		"roles": [ "all", "sequence_start", "sequence_end", "GatewaysMorph" ]
 	}, {
@@ -1492,7 +1436,7 @@
 		"description_de": "Hier beginnt der normale Prozessfluss durch eine nicht näher beschriebene Auslösebedingung.",
 		"view": "startevent/none.svg",
 		"icon": "startevent/none.png",
-		"propertyPackages": [ "elementbase", "baseAttributes", "formAttributes", "bgColor", "borderColor", "processid" ],
+		"propertyPackages": [ "baseProperties", "formAttributes", "colorProperties", "processid" ],
 		"roles": [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ],
 		"properties": [ {
 			"id": "trigger",
@@ -1521,7 +1465,7 @@
 		"icon": "startevent/timer.png",
 		"groups": [ "Events" ],
 		"groups_de": [ "Ereignisse" ],
-		"propertyPackages": [ "borderColor", "elementbase", "baseattributes", "timerdefinition", "executionlistenersbase" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "timerdefinition", "executionlistenersbase" ],
 		"roles": [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ]
 	}, {
 		"type": "node",
@@ -1532,7 +1476,7 @@
 		"icon": "startevent/message.png",
 		"groups": [ "Events" ],
 		"groups_de": [ "Ereignisse" ],
-		"propertyPackages": [ "elementbase", "baseattributes", "messagerefdefinition", "executionlistenersbase" ],
+		"propertyPackages": [ "baseProperties", "messagerefdefinition", "executionlistenersbase" ],
 		"roles": [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ]
 	}, {
 		"type": "node",
@@ -1544,7 +1488,7 @@
 		"icon": "catching/timer.png",
 		"groups": [ "Events" ],
 		"groups_de": [ "Ereignisse" ],
-		"propertyPackages": [ "borderColor", "elementbase", "baseattributes", "timerdefinition", "executionlistenersbase" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "timerdefinition", "executionlistenersbase" ],
 		"roles": [ "sequence_start", "sequence_end", "CatchEventsMorph", "all" ]
 	}, {
 		"type": "node",
@@ -1557,7 +1501,7 @@
 		"description_de": "Untypisiertes Endereignis, welches ein normales Ende eines Prozesses markiert.",
 		"view": "endevent/none.svg",
 		"icon": "endevent/none.png",
-		"propertyPackages": [ "elementbase", "baseAttributes", "bgColor", "borderColor" ],
+		"propertyPackages": [ "baseProperties", "colorProperties" ],
 		"roles": [ "all", "sequence_end", "Endevents_all", "EndEventsMorph" ],
 		"properties": [ {
 			"id": "trigger",
@@ -1581,25 +1525,11 @@
 		"groups_de": [ "Konnektoren" ],
 		"view": "connector/sequenceflow.svg",
 		"icon": "connector/sequenceflow.png",
-		"propertyPackages": [ "elementbase", "baseAttributes", "sequenceflowbase" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "sequenceflowbase" ],
 		"layout": [ {
 			"type": "layout.bpmn2_0.sequenceflow"
 		} ],
-		"roles": [ "all", "ConnectingObjectsMorph" ],
-		"properties": [ {
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"description": "Change the border color for a visual differentiation.",
-			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": [ "bg_frame", "arrowhead", "conditional", "default" ],
-			"fill": false,
-			"stroke": true
-		} ]
+		"roles": [ "all", "ConnectingObjectsMorph" ]
 	}, {
 		"type": "edge",
 		"id": "Association",
@@ -1612,7 +1542,7 @@
 		"layout": [ {
 			"type": "layout.bpmn2_0.sequenceflow"
 		} ],
-		"propertyPackages": [ "borderColor", "elementbase", "baseattributes" ],
+		"propertyPackages": [ "baseProperties" ],
 		"roles": [ "ConnectingObjectsMorph", "all" ]
 	}, {
 		"type": "node",
@@ -1631,7 +1561,7 @@
 			"orientation": "vertical",
 			"align": "southeast"
 		} ],
-		"propertyPackages": [ "baseAttributes" ],
+		"propertyPackages": [ "baseProperties", "colorProperties" ],
 		"properties": [ {
 			"id": "text",
 			"type": "String",
@@ -1644,19 +1574,6 @@
 			"refToView": "text",
 			"length": "",
 			"wrapLines": true
-		}, {
-			"id": "bordercolor",
-			"type": "Color",
-			"title": "Border color",
-			"title_de": "Rahmenfarbe",
-			"value": "#000000",
-			"description": "Change the border color for a visual differentiation.",
-			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
-			"readonly": false,
-			"optional": false,
-			"refToView": [ "frame" ],
-			"fill": false,
-			"stroke": true
 		} ],
 		"roles": [ "all" ]
 	} ],

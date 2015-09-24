@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+	shape-rendering="crispEdges"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:oryx="http://www.b3mn.org/oryx"
    width="40"
@@ -27,7 +28,7 @@
     	stroke="black" 
     	fill="url(#background) white" 
     	stroke-width="1"
-    	style="stroke-dasharray: 5.5, 3" />
+    	xtyle="stroke-dasharray: 5.5, 3" />
     	
     <circle 
     	id="frame2_non_interrupting" 
@@ -39,7 +40,7 @@
     	stroke-width="1"
     	style="stroke-dasharray: 4.5, 3" />
     
-    <circle id="frame" cx="16" cy="16" r="15" stroke="black" fill="none" stroke-width="1"/>
+    <circle id="frame" cx="16" cy="16" r="15" stroke="black" fill="none" stroke-width="0"/>
     <circle id="frame2" cx="16" cy="16" r="12" stroke="black" fill="none" stroke-width="1"/>
     
     <circle id="circle" cx="16" cy="16" r="10" stroke="black" fill="none" stroke-width="1"/>
