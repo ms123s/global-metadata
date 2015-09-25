@@ -101,7 +101,7 @@
 	}, {
 		"name": "formAttributes",
 		"properties": [ {
-			"id": "attr$activiti$formKey",
+			"id": "formKey",
 			"type": "ResourceSelector",
 			"config": {
 				"type": "sw.form",
@@ -805,7 +805,7 @@
 		"icon": "activity/list/type.user.png",
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
-			"id": "attr$activiti$formKey",
+			"id": "formKey",
 			"type": "ResourceSelector",
 			"config": {
 				"type": "sw.form",
@@ -820,7 +820,7 @@
 			"optional": true,
 			"length": "50"
 		}, {
-			"id": "el$activiti$variablesmapping",
+			"id": "variablesmapping",
 			"type": "Complex",
 			"config": {
 				"helperTree": [ "sw.form" ]
@@ -850,7 +850,7 @@
 				"optional": false
 			} ]
 		}, {
-			"id": "attr$activiti$candidateGroups",
+			"id": "candidateGroups",
 			"type": "MultiSelect",
 			"config": "permission:getAllRoles:name",
 			"title": "Candidategroup",
@@ -862,7 +862,7 @@
 			"optional": false,
 			"length": "50"
 		}, {
-			"id": "attr$activiti$assignee",
+			"id": "assignee",
 			"type": "ModuleSelector",
 			"config": "user:userid",
 			"title": "Assignee",
@@ -893,7 +893,7 @@
 		"icon": "activity/list/type.filter.png",
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
-			"id": "el$activiti$filtername",
+			"id": "filtername",
 			"type": "ResourceSelector",
 			"config": {
 				"type": "sw.filter",
@@ -908,7 +908,7 @@
 			"optional": true,
 			"length": "50"
 		}, {
-			"id": "el$activiti$filtervarname",
+			"id": "filtervarname",
 			"type": "String",
 			"title": "Filter Varname",
 			"title_de": "Filter Varname",
@@ -919,7 +919,7 @@
 			"optional": true,
 			"length": "50"
 		}, {
-			"id": "el$activiti$variablesmapping",
+			"id": "variablesmapping",
 			"type": "Complex",
 			"config": {
 				"helperTree": [ "sw.filter" ]
@@ -949,7 +949,7 @@
 				"optional": false
 			} ]
 		}, {
-			"id": "el$activiti$listname",
+			"id": "listname",
 			"type": "String",
 			"title": "Listname",
 			"title_de": "Listenname",
@@ -979,7 +979,7 @@
 		"icon": "activity/list/type.camel.png",
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
-			"id": "el$activiti$filtername",
+			"id": "filtername",
 			"type": "ResourceSelector",
 			"config": {
 				"type": "sw.camel",
@@ -1003,7 +1003,7 @@
 			"optional": true,
 			"length": "50"
 		}, {
-			"id": "el$activiti$filtervarname",
+			"id": "filtervarname",
 			"type": "String",
 			"title": "Filter Varname",
 			"title_de": "Filter Varname",
@@ -1014,7 +1014,7 @@
 			"optional": true,
 			"length": "50"
 		}, {
-			"id": "el$activiti$variablesmapping",
+			"id": "variablesmapping",
 			"type": "Complex",
 			"config": {
 				"helperTree": [ "sw.camel"],
@@ -1045,7 +1045,7 @@
 				"optional": false
 			} ]
 		}, {
-			"id": "el$activiti$listname",
+			"id": "listname",
 			"type": "String",
 			"title": "Listname",
 			"title_de": "Listenname",
@@ -1075,7 +1075,7 @@
 		"icon": "activity/list/type.business.rule.png",
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
-			"id": "el$activiti$rulesname",
+			"id": "rulesname",
 			"type": "ResourceSelector",
 			"config": {
 				"type": "sw.rule",
@@ -1090,7 +1090,7 @@
 			"optional": true,
 			"length": "50"
 		}, {
-			"id": "el$activiti$variablesmapping",
+			"id": "variablesmapping",
 			"type": "Complex",
 			"config": {
 				"helperTree": [ "sw.form" ]
@@ -1159,7 +1159,7 @@
 		"icon": "activity/list/type.script.png",
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
-			"id": "el$activiti$script",
+			"id": "script",
 			"config": {
 				"mode": "text/x-groovy",
 				"helper": "ProcessScript"
@@ -1193,7 +1193,7 @@
 		"icon": "activity/list/type.document.png",
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
-			"id": "el$activiti$documentname",
+			"id": "documentname",
 			"type": "ResourceSelector",
 			"config": {
 				"type": "sw.document",
@@ -1208,7 +1208,7 @@
 			"optional": true,
 			"length": "50"
 		}, {
-			"id": "el$activiti$filename",
+			"id": "filename",
 			"type": "String",
 			"title": "Filename",
 			"title_de": "Filename(ohne Pfad)",
@@ -1217,7 +1217,7 @@
 			"optional": true,
 			"length": "50"
 		}, {
-			"id": "el$activiti$variablesmapping",
+			"id": "variablesmapping",
 			"type": "Complex",
 			"config": {
 				"helperTree": [ "sw.form" ]
@@ -1266,7 +1266,7 @@
 		"icon": "activity/list/type.send.png",
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
-			"id": "attr$activiti$type",
+			"id": "type",
 			"type": "String",
 			"title": "type",
 			"title_de": "type",
@@ -1277,7 +1277,7 @@
 			"optional": false,
 			"length": "50"
 		}, {
-			"id": "el$activiti$to",
+			"id": "to",
 			"type": "String",
 			"title": "To",
 			"title_de": "An",
@@ -1288,7 +1288,7 @@
 			"optional": false,
 			"length": "50"
 		}, {
-			"id": "el$activiti$cc",
+			"id": "cc",
 			"type": "String",
 			"title": "Cc",
 			"title_de": "Cc",
@@ -1299,7 +1299,7 @@
 			"optional": true,
 			"length": "50"
 		}, {
-			"id": "el$activiti$bcc",
+			"id": "bcc",
 			"type": "String",
 			"title": "Bcc",
 			"title_de": "Bcc",
@@ -1310,7 +1310,7 @@
 			"optional": true,
 			"length": "50"
 		}, {
-			"id": "el$activiti$from",
+			"id": "from",
 			"type": "String",
 			"title": "From",
 			"title_de": "Von",
@@ -1321,7 +1321,7 @@
 			"optional": false,
 			"length": "50"
 		}, {
-			"id": "el$activiti$subject",
+			"id": "subject",
 			"type": "String",
 			"title": "Subject",
 			"title_de": "Betreff",
@@ -1332,7 +1332,7 @@
 			"optional": false,
 			"length": "50"
 		}, {
-			"id": "el$activiti$attachment",
+			"id": "attachment",
 			"type": "String",
 			"title": "Attachment",
 			"title_de": "Anhang",
@@ -1341,7 +1341,7 @@
 			"optional": true,
 			"length": "90"
 		}, {
-			"id": "el$activiti$text",
+			"id": "text",
 			"type": "Text",
 			"title": "Body",
 			"title_de": "Inhalt",
