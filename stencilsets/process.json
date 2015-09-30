@@ -901,7 +901,7 @@
 			},
 			"title": "Filtername",
 			"title_de": "Filtername",
-			"value": "",
+			"value": null,
 			"description": "Filtername",
 			"description_de": "Name des Filters",
 			"readonly": false,
@@ -910,11 +910,11 @@
 		}, {
 			"id": "filtervarname",
 			"type": "String",
-			"title": "Filter Varname",
-			"title_de": "Filter Varname",
-			"value": "",
-			"description": "Name of a processvariable that points to the filter",
-			"description_de": "Name einer Prozessvariablen die auf den  Filter zeigt",
+			"title": "Filtername variable",
+			"title_de": "Filtername Variable",
+			"value": null,
+			"description": "Name of a processvariable that contains a filter structure(map)",
+			"description_de": "Name einer Prozessvariablen die eine Filterstruktur enthält(Map)",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
@@ -979,25 +979,11 @@
 		"icon": "activity/list/type.camel.png",
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
-			"id": "routeid",
-			"type": "ResourceSelector",
-			"config": {
-				"type": "sw.camel",
-				"namespace":"${namespace}",
-				"prefix": ""
-			},
-			"title": "Route",
-			"value": null,
-			"description": "Name of the route",
-			"description_de": "Name der Route",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		}, {
 			"id": "namespace",
 			"title": "Namespace",
 			"value": "-",
-			"description": "Namespace",
+			"description": "Namespace where the route is",
+			"description_de": "Namespace in dem die Route ist",
 			"config": {
 				type: "ms123.util.RepoList"
 			},
@@ -1005,6 +991,32 @@
 			"items": [],
 			"readonly": false,
 			"optional": true
+		}, {
+			"id": "routename",
+			"type": "ResourceSelector",
+			"config": {
+				"type": "sw.camel",
+				"namespace":"${namespace}",
+				"prefix": ""
+			},
+			"title": "Routename",
+			"value": null,
+			"description": "Name of the route which is to be executed",
+			"description_de": "Name der Route die ausgeführt werden soll",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		}, {
+			"id": "routevarname",
+			"type": "String",
+			"title": "Routename variable",
+			"title_de": "Routename Variable",
+			"value": null,
+			"description": "Name of a processvariable that contains the routename",
+			"description_de": "Name einer Prozessvariablen die den  Routenamen enthält",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
 		}, {
 			"id": "variablesmapping",
 			"type": "Complex",
@@ -1015,8 +1027,8 @@
 			"title": "Parameter-Mapping",
 			"title_de": "Variablen Zuordnung",
 			"value": "",
-			"description": "Mapping processvariables to filter",
-			"description_de": "Zuordnung von Prozessvariablen zum Filter",
+			"description": "Mapping processvariables to route",
+			"description_de": "Zuordnung von Prozessvariablen zur Route",
 			"readonly": false,
 			"optional": true,
 			"complexItems": [ {
