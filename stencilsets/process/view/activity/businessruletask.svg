@@ -23,7 +23,7 @@
       </radialGradient>
     </defs>
     <rect id="text_frame" oryx:anchors="bottom top right left" x="1" y="1" width="94" height="79" rx="3" ry="3" stroke="none" stroke-width="0" fill="none" />
-    <rect id="bg_frame" oryx:resize="vertical horizontal" x="0" y="0" width="100" height="80" rx="3" ry="3" stroke="black" stroke-width="1" fill="url(#background) #ffffcc" />
+    <rect id="bg_frame" oryx:resize="vertical horizontal" x="0" y="0" width="100" height="80" rx="3" ry="3" stroke="black" stroke-width="1" fill="url(#background)" />
     <text font-size="12" id="text_name" x="50" y="40" oryx:align="middle center" oryx:fittoelem="text_frame" stroke="black"></text>
     <g id="businessRuleTask" transform="scale(0.7,0.7) translate(8,8)">
       <rect oryx:anchors="top left" id="top" x="0" y="0" width="22" height="4" style="opacity:1;fill:#B3B1B3;fill-opacity:1;stroke:#000000" />

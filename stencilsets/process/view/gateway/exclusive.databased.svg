@@ -10,7 +10,7 @@
         <stop id="fill_el" />
       </radialGradient>
     </defs>
-    <path d="M -4.5,16 L 16,-4.5 L 35.5,16 L 16,35.5z" id="bg_frame" fill="url(#background) white" stroke="black" style="stroke-width:1.2" />
+    <path d="M -4.5,16 L 16,-4.5 L 35.5,16 L 16,35.5z" id="bg_frame" fill="url(#background)" stroke="black" style="stroke-width:1.2" />
     <g id="cross">
       <path id="crosspath" stroke="black" fill="black" d="M 8.75,7.55 L 12.75,7.55 L 23.15,24.45 L 19.25,24.45 z" style="stroke-width:1" />
       <path id="crosspath2" stroke="black" fill="black" d="M 8.75,24.45 L 19.25,7.55 L 23.15,7.55 L 12.75,24.45 z" style="stroke-width:1" />
