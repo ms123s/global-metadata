@@ -286,7 +286,7 @@
 	}, {
 		"name": "loopcharacteristics",
 		"properties": [ {
-			"id": "looptype",
+			"id": "multiinstance_type",
 			"type": "Choice",
 			"title": "Loop type",
 			"title_de": "Schleifentyp",
@@ -302,13 +302,6 @@
 				"title_de": "Keine Schleife",
 				"value": "None",
 				"refToView": "none"
-			}, {
-				"id": "c2",
-				"title": "Standard",
-				"title_de": "Standard",
-				"value": "Standard",
-				"icon": "activity/list/looptype.standard.png",
-				"refToView": "loop"
 			}, {
 				"id": "c3",
 				"title": "MI Parallel",
@@ -327,27 +320,7 @@
 		} ]
 	}, {
 		"name": "activity",
-		"properties": [ {
-			"id": "multiinstance_sequential",
-			"type": "Choice",
-			"title": "Sequential (Multi-instance)",
-			"title_de": "sequentiell",
-			"value": "Yes",
-			"description": "Define the multi instance as sequential.",
-			"include": false,
-			"popular": true,
-			"items": [ {
-				"id": "no",
-				"title": "No",
-				"title_de": "Nein",
-				"value": "No"
-			}, {
-				"id": "yes",
-				"title": "Yes",
-				"title_de": "Yes",
-				"value": "Yes"
-			} ]
-		}, {
+		"properties": [{
 			"id": "multiinstance_cardinality",
 			"type": "String",
 			"title": "Cardinality (Multi-instance)",
@@ -363,7 +336,7 @@
 			"title_de": "Schleifenliste",
 			"value": "",
 			"description": "Define the collection for the multi instance.",
-			"visible": "looptype!='None'",
+			"visible": "multiinstance_type!='None'",
 			"popular": true
 		}, {
 			"id": "multiinstance_variable",
@@ -372,7 +345,7 @@
 			"title_de": "Elementvariable",
 			"value": "",
 			"description": "Define the element variable for the multi instance.",
-			"visible": "looptype!='None'",
+			"visible": "multiinstance_type!='None'",
 			"popular": true
 		}, {
 			"id": "multiinstance_condition",
@@ -381,7 +354,7 @@
 			"title_de": "Endebedingung",
 			"value": "",
 			"description": "Define the completion condition for the multi instance.",
-			"visible": "looptype!='None'",
+			"visible": "multiinstance_type!='None'",
 			"popular": true
 		}, {
 			"id": "isforcompensation",
@@ -1417,7 +1390,7 @@
 		"description_de": "Bei einer verzweigenden Verwendung werden sämtliche nachfolgenden Zweige gleichzeitig ausgeführt. Bei der Zusammenführung wird auf alle eingehenden Kanten gewartet, bevor der Prozessfluss fortgesetzt wird.",
 		"view": "gateway/parallel.svg",
 		"icon": "gateway/parallel.png",
-		"propertyPackages": [ "baseProperties", "colorProperties", "processid" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "processid" ],
 		"properties": [ {
 			"id": "gatewaytype",
 			"type": "String",
