@@ -4975,6 +4975,10 @@
         "msgstr": "Eigenschaften"
     },
     {
+        "msgid": "ge.Save.savedeploy",
+        "msgstr": "Speichern/Deploy"
+    },
+    {
         "msgid": "ge.Save.deploy",
         "msgstr": "Deploy"
     },

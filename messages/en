@@ -3471,6 +3471,10 @@
         "msgstr": "Save"
     },
     {
+        "msgid": "ge.Save.savedeploy",
+        "msgstr": "Save/Deploy"
+    },
+    {
         "msgid": "ge.Save.saving",
         "msgstr": "Save"
     },
