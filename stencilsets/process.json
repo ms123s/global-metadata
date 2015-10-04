@@ -668,18 +668,6 @@
 			"optional": false,
 			"length": "50"
 		}, {
-			"id": "camelRoutes",
-			"type": "ResourceSelector",
-			"config": {
-				"type": "sw.camel",
-				"prefix": ""
-			},
-			"title": "Camel",
-			"value": "",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		}, {
 			"id": "initialParameter",
 			"type": "Complex",
 			"title": "Initialparameter",

@@ -2282,17 +2282,6 @@
 		"propertyPackages": [ "routeBaseAttributes", "diagram" ],
 		"roles": [],
 		"properties": [ {
-			"id": "camelcontext",
-			"type": "String",
-			"title": "Camelcontext",
-			"title_de": "Camelcontext",
-			"description": "Context to which the route belongs,when the context does not exist, then it is created",
-			"description_de": "Camelcontext zu dem diese Route gehört, wenn der Context nicht existiert dann wird er erstellt",
-			"value": "default",
-			"readonly": false,
-			"popular": false,
-			"optional": true
-		}, {
 			"id": "rpc",
 			"title": "RPC",
 			"description_de": "Soll die Route über rpc erreichbar sein?",

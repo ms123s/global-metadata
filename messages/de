@@ -3012,7 +3012,7 @@
     },
     {
         "msgid": "ms123.processexplorer.ProcessExplorer",
-        "msgstr": "Prozesse"
+        "msgstr": "History"
     },
     {
         "msgid": "data.filter.id",
