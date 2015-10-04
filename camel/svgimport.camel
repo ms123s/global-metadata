@@ -13,7 +13,6 @@
     "author": "",
     "creationdate": null,
     "modificationdate": null,
-    "camelcontext": "default",
     "rpc": false,
     "rpcParameter": null,
     "rpcReturn": "body",
