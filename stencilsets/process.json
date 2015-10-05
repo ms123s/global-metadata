@@ -1010,13 +1010,13 @@
 				"optional": false
 			} ]
 		}, {
-			"id": "listname",
+			"id": "returnvariable",
 			"type": "String",
-			"title": "Listname",
-			"title_de": "Listenname",
-			"value": "",
-			"description": "Name of the generated list",
-			"description_de": "Name der erzeugten Liste",
+			"title": "Return variable",
+			"title_de": "Return Variable",
+			"value": null,
+			"description": "This variable becomes the return value  assigned",
+			"description_de": "Dieser Variablen wird der Rückgabewert zugewiesen",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
