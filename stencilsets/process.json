@@ -1221,12 +1221,13 @@
 		"propertyPackages": [ "baseProperties", "colorProperties", "loopcharacteristics", "activity" ]
 	}, {
 		"type": "node",
-		"id": "SendTask",
-		"title": "Send Task",
-		"title_de": "Sendeaufgabe",
+		"id": "MailTask",
+		"title": "Mail Task",
+		"title_de": "Emailaufgabe",
 		"groups": [ "Activities" ],
 		"groups_de": [ "Aktivitäten" ],
-		"description": "A Send Task is a simple Task that is designed to send a Message to an external Participant (relative to the Process). Once the Message has been sent, the Task is completed.",
+		"description_de": "Emails senden",
+		"description": "Send emails",
 		"view": "activity/sendtask.svg",
 		"icon": "activity/list/type.send.png",
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
