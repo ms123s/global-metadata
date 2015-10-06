@@ -555,17 +555,6 @@
 			"description": "Define the timer with a ISO-8601 cycle.",
 			"popular": true
 		} ]
-	}, {
-		"name": "messagerefdefinition",
-		"properties": [ {
-			"id": "messageref",
-			"type": "String",
-			"title": "Message reference",
-			"title_de": "Message Referenz",
-			"value": "",
-			"description": "Define the message name.",
-			"popular": true
-		} ]
   }, {
     "name" : "signaldefinitionsProperties",
     "properties" : [ {
@@ -607,6 +596,46 @@
 					"icon": "connector/list/type.expression.png"
 				} ]
 			} ]
+    } ]
+ 	}, {
+    "name" : "messagerefProperties",
+    "properties" : [ {
+      "id" : "messageref",
+			"type": "Choice",
+			"config": {"type":"ms123.graphicaleditor.plugins.propertyedit.DefinitionSelect", "definitions":"messagedefinitions"},
+			"items":[],
+      "title" : "Message reference",
+      "title_de" : "Messagereferenz",
+      "value" : null,
+      "description" : "Reference to a messagedefinition.",
+      "description_de" : "Referenz zu einer Messagedefinition.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "signalrefProperties",
+    "properties" : [ {
+      "id" : "signalref",
+			"type": "Choice",
+			"config": {"type":"ms123.graphicaleditor.plugins.propertyedit.DefinitionSelect", "definitions": "signaldefinitions"},
+			"items":[],
+      "title" : "Signal reference",
+      "title_de" : "Signalreferenz",
+      "value" : null,
+      "description" : "Reference to a signaldefinition.",
+      "description_de" : "Referenz zu einer Signaldefinition.",
+      "popular" : true
+    } ]
+  }, {
+    "name" : "errorrefProperties",
+    "properties" : [ {
+      "id" : "errorref",
+      "type" : "String",
+      "title" : "Error reference",
+      "title_de" : "Errorreferenz",
+      "value" : null,
+      "description" : "Define the error name.",
+      "description_de" : "Definiere den Fehlernamen.",
+      "popular" : true
     } ]
   }, {
     "name" : "messagedefinitionsProperties",
@@ -1487,9 +1516,9 @@
 		"type": "node",
 		"id": "StartNoneEvent",
 		"title": "Start Event",
-		"title_de": "Startereignis",
-		"groups": [ "Events" ],
-		"groups_de": [ "Ereignisse" ],
+		"title_de": "Start Ereignis",
+		"groups": [ "Start Events" ],
+		"groups_de": [ "Start Ereignisse" ],
 		"description": "Untyped start event.",
 		"description_de": "Hier beginnt der normale Prozessfluss durch eine nicht näher beschriebene Auslösebedingung.",
 		"view": "startevent/none.svg",
@@ -1497,16 +1526,6 @@
 		"propertyPackages": [ "baseProperties", "formAttributes", "colorProperties", "processid" ],
 		"roles": [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ],
 		"properties": [ {
-			"id": "trigger",
-			"type": "String",
-			"title": "Trigger",
-			"title_de": "Auslöser",
-			"value": "None",
-			"description": "The trigger for the start event, depending on the start event type.",
-			"description_de": "Der Auslöser für das Startereignis. Er hängt vom Typ des Startereignisses ab.",
-			"include": false,
-			"optional": false
-		}, {
 			"id": "initiator",
 			"type": "String",
 			"value": "initiator",
@@ -1517,61 +1536,210 @@
 		"type": "node",
 		"id": "StartTimerEvent",
 		"title": "Start timer event",
-		"title_de": "Start timer Ereignis",
+		"title_de": "Start Timerereignis",
 		"description": "A start event with a timer trigger",
 		"view": "startevent/timer.svg",
 		"icon": "startevent/timer.png",
-		"groups": [ "Events" ],
-		"groups_de": [ "Ereignisse" ],
+		"groups": [ "Start Events" ],
+		"groups_de": [ "Start Ereignisse" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "timerdefinition", "executionlistenersbase" ],
+		"roles": [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "StartSignalEvent",
+		"title": "Start signal event",
+		"title_de": "Start Signalereignis",
+		"description": "A start event with a signal trigger",
+		"view": "startevent/signal.svg",
+		"icon": "startevent/signal.png",
+		"groups": [ "Start Events" ],
+		"groups_de": [ "Start Ereignisse" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "signalrefProperties", "executionlistenersbase" ],
 		"roles": [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ]
 	}, {
 		"type": "node",
 		"id": "StartMessageEvent",
 		"title": "Start message event",
+		"title_de": "Start Messageereignis",
 		"description": "A start event with a message trigger",
 		"view": "startevent/message.svg",
 		"icon": "startevent/message.png",
-		"groups": [ "Events" ],
-		"groups_de": [ "Ereignisse" ],
-		"propertyPackages": [ "baseProperties", "messagerefdefinition", "executionlistenersbase" ],
+		"groups": [ "Start Events" ],
+		"groups_de": [ "Start Ereignisse" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "messagerefProperties", "executionlistenersbase" ],
+		"roles": [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "StartErrorEvent",
+		"title": "Start error event",
+		"title_de": "Start Fehlerereignis",
+		"description": "A start event with a error trigger",
+		"view": "startevent/error.svg",
+		"icon": "startevent/error.png",
+		"groups": [ "Start Events" ],
+		"groups_de": [ "Start Ereignisse" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "errorrefProperties", "executionlistenersbase" ],
 		"roles": [ "Startevents_all", "sequence_start", "StartEventsMorph", "all" ]
 	}, {
 		"type": "node",
 		"id": "CatchTimerEvent",
 		"title": "Intermediate timer catching event",
-		"title_de": "Timer Zwischenereignis",
+		"title_de": "Timer Zwischenereignis(empfangend)",
 		"description": "An intermediate catching event with a timer trigger",
 		"view": "intermediateevent/timer.svg",
 		"icon": "catching/timer.png",
-		"groups": [ "Events" ],
-		"groups_de": [ "Ereignisse" ],
+		"groups": [ "Intermediate Catching Events" ],
+		"groups_de": [ "Empfangende Zwischenereignisse" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "timerdefinition", "executionlistenersbase" ],
 		"roles": [ "sequence_start", "sequence_end", "CatchEventsMorph", "all" ]
 	}, {
 		"type": "node",
+		"id": "CatchSignalEvent",
+		"title": "Intermediate signal catching event",
+		"title_de": "Signal Zwischenereignis(empfangend)",
+		"description": "An intermediate catching event with a signal trigger",
+		"view": "intermediateevent/signal.catching.svg",
+		"icon": "catching/signal.png",
+		"groups": [ "Intermediate Catching Events" ],
+		"groups_de": [ "Empfangende Zwischenereignisse" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "signalrefProperties", "executionlistenersbase" ],
+		"roles": [ "sequence_start", "sequence_end", "CatchEventsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "CatchMessageEvent",
+		"title": "Intermediate message catching event",
+		"title_de": "Message Zwischenereignis(empfangend)",
+		"description": "An intermediate catching event with a message trigger",
+		"view": "intermediateevent/message.catching.svg",
+		"icon": "catching/message.png",
+		"groups": [ "Intermediate Catching Events" ],
+		"groups_de": [ "Empfangende Zwischenereignisse" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "messagerefProperties", "executionlistenersbase" ],
+		"roles": [ "sequence_start", "sequence_end", "CatchEventsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "ThrowNoneEvent",
+		"title": "Intermediate none throwing event",
+		"title_de": "None Zwischenereignis(auslösend)",
+ 		"description" : "An intermediate event without a specific trigger",
+		"view": "intermediateevent/none.svg",
+		"icon": "throwing/none.png",
+		"groups": [ "Intermediate Throwing Events" ],
+		"groups_de": [ "Auslösende Zwischenereignisse" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "executionlistenersbase" ],
+		"roles": [ "sequence_start", "sequence_end", "ThrowEventsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "ThrowSignalEvent",
+		"title": "Intermediate signal throwing event",
+		"title_de": "Signal Zwischenereignis(auslösend)",
+		"description": "An intermediate throwing event with a signal trigger",
+		"view": "intermediateevent/signal.throwing.svg",
+		"icon": "throwing/signal.png",
+		"groups": [ "Intermediate Throwing Events" ],
+		"groups_de": [ "Auslösende Zwischenereignisse" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "signalrefProperties", "executionlistenersbase" ],
+		"roles": [ "sequence_start", "sequence_end", "ThrowEventsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "ThrowMessageEvent",
+		"title": "Intermediate message throwing event",
+		"title_de": "Message Zwischenereignis(auslösend)",
+		"description": "An intermediate throwing event with a message trigger",
+		"view": "intermediateevent/message.throwing.svg",
+		"icon": "throwing/message.png",
+		"groups": [ "Intermediate Throwing Events" ],
+		"groups_de": [ "Auslösende Zwischenereignisse" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "messagerefProperties", "executionlistenersbase" ],
+		"roles": [ "sequence_start", "sequence_end", "ThrowEventsMorph", "all" ]
+	}, {
+		"type": "node",
 		"id": "EndNoneEvent",
 		"title": "End Event",
-		"title_de": "Endereignis",
-		"groups": [ "Events" ],
-		"groups_de": [ "Ereignisse" ],
-		"description": "The untyped end event typically marks the standard end of a process.",
-		"description_de": "Untypisiertes Endereignis, welches ein normales Ende eines Prozesses markiert.",
+		"title_de": "Ende Ereignis",
+		"groups": [ "End Events" ],
+		"groups_de": [ "Ende Ereignisse" ],
 		"view": "endevent/none.svg",
 		"icon": "endevent/none.png",
 		"propertyPackages": [ "baseProperties", "colorProperties" ],
-		"roles": [ "all", "sequence_end", "Endevents_all", "EndEventsMorph" ],
-		"properties": [ {
-			"id": "trigger",
-			"type": "String",
-			"title": "Trigger",
-			"title_de": "Auslöser",
-			"value": "None",
-			"description": "The trigger for the end event, depending on the event type.",
-			"description_de": "Der Auslöser für das Endereignis. Er hängt vom Typ des Ereignisses ab.",
-			"include": false,
-			"optional": false
-		} ]
+		"roles": [ "all", "sequence_end", "Endevents_all", "EndEventsMorph" ]
+	}, {
+		"type": "node",
+		"id": "EndErrorEvent",
+		"title": "End Error Event",
+		"title_de": "Ende Fehlerereignis",
+		"groups": [ "End Events" ],
+		"groups_de": [ "Ende Ereignisse" ],
+		"view": "endevent/error.svg",
+		"icon": "endevent/error.png",
+		"propertyPackages": [ "baseProperties", "colorProperties" ],
+		"roles": [ "all", "sequence_end", "Endevents_all", "EndEventsMorph" ]
+	}, {
+		"type": "node",
+		"id": "EndCancelEvent",
+		"title": "End Cancel Event",
+		"title_de": "Ende Abbruchereignis",
+		"groups": [ "End Events" ],
+		"groups_de": [ "Ende Ereignisse" ],
+		"view": "endevent/cancel.svg",
+		"icon": "endevent/cancel.png",
+		"propertyPackages": [ "baseProperties", "colorProperties" ],
+		"roles": [ "all", "sequence_end", "Endevents_all", "EndEventsMorph" ]
+	}, {
+		"type": "node",
+		"id": "EndTerminateEvent",
+		"title": "End Terminate Event",
+		"title_de": "Ende Terminierungsereignis",
+		"groups": [ "End Events" ],
+		"groups_de": [ "Ende Ereignisse" ],
+		"view": "endevent/terminate.svg",
+		"icon": "endevent/terminate.png",
+		"propertyPackages": [ "baseProperties", "colorProperties" ],
+		"roles": [ "all", "sequence_end", "Endevents_all", "EndEventsMorph" ]
+	}, {
+		"type": "node",
+		"id": "BoundaryErrorEvent",
+		"title": "Boundary Error Event",
+		"title_de": "Rand Fehlerereignis",
+		"groups": [ "Boundery Events" ],
+		"groups_de": [ "Rand Ereignisse" ],
+		"view": "intermediateevent/error.svg",
+		"icon": "catching/error.png",
+		"propertyPackages": [ "baseProperties", "colorProperties", "errorrefProperties" ],
+		"roles": [ "sequence_start", "BoundaryEventsMorph", "IntermediateEventOnActivityBoundary" ]
+	}, {
+		"type": "node",
+		"id": "BoundaryMessageEvent",
+		"title": "Boundary Message Event",
+		"title_de": "Rand Messageereignis",
+		"groups": [ "Boundery Events" ],
+		"groups_de": [ "Rand Ereignisse" ],
+		"view": "intermediateevent/message.catching.svg",
+		"icon": "catching/message.png",
+		"propertyPackages": [ "baseProperties", "colorProperties", "messagerefProperties" ],
+		"roles": [ "sequence_start", "BoundaryEventsMorph", "IntermediateEventOnActivityBoundary" ]
+	}, {
+		"type": "node",
+		"id": "BoundarySignalEvent",
+		"title": "Boundary Signal Event",
+		"title_de": "Rand Signalereignis",
+		"groups": [ "Boundery Events" ],
+		"groups_de": [ "Rand Ereignisse" ],
+		"view": "intermediateevent/signal.catching.svg",
+		"icon": "catching/signal.png",
+		"propertyPackages": [ "baseProperties", "colorProperties", "signalrefProperties" ],
+		"roles": [ "sequence_start", "BoundaryEventsMorph", "IntermediateEventOnActivityBoundary" ]
+	}, {
+		"type": "node",
+		"id": "BoundaryCancelEvent",
+		"title": "Boundary Cancel Event",
+		"title_de": "Rand Abbruchereignis",
+		"groups": [ "Boundery Events" ],
+		"groups_de": [ "Rand Ereignisse" ],
+		"view": "intermediateevent/cancel.svg",
+		"icon": "catching/cancel.png",
+		"propertyPackages": [ "baseProperties", "colorProperties" ],
+		"roles": [ "sequence_start", "BoundaryEventsMorph", "IntermediateEventOnActivityBoundary" ]
 	}, {
 		"type": "edge",
 		"id": "SequenceFlow",
@@ -1703,6 +1871,9 @@
 		}, {
 			"role": "ThrowEventsMorph",
 			"baseMorphs": [ "ThrowNoneEvent" ]
+    }, {
+      "role" : "BoundaryEventsMorph",
+      "baseMorphs" : [ "BoundaryNoneEvent" ]
 		}, {
 			"role": "TextAnnotation",
 			"baseMorphs": [ "TextAnnotation" ]
