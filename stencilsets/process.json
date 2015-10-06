@@ -566,6 +566,72 @@
 			"description": "Define the message name.",
 			"popular": true
 		} ]
+  }, {
+    "name" : "signaldefinitionsProperties",
+    "properties" : [ {
+      "id" : "signaldefinitions",
+      "type" : "Complex",
+      "title" : "Signal definitions",
+      "title_de" : "Signaldefinitionen",
+			"config":{"asArray":true},
+      "value" : null,
+      "popular" : true,
+			"complexItems": [ {
+				"id": "id",
+				"name": "Id",
+				"type": "String",
+				"value": null,
+				"width": 150
+			}, {
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"value": null,
+				"width": 250
+			}, {
+				"id": "scope",
+				"name_de": "Bereich",
+				"name": "Scope",
+				"type": "Choice",
+				"value": "processinstance",
+				"width": 150,
+				"items": [ {
+					"id": "processinstance",
+					"title": "Processinstance",
+					"title_de": "Prozessinstanz",
+					"value": "processinstance"
+				}, {
+					"id": "global",
+					"title": "Global",
+					"value": "global",
+					"icon": "connector/list/type.expression.png"
+				} ]
+			} ]
+    } ]
+  }, {
+    "name" : "messagedefinitionsProperties",
+    "properties" : [ {
+      "id" : "messagedefinitions",
+      "type" : "Complex",
+			"config":{"asArray":true},
+      "title" : "Message definitions",
+      "title_de" : "Messagedefinitionen",
+      "value" : null,
+      "popular" : true,
+			"complexItems": [ {
+				"id": "id",
+				"name": "Id",
+				"type": "String",
+				"value": null,
+				"width": 150
+			}, {
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"value": null,
+				"width": 250
+			} ]
+    } ]
 	}, {
 		"name": "sequenceflowbase",
 		"properties": [ {
@@ -635,7 +701,7 @@
 		"icon": "diagram.png",
 		"mayBeRoot": true,
 		"hide": true,
-		"propertyPackages": [ "baseProperties", "diagram" ],
+		"propertyPackages": [ "baseProperties", "diagram", "signaldefinitionsProperties", "messagedefinitionsProperties" ],
 		"roles": [],
 		"properties": [ {
 			"id": "orientation",
