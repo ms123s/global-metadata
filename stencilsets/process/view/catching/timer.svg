@@ -7,9 +7,8 @@
   <oryx:docker oryx:cx="16" oryx:cy="16" />
   <g pointer-events="fill">
     <defs>
-      <radialGradient id="background" cx="10%" cy="10%" r="100%" fx="10%" fy="10%">
-        <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-        <stop id="fill_el" offset="100%" stop-color="#ffffff" stop-opacity="1" />
+      <radialGradient id="background">
+        <stop id="fill_el" />
       </radialGradient>
     </defs>
     <circle id="bg_frame" cx="16" cy="16" r="15" stroke="black" fill="url(#background) white" stroke-width="1" style="stroke-dasharray: 5.5, 3" />
@@ -21,4 +20,3 @@
     <text font-size="11" id="text_name" x="16" y="33" oryx:align="top center" stroke="black"></text>
   </g>
 </svg>
-
