@@ -2,9 +2,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:oryx="http://www.b3mn.org/oryx" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="140" version="1.0">
   <g pointer-events="fill" stroke-width="0.25" class="SlideGroup">
     <defs>
-      <radialGradient id="background" cx="10%" cy="10%" r="100%" fx="10%" fy="10%">
-        <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-        <stop id="fill_el" offset="100%" stop-color="#ffffcc" stop-opacity="1" />
+      <radialGradient id="background">
+        <stop id="fill_el" />
       </radialGradient>
     </defs>
     <rect x="0" y="0" width="77" height="47" id="bg_frame" fill="url(#background)" stroke="none" stroke-width="0.5" />

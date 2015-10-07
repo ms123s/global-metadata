@@ -862,8 +862,28 @@
 		}, {
 			"id": "uri_template",
 			"type": "String",
-			"value": "activiti:${process}:${task}",
+			"value": "activiti:${operation}",
 			"visible": false
+		}, {
+			"id": "urivalue_operation",
+			"title": "Operation",
+			"title_de": "Operation",
+			"type": "Choice",
+			"value": "sendSignalEvent",
+			"items": [ {
+				"id": "c1",
+				"title": "sendSignalEvent",
+				"value": "sendSignalEvent"
+			}, {
+				"id": "c2",
+				"title": "sendMessageEvent",
+				"value": "sendMessageEvent"
+			}, {
+				"id": "c3",
+				"title": "startProcess",
+				"value": "startProcess"
+			} ],
+			"visible": true
 		}, {
 			"id": "urivalue_process",
 			"title": "Workflow",
