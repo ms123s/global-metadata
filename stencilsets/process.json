@@ -1588,8 +1588,8 @@
 		"description": "An intermediate catching event with a timer trigger",
 		"view": "intermediateevent/timer.svg",
 		"icon": "catching/timer.png",
-		"groups": [ "Intermediate Catching Events" ],
-		"groups_de": [ "Empfangende Zwischenereignisse" ],
+		"groups": [ "Intermediate Events" ],
+		"groups_de": [ "Zwischenereignisse" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "timerdefinition", "executionlistenersbase" ],
 		"roles": [ "sequence_start", "sequence_end", "CatchEventsMorph", "all" ]
 	}, {
@@ -1600,8 +1600,8 @@
 		"description": "An intermediate catching event with a signal trigger",
 		"view": "intermediateevent/signal.catching.svg",
 		"icon": "catching/signal.png",
-		"groups": [ "Intermediate Catching Events" ],
-		"groups_de": [ "Empfangende Zwischenereignisse" ],
+		"groups": [ "Intermediate Events" ],
+		"groups_de": [ "Zwischenereignisse" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "signalrefProperties", "executionlistenersbase" ],
 		"roles": [ "sequence_start", "sequence_end", "CatchEventsMorph", "all" ]
 	}, {
@@ -1612,8 +1612,8 @@
 		"description": "An intermediate catching event with a message trigger",
 		"view": "intermediateevent/message.catching.svg",
 		"icon": "catching/message.png",
-		"groups": [ "Intermediate Catching Events" ],
-		"groups_de": [ "Empfangende Zwischenereignisse" ],
+		"groups": [ "Intermediate Events" ],
+		"groups_de": [ "Zwischenereignisse" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "messagerefProperties", "executionlistenersbase" ],
 		"roles": [ "sequence_start", "sequence_end", "CatchEventsMorph", "all" ]
 	}, {
@@ -1624,8 +1624,8 @@
  		"description" : "An intermediate event without a specific trigger",
 		"view": "intermediateevent/none.svg",
 		"icon": "throwing/none.png",
-		"groups": [ "Intermediate Throwing Events" ],
-		"groups_de": [ "Auslösende Zwischenereignisse" ],
+		"groups": [ "Intermediate Events" ],
+		"groups_de": [ "Zwischenereignisse" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "executionlistenersbase" ],
 		"roles": [ "sequence_start", "sequence_end", "ThrowEventsMorph", "all" ]
 	}, {
@@ -1636,8 +1636,8 @@
 		"description": "An intermediate throwing event with a signal trigger",
 		"view": "intermediateevent/signal.throwing.svg",
 		"icon": "throwing/signal.png",
-		"groups": [ "Intermediate Throwing Events" ],
-		"groups_de": [ "Auslösende Zwischenereignisse" ],
+		"groups": [ "Intermediate Events" ],
+		"groups_de": [ "Zwischenereignisse" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "signalrefProperties", "executionlistenersbase" ],
 		"roles": [ "sequence_start", "sequence_end", "ThrowEventsMorph", "all" ]
 	}, {
@@ -1648,8 +1648,8 @@
 		"description": "An intermediate throwing event with a message trigger",
 		"view": "intermediateevent/message.throwing.svg",
 		"icon": "throwing/message.png",
-		"groups": [ "Intermediate Throwing Events" ],
-		"groups_de": [ "Auslösende Zwischenereignisse" ],
+		"groups": [ "Intermediate Events" ],
+		"groups_de": [ "Zwischenereignisse" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "messagerefProperties", "executionlistenersbase" ],
 		"roles": [ "sequence_start", "sequence_end", "ThrowEventsMorph", "all" ]
 	}, {
