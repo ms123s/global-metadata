@@ -1052,7 +1052,7 @@
 			"type": "ResourceSelector",
 			"config": {
 				"type": "sw.camel",
-				"namespace":"${namespace}",
+				"namespace":"tutorials",
 				"prefix": ""
 			},
 			"title": "Routename",

@@ -622,7 +622,7 @@
 				"name_de": "Sprache",
 				"readonly": false,
 				"type": "Choice",
-				"value": "groovy",
+				"value": "constant",
 				"items": "###language_items",
 				"width": 80,
 				"optional": true
@@ -880,24 +880,59 @@
 				"value": "sendMessageEvent"
 			}, {
 				"id": "c3",
+				"title": "sendSignalToReceiveTask",
+				"value": "sendSignalToReceiveTask"
+			}, {
+				"id": "c4",
 				"title": "startProcess",
 				"value": "startProcess"
 			} ],
 			"visible": true
 		}, {
-			"id": "urivalue_process",
-			"title": "Workflow",
-			"type": "String",
-			"value": "",
-			"optional": false,
-			"visible": true
+			"id": "uriparam_namespace",
+			"title": "Namespace",
+			"value": "-",
+			"description": "Namespace where the process is",
+			"description_de": "Namespace in dem der Prozess ist",
+			"config": {
+				type: "ms123.util.RepoList"
+			},
+			"type": "Choice",
+			"items": [],
+			"readonly": false,
+			"optional": true
 		}, {
-			"id": "urivalue_task",
-			"title": "Task",
-			"type": "String",
-			"value": "",
-			"optional": false,
-			"visible": true
+			"id": "uriparam_processCriteria",
+			"type": "Complex",
+			"config": {
+				"asArray": true,
+				"helperTree": [ "sw.process" ],
+				"namespace":"${uriparam_namespace}"
+			},
+			"title": "Processcriteria",
+			"title_de": "Prozesskriterien",
+			"description": "Criteria of the process which is to be executed or a signal sent",
+			"description_de": "Kriterien des Prozesses der ausgeführt werden soll oder dem ein Signal gesendet werden soll",
+			"value": null,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "name",
+				"name": "Name",
+				"name_de": "Name",
+				"readonly": false,
+				"type": "Choice",
+				"value": "processDefinitionKey",
+				"items": "###processcriteria_items",
+				"width": 180
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": null,
+				"width": 250
+			} ]
 		} ]
 	}, {
 		"name": "asciidoctorProperties",
@@ -1321,6 +1356,25 @@
 			"description": "anonymous inner class implementing the processor's logic",
 			"optional": true
 		}, {
+			"id": "addImport",
+			"type": "Complex",
+			"title": "Additional imports",
+			"title_de": "Zusätzliche Importe",
+			"config": {
+				"asArray": true,
+			},
+			"value": null,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "import",
+				"name": "Import",
+				"type": "String",
+				"filter": "[a-zA-Z0-9_ *.]",
+				"value": null,
+				"width": 250
+			} ]
+		}, {
 			"id": "codeLanguage",
 			"title": "Codelanguage",
 			"title_de": "Kode Sprache",
@@ -1558,7 +1612,7 @@
 			"id": "uriparam_procedure",
 			"title": "Procedurename",
 			"title_de": "Prozedurname",
-			"filter": "[a-zA-Z0-9_]",
+			"filter": "[a-z0-9_]",
 			"visible": "urivalue_mode=='rpc'",
 			"optional": false,
 			"type": "String",
@@ -3103,6 +3157,31 @@
 			"id": "map",
 			"title": "Map",
 			"value": "map"
+		} ],
+		"processcriteria_items": [ {
+			"id": "processDefinitionKey",
+			"title": "processDefinitionKey",
+			"value": "processDefinitionKey"
+		}, {
+			"id": "processDefinitionId",
+			"title": "processDefinitionId",
+			"value": "processDefinitionId"
+		}, {
+			"id": "processInstanceId",
+			"title": "processInstanceId",
+			"value": "processInstanceId"
+		}, {
+			"id": "businessKey",
+			"title": "businessKey",
+			"value": "businessKey"
+		}, {
+			"id": "activityId",
+			"title": "activityId",
+			"value": "activityId"
+		}, {
+			"id": "executionId",
+			"title": "executionId",
+			"value": "executionId"
 		} ],
 		"settingssources_items": [ {
 			"id": "const",
