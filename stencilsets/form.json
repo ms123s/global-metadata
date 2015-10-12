@@ -3,26 +3,26 @@
 	"title_de": "Forms",
 	"namespace": "http://b3mn.org/stencilset/xforms#",
 	"description": "This is the XForms stencil set specification.",
-	"stencils": [{
+	"stencils": [ {
 		"type": "node",
 		"id": "XForm",
 		"title": "XForm",
-		"groups": ["Form"],
+		"groups": [ "Form" ],
 		"description": "A XForms form.",
 		"view": "new_form.svg",
 		"icon": "new_form.png",
 		"mayBeRoot": true,
 		"hide": true,
-		"roles": ["standard_container"],
+		"roles": [ "standard_container" ],
 
-		"layout": [{
+		"layout": [ {
 			"type": "layout.rows",
 			"marginTop": 30,
 			"marginLeft": 30,
 			"spacingX": 30,
 			"spacingY": 30
-		}],
-		"properties": [{
+		} ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -30,10 +30,9 @@
 			"value": "",
 			"description": "This is a unique Id that distinguishes the form from other forms.",
 			"readonly": false,
-			"optional": true,
+			"optional": false,
 			"length": "50"
-		},
-		{
+		}, {
 			"id": "xf_name",
 			"type": "String",
 			"title": "Name",
@@ -46,8 +45,7 @@
 			"length": "50",
 			"refToView": "formcaption",
 			"wrapLines": true
-		},
-		{
+		}, {
 			"id": "xf_version",
 			"type": "String",
 			"title": "version",
@@ -58,8 +56,7 @@
 			"readonly": false,
 			"optional": true,
 			"length": "50"
-		},
-		{
+		}, {
 			"id": "xf_default_buttons",
 			"type": "Boolean",
 			"title": "Default buttons",
@@ -71,10 +68,11 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": ""
-		},
-		{
+		}, {
 			"id": "xf_postprocess",
-			"config":{"mode":"text/x-groovy"},
+			"config": {
+				"mode": "text/x-groovy"
+			},
 			"type": "Text",
 			"title": "Postprocess",
 			"title_de": "Nachbearbeitung",
@@ -83,25 +81,24 @@
 			"readonly": false,
 			"optional": true,
 			"length": "50"
-		}]
-	},
-	{
+		} ]
+	}, {
 		"type": "node",
 		"id": "Input",
 		"title": "Input",
 		"title_de": "Eingabefeld",
-		"groups": ["Controls"],
+		"groups": [ "Controls" ],
 		"description": "An input control.",
 		"view": "new_input.svg",
 		"icon": "new_input.png",
-		"roles": ["core_form_controls", "controls_morph"],
+		"roles": [ "core_form_controls", "controls_morph" ],
 
-		"layout": [{
+		"layout": [ {
 			"type": "layout.xforms.label",
 			"moveY": -1,
 			"moveX": 0
-		}],
-		"properties": [{
+		} ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -113,8 +110,7 @@
 			"optional": false,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_type",
 			"type": "Choice",
 			"title": "Input type",
@@ -126,44 +122,38 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"items": [{
+			"items": [ {
 				"id": "c1",
 				"title": "Text",
 				"value": "text",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c2",
 				"title": "Number",
 				"value": "number",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c3",
 				"title": "Boolean",
 				"value": "boolean",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c4",
 				"title": "Decimal",
 				"value": "decimal",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c5",
 				"title": "Date",
 				"value": "date",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c6",
 				"title": "DateTime",
 				"value": "datetime",
 				"refToView": ""
 			} ]
-		},
-		{
+		}, {
 			"id": "xf_default",
 			"type": "String",
 			"title": "Defaultvalue",
@@ -176,8 +166,7 @@
 			"optional": true,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_exclude",
 			"type": "String",
 			"title": "Exclude",
@@ -191,8 +180,7 @@
 			"optional": true,
 			"refToView": "",
 			"length": "100"
-		},
-		{
+		}, {
 			"id": "xf_invisible",
 			"type": "String",
 			"title": "Invisible",
@@ -206,8 +194,7 @@
 			"optional": true,
 			"refToView": "",
 			"length": "100"
-		},
-		{
+		}, {
 			"id": "xf_readonly",
 			"type": "Combo",
 			"title": "Readonly",
@@ -220,20 +207,18 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"items": [{
+			"items": [ {
 				"id": "c1",
 				"value": "true",
 				"title": "true",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c2",
 				"value": "false",
 				"title": "false",
 				"refToView": ""
 			} ]
-		},
-		{
+		}, {
 			"id": "xf_required",
 			"type": "Combo",
 			"title": "Required",
@@ -245,23 +230,24 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"items": [{
+			"items": [ {
 				"id": "c1",
 				"value": "true",
 				"title": "true",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c2",
 				"value": "false",
 				"title": "false",
 				"refToView": ""
 			} ]
-		},
-		{
+		}, {
 			"id": "xf_filtercheck",
 			"type": "Complex",
-			"config": {"helperTree":["sw.filter"], "kind":"filterparam"},
+			"config": {
+				"helperTree": [ "sw.filter" ],
+				"kind": "filterparam"
+			},
 			"title": "Filtercheck",
 			"title_de": "Filtercheck",
 			"value": null,
@@ -270,7 +256,7 @@
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "param",
 				"name": "Filterparam",
 				"name_de": "Filterparam",
@@ -278,12 +264,11 @@
 				"value": "",
 				"width": 150,
 				"optional": false
-			}]
-		},
-		{
+			} ]
+		}, {
 			"id": "xf_constraint_text",
 			"type": "Constraints",
-			"config":"###constraints_text",
+			"config": "###constraints_text",
 			"title": "Constraint(String)",
 			"title_de": "Prüfung(String)",
 			"prefix": "oryx",
@@ -293,11 +278,10 @@
 			"optional": true,
 			"refToView": "",
 			"length": "100"
-		},
-		{
+		}, {
 			"id": "xf_constraint_date",
 			"type": "Constraints",
-			"config":"###constraints_date",
+			"config": "###constraints_date",
 			"title": "Constraint(Date)",
 			"title_de": "Prüfung(Datum)",
 			"prefix": "oryx",
@@ -307,11 +291,10 @@
 			"optional": true,
 			"refToView": "",
 			"length": "100"
-		},
-		{
+		}, {
 			"id": "xf_constraint_boolean",
 			"type": "Constraints",
-			"config":"###constraints_boolean",
+			"config": "###constraints_boolean",
 			"title": "Constraint(Boolean)",
 			"title_de": "Prüfung(Boolean)",
 			"prefix": "oryx",
@@ -321,11 +304,10 @@
 			"optional": true,
 			"refToView": "",
 			"length": "100"
-		},
-		{
+		}, {
 			"id": "xf_constraint_decimal",
 			"type": "Constraints",
-			"config":"###constraints_decimal",
+			"config": "###constraints_decimal",
 			"title": "Constraint(Decimal)",
 			"title_de": "Prüfung(Dezimal)",
 			"prefix": "oryx",
@@ -335,11 +317,10 @@
 			"optional": true,
 			"refToView": "",
 			"length": "100"
-		},
-		{
+		}, {
 			"id": "xf_constraint_number",
 			"type": "Constraints",
-			"config":"###constraints_number",
+			"config": "###constraints_number",
 			"title": "Constraint(Number)",
 			"title_de": "Prüfung(Nummer)",
 			"prefix": "oryx",
@@ -349,20 +330,18 @@
 			"optional": true,
 			"refToView": "",
 			"length": "100"
-		}
-	]
-	},
-	{
+		} ]
+	}, {
 		"type": "node",
 		"id": "Label",
 		"title": "Label",
 		"title_de": "Label",
-		"groups": ["Support Elements"],
+		"groups": [ "Support Elements" ],
 		"description": "A label for form controls.",
 		"view": "new_label.svg",
 		"icon": "new_label.png",
-		"roles": ["label"],
-		"properties": [{
+		"roles": [ "label" ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -370,12 +349,11 @@
 			"value": "",
 			"description": "",
 			"readonly": false,
-			"include":false,
+			"include": false,
 			"optional": true,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_text",
 			"type": "String",
 			"title": "text",
@@ -387,25 +365,24 @@
 			"refToView": "labeltext",
 			"length": "100",
 			"wrapLines": true
-		}]
-	},
-	{
+		} ]
+	}, {
 		"type": "node",
 		"id": "Textarea",
 		"title": "Textarea",
 		"title_de": "Texteingabe",
-		"groups": ["Controls"],
+		"groups": [ "Controls" ],
 		"description": "A textarea control.",
 		"view": "new_textarea.svg",
 		"icon": "new_textarea.png",
-		"roles": ["core_form_controls", "controls_morph"],
+		"roles": [ "core_form_controls", "controls_morph" ],
 
-		"layout": [{
+		"layout": [ {
 			"type": "layout.xforms.label",
 			"moveY": -1,
 			"moveX": 0
-		}],
-		"properties": [{
+		} ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -417,8 +394,7 @@
 			"optional": false,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_default",
 			"type": "text",
 			"title": "Defaultvalue",
@@ -431,8 +407,7 @@
 			"optional": true,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_readonly",
 			"type": "Combo",
 			"title": "Readonly",
@@ -444,20 +419,18 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"items": [{
+			"items": [ {
 				"id": "c1",
 				"value": "true",
 				"title": "true",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c2",
 				"value": "false",
 				"title": "false",
 				"refToView": ""
 			} ]
-		},
-		{
+		}, {
 			"id": "xf_required",
 			"type": "Combo",
 			"title": "Required",
@@ -469,20 +442,18 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"items": [{
+			"items": [ {
 				"id": "c1",
 				"value": "true",
 				"title": "true",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c2",
 				"value": "false",
 				"title": "false",
 				"refToView": ""
 			} ]
-		},
-		{
+		}, {
 			"id": "xf_constraint",
 			"type": "String",
 			"title": "Constraint",
@@ -495,24 +466,23 @@
 			"optional": true,
 			"refToView": "",
 			"length": "100"
-		}]
-	},
-	{
+		} ]
+	}, {
 		"type": "node",
 		"id": "Moduleselector",
 		"title": "Values from specified Entity",
 		"title_de": "Werte aus Datenbank",
-		"groups": ["Controls"],
+		"groups": [ "Controls" ],
 		"description": "Select an value from specified Module",
 		"view": "entity_select.svg",
 		"icon": "entity_select.png",
-		"roles": ["core_form_controls", "controls_morph"],
-		"layout": [{
+		"roles": [ "core_form_controls", "controls_morph" ],
+		"layout": [ {
 			"type": "layout.xforms.label",
 			"moveY": -1,
 			"moveX": 0
-		}],
-		"properties": [{
+		} ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -524,11 +494,13 @@
 			"optional": false,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_module",
 			"type": "ResourceSelector",
-			"config": {"type":"sw.entitytype","prefix":""},
+			"config": {
+				"type": "sw.entitytype",
+				"prefix": ""
+			},
 			"title": "Entity",
 			"title_de": "Entität",
 			"prefix": "oryx",
@@ -539,35 +511,36 @@
 			"optional": false,
 			"refToView": "",
 			"length": "100"
-		},
-		{
+		}, {
 			"id": "xf_fieldlist",
 			"type": "FieldSelector",
-			"config": {"helperTree":["sw.form"], "entityField":"xf_module"},
+			"config": {
+				"helperTree": [ "sw.form" ],
+				"entityField": "xf_module"
+			},
 			"title": "Fieldlist",
 			"title_de": "Feldliste",
 			"value": "",
 			"popular": true,
 			"readonly": "xf_module==''||xf_module==null",
 			"optional": true
-		}]
-	},
-	{
+		} ]
+	}, {
 		"type": "node",
 		"id": "Tableselect",
 		"title": "Tableselect",
 		"title_de": "Auswahl(Tabelle)",
-		"groups": ["Controls"],
+		"groups": [ "Controls" ],
 		"description": "This form control allows the user to make single/multiple selections from a list.",
 		"view": "new_select.svg",
 		"icon": "new_select.png",
-		"roles": ["core_form_controls", "controls_morph"],
-		"layout": [{
+		"roles": [ "core_form_controls", "controls_morph" ],
+		"layout": [ {
 			"type": "layout.xforms.label",
 			"moveY": -1,
 			"moveX": 0
-		}],
-		"properties": [{
+		} ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -579,8 +552,7 @@
 			"optional": false,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_multiselection",
 			"title": "Multiselection",
 			"title_de": "Mehrfachauswahl",
@@ -589,11 +561,12 @@
 			"popular": true,
 			"readonly": false,
 			"optional": false
-		},
-		{
+		}, {
 			"id": "xf_columns",
 			"type": "Complex",
-			"config": {"helperTree":["sw.form","sw.filter","sw.entitytype"]},
+			"config": {
+				"helperTree": [ "sw.form", "sw.filter", "sw.entitytype" ]
+			},
 			"title": "Tablecolumns",
 			"title_de": "Tabellenspalten",
 			"value": "",
@@ -602,7 +575,7 @@
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "colname",
 				"name": "Columnname",
 				"name_de": "Spaltenname",
@@ -610,8 +583,7 @@
 				"value": "",
 				"width": 150,
 				"optional": false
-			},
-			{
+			}, {
 				"id": "display",
 				"name": "Header",
 				"name_de": "Anzeige",
@@ -619,9 +591,8 @@
 				"value": "",
 				"width": 150,
 				"optional": true
-			}]
-		},
-		{
+			} ]
+		}, {
 			"id": "xf_inputlistname",
 			"type": "String",
 			"title": "Inputlist",
@@ -633,11 +604,13 @@
 			"readonly": false,
 			"optional": true,
 			"length": "50"
-		},
-		{
+		}, {
 			"id": "xf_filter",
 			"type": "ResourceSelector",
-			"config": {"type":"sw.filter","prefix":""},
+			"config": {
+				"type": "sw.filter",
+				"prefix": ""
+			},
 			"title": "Filter",
 			"title_de": "Filter",
 			"prefix": "oryx",
@@ -647,8 +620,7 @@
 			"optional": false,
 			"refToView": "",
 			"length": "100"
-		},
-		{
+		}, {
 			"id": "xf_required",
 			"type": "Combo",
 			"title": "Required",
@@ -660,36 +632,34 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"items": [{
+			"items": [ {
 				"id": "c1",
 				"value": "true",
 				"title": "true",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c2",
 				"value": "false",
 				"title": "false",
 				"refToView": ""
-			}]
-		}]
-	},
-	{
+			} ]
+		} ]
+	}, {
 		"type": "node",
 		"id": "Enumselect",
 		"title": "Enumselect",
 		"title_de": "Auswahl(Aufzählung)",
-		"groups": ["Controls"],
+		"groups": [ "Controls" ],
 		"description": "This form control allows the user to make single/multiple selections from enums.",
 		"view": "new_select1.svg",
-    "icon": "new_select1.png",
-		"roles": ["core_form_controls", "controls_morph"],
-		"layout": [{
+		"icon": "new_select1.png",
+		"roles": [ "core_form_controls", "controls_morph" ],
+		"layout": [ {
 			"type": "layout.xforms.label",
 			"moveY": -1,
 			"moveX": 0
-		}],
-		"properties": [{
+		} ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -701,8 +671,7 @@
 			"optional": false,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_multiselection",
 			"title": "Multiselection",
 			"title_de": "Mehrfachauswahl",
@@ -711,8 +680,7 @@
 			"popular": true,
 			"readonly": false,
 			"optional": false
-		},
-		{
+		}, {
 			"id": "xf_enumembed",
 			"type": "Complex",
 			"title": "Embedded",
@@ -723,7 +691,7 @@
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "value",
 				"name": "Value",
 				"name_de": "Wert",
@@ -731,8 +699,7 @@
 				"value": "",
 				"width": 150,
 				"optional": false
-			},
-			{
+			}, {
 				"id": "label",
 				"name": "Label",
 				"name_de": "Label",
@@ -740,8 +707,7 @@
 				"value": "",
 				"width": 150,
 				"optional": false
-			},
-			{
+			}, {
 				"id": "tooltip",
 				"name": "Tooltip",
 				"name_de": "Tooltip",
@@ -749,12 +715,14 @@
 				"value": "",
 				"width": 150,
 				"optional": false
-			}]
-		},
-		{
+			} ]
+		}, {
 			"id": "xf_enum",
 			"type": "Complex",
-			"config": {"helperTree":["sw.enum","sw.filter"], "kind":"enum"},
+			"config": {
+				"helperTree": [ "sw.enum", "sw.filter" ],
+				"kind": "enum"
+			},
 			"title": "Remote",
 			"title_de": "Beziehen",
 			"value": "",
@@ -763,7 +731,7 @@
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "colname",
 				"name": "Columnname",
 				"name_de": "Spaltenname",
@@ -771,50 +739,46 @@
 				"value": "",
 				"width": 150,
 				"optional": false
-			},
-			{
+			}, {
 				"id": "mapping",
 				"name": "Mapping",
 				"name_de": "Mapping",
 				"readonly": false,
 				"type": "Choice",
 				"value": "value",
-				"items": [{
+				"items": [ {
 					"id": "value",
 					"title": "value",
 					"value": "value"
-				}, 
-				{
+				}, {
 					"id": "label",
 					"title": "label",
 					"value": "label"
-				},
-				{
+				}, {
 					"id": "tooltip",
 					"title": "tooltip",
 					"value": "tooltip"
-				}],
+				} ],
 				"width": 80,
 				"optional": false
-			}]
-		}]
-	},
-	{
+			} ]
+		} ]
+	}, {
 		"type": "node",
 		"id": "Gridinput",
 		"title": "Gridinput",
 		"title_de": "Eingabe(Grid)",
-		"groups": ["Controls"],
+		"groups": [ "Controls" ],
 		"description": "This form control allows the user to make single/multiple selections from a list.",
 		"view": "new_tableedit.svg",
 		"icon": "new_tableedit.png",
-		"roles": ["core_form_controls", "controls_morph"],
-		"layout": [{
+		"roles": [ "core_form_controls", "controls_morph" ],
+		"layout": [ {
 			"type": "layout.xforms.label",
 			"moveY": -1,
 			"moveX": 0
-		}],
-		"properties": [{
+		} ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -826,11 +790,12 @@
 			"optional": false,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_columns",
 			"type": "Complex",
-			"config": {"helperTree":["sw.form","sw.entitytype"]},
+			"config": {
+				"helperTree": [ "sw.form", "sw.entitytype" ]
+			},
 			"title": "Tablecolumns",
 			"title_de": "Tabellenspalten",
 			"value": "",
@@ -839,7 +804,7 @@
 			"popular": true,
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "colname",
 				"name": "Columnname",
 				"name_de": "Spaltenname",
@@ -847,8 +812,7 @@
 				"value": "",
 				"width": 100,
 				"optional": false
-			},
-			{
+			}, {
 				"id": "display",
 				"name": "Display",
 				"name_de": "Anzeige",
@@ -856,8 +820,7 @@
 				"value": "",
 				"width": 100,
 				"optional": true
-			},
-			{
+			}, {
 				"id": "mapping",
 				"name": "Mapping",
 				"name_de": "Mapping",
@@ -865,8 +828,7 @@
 				"value": "",
 				"width": 100,
 				"optional": true
-			},
-			{
+			}, {
 				"id": "type",
 				"name": "Type",
 				"name_de": "Type",
@@ -881,71 +843,63 @@
 					"title": "Text",
 					"value": "text",
 					"refToView": ""
-				},
-				{
+				}, {
 					"id": "c2",
 					"title": "TextArea",
 					"value": "textarea",
 					"refToView": ""
-				},
-				{
+				}, {
 					"id": "c3",
 					"title": "Number",
 					"value": "number",
 					"refToView": ""
-				},
-				{
+				}, {
 					"id": "c4",
 					"title": "Boolean",
 					"value": "boolean",
 					"refToView": ""
-				},
-				{
+				}, {
 					"id": "c5",
 					"title": "Decimal",
 					"value": "decimal",
 					"refToView": ""
-				},
-				{
+				}, {
 					"id": "c6",
 					"title": "Date",
 					"value": "date",
 					"refToView": ""
-				},
-				{
+				}, {
 					"id": "c7",
 					"title": "DateTime",
 					"value": "datetime",
 					"refToView": ""
-				},
-				{
+				}, {
 					"id": "c8",
 					"title": "Search",
 					"title_de": "Suche",
 					"value": "search",
 					"refToView": ""
-				}]},
-				{
+				} ]
+			}, {
 				"id": "constraints",
 				"name": "Constraints",
 				"name_de": "Prüfung",
-				"config": { 
-								"typecolumn":"type",
-								"text":"###constraints_text",
-								"textarea":"###constraints_text",
-								"date":"###constraints_date",
-								"datetime":"###constraints_date",
-								"number":"###constraints_number",
-								"boolean":"###constraints_boolean",
-								"decimal":"###constraints_decimal"
+				"config": {
+					"typecolumn": "type",
+					"text": "###constraints_text",
+					"textarea": "###constraints_text",
+					"date": "###constraints_date",
+					"datetime": "###constraints_date",
+					"number": "###constraints_number",
+					"boolean": "###constraints_boolean",
+					"decimal": "###constraints_decimal"
 				},
 				"type": "Constraints",
 				"width": 40,
 				"optional": true,
 				"value": ""
-			}]
-		},
-		{
+			} ]
+		}, {
 			"id": "xf_inputlistname",
 			"type": "String",
 			"title": "Inputlist",
@@ -957,22 +911,21 @@
 			"readonly": false,
 			"optional": false,
 			"length": "50"
-		}]
-	},
-	{
+		} ]
+	}, {
 		"type": "node",
 		"id": "ActionButton",
 		"title": "ActionButton",
 		"title_de": "Auslösender Button",
-		"groups": ["Controls"],
+		"groups": [ "Controls" ],
 		"description": "Renders a actionbutton",
 		"view": "actionbutton.svg",
 		"icon": "actionbutton.png",
-		"roles": ["core_form_controls"],
-		"layout": [{
+		"roles": [ "core_form_controls" ],
+		"layout": [ {
 			"type": "layout.xforms.label.button"
-		}],
-		"properties": [{
+		} ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -984,8 +937,7 @@
 			"optional": false,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_action",
 			"type": "Choice",
 			"title": "Action",
@@ -997,22 +949,20 @@
 			"readonly": false,
 			"optional": false,
 			"refToView": "",
-			"items": [{
+			"items": [ {
 				"id": "c1",
 				"title": "Execute task",
 				"title_de": "Ausführen der Aufgabe",
 				"value": "execute",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c2",
 				"title": "Cancel task",
 				"title_de": "Abbrechen",
 				"value": "cancel",
 				"refToView": ""
-			}]
-		},
-		{
+			} ]
+		}, {
 			"id": "xf_label",
 			"type": "String",
 			"title": "Label",
@@ -1024,8 +974,7 @@
 			"optional": true,
 			"refToView": "",
 			"length": "64"
-		},
-		{
+		}, {
 			"id": "xf_iconname",
 			"type": "String",
 			"title": "Iconname",
@@ -1036,18 +985,17 @@
 			"optional": true,
 			"refToView": "",
 			"length": "64"
-		}]
-	},
-	{
+		} ]
+	}, {
 		"type": "node",
 		"id": "Alert",
 		"title": "Information",
 		"title_de": "Information",
-		"groups": ["Controls"],
+		"groups": [ "Controls" ],
 		"view": "new_alert.svg",
 		"icon": "infobox-20.png",
-		"roles": ["core_form_controls"],
-		"properties": [{
+		"roles": [ "core_form_controls" ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -1059,8 +1007,7 @@
 			"optional": false,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_message",
 			"type": "Text",
 			"title": "Text",
@@ -1073,8 +1020,7 @@
 			"optional": true,
 			"length": "100",
 			"wrapLines": true
-		},
-		{
+		}, {
 			"id": "xf_message_de",
 			"type": "Text",
 			"title": "Text(de)",
@@ -1087,8 +1033,7 @@
 			"optional": true,
 			"length": "100",
 			"wrapLines": true
-		},
-		{
+		}, {
 			"id": "xf_message_en",
 			"type": "Text",
 			"title": "text(en)",
@@ -1101,8 +1046,7 @@
 			"optional": true,
 			"length": "100",
 			"wrapLines": true
-		},
-		{
+		}, {
 			"id": "xf_exclude",
 			"type": "String",
 			"title": "exclude",
@@ -1114,33 +1058,31 @@
 			"optional": true,
 			"refToView": "",
 			"length": "100"
-		}]
-	},
-	{
+		} ]
+	}, {
 		"type": "node",
 		"id": "Group",
 		"title": "Group",
 		"title_de": "Gruppe",
-		"groups": ["Containers"],
+		"groups": [ "Containers" ],
 		"description": "A container for defining a hierarchy of form controls.",
 		"view": "new_group.svg",
 		"icon": "new_group.png",
-		"roles": ["core_form_controls", "standard_container", "ui_common_container"],
+		"roles": [ "core_form_controls", "standard_container", "ui_common_container" ],
 
-		"layout": [{
+		"layout": [ {
 			"type": "layout.rows",
 			"marginTop": 30,
 			"marginLeft": 30,
 			"spacingX": 30,
 			"spacingY": 30,
-			"exclude": ["http://b3mn.org/stencilset/xforms#Label"]
-		},
-		{
+			"exclude": [ "http://b3mn.org/stencilset/xforms#Label" ]
+		}, {
 			"type": "layout.xforms.label",
 			"moveY": -1,
 			"moveX": 0
-		}],
-		"properties": [{
+		} ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -1151,8 +1093,7 @@
 			"optional": true,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_place",
 			"type": "Choice",
 			"title": "Place",
@@ -1164,56 +1105,51 @@
 			"readonly": false,
 			"optional": false,
 			"refToView": "",
-			"items": [{
+			"items": [ {
 				"id": "c1",
 				"title": "Normal",
 				"value": "normal",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c2",
 				"title": "South",
 				"title_de": "Süden",
 				"value": "south",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c3",
 				"title": "North",
 				"title_de": "Norden",
 				"value": "north",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c3",
 				"title": "East",
 				"title_de": "Osten",
 				"value": "east",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c3",
 				"title": "West",
 				"value": "west",
 				"refToView": ""
-			}]
-		}]
-	},
-	{
+			} ]
+		} ]
+	}, {
 		"type": "node",
 		"id": "Tabview",
 		"title": "Tabview",
 		"title_de": "Register",
-		"groups": ["Containers"],
+		"groups": [ "Containers" ],
 		"description": "This element contains one or more page elements, any one of which is rendered at a given time.",
 		"view": "new_switch.svg",
 		"icon": "new_switch.png",
-		"roles": ["additional_form_controls", "page_container"],
+		"roles": [ "additional_form_controls", "page_container" ],
 
-		"layout": [{
+		"layout": [ {
 			"type": "layout.xforms.page"
-		}],
-		"properties": [{
+		} ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -1226,8 +1162,7 @@
 			"optional": true,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_enabled",
 			"type": "String",
 			"title": "enabled",
@@ -1240,27 +1175,26 @@
 			"optional": true,
 			"refToView": "",
 			"length": "100"
-		}]
-	},
-	{
+		} ]
+	}, {
 		"type": "node",
 		"id": "Page",
 		"title": "Tabpage",
 		"title_de": "Registerkarte",
-		"groups": ["Containers"],
+		"groups": [ "Containers" ],
 		"description": "This element encloses markup to be conditionally rendered.",
 		"view": "new_case.svg",
 		"icon": "new_case.png",
-		"roles": ["page", "labeled", "standard_container", "actions_container"],
+		"roles": [ "page", "labeled", "standard_container", "actions_container" ],
 
-		"layout": [{
+		"layout": [ {
 			"type": "layout.rows",
 			"marginTop": 30,
 			"marginLeft": 10,
 			"spacingX": 30,
 			"spacingY": 30
-		}],
-		"properties": [{
+		} ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -1272,8 +1206,7 @@
 			"optional": true,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_selected",
 			"type": "Combo",
 			"title": "selected",
@@ -1286,31 +1219,29 @@
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
-			"items": [{
+			"items": [ {
 				"id": "c1",
 				"value": "true",
 				"title": "true",
 				"refToView": ""
-			},
-			{
+			}, {
 				"id": "c2",
 				"value": "false",
 				"title": "false",
 				"refToView": ""
 			} ]
-		}]
-	},
-	{
+		} ]
+	}, {
 		"type": "node",
 		"id": "Help",
 		"title": "Help",
 		"title_de": "Hilfe",
-		"groups": ["Support Elements"],
+		"groups": [ "Support Elements" ],
 		"description": "Help information for form controls.",
 		"view": "new_help.svg",
 		"icon": "new_help.png",
-		"roles": ["ui_common", "support_morph"],
-		"properties": [{
+		"roles": [ "ui_common", "support_morph" ],
+		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
 			"title": "Id",
@@ -1321,8 +1252,7 @@
 			"optional": true,
 			"refToView": "",
 			"length": "30"
-		},
-		{
+		}, {
 			"id": "xf_message",
 			"type": "String",
 			"title": "Helptext",
@@ -1334,83 +1264,161 @@
 			"optional": true,
 			"length": "100",
 			"wrapLines": true
-		}]
-	}],
+		} ]
+	} ],
 	"rules": {
-		"containmentRules": [{
+		"containmentRules": [ {
 			"role": "standard_container",
-			"contains": ["core_form_controls", "additional_form_controls"]
-		},
-		{
+			"contains": [ "core_form_controls", "additional_form_controls" ]
+		}, {
 			"role": "core_form_controls",
-			"contains": ["label", "ui_common", "action"]
-		},
-		{
+			"contains": [ "label", "ui_common", "action" ]
+		}, {
 			"role": "labeled",
-			"contains": ["label"]
-		},
-		{
+			"contains": [ "label" ]
+		}, {
 			"role": "ui_common_container",
-			"contains": ["ui_common"]
-		},
-		{
+			"contains": [ "ui_common" ]
+		}, {
 			"role": "actions_container",
-			"contains": ["action"]
-		},
-		{
+			"contains": [ "action" ]
+		}, {
 			"role": "list_ui_common_container",
-			"contains": ["list_ui_common"]
-		},
-		{
+			"contains": [ "list_ui_common" ]
+		}, {
 			"role": "page_container",
-			"contains": ["page"]
-		}],
-		"morphingRules": [{
+			"contains": [ "page" ]
+		} ],
+		"morphingRules": [ {
 			"role": "controls_morph",
-			"baseMorphs": ["Input"]
-		},
-		{
+			"baseMorphs": [ "Input" ]
+		}, {
 			"role": "actions_morph",
-			"baseMorphs": ["Action"]
-		},
-		{
+			"baseMorphs": [ "Action" ]
+		}, {
 			"role": "support_morph",
-			"baseMorphs": ["Hint"]
-		}]
+			"baseMorphs": [ "Hint" ]
+		} ]
 	},
- "definitions":{
-	"constraints_text":[
-		{ "clazz":"Pattern","label":"@Muster","options":[{"label":"","type":"string","optname":"regexp"}] },
-		{ "clazz":"Size","options":[{"label":"Min","type":"int","optname":"min"},{"label":"Max","type":"int","optname":"max"}] },
-		{ "clazz":"NotBlank","pkg":"org.hibernate.validator.constraints","options":[] },
-		{ "clazz":"CreditCardNumber","pkg":"org.hibernate.validator.constraints", "options":[] },
-		{ "clazz":"URL","pkg":"org.hibernate.validator.constraints", "options":[] },
-		{ "clazz":"Email","pkg":"org.hibernate.validator.constraints", "options":[] }
-	],
-	"constraints_date":[
-		{ "clazz":"Future","options":[] },
-		{ "clazz":"Past","options":[] },
-		{ "clazz":"DateMin","pkg":"org.ms123.common.form.constraints","options":[{"label":"","type":"date,long"}] },
-		{ "clazz":"DateMax","pkg":"org.ms123.common.form.constraints","options":[{"label":"","type":"date,long"}] },
-		{ "clazz":"NotBlank","pkg":"org.hibernate.validator.constraints","options":[] },
-		{ "clazz":"NotNull","options":[] }
-	],
-	"constraints_boolean":[
-		{ "clazz":"AssertFalse" },
-		{ "clazz":"AssertTrue" },
-		{ "clazz":"NotNull","options":[] }
-	],
-	"constraints_decimal":[
-		{ "clazz":"Digits","options":[{"label":"@max.vor_komma","type":"int","optname":"integer"},{"label":"@max.nach_komma","type":"int","optname":"fraction"} ] },
-		{ "clazz":"DecimalMin","options":[{"label":"","type":"decimal,string"}] },
-		{ "clazz":"DecimalMax","options":[{"label":"","type":"decimal,string"}] },
-		{ "clazz":"NotBlank","pkg":"org.hibernate.validator.constraints","options":[] },
-		{ "clazz":"NotNull","options":[] }
-	],
-	"constraints_number":[
-		{ "clazz":"Min","options":[{"label":"","type":"int,long"}] },
-		{ "clazz":"Max","options":[{"label":"","type":"int,long"}] },
-		{ "clazz":"NotNull","options":[] }
-	]
- }
+	"definitions": {
+		"constraints_text": [ {
+			"clazz": "Pattern",
+			"label": "@Muster",
+			"options": [ {
+				"label": "",
+				"type": "string",
+				"optname": "regexp"
+			} ]
+		}, {
+			"clazz": "Size",
+			"options": [ {
+				"label": "Min",
+				"type": "int",
+				"optname": "min"
+			}, {
+				"label": "Max",
+				"type": "int",
+				"optname": "max"
+			} ]
+		}, {
+			"clazz": "NotBlank",
+			"pkg": "org.hibernate.validator.constraints",
+			"options": []
+		}, {
+			"clazz": "CreditCardNumber",
+			"pkg": "org.hibernate.validator.constraints",
+			"options": []
+		}, {
+			"clazz": "URL",
+			"pkg": "org.hibernate.validator.constraints",
+			"options": []
+		}, {
+			"clazz": "Email",
+			"pkg": "org.hibernate.validator.constraints",
+			"options": []
+		} ],
+		"constraints_date": [ {
+			"clazz": "Future",
+			"options": []
+		}, {
+			"clazz": "Past",
+			"options": []
+		}, {
+			"clazz": "DateMin",
+			"pkg": "org.ms123.common.form.constraints",
+			"options": [ {
+				"label": "",
+				"type": "date,long"
+			} ]
+		}, {
+			"clazz": "DateMax",
+			"pkg": "org.ms123.common.form.constraints",
+			"options": [ {
+				"label": "",
+				"type": "date,long"
+			} ]
+		}, {
+			"clazz": "NotBlank",
+			"pkg": "org.hibernate.validator.constraints",
+			"options": []
+		}, {
+			"clazz": "NotNull",
+			"options": []
+		} ],
+		"constraints_boolean": [ {
+			"clazz": "AssertFalse"
+		}, {
+			"clazz": "AssertTrue"
+		}, {
+			"clazz": "NotNull",
+			"options": []
+		} ],
+		"constraints_decimal": [ {
+			"clazz": "Digits",
+			"options": [ {
+				"label": "@max.vor_komma",
+				"type": "int",
+				"optname": "integer"
+			}, {
+				"label": "@max.nach_komma",
+				"type": "int",
+				"optname": "fraction"
+			} ]
+		}, {
+			"clazz": "DecimalMin",
+			"options": [ {
+				"label": "",
+				"type": "decimal,string"
+			} ]
+		}, {
+			"clazz": "DecimalMax",
+			"options": [ {
+				"label": "",
+				"type": "decimal,string"
+			} ]
+		}, {
+			"clazz": "NotBlank",
+			"pkg": "org.hibernate.validator.constraints",
+			"options": []
+		}, {
+			"clazz": "NotNull",
+			"options": []
+		} ],
+		"constraints_number": [ {
+			"clazz": "Min",
+			"options": [ {
+				"label": "",
+				"type": "int,long"
+			} ]
+		}, {
+			"clazz": "Max",
+			"options": [ {
+				"label": "",
+				"type": "int,long"
+			} ]
+		}, {
+			"clazz": "NotNull",
+			"options": []
+		} ]
+	}
 }
