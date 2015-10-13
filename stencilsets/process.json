@@ -906,6 +906,17 @@
 				"optional": false
 			} ]
 		}, {
+			"id": "formvarname",
+			"type": "String",
+			"title": "Form variable",
+			"title_de": "Form Variable",
+			"value": null,
+			"description": "Processvariable that becomes the  form values  assigned(Default: the formname)",
+			"description_de": "Prozessvariable der die Formwerte  zugeordnet werden(Default: der Formname)",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		}, {
 			"id": "candidateGroups",
 			"type": "MultiSelect",
 			"config": "permission:getAllRoles:name",
@@ -958,19 +969,19 @@
 			"title": "Filtername",
 			"title_de": "Filtername",
 			"value": null,
-			"description": "Filtername",
-			"description_de": "Name des Filters",
+			"description": "Filtername. Either filtername or filterobject is required",
+			"description_de": "Name des Filters. Entweder Filtername oder Filterobjekt ist erforderlich",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
 		}, {
-			"id": "filtervarname",
+			"id": "filterobject",
 			"type": "String",
-			"title": "Filtername variable",
-			"title_de": "Filtername Variable",
+			"title": "Filterobject",
+			"title_de": "Filterobject",
 			"value": null,
-			"description": "Name of a processvariable that contains a filter structure(map)",
-			"description_de": "Name einer Prozessvariablen die eine Filterstruktur enthält(Map)",
+			"description": "Name of a processvariable that contains a reference of a filterobject(map)",
+			"description_de": "Name einer Prozessvariablen die eine Referenz auf ein  Filterobjekt enthält(Map)",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
@@ -1005,13 +1016,13 @@
 				"optional": false
 			} ]
 		}, {
-			"id": "listname",
+			"id": "filtervarname",
 			"type": "String",
-			"title": "Listname",
-			"title_de": "Listenname",
+			"title": "Filter variable",
+			"title_de": "Filter variable",
 			"value": "",
-			"description": "Name of the generated list",
-			"description_de": "Name des erzeugten Liste",
+			"description": "Processvariable that becomes the result of the filter(a list)  assigned",
+			"description_de": "Prozessvariable der das Ergebnis des Filters(eine Liste)  zugordnet wird",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
@@ -1110,8 +1121,8 @@
 			"title": "Return variable",
 			"title_de": "Return Variable",
 			"value": null,
-			"description": "This variable becomes the return value  assigned",
-			"description_de": "Dieser Variablen wird der Rückgabewert zugewiesen",
+			"description": "This processvariable becomes the return value  assigned",
+			"description_de": "Dieser Prozessvariablen wird der Rückgabewert zugewiesen",
 			"readonly": false,
 			"optional": true,
 			"length": "50"

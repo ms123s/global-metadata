@@ -1035,6 +1035,30 @@
         "msgstr": "Dateiname"
     },
     {
+        "msgid": "jsondisplay.formatted",
+        "msgstr": "formatiert"
+    },
+    {
+        "msgid": "jsondisplay.plain",
+        "msgstr": "einfach"
+    },
+    {
+        "msgid": "jsondisplay.collapse",
+        "msgstr": "einklappen"
+    },
+    {
+        "msgid": "jsondisplay.expand",
+        "msgstr": "ausklappen"
+    },
+    {
+        "msgid": "jsondisplay.toggle",
+        "msgstr": "aus/einklappen"
+    },
+    {
+        "msgid": "jsondisplay.level2",
+        "msgstr": "aus/einklappen2"
+    },
+    {
         "msgid": "import.uploading_complete",
         "msgstr": "Dateitransfer abgeschlossen"
     },

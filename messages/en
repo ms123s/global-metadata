@@ -1799,6 +1799,30 @@
         "msgstr": "JSON"
     },
     {
+        "msgid": "jsondisplay.formatted",
+        "msgstr": "formatted"
+    },
+    {
+        "msgid": "jsondisplay.plain",
+        "msgstr": "plain"
+    },
+    {
+        "msgid": "jsondisplay.collapse",
+        "msgstr": "collapse"
+    },
+    {
+        "msgid": "jsondisplay.expand",
+        "msgstr": "expand"
+    },
+    {
+        "msgid": "jsondisplay.toggle",
+        "msgstr": "toggle"
+    },
+    {
+        "msgid": "jsondisplay.level2",
+        "msgstr": "togle2"
+    },
+    {
         "msgid": "key_short_A",
         "msgstr": "key_short_A"
     },
