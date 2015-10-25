@@ -23,6 +23,10 @@
         "msgstr": "<div style='position:relative;left:15%;top:50%;font-size:300%;'>Please drop a file</div>"
     },
     {
+        "msgid": "import.drop_file2",
+        "msgstr": "Bitte eine Datei hierher ziehen"
+    },
+    {
         "msgid": "import.upload_exportfile",
         "msgstr": "2.Upload"
     },

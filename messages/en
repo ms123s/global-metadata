@@ -1739,6 +1739,10 @@
         "msgstr": "<div style='position:relative;left:15%;top:50%;font-size:300%;'>Please drop a file</div>"
     },
     {
+        "msgid": "import.drop_file2",
+        "msgstr": "Please drop a file"
+    },
+    {
         "msgid": "import.no_filename",
         "msgstr": "Filename missing"
     },
