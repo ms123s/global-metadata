@@ -989,6 +989,7 @@
 			"id": "variablesmapping",
 			"type": "Complex",
 			"config": {
+				"kind":"filterboth",
 				"helperTree": [ "sw.filter" ]
 			},
 			"title": "Parameter-Mapping",
@@ -1063,7 +1064,7 @@
 			"type": "ResourceSelector",
 			"config": {
 				"type": "sw.camel",
-				"namespace":"tutorials",
+				 "namespace":"${namespace}",
 				"prefix": ""
 			},
 			"title": "Routename",

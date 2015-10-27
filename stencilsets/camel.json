@@ -3142,6 +3142,10 @@
 			"title": "Integer",
 			"value": "integer"
 		}, {
+			"id": "long",
+			"title": "Long",
+			"value": "long"
+		}, {
 			"id": "double",
 			"title": "Double",
 			"value": "double"
@@ -3149,6 +3153,10 @@
 			"id": "boolean",
 			"title": "Boolean",
 			"value": "boolean"
+		}, {
+			"id": "date",
+			"title": "Date",
+			"value": "date"
 		}, {
 			"id": "list",
 			"title": "List",
