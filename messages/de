@@ -5415,6 +5415,10 @@
 				"msgstr": "Abbrechen"
 		},
 		{
+				"msgid": "button.back",
+				"msgstr": "Zurück"
+		},
+		{
 				"msgid": "datatables.sFirst",
 				"msgstr": "Erste"
 		},
