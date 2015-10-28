@@ -675,6 +675,18 @@
 			"refToView": "",
 			"length": "30"
 		}, {
+			"id": "xf_default",
+			"type": "String",
+			"title": "Defaultvalue",
+			"title_de": "Voreinstellung",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "30"
+		}, {
 			"id": "xf_multiselection",
 			"title": "Multiselection",
 			"title_de": "Mehrfachauswahl",
