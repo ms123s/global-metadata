@@ -1,9 +1,0 @@
-[sw]
-	type = sw.role
---
-{
-    "name": "global.entscheider",
-    "permissions": [
-
-    ]
-}
