@@ -140,6 +140,7 @@
 			"id": "enrich_timeout",
 			"type": "String",
 			"title": "Timeout",
+			"description": "<ul><li>Timeout is 0, receiveNoWait is called. </li><li>Timeout is negative, receive is called. </li><li>Otherwise, receive(timeout) is called.</li></ul>",
 			"visible": "enrich=='pollEnrich'",
 			"value": 0,
 			"readonly": false,
@@ -1341,8 +1342,8 @@
 			"value": true
 		}, {
 			"id": "uriparam_consumer.delay",
-			"title": "Delay",
-			"title_de": "Verzögerung",
+			"title": "Delay(milliSec)",
+			"title_de": "Verzögerung(milliSec)",
 			"description": "Milliseconds before the next poll of the file/directory.",
 			"type": "string",
 			"value": "5000"
@@ -2066,10 +2067,13 @@
 			"type": "Boolean",
 			"value": true
 		}, {
-			"id": "uriparam_consumer.delay",
-			"title": "Poll(milliSec)",
+			"id": "uriparam_ftpClient.defaultTimeout",
+			"title": "Timeout(milliSec)",
+			"title_de": "Timeout(milliSec)",
+			"description": "Timeout(milliSec) when establishing a connection",
+			"description_de": "Timeout(milliSec) beim Verbindungsaufbau",
 			"type": "Integer",
-			"value": 1000
+			"value": 10000
 		} ]
 	}, {
 		"name": "mailProperties",
