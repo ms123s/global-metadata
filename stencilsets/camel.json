@@ -114,6 +114,37 @@
 			"readonly": false,
 			"optional": true,
 			"popular": true
+		}, {
+			"id": "enrich",
+			"title": "Enrich",
+			"description": "Apache Camel supports two kinds of content enricher, as follows:<ul><li> enrich()—obtains additional data from the resource by sending a copy of the current exchange to a producer endpoint and then using the data from the resulting reply (the exchange created by the enricher is always an InOut exchange).</li><li> pollEnrich()—obtains the additional data by polling a consumer endpoint for data. Effectively, the consumer endpoint from the main route and the consumer endpoint in pollEnrich() are coupled, such that exchanges incoming on the main route trigger a poll of the pollEnrich() endpoint.</li></ul>",
+			"type": "Choice",
+			"popular": true,
+			"visible": true,
+			"value": "no",
+			"items": [ {
+				"id": "c1",
+				"title": "No",
+				"title_de": "Nein",
+				"value": "no"
+			}, {
+				"id": "c2",
+				"title": "Enrich",
+				"value": "enrich"
+			}, {
+				"id": "c3",
+				"title": "PollEnrich",
+				"value": "pollEnrich"
+			} ]
+		}, {
+			"id": "enrich_timeout",
+			"type": "String",
+			"title": "Timeout",
+			"visible": "enrich=='pollEnrich'",
+			"value": 0,
+			"readonly": false,
+			"optional": true,
+			"popular": true
 		} ]
 	}, {
 		"name": "colorProperties",
@@ -2028,7 +2059,7 @@
 			"id": "uriparam_passiveMode",
 			"title": "Passive",
 			"type": "Boolean",
-			"value": false
+			"value": true
 		}, {
 			"id": "uriparam_binary",
 			"title": "Binary",
@@ -2611,7 +2642,7 @@
 		"icon": "ftpendpoint.png",
 		"groups": [ "Endpoints A-L" ],
 		"groups_de": [ "Endpunkte A-L" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "ftpProperties", "extraParamsProperties" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "ftpProperties", "commonFileProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
