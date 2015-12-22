@@ -2072,6 +2072,7 @@
 			"title_de": "Timeout(milliSec)",
 			"description": "Timeout(milliSec) when establishing a connection",
 			"description_de": "Timeout(milliSec) beim Verbindungsaufbau",
+			"include": "urivalue_protocol=='ftp'",
 			"type": "Integer",
 			"value": 10000
 		} ]
