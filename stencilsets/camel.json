@@ -1295,13 +1295,17 @@
 			"type": "Combo",
 			"title": "Encoding",
 			"description": "specify the encoding of the file",
-			"value": "UTF-8",
+			"value": "none",
 			"items": [ {
 				"id": "c1",
+				"value": "none",
+				"title":null 
+			}, {
+				"id": "c2",
 				"value": "UTF-8",
 				"title": "UTF-8"
 			}, {
-				"id": "c2",
+				"id": "c3",
 				"value": "ISO-8859-15",
 				"title": "ISO-8859-15"
 			} ]
@@ -2077,6 +2081,150 @@
 			"value": 10000
 		} ]
 	}, {
+		"name": "vfsProperties",
+		"properties": [ {
+			"id": "type_vfs",
+			"type": "String",
+			"value": "VFS",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "vfs:${operation}",
+			"visible": false
+		}, {
+			"id": "uriparam_fileSystem",
+			"type": "Choice",
+			"title": "Filesystem",
+			"value": "sftp",
+			"items": [ {
+				"id": "sftp",
+				"title": "SFTP",
+				"value": "sftp"
+			}, {
+				"id": "smb",
+				"title": "SMB",
+				"value": "smb"
+			}, {
+				"id": "html",
+				"title": "HTTP",
+				"value": "http"
+			}, {
+				"id": "zip",
+				"title": "ZIP",
+				"value": "zip"
+			}, {
+				"id": "jar",
+				"title": "JAR",
+				"value": "jar"
+			}, {
+				"id": "tar",
+				"title": "TAR",
+				"value": "tar"
+			} ]
+		}, {
+			"id": "urivalue_operation",
+			"type": "Choice",
+			"title": "Operation",
+			"title_de": "Operation",
+			"value": "get",
+			"items": [ {
+				"id": "c1",
+				"title": "Download",
+				"value": "get"
+			}, {
+				"id": "c2",
+				 "enabled": "['zip','jar','tar','http'].indexOf(uriparam_fileSystem) == -1",
+				"title": "Upload",
+				"value": "put"
+			}, {
+				"id": "c3",
+				"enabled": "['zip','jar','tar','http'].indexOf(uriparam_fileSystem) == -1",
+				"title_de": "Verschieben",
+				"title": "Move",
+				"value": "move"
+			}, {
+				"id": "c4",
+				"enabled": "['zip','jar','tar','http'].indexOf(uriparam_fileSystem) == -1",
+				"title_de": "Kopieren",
+				"title": "Copy",
+				"value": "copy"
+			}, {
+				"id": "c5",
+				"enabled": "['zip','jar','tar','http'].indexOf(uriparam_fileSystem) == -1",
+				"title_de": "Löschen",
+				"title": "Delete",
+				"value": "delete"
+			} ]
+		}, {
+			"id": "uriparam_host",
+			"visible": "['zip','jar','tar'].indexOf(uriparam_fileSystem) == -1",
+			"title": "Host",
+			"type": "String",
+			"value": null
+		}, {
+			"id": "uriparam_port",
+			"visible": "['zip','jar','tar'].indexOf(uriparam_fileSystem) == -1",
+			"title": "Port",
+			"type": "String",
+			"value": null
+		}, {
+			"id": "uriparam_share",
+			"visible": "['smb'].indexOf(uriparam_fileSystem) != -1",
+			"title": "Share",
+			"title_de": "Freigabe",
+			"type": "String",
+			"value": null
+		}, {
+			"id": "uriparam_userName",
+			"visible": "['zip','jar','tar'].indexOf(uriparam_fileSystem) == -1",
+			"title": "Username",
+			"type": "String",
+			"value": null
+		}, {
+			"id": "uriparam_password",
+			"visible": "['zip','jar','tar'].indexOf(uriparam_fileSystem) == -1",
+			"title": "Password",
+			"title_de": "Passwort",
+			"type": "String",
+			"value": null 
+		}, {
+			"id": "uriparam_privateKey",
+			"title": "Schlüssel",
+			"visible": "['sftp'].indexOf(uriparam_fileSystem) != -1",
+			"title_de": "Key",
+			"type": "String",
+			"value":null 
+		}, {
+			"id": "uriparam_remotePath",
+			"title": "Ferner Pfad",
+			"title_de": "Remotepath",
+			"type": "String",
+			"value":null 
+		}, {
+			"id": "uriparam_localPath",
+			"visible": "['put'].indexOf(urivalue_operation) != -1 && ['zip','jar','tar','http'].indexOf(uriparam_fileSystem) == -1",
+			"title": "Lokaler Pfad",
+			"title_de": "Localpath",
+			"type": "String",
+			"value":null 
+		}, {
+			"id": "uriparam_newRemotePath",
+			"title": "Neuer ferner Pfad",
+			"visible": "['move','copy'].indexOf(urivalue_operation) != -1 && ['zip','jar','tar','http'].indexOf(uriparam_fileSystem) == -1",
+			"title_de": "New remotepath",
+			"type": "String",
+			"value":null 
+		}, {
+			"id": "uriparam_archivePath",
+			"title": "Archiv Pfad",
+			"visible": "['zip','jar','tar'].indexOf(uriparam_fileSystem) != -1",
+			"title_de": "Archivepath",
+			"type": "String",
+			"value":null 
+		} ]
+	}, {
 		"name": "mailProperties",
 		"properties": [ {
 			"id": "type_mail",
@@ -2728,6 +2876,16 @@
 		"groups": [ "Endpoints M-Z" ],
 		"groups_de": [ "Endpunkte M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "sqlProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "VfsEndpoint",
+		"title": "VFS",
+		"view": "vfsendpoint.svg",
+		"icon": "vfsendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "vfsProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
