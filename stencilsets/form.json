@@ -472,6 +472,40 @@
 		} ]
 	}, {
 		"type": "node",
+		"id": "Upload",
+		"title": "Upload",
+		"title_de": "Upload",
+		"groups": [ "Controls" ],
+		"view": "new_upload.svg",
+		"icon": "new_upload.png",
+		"roles": [ "core_form_controls" ],
+		"properties": [ {
+			"id": "xf_id",
+			"type": "String",
+			"title": "Id",
+			"prefix": "oryx",
+			"value": "",
+			"description": "",
+			"popular": true,
+			"readonly": false,
+			"optional": false,
+			"refToView": "",
+			"length": "30"
+		}, {
+			"id": "xf_exclude",
+			"type": "String",
+			"title": "exclude",
+			"prefix": "oryx",
+			"value": "",
+			"description": "Exclude expression",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"length": "100"
+		} ]
+	}, {
+		"type": "node",
 		"id": "Moduleselector",
 		"title": "Values from specified Entity",
 		"title_de": "Werte aus Datenbank",
