@@ -478,7 +478,13 @@
 		"groups": [ "Controls" ],
 		"view": "new_upload.svg",
 		"icon": "new_upload.png",
-		"roles": [ "core_form_controls" ],
+		"roles": [ "core_form_controls", "controls_morph" ],
+
+		"layout": [ {
+			"type": "layout.xforms.label",
+			"moveY": -1,
+			"moveX": 0
+		} ],
 		"properties": [ {
 			"id": "xf_id",
 			"type": "String",
@@ -491,6 +497,28 @@
 			"optional": false,
 			"refToView": "",
 			"length": "30"
+		}, {
+			"id": "xf_required",
+			"type": "Combo",
+			"title": "Required",
+			"title_de": "Eingabe nötig",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [ {
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			}, {
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			} ]
 		}, {
 			"id": "xf_exclude",
 			"type": "String",
