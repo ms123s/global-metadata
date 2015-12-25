@@ -39,7 +39,7 @@
             "name": "filename",
             "edittype": "functional",
             "datatype": "string",
-            "formula_client": "if(_mode=='add' && !content.match(/^data:/)){ content}else{filename}"
+            "formula_client": "content"
         },
         "type": {
             "enabled": true,
