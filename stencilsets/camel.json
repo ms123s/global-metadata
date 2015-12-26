@@ -220,12 +220,20 @@
 				"value": "csv"
 			}, {
 				"id": "c2",
+				"title": "fixed",
+				"value": "univocity-fixed"
+			}, {
+				"id": "c3",
 				"title": "json",
 				"value": "json"
 			}, {
-				"id": "c3",
+				"id": "c4",
 				"title": "base64",
 				"value": "base64"
+			}, {
+				"id": "c5",
+				"title": "zip",
+				"value": "zip"
 			} ],
 			"visible": true
 		}, {
@@ -277,6 +285,78 @@
 			"popular": false,
 			"visible": "format=='csv' && func=='unmarshal'"
 		}, {
+			"id": "univocity-fixed_headersDisabled",
+			"title": "Ignore header",
+			"title_de": "Ignoriere Kopfzeile",
+			"type": "boolean",
+			"value": false,
+			"popular": false,
+			"visible": "format=='univocity-fixed'"
+		}, {
+			"id": "univocity-fixed_fieldLengths",
+			"type": "Complex",
+			"title": "FieldLengths",
+			"title_de": "Feldlängen",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "length",
+				"name": "Length",
+				"name_de": "Länge",
+				"type": "Integer",
+				"value": "",
+				"width": 150,
+				"optional": false
+			} ],
+			"visible": "format=='univocity-fixed'"
+		}, {
+			"id": "univocity-fixed_headers",
+			"type": "Complex",
+			"title": "Header",
+			"title_de": "Kopfzeile",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 250,
+				"optional": false
+			} ],
+			"visible": "format=='univocity-fixed'"
+		}, {
+			"id": "univocity-fixed_asMap",
+			"title": "Result as map",
+			"title_de": "Ergebnis als Map",
+			"description": "Whether the unmarshalling should produce maps for the lines values instead of lists. It requires to have header (either defined or collected).",
+			"type": "boolean",
+			"value": false,
+			"popular": false,
+			"visible": "format=='univocity-fixed' && func=='unmarshal'"
+		}, {
+			"id": "zip_pattern",
+			"title": "Pattern",
+			"title_de": "Muster",
+			"description": "Only entries with the matching pattern are extracted.",
+			"description_de": "Nur Einträge mit dem passenden Muster werden extrahiert.",
+			"type": "string",
+			"value": null,
+			"popular": false,
+			"visible": "format=='zip' && func=='unmarshal'"
+		}, {
+			"id": "zip_oneToBody",
+			"title": "Extract one to body",
+			"title_de": "Extrakt in den Body",
+			"description": "Extract one entry to the body, otherwise the body contains a map with the matching entries,even at one entry.",
+			"description_de": "Einen Eintrag in den Body extrahieren, ansonsten enthält der Body eine Map mit den Einträgen auch bei einem Eintrag.",
+			"type": "boolean",
+			"value": true,
+			"popular": false,
+			"visible": "format=='zip' && func=='unmarshal'"
+		}, {
 			"id": "json_prettyPrint",
 			"title": "PrettyPrint",
 			"description": "Enables pretty printing, which adds white space as needed to tidy up the resulting XML for easy reading.",
@@ -305,6 +385,31 @@
 				"value": "gson"
 			} ],
 			"visible": "format=='json'"
+		}, {
+			"id": "extraOptions",
+			"type": "Complex",
+			"title": "Extra Options",
+			"description": "Extra Options",
+			"description_de": "Zusätzliche Optionen",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 250,
+				"optional": false
+			} ]
 		} ]
 	}, {
 		"name": "delayProperties",
