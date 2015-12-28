@@ -310,7 +310,7 @@
 			"value": "",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [{
+			"complexItems": [ {
 				"id": "name",
 				"name": "Name",
 				"type": "String",
@@ -1044,7 +1044,7 @@
 			"config": {
 				"asArray": true,
 				"helperTree": [ "sw.process" ],
-				"namespace":"${uriparam_namespace}"
+				"namespace": "${uriparam_namespace}"
 			},
 			"title": "Processcriteria",
 			"title_de": "Prozesskriterien",
@@ -1103,38 +1103,394 @@
 	}, {
 		"name": "docbookProperties",
 		"properties": [ {
-			"id": "type_docbook",
-			"type": "String",
-			"value": "Docbook",
-			"visible": false,
-			"refToView": [ "endpoint_type" ]
-		}, {
-			"id": "uri_template",
-			"type": "String",
-			"value": "docbook:dummy",
-			"visible": false
-		}, {
-			"id": "uriparam_namespace",
-			"title": "Namespace",
-			"description": "optional",
-			"config": {
-				type: "ms123.util.RepoList"
-			},
-			"type": "Choice",
-			"value": null,
-			"items": []
-		}, {
-			"id": "uriparam_output",
-			"title": "Output",
-			"title_de": "Ausgabe",
-			"type": "Choice",
-			"value": "pdf",
-			"items": [ {
-				"id": "c1",
-				"title": "PDF",
-				"value": "pdf"
-			} ],
-		} ]
+				"id": "type_docbook",
+				"type": "String",
+				"value": "Docbook",
+				"visible": false,
+				"refToView": [ "endpoint_type" ]
+			}, {
+				"id": "uri_template",
+				"type": "String",
+				"value": "docbook:dummy",
+				"visible": false
+			}, {
+				"id": "uriparam_namespace",
+				"title": "Namespace",
+				"description": "optional",
+				"config": {
+					type: "ms123.util.RepoList"
+				},
+				"type": "Choice",
+				"value": null,
+				"items": []
+			}, {
+				"id": "uriparam_output",
+				"title": "Output",
+				"title_de": "Ausgabe",
+				"type": "Choice",
+				"value": "pdf",
+				"items": [ {
+					"id": "c1",
+					"title": "PDF",
+					"value": "pdf"
+				} ],
+			}, {
+				"id": "uriparam_paper.type",
+				"type": "Choice",
+				"title": "Papertype",
+				"title_de": "Papierformat",
+				"prefix": "oryx",
+				"value": "A4",
+				"popular": false,
+				"readonly": false,
+				"optional": true,
+				"refToView": "",
+				"items": [ {
+					"id": "c1",
+					"title": "A4",
+					"value": "A4",
+					"refToView": ""
+				}, {
+					"id": "c2",
+					"title": "USletter",
+					"value": "USletter",
+					"refToView": ""
+				}, {
+					"id": "c3",
+					"title": "A5",
+					"value": "A5",
+					"refToView": ""
+				}, {
+					"id": "c4",
+					"title": "A3",
+					"value": "A3",
+					"refToView": ""
+				} ]
+			}, {
+				"id": "uriparam_page.orientation",
+				"type": "Choice",
+				"title": "Orientation",
+				"title_de": "Orientierung",
+				"prefix": "oryx",
+				"value": "portrait",
+				"popular": false,
+				"readonly": false,
+				"optional": true,
+				"refToView": "",
+				"items": [ {
+					"id": "c1",
+					"title": "Portrait",
+					"value": "portrait",
+					"refToView": ""
+				}, {
+					"id": "c2",
+					"title": "Landscape",
+					"value": "landscape",
+					"refToView": ""
+				} ]
+			}, {
+				"id": "uriparam_generate.toc",
+				"type": "Text",
+				"title": "generate.toc",
+				"title_de": "Inhaltsverzeichnis",
+				"prefix": "oryx",
+				"value": null,
+				"readonly": false,
+				"optional": true
+			}, {
+				"id": "uriparam_l10n.gentext.language",
+				"type": "Combo",
+				"title": "Language",
+				"title_de": "Sprache",
+				"prefix": "oryx",
+				"value": "de",
+				"popular": false,
+				"readonly": false,
+				"optional": true,
+				"items": [ {
+					"id": "c1",
+					"title": "de",
+					"value": "de"
+				}, {
+					"id": "c2",
+					"title": "en",
+					"value": "en"
+				}, {
+					"id": "c3",
+					"title": "it",
+					"value": "it"
+				}, {
+					"id": "c4",
+					"title": "es",
+					"value": "es"
+				}, {
+					"id": "c4",
+					"title": "fr",
+					"value": "fr"
+				} ]
+			}, {
+				"id": "uriparam_body.font.master",
+				"type": "Combo",
+				"title": "Basic fontsize",
+				"title_de": "Basisfontgröße",
+				"prefix": "oryx",
+				"value": "8",
+				"popular": false,
+				"readonly": false,
+				"optional": true,
+				"refToView": "",
+				"items": [ {
+					"id": "c1",
+					"title": "8",
+					"value": "8",
+					"refToView": ""
+				}, {
+					"id": "c2",
+					"title": "9",
+					"value": "9",
+					"refToView": ""
+				}, {
+					"id": "c3",
+					"title": "10",
+					"value": "10",
+					"refToView": ""
+				}, {
+					"id": "c4",
+					"title": "11",
+					"value": "11",
+					"refToView": ""
+				}, {
+					"id": "c5",
+					"title": "12",
+					"value": "12",
+					"refToView": ""
+				} ]
+			}, {
+				"id": "uriparam_page.margin.top",
+				"type": "String",
+				"title": "page.margin.top",
+				"title_de": "Seitenabstand(o.)",
+				"prefix": "oryx",
+				"value": "5mm",
+				"readonly": false,
+				"optional": true,
+				"length": "50"
+			}, {
+				"id": "uriparam_body.margin.top",
+				"type": "String",
+				"title": "body.margin.top",
+				"title_de": "Textabstand(o.)",
+				"prefix": "oryx",
+				"value": "20mm",
+				"readonly": false,
+				"optional": true,
+				"length": "50"
+			}, {
+				"id": "uriparam_region.before.extent",
+				"type": "String",
+				"title": "page.margin.top",
+				"title_de": "Texthöhe(o.)",
+				"prefix": "oryx",
+				"value": "0mm",
+				"readonly": false,
+				"include": false,
+				"length": "50"
+			}, {
+				"id": "uriparam_page.margin.bottom",
+				"type": "String",
+				"title": "page.margin.bottom",
+				"title_de": "Seitenabstand(u.)",
+				"prefix": "oryx",
+				"value": "5mm",
+				"readonly": false,
+				"optional": true,
+				"length": "50"
+			}, {
+				"id": "uriparam_body.margin.bottom",
+				"type": "String",
+				"title": "Textabstand(unten)",
+				"title_de": "Textabstand(u.)",
+				"prefix": "oryx",
+				"value": "20mm",
+				"readonly": false,
+				"optional": true,
+				"length": "50"
+			}, {
+				"id": "uriparam_region.after.extent",
+				"type": "String",
+				"title": "Texthöhe(unten)",
+				"title_de": "Texthöhe(u.)",
+				"prefix": "oryx",
+				"value": "20mm",
+				"readonly": false,
+				"optional": true,
+				"length": "50"
+			}, {
+				"id": "uriparam_page.margin.inner",
+				"type": "String",
+				"title": "Left margin",
+				"title_de": "Linker Rand",
+				"prefix": "oryx",
+				"value": "20mm",
+				"readonly": false,
+				"optional": true,
+				"length": "50"
+			}, {
+				"id": "uriparam_page.margin.outer",
+				"type": "String",
+				"title": "Right margin",
+				"title_de": "Rechter Rand",
+				"prefix": "oryx",
+				"value": "20mm",
+				"readonly": false,
+				"optional": true,
+				"length": "50"
+			}, {
+				"id": "uriparam_table.frame.border.color",
+				"type": "Color",
+				"title": "Framecolor",
+				"title_de": "Rahmenfarbe",
+				"prefix": "oryx",
+				"value": "#777777",
+				"readonly": false,
+				"optional": true,
+				"length": "50"
+			}, {
+				"id": "uriparam_table.frame.border.thickness",
+				"type": "String",
+				"title": "Framethickness",
+				"title_de": "Rahmenstärke",
+				"prefix": "oryx",
+				"value": "0.4pt",
+				"readonly": false,
+				"optional": true,
+				"length": "50"
+			}, {
+				"id": "uriparam_table.frame.border.style",
+				"type": "Choice",
+				"title": "Framestyle",
+				"title_de": "Rahmenstyle",
+				"prefix": "oryx",
+				"value": "solid",
+				"popular": false,
+				"readonly": false,
+				"optional": true,
+				"refToView": "",
+				"items": [ {
+					"id": "c1",
+					"title": "Solid",
+					"value": "solid",
+					"refToView": ""
+				}, {
+					"id": "c2",
+					"title": "Dotted",
+					"value": "dotted",
+					"refToView": ""
+				}, {
+					"id": "c3",
+					"title": "Dashed",
+					"value": "dashed",
+					"refToView": ""
+				}, {
+					"id": "c4",
+					"title": "Double",
+					"value": "double",
+					"refToView": ""
+				}, {
+					"id": "c5",
+					"title": "Ridge",
+					"value": "ridge",
+					"refToView": ""
+				}, {
+					"id": "c6",
+					"title": "Groove",
+					"value": "groove",
+					"refToView": ""
+				}, {
+					"id": "c7",
+					"title": "Outset",
+					"value": "outset",
+					"refToView": ""
+				}, {
+					"id": "c8",
+					"title": "Inset",
+					"value": "inset",
+					"refToView": ""
+				} ]
+			}, {
+				"id": "uriparam_table.cell.border.color",
+				"type": "Color",
+				"title": "Cellcolor",
+				"title_de": "Zellenrahmenfarbe",
+				"prefix": "oryx",
+				"value": "#777777",
+				"readonly": false,
+				"optional": true,
+				"length": "50"
+			}, {
+				"id": "uriparam_table.cell.border.thickness",
+				"type": "String",
+				"title": "Cellthickness",
+				"title_de": "Zellenrahmenstärke",
+				"prefix": "oryx",
+				"value": "0.4pt",
+				"readonly": false,
+				"optional": true,
+				"length": "50"
+			}, {
+				"id": "uriparam_table.cell.border.style",
+				"type": "Choice",
+				"title": "Tablecellestyle",
+				"title_de": "Zellenrahmenstyle",
+				"prefix": "oryx",
+				"value": "solid",
+				"popular": false,
+				"readonly": false,
+				"optional": true,
+				"refToView": "",
+				"items": [ {
+					"id": "c1",
+					"title": "Solid",
+					"value": "solid",
+					"refToView": ""
+				}, {
+					"id": "c2",
+					"title": "Dotted",
+					"value": "dotted",
+					"refToView": ""
+				}, {
+					"id": "c3",
+					"title": "Dashed",
+					"value": "dashed",
+					"refToView": ""
+				}, {
+					"id": "c4",
+					"title": "Double",
+					"value": "double",
+					"refToView": ""
+				}, {
+					"id": "c5",
+					"title": "Ridge",
+					"value": "ridge",
+					"refToView": ""
+				}, {
+					"id": "c6",
+					"title": "Groove",
+					"value": "groove",
+					"refToView": ""
+				}, {
+					"id": "c7",
+					"title": "Outset",
+					"value": "outset",
+					"refToView": ""
+				}, {
+					"id": "c8",
+					"title": "Inset",
+					"value": "inset",
+					"refToView": ""
+				} ]
+			}
+		]
 	}, {
 		"name": "sqlProperties",
 		"properties": [ {
@@ -1454,7 +1810,7 @@
 			"items": [ {
 				"id": "c1",
 				"value": "none",
-				"title":null 
+				"title": null
 			}, {
 				"id": "c2",
 				"value": "UTF-8",
@@ -2290,7 +2646,7 @@
 				"value": "get"
 			}, {
 				"id": "c2",
-				 "enabled": "['zip','jar','tar','http'].indexOf(uriparam_fileSystem) == -1",
+				"enabled": "['zip','jar','tar','http'].indexOf(uriparam_fileSystem) == -1",
 				"title": "Upload",
 				"value": "put"
 			}, {
@@ -2343,41 +2699,41 @@
 			"title": "Password",
 			"title_de": "Passwort",
 			"type": "String",
-			"value": null 
+			"value": null
 		}, {
 			"id": "uriparam_privateKey",
 			"title": "Schlüssel",
 			"visible": "['sftp'].indexOf(uriparam_fileSystem) != -1",
 			"title_de": "Key",
 			"type": "String",
-			"value":null 
+			"value": null
 		}, {
 			"id": "uriparam_remotePath",
 			"title": "Ferner Pfad",
 			"title_de": "Remotepath",
 			"type": "String",
-			"value":null 
+			"value": null
 		}, {
 			"id": "uriparam_localPath",
 			"visible": "['put'].indexOf(urivalue_operation) != -1 && ['zip','jar','tar','http'].indexOf(uriparam_fileSystem) == -1",
 			"title": "Lokaler Pfad",
 			"title_de": "Localpath",
 			"type": "String",
-			"value":null 
+			"value": null
 		}, {
 			"id": "uriparam_newRemotePath",
 			"title": "Neuer ferner Pfad",
 			"visible": "['move','copy'].indexOf(urivalue_operation) != -1 && ['zip','jar','tar','http'].indexOf(uriparam_fileSystem) == -1",
 			"title_de": "New remotepath",
 			"type": "String",
-			"value":null 
+			"value": null
 		}, {
 			"id": "uriparam_archivePath",
 			"title": "Archiv Pfad",
 			"visible": "['zip','jar','tar'].indexOf(uriparam_fileSystem) != -1",
 			"title_de": "Archivepath",
 			"type": "String",
-			"value":null 
+			"value": null
 		} ]
 	}, {
 		"name": "mailProperties",
