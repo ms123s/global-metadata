@@ -293,6 +293,16 @@
 			"popular": false,
 			"visible": "format=='univocity-fixed'"
 		}, {
+			"id": "univocity-fixed_skipTrailingCharsUntilNewline",
+			"title": "Skip trailing chars",
+			"title_de": "überspringe überfl. Zeichen",
+			"description": "Whether or not the trailing characters until new line must be ignored.",
+			"description_de": "Ob die überflüssigen Zeichen bis zum Newline ignoriert werden.",
+			"type": "boolean",
+			"value": true,
+			"popular": false,
+			"visible": "format=='univocity-fixed'"
+		}, {
 			"id": "univocity-fixed_fieldLengths",
 			"type": "Complex",
 			"title": "FieldLengths",
@@ -300,30 +310,20 @@
 			"value": "",
 			"readonly": false,
 			"optional": true,
-			"complexItems": [ {
-				"id": "length",
-				"name": "Length",
-				"name_de": "Länge",
-				"type": "Integer",
-				"value": "",
-				"width": 150,
-				"optional": false
-			} ],
-			"visible": "format=='univocity-fixed'"
-		}, {
-			"id": "univocity-fixed_headers",
-			"type": "Complex",
-			"title": "Header",
-			"title_de": "Kopfzeile",
-			"value": "",
-			"readonly": false,
-			"optional": true,
-			"complexItems": [ {
+			"complexItems": [{
 				"id": "name",
 				"name": "Name",
 				"type": "String",
 				"value": "",
 				"width": 250,
+				"optional": false
+			}, {
+				"id": "length",
+				"name": "Length",
+				"name_de": "Länge",
+				"type": "Integer",
+				"value": "",
+				"width": 100,
 				"optional": false
 			} ],
 			"visible": "format=='univocity-fixed'"
@@ -1084,6 +1084,56 @@
 			"type": "String",
 			"value": "asciidoctor:dummy",
 			"visible": false
+		}, {
+			"id": "uriparam_output",
+			"title": "Output",
+			"title_de": "Ausgabe",
+			"type": "Choice",
+			"value": "html",
+			"items": [ {
+				"id": "c1",
+				"title": "HTML",
+				"value": "html"
+			}, {
+				"id": "c2",
+				"title": "Docbook",
+				"value": "docbook"
+			} ],
+		} ]
+	}, {
+		"name": "docbookProperties",
+		"properties": [ {
+			"id": "type_docbook",
+			"type": "String",
+			"value": "Docbook",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "docbook:dummy",
+			"visible": false
+		}, {
+			"id": "uriparam_namespace",
+			"title": "Namespace",
+			"description": "optional",
+			"config": {
+				type: "ms123.util.RepoList"
+			},
+			"type": "Choice",
+			"value": null,
+			"items": []
+		}, {
+			"id": "uriparam_output",
+			"title": "Output",
+			"title_de": "Ausgabe",
+			"type": "Choice",
+			"value": "pdf",
+			"items": [ {
+				"id": "c1",
+				"title": "PDF",
+				"value": "pdf"
+			} ],
 		} ]
 	}, {
 		"name": "sqlProperties",
@@ -2861,6 +2911,16 @@
 		"groups": [ "Endpoints A-L" ],
 		"groups_de": [ "Endpunkte A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "directProperties", "rpcProperties2" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "DocbookEndpoint",
+		"title": "Docbook",
+		"view": "docbookendpoint.svg",
+		"icon": "docbookendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "docbookProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
