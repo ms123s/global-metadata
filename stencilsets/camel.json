@@ -297,10 +297,45 @@
 			"title": "Skip trailing chars",
 			"title_de": "überspringe überfl. Zeichen",
 			"description": "Whether or not the trailing characters until new line must be ignored.",
-			"description_de": "Ob die überflüssigen Zeichen bis zum Newline ignoriert werden.",
+			"description_de": "Überflüssigen Zeichen bis zum Newline ignorieren.",
 			"type": "boolean",
 			"value": true,
 			"popular": false,
+			"visible": "format=='univocity-fixed'"
+		}, {
+			"id": "univocity-fixed_recordEndsOnNewLine",
+			"title": "Record ends on newline",
+			"title_de": "Newline ist Satzende",
+			"type": "boolean",
+			"value": true,
+			"popular": false,
+			"visible": "format=='univocity-fixed'"
+		}, {
+			"id": "univocity-fixed_ignoreLeadingWhitespaces",
+			"title": "Ign. leading whitespaces, also see padding",
+			"title_de": "Ign. führende Leerzeichen,siehe auch Füllzeichen",
+			"type": "boolean",
+			"value": true,
+			"popular": false,
+			"visible": "format=='univocity-fixed'"
+		}, {
+			"id": "univocity-fixed_ignoreTrailingWhitespaces",
+			"title": "Ign. trailing whitespaces",
+			"title_de": "Ign. angehängte Leerz.",
+			"type": "boolean",
+			"value": true,
+			"popular": false,
+			"visible": "format=='univocity-fixed'"
+		}, {
+			"id": "univocity-fixed_padding",
+			"title": "Padding char",
+			"title_de": "Füllzeichen",
+			"description": "if you nead leading whitespaces, then set this to char other then ' '",
+			"description_de": "Wenn führende Leerzeichen benötig werden, dann muss das Füllzeichen auf einen anderen Wert als  ' ' gesetzt werden.",
+			"type": "string",
+			"value": ' ',
+			"popular": false,
+			"length": 1,
 			"visible": "format=='univocity-fixed'"
 		}, {
 			"id": "univocity-fixed_fieldLengths",
