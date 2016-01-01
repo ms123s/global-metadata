@@ -1010,6 +1010,10 @@
 				"value": "groovy"
 			}, {
 				"id": "c2",
+				"title": "GroovyMarkup",
+				"value": "groovymarkup"
+			}, {
+				"id": "c3",
 				"title": "Freemarker",
 				"value": "freemarker"
 			} ]
@@ -1884,11 +1888,11 @@
 			"type": "Combo",
 			"title": "Encoding",
 			"description": "specify the encoding of the file",
-			"value": "none",
+			"value": "",
 			"items": [ {
 				"id": "c1",
-				"value": "none",
-				"title": null
+				"value": "x",
+				"title": ""
 			}, {
 				"id": "c2",
 				"value": "UTF-8",
