@@ -541,6 +541,11 @@
 				"refToView": "html"
 			},{
 				"id": "c2",
+				"title": "GroovyMarkup",
+				"value": "groovymarkup",
+				"refToView": "groovymarkup"
+			},{
+				"id": "c3",
 				"title": "Markdown",
 				"value": "markdown",
 				"refToView": "markdown"
@@ -592,6 +597,17 @@
 				"value": "mediawiki",
 				"refToView": ""
 			}]
+		}, {
+			"id": "xf_groovymarkup",
+			"type": "text",
+			"title": "GroovyMarkup",
+			"prefix": "oryx",
+			"value": "",
+			"visible": "xf_type=='groovymarkup'",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
 		}, {
 			"id": "xf_html",
 			"type": "html",
