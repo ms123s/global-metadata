@@ -174,8 +174,7 @@
 			"readonly": false,
 			"optional": true,
 			"length": "50"
-		},
-		{
+		}, {
 			"id": "db_region.before.extent",
 			"type": "String",
 			"title": "page.margin.top",
@@ -185,19 +184,7 @@
 			"readonly": false,
 			"include": false,
 			"length": "50"
-		},
-		{
-			"id": "db_page.margin.bottom",
-			"type": "String",
-			"title": "page.margin.bottom",
-			"title_de": "Seitenabstand(u.)",
-			"prefix": "oryx",
-			"value": "5mm",
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		},
-		{
+		}, {
 			"id": "db_body.margin.bottom",
 			"type": "String",
 			"title": "Textabstand(unten)",
@@ -214,6 +201,16 @@
 			"title_de": "Texthöhe(u.)",
 			"prefix": "oryx",
 			"value": "20mm",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		}, {
+			"id": "db_page.margin.bottom",
+			"type": "String",
+			"title": "page.margin.bottom",
+			"title_de": "Seitenabstand(u.)",
+			"prefix": "oryx",
+			"value": "5mm",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
