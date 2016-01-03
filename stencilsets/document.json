@@ -156,8 +156,9 @@
 		{
 			"id": "db_page.margin.top",
 			"type": "String",
-			"title": "page.margin.top",
-			"title_de": "Seitenabstand(o.)",
+			"title": "Pagemargin(top)",
+			"title_de": "Seitenrand(o.)",
+			"description": "page.margin.top",
 			"prefix": "oryx",
 			"value": "5mm",
 			"readonly": false,
@@ -167,8 +168,9 @@
 		{
 			"id": "db_body.margin.top",
 			"type": "String",
-			"title": "body.margin.top",
-			"title_de": "Textabstand(o.)",
+			"description": "body.margin.top",
+			"title_de": "Bodyrand(o.)",
+			"title": "Bodymargin(top)",
 			"prefix": "oryx",
 			"value": "20mm",
 			"readonly": false,
@@ -177,8 +179,9 @@
 		}, {
 			"id": "db_region.before.extent",
 			"type": "String",
-			"title": "page.margin.top",
-			"title_de": "Texthöhe(o.)",
+			"description": "region.before.extent",
+			"title": "Region extent(o.)",
+			"title_de": "Regionhöhe(o.)",
 			"prefix": "oryx",
 			"value": "0mm",
 			"readonly": false,
@@ -187,8 +190,9 @@
 		}, {
 			"id": "db_body.margin.bottom",
 			"type": "String",
-			"title": "Textabstand(unten)",
-			"title_de": "Textabstand(u.)",
+			"title": "Bodymargin(bottom)",
+			"title_de": "Bodyrand(u.)",
+			"description": "body.margin.bottom, should be greater as region.after.extent",
 			"prefix": "oryx",
 			"value": "20mm",
 			"readonly": false,
@@ -197,8 +201,9 @@
 		},{
 			"id": "db_region.after.extent",
 			"type": "String",
-			"title": "Texthöhe(unten)",
-			"title_de": "Texthöhe(u.)",
+			"title": "Region extent(bottom)",
+			"title_de": "Regionhöhe(u.)",
+			"description": "region.after.extent, should be smaller as body.margin.botton",
 			"prefix": "oryx",
 			"value": "20mm",
 			"readonly": false,
@@ -207,8 +212,9 @@
 		}, {
 			"id": "db_page.margin.bottom",
 			"type": "String",
-			"title": "page.margin.bottom",
-			"title_de": "Seitenabstand(u.)",
+			"title": "Pagemargin(bottom)",
+			"title_de": "Seitenrand(u.)",
+			"description": "page.margin.bottom",
 			"prefix": "oryx",
 			"value": "5mm",
 			"readonly": false,
@@ -216,6 +222,7 @@
 			"length": "50"
 		},{
 			"id": "db_page.margin.inner",
+			"description": "page.margin.inner",
 			"type": "String",
 			"title": "Left margin",
 			"title_de": "Linker Rand",
@@ -226,6 +233,7 @@
 			"length": "50"
 		},{
 			"id": "db_page.margin.outer",
+			"description": "page.margin.outer",
 			"type": "String",
 			"title": "Right margin",
 			"title_de": "Rechter Rand",
@@ -237,6 +245,7 @@
 		},{
 			"id": "db_table.frame.border.color",
 			"type": "Color",
+			"description": "table.frame.border.color",
 			"title": "Framecolor",
 			"title_de": "Rahmenfarbe",
 			"prefix": "oryx",
@@ -246,6 +255,7 @@
 			"length": "50"
 		},{
 			"id": "db_table.frame.border.thickness",
+			"description": "table.frame.border.thickness",
 			"type": "String",
 			"title": "Framethickness",
 			"title_de": "Rahmenstärke",
@@ -256,6 +266,7 @@
 			"length": "50"
 		},{
 			"id": "db_table.frame.border.style",
+			"description": "table.frame.border.style",
 			"type": "Choice",
 			"title": "Framestyle",
 			"title_de": "Rahmenstyle",
@@ -308,6 +319,7 @@
 			} ]
 		},{
 			"id": "db_table.cell.border.color",
+			"description": "table.cell.border.color",
 			"type": "Color",
 			"title": "Cellcolor",
 			"title_de": "Zellenrahmenfarbe",
@@ -318,6 +330,7 @@
 			"length": "50"
 		},{
 			"id": "db_table.cell.border.thickness",
+			"description": "table.cell.border.thickness",
 			"type": "String",
 			"title": "Cellthickness",
 			"title_de": "Zellenrahmenstärke",
@@ -328,6 +341,7 @@
 			"length": "50"
 		},{
 			"id": "db_table.cell.border.style",
+			"description": "table.cell.border.style",
 			"type": "Choice",
 			"title": "Tablecellestyle",
 			"title_de": "Zellenrahmenstyle",
@@ -378,8 +392,31 @@
 				"value": "inset",
 				"refToView": ""
 			} ]
-		},
-		{
+	}, {
+			"id": "db_extra.params",
+			"type": "Complex",
+			"title": "Extra Parameter",
+			"description": "Extra Parameter: <ul> <li>first.region.body.border = solid thick red</li> <li>odd.region.body.border = solid thick red</li> <li>odd.region.body.border.left = solid thick red</li> <li>odd.region.body.border.top = solid thick red</li> <li>odd.region.body.border.bottom = solid thick red</li> <li>odd.region.body.border.right = solid thick red</li> <li>even.region.body.border.right = solid thick red</li> <li>first.region.body.display.align = before</li> <li>odd.region.body.display.align = after</li></ul> ",
+			"value": "",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "name",
+				"name": "Name",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": "",
+				"width": 250,
+				"optional": false
+			} ]
+		},{
 			"id": "db_paper.type",
 			"type": "Choice",
 			"title": "Papertype",
@@ -1025,5 +1062,32 @@
 			"role": "support_morph",
 			"baseMorphs": ["Hint"]
 		}]
+	},
+	"definitions": {
+		"parameter_items": [ {
+			"title": "String",
+			"value": "string"
+		}, {
+			"title": "Integer",
+			"value": "integer"
+		}, {
+			"title": "Long",
+			"value": "long"
+		}, {
+			"title": "Double",
+			"value": "double"
+		}, {
+			"title": "Boolean",
+			"value": "boolean"
+		}, {
+			"title": "Date",
+			"value": "date"
+		}, {
+			"title": "List",
+			"value": "list"
+		}, {
+			"title": "Map",
+			"value": "map"
+		} ]
 	}
 }
