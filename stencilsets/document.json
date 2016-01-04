@@ -99,6 +99,15 @@
 			"readonly": false,
 			"optional": false
 		},{
+			"id": "xf_padding",
+			"title": "Padding",
+			"title_de": "Einrücken",
+			"type": "Boolean",
+			"value": false,
+			"popular": false,
+			"readonly": false,
+			"optional": false
+		},{
 			"id": "xf_enabled",
 			"title": "Enabled",
 			"title_de": "Verwenden",
@@ -185,7 +194,7 @@
 			"prefix": "oryx",
 			"value": "0mm",
 			"readonly": false,
-			"include": false,
+			"include": true,
 			"length": "50"
 		}, {
 			"id": "db_body.margin.bottom",
@@ -405,7 +414,7 @@
 				"name": "Name",
 				"type": "String",
 				"value": "",
-				"width": 150,
+				"width": 250,
 				"optional": false
 			}, {
 				"id": "value",
