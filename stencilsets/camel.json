@@ -1715,6 +1715,16 @@
 			"value": false,
 			"visible": "urivalue_operation=='multiInsertUpdate' && isupdate==true"
 		}, {
+			"id": "uriparam_namespace",
+			"title": "Namespace",
+			"description": "optional",
+			"config": {
+				type: "ms123.util.RepoList"
+			},
+			"type": "Choice",
+			"value": null,
+			"items": [],
+		}, {
 			"id": "uriparam_filterName",
 			"title": "Filtername",
 			"description_de": "Der Filter der ausgeführt werden soll",
@@ -1737,18 +1747,18 @@
 			"optional": false,
 			"visible": "urivalue_operation=='insert' || urivalue_operation=='update' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
 		}, {
-			"id": "uriparam_namespace",
-			"title": "Namespace",
-			"description": "optional",
-			"config": {
-				type: "ms123.util.RepoList"
-			},
-			"type": "Choice",
+			"id": "uriparam_paramHeaders",
+			"title_de": "Filterparameter",
+			"title": "Headerfields",
+			"description_de": "Angebene Headerfelder als Filterparameter benutzen, oder alle wenn nichts angeben ist",
+			"description": "Use specified headerfields as filterparameter, or all if nothing is specified.",
+			"type": "String",
 			"value": null,
-			"items": [],
+			"readonly": false,
+			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' ||  urivalue_operation=='findById'"
 		}, {
 			"id": "uriparam_resultHeader",
-			"title": "Headername",
+			"title": "Result",
 			"description_de": "Das Ergebniss, statt in den Body, in den Header unter diesem Namen kopieren",
 			"description": "Copying the result, instead of in the body, in the header under this name",
 			"type": "String",
