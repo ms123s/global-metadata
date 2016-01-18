@@ -907,6 +907,21 @@
 				"width": 100,
 				"optional": true
 			}, {
+				"id": "width",
+				"name": "Width",
+				"name_de": "Breite",
+				"type": "integer",
+				"value": "",
+				"width": 100,
+				"optional": true
+			}, {
+				"id": "readonly",
+				"name": "Readonly",
+				"type": "boolean",
+				"width": 100,
+				"value":false,
+				"optional": true
+			}, {
 				"id": "type",
 				"name": "Type",
 				"name_de": "Type",
