@@ -84,6 +84,18 @@
 			"readonly": false,
 			"optional": true,
 			"length": "50"
+		}, {
+			"id": "xf_method_fetch",
+			"type": "String",
+			"title": "Json data",
+			"title_de": "Json Daten",
+			"description": "Methodname to fetch data for selectionlists.",
+			"description_de": "Methodenname zum Holen von Daten für Selektionslisten.",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"length": "50"
 		} ]
 	}, {
 		"type": "node",
@@ -840,6 +852,17 @@
 			"popular": true,
 			"readonly": false,
 			"optional": false
+		}, {
+			"id": "xf_jsonpath",
+			"type": "String",
+			"title": "Json path",
+			"title_de": "Json Pfad",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
 		}, {
 			"id": "xf_enumembed",
 			"type": "Complex",
