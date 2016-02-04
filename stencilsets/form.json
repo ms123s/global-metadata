@@ -167,6 +167,11 @@
 				"title": "DateTime",
 				"value": "datetime",
 				"refToView": ""
+			}, {
+				"id": "c6",
+				"title": "DateYearMonth",
+				"value": "dateyearmonth",
+				"refToView": ""
 			} ]
 		}, {
 			"id": "xf_default",
@@ -302,7 +307,7 @@
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
-			"visible": "xf_type=='date'||xf_type=='datetime'",
+			"visible": "xf_type=='date'||xf_type=='datetime'||xf_type=='dateyearmonth'",
 			"optional": true,
 			"refToView": "",
 			"length": "100"
