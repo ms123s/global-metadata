@@ -3187,6 +3187,10 @@
         "msgstr": "Start Task"
     },
     {
+        "msgid": "tasks.form.reset",
+        "msgstr": "Reset"
+    },
+    {
         "msgid": "tasks.table.assigned",
         "msgstr": "My duties"
     },

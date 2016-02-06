@@ -75,6 +75,10 @@
         "msgstr": "Ausführen"
     },
     {
+        "msgid": "tasks.form.reset",
+        "msgstr": "Zurücksetzen"
+    },
+    {
         "msgid": "tasks.form.cancel",
         "msgstr": "Abbrechen"
     },
