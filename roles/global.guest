@@ -1,10 +1,28 @@
-[sw]
-	type = sw.role
 --
 {
     "permissions": [
         {
             "permission": "booklet:entities",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "crm:entities",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "kfzplan:entities",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "firstapp:entities",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "tutorials:entities",
             "actions": "read,write",
             "enabled": true
         }
