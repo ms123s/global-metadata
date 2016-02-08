@@ -1526,6 +1526,30 @@
 		"roles": [ "all", "sequence_start", "sequence_end", "GatewaysMorph" ]
 	}, {
 		"type": "node",
+		"id": "EventGateway",
+		"title": "Event gateway",
+		"title_de": "Ereignis Gateway",
+		"groups": [ "Gateways" ],
+		"description": "Upon the occurrence of the following events (timer, receive task, message), the corresponding path is executed",
+		"description_de": "Bei Eintreten eines der nachfolgenden Ereignisse(Timer, Empfangstask, Message), wird der entsprechende Pfad ausgeführt",
+		"view": "gateway/eventbased.svg",
+		"icon": "gateway/eventbased.png",
+		"propertyPackages": [ "baseProperties", "colorProperties", "processid" ],
+		"properties": [ {
+			"id": "gatewaytype",
+			"type": "String",
+			"title": "Gateway type",
+			"title_de": "Gatewaytyp",
+			"value": "Event",
+			"description": "The type of the gateway.",
+			"description_de": "Der Typ des Gateways.",
+			"include": false,
+			"optional": false,
+			"length": ""
+		} ],
+		"roles": [ "all", "sequence_start", "sequence_end", "GatewaysMorph" ]
+	}, {
+		"type": "node",
 		"id": "StartNoneEvent",
 		"title": "Start Event",
 		"title_de": "Start Ereignis",

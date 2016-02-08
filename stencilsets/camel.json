@@ -2899,29 +2899,88 @@
 			"title": "Subject",
 			"title_de": "Betreff",
 			"type": "String",
+			"visible": "urivalue_protocol.startsWith('smtp')",
 			"value": ""
 		}, {
 			"id": "uriparam_from",
 			"title": "From",
 			"title_de": "Von",
 			"type": "String",
+			"visible": "urivalue_protocol.startsWith('smtp')",
 			"value": ""
 		}, {
 			"id": "uriparam_to",
 			"title": "To",
 			"title_de": "An",
 			"type": "String",
+			"visible": "urivalue_protocol.startsWith('smtp')",
 			"value": ""
 		}, {
 			"id": "uriparam_cc",
 			"title": "CC",
 			"type": "String",
+			"visible": "urivalue_protocol.startsWith('smtp')",
 			"value": ""
 		}, {
 			"id": "uriparam_bcc",
 			"title": "BCC",
 			"type": "String",
+			"visible": "urivalue_protocol.startsWith('smtp')",
 			"value": ""
+		}, {
+			"id": "uriparam_searchTerm.subject",
+			"title": "Search/subject",
+			"title_de": "Suche/Subjekt",
+			"description": "To limit by subject to contain the word.",
+			"description_de": "Subjekt muss das Wort enthalten",
+			"type": "String",
+			"visible": "urivalue_protocol.startsWith('imap') || urivalue_protocol.startsWith('pop3')",
+			"value": ""
+		}, {
+			"id": "uriparam_searchTerm.body",
+			"title": "Search/body",
+			"title_de": "Suche/Body",
+			"description": "To limit by body to contain the word.",
+			"description_de": "Body muss das Wort enthalten",
+			"type": "String",
+			"visible": "urivalue_protocol.startsWith('imap') || urivalue_protocol.startsWith('pop3')",
+			"value": ""
+		}, {
+			"id": "uriparam_searchTerm.subjectOrBody",
+			"title": "Search/sub.|Body",
+			"title_de": "Suche/Sub.|Body",
+			"description": "To limit by subject or body to contain the word.",
+			"description_de": "Subjekt oder Body müssen das Wort enthalten",
+			"type": "String",
+			"visible": "urivalue_protocol.startsWith('imap') || urivalue_protocol.startsWith('pop3')",
+			"value": ""
+		}, {
+			"id": "uriparam_searchTerm.from",
+			"title": "Search/from",
+			"title_de": "Suche/Von",
+			"description": "The mail must be from a given email pattern.",
+			"description_de": "Die Von-Emailadresse muss auf dieses Muster passen",
+			"type": "String",
+			"visible": "urivalue_protocol.startsWith('imap') || urivalue_protocol.startsWith('pop3')",
+			"value": ""
+		}, {
+			"id": "uriparam_searchTerm.to",
+			"title": "Search/to",
+			"title_de": "Suche/Zu",
+			"description": "The mail must be to a given email pattern.",
+			"description_de": "Die Zu-Emailadresse muss auf dieses Muster passen",
+			"type": "String",
+			"visible": "urivalue_protocol.startsWith('imap') || urivalue_protocol.startsWith('pop3')",
+			"value": ""
+		}, {
+			"id": "uriparam_searchTerm.seen",
+			"title": "Search/unseen",
+			"title_de": "Suche/ungelesen",
+			"description": "Whether to limit by unseen mails only",
+			"description_de": "Ob nur ungelesene Mail in Betracht gezogen werden",
+			"type": "Boolean",
+			"visible": "urivalue_protocol.startsWith('imap') || urivalue_protocol.startsWith('pop3')",
+			"value": true
 		}, {
 			"id": "uriparam_contentType",
 			"title": "ContentType",
