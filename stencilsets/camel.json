@@ -1078,6 +1078,31 @@
 			"readonly": false,
 			"optional": true
 		}, {
+			"id": "uriparam_signalName",
+			"visible": "urivalue_operation.startsWith('sendSignalEvent')",
+			"type": "String",
+			"title": "Signalname",
+			"value": null,
+			"readonly": false,
+			"optional": true
+		}, {
+			"id": "uriparam_messageName",
+			"visible": "urivalue_operation.startsWith('sendMessageEvent')",
+			"type": "String",
+			"title": "Messagename",
+			"value": null,
+			"readonly": false,
+			"optional": true
+		}, {
+			"id": "uriparam_headerFields",
+			"title_de": "Headerfelder",
+			"title": "Headerfields",
+			"description_de": "Angebene Headerfelder in das Variablenbereich des Prozesses kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
+			"description": "Copy specified headerfields into the variables space of the process, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
+			"type": "String",
+			"value": null,
+			"readonly": false,
+		}, {
 			"id": "uriparam_processCriteria",
 			"type": "Complex",
 			"config": {
@@ -2663,6 +2688,7 @@
 			"title": "Password",
 			"title_de": "Passwort",
 			"type": "String",
+			"config": "password",
 			"value": ""
 		}, {
 			"id": "uriparam_passiveMode",
@@ -2792,6 +2818,7 @@
 			"title": "Password",
 			"title_de": "Passwort",
 			"type": "String",
+			"config": "password",
 			"value": null
 		}, {
 			"id": "uriparam_privateKey",
@@ -2893,6 +2920,7 @@
 			"title": "Password",
 			"title_de": "Passwort",
 			"type": "String",
+			"config": "password",
 			"value": ""
 		}, {
 			"id": "uriparam_subject",
@@ -3030,6 +3058,7 @@
 			"title": "Password",
 			"title_de": "Passwort",
 			"type": "String",
+			"config": "password",
 			"value": null
 		}, {
 			"id": "uriparam_room",
@@ -4057,6 +4086,10 @@
 			"id": "executionId",
 			"title": "executionId",
 			"value": "executionId"
+		}, {
+			"id": "processVariable",
+			"title": "processVariable",
+			"value": "processVariable"
 		} ],
 		"settingssources_items": [ {
 			"id": "const",
