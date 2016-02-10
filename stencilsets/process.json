@@ -637,6 +637,19 @@
       "description_de" : "Definiere den Fehlernamen.",
       "popular" : true
     } ]
+		}, {
+    "name" : "cancelactivityProperties",
+    "properties" : [ {
+      "id" : "cancelactivity",
+      "type" : "Boolean",
+      "title" : "Cancel activity",
+			"title_de" : "Task abbrechen",
+      "value" : "true",
+      "description" : "Should the activity be cancelled",
+      "description_de" : "Soll die Aktivität beendet werden",
+      "popular" : true,
+      "refToView" : [ "frame", "frame2" ]
+    } ]
   }, {
     "name" : "messagedefinitionsProperties",
     "properties" : [ {
@@ -1734,6 +1747,17 @@
 		"roles": [ "all", "sequence_end", "Endevents_all", "EndEventsMorph" ]
 	}, {
 		"type": "node",
+		"id": "BoundaryTimerEvent",
+		"title": "Boundary Timer Event",
+		"title_de": "Rand Timerereignis",
+		"groups": [ "Boundery Events" ],
+		"groups_de": [ "Rand Ereignisse" ],
+		"view": "catching/timer.svg",
+		"icon": "catching/timer.png",
+		"propertyPackages": [ "baseProperties", "colorProperties", "errorrefProperties", "cancelactivityProperties" ],
+		"roles": [ "sequence_start", "BoundaryEventsMorph", "IntermediateEventOnActivityBoundary" ]
+	}, {
+		"type": "node",
 		"id": "BoundaryErrorEvent",
 		"title": "Boundary Error Event",
 		"title_de": "Rand Fehlerereignis",
@@ -1752,7 +1776,7 @@
 		"groups_de": [ "Rand Ereignisse" ],
 		"view": "intermediateevent/message.catching.svg",
 		"icon": "catching/message.png",
-		"propertyPackages": [ "baseProperties", "colorProperties", "messagerefProperties" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "messagerefProperties", "cancelactivityProperties" ],
 		"roles": [ "sequence_start", "BoundaryEventsMorph", "IntermediateEventOnActivityBoundary" ]
 	}, {
 		"type": "node",
@@ -1763,7 +1787,7 @@
 		"groups_de": [ "Rand Ereignisse" ],
 		"view": "intermediateevent/signal.catching.svg",
 		"icon": "catching/signal.png",
-		"propertyPackages": [ "baseProperties", "colorProperties", "signalrefProperties" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "signalrefProperties", "cancelactivityProperties" ],
 		"roles": [ "sequence_start", "BoundaryEventsMorph", "IntermediateEventOnActivityBoundary" ]
 	}, {
 		"type": "node",
