@@ -675,7 +675,19 @@
 				"type": "String",
 				"value": null,
 				"width": 250
+
 			} ]
+    } ]
+  }, {
+    "name" : "istransactionProperties",
+    "properties" : [ {
+      "id" : "istransaction",
+      "type" : "Boolean",
+      "title" : "Transaction",
+      "value" : false,
+      "description" : "A flag that identifies whether this sub process is of type transaction.",
+      "popular" : true,
+      "refToView" : "border"
     } ]
 	}, {
 		"name": "sequenceflowbase",
@@ -833,7 +845,7 @@
 		"type": "node",
 		"id": "CallActivity",
 		"title": "Call activity",
-		"title_de": "Aufruf Prozess",
+		"title_de": "Aufruf Aktivität",
 		"description": "A call activity",
 		"view": "activity/callactivity.svg",
 		"icon": "activity/list/subprocess.png",
@@ -851,7 +863,7 @@
 		"icon": "activity/expanded.subprocess.png",
 		"groups": [ "Structural" ],
 		"groups_de": [ "Struktur" ],
-		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "executionlistenersbase", "loopcharacteristics" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "istransactionProperties" ],
 		"roles": [ "sequence_start", "Activity", "sequence_end", "all" ]
 	}, {
 		"type": "node",
@@ -864,7 +876,7 @@
 		"groups": [ "Structural" ],
 		"groups_de": [ "Struktur" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "executionlistenersbase" ],
-		"_roles": [ "sequence_start", "Activity", "sequence_end", "all" ]
+		"roles": [ "sequence_start", "Activity", "sequence_end", "all" ]
 	}, {
 		"type": "node",
 		"id": "UserTask",
