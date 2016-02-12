@@ -186,6 +186,7 @@
 			"value": "",
 			"description": "This defines the version number of the diagram.",
 			"description_de": "Setzt die Versionsnummer des Diagramms.",
+			"popular": true,
 			"readonly": false,
 			"optional": true
 		}, {
@@ -196,6 +197,7 @@
 			"value": "",
 			"description": "This holds the name of the diagram's author.",
 			"description_de": "Name des Diagrammautors.",
+			"popular": true,
 			"readonly": false,
 			"optional": true
 		}, {
@@ -217,6 +219,7 @@
 			"value": "http://www.signavio.com/bpmn20",
 			"description": "Defines the XML namespace of the elements inside the document.",
 			"description_de": "Definiert den XML-Namensraum, der für die Elemente im Dokument verwendet wird.",
+			"popular": true,
 			"readonly": false,
 			"optional": true
 		}, {
@@ -564,7 +567,7 @@
       "title_de" : "Signaldefinitionen",
 			"config":{"asArray":true},
       "value" : null,
-      "popular" : true,
+      "popular" : false,
 			"complexItems": [ {
 				"id": "id",
 				"name": "Id",
@@ -659,7 +662,7 @@
       "title" : "Message definitions",
       "title_de" : "Messagedefinitionen",
       "value" : null,
-      "popular" : true,
+      "popular" : false,
 			"complexItems": [ {
 				"id": "id",
 				"name": "Id",
@@ -762,7 +765,7 @@
 			"value": "",
 			"readonly": false,
 			"optional": false,
-			"popular": true,
+			"popular": false,
 			"length": "50"
 		}, {
 			"id": "startableUsers",
@@ -772,7 +775,7 @@
 			"title_de": "Startbar von(Usern)",
 			"value": "",
 			"readonly": false,
-			"popular": true,
+			"popular": false,
 			"optional": false,
 			"length": "50"
 		}, {
@@ -942,9 +945,22 @@
 			"optional": false,
 			"length": "50"
 		}, {
+			"id": "candidateUsers",
+			"type": "MultiSelect",
+			"config": "auth:getUsers:userid",
+			"title": "Candidateusers",
+			"title_de": "Kandidatenusers",
+			"description": "Candidateusers",
+			"description_de": "Kandidatenusers",
+			"value": "",
+			"readonly": false,
+			"popular": false,
+			"optional": false,
+			"length": "50"
+		}, {
 			"id": "assignee",
 			"type": "ModuleSelector",
-			"config": "user:userid",
+			"config": {"from":"user:userid", "readonly":false},
 			"title": "Assignee",
 			"title_de": "Beauftragter",
 			"description": "Assignee",
