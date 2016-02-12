@@ -848,7 +848,7 @@
 		"title_de": "Aufruf Aktivität",
 		"description": "A call activity",
 		"view": "activity/callactivity.svg",
-		"icon": "activity/list/subprocess.png",
+		"icon": "activity/task.png",
 		"groups": [ "Structural" ],
 		"groups_de": [ "Struktur" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "callactivitybase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],

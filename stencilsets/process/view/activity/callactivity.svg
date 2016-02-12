@@ -17,51 +17,18 @@
     <oryx:magnet oryx:cx="50" oryx:cy="40" oryx:default="yes" />
   </oryx:magnets>
   <g pointer-events="fill" oryx:minimumSize="50 40">
-    <defs>
-      <radialGradient id="background">
-        <stop id="fill_el" />
-      </radialGradient>
-    </defs>
-    <rect id="text_frame" oryx:anchors="bottom top right left" x="1" y="1" width="94" height="79" rx="3" ry="3" stroke="none" stroke-width="0" fill="none" />
-    <rect oryx:resize="vertical horizontal" oryx:anchors="bottom top right left" x="0" y="0" width="100" height="80" rx="3" ry="3" stroke="black" stroke-width="4" fill="none" />
-    <rect id="bg_frame" oryx:resize="vertical horizontal" x="0" y="0" width="100" height="80" rx="10" ry="10" stroke="black" stroke-width="1" fill="url(#background)" />
-    <text font-size="12" id="text_name" x="50" y="40" oryx:align="middle center" oryx:fittoelem="text_frame" stroke="black"></text>
-    <g id="header" transform="scale(1,1)">
-      <foreignObject x="2" y="2" width="28" height="40">
-<div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/png;base64,
-iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
-AAAGWAAABlgBH4cC6gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAASnSURB
-VDjLpZULTFtVGMdBJUuMzk10Dlm3uWCyiCKvwuQ1CIVmQIPljQQEGYzHIMwFxvCFDJCHy2aAIS8t
-DIZrxxta2tLSQh+UQukbCoM5F2cMTgeSwaC9n+cSTHQwxrTJLz2n99zfOed/v3tqBgBmW2Hn7GKO
-2IO3Q6KiAoLDwzNQf/fjxj/Klj+6eHi+2UCjGS5VVOiQzLKe9r1q/rd5CKKG5P8vMZK9LJZKftdo
-VZhaozSqNEpsTCGH8Ojoy16+JIfgsLD4pxZ7+foFEd09feXj8tVBIQ/au+jQ3dcOPAEblGoF1tXT
-vczmcv5Ak7+6YzEafFAwJFwWioSrI6Ni6Opth34OE+Pw+01iqRCGpQIQSYawnLzzQnxXOxa7eh63
-rayunkQRmJjsbhCK+BCbmHjd05dEHh2TGUfGRCBXyMDe5Zjzf8pYIhX/OYC2rlDKISk1le1F8ouf
-mp40TWjkIBuTQMWVqvmo2Nivnkr8UUpKPYvNfKDSKEAyOgyzc9MwfdMAhlk96Awq6GX1GhubGtdC
-IiOLE5KTU9MyM6u9vPwJTxSfyc7mMfuZK1w+d1lv0AC+Ss3kBOgN6vV8C4qKFovLyu684+Tqfv0G
-Y+7uL3chgEpNf6LY8ZjbAW9//0Ciu8fhBtp3C4OCAeANch/+QG99WFVdhRWWlDzQ67UYXoITKgUo
-VRNYelYmLSg0NCkmIeGTbTPeqBCrkvLy+6XlZffwN5ASEso/l5d3r7n1GsZk90JHNwN6mB3A4THx
-MgQ2h2XkcDkLDg7ur28rRh9zopu7x3GSX5yjh4fTlGFyTTYqBeEwH9V1J8q629TH6lmVySUgGhGA
-eERkij91qtnJycniseIPT57MYbH7fy0uLVXifW/yiaT8wgKpTq819bI6QYDklJCwAjdvb3uZXLom
-GxcDmgB7m0h02zaK8JiYIgXKj8liLn8QF9fHaGcs5RcWTvIGeUs8IRcmVGNwNjdH8n5kZM3MrAFT
-asdgWCKE2vq6xVD02m8SxyYm5F691qKrvFL5k0DIh86uNuDxudDYTIO8zz9bbutsW1PrJkAsG4LZ
-WzNw+84t0E+r16HfoK/U1NUu+gdSMjaJ0Skmuzk3A4MCHtAaG7DcT8/rUI5GwTAPqBERt+kM+kJX
-X9d9vAzVegVop5QwNaMFLo9tJJHJgUddXCxtbGx2bRKHRkWllV78WoeXWEtr07I90c2+rYOxoFSP
-Q865nJWImBgNgUCwqayuWmD292Id3R2L39ZUL9XW1WAnKJRL6IG/gHhuy4zRkVg4MNAPslEJjMgk
-pkmDFjp72rGz2R9jcQkJEmvrQ+/lX7iwgKKZt7CwcPXw8bmYcvq07qitLQVJX0PsRjzzLykqlZdo
-V5vmm1CmjDb6Kh+tvLLqGwikUoXvOjon29rZ4Tcf3Lt3nzvhyJFo1CYiHBBvId7YEL+I1+o/69YC
-YeVLJhdnZGX9aGVtfSYlPe3n/C+/gIDgYCW65rMhwiXWCALi0Ma3FWIPYtffzkfF+A32CBIi3MHZ
-ucWbRBp+Zd/+bNT3QzhurMp8fbtmZs/i7R2dbhsT4NvZjziMOICwRDyPi3b6n/cXzoiVIgoKBxAA
-AAAASUVORK5CYII=" /></div> </foreignObject>
-</g>
+    <rect id="text_frame" oryx:anchors="bottom top right left" x="1" y="1" width="94" height="79" rx="10" ry="10" stroke="none" stroke-width="0" fill="none" />
+    <rect oryx:resize="vertical horizontal" oryx:anchors="bottom top right left" x="0" y="0" width="100" height="80" rx="10" ry="10" stroke="#bbbbbb" stroke-width="4" fill="none" />
+    <rect id="bg_frame" oryx:resize="vertical horizontal" x="0" y="0" width="100" height="80" rx="10" ry="10" stroke="#bbbbbb" stroke-width="1" fill="#f9f9f9" />
+    <text font-size="12" id="text_name" x="50" y="40" oryx:align="middle center" oryx:fittoelem="text_frame" stroke="#373e48"></text>
     <g id="parallel">
-      <path oryx:anchors="bottom" fill="none" stroke="black" d="M46 70 v8 M50 70 v8 M54 70 v8" stroke-width="2" />
+      <path oryx:anchors="bottom" fill="none" stroke="#bbbbbb" d="M46 70 v8 M50 70 v8 M54 70 v8" stroke-width="2" />
     </g>
     <g id="sequential">
-      <path oryx:anchors="bottom" fill="none" stroke="#000000" stroke-width="2" d="M46,76h10M46,72h10 M46,68h10" />
+      <path oryx:anchors="bottom" fill="none" stroke="#bbbbbb" stroke-width="2" d="M46,76h10M46,72h10 M46,68h10" />
     </g>
     <g id="compensation">
-      <path oryx:anchors="bottom" fill="none" stroke="black" d="M 62 74 L 66 70 L 66 78 L 62 74 L 62 70 L 58 74 L 62 78 L 62 74" stroke-width="1" />
+      <path oryx:anchors="bottom" fill="none" stroke="#bbbbbb" d="M 62 74 L 66 70 L 66 78 L 62 74 L 62 70 L 58 74 L 62 78 L 62 74" stroke-width="1" />
     </g>
   </g>
 </svg>
