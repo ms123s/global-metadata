@@ -534,6 +534,16 @@
 			"optional": false,
 			"value": "None"
 		} ]
+		},{
+		"name" : "timerenddatedefinitionpackage",
+		"properties" : [ {
+			"id" : "timerenddatedefinition",
+			"type" : "String",
+			"title" : "Time End Date in ISO-8601",
+			"value" : "",
+			"description" : "Define the timer with a ISO-8601 end date.",
+			"popular" : true
+		} ]
 	}, {
 		"name": "timerdefinition",
 		"properties": [ {
@@ -585,7 +595,7 @@
 				"name_de": "Bereich",
 				"name": "Scope",
 				"type": "Choice",
-				"value": "processinstance",
+				"value": "global",
 				"width": 150,
 				"items": [ {
 					"id": "processinstance",
@@ -1782,7 +1792,7 @@
 		"groups_de": [ "Rand Ereignisse" ],
 		"view": "catching/timer.svg",
 		"icon": "catching/timer.png",
-		"propertyPackages": [ "baseProperties", "colorProperties", "errorrefProperties", "cancelactivityProperties" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "timerdefinition", "timerenddatedefinitionpackage", "errorrefProperties", "cancelactivityProperties" ],
 		"roles": [ "sequence_start", "BoundaryEventsMorph", "IntermediateEventOnActivityBoundary" ]
 	}, {
 		"type": "node",

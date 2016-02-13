@@ -25,6 +25,11 @@
             "permission": "tutorials:entities",
             "actions": "read,write",
             "enabled": true
+        },
+        {
+            "permission": "contact:entities",
+            "actions": "read,write",
+            "enabled": true
         }
     ],
     "name": "global.guest"
