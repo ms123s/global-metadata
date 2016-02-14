@@ -1094,6 +1094,14 @@
 			"readonly": false,
 			"optional": true
 		}, {
+			"id": "uriparam_businessKey",
+			"visible": "urivalue_operation.startsWith('startProcess')",
+			"type": "String",
+			"title": "BusinessKey",
+			"value": null,
+			"readonly": false,
+			"optional": true
+		}, {
 			"id": "uriparam_headerFields",
 			"title_de": "Headerfelder",
 			"title": "Headerfields",
@@ -3238,6 +3246,7 @@
 			"description": "Should be the route reachable via rpc?",
 			"type": "boolean",
 			"value": false,
+			"include":false,
 			"visible": true
 		}, {
 			"id": "rpcParameter",
@@ -3342,6 +3351,7 @@
 			"description": "Routes should be used with a WebSocket?",
 			"type": "boolean",
 			"value": false,
+			"include":false,
 			"visible": true
 		}, {
 			"id": "recvEndpoint",
@@ -4073,22 +4083,27 @@
 		}, {
 			"id": "processInstanceId",
 			"title": "processInstanceId",
+			"enabled": "urivalue_operation!='startProcess'",
 			"value": "processInstanceId"
 		}, {
 			"id": "businessKey",
 			"title": "businessKey",
+			"enabled": "urivalue_operation!='startProcess'",
 			"value": "businessKey"
 		}, {
 			"id": "activityId",
 			"title": "activityId",
+			"enabled": "urivalue_operation!='startProcess'",
 			"value": "activityId"
 		}, {
 			"id": "executionId",
 			"title": "executionId",
+			"enabled": "urivalue_operation!='startProcess'",
 			"value": "executionId"
 		}, {
 			"id": "processVariable",
 			"title": "processVariable",
+			"enabled": "urivalue_operation!='startProcess'",
 			"value": "processVariable"
 		} ],
 		"settingssources_items": [ {
