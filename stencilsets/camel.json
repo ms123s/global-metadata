@@ -4081,11 +4081,6 @@
 			"title": "processDefinitionId",
 			"value": "processDefinitionId"
 		}, {
-			"id": "processInstanceId",
-			"title": "processInstanceId",
-			"enabled": "urivalue_operation!='startProcess'",
-			"value": "processInstanceId"
-		}, {
 			"id": "businessKey",
 			"title": "businessKey",
 			"enabled": "urivalue_operation!='startProcess'",
