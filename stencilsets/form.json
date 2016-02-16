@@ -242,7 +242,7 @@
 			"id": "xf_required",
 			"type": "Combo",
 			"title": "Required",
-			"title_de": "Eingabe nötig",
+			"title_de": "Erforderlich",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
@@ -455,7 +455,7 @@
 			"id": "xf_required",
 			"type": "Combo",
 			"title": "Required",
-			"title_de": "Eingabe nötig",
+			"title_de": "Erforderlich",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
@@ -519,7 +519,7 @@
 			"id": "xf_required",
 			"type": "Combo",
 			"title": "Required",
-			"title_de": "Eingabe nötig",
+			"title_de": "Erforderlich",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
@@ -601,7 +601,7 @@
 			"id": "xf_required",
 			"type": "Combo",
 			"title": "Required",
-			"title_de": "Eingabe nötig",
+			"title_de": "Erforderlich",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
@@ -789,7 +789,7 @@
 			"id": "xf_required",
 			"type": "Combo",
 			"title": "Required",
-			"title_de": "Eingabe nötig",
+			"title_de": "Erforderlich",
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
@@ -1102,18 +1102,6 @@
 				"optional": true,
 				"value": ""
 			} ]
-		}, {
-			"id": "xf_inputlistname",
-			"type": "String",
-			"title": "Inputlist",
-			"title_de": "Eingabeliste",
-			"value": "",
-			"description": "Name of the list with the selectable elements",
-			"description_de": "Name der Liste mit den auszuwählenden Elementen",
-			"popular": true,
-			"readonly": false,
-			"optional": false,
-			"length": "50"
 		} ]
 	}, {
 		"type": "node",
