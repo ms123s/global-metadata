@@ -329,8 +329,9 @@
 			"title": "Cardinality (Multi-instance)",
 			"title_de": "Schleifen-Kardinalität",
 			"value": "",
-			"include": false,
+			"include": true,
 			"description": "Define the cardinality of multi instance.",
+			"visible": "multiinstance_type!='None'",
 			"popular": true
 		}, {
 			"id": "multiinstance_collection",
@@ -873,7 +874,7 @@
 		"icon": "activity/expanded.subprocess.png",
 		"groups": [ "Structural" ],
 		"groups_de": [ "Struktur" ],
-		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "istransactionProperties" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity", "istransactionProperties" ],
 		"roles": [ "sequence_start", "Activity", "sequence_end", "all" ]
 	}, {
 		"type": "node",
