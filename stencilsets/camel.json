@@ -1062,6 +1062,10 @@
 				"id": "c4",
 				"title": "startProcess",
 				"value": "startProcess"
+			}, {
+				"id": "c5",
+				"title": "getProcessVariables",
+				"value": "getProcessVariables"
 			} ],
 			"visible": true
 		}, {
@@ -1078,16 +1082,38 @@
 			"readonly": false,
 			"optional": true
 		}, {
+			"id": "uriparam_sendSignal",
+			"visible": "urivalue_operation.startsWith('startProcess')",
+			"description": "If the process is already running, then send a signal",
+			"description_de": "Wenn der Prozess schon läuft, dann sende ein Signal",
+			"type": "Boolean",
+			"title": "Send signal",
+			"title_de": "Sende Signal",
+			"value": null,
+			"readonly": false,
+			"optional": true
+		}, {
 			"id": "uriparam_signalName",
-			"visible": "urivalue_operation.startsWith('sendSignalEvent')",
+			"visible": "urivalue_operation.startsWith('sendSignalEvent') || uriparam_sendSignal",
 			"type": "String",
 			"title": "Signalname",
 			"value": null,
 			"readonly": false,
 			"optional": true
 		}, {
+			"id": "uriparam_sendMessage",
+			"visible": "urivalue_operation.startsWith('startProcess')",
+			"description": "If the process is already running, then send a message",
+			"description_de": "Wenn der Prozess schon läuft, dann sende eine Message",
+			"type": "Boolean",
+			"title": "Send message",
+			"title_de": "Sende Message",
+			"value": null,
+			"readonly": false,
+			"optional": true
+		}, {
 			"id": "uriparam_messageName",
-			"visible": "urivalue_operation.startsWith('sendMessageEvent')",
+			"visible": "urivalue_operation.startsWith('sendMessageEvent') || uriparam_sendMessage",
 			"type": "String",
 			"title": "Messagename",
 			"value": null,
@@ -1107,6 +1133,16 @@
 			"title": "Headerfields",
 			"description_de": "Angebene Headerfelder in das Variablenbereich des Prozesses kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
 			"description": "Copy specified headerfields into the variables space of the process, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
+			"visible": "urivalue_operation!='getProcessVariables'",
+			"type": "String",
+			"value": null,
+			"readonly": false,
+		}, {
+			"id": "uriparam_variableNames",
+			"title": "VariableNames",
+			"description_de": "VariableNames, Komma getrennt. if empty then all",
+			"description": "VariableNames, separated by commas.Wenn leer dann alle",
+			"visible": "urivalue_operation=='getProcessVariables'",
 			"type": "String",
 			"value": null,
 			"readonly": false,
@@ -4080,6 +4116,11 @@
 			"id": "processDefinitionId",
 			"title": "processDefinitionId",
 			"value": "processDefinitionId"
+		}, {
+			"id": "processInstanceId",
+			"title": "processInstanceId",
+			"enabled": "urivalue_operation=='getProcessVariables'",
+			"value": "processInstanceId"
 		}, {
 			"id": "businessKey",
 			"title": "businessKey",
