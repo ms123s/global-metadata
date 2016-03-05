@@ -2531,7 +2531,7 @@
 			"destination": "User with a min. one of these roles may start the route",
 			"description_de": "User mit einer min. einer dieser  Rollen dürfen die Route starten",
 			"value": "",
-			"visible": "urivalue_mode=='rpc'",
+			"_visible": "urivalue_mode=='rpc'",
 			"length": "50"
 		}, {
 			"id": "uriparam_startableUsers",
@@ -2542,7 +2542,7 @@
 			"destination": "This users are able to start the route",
 			"description_de": "Diese User dürfen die Route starten",
 			"value": "",
-			"visible": "urivalue_mode=='rpc'",
+			"_visible": "urivalue_mode=='rpc'",
 			"length": "50"
 		} ]
 	}, {
