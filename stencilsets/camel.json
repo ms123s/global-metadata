@@ -1066,6 +1066,10 @@
 				"id": "c5",
 				"title": "getProcessVariables",
 				"value": "getProcessVariables"
+			}, {
+				"id": "c6",
+				"title": "publishUserTasks",
+				"value": "publishUserTasks"
 			} ],
 			"visible": true
 		}, {
@@ -1133,7 +1137,7 @@
 			"title": "Headerfields",
 			"description_de": "Angebene Headerfelder in das Variablenbereich des Prozesses kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
 			"description": "Copy specified headerfields into the variables space of the process, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
-			"visible": "urivalue_operation!='getProcessVariables'",
+			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishUserTasks'",
 			"type": "String",
 			"value": null,
 			"readonly": false,
@@ -1158,6 +1162,7 @@
 			"title_de": "Prozesskriterien",
 			"description": "Criteria of the process which is to be executed or a signal sent",
 			"description_de": "Kriterien des Prozesses der ausgeführt werden soll oder dem ein Signal gesendet werden soll",
+			"visible": "urivalue_operation!='publishUserTasks'",
 			"value": null,
 			"readonly": false,
 			"optional": true,
