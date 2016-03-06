@@ -904,6 +904,7 @@
 			"type": "ResourceSelector",
 			"config": {
 				"type": "sw.form",
+				"editable": true,
 				"prefix": ""
 			},
 			"title": "Form",
