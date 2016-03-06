@@ -1146,7 +1146,7 @@
 			"title": "VariableNames",
 			"description_de": "VariableNames, Komma getrennt. if empty then all",
 			"description": "VariableNames, separated by commas.Wenn leer dann alle",
-			"visible": "urivalue_operation=='getProcessVariables'",
+			"visible": "urivalue_operation=='getProcessVariables' || urivalue_operation=='publishUserTasks'",
 			"type": "String",
 			"value": null,
 			"readonly": false,
