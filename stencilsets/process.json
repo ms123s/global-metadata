@@ -1000,7 +1000,7 @@
 			"include": false,
 			"optional": false
 		} ],
-		"propertyPackages": [ "baseProperties", "colorProperties", "loopcharacteristics", "activity" ]
+		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "loopcharacteristics", "activity" ]
 	}, {
 		"type": "node",
 		"id": "FilterTask",
