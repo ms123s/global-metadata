@@ -2067,7 +2067,27 @@
 			"type": "Text",
 			"title": "Code",
 			"value": "",
-			"description": "anonymous inner class implementing the processor's logic",
+			"description": "<ul><li>the <b>void process(Exchange)</b> method or </li><li>the complete class(must implement the interface org.apache.camel.Processor),</li></ul> depend from the codekind ",
+			"description_de": "<ul><li>Die  <b>void process(Exchange)</b> Methode  oder</li><li> die <b>komplette Klasse</b>(muss das Interface org.apache.camel.Processor implementieren),</li></ul> abhängig von Kodeart ",
+			"optional": true
+		}, {
+			"id": "codeKind",
+			"title": "Codekind",
+			"title_de": "Kodeart",
+			"readonly": false,
+			"type": "Choice",
+			"value": "processMethod",
+			"items": [ {
+				"id": "processMethod",
+				"title": "only the process method",
+				"title_de": "Nur die process Methode",
+				"value": "processMethod"
+			}, {
+				"id": "completeClass",
+				"title": "Complete processor class",
+				"title_de": "Komplette Processor Klasse",
+				"value": "completeClass"
+			} ],
 			"optional": true
 		}, {
 			"id": "addImport",
@@ -2077,6 +2097,7 @@
 			"config": {
 				"asArray": true,
 			},
+			"visible": "codeKind=='processMethod'",
 			"value": null,
 			"readonly": false,
 			"optional": true,
