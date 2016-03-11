@@ -1011,7 +1011,7 @@
 		"description": "A Filter Task is a Task that generates a list uses an predefined filter.",
 		"view": "activity/filtertask.svg",
 		"icon": "activity/list/type.filter.png",
-		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
+		"_roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
 			"id": "filtername",
 			"type": "ResourceSelector",
@@ -1316,7 +1316,7 @@
 		"description": "A Document Task is a Task that generates document.",
 		"view": "activity/documenttask.svg",
 		"icon": "activity/list/type.document.png",
-		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
+		"_roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
 			"id": "documentname",
 			"type": "ResourceSelector",
