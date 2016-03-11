@@ -2792,11 +2792,11 @@
     },
     {
         "msgid": "ruleseditor.variable",
-        "msgstr": "Variable type"
+        "msgstr": "Name"
     },
     {
         "msgid": "ruleseditor.vartype",
-        "msgstr": "Variable type"
+        "msgstr": "Type"
     },
     {
         "msgid": "searchfilter.actionbutton",

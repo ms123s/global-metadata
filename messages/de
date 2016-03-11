@@ -3736,7 +3736,7 @@
     },
     {
         "msgid": "ruleseditor.variable",
-        "msgstr": "Variable"
+        "msgstr": "Name"
     },
     {
         "msgid": "processexplorer.details_variables",
@@ -3747,16 +3747,12 @@
         "msgstr": "Variablen"
     },
     {
-        "msgid": "ruleseditor.variable",
-        "msgstr": "Variablen Typ"
-    },
-    {
         "msgid": "processexplorer.variableName",
         "msgstr": "Variablenname"
     },
     {
         "msgid": "ruleseditor.vartype",
-        "msgstr": "Variablentyp"
+        "msgstr": "Typ"
     },
     {
         "msgid": "processexplorer.variableType",
