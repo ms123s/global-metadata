@@ -87,6 +87,10 @@
         "msgstr": "Abbrechen"
     },
     {
+        "msgid": "ruleseditor.save",
+        "msgstr": "Speichern"
+    },
+    {
         "msgid": "import.mapping.cancel",
         "msgstr": "Abbrechen"
     },

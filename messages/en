@@ -2780,7 +2780,7 @@
     },
     {
         "msgid": "ruleseditor.save",
-        "msgstr": "Save rule"
+        "msgstr": "Save"
     },
     {
         "msgid": "ruleseditor.test",

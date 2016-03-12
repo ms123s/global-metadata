@@ -944,6 +944,26 @@
 				"value": "",
 				"width": 150,
 				"optional": false
+			}, {
+				"id": "direction",
+				"name": "Direction",
+				"name_de": "Richtung",
+				"readonly": false,
+				"type": "Choice",
+				"value": "incoming",
+				"items": [ {
+					"id": "incoming",
+					"title": "Incoming",
+					"title_de": "Eingehend",
+					"value": "incoming"
+				}, {
+					"id": "outgoing",
+					"title": "Outgoing",
+					"title_de": "Ausgehend",
+					"value": "outgoing"
+				} ],
+				"width": 80,
+				"optional": true
 			} ]
 		}, {
 			"id": "formvarname",
