@@ -347,6 +347,66 @@
         "msgstr": "Mapping gespeichert"
     },
     {
+        "msgid": "datasource.database",
+        "msgstr": "Database"
+    },
+    {
+        "msgid": "datasource.datasourcename",
+        "msgstr": "Datasourcename"
+    },
+    {
+        "msgid": "datasource.form_incomplete",
+        "msgstr": "Eingaben fehlen"
+    },
+    {
+        "msgid": "datasource.url",
+        "msgstr": "Url"
+    },
+    {
+        "msgid": "datasource.username",
+        "msgstr": "Username"
+    },
+    {
+        "msgid": "datasource.password",
+        "msgstr": "Passwort"
+    },
+    {
+        "msgid": "datasource.databasename",
+        "msgstr": "Databasename"
+    },
+		{
+				'msgid': "datasource.create_jooq_metadata",
+				'msgstr': "JOOQ metadata"
+		}, 
+		{
+				'msgid': "datasource.jooq_inputschema",
+				'msgstr': "JOOQ inputschema"
+		}, 
+		{
+				'msgid': "datasource.jooq_includes",
+				'msgstr': "JOOQ includes"
+		}, 
+		{
+				'msgid': "datasource.jooq_excludes",
+				'msgstr': "JOOQ excludes"
+		}, 
+		{
+				'msgid': "datasource.create_datanucleus_metadata",
+				'msgstr': "DATANUCLEUS metadata"
+		}, 
+		{
+				'msgid': "datasource.datanucleus_inputschema",
+				'msgstr': "DATANUCLEUS inputschema"
+		}, 
+		{
+				'msgid': "datasource.datanucleus_includes",
+				'msgstr': "DATANUCLEUS includes"
+		}, 
+		{
+				'msgid': "datasource.datanucleus_excludes",
+				'msgstr': "DATANUCLEUS excludes"
+		},
+    {
         "msgid": "shell.jsoneditor",
         "msgstr": "Edit Quelle"
     },
@@ -1245,6 +1305,10 @@
     {
         "msgid": "shell.document_saved",
         "msgstr": "Dokument gespeichert"
+    },
+    {
+        "msgid": "shell.datasource_saved",
+        "msgstr": "Datasource gespeichert"
     },
     {
         "msgid": "mainmenu.documents",
@@ -3833,6 +3897,10 @@
     {
         "msgid": "shell.nt_datamapper",
         "msgstr": "Datamapper"
+    },
+    {
+        "msgid": "shell.nt_datasource",
+        "msgstr": "Datasource"
     },
     {
         "msgid": "shell.nt_website",
