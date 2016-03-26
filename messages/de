@@ -351,6 +351,14 @@
         "msgstr": "Database"
     },
     {
+        "msgid": "datasource.create_metadata_ok",
+        "msgstr": "Die Database Metadaten wurden erstellt"
+    },
+    {
+        "msgid": "datasource.create_metadata_failed",
+        "msgstr": "Das Erstellen der Database Metadaten schlug fehl"
+    },
+    {
         "msgid": "datasource.datasourcename",
         "msgstr": "Datasourcename"
     },
@@ -376,11 +384,15 @@
     },
 		{
 				'msgid': "datasource.create_jooq_metadata",
-				'msgstr': "JOOQ metadata"
+				'msgstr': "generate JOOQ metadata"
+		}, 
+		{
+				'msgid': "datasource.jooq_packagename",
+				'msgstr': "JOOQ packagename"
 		}, 
 		{
 				'msgid': "datasource.jooq_inputschema",
-				'msgstr': "JOOQ inputschema"
+				'msgstr': "JOOQ inputschema(ohne database)"
 		}, 
 		{
 				'msgid': "datasource.jooq_includes",
@@ -392,11 +404,11 @@
 		}, 
 		{
 				'msgid': "datasource.create_datanucleus_metadata",
-				'msgstr': "DATANUCLEUS metadata"
+				'msgstr': "generate DATANUCLEUS metadata"
 		}, 
 		{
 				'msgid': "datasource.datanucleus_inputschema",
-				'msgstr': "DATANUCLEUS inputschema"
+				'msgstr': "DATANUCLEUS inputschema(mit database)"
 		}, 
 		{
 				'msgid': "datasource.datanucleus_includes",
