@@ -819,6 +819,10 @@
         "msgstr": "Sidebar"
     },
     {
+        "msgid": "data.entity.selectdistinct",
+        "msgstr": "no select distinct"
+    },
+    {
         "msgid": "data.entity.state_fields",
         "msgstr": "Status fields"
     },

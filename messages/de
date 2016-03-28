@@ -4935,6 +4935,10 @@
         "msgstr": "Dublettenkandidat"
     },
     {
+        "msgid": "data.entity.selectdistinct",
+        "msgstr": "Kein Select distinct"
+    },
+    {
         "msgid": "data.entity.stateselect",
         "msgstr": "Statusumschaltung(Dublettenkandidaten)"
     },
