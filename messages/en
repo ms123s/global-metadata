@@ -955,6 +955,10 @@
         "msgstr": "plausibility"
     },
     {
+        "msgid": "data.field.tablename",
+        "msgstr": "Tablename"
+    },
+    {
         "msgid": "data.form.save",
         "msgstr": "Save"
     },
@@ -1205,6 +1209,10 @@
     {
         "msgid": "datasource.form_incomplete",
         "msgstr": "Not complete"
+    },
+    {
+        "msgid": "datasource.is_main_db",
+        "msgstr": "Maindatabase in this namespace"
     },
     {
         "msgid": "datasource.url",
@@ -1588,7 +1596,7 @@
     },
     {
         "msgid": "entitytypes.new_fast_entitytype_create",
-        "msgstr": "New Class (Quickmode)"
+        "msgstr": "New Class"
     },
     {
         "msgid": "entitytypes.new_field",

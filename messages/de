@@ -363,6 +363,10 @@
         "msgstr": "Datasourcename"
     },
     {
+        "msgid": "datasource.is_main_db",
+        "msgstr": "Hauptdatenbank in diesem Namespace"
+    },
+    {
         "msgid": "datasource.form_incomplete",
         "msgstr": "Eingaben fehlen"
     },
@@ -561,6 +565,10 @@
     {
         "msgid": "data.field.selectable_items",
         "msgstr": "Aufzählung"
+    },
+    {
+        "msgid": "data.field.tablename",
+        "msgstr": "Tablename"
     },
     {
         "msgid": "enumerations.enumeration_dir",
@@ -2632,7 +2640,7 @@
     },
     {
         "msgid": "entitytypes.new_fast_entitytype_create",
-        "msgstr": "Neue Klasse(Quickmodus)"
+        "msgstr": "Neue Klasse"
     },
     {
         "msgid": "entitytypes.new_entitytype_wizard_form",

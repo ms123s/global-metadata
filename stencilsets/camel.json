@@ -1144,8 +1144,8 @@
 		}, {
 			"id": "uriparam_variableNames",
 			"title": "VariableNames",
-			"description_de": "VariableNames, Komma getrennt. if empty then all",
-			"description": "VariableNames, separated by commas.Wenn leer dann alle",
+			"description_de": "VariableNames, die veröffentlicht werden.Komma getrennt. Wenn leer dann alle",
+			"description": "VariableNames that are published. separated by commas.if empty then alle",
 			"visible": "urivalue_operation=='getProcessVariables' || urivalue_operation=='publishUserTasks'",
 			"type": "String",
 			"value": null,
