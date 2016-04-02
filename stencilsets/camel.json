@@ -1823,7 +1823,7 @@
 		}, {
 			"id": "uriparam_paramHeaders",
 			"title_de": "Filterparameter",
-			"title": "Headerfields",
+			"title": "Filterparameter",
 			"description_de": "Angebene Headerfelder als Filterparameter benutzen, oder alle wenn nichts angeben ist",
 			"description": "Use specified headerfields as filterparameter, or all if nothing is specified.",
 			"type": "String",
