@@ -1132,7 +1132,7 @@
 			"readonly": false,
 			"optional": true
 		}, {
-			"id": "startableUsers",
+			"id": "uriparam_events",
 			"type": "MultiSelect",
 			"config": [
 				{"value":"activity_cancelled",                     "label":"Activity cancelled"},
