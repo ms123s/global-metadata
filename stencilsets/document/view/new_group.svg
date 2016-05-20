@@ -23,9 +23,6 @@
               <td style="border:0px solid gray;">Hjdjjdjkdkd</td>
             </tr>
             <tr>
-              <td style="border:0px solid gray;">foreignKey</td>
-            </tr>
-            <tr>
               <td style="border:0px solid gray;">fieldname</td>
             </tr>
           </table>
@@ -38,9 +35,6 @@
           <table cellpadding="1" style="color:#ffffff;font-size:3pt;border:none;border-collapse:collapse;width:50%;">
             <tr>
               <td style="border:0px solid gray;">Hhhdhddjjd</td>
-            </tr>
-            <tr>
-              <td style="border:0px solid gray;">foreignKey</td>
             </tr>
             <tr>
               <td style="border:0px solid gray;">fieldname</td>
@@ -61,9 +55,6 @@
             </tr>
             <tr>
               <td colspan="1" style="border:0px solid gray;background:#000000;color:#000000;">Tablename</td>
-            </tr>
-            <tr>
-              <td style="border:0px solid gray;">foreignKey</td>
             </tr>
             <tr>
               <td style="border:0px solid gray;">fieldname</td>
