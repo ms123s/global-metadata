@@ -2112,6 +2112,19 @@
 			"value": "",
 			"description": "<ul><li>the <b>void process(Exchange)</b> method or </li><li>the complete class(must implement the interface org.apache.camel.Processor),</li></ul> depend from the codekind ",
 			"description_de": "<ul><li>Die  <b>void process(Exchange)</b> Methode  oder</li><li> die <b>komplette Klasse</b>(muss das Interface org.apache.camel.Processor implementieren),</li></ul> abhängig von Kodeart ",
+			"visible": "codeLanguage=='groovy' || codeLanguage=='java'",
+			"optional": true
+		}, {
+			"id": "script",
+			"config": {
+				"mode": "${codeLanguage}"
+			},
+			"type": "Text",
+			"title": "Script",
+			"value": "",
+			"description": "Embedded script",
+			"description_de": "Eingebettetes Script",
+			"visible": "codeLanguage!='groovy' && codeLanguage!='java'",
 			"optional": true
 		}, {
 			"id": "codeKind",
@@ -2120,7 +2133,7 @@
 			"readonly": false,
 			"type": "Choice",
 			"visible": "codeLanguage=='groovy' || codeLanguage=='java'",
-			"value": "processMethod",
+			"value": "completeClass",
 			"items": [ {
 				"id": "processMethod",
 				"title": "only the process method",
@@ -2155,8 +2168,8 @@
 			} ]
 		}, {
 			"id": "codeLanguage",
-			"title": "Codelanguage",
-			"title_de": "Kode Sprache",
+			"title": "Language",
+			"title_de": "Sprache",
 			"readonly": false,
 			"type": "Choice",
 			"value": "groovy",
