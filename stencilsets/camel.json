@@ -2087,13 +2087,25 @@
 			"title": "Reference",
 			"description": "Reference to the bean implementing the processor's logic",
 			"value": "",
-			"visible": true,
+			"visible": "codeLanguage=='groovy' || codeLanguage=='java'",
+			"optional": true
+		}, {
+			"id": "srcFile",
+			"type": "ResourceSelector",
+			"config": {
+				"type": "sw.njs"
+			},
+			"title": "Sourcefile",
+			"title_de": "Quelldatei",
+			"description": "The sourcefile which contains the script",
+			"description_de": "Die Quelldatei welche das Script beinhaltet",
+			"value": "",
+			"visible": "codeLanguage!='groovy' && codeLanguage!='java'",
 			"optional": true
 		}, {
 			"id": "code",
 			"config": {
-				"mode": "text/x-groovy",
-				"xelper": "ProcessScript"
+				"mode": "${codeLanguage}"
 			},
 			"type": "Text",
 			"title": "Code",
@@ -2107,6 +2119,7 @@
 			"title_de": "Kodeart",
 			"readonly": false,
 			"type": "Choice",
+			"visible": "codeLanguage=='groovy' || codeLanguage=='java'",
 			"value": "processMethod",
 			"items": [ {
 				"id": "processMethod",
@@ -2128,7 +2141,7 @@
 			"config": {
 				"asArray": true,
 			},
-			"visible": "codeKind=='processMethod'",
+			"visible": "codeKind=='processMethod' && (codeLanguage=='groovy' || codeLanguage=='java')",
 			"value": null,
 			"readonly": false,
 			"optional": true,
@@ -2155,6 +2168,10 @@
 				"id": "java",
 				"title": "Java8",
 				"value": "java"
+			}, {
+				"id": "njs",
+				"title": "Nashorn JS",
+				"value": "njs"
 			} ],
 			"optional": true
 		}, {
