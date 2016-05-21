@@ -3063,6 +3063,14 @@
         "msgstr": "Error compiling groovy file"
     },
     {
+        "msgid": "shell.njs_saved",
+        "msgstr": "File saved"
+    },
+    {
+        "msgid": "shell.njs_save_failed",
+        "msgstr": "Warnings and/or errors"
+    },
+    {
         "msgid": "shell.java_saved",
         "msgstr": "File saved and compilied"
     },
