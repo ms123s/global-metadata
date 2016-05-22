@@ -2183,7 +2183,7 @@
 				"value": "java"
 			}, {
 				"id": "njs",
-				"title": "Nashorn JS",
+				"title": "Nashorn Javascript",
 				"value": "njs"
 			} ],
 			"optional": true
