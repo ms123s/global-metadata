@@ -81,6 +81,16 @@
             "name": "description",
             "datatype": "string"
         },
+        "sqltype": {
+            "enabled": true,
+            "name": "sqltype",
+            "datatype": "string"
+        },
+        "columnName": {
+            "enabled": true,
+            "name": "columnName",
+            "datatype": "string"
+        },
         "default_value": {
             "enabled": true,
             "name": "default_value",

@@ -367,6 +367,10 @@
         "msgstr": "Hauptdatenbank in diesem Namespace"
     },
     {
+        "msgid": "datasource.is_schema_readonly",
+        "msgstr": "Schema readonly"
+    },
+    {
         "msgid": "datasource.form_incomplete",
         "msgstr": "Eingaben fehlen"
     },
@@ -412,15 +416,15 @@
 		}, 
 		{
 				'msgid': "datasource.datanucleus_inputschema",
-				'msgstr': "DATANUCLEUS inputschema(mit database)"
+				'msgstr': "DATANUCLEUS inputschema"
 		}, 
 		{
 				'msgid': "datasource.datanucleus_includes",
-				'msgstr': "DATANUCLEUS includes"
+				'msgstr': "DATANUCLEUS includes(Pattern mit Databasename)"
 		}, 
 		{
 				'msgid': "datasource.datanucleus_excludes",
-				'msgstr': "DATANUCLEUS excludes"
+				'msgstr': "DATANUCLEUS excludes(Pattern mit Databasename)"
 		},
     {
         "msgid": "shell.jsoneditor",
@@ -1285,6 +1289,14 @@
     {
         "msgid": "data.field.default_value",
         "msgstr": "Defaultwert"
+    },
+    {
+        "msgid": "data.field.sqltype",
+        "msgstr": "Sqltype"
+    },
+    {
+        "msgid": "data.field.columnName",
+        "msgstr": "ColumnName"
     },
     {
         "msgid": "namespacesmanager.uninstall",

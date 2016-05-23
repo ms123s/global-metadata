@@ -1215,6 +1215,10 @@
         "msgstr": "Maindatabase in this namespace"
     },
     {
+        "msgid": "datasource.is_schema_readonly",
+        "msgstr": "Schema readonly"
+    },
+    {
         "msgid": "datasource.url",
         "msgstr": "Url"
     },
@@ -1252,7 +1256,7 @@
 		}, 
 		{
 				'msgid': "datasource.create_datanucleus_metadata",
-				'msgstr': "generate DATANUCLEUS metadata(with database)"
+				'msgstr': "generate DATANUCLEUS metadata"
 		}, 
 		{
 				'msgid': "datasource.datanucleus_inputschema",
@@ -1260,11 +1264,11 @@
 		}, 
 		{
 				'msgid': "datasource.datanucleus_includes",
-				'msgstr': "DATANUCLEUS includes"
+				'msgstr': "DATANUCLEUS includes(Pattern with databasename)"
 		}, 
 		{
 				'msgid': "datasource.datanucleus_excludes",
-				'msgstr': "DATANUCLEUS excludes"
+				'msgstr': "DATANUCLEUS excludes(Pattern with databasename)"
 		},
     {
         "msgid": "data.multiedit.start",
