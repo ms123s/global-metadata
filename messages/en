@@ -1219,8 +1219,12 @@
         "msgstr": "Schema readonly"
     },
     {
+        "msgid": "datasource.is_schema_validate",
+        "msgstr": "Schema validate"
+    },
+    {
         "msgid": "datasource.url",
-        "msgstr": "Url"
+        "msgstr": "Url(No input, means, share a  other datasource)"
     },
     {
         "msgid": "datasource.username",
@@ -1235,24 +1239,24 @@
         "msgstr": "Databasename"
     },
 		{
+				'msgid': "datasource.packagename",
+				'msgstr': "Packagename"
+		}, 
+		{
 				'msgid': "datasource.create_jooq_metadata",
 				'msgstr': "generate JOOQ metadata"
 		}, 
 		{
-				'msgid': "datasource.jooq_packagename",
-				'msgstr': "JOOQ packagename"
-		}, 
-		{
 				'msgid': "datasource.jooq_inputschema",
-				'msgstr': "JOOQ inputschema(without database)"
+				'msgstr': "JOOQ inputschema"
 		}, 
 		{
 				'msgid': "datasource.jooq_includes",
-				'msgstr': "JOOQ includes"
+				'msgstr': "JOOQ includes(Pattern <b>without</b> databasename)"
 		}, 
 		{
 				'msgid': "datasource.jooq_excludes",
-				'msgstr': "JOOQ excludes"
+				'msgstr': "JOOQ excludes(Pattern <b>without</b> databasename)"
 		}, 
 		{
 				'msgid': "datasource.create_datanucleus_metadata",
@@ -1264,11 +1268,11 @@
 		}, 
 		{
 				'msgid': "datasource.datanucleus_includes",
-				'msgstr': "DATANUCLEUS includes(Pattern with databasename)"
+				'msgstr': "DATANUCLEUS includes(Pattern <b>with</b> databasename)"
 		}, 
 		{
 				'msgid': "datasource.datanucleus_excludes",
-				'msgstr': "DATANUCLEUS excludes(Pattern with databasename)"
+				'msgstr': "DATANUCLEUS excludes(Pattern <b>with</b> databasename)"
 		},
     {
         "msgid": "data.multiedit.start",
@@ -1773,6 +1777,10 @@
     {
         "msgid": "filtereditor.mainmodule",
         "msgstr": "Mainentity"
+    },
+    {
+        "msgid": "filtereditor.pack",
+        "msgstr": "Package"
     },
     {
         "msgid": "filtereditor.sorthelp",
