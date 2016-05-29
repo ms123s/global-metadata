@@ -1918,30 +1918,15 @@
 			} ],
 			"visible": true
 		}, {
-			"id": "uriparam_target",
-			"title": "Target",
+			"id": "uriparam_destination",
+			"title": "Destination",
 			"title_de": "Ziel",
-			"type": "Choice",
-			"value": "body",
-			"items": [ {
-				"id": "c1",
-				"title": "Body",
-				"value": "body"
-			}, {
-				"id": "c2",
-				"title": "Header",
-				"value": "header"
-			} ],
-			"visible": "urivalue_operation=='get'"
-		}, {
-			"id": "uriparam_header",
-			"title": "Targetheaderfield",
-			"title_de": "Ziel Headerfeld",
-			"description": "Name of the header field on which the file should be copied",
-			"description_de": "Name des Headerfeldes, in den das File kopiert werden soll ",
-			"type": "string",
+			"description_de": "Ziel der Datei. z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b> => Ziel ist das Headerfeld <b>param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b> => Ziel ist Property <b>param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of file. e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Destination is headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> Destination is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
 			"value": null,
-			"visible": "urivalue_operation=='get' && uriparam_target=='header'"
+			"optional": false,
+			"visible": "urivalue_operation=='get'"
 		}, {
 			"id": "uriparam_repo",
 			"title": "Reponame",
