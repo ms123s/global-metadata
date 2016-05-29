@@ -1830,6 +1830,16 @@
 			"value": null,
 			"items": [],
 		}, {
+			"id": "uriparam_source",
+			"title": "Source",
+			"title_de": "Quelle",
+			"description_de": "z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b></li><li><b>property.param1</b> or short <b>p.param1</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": false,
+			"visible": "urivalue_operation=='insert' || urivalue_operation=='update' || urivalue_operation=='multiInsertUpdate'"
+		}, {
 			"id": "uriparam_filterName",
 			"title": "Filtername",
 			"description_de": "Der Filter der ausgeführt werden soll",
@@ -1860,14 +1870,16 @@
 			"type": "String",
 			"value": null,
 			"readonly": false,
-			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' ||  urivalue_operation=='findById'"
+			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter'"
 		}, {
-			"id": "uriparam_resultHeader",
-			"title": "Result",
-			"description_de": "Das Ergebniss, statt in den Body, in den Header unter diesem Namen kopieren",
-			"description": "Copying the result, instead of in the body, in the header under this name",
+			"id": "uriparam_destination",
+			"title": "Destination",
+			"title_de": "Ziel",
+			"description_de": "Ziel des Ergebnisses. z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the result. e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b></li><li><b>property.param1</b> or short <b>p.param1</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
 			"value": null,
+			"optional": false,
 			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' ||  urivalue_operation=='findById'"
 		} ]
 	}, {
@@ -3307,6 +3319,41 @@
 			"visible": true
 		} ]
 	}, {
+		"name": "hazelcastProperties",
+		"properties": [ {
+			"id": "endpoint_hazelcast",
+			"type": "String",
+			"value": "hazelcast",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "hazelcast://${host}:${port}/${path}",
+			"visible": false
+		}, {
+			"id": "urivalue_host",
+			"title": "Host",
+			"description_de": "Wenn die Uri dynamisch gesetzt wird,dann wird das Feld nicht benutzt, aber es muss ein Dummy-Wert angeben werden.",
+			"description": "If the URI is set dynamically, then the field is not used, but a dummy value is needed.",
+			"type": "String",
+			"optional": false,
+			"value": "localhost",
+			"visible": true
+		}, {
+			"id": "urivalue_port",
+			"title": "Port",
+			"type": "Integer",
+			"value": "80",
+			"visible": true
+		}, {
+			"id": "urivalue_path",
+			"title": "Path",
+			"type": "String",
+			"value": "",
+			"visible": true
+		} ]
+	}, {
 		"name": "diagram",
 		"properties": [ {
 			"id": "version",
@@ -3497,6 +3544,16 @@
 		"groups": [ "Endpoints A-L" ],
 		"groups_de": [ "Endpunkte A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "templateProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "HazelcastEndpoint",
+		"title": "Hazelcast",
+		"view": "hazelcastendpoint.svg",
+		"icon": "hazelcastendpoint.png",
+		"groups": [ "Endpoints A-L" ],
+		"groups_de": [ "Endpunkte A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "hazelcastProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
