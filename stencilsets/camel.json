@@ -1862,11 +1862,21 @@
 			"optional": false,
 			"visible": "urivalue_operation=='insert' || urivalue_operation=='update' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
 		}, {
+			"id": "uriparam_objectId",
+			"title": "ObjectId",
+			"title_de": "ObjectId",
+			"description_de": "Expression. z.B. <ul><li> <b>header.objectId</b> oder kurz: <b>h.objectId</b></li><li><b>property.objectId</b> oder kurz <b>p.objectId</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Expression. e.g. <ul><li> <b>header.objectId</b> or short: <b>h.objectId</b></li><li><b>property.objectId</b> or short <b>p.param1</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": false,
+			"visible": "urivalue_operation=='update' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
+		}, {
 			"id": "uriparam_paramHeaders",
 			"title_de": "Filterparameter",
 			"title": "Filterparameter",
-			"description_de": "Angebene Headerfelder als Filterparameter benutzen, oder alle wenn nichts angeben ist",
-			"description": "Use specified headerfields as filterparameter, or all if nothing is specified.",
+			"description_de": "Angebene Headerfelder(Komma getrennt) als Filterparameter benutzen, oder alle wenn nichts angeben ist",
+			"description": "Use specified headerfields(comma separated)  as filterparameter, or all if nothing is specified.",
 			"type": "String",
 			"value": null,
 			"readonly": false,
