@@ -1229,6 +1229,16 @@
 			"value": "asciidoctor:dummy",
 			"visible": false
 		}, {
+			"id": "uriparam_source",
+			"title": "Source",
+			"title_de": "Quelle",
+			"description_de": "Quelle der Eingabe, z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b> => Quelle ist das Headerfeld <b>param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b> =>  Quelle ist Property <b>param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Source of the input, e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Source is the headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> => Source is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
+		}, {
 			"id": "uriparam_output",
 			"title": "Output",
 			"title_de": "Ausgabe",
@@ -1243,6 +1253,16 @@
 				"title": "Docbook",
 				"value": "docbook"
 			} ],
+		}, {
+			"id": "uriparam_destination",
+			"title": "Destination",
+			"title_de": "Ziel",
+			"description_de": "Ziel der Ausgabe. z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b> => Ziel ist das Headerfeld <b>param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b> => Ziel ist Property <b>param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the output. e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Destination is headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> Destination is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
 		} ]
 	}, {
 		"name": "docbookProperties",
@@ -1257,16 +1277,6 @@
 			"type": "String",
 			"value": "docbook:dummy",
 			"visible": false
-		}, {
-			"id": "uriparam_namespace",
-			"title": "Namespace",
-			"description": "optional",
-			"config": {
-				type: "ms123.util.RepoList"
-			},
-			"type": "Choice",
-			"value": null,
-			"items": []
 		}, {
 			"id": "uriparam_input",
 			"title": "Input",
@@ -1283,15 +1293,15 @@
 				"value": "document"
 			} ],
 		}, {
-			"id": "uriparam_headerfields",
-			"title_de": "Headerfelder",
-			"title": "Headerfields",
-			"description_de": "Angebene Headerfelder in das Datenmodell von Docbook kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
-			"description": "Copy specified headerfields into the data model of docbook, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
+			"id": "uriparam_source",
+			"title": "Source",
+			"title_de": "Quelle",
+			"description_de": "Quelle der Eingabe, z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b> => Quelle ist das Headerfeld <b>param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b> =>  Quelle ist Property <b>param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Source of the input, e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Source is the headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> => Source is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
 			"value": null,
-			"visible": "uriparam_input=='document'",
-			"readonly": false,
+			"optional": true,
+			"visible": "true"
 		}, {
 			"id": "uriparam_output",
 			"title": "Output",
@@ -1303,6 +1313,36 @@
 				"title": "PDF",
 				"value": "pdf"
 			} ],
+		}, {
+			"id": "uriparam_destination",
+			"title": "Destination",
+			"title_de": "Ziel",
+			"description_de": "Ziel der Ausgabe. z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b> => Ziel ist das Headerfeld <b>param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b> => Ziel ist Property <b>param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the output. e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Destination is headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> Destination is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
+		}, {
+			"id": "uriparam_namespace",
+			"title": "Namespace",
+			"description": "optional",
+			"config": {
+				type: "ms123.util.RepoList"
+			},
+			"type": "Choice",
+			"value": null,
+			"items": []
+		}, {
+			"id": "uriparam_headerfields",
+			"title_de": "Headerfelder",
+			"title": "Headerfields",
+			"description_de": "Angebene Headerfelder in das Datenmodell von Docbook kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
+			"description": "Copy specified headerfields into the data model of docbook, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
+			"type": "String",
+			"value": null,
+			"visible": "uriparam_input=='document'",
+			"readonly": false,
 		}, {
 			"id": "uriparam_paper.type",
 			"type": "Choice",
