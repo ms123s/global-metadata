@@ -30,6 +30,26 @@
             "permission": "contact:entities",
             "actions": "read,write",
             "enabled": true
+        },
+        {
+            "permission": "ges:entities:data:benachrichtigung",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "ges:entities:data:fahrer",
+            "actions": "read",
+            "enabled": true
+        },
+        {
+            "permission": "ges:entities:data:verkaufszeilelager",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "simplmbb:entities",
+            "actions": "read,write",
+            "enabled": true
         }
     ],
     "name": "global.guest"

@@ -3339,29 +3339,85 @@
 		}, {
 			"id": "uri_template",
 			"type": "String",
-			"value": "hazelcast://${host}:${port}/${path}",
+			"value": "hazelcast:${type}:${name}",
 			"visible": false
 		}, {
-			"id": "urivalue_host",
-			"title": "Host",
-			"description_de": "Wenn die Uri dynamisch gesetzt wird,dann wird das Feld nicht benutzt, aber es muss ein Dummy-Wert angeben werden.",
-			"description": "If the URI is set dynamically, then the field is not used, but a dummy value is needed.",
+			"id": "urivalue_type",
+			"title": "Type",
+			"type": "Choice",
+			"value": "map",
+			"items": [ {
+				"id": "c1",
+				"title": "Map",
+				"value": "map"
+			}, {
+				"id": "c2",
+				"title": "List",
+				"value": "list"
+			} ]
+		}, {
+			"id": "urivalue_name",
+			"title": "Name",
+			"title_de": "Name",
 			"type": "String",
+			"value": "default",
+			"optional": false
+		}, {
+			"id": "uriparam_operation",
+			"title": "Operation",
+			"type": "Choice",
+			"value": "1",
+			"items": [ {
+				"id": "c1",
+				"title": "Put",
+				"value": "1"
+			}, {
+				"id": "c2",
+				"title": "Delete",
+				"value": "2"
+			}, {
+				"id": "c3",
+				"title": "Get",
+				"value": "3"
+			}, {
+				"id": "c4",
+				"title": "Update",
+				"value": "4"
+			}, {
+				"id": "c5",
+				"title": "Query",
+				"value": "5"
+			} ]
+		}, {
+			"id": "uriparam_objectId",
+			"title": "ObjectId",
+			"title_de": "ObjectId",
+			"description_de": "z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b> => Quelle ist das Headerfeld <b>param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b> =>  Quelle ist Property <b>param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Source is the headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> => Source is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
 			"optional": false,
-			"value": "localhost",
-			"visible": true
+			"visible": "uriparam_operation!='5'"
 		}, {
-			"id": "urivalue_port",
-			"title": "Port",
-			"type": "Integer",
-			"value": "80",
-			"visible": true
-		}, {
-			"id": "urivalue_path",
-			"title": "Path",
+			"id": "uriparam_source",
+			"title": "Source",
+			"title_de": "Quelle",
+			"description_de": "z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b> => Quelle ist das Headerfeld <b>param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b> =>  Quelle ist Property <b>param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Source is the headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> => Source is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
-			"value": "",
-			"visible": true
+			"value": null,
+			"optional": false,
+			"visible": "uriparam_operation=='1' || uriparam_operation=='4'"
+		}, {
+			"id": "uriparam_destination",
+			"title": "Destination",
+			"title_de": "Ziel",
+			"description_de": "Ziel des Ergebnisses. z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b> => Ziel ist das Headerfeld <b>param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b> => Ziel ist Property <b>param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the result. e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Destination is headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> Destination is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": false,
+			"visible": "uriparam_operation=='3' || uriparam_operation=='5'"
 		} ]
 	}, {
 		"name": "diagram",
