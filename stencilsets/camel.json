@@ -3353,6 +3353,7 @@
 			}, {
 				"id": "c2",
 				"title": "List",
+				"enabled": false,
 				"value": "list"
 			} ]
 		}, {
@@ -3386,6 +3387,7 @@
 			}, {
 				"id": "c5",
 				"title": "Query",
+				"enabled": false,
 				"value": "5"
 			} ]
 		}, {
