@@ -962,6 +962,26 @@
 				"value": "Velocity"
 			} ]
 		}, {
+			"id": "uriparam_source",
+			"title": "Source",
+			"title_de": "Quelle",
+			"description_de": "Quelle des Templates, z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b> => Quelle ist das Headerfeld <b>param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b> =>  Quelle ist Property <b>param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Source of the template, e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Source is the headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> => Source is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
+		}, {
+			"id": "uriparam_destination",
+			"title": "Destination",
+			"title_de": "Ziel",
+			"description_de": "Ziel der Ausgabe. z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b> => Ziel ist das Headerfeld <b>param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b> => Ziel ist Property <b>param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the output. e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Destination is headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> Destination is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
+		}, {
 			"id": "uriparam_outputformat",
 			"title": "Outputformat",
 			"type": "Choice",
@@ -1017,6 +1037,26 @@
 				"title": "Freemarker",
 				"value": "freemarker"
 			} ]
+		}, {
+			"id": "uriparam_source",
+			"title": "Source",
+			"title_de": "Quelle",
+			"description_de": "Quelle des Templates, z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b> => Quelle ist das Headerfeld <b>param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b> =>  Quelle ist Property <b>param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Source of the template, e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Source is the headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> => Source is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
+		}, {
+			"id": "uriparam_destination",
+			"title": "Destination",
+			"title_de": "Ziel",
+			"description_de": "Ziel der Ausgabe. z.B. <ul><li> <b>header.param1</b> oder kurz: <b>h.param1</b> => Ziel ist das Headerfeld <b>param1</b></li><li><b>property.param1</b> oder kurz <b>p.param1</b> => Ziel ist Property <b>param1</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the output. e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Destination is headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> Destination is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
 		}, {
 			"id": "uriparam_headerfields",
 			"title_de": "Headerfelder",
@@ -3630,16 +3670,6 @@
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
-		"id": "TemplateEndpoint",
-		"title": "Template",
-		"view": "templateendpoint.svg",
-		"icon": "templateendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "templateProperties", "extraParamsProperties" ],
-		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-		"type": "node",
 		"id": "HazelcastEndpoint",
 		"title": "Hazelcast",
 		"view": "hazelcastendpoint.svg",
@@ -3707,6 +3737,16 @@
 		"groups": [ "Endpoints M-Z" ],
 		"groups_de": [ "Endpunkte M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "sqlProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "TemplateEndpoint",
+		"title": "Template",
+		"view": "templateendpoint.svg",
+		"icon": "templateendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "templateProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
