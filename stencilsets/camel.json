@@ -1121,7 +1121,7 @@
 			"config": {
 				type: "ms123.util.RepoList"
 			},
-			"type": "Choice",
+			"type": "Combo",
 			"items": [],
 			"readonly": false,
 			"optional": true
@@ -1906,7 +1906,7 @@
 			"config": {
 				type: "ms123.util.RepoList"
 			},
-			"type": "Choice",
+			"type": "Combo",
 			"value": null,
 			"items": [],
 		}, {
@@ -2013,7 +2013,7 @@
 			"config": {
 				type: "ms123.util.RepoList"
 			},
-			"type": "Choice",
+			"type": "Combo",
 			"value": null,
 			"items": [],
 			"visible": true
@@ -3710,6 +3710,16 @@
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
+		"id": "ActivitiEndpoint",
+		"title": "Process",
+		"view": "activitiendpoint.svg",
+		"icon": "activitiendpoint.png",
+		"groups": [ "Endpoints M-Z" ],
+		"groups_de": [ "Endpunkte M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "activitiProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
 		"id": "RepoEndpoint",
 		"title": "Repo",
 		"view": "repoendpoint.svg",
@@ -3787,16 +3797,6 @@
 		"groups": [ "Endpoints M-Z" ],
 		"groups_de": [ "Endpunkte M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "websocketProperties" ],
-		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-		"type": "node",
-		"id": "ActivitiEndpoint",
-		"title": "Workflow",
-		"view": "activitiendpoint.svg",
-		"icon": "activitiendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "activitiProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
