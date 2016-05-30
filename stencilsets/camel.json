@@ -1949,7 +1949,7 @@
 			"description":    "Expression. e.g. <ul><li> <b>header.objectId</b> or short: <b>h.objectId</b></li><li><b>property.objectId</b> or short <b>p.param1</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
 			"value": null,
-			"optional": false,
+			"optional": true,
 			"visible": "urivalue_operation=='update' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
 		}, {
 			"id": "uriparam_paramHeaders",
@@ -1969,7 +1969,7 @@
 			"description":    "Destination of the result. e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Destination is headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> Destination is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
 			"value": null,
-			"optional": false,
+			"optional": true,
 			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' ||  urivalue_operation=='findById'"
 		} ]
 	}, {
@@ -2005,7 +2005,7 @@
 			"description":    "Destination of file. e.g. <ul><li> <b>header.param1</b> or short: <b>h.param1</b> => Destination is headerfield <b>param1</b></li><li><b>property.param1</b> or short <b>p.param1</b> Destination is property <b>param1</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
 			"value": null,
-			"optional": false,
+			"optional": true,
 			"visible": "urivalue_operation=='get'"
 		}, {
 			"id": "uriparam_repo",
