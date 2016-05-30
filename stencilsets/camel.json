@@ -1165,7 +1165,7 @@
 			"optional": true
 		}, {
 			"id": "uriparam_businessKey",
-			"visible": "urivalue_operation.startsWith('startProcess')",
+			"visible": "!urivalue_operation.startsWith('publishEvents')",
 			"type": "String",
 			"title": "BusinessKey",
 			"value": null,
@@ -1206,7 +1206,7 @@
 			"id": "uriparam_headerFields",
 			"title_de": "Headerfelder",
 			"title": "Headerfields",
-			"description_de": "Angebene Headerfelder in das Variablenbereich des Prozesses kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
+			"description_de": "Angebene Headerfelder in den Variablenbereich des Prozesses kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
 			"description": "Copy specified headerfields into the variables space of the process, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
 			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents'",
 			"type": "String",
