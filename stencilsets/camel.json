@@ -1949,7 +1949,7 @@
 			"description":    "Expression. e.g. <ul><li> <b>header.objectId</b> or short: <b>h.objectId</b></li><li><b>property.objectId</b> or short <b>p.param1</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
 			"value": null,
-			"optional": true,
+			"optional": false,
 			"visible": "urivalue_operation=='update' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
 		}, {
 			"id": "uriparam_paramHeaders",
