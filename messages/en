@@ -2523,6 +2523,10 @@
         "msgstr": "Application Name"
     },
     {
+        "msgid": "namespacesmanager.password",
+        "msgstr": "Password"
+    },
+    {
         "msgid": "namespacesmanager.pull",
         "msgstr": "Update app(pull)"
     },
@@ -2543,6 +2547,10 @@
         "msgstr": "Uninstall app"
     },
     {
+        "msgid": "namespacesmanager.username",
+        "msgstr": "Username"
+    },
+    {
         "msgid": "namespacesmanager.uninstalled",
         "msgstr": "App deinstalled"
     },
@@ -2555,12 +2563,12 @@
         "msgstr": "Updates available ?"
     },
     {
-        "msgid": "namespacesmanager.url_data",
-        "msgstr": "Clone url (data repository)"
-    },
-    {
         "msgid": "namespacesmanager.url_meta",
         "msgstr": "Clone url (meta-repository)"
+    },
+    {
+        "msgid": "namespacesmanager.with_data_repo",
+        "msgstr": "Data Repository exits"
     },
     {
         "msgid": "Next month",

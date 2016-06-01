@@ -227,8 +227,16 @@
         "msgstr": "Clone Url(Meta-Repository)"
     },
     {
-        "msgid": "namespacesmanager.url_data",
-        "msgstr": "Clone Url(Data-Repository)"
+        "msgid": "namespacesmanager.username",
+        "msgstr": "Username"
+    },
+    {
+        "msgid": "namespacesmanager.password",
+        "msgstr": "Passwort"
+    },
+    {
+        "msgid": "namespacesmanager.with_data_repo",
+        "msgstr": "Data Repository vorhanden"
     },
     {
         "msgid": "namespacesmanager.confirm_pull",
