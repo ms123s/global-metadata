@@ -8,7 +8,7 @@
     </defs>
     <rect id="text_frame" oryx:anchors="bottom top right left" x="1" y="1" width="78" height="58" rx="10" ry="10" stroke="none" stroke-width="2" fill="none" />
     <rect id="bg_frame" oryx:resize="vertical horizontal" x="0" y="0" width="80" height="60" rx="4" ry="4" stroke="black" stroke-width="1" fill="url(#background) #ffffcc" />
-    <text id="" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="11" x="40" y="40" fill="black">Delay</text>
+    <text id="text2" oryx:anchors="top" oryx:align="center top" oryx:fittoelem="text_frame" font-family="Helvetica" font-size="10" x="40" y="40" fill="black">Delay</text>
     <g transform="scale(1.4,1.4) translate(0,0)">
       <path d="m 38.936282,14.205521 c 0.128604,5.61272 -4.53947,10.780811 -10.133851,11.229703 -5.481585,0.684465 -11.017299,-3.278798 -12.153061,-8.680457 -1.363171,-5.3639 1.887102,-11.3561118 7.117744,-13.1522759 5.071921,-1.971929 11.308767,0.3894811 13.80677,5.2225075 0.895346,1.6421664 1.365684,3.5105434 1.362398,5.3805224 z" stroke-width="1.105" fill="#ffffff" fill-rule="evenodd" stroke="#2c3a4e" id="path3755" inkscape:connector-curvature="0" />
       <path stroke-miterlimit="0" d="m 16.773124,14.278557 c 1.416058,0 2.832115,0 4.248173,0" stroke-width="0.977" fill="none" stroke="#2c3a4e" id="path3757" inkscape:connector-curvature="0" />

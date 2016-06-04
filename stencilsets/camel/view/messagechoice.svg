@@ -8,7 +8,7 @@
     </defs>
     <rect id="text_frame" oryx:anchors="bottom top right left" x="1" y="1" width="78" height="58" rx="10" ry="10" stroke="none" stroke-width="2" fill="none" />
     <rect id="bg_frame" oryx:resize="vertical horizontal" x="0" y="0" width="80" height="60" rx="4" ry="4" stroke="black" stroke-width="1" fill="url(#background) #ffffcc" />
-    <text id="" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="11" x="40" y="40" fill="black">Choice</text>
+    <text id="text2" oryx:anchors="top" oryx:align="center top" oryx:fittoelem="text_frame" font-family="Helvetica" font-size="10" x="40" y="40" fill="black">Choice</text>
     <g transform="scale(1,1) translate(8,3)">
       <path d="m 0.85505966,17.864407 c 3.67322814,0 7.34645624,0 11.01968434,0" stroke-width="0.886" fill="none" stroke="#000000" id="path5342" stroke-linejoin="round" />
       <path d="m 14.886555,14.817163 c 3.268918,-0.222307 4.224821,5.05932 1.018935,5.951491 -2.61539,0.976716 -5.276191,-2.325465 -3.544182,-4.592075 0.557926,-0.821489 1.521012,-1.37996 2.525247,-1.359416 z" id="path5347" />

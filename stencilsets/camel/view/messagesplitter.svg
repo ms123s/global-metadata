@@ -8,7 +8,7 @@
     </defs>
     <rect id="text_frame" oryx:anchors="bottom top right left" x="1" y="1" width="78" height="58" rx="10" ry="10" stroke="none" stroke-width="2" fill="none" />
     <rect id="bg_frame" oryx:resize="vertical horizontal" x="0" y="0" width="80" height="60" rx="4" ry="4" stroke="black" stroke-width="1" fill="url(#background) #ffffcc" />
-    <text id="" oryx:anchors="left top" oryx:align="center top" oryx:fittoelem="text_frame" font-weight="bold" font-family="Helvetica" font-size="11" x="40" y="40" fill="black">Splitter</text>
+    <text id="text2" oryx:anchors="top" oryx:align="center top" oryx:fittoelem="text_frame" font-family="Helvetica" font-size="10" x="40" y="40" fill="black">Splitter</text>
     <g transform="scale(1.1,1.1) translate(15,5)">
       <path d="m 4.2893262,18.022639 c -1.1786936,0.0035 -2.3573873,0.0071 -3.53608094,0.01065 -0.0071,-2.357405 -0.0141993,-4.714809 -0.021299,-7.072214 2.35738694,-0.0071 4.71477394,-0.0142 7.07216094,-0.0213 0.0071,2.357405 0.014199,4.714809 0.021299,7.072214 -1.1786933,0.0036 -2.3573867,0.0071 -3.53608,0.01065 z" fill="#ffffff" stroke="#000000" id="path2638" />
       <path d="m 24.190356,14.926696 c -2.892264,0.0087 -5.784529,0.01742 -8.676793,0.02613" stroke-width="0.743" fill="none" stroke="#000000" id="path2645" stroke-linejoin="round" />
