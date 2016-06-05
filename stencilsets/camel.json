@@ -158,6 +158,7 @@
 			"readonly": false,
 			"optional": false,
 			"refToView": "fill_el",
+			"include": "id !='SimpleConnection' && id != 'WhenConnection'",
 			"fill": true,
 			"stroke": false
 		}, {
@@ -170,6 +171,7 @@
 			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
 			"readonly": false,
 			"optional": false,
+			"include": "id !='SimpleConnection' && id != 'WhenConnection'",
 			"refToView": [ "bg_frame" ],
 			"fill": false,
 			"stroke": true
@@ -4001,7 +4003,7 @@
 		"groups_de": [ "Konnektoren" ],
 		"view": "simpleconnection.svg",
 		"icon": "simpleconnection.png",
-		"propertyPackages": [ "baseProperties" ],
+		"propertyPackages": [ "baseProperties", "colorProperties" ],
 		"layout": [ {
 			"type": "layout.bpmn2_0.sequenceflow"
 		} ],
@@ -4047,7 +4049,7 @@
 		"groups_de": [ "Konnektoren" ],
 		"view": "whenconnection.svg",
 		"icon": "whenconnection.png",
-		"propertyPackages": [ "baseProperties", "expressionProperties" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "expressionProperties" ],
 		"roles": [ "all", "Connection", "ConnectingObjectsMorph" ],
 		"properties": [ {
 			"id": "defaultflow",
