@@ -17,7 +17,8 @@
 		}, {
 			"id": "name",
 			"type": "String",
-			"title": "Name",
+			"title": "Caption",
+			"title_de": "Beschriftung",
 			"value": "",
 			"description": "The descriptive name of the BPMN element.",
 			"description_de": "Bezeichnung des BPMN-Elementes.",

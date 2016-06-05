@@ -1135,22 +1135,28 @@
 			"title_de": "Aktion",
 			"prefix": "oryx",
 			"value": "execute",
-			"description": "Execute task or cancel",
+			"description": "Button action",
 			"popular": true,
 			"readonly": false,
 			"optional": false,
 			"refToView": "",
 			"items": [ {
 				"id": "c1",
-				"title": "Execute task",
-				"title_de": "Ausführen der Aufgabe",
+				"title": "Execute",
+				"title_de": "Ausführen",
 				"value": "execute",
 				"refToView": ""
 			}, {
 				"id": "c2",
-				"title": "Cancel task",
+				"title": "Cancel",
 				"title_de": "Abbrechen",
 				"value": "cancel",
+				"refToView": ""
+			}, {
+				"id": "c3",
+				"title": "Reset",
+				"title_de": "Rücksetzen",
+				"value": "reset",
 				"refToView": ""
 			} ]
 		}, {
