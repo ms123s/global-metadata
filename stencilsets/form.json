@@ -144,31 +144,36 @@
 				"refToView": ""
 			}, {
 				"id": "c2",
+				"title": "Password",
+				"value": "password",
+				"refToView": ""
+			}, {
+				"id": "c3",
 				"title": "Number",
 				"value": "number",
 				"refToView": ""
 			}, {
-				"id": "c3",
+				"id": "c4",
 				"title": "Boolean",
 				"value": "boolean",
 				"refToView": ""
 			}, {
-				"id": "c4",
+				"id": "c5",
 				"title": "Decimal",
 				"value": "decimal",
 				"refToView": ""
 			}, {
-				"id": "c5",
+				"id": "c6",
 				"title": "Date",
 				"value": "date",
 				"refToView": ""
 			}, {
-				"id": "c6",
+				"id": "c7",
 				"title": "DateTime",
 				"value": "datetime",
 				"refToView": ""
 			}, {
-				"id": "c6",
+				"id": "c8",
 				"title": "DateYearMonth",
 				"value": "dateyearmonth",
 				"refToView": ""
