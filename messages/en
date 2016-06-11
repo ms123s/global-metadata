@@ -7,6 +7,82 @@
         "msgstr": "AM"
     },
     {
+        "msgid": "aid.field.constraints",
+        "msgstr": "Plausibility"
+    },
+    {
+        "msgid": "aid.field.columnName",
+        "msgstr": "Columnname"
+    },
+    {
+        "msgid": "aid.field.datatype",
+        "msgstr": "Data type"
+    },
+    {
+        "msgid": "aid.field.default_value",
+        "msgstr": "Default value"
+    },
+    {
+        "msgid": "aid.field.description",
+        "msgstr": "Description"
+    },
+    {
+        "msgid": "aid.field.editoptions_cols",
+        "msgstr": "Columns in textarea"
+    },
+    {
+        "msgid": "aid.field.editoptions_rows",
+        "msgstr": "Lines in textarea"
+    },
+    {
+        "msgid": "aid.field.edittype",
+        "msgstr": "Edittype"
+    },
+    {
+        "msgid": "aid.field.enabled",
+        "msgstr": "Used"
+    },
+    {
+        "msgid": "aid.field.form_enabled_expr",
+        "msgstr": "Expression(editable)"
+    },
+    {
+        "msgid": "aid.field.formula_client",
+        "msgstr": "Formula (clientside)"
+    },
+    {
+        "msgid": "aid.field.formula_in",
+        "msgstr": "Formula (backend,ingoing)"
+    },
+    {
+        "msgid": "aid.field.formula_out",
+        "msgstr": "Formula (backend,outgoing)"
+    },
+    {
+        "msgid": "aid.field.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "aid.field.primary_key",
+        "msgstr": "Primary key"
+    },
+    {
+        "msgid": "aid.field.searchable_items",
+        "msgstr": "Search (list)"
+    },
+    {
+        "msgid": "aid.field.search_options",
+        "msgstr": "Search options"
+    },
+    {
+        "msgid": "aid.field.selectable_items",
+        "msgstr": "Enumeration"
+    },
+    {
+        "msgid": "aid.field.sqltype",
+        "msgstr": "Sqltype"
+    },
+    {
         "msgid": "baseeditor.edit_redo",
         "msgstr": "Restore"
     },
@@ -863,74 +939,6 @@
         "msgstr": "Name"
     },
     {
-        "msgid": "data.field.constraints",
-        "msgstr": "Plausibility"
-    },
-    {
-        "msgid": "data.field.datatype",
-        "msgstr": "Data type"
-    },
-    {
-        "msgid": "data.field.default_value",
-        "msgstr": "Default value"
-    },
-    {
-        "msgid": "data.field.description",
-        "msgstr": "Description"
-    },
-    {
-        "msgid": "data.field.editoptions_cols",
-        "msgstr": "Columns in textarea"
-    },
-    {
-        "msgid": "data.field.editoptions_rows",
-        "msgstr": "Lines in textarea"
-    },
-    {
-        "msgid": "data.field.edittype",
-        "msgstr": "Edittyp"
-    },
-    {
-        "msgid": "data.field.enabled",
-        "msgstr": "Used"
-    },
-    {
-        "msgid": "data.field.form_enabled_expr",
-        "msgstr": "Expression if editable"
-    },
-    {
-        "msgid": "data.field.formula_client",
-        "msgstr": "Formula (client)"
-    },
-    {
-        "msgid": "data.field.formula_in",
-        "msgstr": "Formula (detail)"
-    },
-    {
-        "msgid": "data.field.formula_out",
-        "msgstr": "Formula (outgoing)"
-    },
-    {
-        "msgid": "data.field.name",
-        "msgstr": "Name"
-    },
-    {
-        "msgid": "data.field.primary_key",
-        "msgstr": "Primary key"
-    },
-    {
-        "msgid": "data.field.searchable_items",
-        "msgstr": "Search (list)"
-    },
-    {
-        "msgid": "data.field.search_options",
-        "msgstr": "Search options"
-    },
-    {
-        "msgid": "data.field.selectable_items",
-        "msgstr": "Enumeration"
-    },
-    {
         "msgid": "data.fieldset.tab1",
         "msgstr": "Description"
     },
@@ -952,7 +960,7 @@
     },
     {
         "msgid": "data.field.tab3",
-        "msgstr": "plausibility"
+        "msgstr": "Plausibility"
     },
     {
         "msgid": "data.field.tablename",

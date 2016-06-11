@@ -3,6 +3,82 @@
 --
 [
     {
+        "msgid": "aid.field.constraints",
+        "msgstr": "Plausibilitäten"
+    },
+    {
+        "msgid": "aid.field.columnName",
+        "msgstr": "Columnname"
+    },
+    {
+        "msgid": "aid.field.datatype",
+        "msgstr": "Datentyp"
+    },
+    {
+        "msgid": "aid.field.default_value",
+        "msgstr": "Defaultwert"
+    },
+    {
+        "msgid": "aid.field.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "aid.field.editoptions_cols",
+        "msgstr": "Spalten/Textarea"
+    },
+    {
+        "msgid": "aid.field.editoptions_rows",
+        "msgstr": "Zeilen/Textarea"
+    },
+    {
+        "msgid": "aid.field.edittype",
+        "msgstr": "Edittyp"
+    },
+    {
+        "msgid": "aid.field.enabled",
+        "msgstr": "Verwendet"
+    },
+    {
+        "msgid": "aid.field.form_enabled_expr",
+        "msgstr": "Ausdruck(editierbar)"
+    },
+    {
+        "msgid": "aid.field.formula_client",
+        "msgstr": "Formel (Clientseitig)"
+    },
+    {
+        "msgid": "aid.field.formula_in",
+        "msgstr": "Formel (backend,eingehend)"
+    },
+    {
+        "msgid": "aid.field.formula_out",
+        "msgstr": "Formel (backend,ausgehend)"
+    },
+    {
+        "msgid": "aid.field.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "aid.field.primary_key",
+        "msgstr": "Primärer Schlüssel"
+    },
+    {
+        "msgid": "aid.field.searchable_items",
+        "msgstr": "Suche (Liste)"
+    },
+    {
+        "msgid": "aid.field.search_options",
+        "msgstr": "Suchoptionen"
+    },
+    {
+        "msgid": "aid.field.selectable_items",
+        "msgstr": "Enumeration"
+    },
+    {
+        "msgid": "aid.field.sqltype",
+        "msgstr": "Sqltype"
+    },
+    {
         "msgid": "configeditor.default_not_allowed",
         "msgstr": "\"default\" nicht erlaubt"
     },
@@ -277,10 +353,6 @@
     {
         "msgid": "settings.displayname",
         "msgstr": "Angezeigter Name (aus Messages)"
-    },
-    {
-        "msgid": "settings.search_options",
-        "msgstr": "Suchoptionen"
     },
     {
         "msgid": "settings.properties_saved",
@@ -579,10 +651,6 @@
         "msgstr": "Aufgabenname"
     },
     {
-        "msgid": "data.field.selectable_items",
-        "msgstr": "Aufzählung"
-    },
-    {
         "msgid": "data.field.tablename",
         "msgstr": "Tablename"
     },
@@ -597,10 +665,6 @@
     {
         "msgid": "meta.enums.new_enum_name",
         "msgstr": "Aufzählungsname"
-    },
-    {
-        "msgid": "data.field.form_enabled_expr",
-        "msgstr": "Ausdruck ob editierbar"
     },
     {
         "msgid": "data.workflows.processing_order",
@@ -812,10 +876,6 @@
     },
     {
         "msgid": "import.mapping.description",
-        "msgstr": "Beschreibung"
-    },
-    {
-        "msgid": "data.field.description",
         "msgstr": "Beschreibung"
     },
     {
@@ -1283,10 +1343,6 @@
         "msgstr": "Datenbank angepasst"
     },
     {
-        "msgid": "data.field.datatype",
-        "msgstr": "Datentyp"
-    },
-    {
         "msgid": "meta.tables.datatype",
         "msgstr": "Datentyp"
     },
@@ -1297,18 +1353,6 @@
     {
         "msgid": "data.entity.default_fields",
         "msgstr": "Autogen. Felder wie Owner,Mod.Time"
-    },
-    {
-        "msgid": "data.field.default_value",
-        "msgstr": "Defaultwert"
-    },
-    {
-        "msgid": "data.field.sqltype",
-        "msgstr": "Sqltype"
-    },
-    {
-        "msgid": "data.field.columnName",
-        "msgstr": "ColumnName"
     },
     {
         "msgid": "namespacesmanager.uninstall",
@@ -1425,10 +1469,6 @@
     {
         "msgid": "shell.editor",
         "msgstr": "Editor"
-    },
-    {
-        "msgid": "data.field.edittype",
-        "msgstr": "Edittyp"
     },
     {
         "msgid": "entitytypeField.entitytypeField_saved",
@@ -1847,18 +1887,6 @@
         "msgstr": "Formeinstellungen erzeugen"
     },
     {
-        "msgid": "data.field.formula_client",
-        "msgstr": "Formel(Client)"
-    },
-    {
-        "msgid": "data.field.formula_out",
-        "msgstr": "Formel(ausgehend)"
-    },
-    {
-        "msgid": "data.field.formula_in",
-        "msgstr": "Formel(eingehend)"
-    },
-    {
         "msgid": "moduleeditor.main-form.formlayout",
         "msgstr": "Formlayout"
     },
@@ -2008,10 +2036,6 @@
     },
     {
         "msgid": "data.app.id",
-        "msgstr": "Id"
-    },
-    {
-        "msgid": "data.field.primary_key",
         "msgstr": "Id"
     },
     {
@@ -2855,10 +2879,6 @@
         "msgstr": "Plausibilität"
     },
     {
-        "msgid": "data.field.constraints",
-        "msgstr": "Plausibilitäten"
-    },
-    {
         "msgid": "data.field.tab3",
         "msgstr": "Plausibilitäten"
     },
@@ -2881,10 +2901,6 @@
     {
         "msgid": "data.field.tab1",
         "msgstr": "Primär"
-    },
-    {
-        "msgid": "data.field.primary_key",
-        "msgstr": "Primärer Schlüssel"
     },
     {
         "msgid": "data.relation.leftmodule",
@@ -3475,10 +3491,6 @@
         "msgstr": "Spalte ändern"
     },
     {
-        "msgid": "data.field.editoptions_cols",
-        "msgstr": "Spalten bei Textarea"
-    },
-    {
         "msgid": "export.csv.col_delimeter",
         "msgstr": "Spaltentrenner"
     },
@@ -3995,10 +4007,6 @@
         "msgstr": "Zeile 2"
     },
     {
-        "msgid": "data.field.editoptions_rows",
-        "msgstr": "Zeilen bei Textarea"
-    },
-    {
         "msgid": "export.csv.row_delimeter",
         "msgstr": "Zeilentrenner"
     },
@@ -4101,10 +4109,6 @@
     {
         "msgid": "meta.lists.bn",
         "msgstr": "beginnt nicht mit"
-    },
-    {
-        "msgid": "data.field.enabled",
-        "msgstr": "benutzt"
     },
     {
         "msgid": "data.module.enabled",
@@ -4333,10 +4337,6 @@
     {
         "msgid": "meta.lists.copy_from_filter",
         "msgstr": "wird kopiert"
-    },
-    {
-        "msgid": "data.field.searchable_items",
-        "msgstr": "Suche(Liste)"
     },
     {
         "msgid": "config.edit_attribute",
