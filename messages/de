@@ -2131,6 +2131,10 @@
         "msgstr": "Installiert?"
     },
     {
+        "msgid": "settings.views.propertyedit.customForm",
+        "msgstr": "Custom Form(nur web)"
+    },
+    {
         "msgid": "settings.views.propertyedit.isblack",
         "msgstr": "Is black"
     },

@@ -50,6 +50,11 @@
             "permission": "simplmbb:entities",
             "actions": "read,write",
             "enabled": true
+        },
+        {
+            "permission": "energie:entities:data",
+            "actions": "read",
+            "enabled": true
         }
     ],
     "name": "global.guest"
