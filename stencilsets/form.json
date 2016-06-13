@@ -72,19 +72,6 @@
 			"optional": true,
 			"refToView": ""
 		}, {
-			"id": "xf_postprocess",
-			"config": {
-				"mode": "text/x-groovy"
-			},
-			"type": "Text",
-			"title": "Postprocess",
-			"title_de": "Nachbearbeitung",
-			"value": "",
-			"popular": true,
-			"readonly": false,
-			"optional": true,
-			"length": "50"
-		}, {
 			"id": "xf_method_fetch",
 			"type": "String",
 			"title": "Json data",
@@ -97,18 +84,31 @@
 			"optional": true,
 			"length": "50"
 		}, {
+			"id": "xf_postprocess",
+			"config": {
+				"mode": "text/x-groovy"
+			},
+			"type": "Text",
+			"title": "Postprocess(backend)",
+			"title_de": "Nachbearbeitung(backend)",
+			"value": "",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		}, {
 			"id": "xf_postprocess_client",
 			"type": "ResourceSelector",
 			"config": {
 				"type": "sw.camel",
 				"prefix": ""
 			},
-			"title": "Postprocess",
-			"title_de": "Nachbearbeitung",
+			"title": "Postprocess(frontend)",
+			"title_de": "Nachbearbeitung(Frontend)",
 			"prefix": "oryx",
 			"value": null,
-			"description_de": "Aufruf des Service(route) mit einem Parmeter, die Formwerte als Map , Rückgabe: die Eingabe Map mit evt. geänderten Werten",
-			"description": "Call this service(route) with one parameter, form values as a map , return: the input map with maybe changes values",
+			"description_de": "Aufruf des Service(route) mit zwei Parmetern, die Formwerte(formData) als Map  und die Sprache(lang) als String , Rückgabe: Eine Map der  geänderten Werte",
+			"description": "Call this service(route) with two parameters, form values(formData) as a map and language(lang) as string, return: a map of the changed values",
 			"popular": true,
 			"readonly": false
 		} ]
