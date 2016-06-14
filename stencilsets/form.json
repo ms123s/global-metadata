@@ -480,7 +480,6 @@
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
-			"description": "Any expression that is convertible to XPath boolean",
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
@@ -814,7 +813,6 @@
 			"prefix": "oryx",
 			"value": "",
 			"popular": true,
-			"description": "Any expression that is convertible to XPath boolean",
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
@@ -1011,6 +1009,28 @@
 			"description": "Value can not be changed",
 			"description_de": "Wert kann nicht verändert werden",
 			"popular": false,
+			"readonly": false,
+			"optional": true,
+			"refToView": "",
+			"items": [ {
+				"id": "c1",
+				"value": "true",
+				"title": "true",
+				"refToView": ""
+			}, {
+				"id": "c2",
+				"value": "false",
+				"title": "false",
+				"refToView": ""
+			} ]
+		}, {
+			"id": "xf_required",
+			"type": "Combo",
+			"title": "Required",
+			"title_de": "Erforderlich",
+			"prefix": "oryx",
+			"value": "",
+			"popular": true,
 			"readonly": false,
 			"optional": true,
 			"refToView": "",
