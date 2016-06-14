@@ -76,8 +76,8 @@
 			"type": "String",
 			"title": "Json data",
 			"title_de": "Json Daten",
-			"description_de": "Aufruf des Service(route) mit einem Parameter:'lang', Rückgabe ein Object mit Aufzählungen für select-fields(Zugriff mit jsonpath)",
-			"description": "Call this service(route) with one parameter:'lang', return a object with enumeration for select-fields(Access with jsonpath)",
+			"description_de": "Der Service wird mit folgenden Parametern aufgerufen<ul><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Rückgabe ein Object mit Aufzählungen für select-fields.<br/>Zugriff mit jsonpath.<br/>z.B.:<code> <br/>{<br/>\u00a0\u00a0de : [{value:wer1,label:beschriftung1}], ..<br/>\u00a0\u00a0en : [{value:value1,label:label1}], .. <br/>}<br><b>$.de</b> ist der Jsonpath für die erste(de) Liste</code>",
+			"description": "The service is called with the following parameters<ul><li><b>lang</b>: string, current language</li><li><b>uuid</b>: string, value  from from <b>window.uuid</b></li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> Return a object with enumeration for select-fields.<br/>Access with jsonpath.<br>eg.<code> <br/>{<br/>\u00a0\u00a0de : [{value:wer1,label:beschriftung1}], ..<br/>\u00a0\u00a0en : [{value:value1,label:label1}], .. <br/>}<br><b>$.de</b> is the jsonpath for the first(de) list</code>",
 			"value": "",
 			"popular": true,
 			"readonly": false,
@@ -107,8 +107,8 @@
 			"title_de": "Nachbearbeitung(Frontend)",
 			"prefix": "oryx",
 			"value": null,
-			"description_de": "Aufruf des Service(route) mit zwei Parmetern, die Formwerte(formData) als Map  und die Sprache(lang) als String , Rückgabe: Eine Map der  geänderten Werte",
-			"description": "Call this service(route) with two parameters, form values(formData) as a map and language(lang) as string, return: a map of the changed values",
+			"description_de": "Der Service wird mit folgenden Parametern aufgerufen<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Der Service sollte eine Map mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}",
+			"description": "The service is called with the following parameters<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, current language</li><li><b>uuid</b>: string, value  from from <b>window.uuid</b></li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The service should return a map with the <br/>changed or added values.<br/>eg.<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}",
 			"popular": true,
 			"readonly": false
 		} ]
