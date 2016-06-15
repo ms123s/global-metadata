@@ -74,15 +74,45 @@
 		}, {
 			"id": "xf_method_fetch",
 			"type": "String",
-			"title": "Json data",
-			"title_de": "Json Daten",
-			"description_de": "Der Service wird mit folgenden Parametern aufgerufen<ul><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Rückgabe ein Object mit Aufzählungen für select-fields.<br/>Zugriff mit jsonpath.<br/>z.B.:<code> <br/>{<br/>\u00a0\u00a0de : [{value:wer1,label:beschriftung1}], ..<br/>\u00a0\u00a0en : [{value:value1,label:label1}], .. <br/>}<br><b>$.de</b> ist der Jsonpath für die erste(de) Liste</code>",
-			"description": "The service is called with the following parameters<ul><li><b>lang</b>: string, current language</li><li><b>uuid</b>: string, value  from from <b>window.uuid</b></li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> Return a object with enumeration for select-fields.<br/>Access with jsonpath.<br>eg.<code> <br/>{<br/>\u00a0\u00a0de : [{value:wer1,label:beschriftung1}], ..<br/>\u00a0\u00a0en : [{value:value1,label:label1}], .. <br/>}<br><b>$.de</b> is the jsonpath for the first(de) list</code>",
+			"title": "Selectionlists",
+			"title_de": "Selectionslisten",
+			"description_de": "Der Service wird nach dem Erstellen der Form mit folgenden Parametern aufgerufen<ul><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Rückgabe ein Object mit Aufzählungen für select-fields.<br/>Zugriff mit jsonpath.<br/>z.B.:<code> <br/>{<br/>\u00a0\u00a0de : [{value:wer1,label:beschriftung1}], ..<br/>\u00a0\u00a0en : [{value:value1,label:label1}], .. <br/>}<br><b>$.de</b> ist der Jsonpath für die erste(de) Liste</code>",
+			"description": "The service is called after form creation with the following parameters<ul><li><b>lang</b>: string, current language</li><li><b>uuid</b>: string, value  from from <b>window.uuid</b></li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> Return a object with enumeration for select-fields.<br/>Access with jsonpath.<br>eg.<code> <br/>{<br/>\u00a0\u00a0de : [{value:wer1,label:beschriftung1}], ..<br/>\u00a0\u00a0en : [{value:value1,label:label1}], .. <br/>}<br><b>$.de</b> is the jsonpath for the first(de) list</code>",
 			"value": "",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
 			"length": "50"
+		}, {
+			"id": "xf_preprocess",
+			"type": "ResourceSelector",
+			"config": {
+				"type": "sw.camel",
+				"prefix": ""
+			},
+			"title": "Initialization",
+			"title_de": "Initialisierung",
+			"prefix": "oryx",
+			"value": null,
+			"description_de": "Der Service wird nach 'form.setData(formData)' mit folgenden Parametern aufgerufen<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Der Service sollte eine Map mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}<br/><br/>Der Service kann auch das Holen der Selectionslisten mit übernehmen:<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/>\u00a0\u00a0_selectionLists:object<br/></code>}<br/>",
+			"description": "The service is called after 'form.setData(formData)', with the following parameters<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, current language</li><li><b>uuid</b>: string, value  from from <b>window.uuid</b></li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The service should return a map with the <br/>changed or added values.<br/>eg.<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}<br/><br/>The service can also fetch the selectionLists:<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/>\u00a0\u00a0_selectionLists:object<br/></code>}<br/>",
+			"popular": true,
+			"readonly": false
+		}, {
+			"id": "xf_postprocess_client",
+			"type": "ResourceSelector",
+			"config": {
+				"type": "sw.camel",
+				"prefix": ""
+			},
+			"title": "Postprocess(frontend)",
+			"title_de": "Nachbearbeitung(Frontend)",
+			"prefix": "oryx",
+			"value": null,
+			"description_de": "Der Service wird vor der Validierung mit folgenden Parametern aufgerufen<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Der Service sollte eine Map mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}",
+			"description": "The service is called before the validation with the following parameters<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, current language</li><li><b>uuid</b>: string, value  from from <b>window.uuid</b></li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The service should return a map with the <br/>changed or added values.<br/>eg.<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}",
+			"popular": true,
+			"readonly": false
 		}, {
 			"id": "xf_postprocess",
 			"config": {
@@ -96,21 +126,6 @@
 			"readonly": false,
 			"optional": true,
 			"length": "50"
-		}, {
-			"id": "xf_postprocess_client",
-			"type": "ResourceSelector",
-			"config": {
-				"type": "sw.camel",
-				"prefix": ""
-			},
-			"title": "Postprocess(frontend)",
-			"title_de": "Nachbearbeitung(Frontend)",
-			"prefix": "oryx",
-			"value": null,
-			"description_de": "Der Service wird mit folgenden Parametern aufgerufen<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Der Service sollte eine Map mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}",
-			"description": "The service is called with the following parameters<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, current language</li><li><b>uuid</b>: string, value  from from <b>window.uuid</b></li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The service should return a map with the <br/>changed or added values.<br/>eg.<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}",
-			"popular": true,
-			"readonly": false
 		} ]
 	}, {
 		"type": "node",
