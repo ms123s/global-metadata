@@ -79,7 +79,7 @@
 			"description_de": "Der Service wird nach dem Erstellen der Form mit folgenden Parametern aufgerufen<ul><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Rückgabe ein Object mit Aufzählungen für select-fields.<br/>Zugriff mit jsonpath.<br/>z.B.:<code> <br/>{<br/>\u00a0\u00a0de : [{value:wer1,label:beschriftung1}], ..<br/>\u00a0\u00a0en : [{value:value1,label:label1}], .. <br/>}<br><b>$.de</b> ist der Jsonpath für die erste(de) Liste</code>",
 			"description": "The service is called after form creation with the following parameters<ul><li><b>lang</b>: string, current language</li><li><b>uuid</b>: string, value  from from <b>window.uuid</b></li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> Return a object with enumeration for select-fields.<br/>Access with jsonpath.<br>eg.<code> <br/>{<br/>\u00a0\u00a0de : [{value:wer1,label:beschriftung1}], ..<br/>\u00a0\u00a0en : [{value:value1,label:label1}], .. <br/>}<br><b>$.de</b> is the jsonpath for the first(de) list</code>",
 			"value": "",
-			"popular": true,
+			"popular": false,
 			"readonly": false,
 			"optional": true,
 			"length": "50"
@@ -96,7 +96,7 @@
 			"value": null,
 			"description_de": "Der Service wird nach 'form.setData(formData)' mit folgenden Parametern aufgerufen<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Der Service sollte eine Map mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}<br/><br/>Der Service kann auch das Holen der Selectionslisten mit übernehmen:<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/>\u00a0\u00a0_selectionLists:object<br/></code>}<br/>",
 			"description": "The service is called after 'form.setData(formData)', with the following parameters<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, current language</li><li><b>uuid</b>: string, value  from from <b>window.uuid</b></li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The service should return a map with the <br/>changed or added values.<br/>eg.<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}<br/><br/>The service can also fetch the selectionLists:<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/>\u00a0\u00a0_selectionLists:object<br/></code>}<br/>",
-			"popular": true,
+			"popular": false,
 			"readonly": false
 		}, {
 			"id": "xf_preprocess_local",
@@ -110,7 +110,7 @@
 			"value": null,
 			"description_de": "Das Script wird nach 'form.setData(formData)' aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>formData</b> bzw. <b>fd</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Das Script sollte ein Object mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{apid:fd.kl+'-'+fd.ap}</code><br/>",
 			"description": "The script is called after 'form.setData(formData)'. <br/>Following variables in the script available <ul><li><b>formData</b> eg. <b>fd</b>: Map</li><li><b>lang</b>: string, current Language</li><li><b>uuid</b> : string, value  from from  <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The script should be return a object with the <br/>changed or added  values.<br/>eg.:<code> <br/>{apid:fd.kl+'-'+fd.ap}</code><br/>",
-			"popular": true,
+			"popular": false,
 			"readonly": false
 		}, {
 			"id": "xf_postprocess_service",
@@ -125,7 +125,7 @@
 			"value": null,
 			"description_de": "Der Service wird vor der Validierung mit folgenden Parametern aufgerufen<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Der Service sollte eine Map mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}",
 			"description": "The service is called before the validation with the following parameters<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, current language</li><li><b>uuid</b>: string, value  from from <b>window.uuid</b></li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The service should return a map with the <br/>changed or added values.<br/>eg.<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}",
-			"popular": true,
+			"popular": false,
 			"readonly": false
 		}, {
 			"id": "xf_postprocess_local",
@@ -139,7 +139,7 @@
 			"value": null,
 			"description_de": "Das Script wird nach der Validierung aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>formData</b> bzw. <b>fd</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Das Script sollte ein Object mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{apid:fd.kl+'-'+fd.ap}</code><br/>",
 			"description": "The script is called before the validation. <br/>Following variables in the script available <ul><li><b>formData</b> eg. <b>fd</b>: Map</li><li><b>lang</b>: string, current Language</li><li><b>uuid</b> : string, value  from from  <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The script should be return a object with the <br/>changed or added  values.<br/>eg.:<code> <br/>{apid:fd.kl+'-'+fd.ap}</code><br/>",
-			"popular": true,
+			"popular": false,
 			"readonly": false
 		}, {
 			"id": "xf_postprocess",
