@@ -109,7 +109,7 @@
             "name": "edittype",
             "edittype": "select",
             "datatype": "string",
-            "selectable_items": "[\n\t\t\t\t{\"value\":\"text\",\"label\":\"Textfield\"},\n\t\t\t\t{\"value\":\"select\",\"label\":\"SelectBox\"},\n\t\t\t\t{\"value\":\"checkbox\",\"label\":\"Checkbox\"},\n\t\t\t\t{\"value\":\"date\",\"label\":\"Date\"},\n\t\t\t\t{\"value\":\"datetime\",\"label\":\"DateTime\"},\n\t\t\t\t{\"value\":\"textarea\",\"label\":\"Textarea\"},\n\t\t\t\t{\"value\":\"multiselect\",\"label\":\"DoubleSelectBox\"},\n\t\t\t\t{\"value\":\"auto\",\"label\":\"Autoincrement\"},\n\t\t\t\t{\"value\":\"max\",\"label\":\"MaxValue\"},\n\t\t\t\t{\"value\":\"functional\",\"label\":\"Computed\"}\n\t\t\t\t]"
+            "selectable_items": "[\n\t\t\t\t{\"value\":\"text\",\"label\":\"Textfield\"},\n\t\t\t\t{\"value\":\"select\",\"label\":\"SelectBox\"},\n\t\t\t\t{\"value\":\"checkbox\",\"label\":\"Checkbox\"},\n\t\t\t\t{\"value\":\"date\",\"label\":\"Date\"},\n\t\t\t\t{\"value\":\"datetime\",\"label\":\"DateTime\"},\n\t\t\t\t{\"value\":\"textarea\",\"label\":\"Textarea\"},\n\t\t\t\t{\"value\":\"multiselect\",\"label\":\"DoubleSelectBox\"},\n\t\t\t\t{\"value\":\"auto\",\"label\":\"Autoincrement\"},\n\t\t\t\t{\"value\":\"functional\",\"label\":\"Computed\"}\n\t\t\t\t]"
         },
         "primary_key": {
             "enabled": true,
