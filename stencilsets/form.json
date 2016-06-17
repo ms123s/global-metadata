@@ -137,7 +137,7 @@
 			"title_de": "Postprozess(lokal)",
 			"prefix": "oryx",
 			"value": null,
-			"description_de": "Das Script wird nach der Validierung aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>formData</b> bzw. <b>fd</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Das Script sollte ein Object mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{apid:fd.kl+'-'+fd.ap}</code><br/>",
+			"description_de": "Das Script wird vor der Validierung aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>formData</b> bzw. <b>fd</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Das Script sollte ein Object mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{apid:fd.kl+'-'+fd.ap}</code><br/>",
 			"description": "The script is called before the validation. <br/>Following variables in the script available <ul><li><b>formData</b> eg. <b>fd</b>: Map</li><li><b>lang</b>: string, current Language</li><li><b>uuid</b> : string, value  from from  <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The script should be return a object with the <br/>changed or added  values.<br/>eg.:<code> <br/>{apid:fd.kl+'-'+fd.ap}</code><br/>",
 			"popular": false,
 			"readonly": false
