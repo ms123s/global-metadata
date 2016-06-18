@@ -14,7 +14,7 @@
       "description": "Name of the list with the selectable elements",
       "description_de": "Name der Liste mit den auszuwählenden Elementen",
       "popular": false,
-      "readonly": "xf_jsonpath!='' || xf_enum!=null || this.xf_enumembed!=null || xf_service!=null || xf_filter!=null",
+      "readonly": "xf_jsonpath!='' || this.xf_enum!=null || this.xf_enumembed!=null || xf_service!=null || xf_filter!=null",
       "optional": true,
       "length": "50"
     }, {
@@ -28,7 +28,7 @@
       "value": "",
       "popular": false,
       "optional": true,
-      "readonly": "xf_varname!='' || xf_enum!=null || this.xf_enumembed!=null || xf_service!=null || xf_filter!=null",
+      "readonly": "xf_varname!='' || this.xf_enum!=null || this.xf_enumembed!=null || xf_service!=null || xf_filter!=null",
       "refToView": ""
     }, {
       "id": "xf_enumembed",
@@ -39,7 +39,7 @@
       "description": "Enter selctionlist directly",
       "description_de": "Auswahlliste direkt eingeben",
       "popular": false,
-      "readonly": "xf_varname!='' || xf_jsonpath!='' || xf_enum!=null || xf_service!=null || xf_filter!=null",
+      "readonly": "xf_varname!='' || xf_jsonpath!='' || this.xf_enum!=null || xf_service!=null || xf_filter!=null",
       "optional": true,
       "include": "stencil=='enumselect'",
       "complexItems": [ {
@@ -128,7 +128,7 @@
       "description": "<b>Load an predefinied filter as selectionlist</b>.<br/>The service can be parameterized",
       "description_de": "<b>Einen vordefinierten Filter als Auswahliste verwenden</b>.<br/> Der Filter kann parametrisiert werden",
       "popular": false,
-      "readonly": "xf_enum!=null || this.xf_enumembed!=null || xf_service!=null || xf_varname!='' || xf_jsonpath!=''"
+      "readonly": "this.xf_enum!=null || this.xf_enumembed!=null || xf_service!=null || xf_varname!='' || xf_jsonpath!=''"
     }, {
       "id": "xf_service",
       "type": "ResourceSelector",
@@ -143,7 +143,7 @@
       "description": "<b>Get selectionlist generated per servicecall</b>.<br/>The service must return a list, with these <b>properties (value, label, tooltip)</b>.<br/> However, the properties can be also assigned (mapped).<br/>The service can be parameterized",
       "description_de": "<b>Auswahlliste erzeugen per Serviceaufruf</b>.<br/>Der Service muss eine Liste mit folgenden <b>Eigenschaften (value, label, tooltip)</b> liefern.<br/> Jedoch können die Eigenschaften auch zugewiesen(gemapped)  werden.<br/>Der Service kann parametrisiert werden",
       "popular": false,
-      "readonly": "xf_enum!=null || this.xf_enumembed!=null || xf_filter != null  || xf_varname!='' || xf_jsonpath!=''"
+      "readonly": "this.xf_enum!=null || this.xf_enumembed!=null || xf_filter != null  || xf_varname!='' || xf_jsonpath!=''"
     }, {
       "id": "xf_parammapping",
       "type": "Complex",
@@ -153,7 +153,7 @@
       "description_de": "Parametermapping für Filter und Serviceaufruf.<br/>Neben den Formvariablen(Feldinhalte) können auch folgende Variablen benutzt werden: <ul><li><b>_lang</b>: string, aktuelle Sprache</li><li><b>_uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>_mode</b> : string, <b>edit</b> oder <b>add</b></li></ul>",
       "popular": false,
       "optional": true,
-      "readonly": "xf_enum!=null || this.xf_enumembed!=null || xf_varname!='' || xf_jsonpath!=''",
+      "readonly": "this.xf_enum!=null || this.xf_enumembed!=null || xf_varname!='' || xf_jsonpath!=''",
       "complexItems": [ {
         "id": "formexpr",
         "name": "Formexpression",
@@ -180,7 +180,7 @@
       "description_de": "Ergebniszuweisung für Filter und Serviceaufruf.<br/>Kann leer sein, wenn die Eigenschaft(value,label,tooltip) der Liste übereinstimmen",
       "popular": false,
       "optional": true,
-      "readonly": "xf_enum!=null || this.xf_enumembed!=null",
+      "readonly": "this.xf_enum!=null || this.xf_enumembed!=null",
       "complexItems": [ {
         "id": "resultexpr",
         "name": "Result expression",
