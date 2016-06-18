@@ -920,6 +920,18 @@
       "readonly": false,
       "optional": false
     }, {
+      "id": "xf_varname",
+      "type": "String",
+      "title": "Inputlist",
+      "title_de": "Eingabeliste",
+      "value": "",
+      "description": "Name of the list with the selectable elements",
+      "description_de": "Name der Liste mit den auszuwählenden Elementen",
+      "popular": true,
+      "readonly": "xf_jsonpath!='' || xf_enum!=null || xf_enumembed!=null || xf_service!=null || xf_filter!=null",
+      "optional": true,
+      "length": "50"
+    }, {
       "id": "xf_jsonpath",
       "type": "String",
       "title": "Json path",
@@ -930,7 +942,7 @@
       "value": "",
       "popular": true,
       "optional": true,
-      "readonly": "xf_enum!=null || xf_enumembed!=null || xf_service!=null || xf_filter!=null",
+      "readonly": "xf_varname!='' || xf_enum!=null || xf_enumembed!=null || xf_service!=null || xf_filter!=null",
       "refToView": ""
     }, {
       "id": "xf_enumembed",
@@ -941,7 +953,7 @@
       "description": "Enter selctionlist directly",
       "description_de": "Auswahlliste direkt eingeben",
       "popular": true,
-      "readonly": "xf_jsonpath!='' || xf_enum!=null || xf_service!=null || xf_filter!=null",
+      "readonly": "xf_varname!='' || xf_jsonpath!='' || xf_enum!=null || xf_service!=null || xf_filter!=null",
       "optional": true,
       "complexItems": [ {
         "id": "value",
@@ -981,7 +993,7 @@
       "description_de": "Eine Aufzählung als Auswahliste laden",
       "description": "Load a enumeration as selectionlist",
       "popular": true,
-      "readonly": "xf_jsonpath!='' || xf_enumembed!=null || xf_service!=null || xf_filter!=null",
+      "readonly": "xf_varname!='' || xf_jsonpath!='' || xf_enumembed!=null || xf_service!=null || xf_filter!=null",
       "optional": true,
       "complexItems": [ {
         "id": "colname",
@@ -1028,7 +1040,7 @@
       "description": "<b>Load an predefinied filter as selectionlist</b>.<br/>The service can be parameterized",
       "description_de": "<b>Einen vordefinierten Filter als Auswahliste verwenden</b>.<br/> Der Filter kann parametrisiert werden",
       "popular": true,
-      "readonly": "xf_enum!=null || xf_enumembed!=null || xf_service!=null || xf_jsonpath!=''"
+      "readonly": "xf_enum!=null || xf_enumembed!=null || xf_service!=null || xf_varname!='' || xf_jsonpath!=''"
     }, {
       "id": "xf_service",
       "type": "ResourceSelector",
@@ -1043,27 +1055,27 @@
       "description": "<b>Get selectionlist generated per servicecall</b>.<br/>The service must return a list, with these <b>properties (value, label, tooltip)</b>.<br/> However, the properties can be also assigned (mapped).<br/>The service can be parameterized",
       "description_de": "<b>Auswahlliste erzeugen per Serviceaufruf</b>.<br/>Der Service muss eine Liste mit folgenden <b>Eigenschaften (value, label, tooltip)</b> liefern.<br/> Jedoch können die Eigenschaften auch zugewiesen(gemapped)  werden.<br/>Der Service kann parametrisiert werden",
       "popular": true,
-      "readonly": "xf_enum!=null || xf_enumembed!=null || xf_filter != null  || xf_jsonpath!=''"
+      "readonly": "xf_enum!=null || xf_enumembed!=null || xf_filter != null  || xf_varname!='' || xf_jsonpath!=''"
     }, {
-      "id": "xf_serviceparams",
+      "id": "xf_parammapping",
       "type": "Complex",
       "title": "Parameter(Filter,Service)",
       "value": "",
-      "description": "Parametermapping for filter and servicecall",
-      "description_de": "Parametermapping für Filter und Serviceaufruf",
+      "description": "Parametermapping for filter and servicecall.<br/>In addition to form variables (field content) the following variables can also be used:: <ul><li><b>_lang</b>: string, current language</li><li><b>_uuid</b> : string, value from <b>window.uuid</b> steht</li><li><b>_mode</b> : string, <b>edit</b> oor <b>add</b></li></ul>",
+      "description_de": "Parametermapping für Filter und Serviceaufruf.<br/>Neben den Formvariablen(Feldinhalte) können auch folgende Variablen benutzt werden: <ul><li><b>_lang</b>: string, aktuelle Sprache</li><li><b>_uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>_mode</b> : string, <b>edit</b> oder <b>add</b></li></ul>",
       "popular": true,
       "optional": true,
-      "readonly": "xf_enum!=null || xf_enumembed!=null || xf_jsonpath!=''",
+      "readonly": "xf_enum!=null || xf_enumembed!=null || xf_varname!='' || xf_jsonpath!=''",
       "complexItems": [ {
-        "id": "formvar",
-        "name": "Formvariable",
-        "name_de": "Form Variable",
+        "id": "formexpr",
+        "name": "Formexpression",
+        "name_de": "Form Expression",
         "type": "String",
         "value": "",
-        "width": 150,
+        "width": 400,
         "optional": false
       }, {
-        "id": "serviceparam",
+        "id": "param",
         "name": "Service parameter",
         "name_de": "Service Parameter",
         "type": "String",
@@ -1072,7 +1084,7 @@
         "optional": false
       } ]
     }, {
-      "id": "xf_serviceresult",
+      "id": "xf_resultmapping",
       "type": "Complex",
       "title": "Result(Filter,Service)",
       "value": "",
@@ -1080,22 +1092,36 @@
       "description_de": "Ergebniszuweisung für Filter und Serviceaufruf.<br/>Kann leer sein, wenn die Eigenschaft(value,label,tooltip) der Liste übereinstimmen",
       "popular": true,
       "optional": true,
-      "readonly": "xf_enum!=null || xf_enumembed!=null || xf_jsonpath!=''",
+      "readonly": "xf_enum!=null || xf_enumembed!=null",
       "complexItems": [ {
-        "id": "resultvar",
-        "name": "Result variable",
-        "name_de": "Result Variable",
+        "id": "resultexpr",
+        "name": "Result expression",
+        "name_de": "Ergebnis Expression",
         "type": "String",
         "value": "",
-        "width": 150,
+        "width": 400,
         "optional": false
       }, {
-        "id": "formvar",
-        "name": "Form variable",
-        "name_de": "Form Variable",
-        "type": "String",
-        "value": "",
-        "width": 150,
+        "id": "mapping",
+        "name": "Mapping",
+        "name_de": "Mapping",
+        "readonly": false,
+        "type": "Choice",
+        "value": "value",
+        "items": [ {
+          "id": "value",
+          "title": "value",
+          "value": "value"
+        }, {
+          "id": "label",
+          "title": "label",
+          "value": "label"
+        }, {
+          "id": "tooltip",
+          "title": "tooltip",
+          "value": "tooltip"
+        } ],
+        "width": 80,
         "optional": false
       } ]
     }, {
