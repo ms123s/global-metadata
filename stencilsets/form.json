@@ -513,6 +513,32 @@
         "refToView": ""
       } ]
     }, {
+      "id": "xf_expression_in",
+      "type": "text",
+      "title": "Convert(In)",
+      "title_de": "Konvertierung(Ein)",
+			"description":"",
+			"description_de":"Ein Ausdruck mit dem der Wert vor der Feldzuweisung verändert noch werden kann.",
+      "prefix": "oryx",
+      "value": "",
+      "popular": false,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "length": "30"
+    }, {
+      "id": "xf_expression_out",
+      "type": "text",
+      "title": "Convert(Out)",
+      "title_de": "Konvertierung(Aus)",
+      "prefix": "oryx",
+      "value": "",
+      "popular": false,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "length": "30"
+    }, {
       "id": "xf_required",
       "type": "Combo",
       "title": "Required",
@@ -534,30 +560,6 @@
         "value": "false",
         "title": "false",
         "refToView": ""
-      } ]
-    }, {
-      "id": "xf_filtercheck",
-      "type": "Complex",
-      "config": {
-        "helperTree": [ "sw.filter" ],
-        "kind": "filterparam"
-      },
-      "title": "Filtercheck",
-      "title_de": "Filtercheck",
-      "value": null,
-      "description": "",
-      "description_de": "",
-      "popular": true,
-      "readonly": false,
-      "optional": true,
-      "complexItems": [ {
-        "id": "param",
-        "name": "Filterparam",
-        "name_de": "Filterparam",
-        "type": "String",
-        "value": "",
-        "width": 150,
-        "optional": false
       } ]
     }, {
       "id": "xf_constraint_text",
