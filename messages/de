@@ -2135,6 +2135,10 @@
         "msgstr": "Custom Form(nur web)"
     },
     {
+        "msgid": "settings.views.propertyedit.customService",
+        "msgstr": "Custom Service,Daten lesen(nur web)"
+    },
+    {
         "msgid": "settings.views.propertyedit.isblack",
         "msgstr": "Is black"
     },
