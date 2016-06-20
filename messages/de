@@ -4951,6 +4951,10 @@
         "msgstr": "modal"
     },
     {
+        "msgid": "settings.loadBeforeEdit",
+        "msgstr": "Lade Daten vor dem Editieren(web)"
+    },
+    {
         "msgid": "deploy Process",
         "msgstr": "Prozess deployen"
     },

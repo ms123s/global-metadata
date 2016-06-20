@@ -2971,6 +2971,10 @@
         "msgstr": "Fields"
     },
     {
+        "msgid": "settings.loadBeforeEdit",
+        "msgstr": "Load data before edit(web)"
+    },
+    {
         "msgid": "settings.fillin",
         "msgstr": "Transfer from selection"
     },
