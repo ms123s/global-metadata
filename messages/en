@@ -2971,6 +2971,10 @@
         "msgstr": "Fields"
     },
     {
+        "msgid": "settings.invisible",
+        "msgstr": "Invisible(web)"
+    },
+    {
         "msgid": "settings.loadBeforeEdit",
         "msgstr": "Load data before edit(web)"
     },
@@ -3035,8 +3039,20 @@
         "msgstr": "Form layout"
     },
     {
-        "msgid": "settings.views.propertyedit.customService",
-        "msgstr": "Custom Service,get data(only web)"
+        "msgid": "settings.views.propertyedit.customServiceRead",
+        "msgstr": "Custom service,read(web)"
+    },
+    {
+        "msgid": "settings.views.propertyedit.customServiceUpdate",
+        "msgstr": "Custom service,update(web)"
+    },
+    {
+        "msgid": "settings.views.propertyedit.customServiceInsert",
+        "msgstr": "Custom service,insert(web)"
+    },
+    {
+        "msgid": "settings.views.propertyedit.customServiceDelete",
+        "msgstr": "Custom service,delete(web)"
     },
     {
         "msgid": "settings.views",

@@ -1699,6 +1699,10 @@
         "msgstr": "Enabled"
     },
     {
+        "msgid": "settings.invisible",
+        "msgstr": "Unsichbar(web)"
+    },
+    {
         "msgid": "settings.fillin",
         "msgstr": "Übernahme aus Selektion"
     },
@@ -2132,11 +2136,23 @@
     },
     {
         "msgid": "settings.views.propertyedit.customForm",
-        "msgstr": "Custom Form(nur web)"
+        "msgstr": "Custom Form(web)"
     },
     {
-        "msgid": "settings.views.propertyedit.customService",
-        "msgstr": "Custom Service,Daten lesen(nur web)"
+        "msgid": "settings.views.propertyedit.customServiceRead",
+        "msgstr": "Custom Service,lesen( web)"
+    },
+    {
+        "msgid": "settings.views.propertyedit.customServiceUpdate",
+        "msgstr": "Custom Service,update(web)"
+    },
+    {
+        "msgid": "settings.views.propertyedit.customServiceInsert",
+        "msgstr": "Custom Service,insert(web)"
+    },
+    {
+        "msgid": "settings.views.propertyedit.customServiceDelete",
+        "msgstr": "Custom Service,delete(web)"
     },
     {
         "msgid": "settings.views.propertyedit.isblack",
