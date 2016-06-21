@@ -227,7 +227,7 @@
         "msgstr": "Administrator"
     },
     {
-        "msgid": "data.user.admin",
+        "msgid": "aid.user.admin",
         "msgstr": "Administrator Recht"
     },
     {
@@ -1139,7 +1139,7 @@
         "msgstr": "Configeditor"
     },
     {
-        "msgid": "data.user.team_manage",
+        "msgid": "aid.user.team_manage",
         "msgstr": "Darf Teams auf Ebene 1 erstellen"
     },
     {
@@ -2583,7 +2583,7 @@
         "msgstr": "Name"
     },
     {
-        "msgid": "data.user.surname",
+        "msgid": "aid.user.surname",
         "msgstr": "Name"
     },
     {
@@ -2883,7 +2883,7 @@
         "msgstr": "Passwort"
     },
     {
-        "msgid": "data.user.password",
+        "msgid": "aid.user.password",
         "msgstr": "Passwort"
     },
     {
@@ -3883,7 +3883,7 @@
         "msgstr": "User speichern"
     },
     {
-        "msgid": "data.user.userid",
+        "msgid": "aid.user.userid",
         "msgstr": "User-ID"
     },
     {
@@ -3975,7 +3975,7 @@
         "msgstr": "Voransicht"
     },
     {
-        "msgid": "data.user.givenname",
+        "msgid": "aid.user.givenname",
         "msgstr": "Vorname"
     },
     {
@@ -4167,7 +4167,7 @@
         "msgstr": "die zweite Selektion(<b>2</b>) von der Ersten(<b>1</b>) / <b>EXCEPT</b>"
     },
     {
-        "msgid": "data.user.email",
+        "msgid": "aid.user.email",
         "msgstr": "eMail"
     },
     {

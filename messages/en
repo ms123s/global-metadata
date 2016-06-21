@@ -1415,19 +1415,19 @@
         "msgstr": "Modified by"
     },
     {
-        "msgid": "data.user.admin",
+        "msgid": "aid.user.admin",
         "msgstr": "Administrator rights"
     },
     {
-        "msgid": "data.user.email",
+        "msgid": "aid.user.email",
         "msgstr": "EMail"
     },
     {
-        "msgid": "data.user.givenname",
+        "msgid": "aid.user.givenname",
         "msgstr": "First name"
     },
     {
-        "msgid": "data.user.password",
+        "msgid": "aid.user.password",
         "msgstr": "Password"
     },
     {
@@ -1435,7 +1435,7 @@
         "msgstr": "Roles"
     },
     {
-        "msgid": "data.user.surname",
+        "msgid": "aid.user.surname",
         "msgstr": "Name"
     },
     {
@@ -1451,11 +1451,11 @@
         "msgstr": "Roles"
     },
     {
-        "msgid": "data.user.team_manage",
+        "msgid": "aid.user.team_manage",
         "msgstr": "Can create teams on level 1"
     },
     {
-        "msgid": "data.user.userid",
+        "msgid": "aid.user.userid",
         "msgstr": "User ID"
     },
     {
