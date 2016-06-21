@@ -48,7 +48,7 @@
             "searchtype": "select",
             "formula_in": "inflector.getModuleName(name)",
             "name": "name",
-            "constraints": "[{\"annotation\":\"NotEmpty\",\"parameter1\":\"\"},{\"annotation\":\"Pattern\",\"parameter1\":\"[a-z][a-z0-9]{2,32}\"}]",
+            "constraints": "[{\"annotation\":\"NotEmpty\",\"parameter1\":\"\"},{\"annotation\":\"Pattern\",\"parameter1\":\"[a-z][a-z0-9]{1,32}\"}]",
             "filter": "[a-z0-9]",
             "datatype": "string"
         },
