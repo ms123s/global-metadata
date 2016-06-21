@@ -4,7 +4,7 @@
   "namespace": "http://b3mn.org/stencilset/xforms#",
   "description": "This is the XForms stencil set specification.",
   "propertyPackages": [ {
-    "name": "getProperties",
+    "name": "getPackage",
     "properties": [ {
       "id": "xf_varname",
       "type": "String",
@@ -212,6 +212,51 @@
         "width": 80,
         "optional": false
       } ]
+    } ],
+  }, {
+    "name": "visibilityPackage",
+    "properties": [ {
+      "id": "xf_exclude",
+      "type": "Text",
+      "title": "Exclude",
+      "title_de": "Ausschließen",
+      "prefix": "oryx",
+      "value": null,
+      "description_de": "Das Script wird nach jedem Tastendruck aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>formData</b> bzw. <b>f</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Das Script sollte true oder false zurückliefern.<br/>z.B.:<code> <br/>f.field1 == 'XYZ'</code><br/>",
+      "description": "The script is called after every keypress. <br/>Following variables in the script available <ul><li><b>formData</b> eg. <b>f</b>: Map</li><li><b>lang</b>: string, current Language</li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The script should be return true or false.<br/>eg.:<code> <br/>f.field1=='XYZ'</code><br/>",
+      "popular": false,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "length": "100"
+    }, {
+      "id": "xf_invisible",
+      "type": "Text",
+      "title": "Invisible",
+      "title_de": "Unsichtbar",
+      "prefix": "oryx",
+      "value": null,
+      "description_de": "Das Script wird nach jedem Tastendruck aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>formData</b> bzw. <b>f</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Das Script sollte true oder false zurückliefern.<br/>z.B.:<code> <br/>f.field1 == 'XYZ'</code><br/>",
+      "description": "The script is called after every keypress. <br/>Following variables in the script available <ul><li><b>formData</b> eg. <b>f</b>: Map</li><li><b>lang</b>: string, current Language</li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The script should be return true or false.<br/>eg.:<code> <br/>f.field1=='XYZ'</code><br/>",
+      "popular": false,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "length": "100"
+    }, {
+      "id": "xf_readonly",
+      "type": "Text",
+      "title": "Readonly",
+      "title_de": "Nur lesen",
+      "prefix": "oryx",
+      "value": null,
+      "description_de": "Das Script wird nach jedem Tastendruck aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>formData</b> bzw. <b>f</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Das Script sollte true oder false zurückliefern.<br/>z.B.:<code> <br/>f.field1 == 'XYZ'</code><br/>",
+      "description": "The script is called after every keypress. <br/>Following variables in the script available <ul><li><b>formData</b> eg. <b>f</b>: Map</li><li><b>lang</b>: string, current Language</li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The script should be return true or false.<br/>eg.:<code> <br/>f.field1=='XYZ'</code><br/>",
+      "popular": false,
+      "readonly": false,
+      "include": "stencil!='alert' && stencil!='upload'",
+      "optional": true,
+      "refToView": ""
     } ]
   } ],
   "stencils": [ {
@@ -319,8 +364,8 @@
       "title_de": "Preprozess(lokal)",
       "prefix": "oryx",
       "value": null,
-      "description_de": "Das Script wird nach 'form.setData(formData)' aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>formData</b> bzw. <b>fd</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Das Script sollte ein Object mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{apid:fd.kl+'-'+fd.ap}</code><br/>",
-      "description": "The script is called after 'form.setData(formData)'. <br/>Following variables in the script available <ul><li><b>formData</b> eg. <b>fd</b>: Map</li><li><b>lang</b>: string, current Language</li><li><b>uuid</b> : string, value  from from  <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The script should be return a object with the <br/>changed or added  values.<br/>eg.:<code> <br/>{apid:fd.kl+'-'+fd.ap}</code><br/>",
+      "description_de": "Das Script wird nach 'form.setData(formData)' aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>formData</b> bzw. <b>f</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Das Script sollte ein Object mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{apid:f.kl+'-'+f.ap}</code><br/>",
+      "description": "The script is called after 'form.setData(formData)'. <br/>Following variables in the script available <ul><li><b>formData</b> eg. <b>f</b>: Map</li><li><b>lang</b>: string, current Language</li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The script should be return a object with the <br/>changed or added  values.<br/>eg.:<code> <br/>{apid:f.kl+'-'+f.ap}</code><br/>",
       "popular": false,
       "readonly": false
     }, {
@@ -348,8 +393,22 @@
       "title_de": "Postprozess(lokal)",
       "prefix": "oryx",
       "value": null,
-      "description_de": "Das Script wird vor der Validierung aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>formData</b> bzw. <b>fd</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Das Script sollte ein Object mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{apid:fd.kl+'-'+fd.ap}</code><br/>",
-      "description": "The script is called before the validation. <br/>Following variables in the script available <ul><li><b>formData</b> eg. <b>fd</b>: Map</li><li><b>lang</b>: string, current Language</li><li><b>uuid</b> : string, value  from from  <b>window.uuid</b> steht</li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The script should be return a object with the <br/>changed or added  values.<br/>eg.:<code> <br/>{apid:fd.kl+'-'+fd.ap}</code><br/>",
+      "description_de": "Das Script wird vor der Validierung aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>formData</b> bzw. <b>f</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Das Script sollte ein Object mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{apid:f.kl+'-'+f.ap}</code><br/>",
+      "description": "The script is called before the validation. <br/>Following variables in the script available <ul><li><b>formData</b> eg. <b>f</b>: Map</li><li><b>lang</b>: string, current Language</li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The script should be return a object with the <br/>changed or added  values.<br/>eg.:<code> <br/>{apid:f.kl+'-'+f.ap}</code><br/>",
+      "popular": false,
+      "readonly": false
+    }, {
+      "id": "xf_save_disabled",
+      "config": {
+        "mode": "text/x-javascript"
+      },
+      "type": "Text",
+      "title": "SaveButton(Disabled)",
+      "title_de": "SaveButton(gesperrt)",
+      "prefix": "oryx",
+      "value": null,
+      "description_de": "Das Script wird nach jedem Tastendruck aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>formData</b> bzw. <b>f</b>: Map</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> Das Script sollte true oder false zurückliefern.<br/>z.B.:<code> <br/>f.field1 == 'XYZ'</code><br/>",
+      "description": "The script is called after every keypress. <br/>Following variables in the script available <ul><li><b>formData</b> eg. <b>f</b>: Map</li><li><b>lang</b>: string, current Language</li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The script should be return true or false.<br/>eg.:<code> <br/>f.field1=='XYZ'</code><br/>",
       "popular": false,
       "readonly": false
     }, {
@@ -375,6 +434,7 @@
     "description": "An input control.",
     "view": "new_input.svg",
     "icon": "new_input.png",
+    "propertyPackages": [ "visibilityPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
 
     "layout": [ {
@@ -461,64 +521,12 @@
       "refToView": "",
       "length": "30"
     }, {
-      "id": "xf_exclude",
-      "type": "String",
-      "title": "Exclude",
-      "title_de": "Weglassen",
-      "prefix": "oryx",
-      "value": null,
-      "description": "Completely omit the element",
-      "description_de": "Komplettes weglassen des Elements",
-      "popular": false,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "length": "100"
-    }, {
-      "id": "xf_invisible",
-      "type": "String",
-      "title": "Invisible",
-      "title_de": "Unsichtbar",
-      "prefix": "oryx",
-      "value": null,
-      "description": "Not visible but space is used",
-      "description_de": "Nicht sichtbar aber Platz wird benutzt",
-      "popular": false,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "length": "100"
-    }, {
-      "id": "xf_readonly",
-      "type": "Combo",
-      "title": "Readonly",
-      "title_de": "Nur lesen",
-      "prefix": "oryx",
-      "value": null,
-      "description": "Value can not be changed",
-      "description_de": "Wert kann nicht verändert werden",
-      "popular": false,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "items": [ {
-        "id": "c1",
-        "value": "true",
-        "title": "true",
-        "refToView": ""
-      }, {
-        "id": "c2",
-        "value": "false",
-        "title": "false",
-        "refToView": ""
-      } ]
-    }, {
       "id": "xf_expression_in",
       "type": "text",
       "title": "Convert(In)",
       "title_de": "Konvertierung(Ein)",
-			"description":"",
-			"description_de":"Ein Ausdruck mit dem der Wert vor der Feldzuweisung verändert noch werden kann.",
+      "description": "The form assigned values can be manipulated, before they are put into the field.",
+      "description_de": "Der Form zugewiesene Werte manipulieren, bevor die sie ins Feld gestellt werden.",
       "prefix": "oryx",
       "value": "",
       "popular": false,
@@ -531,6 +539,8 @@
       "type": "text",
       "title": "Convert(Out)",
       "title_de": "Konvertierung(Aus)",
+      "description": "The script is called before the data readout from the form.",
+      "description_de": "Das Script wird aufgerufen vor dem Auslesen der Daten aus der Form.",
       "prefix": "oryx",
       "value": "",
       "popular": false,
@@ -672,6 +682,7 @@
     "description": "A textarea control.",
     "view": "new_textarea.svg",
     "icon": "new_textarea.png",
+    "propertyPackages": [ "visibilityPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
 
     "layout": [ {
@@ -704,30 +715,6 @@
       "optional": true,
       "refToView": "",
       "length": "30"
-    }, {
-      "id": "xf_readonly",
-      "type": "Combo",
-      "title": "Readonly",
-      "title_de": "Nur lesen",
-      "description": "Value can not be changed",
-      "description_de": "Wert kann nicht verändert werden",
-      "prefix": "oryx",
-      "value": "",
-      "popular": true,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "items": [ {
-        "id": "c1",
-        "value": "true",
-        "title": "true",
-        "refToView": ""
-      }, {
-        "id": "c2",
-        "value": "false",
-        "title": "false",
-        "refToView": ""
-      } ]
     }, {
       "id": "xf_required",
       "type": "Combo",
@@ -772,6 +759,7 @@
     "groups": [ "Controls" ],
     "view": "new_upload.svg",
     "icon": "new_upload.png",
+    "propertyPackages": [ "visibilityPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
 
     "layout": [ {
@@ -813,18 +801,6 @@
         "title": "false",
         "refToView": ""
       } ]
-    }, {
-      "id": "xf_exclude",
-      "type": "String",
-      "title": "exclude",
-      "prefix": "oryx",
-      "value": "",
-      "description": "Exclude expression",
-      "popular": true,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "length": "100"
     } ]
   }, {
     "type": "node",
@@ -834,7 +810,7 @@
     "groups": [ "Controls" ],
     "view": "new_custom.svg",
     "icon": "new_custom.png",
-    "roles": [ "core_form_controls", "controls_morph" ],
+    "_roles": [ "core_form_controls", "controls_morph" ],
 
     "layout": [ {
       "type": "layout.xforms.label",
@@ -895,18 +871,6 @@
         "title": "false",
         "refToView": ""
       } ]
-    }, {
-      "id": "xf_exclude",
-      "type": "String",
-      "title": "exclude",
-      "prefix": "oryx",
-      "value": "",
-      "description": "Exclude expression",
-      "popular": true,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "length": "100"
     } ]
   }, {
     "type": "node",
@@ -975,7 +939,7 @@
     "description": "This form control allows the user to make single/multiple selections from a list.",
     "view": "new_select.svg",
     "icon": "new_select.png",
-		"propertyPackages": [ "getProperties" ],
+    "propertyPackages": [ "getPackage", "visibilityPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
     "layout": [ {
       "type": "layout.xforms.label",
@@ -1056,58 +1020,6 @@
         "title": "false",
         "refToView": ""
       } ]
-    }, {
-      "id": "xf_exclude",
-      "type": "String",
-      "title": "Exclude",
-      "title_de": "Weglassen",
-      "prefix": "oryx",
-      "value": null,
-      "description": "Completely omit the element",
-      "description_de": "Komplettes weglassen des Elements",
-      "popular": false,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "length": "100"
-    }, {
-      "id": "xf_invisible",
-      "type": "String",
-      "title": "Invisible",
-      "title_de": "Unsichtbar",
-      "prefix": "oryx",
-      "value": null,
-      "description": "Not visible but space is used",
-      "description_de": "Nicht sichtbar aber Platz wird benutzt",
-      "popular": false,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "length": "100"
-    }, {
-      "id": "xf_readonly",
-      "type": "Combo",
-      "title": "Readonly",
-      "title_de": "Nur lesen",
-      "prefix": "oryx",
-      "value": null,
-      "description": "Value can not be changed",
-      "description_de": "Wert kann nicht verändert werden",
-      "popular": false,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "items": [ {
-        "id": "c1",
-        "value": "true",
-        "title": "true",
-        "refToView": ""
-      }, {
-        "id": "c2",
-        "value": "false",
-        "title": "false",
-        "refToView": ""
-      } ]
     } ]
   }, {
     "type": "node",
@@ -1118,7 +1030,7 @@
     "description": "This form control allows the user to make single/multiple selections from enums.",
     "view": "new_select1.svg",
     "icon": "new_select1.png",
-		"propertyPackages": [ "getProperties" ],
+    "propertyPackages": [ "getPackage", "visibilityPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
     "layout": [ {
       "type": "layout.xforms.label",
@@ -1158,58 +1070,6 @@
       "popular": true,
       "readonly": false,
       "optional": false
-    }, {
-      "id": "xf_exclude",
-      "type": "String",
-      "title": "Exclude",
-      "title_de": "Weglassen",
-      "prefix": "oryx",
-      "value": null,
-      "description": "Completely omit the element",
-      "description_de": "Komplettes weglassen des Elements",
-      "popular": false,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "length": "100"
-    }, {
-      "id": "xf_invisible",
-      "type": "String",
-      "title": "Invisible",
-      "title_de": "Unsichtbar",
-      "prefix": "oryx",
-      "value": null,
-      "description": "Not visible but space is used",
-      "description_de": "Nicht sichtbar aber Platz wird benutzt",
-      "popular": false,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "length": "100"
-    }, {
-      "id": "xf_readonly",
-      "type": "Combo",
-      "title": "Readonly",
-      "title_de": "Nur lesen",
-      "prefix": "oryx",
-      "value": null,
-      "description": "Value can not be changed",
-      "description_de": "Wert kann nicht verändert werden",
-      "popular": false,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "items": [ {
-        "id": "c1",
-        "value": "true",
-        "title": "true",
-        "refToView": ""
-      }, {
-        "id": "c2",
-        "value": "false",
-        "title": "false",
-        "refToView": ""
-      } ]
     }, {
       "id": "xf_required",
       "type": "Combo",
@@ -1473,6 +1333,7 @@
     "groups": [ "Controls" ],
     "view": "new_alert.svg",
     "icon": "infobox-20.png",
+    "propertyPackages": [ "visibilityPackage" ],
     "roles": [ "core_form_controls" ],
     "properties": [ {
       "id": "xf_id",
@@ -1525,18 +1386,6 @@
       "optional": true,
       "length": "100",
       "wrapLines": true
-    }, {
-      "id": "xf_exclude",
-      "type": "String",
-      "title": "exclude",
-      "prefix": "oryx",
-      "value": "",
-      "description": "Exclude expression",
-      "popular": true,
-      "readonly": false,
-      "optional": true,
-      "refToView": "",
-      "length": "100"
     } ]
   }, {
     "type": "node",
