@@ -364,8 +364,8 @@
       "title_de": "Preprozess(lokal)",
       "prefix": "oryx",
       "value": null,
-      "description_de": "Das Script wird nach 'form.setData(formData)' aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>$lang</b>: string, aktuelle Sprache</li><li><b>$mode</b> : string, <b>edit</b> oder <b>add</b></li><li>alle Felder unter dem jeweiligen Namen</li></ul> Das Script sollte ein Object mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{apid:$.kl+'-'+$.ap}</code><br/>",
-      "description": "The script is called after 'form.setData(formData)'.<br/>Following variables in the script available <ul><li><b>$lang</b>: string, current  language</li><li><b>$mode</b> : string, <b>edit</b> or <b>add</b></li><li>all fields under the respective name</li></ul> The script should be return a object with the <br/>changed or added  values..<br/>eg:<code> <br/>{apid:$.kl+'-'+$.ap}</code><br/>",
+      "description_de": "Das Script wird nach 'form.setData(formData)' aufgerufen.<br/>Folgenden Variablen sind im Script vorhanden<ul><li><b>$lang</b>: string, aktuelle Sprache</li><li><b>$mode</b> : string, <b>edit</b> oder <b>add</b></li><li>alle Felder unter dem jeweiligen Namen</li></ul> Das Script sollte ein Object mit den <br/>geänderten oder hinzugefügten  Werten zurückliefern.<br/>z.B.:<code> <br/>{apid:kl+'-'+ap}</code><br/>",
+      "description": "The script is called after 'form.setData(formData)'.<br/>Following variables in the script available <ul><li><b>$lang</b>: string, current  language</li><li><b>$mode</b> : string, <b>edit</b> or <b>add</b></li><li>all fields under the respective name</li></ul> The script should be return a object with the <br/>changed or added  values..<br/>eg:<code> <br/>{apid:kl+'-'+ap}</code><br/>",
       "popular": false,
       "readonly": false
     }, {
