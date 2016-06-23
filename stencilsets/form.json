@@ -355,6 +355,31 @@
       "popular": false,
       "readonly": false
     }, {
+      "id": "xf_preprocess_service_mode",
+      "type": "Choice",
+      "title": "Preprocess(Mode)",
+      "prefix": "oryx",
+      "value": "edit_add",
+      "description": "In which mode should the preprocess service invoked",
+      "description_de": "In welchen Modus soll der Preprocess-Service aufgerufen werden",
+      "popular": false,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "items": [ {
+        "id": "c1",
+        "title": "edit,add",
+        "value": "edit_add"
+      }, {
+        "id": "c2",
+        "title": "edit",
+        "value": "edit"
+      }, {
+        "id": "c3",
+        "title": "add",
+        "value": "add"
+      } ]
+    }, {
       "id": "xf_preprocess_local",
       "config": {
         "mode": "text/x-javascript"
@@ -383,6 +408,31 @@
       "description": "The service is called before the validation with the following parameters<ul><li><b>formData</b>: Map</li><li><b>lang</b>: string, current language</li><li><b>uuid</b>: string, value  from from <b>window.uuid</b></li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul> The service should return a map with the <br/>changed or added values.<br/>eg.<code> <br/>{<br/>\u00a0\u00a0fieldName1 : 'newValue',<br/>\u00a0\u00a0fieldName2 : 'newValue'<br/></code>}",
       "popular": false,
       "readonly": false
+    }, {
+      "id": "xf_postprocess_service_mode",
+      "type": "Choice",
+      "title": "Postprocess(Mode)",
+      "prefix": "oryx",
+      "value": "edit_add",
+      "description": "In which mode should the postprocess service invoked",
+      "description_de": "In welchen Modus soll der Postprocess-Service aufgerufen werden",
+      "popular": false,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "items": [ {
+        "id": "c1",
+        "title": "edit,add",
+        "value": "edit_add"
+      }, {
+        "id": "c2",
+        "title": "edit",
+        "value": "edit"
+      }, {
+        "id": "c3",
+        "title": "add",
+        "value": "add"
+      } ]
     }, {
       "id": "xf_postprocess_local",
       "config": {
