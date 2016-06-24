@@ -158,7 +158,7 @@
 			"readonly": false,
 			"optional": false,
 			"refToView": "fill_el",
-			"include": "id !='SimpleConnection' && id != 'WhenConnection'",
+			"include": "stencil !='simpleconnection' && stencil != 'whenconnection'",
 			"fill": true,
 			"stroke": false
 		}, {
@@ -171,7 +171,7 @@
 			"description_de": "Ändern Sie die Rahmenfarbe für eine visuelle Unterscheidung.",
 			"readonly": false,
 			"optional": false,
-			"include": "id !='SimpleConnection' && id != 'WhenConnection'",
+			"include": "stencil !='simpleconnection' && stencil != 'whenconnection'",
 			"refToView": [ "bg_frame" ],
 			"fill": false,
 			"stroke": true
@@ -4029,7 +4029,7 @@
 		"description": "A container for defining a hierarchy of form controls.",
 		"view": "new_group.svg",
 		"icon": "new_group.png",
-		"roles": [ "container" ],
+		"_roles": [ "container" ],
 
 		"layout": [ {
 			"type": "layout.rows",
