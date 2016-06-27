@@ -630,7 +630,7 @@
       "prefix": "oryx",
       "value": "",
       "popular": true,
-      "visible": "xf_type=='text'",
+      "visible": "xf_type=='text' || xf_type=='password'",
       "optional": true,
       "refToView": "",
       "length": "100"
