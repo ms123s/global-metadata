@@ -568,8 +568,18 @@
       "description": "The default value is displayed, when the form is loaded.",
       "readonly": false,
       "optional": true,
-      "refToView": "",
-      "length": "30"
+      "refToView": ""
+    }, {
+      "id": "xf_errormsg",
+      "type": "String",
+      "title": "Errormessage",
+      "title_de": "Fehlermeldung",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": ""
     }, {
       "id": "xf_expression_in",
       "type": "text",
@@ -582,8 +592,7 @@
       "popular": false,
       "readonly": false,
       "optional": true,
-      "refToView": "",
-      "length": "30"
+      "refToView": ""
     }, {
       "id": "xf_expression_out",
       "type": "text",
@@ -596,8 +605,7 @@
       "popular": false,
       "readonly": false,
       "optional": true,
-      "refToView": "",
-      "length": "30"
+      "refToView": ""
     }, {
       "id": "xf_required",
       "type": "Combo",

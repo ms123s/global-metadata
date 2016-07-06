@@ -3438,6 +3438,8 @@
 			"id": "urivalue_name",
 			"title": "Name",
 			"title_de": "Name",
+			"description": "The name of the collection",
+			"description_de": "Der Name der Collection",
 			"type": "String",
 			"value": "default",
 			"optional": false
