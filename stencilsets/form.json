@@ -1112,6 +1112,8 @@
       "type": "String",
       "title": "Defaultvalue",
       "title_de": "Voreinstellung",
+      "description_de": "Der Wert oder  #0,#1 .. für ein Element der Liste",
+      "description": "The value or  #0,#1 .. for a element of the list",
       "prefix": "oryx",
       "value": "",
       "popular": true,
