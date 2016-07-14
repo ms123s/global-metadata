@@ -5344,7 +5344,7 @@
 		},
 		{
 				"msgid": "validation.Size",
-				"msgstr": "muss zwischen {min} und {max} liegen"
+				"msgstr": "Länge muss zwischen {min} und {max} liegen"
 		},
 		{
 				"msgid": "validation.CreditCardNumber",
@@ -5356,7 +5356,7 @@
 		},
 		{
 				"msgid": "validation.Length",
-				"msgstr": "muss zwischen {min} und {max} liegen"
+				"msgstr": "Länge muss zwischen {min} und {max} liegen"
 		},
 		{
 				"msgid": "validation.NotBlank",
@@ -5577,6 +5577,10 @@
 		{
 				"msgid": "button.back",
 				"msgstr": "Zurück"
+		},
+		{
+				"msgid": "button.del",
+				"msgstr": "Löschen"
 		},
 		{
 				"msgid": "datatables.sFirst",

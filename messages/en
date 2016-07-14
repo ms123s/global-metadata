@@ -106,6 +106,10 @@
 				"msgid": "button.cancel",
 				"msgstr": "Cancel"
 		},
+		{
+				"msgid": "button.del",
+				"msgstr": "Delete"
+		},
     {
         "msgid": "button.help",
         "msgstr": "Help"
