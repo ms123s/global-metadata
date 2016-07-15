@@ -5551,6 +5551,10 @@
 				"msgstr": "Vorheriger"
 		},
 		{
+				"msgid": "button.refresh",
+				"msgstr": "Refresh"
+		},
+		{
 				"msgid": "button.edit",
 				"msgstr": "Ändern"
 		},

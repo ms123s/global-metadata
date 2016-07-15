@@ -127,6 +127,10 @@
 				"msgstr": "Previos"
 		},
 		{
+				"msgid": "button.refresh",
+				"msgstr": "Refresh"
+		},
+		{
 				"msgid": "button.select",
 				"msgstr": "Select"
 		},
