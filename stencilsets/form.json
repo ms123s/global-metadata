@@ -258,6 +258,19 @@
       "optional": true,
       "refToView": ""
     } ]
+  }, {
+    "name": "tabindexPackage",
+    "properties": [ {
+      "id": "xf_tabindex",
+      "type": "Integer",
+      "title": "Tabindex",
+      "prefix": "oryx",
+      "value": null,
+      "popular": false,
+      "readonly": false,
+      "optional": true,
+      "refToView": ""
+    } ]
   } ],
   "stencils": [ {
     "type": "node",
@@ -484,7 +497,7 @@
     "description": "An input control.",
     "view": "new_input.svg",
     "icon": "new_input.png",
-    "propertyPackages": [ "visibilityPackage" ],
+    "propertyPackages": [ "visibilityPackage","tabindexPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
 
     "layout": [ {
@@ -740,7 +753,7 @@
     "description": "A textarea control.",
     "view": "new_textarea.svg",
     "icon": "new_textarea.png",
-    "propertyPackages": [ "visibilityPackage" ],
+    "propertyPackages": [ "visibilityPackage","tabindexPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
 
     "layout": [ {
@@ -817,7 +830,7 @@
     "groups": [ "Controls" ],
     "view": "new_upload.svg",
     "icon": "new_upload.png",
-    "propertyPackages": [ "visibilityPackage" ],
+    "propertyPackages": [ "visibilityPackage","tabindexPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
 
     "layout": [ {
@@ -997,7 +1010,7 @@
     "description": "This form control allows the user to make single/multiple selections from a list.",
     "view": "new_select.svg",
     "icon": "new_select.png",
-    "propertyPackages": [ "getPackage", "visibilityPackage" ],
+    "propertyPackages": [ "getPackage", "visibilityPackage","tabindexPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
     "layout": [ {
       "type": "layout.xforms.label",
@@ -1088,7 +1101,7 @@
     "description": "This form control allows the user to make single/multiple selections from enums.",
     "view": "new_select1.svg",
     "icon": "new_select1.png",
-    "propertyPackages": [ "getPackage", "visibilityPackage" ],
+    "propertyPackages": [ "getPackage", "visibilityPackage","tabindexPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
     "layout": [ {
       "type": "layout.xforms.label",
@@ -1393,7 +1406,7 @@
     "groups": [ "Controls" ],
     "view": "new_alert.svg",
     "icon": "infobox-20.png",
-    "propertyPackages": [ "visibilityPackage" ],
+    "propertyPackages": [ "visibilityPackage","tabindexPackage" ],
     "roles": [ "core_form_controls" ],
     "properties": [ {
       "id": "xf_id",
