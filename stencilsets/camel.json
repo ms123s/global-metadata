@@ -1305,6 +1305,15 @@
 			"value": null,
 			"optional": true,
 			"visible": "true"
+		}, {
+			"id": "uriparam_enclosingDiv",
+			"title": "Enclosing div",
+			"title_de": "Einschließendes Div",
+			"description": "If HTML output, then  enclose the content with an extra div",
+			"description_de": "Bei Html Ausgabe den Inhalt mit einen extra Div einschließen",
+			"type": "boolean",
+			"value": false,
+			"visible": "uriparam_output=='html'"
 		} ]
 	}, {
 		"name": "docbookProperties",
