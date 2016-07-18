@@ -3062,36 +3062,36 @@
 			"value": null
 		}, {
 			"id": "uriparam_privateKey",
-			"title": "Schlüssel",
+			"title_de": "Schlüssel",
 			"visible": "['sftp'].indexOf(uriparam_fileSystem) != -1",
-			"title_de": "Key",
+			"title": "Key",
 			"type": "String",
 			"value": null
 		}, {
 			"id": "uriparam_remotePath",
-			"title": "Ferner Pfad",
-			"title_de": "Remotepath",
+			"title_de": "Ferner Pfad",
+			"title": "Remotepath",
 			"type": "String",
 			"value": null
 		}, {
 			"id": "uriparam_localPath",
 			"visible": "['put'].indexOf(urivalue_operation) != -1 && ['zip','jar','tar','http'].indexOf(uriparam_fileSystem) == -1",
-			"title": "Lokaler Pfad",
-			"title_de": "Localpath",
+			"title_de": "Lokaler Pfad",
+			"title": "Localpath",
 			"type": "String",
 			"value": null
 		}, {
 			"id": "uriparam_newRemotePath",
-			"title": "Neuer ferner Pfad",
+			"title_de": "Neuer ferner Pfad",
 			"visible": "['move','copy'].indexOf(urivalue_operation) != -1 && ['zip','jar','tar','http'].indexOf(uriparam_fileSystem) == -1",
-			"title_de": "New remotepath",
+			"title": "New remotepath",
 			"type": "String",
 			"value": null
 		}, {
 			"id": "uriparam_archivePath",
-			"title": "Archiv Pfad",
+			"title_de": "Archiv Pfad",
 			"visible": "['zip','jar','tar'].indexOf(uriparam_fileSystem) != -1",
-			"title_de": "Archivepath",
+			"title": "Archivepath",
 			"type": "String",
 			"value": null
 		} ]
