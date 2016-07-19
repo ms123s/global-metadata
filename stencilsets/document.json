@@ -675,7 +675,7 @@
 		"groups": ["Controls"],
 		"view": "new_autogentable.svg",
 		"icon": "table.png",
-		"roles": ["core_form_controls", "controls_morph"],
+		"_roles": ["core_form_controls", "controls_morph"],
 		"layout": [{
 			"type": "layout.xforms.label",
 			"moveY": -1,
