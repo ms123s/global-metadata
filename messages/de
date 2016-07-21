@@ -696,7 +696,7 @@
     },
     {
         "msgid": "data.entity.workflow_list",
-        "msgstr": "Workflows im Aktionmenu"
+        "msgstr": "Prozesse im Aktionmenu"
     },
     {
         "msgid": "data.entity.no_resultset_count",
@@ -1188,7 +1188,7 @@
     },
     {
         "msgid": "shell.camel_saved",
-        "msgstr": "Route gespeichert"
+        "msgstr": "Service gespeichert"
     },
     {
         "msgid": "shell.node_deleted",
@@ -3000,7 +3000,7 @@
     },
     {
         "msgid": "processexplorer.definition.start_workflow",
-        "msgstr": "Workflow starten"
+        "msgstr": "Prozess starten"
     },
     {
         "msgid": "processexplorer.definition.history",
@@ -3092,11 +3092,11 @@
     },
     {
         "msgid": "processexplorer.routeId",
-        "msgstr": "Route"
+        "msgstr": "Service"
     },
     {
         "msgid": "processexplorer.route",
-        "msgstr": "Route"
+        "msgstr": "Service"
     },
     {
         "msgid": "processexplorer.node",
@@ -3456,7 +3456,7 @@
     },
     {
         "msgid": "tactions.camellabel",
-        "msgstr": "RouteId"
+        "msgstr": "ServiceId"
     },
     {
         "msgid": "tactions.serviceaction",
@@ -3984,7 +3984,7 @@
     },
     {
         "msgid": "shell.nt_camel",
-        "msgstr": "Camelroute"
+        "msgstr": "Service"
     },
     {
         "msgid": "shell.nt_datamapper",
@@ -4016,11 +4016,11 @@
     },
     {
         "msgid": "tasks.table.processName",
-        "msgstr": "Workflow"
+        "msgstr": "Prozess"
     },
     {
         "msgid": "shell.nt_process",
-        "msgstr": "Workflow"
+        "msgstr": "Prozess"
     },
     {
         "msgid": "import.table.row1",
@@ -5016,7 +5016,7 @@
     },
     {
         "msgid": "stencileditor.routes",
-        "msgstr": "Routen"
+        "msgstr": "Services"
     },
     {
         "msgid": "stencileditor.properties",

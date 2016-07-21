@@ -936,7 +936,7 @@
     },
     {
         "msgid": "data.entity.workflow_list",
-        "msgstr": "Workflows in Aktionmenu"
+        "msgstr": "Processes in Aktionmenu"
     },
     {
         "msgid": "data.enumfield.description",
@@ -2692,7 +2692,7 @@
     },
     {
         "msgid": "processexplorer.definition.start_workflow",
-        "msgstr": "Execute workflow"
+        "msgstr": "Execute process"
     },
     {
         "msgid": "processexplorer.details_activity",
@@ -2804,7 +2804,7 @@
     },
     {
         "msgid": "processexplorer.route",
-        "msgstr": "Route"
+        "msgstr": "Service"
     },
     {
         "msgid": "processexplorer.startTime",
@@ -3068,11 +3068,11 @@
     },
     {
         "msgid": "shell.camel_saved",
-        "msgstr": "Route saved"
+        "msgstr": "Service saved"
     },
     {
         "msgid": "shell.camel_save_failed",
-        "msgstr": "Error in route(s)"
+        "msgstr": "Error in service(s)"
     },
     {
         "msgid": "shell.datamapper_saved",
@@ -3168,7 +3168,7 @@
     },
     {
         "msgid": "shell.nt_camel",
-        "msgstr": "Camel route"
+        "msgstr": "Service"
     },
     {
         "msgid": "shell.nt_datamapper",
@@ -3196,7 +3196,7 @@
     },
     {
         "msgid": "shell.nt_process",
-        "msgstr": "Workflow"
+        "msgstr": "Process"
     },
     {
         "msgid": "shell.nt_rule",
@@ -3284,7 +3284,7 @@
     },
     {
         "msgid": "tactions.camellabel",
-        "msgstr": "RouteId"
+        "msgstr": "ServiceId"
     },
     {
         "msgid": "tactions.create-record",
@@ -3384,7 +3384,7 @@
     },
     {
         "msgid": "tasks.table.processName",
-        "msgstr": "Workflow"
+        "msgstr": "Process"
     },
     {
         "msgid": "tasks.table.taskid",
