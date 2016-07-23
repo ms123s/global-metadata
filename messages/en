@@ -3143,6 +3143,14 @@
         "msgstr": "Error compiling java file"
     },
     {
+        "msgid": "shell.structure_saved",
+        "msgstr": "Structure saved"
+    },
+    {
+        "msgid": "shell.structure_save_failed",
+        "msgstr": "Structure saving failed"
+    },
+    {
         "msgid": "shell.jsoneditor",
         "msgstr": "Edit source"
     },
@@ -3201,6 +3209,10 @@
     {
         "msgid": "shell.nt_rule",
         "msgstr": "Rule"
+    },
+    {
+        "msgid": "shell.nt_structure",
+        "msgstr": "Structure"
     },
     {
         "msgid": "shell.stencil_saved",

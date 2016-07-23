@@ -427,6 +427,14 @@
         "msgstr": "Mapping gespeichert"
     },
     {
+        "msgid": "shell.structure_save_failed",
+        "msgstr": "Speichern der Struktur fehlgeschlagen"
+    },
+    {
+        "msgid": "shell.structure_saved",
+        "msgstr": "Struktur gespeichert"
+    },
+    {
         "msgid": "datasource.database",
         "msgstr": "Database"
     },
@@ -3993,6 +4001,10 @@
     {
         "msgid": "shell.nt_datasource",
         "msgstr": "Datasource"
+    },
+    {
+        "msgid": "shell.nt_structure",
+        "msgstr": "Struktur"
     },
     {
         "msgid": "shell.nt_website",
