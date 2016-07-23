@@ -3283,6 +3283,50 @@
         "msgstr": "Strike"
     },
     {
+        "msgid": "structure.level",
+        "msgstr": "Level"
+    },
+    {
+        "msgid": "structure.title",
+        "msgstr": "Title"
+    },
+    {
+        "msgid": "structure.description",
+        "msgstr": "Description"
+    },
+    {
+        "msgid": "structure.update",
+        "msgstr": "Update"
+    },
+    {
+        "msgid": "structure.insert_before",
+        "msgstr": "Insert(before)"
+    },
+    {
+        "msgid": "structure.insert_after",
+        "msgstr": "Insert(after)"
+    },
+    {
+        "msgid": "structure.append",
+        "msgstr": "Append"
+    },
+    {
+        "msgid": "structure.url_include",
+        "msgstr": "Url/Include"
+    },
+    {
+        "msgid": "structure.icon",
+        "msgstr": "Icon"
+    },
+    {
+        "msgid": "structure.enabled",
+        "msgstr": "Enabled"
+    },
+    {
+        "msgid": "structure.use",
+        "msgstr": "Use"
+    },
+    {
         "msgid": "table.confirm.delete",
         "msgstr": "Delete the record?"
     },

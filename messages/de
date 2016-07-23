@@ -5043,6 +5043,50 @@
         "msgstr": "Titel"
     },
     {
+        "msgid": "structure.level",
+        "msgstr": "Level"
+    },
+    {
+        "msgid": "structure.title",
+        "msgstr": "Titel"
+    },
+    {
+        "msgid": "structure.description",
+        "msgstr": "Beschreibung"
+    },
+    {
+        "msgid": "structure.update",
+        "msgstr": "Aktualisieren"
+    },
+    {
+        "msgid": "structure.append",
+        "msgstr": "Anhängen"
+    },
+    {
+        "msgid": "structure.insert_before",
+        "msgstr": "Einfügen(Vorher)"
+    },
+    {
+        "msgid": "structure.insert_after",
+        "msgstr": "Einfügen(Nachher)"
+    },
+    {
+        "msgid": "structure.use",
+        "msgstr": "Nutzung"
+    },
+    {
+        "msgid": "structure.url_include",
+        "msgstr": "Url/Include"
+    },
+    {
+        "msgid": "structure.icon",
+        "msgstr": "Icon"
+    },
+    {
+        "msgid": "structure.enabled",
+        "msgstr": "Aktiv"
+    },
+    {
         "msgid": "ge.AddDocker.addDesc",
         "msgstr": "Fügen Sie einer Kante einen Docker hinzu, indem Sie auf die Kante klicken"
     },
