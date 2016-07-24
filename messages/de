@@ -5043,10 +5043,6 @@
         "msgstr": "Titel"
     },
     {
-        "msgid": "structure.level",
-        "msgstr": "Level"
-    },
-    {
         "msgid": "structure.title",
         "msgstr": "Titel"
     },
@@ -5063,20 +5059,16 @@
         "msgstr": "Anhängen"
     },
     {
-        "msgid": "structure.insert_before",
-        "msgstr": "Einfügen(Vorher)"
-    },
-    {
-        "msgid": "structure.insert_after",
-        "msgstr": "Einfügen(Nachher)"
+        "msgid": "structure.insert",
+        "msgstr": "Einfügen"
     },
     {
         "msgid": "structure.use",
         "msgstr": "Nutzung"
     },
     {
-        "msgid": "structure.url_include",
-        "msgstr": "Url/Include"
+        "msgid": "structure.uri",
+        "msgstr": "URI"
     },
     {
         "msgid": "structure.icon",

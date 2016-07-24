@@ -3283,10 +3283,6 @@
         "msgstr": "Strike"
     },
     {
-        "msgid": "structure.level",
-        "msgstr": "Level"
-    },
-    {
         "msgid": "structure.title",
         "msgstr": "Title"
     },
@@ -3299,20 +3295,16 @@
         "msgstr": "Update"
     },
     {
-        "msgid": "structure.insert_before",
-        "msgstr": "Insert(before)"
-    },
-    {
-        "msgid": "structure.insert_after",
-        "msgstr": "Insert(after)"
+        "msgid": "structure.insert",
+        "msgstr": "Insert"
     },
     {
         "msgid": "structure.append",
         "msgstr": "Append"
     },
     {
-        "msgid": "structure.url_include",
-        "msgstr": "Url/Include"
+        "msgid": "structure.uri",
+        "msgstr": "URI"
     },
     {
         "msgid": "structure.icon",
