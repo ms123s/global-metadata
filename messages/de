@@ -5067,12 +5067,40 @@
         "msgstr": "Nutzung"
     },
     {
+        "msgid": "structure.use_help",
+        "msgstr": "Der Knoten kann im Menu als auch in der Documentation verwendet werden"
+    },
+    {
         "msgid": "structure.uri",
         "msgstr": "URI"
     },
     {
+        "msgid": "structure.uri_help",
+        "msgstr": "<b>Wenn \"URI \" leer ist, dann wird ein Knoten erzeugt, anderfalls ein Blatt</b>"
+    },
+    {
         "msgid": "structure.icon",
         "msgstr": "Icon"
+    },
+    {
+        "msgid": "structure.icon_help",
+        "msgstr": "Wird nur im Menu verwendet"
+    },
+    {
+        "msgid": "structure.doc_file",
+        "msgstr": "Dokument Datei"
+    },
+    {
+        "msgid": "structure.menu_file",
+        "msgstr": "Menu Datei"
+    },
+    {
+        "msgid": "structure.adoc_include",
+        "msgstr": "ADOC-Include"
+    },
+    {
+        "msgid": "structure.adoc_include_help",
+        "msgstr": "Kenntlich machen, dass es sich Asciidoctor-Include handelt."
     },
     {
         "msgid": "structure.enabled",

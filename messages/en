@@ -3303,12 +3303,36 @@
         "msgstr": "Append"
     },
     {
+        "msgid": "structure.adoc_include",
+        "msgstr": "ADOC-Include"
+    },
+    {
+        "msgid": "structure.adoc_include_help",
+        "msgstr": "is this a asciidoctor include"
+    },
+    {
         "msgid": "structure.uri",
         "msgstr": "URI"
     },
     {
+        "msgid": "structure.doc_file",
+        "msgstr": "Document file"
+    },
+    {
+        "msgid": "structure.menu_file",
+        "msgstr": "Menu file"
+    },
+    {
+        "msgid": "structure.uri_help",
+        "msgstr": "<b>If \"URI \" is empty, then a node is generated, else a leaf</b>"
+    },
+    {
         "msgid": "structure.icon",
         "msgstr": "Icon"
+    },
+    {
+        "msgid": "structure.icon_help",
+        "msgstr": "Used only in the menu"
     },
     {
         "msgid": "structure.enabled",
@@ -3317,6 +3341,10 @@
     {
         "msgid": "structure.use",
         "msgstr": "Use"
+    },
+    {
+        "msgid": "structure.use_help",
+        "msgstr": "The  node can be used in the menu, as well in the documentation"
     },
     {
         "msgid": "table.confirm.delete",
