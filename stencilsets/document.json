@@ -482,6 +482,16 @@
 				"refToView": ""
 			}]
 		}, {
+			"id": "db_body.font.family",
+			"type": "string",
+			"title": "Font",
+			"title_de": "Font",
+			"prefix": "oryx",
+			"value": null,
+			"popular": true,
+			"readonly": false,
+			"optional": true
+		}, {
 			"id": "db_body.font.master",
 			"type": "Combo",
 			"title": "Basic fontsize",
