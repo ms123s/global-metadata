@@ -401,6 +401,36 @@
 				"value": "inset",
 				"refToView": ""
 			} ]
+		},{
+			"id": "db_informal.object.space.before",
+			"description": "informal.object.space.before",
+			"type": "String",
+			"title": "Inf. object: space before",
+			"prefix": "oryx",
+			"value": "0.5em",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_informal.object.space.after",
+			"description": "informal.object.space.after",
+			"type": "String",
+			"title": "Inf. object: space after",
+			"prefix": "oryx",
+			"value": "0.5em",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		},{
+			"id": "db_generate.section.toc.level",
+			"description": "generate.section.toc.level",
+			"type": "String",
+			"title": "TOC level",
+			"prefix": "oryx",
+			"value": "3",
+			"readonly": false,
+			"optional": true,
+			"length": "50"
 	}, {
 			"id": "db_extra.params",
 			"type": "Complex",
