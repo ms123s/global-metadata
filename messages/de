@@ -2699,10 +2699,6 @@
         "msgstr": "Neue App"
     },
     {
-        "msgid": "meta.enums.new_enum",
-        "msgstr": "Neue Aufzählung"
-    },
-    {
         "msgid": "enumerations.new_enum",
         "msgstr": "Neue Aufzählung"
     },

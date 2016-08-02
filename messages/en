@@ -2075,12 +2075,32 @@
         "msgstr": "Invalid from"
     },
     {
+        "msgid": "meta.enumdata.value",
+        "msgstr": "Value"
+    },
+    {
+        "msgid": "meta.enumdata.label",
+        "msgstr": "Label"
+    },
+    {
+        "msgid": "meta.enumdata.tooltip",
+        "msgstr": "Tooltip"
+    },
+    {
         "msgid": "meta.enums.data",
         "msgstr": "Data"
     },
     {
         "msgid": "meta.enums.fields",
         "msgstr": "Fields"
+    },
+    {
+        "msgid": "meta.enums.new_enum_name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "meta.enums.enum_created",
+        "msgstr": "New enumeration created"
     },
     {
         "msgid": "meta.fieldset.description",
