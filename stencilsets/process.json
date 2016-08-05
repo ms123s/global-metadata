@@ -1611,15 +1611,25 @@
 		"propertyPackages": [ "baseProperties", "colorProperties", "processid" ],
 		"properties": [ {
 			"id": "gatewaytype",
-			"type": "String",
-			"title": "Gateway type",
-			"title_de": "Gatewaytyp",
-			"value": "Event",
-			"description": "The type of the gateway.",
-			"description_de": "Der Typ des Gateways.",
-			"include": false,
-			"optional": false,
-			"length": ""
+			"type": "Choice",
+			"title":"Parallel",
+			"description":"Not really used, only to show the diamond",
+			"value": "None",
+			"visible": false,
+			"refToView": "",
+			"items": [ {
+				"id": "no",
+				"title": "No",
+				"title_de": "Nein",
+				"refToView": "none",
+				"value": "None"
+			}, {
+				"id": "yes",
+				"title": "Yes",
+				"title_de": "Ja",
+				"refToView": "parallel",
+				"value": "Parallel"
+			} ]
 		} ],
 		"roles": [ "all", "sequence_start", "sequence_end", "GatewaysMorph" ]
 	}, {
