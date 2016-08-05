@@ -852,7 +852,7 @@
 		"groups": [ "Activities" ],
 		"groups_de": [ "Aktivitäten" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "servicetaskbase", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity" ],
-		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
+		"_roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ]
 	}, {
 		"type": "node",
 		"id": "CallActivity",
@@ -1112,13 +1112,13 @@
 	}, {
 		"type": "node",
 		"id": "CamelTask",
-		"title": "Camel Task",
-		"title_de": "Camelaufgabe",
+		"title": "Service Task",
+		"title_de": "Serviceaufgabe",
 		"groups": [ "Activities" ],
 		"groups_de": [ "Aktivitäten" ],
-		"description": "A camel task is a task that executes  a route.",
-		"view": "activity/cameltask.svg",
-		"icon": "activity/list/type.camel.png",
+		"description": "The service task is a task that executes  a simpl4 service.",
+		"view": "activity/servicetask.svg",
+		"icon": "activity/list/type.service.png",
 		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
 			"id": "namespace",
@@ -1141,21 +1141,21 @@
 				 "namespace":"${namespace}",
 				"prefix": ""
 			},
-			"title": "Routename",
+			"title": "Servicename",
 			"value": null,
-			"description": "Name of the route which is to be executed",
-			"description_de": "Name der Route die ausgeführt werden soll",
+			"description": "Name of the service which is to be executed",
+			"description_de": "Name des Services, der ausgeführt werden soll",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
 		}, {
 			"id": "routevarname",
 			"type": "String",
-			"title": "Routename variable",
-			"title_de": "Routename Variable",
+			"title": "Servicename variable",
+			"title_de": "Servicename Variable",
 			"value": null,
-			"description": "Name of a processvariable that contains the routename",
-			"description_de": "Name einer Prozessvariablen die den  Routenamen enthält",
+			"description": "Name of a processvariable that contains the servicename",
+			"description_de": "Name einer Prozessvariablen die den  Servicenamen enthält",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
@@ -1169,8 +1169,8 @@
 			"title": "Parameter-Mapping",
 			"title_de": "Variablen Zuordnung",
 			"value": "",
-			"description": "Mapping processvariables to route",
-			"description_de": "Zuordnung von Prozessvariablen zur Route",
+			"description": "Mapping processvariables to service",
+			"description_de": "Zuordnung von Prozessvariablen zum Service",
 			"readonly": false,
 			"optional": true,
 			"complexItems": [ {
@@ -1183,8 +1183,8 @@
 				"optional": false
 			}, {
 				"id": "routevar",
-				"name_de": "Routevariable",
-				"name": "Routevariable",
+				"name_de": "Servicevariable",
+				"name": "Servicevariable",
 				"type": "String",
 				"value": "",
 				"width": 150,
