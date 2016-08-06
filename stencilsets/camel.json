@@ -3820,7 +3820,7 @@
 		"icon": "websocketendpoint.png",
 		"groups": [ "Endpoints M-Z" ],
 		"groups_de": [ "Endpunkte M-Z" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "websocketProperties" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "websocketProperties", "permissionProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
