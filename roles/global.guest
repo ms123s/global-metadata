@@ -50,6 +50,11 @@
             "permission": "energie:entities:data",
             "actions": "read",
             "enabled": true
+        },
+        {
+            "permission": "docu:entities:data:friend",
+            "actions": "read",
+            "enabled": true
         }
     ],
     "name": "global.guest"

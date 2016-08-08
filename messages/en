@@ -3359,6 +3359,10 @@
         "msgstr": "Enabled"
     },
     {
+        "msgid": "structure.help",
+        "msgstr": "Help"
+    },
+    {
         "msgid": "structure.use",
         "msgstr": "Use"
     },

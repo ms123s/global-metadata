@@ -5095,6 +5095,10 @@
         "msgstr": "ADOC-Include"
     },
     {
+        "msgid": "structure.help",
+        "msgstr": "Hilfe"
+    },
+    {
         "msgid": "structure.adoc_include_help",
         "msgstr": "Kenntlich machen, dass es sich Asciidoctor-Include handelt."
     },
