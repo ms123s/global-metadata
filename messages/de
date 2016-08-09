@@ -5095,6 +5095,14 @@
         "msgstr": "ADOC-Include"
     },
     {
+        "msgid": "structure.id",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "structure.id_help",
+        "msgstr": "Wenn die Id nicht angeben ist, dann wird sie aus dem Titel erzeugt<br/>(nach klein gewandelt und alles mit '-' ersetzt, ausser:[a-z0-9_]).<br/>Soll der Menupunkt als Linkziel dienen, ist es vielleicht besser eine Id anzugeben."
+    },
+    {
         "msgid": "structure.help",
         "msgstr": "Hilfe"
     },

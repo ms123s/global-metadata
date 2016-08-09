@@ -3359,6 +3359,14 @@
         "msgstr": "Enabled"
     },
     {
+        "msgid": "structure.id",
+        "msgstr": "Id"
+    },
+    {
+        "msgid": "structure.id_help",
+        "msgstr": "If the ID is not specified, then it is generated from the title<br/>(to lowercase and replace all with  '-', but not:[a-z0-9_]). <br/> If the menu item serve as a link destination, it is maybe better to provide an ID."
+    },
+    {
         "msgid": "structure.help",
         "msgstr": "Help"
     },
