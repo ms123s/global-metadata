@@ -4176,53 +4176,9 @@
 			"title": "Groovy",
 			"value": "groovy"
 		}, {
-			"id": "constant",
-			"title": "Constant",
-			"value": "constant"
-		}, {
-			"id": "header",
-			"title": "Header",
-			"value": "header"
-		}, {
-			"id": "property",
-			"title": "Property",
-			"value": "property"
-		}, {
-			"id": "tokenize",
-			"title": "Tokenize",
-			"value": "tokenize"
-		}, {
-			"id": "bean",
-			"title": "Bean",
-			"value": "bean"
-		}, {
-			"id": "simple",
-			"title": "Simple",
-			"value": "simple"
-		}, {
 			"id": "javascript",
-			"title": "Javascrip",
+			"title": "Javascript",
 			"value": "javascript"
-		}, {
-			"id": "el",
-			"title": "El",
-			"value": "el"
-		}, {
-			"id": "sql",
-			"title": "SQL",
-			"value": "sql"
-		}, {
-			"id": "xpath",
-			"title": "XPath",
-			"value": "xpath"
-		}, {
-			"id": "mvel",
-			"title": "Mvel",
-			"value": "mvel"
-		}, {
-			"id": "ognl",
-			"title": "Ognl",
-			"value": "ognl"
 		} ],
 		"parametertype_items": [ {
 			"id": "string",
