@@ -191,6 +191,8 @@
 			"id": "expression",
 			"title": "Expression",
 			"title_de": "Ausdruck",
+			"description": "Available vars: exchange <br/> access headerfields: <b>exchange.in.headers.header1</b><br/> access properties: <b>exchange.properties.prop1</b>",
+			"description_de": "Verfügbare Variablen: exchange <br/> Zugriff auf Headerfelder: <b>exchange.in.headers.header1</b><br/> Zugriff auf Properties: <b>exchange.properties.prop1</b>",
 			"type": "Text",
 			"value": "",
 			"popular": false,
