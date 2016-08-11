@@ -1845,22 +1845,26 @@
 				"value": "update"
 			}, {
 				"id": "c3",
+				"title": "Upsert",
+				"value": "upsert"
+			}, {
+				"id": "c4",
 				"title": "Delete",
 				"value": "delete"
 			}, {
-				"id": "c4",
+				"id": "c5",
 				"title": "FindById",
 				"value": "findById"
 			}, {
-				"id": "c5",
+				"id": "c6",
 				"title": "FindByFilter",
 				"value": "findByFilter"
 			}, {
-				"id": "c6",
+				"id": "c7",
 				"title": "FindOneByFilter",
 				"value": "findOneByFilter"
 			}, {
-				"id": "c7",
+				"id": "c8",
 				"title": "MultiInsertUpdate",
 				"value": "multiInsertUpdate"
 			} ],
@@ -1931,7 +1935,7 @@
 			"type": "String",
 			"value": null,
 			"optional": true,
-			"visible": "urivalue_operation=='insert' || urivalue_operation=='update' || urivalue_operation=='multiInsertUpdate'"
+			"visible": "urivalue_operation=='insert' || urivalue_operation=='update' || urivalue_operation=='upsert' || urivalue_operation=='multiInsertUpdate'"
 		}, {
 			"id": "uriparam_filterName",
 			"title": "Filtername",
@@ -1953,7 +1957,7 @@
 			"type": "String",
 			"value": null,
 			"optional": false,
-			"visible": "urivalue_operation=='insert' || urivalue_operation=='update' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
+			"visible": "urivalue_operation=='insert' || urivalue_operation=='update' || urivalue_operation=='upsert' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
 		}, {
 			"id": "uriparam_objectId",
 			"title": "ObjectId",
@@ -1963,7 +1967,7 @@
 			"type": "String",
 			"value": null,
 			"optional": false,
-			"visible": "urivalue_operation=='update' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
+			"visible": "urivalue_operation=='update' || urivalue_operation=='upsert' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
 		}, {
 			"id": "_uriparam_paramHeaders",
 			"title_de": "Filterparameter",
@@ -1977,13 +1981,13 @@
 			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter'"
 		}, {
 			"id": "uriparam_paramHeaders",
-			"title_de": "Headerfelder",
-			"title": "Headerfields",
+			"title_de": "Filterparameter",
+			"title": "Filterparameter",
 			"description_de": "Angebene Headerfelder in den Variablenbereich des Filters kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Maps werden unter dem Headernamen ins Datenmodell übernommen,wenn der Modifier :asMap angegehängt ist, dataModel.put(headerName, Map).</li><li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
 			"description": "Copy specified headerfields into the variables space of the filter, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Maps will be transferred to the data model with the header name,if the modifier :asMap is appended, dataModel.put(headerName, Map).</li><li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
-			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents'",
 			"type": "String",
 			"value": null,
+			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter'"
 			"readonly": false,
 		}, {
 			"id": "uriparam_destination",

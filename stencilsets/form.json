@@ -341,6 +341,59 @@
       "optional": true,
       "refToView": ""
     }, {
+      "id": "xf_used_default_buttons",
+      "type": "Complex",
+      "config": {
+      },
+      "title": "Buttonconfig",
+      "title_de": "Buttonkonf.",
+    	"value": "{ \"totalCount\": 3, \"items\": [ { \"label\": \"@form.execute\", \"action\": \"execute\", \"icon\": \"check\" }, { \"label\": \"@button.reset\", \"action\": \"reset\", \"icon\": \"refresh\" }, { \"label\": \"@button.cancel\", \"action\": \"cancel\", \"icon\": \"clear\" } ] }",
+      "description_de": "Konfiguration der Standard Buttons",
+      "description": "Configuration of the default buttons",
+      "popular": true,
+      "include": "xf_default_buttons==true",
+      "readonly": false,
+      "optional": true,
+      "complexItems": [ {
+        "id": "label",
+        "name": "Label",
+        "name_de": "Label",
+        "type": "String",
+        "value": "",
+        "width": 250,
+        "optional": false
+      }, {
+        "id": "icon",
+        "name": "Icon",
+        "name_de": "Icon",
+        "type": "String",
+        "value": "",
+        "width": 120,
+        "optional": false
+      }, {
+        "id": "action",
+        "name": "Action",
+        "name_de": "Aktion",
+        "readonly": false,
+        "type": "combo",
+        "value": "value",
+        "items": [ {
+          "id": "execute",
+          "title": "execute",
+          "value": "execute"
+        }, {
+          "id": "reset",
+          "title": "reset",
+          "value": "reset"
+        }, {
+          "id": "cancel",
+          "title": "cancel",
+          "value": "cancel"
+        } ],
+        "width": 120,
+        "optional": false
+      } ]
+    }, {
       "id": "xf_method_fetch",
       "type": "String",
       "title": "Selectionlists",

@@ -131,6 +131,10 @@
 				"msgstr": "Refresh"
 		},
 		{
+				"msgid": "button.reset",
+				"msgstr": "Reset"
+		},
+		{
 				"msgid": "button.select",
 				"msgstr": "Select"
 		},
@@ -1817,6 +1821,10 @@
     {
         "msgid": "graphicaleditor.plugins.save.formtest",
         "msgstr": "Formtest"
+    },
+    {
+        "msgid": "graphicaleditor.plugins.form.msgkey_prefix",
+        "msgstr": "Messagekey prefix"
     },
     {
         "msgid": "graphicaleditor.fieldselectorfield.db_fieldname",

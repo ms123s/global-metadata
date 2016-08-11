@@ -4447,6 +4447,10 @@
         "msgstr": "Eine Ressource auswählen"
     },
     {
+        "msgid": "graphicaleditor.plugins.form.msgkey_prefix",
+        "msgstr": "Messagekey Prefix"
+    },
+    {
         "msgid": "graphicaleditor.select_entity",
         "msgstr": "Einen Datentyp auswählen"
     },
@@ -5637,6 +5641,10 @@
 		{
 				"msgid": "button.refresh",
 				"msgstr": "Refresh"
+		},
+		{
+				"msgid": "button.reset",
+				"msgstr": "Reset"
 		},
 		{
 				"msgid": "button.edit",
