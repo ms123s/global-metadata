@@ -53,7 +53,7 @@
         },
         {
             "permission": "docu:entities:data:friend",
-            "actions": "read",
+            "actions": "read,write",
             "enabled": true
         }
     ],
