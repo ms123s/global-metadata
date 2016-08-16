@@ -1444,7 +1444,6 @@
       "value": true,
       "description": "Execute the action if 'enter' pressed",
       "description_de": "Ausführen der Aktion , wenn 'enter' gedrückt wird",
-      "popular": true,
       "readonly": false,
       "optional": true,
       "refToView": ""
