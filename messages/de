@@ -5675,6 +5675,10 @@
 				"msgstr": "Zurück"
 		},
 		{
+				"msgid": "button.save",
+				"msgstr": "Speichern"
+		},
+		{
 				"msgid": "button.del",
 				"msgstr": "Löschen"
 		},

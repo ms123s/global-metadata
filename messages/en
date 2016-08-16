@@ -135,6 +135,10 @@
 				"msgstr": "Reset"
 		},
 		{
+				"msgid": "button.save",
+				"msgstr": "Save"
+		},
+		{
 				"msgid": "button.select",
 				"msgstr": "Select"
 		},
