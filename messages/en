@@ -1491,6 +1491,10 @@
         "msgstr": "Not yet created class"
     },
     {
+        "msgid": "entitytypes.create_class.name",
+        "msgstr": "Klassenname"
+    },
+    {
         "msgid": "entitytypes.create_form_settings",
         "msgstr": "Generate form settings"
     },
