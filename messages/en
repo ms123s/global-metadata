@@ -1651,6 +1651,10 @@
         "msgstr": "Databasescheme updated"
     },
     {
+        "msgid": "enumerations.confirm_delete",
+        "msgstr": "Delete enumeration ?"
+    },
+    {
         "msgid": "enumerations.enumeration_dir",
         "msgstr": "Enumerations"
     },
