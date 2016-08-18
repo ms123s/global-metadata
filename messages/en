@@ -2491,6 +2491,58 @@
         "msgstr": "Global Settings"
     },
     {
+        "msgid": "shell.asset_exists",
+        "msgstr": "already exists"
+    },
+    {
+        "msgid": "shell.confirm_delete",
+        "msgstr": "Delete the file?"
+    },
+    {
+        "msgid": "shell.copy_failed",
+        "msgstr": "copy failed"
+    },
+    {
+        "msgid": "shell.copy_ready",
+        "msgstr": "File copied"
+    },
+    {
+        "msgid": "shell.copy_to",
+        "msgstr": "copy to"
+    },
+    {
+        "msgid": "shell.dest_filename",
+        "msgstr": "Destinationname"
+    },
+    {
+        "msgid": "shell.directory_created",
+        "msgstr": "Directory created"
+    },
+    {
+        "msgid": "shell.directory_name",
+        "msgstr": "Directoryname"
+    },
+    {
+        "msgid": "shell.file_create_failed",
+        "msgstr": "Filecreation failed"
+    },
+    {
+        "msgid": "shell.for",
+        "msgstr": "for"
+    },
+    {
+        "msgid": "shell.move_ready",
+        "msgstr": "File moved"
+    },
+    {
+        "msgid": "shell.move_to",
+        "msgstr": "move to"
+    },
+    {
+        "msgid": "shell.name",
+        "msgstr": "Name"
+    },
+    {
         "msgid": "ms123.shell.Messages",
         "msgstr": "Translations"
     },
