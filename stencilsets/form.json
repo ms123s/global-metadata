@@ -536,6 +536,31 @@
       "popular": false,
       "readonly": false
     }, {
+      "id": "xf_validate_local",
+      "type": "Complex",
+      "title": "Global validate",
+      "title_de": "Globale Validierung",
+      "value": "",
+      "description": "Form global validation using js-expressions.<br/>In addition to form variables (field content) the following variables can also be used:: <ul><li><b>$lang</b>: string, current language</li><li><b>$mode</b> : string, <b>edit</b> oor <b>add</b></li></ul>If an expression evaluates to true, the corresponding error message is displayed.",
+      "description_de": "Form globale Validierung mittels js-expressions.<br/>Neben den Formvariablen(Feldinhalte) können auch folgende Variablen benutzt werden: <ul><li><b>$lang</b>: string, aktuelle Sprache</li><li><b>$mode</b> : string, <b>edit</b> oder <b>add</b></li></ul>Wenn ein Ausdruck true ergibt, wird die entsprechende Fehlermeldung angezeigt.",
+      "popular": false,
+      "optional": true,
+      "complexItems": [ {
+        "id": "expr",
+        "name": "Expression",
+        "type": "String",
+        "value": "",
+        "width": 200,
+        "optional": false
+      }, {
+        "id": "errormsg",
+        "name": "Error message",
+        "type": "String",
+        "value": "",
+        "width": 250,
+        "optional": false
+      } ]
+    }, {
       "id": "xf_postprocess",
       "config": {
         "mode": "text/x-groovy"
