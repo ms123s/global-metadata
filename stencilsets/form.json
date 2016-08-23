@@ -569,7 +569,9 @@
       "title": "Postprocess(backend)",
       "title_de": "Nachbearbeitung(backend)",
       "value": "",
-      "popular": true,
+			"description":"Can only be used in the context of a process. <br/> The script must be in groovy syntax and is executed before  the completion of a hauman task. <br/>It can be errors set, as seen in the example,  to prevent the completion the task<br/><br/>a example:<pre>def mitarbeiter = executeNamedFilter(\"employee_check.filter\", [surname:request.name]).first()\ndef days = toDays(request.ende-request.start)\nif( days <= 0){\n  request.errors=[[\n    path:'ende',\n    message:'Das \"Ende\"-Datum muss nach dem \"Start\"-Datum sein.'\n  ]]\n}else if( days > mitarbeiter.remaining){\n  request.errors=[[\n    path:'ende',\n    message:'Sie haben nur noch '+mitarbeiter.remaining+ ' Tage Urlaub.'\n  ]]\n}</pre> ",
+			"description_de":"Wird nur ausgeführt, wenn die Form im Kontext eines Prozess benutzt wird.<br/>Das Script muss in groovy Syntax sein und wird vor dem komplettieren einer Human Task ausgeführt.<br/>Es können wie im Beipsiel zu sehen, Fehler gesetzt werden, die das komplettieren der Task verhindern<br/><br/>Ein Beipiel:<pre>def mitarbeiter = executeNamedFilter(\"employee_check.filter\", [surname:request.name]).first()\ndef days = toDays(request.ende-request.start)\nif( days <= 0){\n  request.errors=[[\n    path:'ende',\n    message:'Das \"Ende\"-Datum muss nach dem \"Start\"-Datum sein.'\n  ]]\n}else if( days > mitarbeiter.remaining){\n  request.errors=[[\n    path:'ende',\n    message:'Sie haben nur noch '+mitarbeiter.remaining+ ' Tage Urlaub.'\n  ]]\n}</pre> ",
+      "popular": false,
       "readonly": false,
       "optional": true,
       "length": "50"
