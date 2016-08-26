@@ -212,7 +212,7 @@
         "width": 80,
         "optional": false
       } ]
-    } ],
+    } ]
   }, {
     "name": "visibilityPackage",
     "properties": [ {
@@ -1490,8 +1490,8 @@
       "description": "Label",
       "popular": true,
       "readonly": false,
-      "optional": true
-      "refToView": "",
+      "optional": true,
+      "refToView": ""
     }, {
       "id": "xf_iconname",
       "type": "String",
