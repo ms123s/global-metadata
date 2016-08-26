@@ -337,7 +337,7 @@
       "title_de": "Standard Buttons",
       "prefix": "oryx",
       "value": true,
-      "description": "Buttons to be displayed automatically,<br/> without defining them in the form of model.",
+      "description": "Buttons to be displayed automatically,<br/> without defining them in the formmodel.",
       "description_de": "Buttons die automatisch angezeigt werden sollen, <br/>ohne sie im Formmodell zu definieren.",
       "popular": true,
       "readonly": false,
