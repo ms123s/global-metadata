@@ -2635,10 +2635,39 @@
 			} ]
 		} ]
 	}, {
+		"name": "subscribeProperties",
+		"properties": [ {
+			"id": "uriparam_topic",
+			"description": "The topic without the namspace, the publisher must be pefix the topic with the namespace:<b>namespace.topic</b> ",
+			"title": "Topic",
+			"visible": "urivalue_mode=='subscribe'",
+			"type": "String",
+			"value": null
+		}, {
+			"id": "uriparam_match",
+			"title": "Match",
+			"readonly": false,
+			"include": false,
+			"type": "Choice",
+			"value": "exact",
+			"visible": "urivalue_mode=='subscribe'",
+			"items": [ {
+				"id": "exact",
+				"title": "Exact",
+				"value": "exact"
+			}, {
+				"id": "wildcard",
+				"title": "Wildcard",
+				"value": "wildcard"
+			} ],
+			"width": 80,
+			"optional": true
+		} ]
+	}, {
 		"name": "publishProperties",
 		"properties": [ {
 			"id": "uriparam_topic",
-			"description": "The topic without the namspace, on the client the topic must be pefixed with the namespace:<b>namespace.topic</b> ",
+			"description": "The topic without the namspace, the subscriber must be pefix the topic with the namespace:<b>namespace.topic</b> ",
 			"title": "Topic",
 			"visible": "urivalue_mode=='pub'",
 			"type": "String",
@@ -2769,6 +2798,10 @@
 				"id": "c2",
 				"title": "RPC",
 				"value": "rpc"
+			}, {
+				"id": "c3",
+				"title": "Subscribe",
+				"value": "subscribe"
 			} ],
 			"visible": true
 		} ]
@@ -3816,7 +3849,7 @@
 		"icon": "wampendpoint.png",
 		"groups": [ "Endpoints M-Z" ],
 		"groups_de": [ "Endpunkte M-Z" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties", "rpcProperties", "publishProperties", "permissionProperties", "extraParamsProperties" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties", "rpcProperties", "publishProperties", "subscribeProperties", "permissionProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
