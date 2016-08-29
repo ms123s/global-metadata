@@ -2771,6 +2771,14 @@
         "msgstr": "Done"
     },
     {
+        "msgid": "processexplorer.definition.confirm_delete",
+        "msgstr": "Delete selected processdefinitions?"
+    },
+    {
+        "msgid": "processexplorer.definition.definitions_deleted",
+        "msgstr": "Processdefinitions deleted"
+    },
+    {
         "msgid": "processexplorer.definition.key",
         "msgstr": "Key"
     },
