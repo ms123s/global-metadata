@@ -1112,6 +1112,10 @@
 				"value": "getProcessVariables"
 			}, {
 				"id": "c6",
+				"title": "queryProcessInstances",
+				"value": "queryProcessInstances"
+			}, {
+				"id": "c7",
 				"title": "publishEvents",
 				"value": "publishEvents"
 			} ],
@@ -1225,6 +1229,45 @@
 			"type": "String",
 			"value": null,
 			"readonly": false,
+		}, {
+			"id": "uriparam_assignments",
+			"type": "Complex",
+			"config": {
+				"asArray": true,
+				"namespace": "${uriparam_namespace}"
+			},
+			"title": "Assignments",
+			"title_de": "Zuweisungen",
+			"description": "Assigning service headers and properties to process variables.<br>Alternate to headerfields",
+			"description_de": "Zuweisung von Service Headers und Properties zu Prozessvariblen. <br>Alternative zu Headerfields",
+			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents'",
+			"value": null,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "expr",
+				"name_de": "Ausdruck",
+				"name": "Expression",
+				"type": "String",
+				"value": null,
+				"width": 250
+			}, {
+				"id": "type",
+				"name": "Type",
+				"name_de": "Typ",
+				"readonly": false,
+				"type": "Choice",
+				"value": "string",
+				"items": "###parametertype_items",
+				"width": 180
+			}, {
+				"id": "variable",
+				"name_de": "Prozessvariable",
+				"name": "Processvariable",
+				"type": "String",
+				"value": null,
+				"width": 250
+			} ]
 		}, {
 			"id": "uriparam_processCriteria",
 			"type": "Complex",
@@ -4271,18 +4314,23 @@
 		}, {
 			"id": "activityId",
 			"title": "activityId",
-			"enabled": "urivalue_operation!='startProcess'",
+			"enabled": "urivalue_operation!='startProcess' && urivalue_operation!='queryProcessInstances'",
 			"value": "activityId"
 		}, {
 			"id": "executionId",
 			"title": "executionId",
-			"enabled": "urivalue_operation!='startProcess'",
+			"enabled": "urivalue_operation!='startProcess' && urivalue_operation!='queryProcessInstances'",
 			"value": "executionId"
 		}, {
 			"id": "processVariable",
 			"title": "processVariable",
 			"enabled": "urivalue_operation!='startProcess'",
 			"value": "processVariable"
+		}, {
+			"id": "finished",
+			"title": "finished",
+			"enabled": "urivalue_operation=='queryProcessInstances'",
+			"value": "finished"
 		} ],
 		"settingssources_items": [ {
 			"id": "const",

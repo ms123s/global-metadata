@@ -1792,7 +1792,7 @@
 		"groups_de": [ "Ende Ereignisse" ],
 		"view": "endevent/error.svg",
 		"icon": "endevent/error.png",
-		"propertyPackages": [ "baseProperties", "colorProperties" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "errorrefProperties" ],
 		"roles": [ "all", "sequence_end", "Endevents_all", "EndEventsMorph" ]
 	}, {
 		"type": "node",
@@ -1825,7 +1825,7 @@
 		"groups_de": [ "Rand Ereignisse" ],
 		"view": "catching/timer.svg",
 		"icon": "catching/timer.png",
-		"propertyPackages": [ "baseProperties", "colorProperties", "timerdefinition", "timerenddatedefinitionpackage", "errorrefProperties", "cancelactivityProperties" ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "timerdefinition", "timerenddatedefinitionpackage", "cancelactivityProperties" ],
 		"roles": [ "sequence_start", "BoundaryEventsMorph", "IntermediateEventOnActivityBoundary" ]
 	}, {
 		"type": "node",

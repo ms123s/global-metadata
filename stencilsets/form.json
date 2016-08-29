@@ -1090,7 +1090,7 @@
       "title": "Fields",
       "title_de": "Felder",
       "description_de": "Die Klassenfelder die berücksichtig werden sollen und die Zuweisung zu den Formfeldern",
-      "description": "The class fields you want to include and the assigment to the form fields",
+      "description": "The class fields you want to include and the assignment to the form fields",
       "value": "",
       "popular": true,
       "readonly": "xf_module==''||xf_module==null",
