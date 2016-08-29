@@ -2984,7 +2984,7 @@
     },
     {
         "msgid": "processexplorer.camel",
-        "msgstr": "Camel"
+        "msgstr": "Services"
     },
     {
         "msgid": "shell.process_saved",
@@ -3092,7 +3092,7 @@
     },
     {
         "msgid": "processexplorer.details_camel",
-        "msgstr": "Camel"
+        "msgstr": "Service"
     },
     {
         "msgid": "processexplorer.routeId",
