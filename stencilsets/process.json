@@ -820,6 +820,15 @@
 				"width": 150,
 				"optional": false
 			}, {
+				"id": "type",
+				"name": "Type",
+				"name_de": "Typ",
+				"readonly": false,
+				"type": "Choice",
+				"value": "string",
+				"items": "###parametertype_items",
+				"width": 180
+			}, {
 				"id": "value",
 				"name_de": "Wert",
 				"name": "Value",
@@ -1201,6 +1210,33 @@
 			"readonly": false,
 			"optional": true,
 			"length": "50"
+		}, {
+			"id": "returnmapping",
+			"type": "Complex",
+			"title": "Return-Mapping",
+			"title_de": "Return Zuordnung",
+			"value": "",
+			"description": "Mapping service return to processvariables",
+			"description_de": "Zuordnung von der Servicerückgabe zu  Prozessvariablen",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "processvar",
+				"name_de": "Prozessvariable",
+				"name": "Processvariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "routevar",
+				"name_de": "Servicevariable",
+				"name": "Servicevariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			} ]
 		}, {
 			"id": "tasktype",
 			"type": "String",
@@ -2008,6 +2044,41 @@
 		}, {
 			"role": "TextAnnotation",
 			"baseMorphs": [ "TextAnnotation" ]
+		} ]
+	},
+	"definitions": {
+		"parametertype_items": [ {
+			"id": "string",
+			"title": "String",
+			"value": "string"
+		}, {
+			"id": "integer",
+			"title": "Integer",
+			"value": "integer"
+		}, {
+			"id": "long",
+			"title": "Long",
+			"value": "long"
+		}, {
+			"id": "double",
+			"title": "Double",
+			"value": "double"
+		}, {
+			"id": "boolean",
+			"title": "Boolean",
+			"value": "boolean"
+		}, {
+			"id": "date",
+			"title": "Date",
+			"value": "date"
+		}, {
+			"id": "list",
+			"title": "List",
+			"value": "list"
+		}, {
+			"id": "map",
+			"title": "Map",
+			"value": "map"
 		} ]
 	}
 }
