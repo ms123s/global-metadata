@@ -1116,6 +1116,10 @@
 				"value": "queryProcessInstances"
 			}, {
 				"id": "c7",
+				"title": "queryTasks",
+				"value": "queryTasks"
+			}, {
+				"id": "c8",
 				"title": "publishEvents",
 				"value": "publishEvents"
 			} ],
@@ -1173,7 +1177,7 @@
 			"optional": true
 		}, {
 			"id": "uriparam_businessKey",
-			"visible": "!urivalue_operation.startsWith('publishEvents')",
+			"visible": "!urivalue_operation.startsWith('publishEvents') && urivalue_operation!='queryTasks'",
 			"type": "String",
 			"title": "BusinessKey",
 			"value": null,
@@ -1216,7 +1220,7 @@
 			"title": "Headerfields",
 			"description_de": "Angebene Headerfelder in den Variablenbereich des Prozesses kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Maps werden unter dem Headernamen ins Datenmodell übernommen,wenn der Modifier :asMap angegehängt ist, dataModel.put(headerName, Map).</li><li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
 			"description": "Copy specified headerfields into the variables space of the process, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Maps will be transferred to the data model with the header name,if the modifier :asMap is appended, dataModel.put(headerName, Map).</li><li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
-			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents'",
+			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks'",
 			"type": "String",
 			"value": null,
 			"readonly": false,
@@ -1225,7 +1229,7 @@
 			"title": "VariableNames",
 			"description_de": "VariableNames, die veröffentlicht werden.Komma getrennt. Wenn leer dann alle",
 			"description": "VariableNames that are published. separated by commas.if empty then alle",
-			"visible": "urivalue_operation=='getProcessVariables' || urivalue_operation=='publishEvents'",
+			"visible": "urivalue_operation=='getProcessVariables' || urivalue_operation=='publishEvents' && urivalue_operation!= 'queryProcessInstances' && urivalue_operation!='queryTasks'",
 			"type": "String",
 			"value": null,
 			"readonly": false,
@@ -1240,7 +1244,7 @@
 			"title_de": "Zuweisungen",
 			"description": "Assigning service headers and properties to process variables.<br>Alternate to headerfields",
 			"description_de": "Zuweisung von Service Headers und Properties zu Prozessvariblen. <br>Alternative zu Headerfields",
-			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents'",
+			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks'",
 			"value": null,
 			"readonly": false,
 			"optional": true,
@@ -1280,7 +1284,7 @@
 			"title_de": "Prozesskriterien",
 			"description": "Criteria of the process which is to be executed or a signal sent",
 			"description_de": "Kriterien des Prozesses der ausgeführt werden soll oder dem ein Signal gesendet werden soll",
-			"visible": "urivalue_operation!='publishEvents'",
+			"visible": "urivalue_operation!='publishEvents' && urivalue_operation!='queryTasks'",
 			"value": null,
 			"readonly": false,
 			"optional": true,
@@ -1292,6 +1296,39 @@
 				"type": "Choice",
 				"value": "processDefinitionKey",
 				"items": "###processcriteria_items",
+				"width": 180
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": null,
+				"width": 250
+			} ]
+		}, {
+			"id": "uriparam_taskCriteria",
+			"type": "Complex",
+			"config": {
+				"asArray": true,
+				"helperTree": [ "sw.process" ],
+				"namespace": "${uriparam_namespace}"
+			},
+			"title": "Taskcriteria",
+			"title_de": "Taskkriterien",
+			"description": "Criteria of  tasks, which are queried",
+			"description_de": "Kriterien der Tasks, die abgefragt werden",
+			"visible": "urivalue_operation=='queryTasks'",
+			"value": null,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "name",
+				"name": "Name",
+				"name_de": "Name",
+				"readonly": false,
+				"type": "Choice",
+				"value": null,
+				"items": "###taskcriteria_items",
 				"width": 180
 			}, {
 				"id": "value",
@@ -4331,6 +4368,55 @@
 			"title": "finished",
 			"enabled": "urivalue_operation=='queryProcessInstances'",
 			"value": "finished"
+		} ],
+		"taskcriteria_items": [ {
+			"id": "processDefinitionKey",
+			"title": "processDefinitionKey",
+			"value": "processDefinitionKey"
+		}, {
+			"id": "processDefinitionKeyLike",
+			"title": "processDefinitionKeyLike",
+			"value": "processDefinitionKeyLike"
+		}, {
+			"id": "processDefinitionId",
+			"title": "processDefinitionId",
+			"value": "processDefinitionId"
+		}, {
+			"id": "processInstanceId",
+			"title": "processInstanceId",
+			"value": "processInstanceId"
+		}, {
+			"id": "processInstanceBusinessKey",
+			"title": "processInstanceBusinessKey",
+			"value": "processInstanceBusinessKey"
+		}, {
+			"id": "taskDefinitionKey",
+			"title": "taskDefinitionKey",
+			"value": "taskDefinitionKey"
+		}, {
+			"id": "processVariableValueEquals",
+			"title": "processVariableValueEquals",
+			"value": "processVariableValueEquals"
+		}, {
+			"id": "processVariableValueLike",
+			"title": "processVariableValueLike",
+			"value": "processVariableValueLike"
+		}, {
+			"id": "taskCandidateUser",
+			"title": "taskCandidateUser",
+			"value": "taskCandidateUser"
+		}, {
+			"id": "taskCandidateGroup",
+			"title": "taskCandidateGroup",
+			"value": "taskCandidateGroup"
+		}, {
+			"id": "taskOwner",
+			"title": "taskOwner",
+			"value": "taskOwner"
+		}, {
+			"id": "taskAssignee",
+			"title": "taskAssignee",
+			"value": "taskAssignee"
 		} ],
 		"settingssources_items": [ {
 			"id": "const",

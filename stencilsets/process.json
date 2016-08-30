@@ -1216,7 +1216,7 @@
 			"title": "Return-Mapping",
 			"title_de": "Return Zuordnung",
 			"value": "",
-			"description": "Mapping service return to processvariables",
+			"description": "Mapping service return values to processvariables",
 			"description_de": "Zuordnung von der Servicerückgabe zu  Prozessvariablen",
 			"readonly": false,
 			"optional": true,
