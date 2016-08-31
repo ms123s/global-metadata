@@ -1120,6 +1120,10 @@
 				"value": "queryTasks"
 			}, {
 				"id": "c8",
+				"title": "executeTaskOperation",
+				"value": "executeTaskOperation"
+			}, {
+				"id": "c9",
 				"title": "publishEvents",
 				"value": "publishEvents"
 			} ],
@@ -1157,6 +1161,17 @@
 			"readonly": false,
 			"optional": true
 		}, {
+			"id": "uriparam_checkAssignments",
+			"visible": "urivalue_operation=='executeTaskOperation' && uriparam_taskOperation=='complete'",
+			"description": "Allow only assignments that are defined in the Task Form.<br>In addition, the values are checked for plausibility.",
+			"description_de": "Erlaube nur Zuweisungen die in der  Taskform definiert sind.<br>Außerdem werden die Werte auf Plausibilität überprüft.",
+			"type": "Boolean",
+			"title": "Check assignments",
+			"title_de": "Zuweisungsprüfung",
+			"value": null,
+			"readonly": false,
+			"optional": true
+		}, {
 			"id": "uriparam_sendMessage",
 			"visible": "urivalue_operation.startsWith('startProcess')",
 			"description": "If the process is already running, then send a message",
@@ -1177,7 +1192,7 @@
 			"optional": true
 		}, {
 			"id": "uriparam_businessKey",
-			"visible": "!urivalue_operation.startsWith('publishEvents') && urivalue_operation!='queryTasks'",
+			"visible": "!urivalue_operation.startsWith('publishEvents') && urivalue_operation!='queryTasks' && urivalue_operation!='executeTaskOperation'",
 			"type": "String",
 			"title": "BusinessKey",
 			"value": null,
@@ -1215,12 +1230,48 @@
 			"visible": "urivalue_operation=='publishEvents'",
 			"length": "50"
 		}, {
+			"id": "uriparam_taskOperation",
+			"visible": "urivalue_operation=='executeTaskOperation'",
+			"type": "Choice",
+			"title": "Operation",
+			"title_de": "Operation",
+			"prefix": "oryx",
+			"value": "claim",
+			"popular": false,
+			"readonly": false,
+			"optional": true,
+			"items": [ {
+				"id": "c1",
+				"title": "claim",
+				"value": "claim"
+			}, {
+				"id": "c2",
+				"title": "unclaim",
+				"value": "unclaim"
+			}, {
+				"id": "c3",
+				"title": "complete",
+				"value": "complete"
+			}, {
+				"id": "c4",
+				"title": "assign",
+				"value": "assign"
+			} ]
+		}, {
+			"id": "uriparam_taskId",
+			"visible": "urivalue_operation=='executeTaskOperation'",
+			"type": "String",
+			"title": "TaskId",
+			"value": null,
+			"readonly": false,
+			"optional": true
+		}, {
 			"id": "uriparam_headerFields",
 			"title_de": "Headerfelder",
 			"title": "Headerfields",
 			"description_de": "Angebene Headerfelder in den Variablenbereich des Prozesses kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Maps werden unter dem Headernamen ins Datenmodell übernommen,wenn der Modifier :asMap angegehängt ist, dataModel.put(headerName, Map).</li><li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
 			"description": "Copy specified headerfields into the variables space of the process, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Maps will be transferred to the data model with the header name,if the modifier :asMap is appended, dataModel.put(headerName, Map).</li><li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
-			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks'",
+			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation=='complete')",
 			"type": "String",
 			"value": null,
 			"readonly": false,
@@ -1244,7 +1295,7 @@
 			"title_de": "Zuweisungen",
 			"description": "Assigning service headers and properties to process variables.<br>Alternate to headerfields",
 			"description_de": "Zuweisung von Service Headers und Properties zu Prozessvariblen. <br>Alternative zu Headerfields",
-			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks'",
+			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation=='complete')",
 			"value": null,
 			"readonly": false,
 			"optional": true,
@@ -1284,7 +1335,7 @@
 			"title_de": "Prozesskriterien",
 			"description": "Criteria of the process which is to be executed or a signal sent",
 			"description_de": "Kriterien des Prozesses der ausgeführt werden soll oder dem ein Signal gesendet werden soll",
-			"visible": "urivalue_operation!='publishEvents' && urivalue_operation!='queryTasks'",
+			"visible": "urivalue_operation!='publishEvents' && urivalue_operation!='queryTasks' && urivalue_operation!='executeTaskOperation'",
 			"value": null,
 			"readonly": false,
 			"optional": true,
