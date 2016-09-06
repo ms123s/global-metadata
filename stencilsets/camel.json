@@ -2768,7 +2768,7 @@
 	}, {
 		"name": "subscribeProperties",
 		"properties": [ {
-			"id": "uriparam_topic",
+			"id": "uriparam_topic2",
 			"description": "The topic without the namspace, the publisher must be pefix the topic with the namespace:<b>namespace.topic</b> ",
 			"title": "Topic",
 			"visible": "urivalue_mode=='subscribe'",
