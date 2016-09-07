@@ -2097,8 +2097,58 @@
 			"description":    "Where is the objectId? e.g. <ul><li> <b>header.objectId</b> or short: <b>h.objectId</b></li><li><b>property.objectId</b> or short <b>p.objectId</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
 			"value": null,
-			"optional": false,
+			"optional": true,
 			"visible": "urivalue_operation=='update' || urivalue_operation=='upsert' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
+		}, {
+			"id": "uriparam_where",
+			"title": "Where",
+			"title_de": "Where",
+			"description_de": "Die komplete where clause. Beispiel: <br/> <b>belegnr == '${p.item.belegnr}' && nr == '${p.item.nr}'</b>",
+			"description": "The complete where clause. Example: belegnr == '${p.item.belegnr}' && nr == '${p.item.nr}'",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "urivalue_operation=='update' || urivalue_operation=='upsert' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
+		}, {
+			"id": "uriparam_objectCriteria",
+			"type": "Complex",
+			"config": {
+				"asArray": true,
+				"namespace": "${uriparam_namespace}"
+			},
+			"title": "Objectcriteria",
+			"title_de": "Objektkriterien",
+			"description": "Criteria of  the object.Alternate for ObjectId or complete WhereClause<br/>Examples:<table><tr><th>Name</th><th>Operator</th><th>Value</th><tr><td>belegnr</td><td>==</td><td>p.prop1</td></tr>",
+			"description_de": "Kriterien des Objekts. Alternative für ObjectId oder der kompletter WhereClause.<br/>Examples:<table><tr><th>Name</th><th>Operator</th><th>Value</th><tr><td>belegnr</td><td>==</td><td>p.prop1</td></tr>",
+			"visible": "urivalue_operation=='update' || urivalue_operation=='upsert' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
+			"value": null,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "name",
+				"name": "Name",
+				"name_de": "Name",
+				"readonly": false,
+				"type": "String",
+				"value": null,
+				"width": 180
+			}, {
+				"id": "op",
+				"name": "Operator",
+				"name_de": "Operator",
+				"readonly": false,
+				"type": "Choice",
+				"value": null,
+				"items": "###objectcriteria_operations",
+				"width": 180
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": null,
+				"width": 250
+			} ]
 		}, {
 			"id": "_uriparam_paramHeaders",
 			"title_de": "Filterparameter",
@@ -4468,6 +4518,43 @@
 			"id": "taskAssignee",
 			"title": "taskAssignee",
 			"value": "taskAssignee"
+		} ],
+		"objectcriteria_operations": [ {
+			"id": "==",
+			"title": "==",
+			"value": "=="
+		}, {
+			"id": ">",
+			"title": ">",
+			"value": ">"
+		}, {
+			"id": ">=",
+			"title": ">=",
+			"value": ">="
+		}, {
+			"id": "<",
+			"title": "<",
+			"value": "<"
+		}, {
+			"id": "<=",
+			"title": "<=",
+			"value": "<="
+		}, {
+			"id": "startsWith",
+			"title": "startsWith",
+			"value": "startsWith"
+		}, {
+			"id": "endsWith",
+			"title": "endsWith",
+			"value": "endsWith"
+		}, {
+			"id": "matches",
+			"title": "matches",
+			"value": "matches"
+		}, {
+			"id": "equalsIgnoreCase",
+			"title": "equalsIgnoreCase",
+			"value": "equalsIgnoreCase"
 		} ],
 		"settingssources_items": [ {
 			"id": "const",
