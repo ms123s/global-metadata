@@ -1972,16 +1972,52 @@
 				"value": "insert"
 			}, {
 				"id": "c2",
-				"title": "Update",
-				"value": "update"
+				"title": "UpdateById",
+				"value": "updateById"
+			}, {
+				"id": "c2",
+				"title": "UpdateByFilter",
+				"value": "updateByFilter"
+			}, {
+				"id": "c2",
+				"title": "UpdateByWhere",
+				"value": "updateByWhere"
+			}, {
+				"id": "c2",
+				"title": "UpdateByCriteria",
+				"value": "updateByCriteria"
 			}, {
 				"id": "c3",
-				"title": "Upsert",
-				"value": "upsert"
+				"title": "UpsertById",
+				"value": "upsertById"
+			}, {
+				"id": "c3",
+				"title": "UpsertByFilter",
+				"value": "upsertByFilter"
+			}, {
+				"id": "c3",
+				"title": "UpsertByWhere",
+				"value": "upsertByWhere"
+			}, {
+				"id": "c3",
+				"title": "UpsertByCriteria",
+				"value": "upsertByCriteria"
 			}, {
 				"id": "c4",
-				"title": "Delete",
-				"value": "delete"
+				"title": "DeleteById",
+				"value": "deleteById"
+			}, {
+				"id": "c4",
+				"title": "DeleteByFilter",
+				"value": "deleteByFilter"
+			}, {
+				"id": "c4",
+				"title": "DeleteByWhere",
+				"value": "deleteByWhere"
+			}, {
+				"id": "c4",
+				"title": "DeleteByCriteria",
+				"value": "deleteByCriteria"
 			}, {
 				"id": "c5",
 				"title": "FindById",
@@ -1991,9 +2027,29 @@
 				"title": "FindByFilter",
 				"value": "findByFilter"
 			}, {
+				"id": "c6",
+				"title": "FindByWhere",
+				"value": "findByWhere"
+			}, {
+				"id": "c6",
+				"title": "FindByCriteria",
+				"value": "findByCriteria"
+			}, {
+				"id": "c7",
+				"title": "FindOneById",
+				"value": "findOneById"
+			}, {
 				"id": "c7",
 				"title": "FindOneByFilter",
 				"value": "findOneByFilter"
+			}, {
+				"id": "c7",
+				"title": "FindOneByWhere",
+				"value": "findOneByWhere"
+			}, {
+				"id": "c7",
+				"title": "FindOneByCriteria",
+				"value": "findOneByCriteria"
 			}, {
 				"id": "c8",
 				"title": "MultiInsertUpdate",
@@ -2066,7 +2122,15 @@
 			"type": "String",
 			"value": null,
 			"optional": true,
-			"visible": "urivalue_operation=='insert' || urivalue_operation=='update' || urivalue_operation=='upsert' || urivalue_operation=='multiInsertUpdate'"
+			"visible": "urivalue_operation=='insert' || urivalue_operation.startsWith('updateBy') || urivalue_operation.startsWith('upsert') || urivalue_operation=='multiInsertUpdate'"
+		}, {
+			"id": "uriparam_entityType",
+			"title": "Entitytype",
+			"title_de": "Entitätstyp",
+			"type": "String",
+			"value": null,
+			"optional": false,
+			"visible": "urivalue_operation=='insert' || urivalue_operation.startsWith('updateBy') || urivalue_operation.startsWith('upsert') || urivalue_operation.startsWith('delete') ||  urivalue_operation.startsWith('findBy')"
 		}, {
 			"id": "uriparam_filterName",
 			"title": "Filtername",
@@ -2080,15 +2144,37 @@
 			},
 			"optional": false,
 			"value": null,
-			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter'"
+			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' || urivalue_operation=='updateByFilter' || urivalue_operation=='upsertByFilter' || urivalue_operation=='deleteByFilter'"
 		}, {
-			"id": "uriparam_entityType",
-			"title": "Entitytype",
-			"title_de": "Entitätstyp",
-			"type": "String",
+			"id": "uriparam_filterParameter",
+			"type": "Complex",
+			"config": {
+				"asArray": true,
+				"namespace": "${uriparam_namespace}"
+			},
+			"title": "Filterparameter",
+			"description": "Filterparameter.<br/>Examples:<table><tr><th>Name</th><th>Value</th><tr><td>belegnr</td><td>p.prop1</td></tr>",
+			"description_de": "Filterparameter. <br/>Examples:<table><tr><th>Name</th><th>Value</th><tr><td>belegnr</td><td>p.prop1</td></tr>",
+			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' || urivalue_operation=='updateByFilter' || urivalue_operation=='upsertByFilter' || urivalue_operation=='deleteByFilter'"
 			"value": null,
-			"optional": false,
-			"visible": "urivalue_operation=='insert' || urivalue_operation=='update' || urivalue_operation=='upsert' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "name",
+				"name": "Name",
+				"name_de": "Name",
+				"readonly": false,
+				"type": "String",
+				"value": null,
+				"width": 180
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": null,
+				"width": 250
+			} ]
 		}, {
 			"id": "uriparam_objectId",
 			"title": "ObjectId",
@@ -2098,7 +2184,7 @@
 			"type": "String",
 			"value": null,
 			"optional": true,
-			"visible": "urivalue_operation=='update' || urivalue_operation=='upsert' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
+			"visible": "urivalue_operation=='updateById' || urivalue_operation=='upsertById' || urivalue_operation=='deleteById' ||  urivalue_operation=='findById'"
 		}, {
 			"id": "uriparam_where",
 			"title": "Where",
@@ -2108,7 +2194,7 @@
 			"type": "String",
 			"value": null,
 			"optional": true,
-			"visible": "urivalue_operation=='update' || urivalue_operation=='upsert' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
+			"visible": "urivalue_operation=='updateByWhere' || urivalue_operation=='upsertByWhere' || urivalue_operation=='deleteByWhere' ||  urivalue_operation=='findByWhere'"
 		}, {
 			"id": "uriparam_objectCriteria",
 			"type": "Complex",
@@ -2120,7 +2206,7 @@
 			"title_de": "Objektkriterien",
 			"description": "Criteria of  the object.Alternate for ObjectId or complete WhereClause<br/>Examples:<table><tr><th>Name</th><th>Operator</th><th>Value</th><tr><td>belegnr</td><td>==</td><td>p.prop1</td></tr>",
 			"description_de": "Kriterien des Objekts. Alternative für ObjectId oder der kompletter WhereClause.<br/>Examples:<table><tr><th>Name</th><th>Operator</th><th>Value</th><tr><td>belegnr</td><td>==</td><td>p.prop1</td></tr>",
-			"visible": "urivalue_operation=='update' || urivalue_operation=='upsert' || urivalue_operation=='delete' ||  urivalue_operation=='findById'"
+			"visible": "urivalue_operation=='updateByCriteria' || urivalue_operation=='upsertByCriteria' || urivalue_operation=='deleteByCriteria' ||  urivalue_operation=='findByCriteria'"
 			"value": null,
 			"readonly": false,
 			"optional": true,
@@ -2150,27 +2236,6 @@
 				"width": 250
 			} ]
 		}, {
-			"id": "_uriparam_paramHeaders",
-			"title_de": "Filterparameter",
-			"title": "Filterparameter",
-			"description_de": "Angebene Headerfelder(Komma getrennt) als Filterparameter benutzen, oder alle wenn nichts angeben ist",
-			"description": "Use specified headerfields(comma separated)  as filterparameter, or all if nothing is specified.",
-			"include": false,
-			"type": "String",
-			"value": null,
-			"readonly": false,
-			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter'"
-		}, {
-			"id": "uriparam_paramHeaders",
-			"title_de": "Filterparameter",
-			"title": "Filterparameter",
-			"description_de": "Angebene Headerfelder in den Variablenbereich des Filters kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Maps werden unter dem Headernamen ins Datenmodell übernommen,wenn der Modifier :asMap angegehängt ist, dataModel.put(headerName, Map).</li><li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
-			"description": "Copy specified headerfields into the variables space of the filter, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Maps will be transferred to the data model with the header name,if the modifier :asMap is appended, dataModel.put(headerName, Map).</li><li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
-			"type": "String",
-			"value": null,
-			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter'"
-			"readonly": false,
-		}, {
 			"id": "uriparam_destination",
 			"title": "Destination",
 			"title_de": "Ziel",
@@ -2179,7 +2244,7 @@
 			"type": "String",
 			"value": null,
 			"optional": true,
-			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' ||  urivalue_operation=='findById'"
+			"visible": "urivalue_operation.startsWith('find')"
 		} ]
 	}, {
 		"name": "repoProperties",
@@ -3910,7 +3975,7 @@
 		"icon": "databaseendpoint.png",
 		"groups": [ "Endpoints A-L" ],
 		"groups_de": [ "Endpunkte A-L" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "localdataProperties", "extraParamsProperties" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "localdataProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
