@@ -2130,7 +2130,7 @@
 			"type": "String",
 			"value": null,
 			"optional": false,
-			"visible": "urivalue_operation=='insert' || urivalue_operation.startsWith('updateBy') || urivalue_operation.startsWith('upsert') || urivalue_operation.startsWith('delete') ||  urivalue_operation.startsWith('findBy')"
+			"visible": "urivalue_operation=='insert' || urivalue_operation.startsWith('updateBy') || urivalue_operation.startsWith('upsert') || urivalue_operation.startsWith('delete') ||  urivalue_operation.startsWith('find')"
 		}, {
 			"id": "uriparam_filterName",
 			"title": "Filtername",
@@ -2144,7 +2144,7 @@
 			},
 			"optional": false,
 			"value": null,
-			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' || urivalue_operation=='updateByFilter' || urivalue_operation=='upsertByFilter' || urivalue_operation=='deleteByFilter'"
+			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' || urivalue_operation=='findOneByFilter' || urivalue_operation=='updateByFilter' || urivalue_operation=='upsertByFilter' || urivalue_operation=='deleteByFilter'"
 		}, {
 			"id": "uriparam_filterParameter",
 			"type": "Complex",
@@ -2155,7 +2155,7 @@
 			"title": "Filterparameter",
 			"description": "Filterparameter.<br/>Examples:<table><tr><th>Name</th><th>Value</th><tr><td>belegnr</td><td>p.prop1</td></tr>",
 			"description_de": "Filterparameter. <br/>Examples:<table><tr><th>Name</th><th>Value</th><tr><td>belegnr</td><td>p.prop1</td></tr>",
-			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' || urivalue_operation=='updateByFilter' || urivalue_operation=='upsertByFilter' || urivalue_operation=='deleteByFilter'"
+			"visible": "urivalue_operation=='findOneByFilter' || urivalue_operation=='findByFilter' || urivalue_operation=='findOneByFilter' || urivalue_operation=='updateByFilter' || urivalue_operation=='upsertByFilter' || urivalue_operation=='deleteByFilter'"
 			"value": null,
 			"readonly": false,
 			"optional": true,
@@ -2184,7 +2184,7 @@
 			"type": "String",
 			"value": null,
 			"optional": true,
-			"visible": "urivalue_operation=='updateById' || urivalue_operation=='upsertById' || urivalue_operation=='deleteById' ||  urivalue_operation=='findById'"
+			"visible": "urivalue_operation=='updateById' || urivalue_operation=='upsertById' || urivalue_operation=='deleteById' ||  urivalue_operation=='findById' || urivalue_operation=='findOneById'"
 		}, {
 			"id": "uriparam_where",
 			"title": "Where",
@@ -2194,7 +2194,7 @@
 			"type": "String",
 			"value": null,
 			"optional": true,
-			"visible": "urivalue_operation=='updateByWhere' || urivalue_operation=='upsertByWhere' || urivalue_operation=='deleteByWhere' ||  urivalue_operation=='findByWhere'"
+			"visible": "urivalue_operation=='updateByWhere' || urivalue_operation=='upsertByWhere' || urivalue_operation=='deleteByWhere' ||  urivalue_operation=='findByWhere' || urivalue_operation=='findOneByWhere'"
 		}, {
 			"id": "uriparam_objectCriteria",
 			"type": "Complex",
@@ -2206,7 +2206,7 @@
 			"title_de": "Objektkriterien",
 			"description": "Criteria of  the object.Alternate for ObjectId or complete WhereClause<br/>Examples:<table><tr><th>Name</th><th>Operator</th><th>Value</th><tr><td>belegnr</td><td>==</td><td>p.prop1</td></tr>",
 			"description_de": "Kriterien des Objekts. Alternative für ObjectId oder der kompletter WhereClause.<br/>Examples:<table><tr><th>Name</th><th>Operator</th><th>Value</th><tr><td>belegnr</td><td>==</td><td>p.prop1</td></tr>",
-			"visible": "urivalue_operation=='updateByCriteria' || urivalue_operation=='upsertByCriteria' || urivalue_operation=='deleteByCriteria' ||  urivalue_operation=='findByCriteria'"
+			"visible": "urivalue_operation=='updateByCriteria' || urivalue_operation=='upsertByCriteria' || urivalue_operation=='deleteByCriteria' ||  urivalue_operation=='findByCriteria'  ||  urivalue_operation=='findOneByCriteria'"
 			"value": null,
 			"readonly": false,
 			"optional": true,
