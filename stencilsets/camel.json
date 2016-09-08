@@ -2117,8 +2117,8 @@
 			"id": "uriparam_source",
 			"title": "Source",
 			"title_de": "Quelle",
-			"description_de": "Woher kommen die Daten?, z.B. <ul><li> <b>header.data</b> oder kurz: <b>h.data</b> => Quelle ist das Headerfeld <b>data</b></li><li><b>property.data</b> oder kurz <b>p.data</b> =>  Quelle ist Property <b>data</b></li><li> default ist <b>body</b></li></ul>",
-			"description":    "Where are the data?, e.g. <ul><li> <b>header.data</b> or short: <b>h.data</b> => Source is the headerfield <b>data</b></li><li><b>property.data</b> or short <b>p.data</b> => Source is property <b>data</b></li><li> default is <b>body</b></li></ul>",
+			"description_de": "Ort der  Daten für update,insert oder upsert?, z.B. <ul><li> <b>header.data</b> oder kurz: <b>h.data</b> => Quelle ist das Headerfeld <b>data</b></li><li><b>property.data</b> oder kurz <b>p.data</b> =>  Quelle ist Property <b>data</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Location of the data for update,insert or upsert?, e.g. <ul><li> <b>header.data</b> or short: <b>h.data</b> => Source is the headerfield <b>data</b></li><li><b>property.data</b> or short <b>p.data</b> => Source is property <b>data</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
 			"value": null,
 			"optional": true,
@@ -2226,14 +2226,14 @@
 				"type": "Choice",
 				"value": null,
 				"items": "###objectcriteria_operations",
-				"width": 180
+				"width": 200
 			}, {
 				"id": "value",
 				"name_de": "Wert",
 				"name": "Value",
 				"type": "String",
 				"value": null,
-				"width": 250
+				"width": 350
 			} ]
 		}, {
 			"id": "uriparam_destination",
@@ -4589,6 +4589,10 @@
 			"title": "==",
 			"value": "=="
 		}, {
+			"id": "!=",
+			"title": "!=",
+			"value": "!="
+		}, {
 			"id": ">",
 			"title": ">",
 			"value": ">"
@@ -4620,6 +4624,10 @@
 			"id": "equalsIgnoreCase",
 			"title": "equalsIgnoreCase",
 			"value": "equalsIgnoreCase"
+		}, {
+			"id": "string",
+			"title": "Expr in right column",
+			"value": "string"
 		} ],
 		"settingssources_items": [ {
 			"id": "const",
