@@ -117,7 +117,7 @@
 		}, {
 			"id": "enrich",
 			"title": "Enrich",
-			"description": "Apache Camel supports two kinds of content enricher, as follows:<ul><li> enrich()—obtains additional data from the resource by sending a copy of the current exchange to a producer endpoint and then using the data from the resulting reply (the exchange created by the enricher is always an InOut exchange).</li><li> pollEnrich()—obtains the additional data by polling a consumer endpoint for data. Effectively, the consumer endpoint from the main route and the consumer endpoint in pollEnrich() are coupled, such that exchanges incoming on the main route trigger a poll of the pollEnrich() endpoint.</li></ul>",
+			"description": "Apache Camel supports two kinds of content enricher, as follows:<ul><li> enrich()—obtains additional data from the resource by sending a copy of the current exchange to a producer endpoint and then using the data from the resulting reply (the exchange created by the enricher is always an InOut exchange).</li><li> pollEnrich()—obtains the additional data by polling a consumer endpoint for data. Effectively, the consumer endpoint from the main service and the consumer endpoint in pollEnrich() are coupled, such that exchanges incoming on the main service trigger a poll of the pollEnrich() endpoint.</li></ul>",
 			"type": "Choice",
 			"popular": true,
 			"visible": true,
@@ -484,7 +484,7 @@
 			"id": "expression",
 			"title": "Expression",
 			"title_de": "Ausdruck",
-			"description": "Specifies the expression used to determine if the message is to be filtered from the route.",
+			"description": "Specifies the expression used to determine if the message is to be filtered from the service.",
 			"type": "Text",
 			"value": ""
 		}, {
@@ -578,7 +578,7 @@
 		}, {
 			"id": "option_onPrepareRef",
 			"title": "On Prepare ref",
-			"description": "Specifies a reference to a bean implementing a custom onPrepare processor<br/> that processes the original message before it is split up and passed to the next step in the route<br/> This property enables you to deep clone mutable message bodies, so the splitter creates separate, self-contained fragments of the message<br/> You can use this property to execute any kind of logic on a message exchange<br/>",
+			"description": "Specifies a reference to a bean implementing a custom onPrepare processor<br/> that processes the original message before it is split up and passed to the next step in the service<br/> This property enables you to deep clone mutable message bodies, so the splitter creates separate, self-contained fragments of the message<br/> You can use this property to execute any kind of logic on a message exchange<br/>",
 			"type": "String",
 			"value": "",
 			"visible": true
@@ -866,7 +866,7 @@
 		"properties": [ {
 			"id": "continued",
 			"title": "Continued",
-			"description": "Specifies an expression that determines whether the exception is ignored and<br/> processing of the original route continues after the onException route completes.",
+			"description": "Specifies an expression that determines whether the exception is ignored and<br/> processing of the original service continues after the onException service completes.",
 			"optional": false,
 			"type": "Text"
 		}, {
@@ -2620,15 +2620,16 @@
 		"properties": [ {
 			"id": "rpc",
 			"title": "RPC",
-			"description_de": "Soll die Route über rpc erreichbar sein?",
-			"description": "Should be the route reachable via rpc?",
+			"description_de": "Soll der Service über rpc erreichbar sein?",
+			"description": "Should be the service reachable via rpc?",
 			"type": "boolean",
 			"value": false,
 			"visible": true
 		}, {
 			"id": "rpcParameter",
 			"type": "Complex",
-			"title": "RPC-Parameter",
+			"title": "Parameter definitions",
+			"title_de": "Parameter Definitionen",
 			"value": "",
 			"visible": "rpc==true",
 			"readonly": false,
@@ -2689,7 +2690,10 @@
 			} ]
 		}, {
 			"id": "rpcReturn",
-			"title": "RPC Return",
+			"title": "Resultvalues",
+			"title_de": "Ergebniswerte",
+			"description": "Which part of the message is to  be taken as the result",
+			"description_de": "Welcher Teil der Nachricht soll als  Ergebnis genommen werden",
 			"readonly": false,
 			"type": "Choice",
 			"value": "body",
@@ -2726,7 +2730,10 @@
 		}, {
 			"id": "rpcReturnHeaders",
 			"type": "Complex",
-			"title": "Return Headers",
+			"title": "Which headers",
+			"title_de": "Welche Header",
+			"description": "Which headers forms the result",
+			"description_de": "Welche Header bilden das Ergebnis",
 			"value": "",
 			"visible": "rpc==true && (rpcReturn=='headers' || rpcReturn=='bodyAndHeaders')",
 			"readonly": false,
@@ -3000,8 +3007,8 @@
 			"config": "permission:getAllRoles:name",
 			"title": "Permission (groups)",
 			"title_de": "Erlaubt (Rollen)",
-			"description": "User with a min. one of these roles may start the route",
-			"description_de": "User mit einer min. einer dieser  Rollen dürfen die Route starten",
+			"description": "User with a min. one of these roles may start the service",
+			"description_de": "User mit einer min. einer dieser  Rollen dürfen den Service starten",
 			"value": "",
 			"_visible": "urivalue_mode=='rpc'",
 			"length": "50"
@@ -3011,8 +3018,8 @@
 			"config": "auth:getUsers:userid",
 			"title": "Permission (user)",
 			"title_de": "Erlaubt (User)",
-			"description": "This users are able to start the route",
-			"description_de": "Diese User dürfen die Route starten",
+			"description": "This users are able to start the service",
+			"description_de": "Diese User dürfen den Service starten",
 			"value": "",
 			"_visible": "urivalue_mode=='rpc'",
 			"length": "50"
