@@ -210,6 +210,47 @@
 			"optional": true
 		} ]
 	}, {
+		"name": "assignmentProperties",
+		"properties": [{
+			"id": "uriparam_assignments",
+			"type": "Complex",
+			"config": {
+				"asArray": true,
+				"namespace": "${uriparam_namespace}"
+			},
+			"title": "Assignments",
+			"title_de": "Zuweisungen",
+			"description": "Assigning message headers and properties to a variablesMap.<br><ul><li> <b>header.header1</b> or short: <b>h.header1</b> => Source is the headerfield <b>header1</b></li><li><b>property.prop1</b> or short <b>p.prop1</b> => Source is property <b>prop1</b></li>",
+			"description_de": "Zuweisung von Message Headers und Properties zu einer VariablenMap.<ul><li> <b>header.header1</b> oder kurz: <b>h.header1</b> => Quelle ist das Headerfeld <b>header1</b></li><li><b>property.prop1</b> oder kurz <b>p.prop1</b> =>  Quelle ist Property <b>prop1</b></li>",
+			"value": null,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "expr",
+				"name_de": "Quell-Ausdruck",
+				"name": "Source-Expression",
+				"type": "String",
+				"value": null,
+				"width": 250
+			}, {
+				"id": "type",
+				"name": "Type",
+				"name_de": "Typ",
+				"readonly": false,
+				"type": "Choice",
+				"value": "string",
+				"items": "###parametertype_items",
+				"width": 180
+			}, {
+				"id": "variable",
+				"name_de": "Variable",
+				"name": "Variable",
+				"type": "String",
+				"value": null,
+				"width": 250
+			}]
+		}]
+	}, {
 		"name": "marshalProperties",
 		"properties": [ {
 			"id": "format",
@@ -1003,8 +1044,8 @@
 			"id": "uriparam_headerfields",
 			"title_de": "Headerfelder",
 			"title": "Headerfields",
-			"description_de": "Angebene Headerfelder in das Datenmodell des Reports kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Maps werden unter dem Headernamen ins Datenmodell übernommen,wenn der Modifier :asMap angegehängt ist, dataModel.put(headerName, Map).</li><li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
-			"description": "Copy specified headerfields into the data model of the report, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Maps will be transferred to the data model with the header name,if the modifier :asMap is appended, dataModel.put(headerName, Map).</li> <li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
+			"description_de": "<b>Deprecated, use assignments! </b><br> Angebene Headerfelder in das Datenmodell des Reports kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Maps werden unter dem Headernamen ins Datenmodell übernommen,wenn der Modifier :asMap angegehängt ist, dataModel.put(headerName, Map).</li><li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
+			"description": "<b>Veraltet. Verwende \"Assignments\"! </b><br>  Copy specified headerfields into the data model of the report, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Maps will be transferred to the data model with the header name,if the modifier :asMap is appended, dataModel.put(headerName, Map).</li> <li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
 			"type": "String",
 			"value": null,
 			"readonly": false,
@@ -1065,8 +1106,8 @@
 			"id": "uriparam_headerfields",
 			"title_de": "Headerfelder",
 			"title": "Headerfields",
-			"description_de": "Angebene Headerfelder in das Datenmodell des Templates kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Maps werden unter dem Headernamen ins Datenmodell übernommen,wenn der Modifier :asMap angegehängt ist, dataModel.put(headerName, Map).</li><li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
-			"description": "Copy specified headerfields into the data model of the templates, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Maps will be transferred to the data model with the header name,if the modifier :asMap is appended, dataModel.put(headerName, Map).</li><li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
+			"description_de": "<b>Veraltet. Verwende \"Assignments\"! </b><br> Angebene Headerfelder in das Datenmodell des Templates kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Maps werden unter dem Headernamen ins Datenmodell übernommen,wenn der Modifier :asMap angegehängt ist, dataModel.put(headerName, Map).</li><li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
+			"description": "<b>Deprecated, use Assignments! </b> <br>Copy specified headerfields into the data model of the templates, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Maps will be transferred to the data model with the header name,if the modifier :asMap is appended, dataModel.put(headerName, Map).</li><li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
 			"type": "String",
 			"value": null,
 			"readonly": false,
@@ -1278,8 +1319,8 @@
 		}, {
 			"id": "uriparam_variableNames",
 			"title": "VariableNames",
-			"description_de": "VariableNames, die veröffentlicht werden.Komma getrennt. Wenn leer dann alle",
-			"description": "VariableNames that are published. separated by commas.if empty then alle",
+			"description_de": "VariableNames, die angefragt werden.Komma getrennt. Wenn leer dann alle",
+			"description": "VariableNames that are requested. separated by commas.if empty then alle",
 			"visible": "urivalue_operation=='getProcessVariables' || urivalue_operation=='publishEvents' && urivalue_operation!= 'queryProcessInstances' && urivalue_operation!='queryTasks'",
 			"type": "String",
 			"value": null,
@@ -1293,8 +1334,8 @@
 			},
 			"title": "Assignments",
 			"title_de": "Zuweisungen",
-			"description": "Assigning service headers and properties to process variables.<br>Alternate to headerfields.<br><ul><li> <b>header.header1</b> or short: <b>h.header1</b> => Source is the headerfield <b>template</b></li><li><b>property.prop1</b> or short <b>p.prop1</b> => Source is property <b>prop1</b></li>",
-			"description_de": "Zuweisung von Service Headers und Properties zu Prozessvariblen. <br>Alternative zu Headerfields.<br><ul><li> <b>header.header1</b> oder kurz: <b>h.header1</b> => Quelle ist das Headerfeld <b>header1</b></li><li><b>property.prop1</b> oder kurz <b>p.prop1</b> =>  Quelle ist Property <b>prop1</b></li>",
+			"description": "Assigning message headers and properties to process variables.<br>Alternate to headerfields.<br><ul><li> <b>header.header1</b> or short: <b>h.header1</b> => Source is the headerfield <b>header1</b></li><li><b>property.prop1</b> or short <b>p.prop1</b> => Source is property <b>prop1</b></li>",
+			"description_de": "Zuweisung von Message Headers und Properties zu Prozessvariablen. <br>Alternative zu Headerfields.<br><ul><li> <b>header.header1</b> oder kurz: <b>h.header1</b> => Quelle ist das Headerfeld <b>header1</b></li><li><b>property.prop1</b> oder kurz <b>p.prop1</b> =>  Quelle ist Property <b>prop1</b></li>",
 			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation=='complete')",
 			"value": null,
 			"readonly": false,
@@ -1962,8 +2003,8 @@
 			"id": "urivalue_operation",
 			"title": "Operation",
 			"title_de": "Operation",
-			"description_de": "<h4>Header</h4>Update,Delete,FindById<ul style='margin-top:0px;'><li>objectId</li></ul>FindByFilter,FindOneByFilter<ul style='margin-top:0px;'><li>Alle Headerfelder als Filterparameter</li></ul>",
-			"description": "<h4>Header</h4>Update,Delete,FindById<ul style='margin-top:0px;'><li>objectId</li></ul>FindByFilter,FindOneByFilter<ul style='margin-top:0px;'><li>All headerfields as Filterparameter</li></ul>",
+			"description_de": "Folgende Operationen sind verfügbar:<ul><li>findBy [ Id | Filter | Where | Criteria ] → finde Objekte, das Ergebnis ist immer eine Liste</li><li>deleteBy [ Id | Filter | Where | Criteria ] → lösche Objekte</li><li>updateBy [ Id | Filter | Where | Criteria ] → update Objekte</li><li>upsertBy [ Id | Filter | Where | Criteria ] → Eine Kombination zwischen insert und update, wenn ein Objekt existiert, wird  'update' ausgeführt, andererseits 'insert'</li><li>insert → Erzeuge ein neues Objekt</li><li>findOneBy [ Id | Filter | Where | Criteria ] → Finde ein Objekt, gibt es mehr als eins ,wird das erste Gefundene zurückgeliefert</li></ul>",
+			"description": "Following operation are available<ul><li>findBy [ Id | Filter | Where | Criteria ] → find object(s), the result is always a list</li><li>deleteBy [ Id | Filter | Where | Criteria ] → delete object(s)</li><li>updateBy [ Id | Filter | Where | Criteria ] → update object(s)</li><li>upsertBy [ Id | Filter | Where | Criteria ] → combination between insert and update, if an object exists perform 'update', otherwise 'insert'</li><li>insert → insert a new object</li><li>findOneBy [ Id | Filter | Where | Criteria ] → find one object, if more objects exists, the first is returned</li></ul>",
 			"type": "Choice",
 			"value": "insert",
 			"items": [ {
@@ -4072,7 +4113,7 @@
 		"icon": "templateendpoint.png",
 		"groups": [ "Endpoints M-Z" ],
 		"groups_de": [ "Endpunkte M-Z" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "templateProperties", "extraParamsProperties" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "templateProperties", "assignmentProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
@@ -4122,7 +4163,7 @@
 		"icon": "xdocreportendpoint.png",
 		"groups": [ "Endpoints M-Z" ],
 		"groups_de": [ "Endpunkte M-Z" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "xdocreportProperties", "extraParamsProperties" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "xdocreportProperties", "assignmentProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
