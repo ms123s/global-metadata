@@ -3951,8 +3951,8 @@
 		"title": "Asciidoctor",
 		"view": "asciidoctorendpoint.svg",
 		"icon": "asciidoctorendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "asciidoctorProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -3961,8 +3961,8 @@
 		"title": "Direct",
 		"view": "directendpoint.svg",
 		"icon": "directendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "directProperties", "rpcProperties2" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -3971,9 +3971,9 @@
 		"title": "Docbook",
 		"view": "docbookendpoint.svg",
 		"icon": "docbookendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "docbookProperties", "extraParamsProperties" ],
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "docbookProperties", "assignmentProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
@@ -3981,8 +3981,8 @@
 		"title": "Generic",
 		"view": "endpoint.svg",
 		"icon": "genericendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "genericEndpointProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -3991,8 +3991,8 @@
 		"title": "EventBus",
 		"view": "eventbusendpoint.svg",
 		"icon": "eventbusendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "eventbusProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4001,8 +4001,8 @@
 		"title": "File",
 		"view": "fileendpoint.svg",
 		"icon": "fileendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "fileProperties", "commonFileProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4011,8 +4011,8 @@
 		"title": "FTP",
 		"view": "ftpendpoint.svg",
 		"icon": "ftpendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "ftpProperties", "commonFileProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4021,8 +4021,8 @@
 		"title": "Localdata",
 		"view": "localdataendpoint.svg",
 		"icon": "databaseendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "localdataProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4031,8 +4031,8 @@
 		"title": "Hazelcast",
 		"view": "hazelcastendpoint.svg",
 		"icon": "hazelcastendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "hazelcastProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4041,8 +4041,8 @@
 		"title": "Http",
 		"view": "http4endpoint.svg",
 		"icon": "http4endpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "http4Properties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4051,8 +4051,8 @@
 		"title": "JMS",
 		"view": "jmsendpoint.svg",
 		"icon": "jmsendpoint.png",
-		"groups": [ "Endpoints A-L" ],
-		"groups_de": [ "Endpunkte A-L" ],
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "jmsProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4061,8 +4061,8 @@
 		"title": "Mail",
 		"view": "mailendpoint.svg",
 		"icon": "mailendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "mailProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4071,8 +4071,8 @@
 		"title": "Process",
 		"view": "activitiendpoint.svg",
 		"icon": "activitiendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "activitiProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4081,8 +4081,8 @@
 		"title": "Repo",
 		"view": "repoendpoint.svg",
 		"icon": "repoendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "repoProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4091,8 +4091,8 @@
 		"title": "Seda",
 		"view": "sedaendpoint.svg",
 		"icon": "sedaendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "sedaProperties", "sedaVmProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4101,8 +4101,8 @@
 		"title": "SQL",
 		"view": "sqlendpoint.svg",
 		"icon": "sqlendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "sqlProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4111,8 +4111,8 @@
 		"title": "Template",
 		"view": "templateendpoint.svg",
 		"icon": "templateendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "templateProperties", "assignmentProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4121,8 +4121,8 @@
 		"title": "VFS",
 		"view": "vfsendpoint.svg",
 		"icon": "vfsendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "vfsProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4131,8 +4131,8 @@
 		"title": "VM",
 		"view": "vmendpoint.svg",
 		"icon": "vmendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "vmProperties", "sedaVmProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4141,8 +4141,8 @@
 		"title": "Wamp",
 		"view": "wampendpoint.svg",
 		"icon": "wampendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties", "rpcProperties", "publishProperties", "subscribeProperties", "permissionProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4151,8 +4151,8 @@
 		"title": "Websocket",
 		"view": "websocketendpoint.svg",
 		"icon": "websocketendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "websocketProperties", "permissionProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4161,8 +4161,8 @@
 		"title": "XDocReport",
 		"view": "xdocreportendpoint.svg",
 		"icon": "xdocreportendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "xdocreportProperties", "assignmentProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4171,8 +4171,8 @@
 		"title": "Xmpp",
 		"view": "xmppendpoint.svg",
 		"icon": "xmppendpoint.png",
-		"groups": [ "Endpoints M-Z" ],
-		"groups_de": [ "Endpunkte M-Z" ],
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "xmppProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
@@ -4541,7 +4541,7 @@
 			"value": "list"
 		}, {
 			"id": "map",
-			"title": "Map",
+			"title": "Object",
 			"value": "map"
 		} ],
 		"processcriteria_items": [ {
