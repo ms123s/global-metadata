@@ -355,6 +355,10 @@
         "msgstr": "Angezeigter Name (aus Messages)"
     },
     {
+        "msgid": "settings.schema",
+        "msgstr": "Schema"
+    },
+    {
         "msgid": "settings.properties_saved",
         "msgstr": "Properties gespeichert"
     },
@@ -427,8 +431,16 @@
         "msgstr": "Mapping gespeichert"
     },
     {
+        "msgid": "shell.schema_save_failed",
+        "msgstr": "Speichern des Schemas fehlgeschlagen"
+    },
+    {
         "msgid": "shell.structure_save_failed",
         "msgstr": "Speichern der Struktur fehlgeschlagen"
+    },
+    {
+        "msgid": "shell.schema_saved",
+        "msgstr": "Schema gespeichert"
     },
     {
         "msgid": "shell.structure_saved",
@@ -1567,6 +1579,14 @@
         "msgstr": "Felder"
     },
     {
+        "msgid": "settings.config_created",
+        "msgstr": "Konfiguration erstellt"
+    },
+    {
+        "msgid": "settings.configname",
+        "msgstr": "Konfigurationsname"
+    },
+    {
         "msgid": "settings.readonly",
         "msgstr": "Readonly"
     },
@@ -2265,6 +2285,14 @@
     {
         "msgid": "data.namespace.entity_list",
         "msgstr": "Klassen"
+    },
+    {
+        "msgid": "settings.config_new",
+        "msgstr": "neue Konfiguration"
+    },
+    {
+        "msgid": "settings.configs",
+        "msgstr": "Konfigurationen"
     },
     {
         "msgid": "settings.entities",
@@ -3997,6 +4025,10 @@
     {
         "msgid": "shell.nt_datasource",
         "msgstr": "Datasource"
+    },
+    {
+        "msgid": "shell.nt_schema",
+        "msgstr": "JsonSchema"
     },
     {
         "msgid": "shell.nt_structure",

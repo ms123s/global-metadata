@@ -3043,6 +3043,14 @@
         "msgstr": "Select"
     },
     {
+        "msgid": "settings.config_created",
+        "msgstr": "Configuration created"
+    },
+    {
+        "msgid": "settings.configname",
+        "msgstr": "Configurationname"
+    },
+    {
         "msgid": "settings.check_type",
         "msgstr": "Compare mechanism"
     },
@@ -3057,6 +3065,14 @@
     {
         "msgid": "settings.enabled",
         "msgstr": "Enabled"
+    },
+    {
+        "msgid": "settings.config_new",
+        "msgstr": "new configuration"
+    },
+    {
+        "msgid": "settings.configs",
+        "msgstr": "Configurations"
     },
     {
         "msgid": "settings.entities",
@@ -3163,6 +3179,10 @@
         "msgstr": "Custom service,delete(web)"
     },
     {
+        "msgid": "settings.schema",
+        "msgstr": "Schema"
+    },
+    {
         "msgid": "settings.views",
         "msgstr": "Views"
     },
@@ -3243,8 +3263,16 @@
         "msgstr": "Error compiling java file"
     },
     {
+        "msgid": "shell.schema_saved",
+        "msgstr": "Schema saved"
+    },
+    {
         "msgid": "shell.structure_saved",
         "msgstr": "Structure saved"
+    },
+    {
+        "msgid": "shell.schema_save_failed",
+        "msgstr": "Schema saving failed"
     },
     {
         "msgid": "shell.structure_save_failed",
@@ -3309,6 +3337,10 @@
     {
         "msgid": "shell.nt_rule",
         "msgstr": "Rule"
+    },
+    {
+        "msgid": "shell.nt_schema",
+        "msgstr": "JsonSchema"
     },
     {
         "msgid": "shell.nt_structure",
