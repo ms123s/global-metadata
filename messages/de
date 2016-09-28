@@ -355,6 +355,10 @@
         "msgstr": "Angezeigter Name (aus Messages)"
     },
     {
+        "msgid": "settings.not_valid",
+        "msgstr": "Fehler in Form"
+    },
+    {
         "msgid": "settings.schema",
         "msgstr": "Schema"
     },

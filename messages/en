@@ -3123,6 +3123,10 @@
         "msgstr": "Fieldname"
     },
     {
+        "msgid": "settings.not_valid",
+        "msgstr": "Error in form"
+    },
+    {
         "msgid": "settings.properties",
         "msgstr": "Properties"
     },
