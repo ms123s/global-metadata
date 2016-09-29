@@ -1,0 +1,14 @@
+[sw]
+	type = sw.setting
+--
+{
+    "schema": "camelcomponent.schema",
+    "data": {
+        "registry": [
+            {
+                "name": "name1",
+                "clazz": "class1"
+            }
+        ]
+    }
+}
