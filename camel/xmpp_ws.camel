@@ -13,6 +13,7 @@
     "author": "",
     "creationdate": null,
     "modificationdate": null,
+    "settings": null,
     "rpc": false,
     "rpcParameter": null,
     "rpcReturn": "body",
@@ -21,8 +22,7 @@
     "recvEndpoint": "",
     "sendEndpoint": "",
     "startableGroups": null,
-    "startableUsers": null,
-    "settings": null
+    "startableUsers": null
   },
   "stencil": {
     "id": "Camelrouting"
@@ -33,6 +33,8 @@
       "properties": {
         "shared": "origin",
         "shareRef": "link_xmpp",
+        "enrich": "no",
+        "enrich_timeout": "",
         "overrideid": "",
         "name": "",
         "documentation": null,
@@ -75,6 +77,8 @@
       "properties": {
         "shared": "origin",
         "shareRef": "link_ws1",
+        "enrich": "no",
+        "enrich_timeout": "",
         "overrideid": "",
         "name": "",
         "documentation": null,
@@ -84,7 +88,9 @@
         "type_websocket": "Websocket",
         "uri_template": "websocket:${name}",
         "urivalue_name": "ws1",
-        "urivalue_sendToAll": false
+        "urivalue_sendToAll": false,
+        "uriparam_startableGroups": null,
+        "uriparam_startableUsers": null
       },
       "stencil": {
         "id": "WebsocketEndpoint"
@@ -112,6 +118,8 @@
       "properties": {
         "shared": "link",
         "shareRef": "link_ws1",
+        "enrich": "no",
+        "enrich_timeout": "",
         "overrideid": "",
         "name": "",
         "documentation": null,
@@ -121,7 +129,9 @@
         "type_websocket": "Websocket",
         "uri_template": "websocket:${name}",
         "urivalue_name": "ws1",
-        "urivalue_sendToAll": false
+        "urivalue_sendToAll": false,
+        "uriparam_startableGroups": null,
+        "uriparam_startableUsers": null
       },
       "stencil": {
         "id": "WebsocketEndpoint"
@@ -145,7 +155,10 @@
       "properties": {
         "overrideid": "",
         "name": "",
-        "documentation": null
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
       },
       "stencil": {
         "id": "SimpleConnection"
@@ -185,6 +198,8 @@
       "properties": {
         "shared": "link",
         "shareRef": "link_xmpp",
+        "enrich": "no",
+        "enrich_timeout": "",
         "overrideid": "",
         "name": "",
         "documentation": null,
@@ -272,7 +287,10 @@
       "properties": {
         "overrideid": "",
         "name": "",
-        "documentation": null
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
       },
       "stencil": {
         "id": "SimpleConnection"
@@ -317,7 +335,11 @@
         "bordercolor": "#000000",
         "caption": "",
         "ref": "",
-        "code": "public void  process(Exchange exchange){\n  def camelMessage = exchange.getIn();\n\n  if( camelMessage instanceof org.ms123.common.xmpp.camel.XmppMessage){\n    org.jivesoftware.smack.packet.Message message = camelMessage.getXmppMessage();\n\n    println(\"Message:\"+message)\n    def sendMap = [:];\n    def defaultSubject = message.getSubject();\n    def subList = [];\n    for (org.jivesoftware.smack.packet.Message.Subject subject : message.getSubjects()) {\n      def sub = subject.getSubject();\n      if (defaultSubject.equals(sub)){\n        continue;\n      }\n      subList.add(sub);\n    }\n    sendMap[\"from\"] = message.getFrom();\n    sendMap[\"to\"] =  message.getTo();\n    sendMap[\"packetId\"] = message.getPacketID();\n    if (defaultSubject != null) {\n      sendMap[\"subject\"] = defaultSubject;\n    }\n    if (subList.size() > 0) {\n      sendMap[\"subjects\"] =  subList;\n    }\n    sendMap[\"thread\"] = message.getThread();\n    sendMap[\"type\"] = message.getType();\n    sendMap[\"language\"] = message.getLanguage();\n    sendMap[\"body\"] = message.getBody();\n    def extensionList = [];\n    for (org.jivesoftware.smack.packet.ExtensionElement ep : message.getExtensions()) {\n      if (ep instanceof org.jivesoftware.smackx.chatstates.packet.ChatStateExtension) {\n        sendMap[\"chatState\"] = ep.getElementName();\n      }\n    }\n    println(\"sendMap:\"+sendMap);\n    exchange.getIn().setBody(sendMap);\n  } else {\n    def js = new JSONSerializer();\n    def sendMap = camelMessage.getBody();\n    exchange.getIn().setBody(js.deepSerialize(sendMap));\n  }\n}\n",
+        "srcFile": null,
+        "code": "public void  process(Exchange exchange){\n  def camelMessage = exchange.getIn();\n\n  if( camelMessage instanceof org.ms123.common.xmpp.camel.XmppMessage){\n    org.jivesoftware.smack.packet.Message message = camelMessage.getXmppMessage();\n\n    println(\"Message:\"+message)\n    def sendMap = [:];\n    def defaultSubject = message.getSubject();\n    def subList = [];\n    for (org.jivesoftware.smack.packet.Message.Subject subject : message.getSubjects()) {\n      def sub = subject.getSubject();\n      if (defaultSubject.equals(sub)){\n        continue;\n      }\n      subList.add(sub);\n    }\n    sendMap[\"from\"] = message.getFrom();\n    sendMap[\"to\"] =  message.getTo();\n    sendMap[\"packetId\"] = message.getPacketID();\n    if (defaultSubject != null) {\n      sendMap[\"subject\"] = defaultSubject;\n    }\n    if (subList.size() > 0) {\n      sendMap[\"subjects\"] =  subList;\n    }\n    sendMap[\"thread\"] = message.getThread();\n    sendMap[\"type\"] = message.getType();\n    sendMap[\"language\"] = message.getLanguage();\n    sendMap[\"body\"] = message.getBody();\n    def extensionList = [];\n    for (org.jivesoftware.smack.packet.ExtensionElement ep : message.getExtensions()) {\n      if (ep instanceof org.jivesoftware.smackx.chatstates.packet.ChatStateExtension) {\n        sendMap[\"chatState\"] = ep.getElementName();\n      }\n    }\n    println(\"sendMap:\"+sendMap);\n    exchange.getIn().setBody(sendMap);\n  } else {\n    def js = new flexjson.JSONSerializer();\n    def sendMap = camelMessage.getBody();\n    exchange.getIn().setBody(js.deepSerialize(sendMap));\n  }\n}\n",
+        "script": null,
+        "codeKind": "processMethod",
+        "addImport": null,
         "codeLanguage": "groovy",
         "isEndpoint": false
       },
@@ -347,7 +369,10 @@
       "properties": {
         "overrideid": "",
         "name": "",
-        "documentation": null
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
       },
       "stencil": {
         "id": "SimpleConnection"
@@ -387,7 +412,10 @@
       "properties": {
         "overrideid": "",
         "name": "",
-        "documentation": null
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
       },
       "stencil": {
         "id": "SimpleConnection"

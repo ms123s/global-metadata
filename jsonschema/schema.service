@@ -4,7 +4,7 @@
 {
   "resourceId": "oryx_8A851C39-5CD5-4AE7-9582-1FDA5D8B5530",
   "properties": {
-    "overrideid": "testRoute.camel",
+    "overrideid": "schema.service",
     "documentation": null,
     "autostart": true,
     "enabled": true,
@@ -24,7 +24,7 @@
   },
   "childShapes": [
     {
-      "resourceId": "oryx_5AFF642E-529B-4428-B32F-15E30B88D6F3",
+      "resourceId": "oryx_B00EB2C5-41F4-4A79-AEB3-F241C6C03006",
       "properties": {
         "shared": "no",
         "shareRef": "",
@@ -35,7 +35,7 @@
         "documentation": null,
         "bgcolor": "white",
         "bordercolor": "#000000",
-        "caption": "",
+        "caption": "schemaInitTest",
         "type_direct": "Direct",
         "uri_template": "direct:${name}",
         "urivalue_name": "schemaInitTest",
@@ -65,23 +65,23 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_E2428A77-1B80-440A-AC0F-0107DFBA95DD"
+          "resourceId": "oryx_9572310D-58C7-44FB-841A-CDC260E7FC65"
         }
       ],
       "bounds": {
         "lowerRight": {
-          "x": 208,
-          "y": 465
+          "x": 125,
+          "y": 255
         },
         "upperLeft": {
-          "x": 128,
-          "y": 405
+          "x": 45,
+          "y": 195
         }
       },
       "dockers": []
     },
     {
-      "resourceId": "oryx_E2428A77-1B80-440A-AC0F-0107DFBA95DD",
+      "resourceId": "oryx_9572310D-58C7-44FB-841A-CDC260E7FC65",
       "properties": {
         "overrideid": "",
         "name": "",
@@ -96,17 +96,17 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_44DF716B-3FFE-4C7A-BA66-317E69AB692E"
+          "resourceId": "oryx_4D48BBA3-0026-4D56-BBE3-20224E18B930"
         }
       ],
       "bounds": {
         "lowerRight": {
-          "x": 352,
-          "y": 539.4832529635266
+          "x": 223.84375,
+          "y": 225
         },
         "upperLeft": {
-          "x": 208.53125,
-          "y": 435
+          "x": 125.15625,
+          "y": 225
         }
       },
       "dockers": [
@@ -115,20 +115,16 @@
           "y": 30
         },
         {
-          "x": 352,
-          "y": 435
-        },
-        {
-          "x": 45,
-          "y": 58.65886520401716
+          "x": 40,
+          "y": 30
         }
       ],
       "target": {
-        "resourceId": "oryx_44DF716B-3FFE-4C7A-BA66-317E69AB692E"
+        "resourceId": "oryx_4D48BBA3-0026-4D56-BBE3-20224E18B930"
       }
     },
     {
-      "resourceId": "oryx_44DF716B-3FFE-4C7A-BA66-317E69AB692E",
+      "resourceId": "oryx_4D48BBA3-0026-4D56-BBE3-20224E18B930",
       "properties": {
         "overrideid": "",
         "name": "",
@@ -152,18 +148,18 @@
       "outgoing": [],
       "bounds": {
         "lowerRight": {
-          "x": 387,
-          "y": 600
+          "x": 304,
+          "y": 255
         },
         "upperLeft": {
-          "x": 307,
-          "y": 540
+          "x": 224,
+          "y": 195
         }
       },
       "dockers": []
     },
     {
-      "resourceId": "oryx_1B7312CB-C32E-44E1-BBAE-755A7B682048",
+      "resourceId": "oryx_29E73850-51E9-4C2A-B7E7-C1EECBB799A7",
       "properties": {
         "shared": "no",
         "shareRef": "",
@@ -204,23 +200,23 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_F547D7B8-D624-4AB4-99E0-F71B25A8D822"
+          "resourceId": "oryx_D3B7A662-1ABB-4A19-85FD-15CDB020993E"
         }
       ],
       "bounds": {
         "lowerRight": {
-          "x": 126,
-          "y": 140
+          "x": 133,
+          "y": 146
         },
         "upperLeft": {
           "x": 46,
-          "y": 80
+          "y": 75
         }
       },
       "dockers": []
     },
     {
-      "resourceId": "oryx_6BED5A6A-C85D-44B9-938E-BE88EE7379DA",
+      "resourceId": "oryx_149C31E3-3F38-477A-BAC9-A000B6E5CF6F",
       "properties": {
         "overrideid": "",
         "name": "",
@@ -245,17 +241,17 @@
       "bounds": {
         "lowerRight": {
           "x": 303,
-          "y": 130
+          "y": 135
         },
         "upperLeft": {
           "x": 223,
-          "y": 70
+          "y": 75
         }
       },
       "dockers": []
     },
     {
-      "resourceId": "oryx_F547D7B8-D624-4AB4-99E0-F71B25A8D822",
+      "resourceId": "oryx_D3B7A662-1ABB-4A19-85FD-15CDB020993E",
       "properties": {
         "overrideid": "",
         "name": "",
@@ -270,31 +266,23 @@
       "childShapes": [],
       "outgoing": [
         {
-          "resourceId": "oryx_6BED5A6A-C85D-44B9-938E-BE88EE7379DA"
+          "resourceId": "oryx_149C31E3-3F38-477A-BAC9-A000B6E5CF6F"
         }
       ],
       "bounds": {
         "lowerRight": {
-          "x": 222.58984375,
-          "y": 110
+          "x": 222.69190832576209,
+          "y": 109.09331562776191
         },
         "upperLeft": {
-          "x": 126.41015625,
-          "y": 100
+          "x": 133.87449792423791,
+          "y": 106.27777812223809
         }
       },
       "dockers": [
         {
-          "x": 40,
-          "y": 30
-        },
-        {
-          "x": 174.5,
-          "y": 110
-        },
-        {
-          "x": 174.5,
-          "y": 100
+          "x": 43.5,
+          "y": 35.5
         },
         {
           "x": 40,
@@ -302,7 +290,7 @@
         }
       ],
       "target": {
-        "resourceId": "oryx_6BED5A6A-C85D-44B9-938E-BE88EE7379DA"
+        "resourceId": "oryx_149C31E3-3F38-477A-BAC9-A000B6E5CF6F"
       }
     }
   ],

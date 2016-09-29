@@ -106,7 +106,10 @@
       "properties": {
         "overrideid": "",
         "name": "",
-        "documentation": null
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
       },
       "stencil": {
         "id": "SimpleConnection"
@@ -189,7 +192,10 @@
       "properties": {
         "overrideid": "",
         "name": "",
-        "documentation": null
+        "documentation": null,
+        "bgcolor": "white",
+        "bordercolor": "#000000",
+        "caption": ""
       },
       "stencil": {
         "id": "SimpleConnection"
@@ -243,6 +249,7 @@
         "uriparam_source": "",
         "uriparam_destination": "",
         "uriparam_headerfields": "",
+        "uriparam_assignments": null,
         "extraParams": null,
         "urivalue_headerfields": "colors"
       },
