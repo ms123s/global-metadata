@@ -1253,6 +1253,86 @@
 		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "loopcharacteristics", "activity" ]
 	}, {
 		"type": "node",
+		"id": "MessageTask",
+		"title": "Message Task",
+		"title_de": "Messageaufgabe",
+		"groups": [ "Activities" ],
+		"groups_de": [ "Aktivitäten" ],
+		"description": "The message task is a task that send a message to another process.",
+		"view": "activity/sendtask.svg",
+		"icon": "activity/list/type.send.png",
+		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
+		"properties": [ {
+			"id": "variablesmapping",
+			"type": "Complex",
+			"title": "Variable-Mapping",
+			"title_de": "Variablen Zuordnung",
+			"value": "",
+			"description": "Mapping processvariables to message",
+			"description_de": "Zuordnung von Prozessvariablen zur Message",
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "processvar",
+				"name_de": "Prozessvariable",
+				"name": "Processvariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			}, {
+				"id": "messagevar",
+				"name_de": "Messagevariable",
+				"name": "Messagevariable",
+				"type": "String",
+				"value": "",
+				"width": 150,
+				"optional": false
+			} ]
+		}, {
+			"id": "processCriteria",
+			"type": "Complex",
+			"config": {
+				"asArray": true
+			},
+			"title": "Processcriteria",
+			"title_de": "Prozesskriterien",
+			"description": "Criteria of the process which is to be executed or a signal sent",
+			"description_de": "Kriterien des Prozesses der ausgeführt werden soll oder dem ein Signal gesendet werden soll",
+			"visible": true,
+			"value": null,
+			"readonly": false,
+			"optional": true,
+			"complexItems": [ {
+				"id": "name",
+				"name": "Name",
+				"name_de": "Name",
+				"readonly": false,
+				"type": "Choice",
+				"value": "processDefinitionKey",
+				"items": "###processcriteria_items",
+				"width": 180
+			}, {
+				"id": "value",
+				"name_de": "Wert",
+				"name": "Value",
+				"type": "String",
+				"value": null,
+				"width": 250
+			} ]
+		}, {
+			"id": "messagename",
+			"type": "String",
+			"title": "Messagename",
+			"title_de": "Messagename",
+			"value": null,
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		} ],
+		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "loopcharacteristics", "activity" ]
+	}, {
+		"type": "node",
 		"id": "RulesTask",
 		"title": "Rules Task",
 		"title_de": "Regelaufgabe",
@@ -2053,6 +2133,35 @@
 		} ]
 	},
 	"definitions": {
+		"processcriteria_items": [ {
+			"id": "processDefinitionKey",
+			"title": "processDefinitionKey",
+			"value": "processDefinitionKey"
+		}, {
+			"id": "processDefinitionId",
+			"title": "processDefinitionId",
+			"value": "processDefinitionId"
+		}, {
+			"id": "processInstanceId",
+			"title": "processInstanceId",
+			"enabled": true,
+			"value": "processInstanceId"
+		}, {
+			"id": "businessKey",
+			"title": "businessKey",
+			"enabled": true,
+			"value": "businessKey"
+		}, {
+			"id": "processVariable",
+			"title": "processVariable",
+			"enabled": true,
+			"value": "processVariable"
+		}, {
+			"id": "finished",
+			"title": "finished",
+			"enabled": true,
+			"value": "finished"
+		} ],
 		"parametertype_items": [ {
 			"id": "string",
 			"title": "String",

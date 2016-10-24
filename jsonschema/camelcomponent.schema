@@ -21,7 +21,7 @@
           "type": "object",
           "title": "Building block",
           "description": "register building blocks(camel components)",
-          "headerTemplate": "{{ i1 }} - {{ self.name }} (clazz {{ self.clazz }})",
+          "headerTemplate": "{{ i1 }} - {{ self.name }}",
           "properties": {
             "name": {
               "title": "Registration name",
