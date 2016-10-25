@@ -1321,10 +1321,21 @@
 				"width": 250
 			} ]
 		}, {
+			"id": "signalname",
+			"type": "String",
+			"description_de": "Wenn Signalname nicht leer ist, dann wird das Signal \"signalname\" an den ,<br> in Prozesskriterien spezifizierten, Prozess verschickt. <br>Wenn \"signalname\" und \"messagename\" leer sind,<br> dann wird  ein Signal an eine ReceiveTask im entsprechenden Prozess gesendet.",
+			"description": "If the signalname is not empty,<br> the signal \"signalname\" is sent to the process <br>specified in process criteria.<br>If \"signalname\" and \"messagename\" empty,<br>then  a signal to a ReceiveTask in the specified process is sendthen  a signal to a ReceiveTask in the specified process is send.",
+			"title": "Signalname",
+			"title_de": "Signalname",
+			"value": null,
+			"readonly": false,
+			"optional": true,
+			"length": "50"
+		}, {
 			"id": "messagename",
 			"type": "String",
-			"description_de": "Wenn Messagename nicht leer ist, dann wird die Message \"messagename\" an den ,<br> in Prozesskriterien spezifizierten, Prozess verschickt, <br>andererseit ein Signal im entsprechenden Prozess ausgelöst",
-			"description": "If the messagename is not empty,<br> the message \"messagename\" is sent to the process <br> specified in process criteria, <br>otherwise  a signal is triggered in the specified process",
+			"description_de": "Wenn Messagename nicht leer ist, dann wird die Message \"messagename\" an den ,<br> in Prozesskriterien spezifizierten, Prozess verschickt. <br>Wenn \"signalname\" und \"messagename\" leer sind,<br> dann wird  ein Signal an eine ReceiveTask im entsprechenden Prozess gesendet",
+			"description": "If the messagename is not empty,<br> the message \"messagename\" is sent to the process <br> specified in process criteria. <br>If \"signalname\" and \"messagename\" empty,<br>then  a signal to a ReceiveTask in the specified process is send.",
 			"title": "Messagename",
 			"title_de": "Messagename",
 			"value": null,
