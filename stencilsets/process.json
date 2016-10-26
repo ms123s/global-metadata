@@ -986,8 +986,8 @@
 			"title": "Form variable",
 			"title_de": "Form Variable",
 			"value": null,
-			"description": "Processvariable that becomes the  form values  assigned(Default: the formname)",
-			"description_de": "Prozessvariable der die Formwerte  zugeordnet werden(Default: der Formname)",
+			"description": "Processvariable that becomes the  form values  assigned(Default: the formname)<br><b>-</b> : no assignment of form",
+			"description_de": "Prozessvariable der die Formwerte  zugeordnet werden(Default: der Formname)<br><b>-</b> : Keine Zuweisung der Form",
 			"readonly": false,
 			"optional": true,
 			"length": "50"
