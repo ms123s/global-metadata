@@ -935,13 +935,12 @@
 			"id": "variablesmapping",
 			"type": "Complex",
 			"config": {
-				"helperTree": [ "sw.form" ]
 			},
 			"title": "Parameter-Mapping",
 			"title_de": "Variablen Zuordnung",
 			"value": "",
-			"description": "Mapping processvariables to form",
-			"description_de": "Zuordnung von Prozessvariablen zur Form",
+			"description": "Mapping processvariables to form and reverse",
+			"description_de": "Zuordnung von Prozessvariablen zur Form und umgekehrt",
 			"readonly": false,
 			"optional": true,
 			"complexItems": [ {
@@ -950,7 +949,7 @@
 				"name": "Processvariable",
 				"type": "String",
 				"value": "",
-				"width": 150,
+				"width": 200,
 				"optional": false
 			}, {
 				"id": "formvar",
@@ -958,7 +957,7 @@
 				"name": "Formvariable",
 				"type": "String",
 				"value": "",
-				"width": 150,
+				"width": 200,
 				"optional": false
 			}, {
 				"id": "direction",
@@ -969,16 +968,16 @@
 				"value": "incoming",
 				"items": [ {
 					"id": "incoming",
-					"title": "Incoming",
-					"title_de": "Eingehend",
+					"title": "Process -> Form",
+					"title_de": "Prozess -> Form",
 					"value": "incoming"
 				}, {
 					"id": "outgoing",
-					"title": "Outgoing",
-					"title_de": "Ausgehend",
+					"title": "Form -> Process",
+					"title_de": "Form -> Prozess",
 					"value": "outgoing"
 				} ],
-				"width": 80,
+				"width": 140,
 				"optional": true
 			} ]
 		}, {
@@ -1546,7 +1545,7 @@
 		"description": "Send emails",
 		"view": "activity/sendtask.svg",
 		"icon": "activity/list/type.send.png",
-		"roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
+		"_roles": [ "sequence_start", "Activity", "sequence_end", "ActivitiesMorph", "all" ],
 		"properties": [ {
 			"id": "type",
 			"type": "String",
@@ -1906,7 +1905,7 @@
 		"groups": [ "Intermediate Events" ],
 		"groups_de": [ "Zwischenereignisse" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "messagerefProperties", "executionlistenersbase" ],
-		"roles": [ "sequence_start", "sequence_end", "ThrowEventsMorph", "all" ]
+		"_roles": [ "sequence_start", "sequence_end", "ThrowEventsMorph", "all" ]
 	}, {
 		"type": "node",
 		"id": "EndNoneEvent",
