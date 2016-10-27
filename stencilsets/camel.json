@@ -1307,6 +1307,17 @@
 			"readonly": false,
 			"optional": true
 		}, {
+			"id": "uriparam_metadata",
+			"visible": "urivalue_operation.startsWith('getProcessVariables')",
+			"description": "In addition to the data, deliver process metadata",
+			"description_de": "Zusätzlich zu den eigentlichen Daten, Prozess Metadata zurückliefern",
+			"type": "Boolean",
+			"title": "With Metadata",
+			"title_de": "Mit Metadata",
+			"value": null,
+			"readonly": false,
+			"optional": true
+		}, {
 			"id": "uriparam_headerFields",
 			"title_de": "Headerfelder",
 			"title": "Headerfields",
@@ -1369,7 +1380,6 @@
 			"type": "Complex",
 			"config": {
 				"asArray": true,
-				"helperTree": [ "sw.process" ],
 				"namespace": "${uriparam_namespace}"
 			},
 			"title": "Processcriteria",
@@ -1402,7 +1412,6 @@
 			"type": "Complex",
 			"config": {
 				"asArray": true,
-				"helperTree": [ "sw.process" ],
 				"namespace": "${uriparam_namespace}"
 			},
 			"title": "Taskcriteria",
