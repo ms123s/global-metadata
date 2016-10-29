@@ -4552,6 +4552,10 @@
 			"id": "map",
 			"title": "Object",
 			"value": "map"
+		}, {
+			"id": "any",
+			"title": "Any",
+			"value": "any"
 		} ],
 		"processcriteria_items": [ {
 			"id": "processDefinitionKey",

@@ -540,7 +540,7 @@
 		"name" : "timerenddatedefinitionpackage",
 		"properties" : [ {
 			"id" : "timerenddatedefinition",
-			"type" : "String",
+			"type" : "StringPlus",
 			"title" : "Time End Date in ISO-8601",
 			"value" : "",
 			"description" : "Define the timer with a ISO-8601 end date.",
@@ -550,21 +550,21 @@
 		"name": "timerdefinition",
 		"properties": [ {
 			"id": "timerdurationdefinition",
-			"type": "String",
+			"type": "StringPlus",
 			"title": "Time duration (e.g. PT5M)",
 			"value": "",
 			"description": "<b>Define the timer with a ISO-8601 duration.</b><br/><ul> <li>P is the duration designator (for period) placed at the start of the duration representation.</li> <li>Y is the year designator that follows the value for the number of years.</li> <li>M is the month designator that follows the value for the number of months.</li> <li>W is the week designator that follows the value for the number of weeks.</li> <li>D is the day designator that follows the value for the number of days.</li> <li>T is the time designator that precedes the time components of the representation.</li> <li>H is the hour designator that follows the value for the number of hours.</li> <li>M is the minute designator that follows the value for the number of minutes.</li> <li>S is the second designator that follows the value for the number of seconds.</li> </ul> <br/> Example: <ul> <li>P1M, one month duration</li> <li>PT1M, one minute</li> <li>P3Y6M4DT12H30M5S, represents a duration of three years, six months,<br> four days, twelve hours, thirty minutes, and five seconds</li> </ul>",
 			"popular": true
 		}, {
 			"id": "timerdatedefinition",
-			"type": "String",
+			"type": "StringPlus",
 			"title": "Time date in ISO-8601",
 			"value": "",
 			"description": "<b>Define the timer with a ISO-8601 date definition.</b><br><br><b>ISO 8601 Formatting Symbols</b><br> The following list explains the formatting symbols that are used to notate the ISO 8601 dates, time, datetime, durations, and interval values:<br> <ul> <li>n, specifies a number that represents the number of years, months, or days</li> <li>P, indicates that the duration that follows is specified by the number of years, months, days, hours, minutes, and seconds</li> <li>T, indicates that a time value follows. Any value with a time must begin with T. <br> <b>Requirement</b>       Time values that are read by the extended notation informats that begin with the characters E8601 must use an uppercase T.</li> <li>W, indicates that the duration is specified in weeks.</li> <li>Z, indicates that the time value is the time in Greenwich, England, or UTC time.</li> <li>+|-, the + indicates the time zone offset to the east of Greenwich, England. The - indicates the time zone offset to the west of Greenwich, England.</li> <li>yyyy, specifies a four-digit year</li> <li>mm, as part of a date, specifies a two-digit month, 01–12</li> <li>dd, specifies a two-digit day, 01–1</li> <li>hh, specifies a two-digit hour, 00–24</li> <li>mm, as part of a time, specifies a two-digit minute, 00–59</li> <li>ss, specifies a two-digit second, 00–59</li> <li>fff | ffffff<br> specifies an optional fraction of a second using the digits 0–9:<br> fff     use 1 - 3 digits for values read by the $N8601B informat and the $N8601E informat<br> ffffff    use 1 - 6 digits for informat other than the $N8601B informat and the $N8601E informat</li> <li>Y, indicates that a year value precedes this character in a duration</li> <li>M, as part of a date, indicates that a month value precedes this character in a duration</li> <li>D, indicates that a day value precedes this character in a duration</li> <li>H, indicates that an hour value precedes this character in a duration</li> <li>M, as part of a time, indicates that a minute value precedes this character in a duration</li> <li>S, indicates that a seconds value precedes this character in a duration</li> </ul><br><b>Example</b><br><ul><li> Year: YYYY (eg 1997)</li> <li>  Year and month: YYYY-MM (eg 1997-07)</li> <li>  Complete date: YYYY-MM-DD (eg 1997-07-16)</li> <li>  Complete date plus hours and minutes: YYYY-MM-DDThh:mmTZD (eg 1997-07-16T19:20+01:00)</li> <li>  Complete date plus hours, minutes and seconds: YYYY-MM-DDThh:mm:ssTZD (eg 1997-07-16T19:20:30+01:00)</li> <li>  Complete date plus hours, minutes, seconds and a decimal fraction of a second YYYY-MM-DDThh:mm:ss.sTZD (eg 1997-07-16T19:20:30.45+01:00)</li> </ul> <br> <b>where:</b> <ul> <li>  YYYY = four-digit year</li> <li>     MM   = two-digit month (01=January, etc.)</li> <li>     DD   = two-digit day of month (01 through 31)</li> <li>     hh   = two digits of hour (00 through 23) (am/pm NOT allowed)</li> <li>     mm   = two digits of minute (00 through 59)</li> <li>     ss   = two digits of second (00 through 59)</li> <li>     s    = one or more digits representing a decimal fraction of a second</li> <li>     TZD  = time zone designator (Z or +hh:mm or -hh:mm)</li> </ul> ",
 			"popular": true
 		}, {
 			"id": "timercycledefinition",
-			"type": "String",
+			"type": "StringPlus",
 			"title": "Time cycle (e.g. R3/PT10H)",
 			"value": "",
 			"description": "Define the timer with a ISO-8601 cycle.",
