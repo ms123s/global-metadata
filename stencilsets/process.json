@@ -749,7 +749,7 @@
 			} ]
 		}, {
 			"id": "conditionsequenceflow",
-			"type": "Text",
+			"type": "StringPlus",
 			"title": "Flow condition",
 			"title_de": "Flußbedingung",
 			"visible": "conditionalflow!='None'",
@@ -2168,6 +2168,11 @@
 			"title": "processVariable",
 			"enabled": true,
 			"value": "processVariable"
+		}, {
+			"id": "activityId",
+			"title": "activityId",
+			"enabled": true,
+			"value": "activityId"
 		}, {
 			"id": "finished",
 			"title": "finished",
