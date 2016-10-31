@@ -3723,6 +3723,83 @@
 			"visible": true
 		} ]
 	}, {
+		"name": "zookeeperProperties",
+		"properties": [ {
+			"id": "type_zookeeper",
+			"type": "String",
+			"value": "Zookeeper",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "${protocol}:${port}:${path}",
+			"visible": false
+		}, {
+			"id": "urivalue_protocol",
+			"type": "String",
+			"title": "Protocol",
+			"title_de": "Protokoll",
+			"visible": false,
+			"value": "zookeeper"
+		}, {
+			"id": "urivalue_port",
+			"title": "Port",
+			"readonly": false,
+			"type": "String",
+			"value": "2181",
+			"optional": false
+		}, {
+			"id": "urivalue_path",
+			"title": "Path",
+			"title_de": "Pfad",
+			"description": "The node in the ZooKeeper server (aka znode)",
+			"type": "String",
+			"value": null,
+			"optional": false
+		}, {
+			"id": "uriparam_listChildren",
+			"title": "ListChildren",
+			"description": "Whether the children of the node should be listed",
+			"type": "boolean",
+			"value": true
+		}, {
+			"id": "uriparam_repeat",
+			"title": "Repeat",
+			"description": "Should changes to the znode be 'watched' and repeatedly processed.",
+			"type": "boolean",
+			"value": false
+		}, {
+			"id": "uriparam_create",
+			"title": "Create",
+			"description": "Should the endpoint create the node if it does not currently exist.",
+			"type": "boolean",
+			"value": true
+		}, {
+			"id": "uriparam_createMode",
+			"title": "CreateMode",
+			"description": "The create mode that should be used for the newly created node",
+			"type": "Choice",
+			"value": "EPHEMERAL",
+			"items": [ {
+				"id": "c1",
+				"title": "EPHEMERAL",
+				"value": "EPHEMERAL"
+			}, {
+				"id": "c2",
+				"title": "EPHEMERAL_SEQUENTIAL",
+				"value": "EPHEMERAL_SEQUENTIAL"
+			}, {
+				"id": "c3",
+				"title": "PERSISTENT",
+				"value": "PERSISTENT"
+			}, {
+				"id": "c4",
+				"title": "PERSISTENT_SEQUENTIAL",
+				"value": "PERSISTENT_SEQUENTIAL"
+			} ]
+		} ]
+	}, {
 		"name": "http4Properties",
 		"properties": [ {
 			"id": "endpoint_http4",
@@ -4183,6 +4260,16 @@
 		"groups": [ "Building blocks M-Z" ],
 		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "xmppProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "ZookeeperEndpoint",
+		"title": "Zookeeper",
+		"view": "zookeeperendpoint.svg",
+		"icon": "zookeeperendpoint.png",
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "zookeeperProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
