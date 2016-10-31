@@ -3727,13 +3727,13 @@
 		"properties": [ {
 			"id": "type_zookeeper",
 			"type": "String",
-			"value": "Zookeeper",
+			"value": "zookeeper",
 			"visible": false,
 			"refToView": [ "endpoint_type" ]
 		}, {
 			"id": "uri_template",
 			"type": "String",
-			"value": "${protocol}:${port}:${path}",
+			"value": "${protocol}://${host}:${port}/${path}",
 			"visible": false
 		}, {
 			"id": "urivalue_protocol",
@@ -3742,6 +3742,13 @@
 			"title_de": "Protokoll",
 			"visible": false,
 			"value": "zookeeper"
+		}, {
+			"id": "urivalue_host",
+			"title": "Host",
+			"readonly": false,
+			"type": "String",
+			"value": "localhost",
+			"optional": false
 		}, {
 			"id": "urivalue_port",
 			"title": "Port",
@@ -3753,7 +3760,7 @@
 			"id": "urivalue_path",
 			"title": "Path",
 			"title_de": "Pfad",
-			"description": "The node in the ZooKeeper server (aka znode)",
+			"description": "The node in the ZooKeeper server (aka znode), without leading /",
 			"type": "String",
 			"value": null,
 			"optional": false
