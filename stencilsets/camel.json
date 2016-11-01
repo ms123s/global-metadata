@@ -3733,7 +3733,7 @@
 		}, {
 			"id": "uri_template",
 			"type": "String",
-			"value": "${protocol}://${host}:${port}/${path}",
+			"value": "${protocol}://${host}:${port}/dummypath",
 			"visible": false
 		}, {
 			"id": "urivalue_protocol",
@@ -3757,37 +3757,77 @@
 			"value": "2181",
 			"optional": false
 		}, {
-			"id": "urivalue_path",
+			"id": "uriparam_path",
 			"title": "Path",
 			"title_de": "Pfad",
-			"description": "The node in the ZooKeeper server (aka znode), without leading /",
+			"description": "The node in the ZooKeeper server (aka znode), with leading /",
 			"type": "String",
 			"value": null,
 			"optional": false
 		}, {
-			"id": "uriparam_listChildren",
-			"title": "ListChildren",
-			"description": "Whether the children of the node should be listed",
-			"type": "boolean",
-			"value": true
+			"id": "uriparam_mode",
+			"title": "Mode",
+			"description": "The mode that should be used",
+			"type": "Choice",
+			"value": "WRITE",
+			"items": [ {
+				"id": "c1",
+				"title": "Write",
+				"value": "WRITE"
+			}, {
+				"id": "c2",
+				"title": "Get node",
+				"value": "GET"
+			}, {
+				"id": "c3",
+				"title": "List childs",
+				"value": "LIST"
+			}, {
+				"id": "c4",
+				"title": "Delete node",
+				"value": "DELETE"
+			} ]
 		}, {
 			"id": "uriparam_repeat",
 			"title": "Repeat",
 			"description": "Should changes to the znode be 'watched' and repeatedly processed.",
+			"include": false,
 			"type": "boolean",
 			"value": false
 		}, {
 			"id": "uriparam_create",
 			"title": "Create",
 			"description": "Should the endpoint create the node if it does not currently exist.",
+			"visible": "uriparam_mode=='WRITE'",
 			"type": "boolean",
 			"value": true
+		}, {
+			"id": "uriparam_source",
+			"title": "Source",
+			"title_de": "Quelle",
+			"description_de": "z.B. <ul><li> <b>header.nodeContent</b> oder kurz: <b>h.nodeContent</b> => Quelle ist das Headerfeld <b>nodeContent</b></li><li><b>property.nodeContent</b> oder kurz <b>p.nodeContent</b> =>  Quelle ist Property <b>nodeContent</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "e.g. <ul><li> <b>header.nodeContent</b> or short: <b>h.nodeContent</b> => Source is the headerfield <b>nodeContent</b></li><li><b>property.nodeContent</b> or short <b>p.nodeContent</b> => Source is property <b>nodeContent</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": false,
+			"visible": "uriparam_mode=='WRITE'"
+		}, {
+			"id": "uriparam_destination",
+			"title": "Destination",
+			"title_de": "Ziel",
+			"description_de": "Ziel des Ergebnisses. z.B. <ul><li> <b>header.nodeContent</b> oder kurz: <b>h.nodeContent</b> => Ziel ist das Headerfeld <b>nodeContent</b></li><li><b>property.nodeContent</b> oder kurz <b>p.nodeContent</b> => Ziel ist Property <b>nodeContent</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the result. e.g. <ul><li> <b>header.nodeContent</b> or short: <b>h.nodeContent</b> => Destination is headerfield <b>nodeContent</b></li><li><b>property.nodeContent</b> or short <b>p.nodeContent</b> Destination is property <b>nodeContent</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": false,
+			"visible": "uriparam_mode=='GET'"
 		}, {
 			"id": "uriparam_createMode",
 			"title": "CreateMode",
 			"description": "The create mode that should be used for the newly created node",
+			"visible": "uriparam_mode=='WRITE'",
 			"type": "Choice",
-			"value": "EPHEMERAL",
+			"value": "PERSISTENT",
 			"items": [ {
 				"id": "c1",
 				"title": "EPHEMERAL",
