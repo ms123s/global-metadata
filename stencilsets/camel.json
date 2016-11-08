@@ -1384,8 +1384,8 @@
 			},
 			"title": "Processcriteria",
 			"title_de": "Prozesskriterien",
-			"description": "Criteria of the process which is to be executed or a signal sent",
-			"description_de": "Kriterien des Prozesses der ausgeführt werden soll oder dem ein Signal gesendet werden soll",
+			"description": "Criteria of the process",
+			"description_de": "Kriterien des Prozesses",
 			"visible": "urivalue_operation!='publishEvents' && urivalue_operation!='queryTasks' && urivalue_operation!='executeTaskOperation'",
 			"value": null,
 			"readonly": false,
@@ -3772,7 +3772,7 @@
 			"value": "WRITE",
 			"items": [ {
 				"id": "c1",
-				"title": "Write",
+				"title": "Storing data to node",
 				"value": "WRITE"
 			}, {
 				"id": "c2",
@@ -3780,7 +3780,7 @@
 				"value": "GET"
 			}, {
 				"id": "c3",
-				"title": "List childs",
+				"title": "List child nodes",
 				"value": "LIST"
 			}, {
 				"id": "c4",
