@@ -2826,6 +2826,8 @@
 			"id": "uriparam_procedure",
 			"title": "Procedurename",
 			"title_de": "Prozedurname",
+			"description": "The procedure is fully qualified on the router registered.<br/>namespace.servicename.methodname <br/>eq. <b>docu.wamp.multiply</b>",
+			"description_de": "Die Procedure wird voll quailifiert am Router angemeldet.<br />namespace.servicename.methodname<br/>zb. <b>docu.wamp.multiply</b>",
 			"filter": "[a-z0-9_]",
 			"visible": "urivalue_mode=='rpc'",
 			"optional": false,
