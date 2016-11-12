@@ -1747,7 +1747,7 @@
     "description": "Help information for form controls.",
     "view": "new_help.svg",
     "icon": "new_help.png",
-    "_roles": [ "ui_common", "support_morph" ],
+    "roles": [ "ui_common", "support_morph" ],
     "properties": [ {
       "id": "xf_id",
       "type": "String",
