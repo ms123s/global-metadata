@@ -231,6 +231,10 @@
         "msgstr": "Administrator Recht"
     },
     {
+        "msgid": "aid.user.homedir",
+        "msgstr": "Homedirectory"
+    },
+    {
         "msgid": "data.group.admin",
         "msgstr": "Administratorrecht"
     },

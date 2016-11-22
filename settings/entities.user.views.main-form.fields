@@ -34,6 +34,11 @@
             "tab": "tab2"
         },
         {
+            "name": "homedir",
+            "enabled": true,
+            "tab": "tab2"
+        },
+        {
             "name": "roles",
             "enabled": true,
             "tab": "tab3"

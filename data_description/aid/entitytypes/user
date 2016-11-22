@@ -60,6 +60,12 @@
             "edittype": "checkbox",
             "datatype": "boolean"
         },
+
+        "homedir": {
+            "enabled": true,
+            "name": "homedir",
+            "datatype": "string"
+        },
         "password": {
             "enabled": true,
             "name": "password",

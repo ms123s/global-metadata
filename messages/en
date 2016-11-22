@@ -1443,6 +1443,10 @@
         "msgstr": "First name"
     },
     {
+        "msgid": "aid.user.homedir",
+        "msgstr": "Homedirectory"
+    },
+    {
         "msgid": "aid.user.password",
         "msgstr": "Password"
     },
