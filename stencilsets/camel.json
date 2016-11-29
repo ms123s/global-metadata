@@ -3052,6 +3052,66 @@
 			"visible": true
 		} ]
 	}, {
+		"name": "scpEventProperties",
+		"properties": [ {
+			"id": "type_websocket",
+			"type": "String",
+			"value": "Websocket",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "websocket:${name}",
+			"visible": false
+		}, {
+			"id": "urivalue_name",
+			"title": "Name",
+			"title_de": "Name",
+			"optional": false,
+			"description": "websocket:${name}",
+			"type": "String",
+			"value": "ws1",
+			"visible": true
+		}, {
+			"id": "urivalue_sendToAll",
+			"title": "Send to all",
+			"title_de": "Sende an alle",
+			"type": "Boolean",
+			"value": false,
+			"visible": true
+		} ]
+	}, {
+		"name": "deepZoomProperties",
+		"properties": [ {
+			"id": "type_websocket",
+			"type": "String",
+			"value": "Websocket",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "websocket:${name}",
+			"visible": false
+		}, {
+			"id": "urivalue_name",
+			"title": "Name",
+			"title_de": "Name",
+			"optional": false,
+			"description": "websocket:${name}",
+			"type": "String",
+			"value": "ws1",
+			"visible": true
+		}, {
+			"id": "urivalue_sendToAll",
+			"title": "Send to all",
+			"title_de": "Sende an alle",
+			"type": "Boolean",
+			"value": false,
+			"visible": true
+		} ]
+	}, {
 		"name": "permissionProperties",
 		"properties": [ {
 			"id": "uriparam_startableGroups",
@@ -4092,6 +4152,16 @@
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
+		"id": "DeepZoomEndpoint",
+		"title": "DeepZoom",
+		"view": "deepzoomendpoint.svg",
+		"icon": "deepzoomendpoint.png",
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "deepZoomProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
 		"id": "DirectEndpoint",
 		"title": "Direct",
 		"view": "directendpoint.svg",
@@ -4219,6 +4289,16 @@
 		"groups": [ "Building blocks M-Z" ],
 		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "repoProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "ScpEventEndpoint",
+		"title": "ScpEvent",
+		"view": "scpeventendpoint.svg",
+		"icon": "scpeventendpoint.png",
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "scpEventProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
