@@ -3054,61 +3054,94 @@
 	}, {
 		"name": "scpEventProperties",
 		"properties": [ {
-			"id": "type_websocket",
+			"id": "type_scpevent",
 			"type": "String",
-			"value": "Websocket",
+			"value": "ScpEvent",
 			"visible": false,
 			"refToView": [ "endpoint_type" ]
 		}, {
 			"id": "uri_template",
 			"type": "String",
-			"value": "websocket:${name}",
+			"value": "scpevent:dummy",
 			"visible": false
 		}, {
-			"id": "urivalue_name",
-			"title": "Name",
-			"title_de": "Name",
+			"id": "uriparam_filepattern",
+			"title": "Filepattern",
 			"optional": false,
-			"description": "websocket:${name}",
 			"type": "String",
-			"value": "ws1",
+			"value": null,
 			"visible": true
 		}, {
-			"id": "urivalue_sendToAll",
-			"title": "Send to all",
-			"title_de": "Sende an alle",
-			"type": "Boolean",
-			"value": false,
-			"visible": true
+			"id": "uriparam_pathDestination",
+			"title": "Dest. Pathname",
+			"title_de": "Ablage Pfadname",
+			"description_de": "Ablage des Pfadnamens. z.B. <ul><li> <b>header.pathname</b> oder kurz: <b>h.pathname</b> => Ziel ist das Headerfeld <b>pathname</b></li><li><b>property.pathname</b> oder kurz <b>p.pathname</b> => Ziel ist Property <b>pathname</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Place of pathname. e.g. <ul><li> <b>header.pathname</b> or short: <b>h.pathname</b> => Destination is headerfield <b>pathname</b></li><li><b>property.pathname</b> or short <b>p.pathname</b> Destination is property <b>pathname</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true
 		} ]
 	}, {
 		"name": "deepZoomProperties",
 		"properties": [ {
-			"id": "type_websocket",
+			"id": "type_deepzoom",
 			"type": "String",
-			"value": "Websocket",
+			"value": "DeepZoom",
 			"visible": false,
 			"refToView": [ "endpoint_type" ]
 		}, {
 			"id": "uri_template",
 			"type": "String",
-			"value": "websocket:${name}",
+			"value": "deepzoom:dummy",
 			"visible": false
 		}, {
-			"id": "urivalue_name",
-			"title": "Name",
-			"title_de": "Name",
+			"id": "uriparam_inputpath",
+			"title": "Inputpath",
 			"optional": false,
-			"description": "websocket:${name}",
 			"type": "String",
-			"value": "ws1",
+			"value": null,
 			"visible": true
 		}, {
-			"id": "urivalue_sendToAll",
-			"title": "Send to all",
-			"title_de": "Sende an alle",
-			"type": "Boolean",
-			"value": false,
+			"id": "uriparam_outputdir",
+			"title": "Outputdir",
+			"optional": false,
+			"type": "String",
+			"value": null,
+			"visible": true
+		} ]
+	}, {
+		"name": "hotspotProperties",
+		"properties": [ {
+			"id": "type_hotspot",
+			"type": "String",
+			"value": "Hotspot",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "hotspot:dummy",
+			"visible": false
+		}, {
+			"id": "uriparam_inputpath",
+			"title": "Inputpath",
+			"optional": false,
+			"type": "String",
+			"value": null,
+			"visible": true
+		}, {
+			"id": "uriparam_outputfile",
+			"title": "Outputfile",
+			"optional": false,
+			"type": "String",
+			"value": null,
+			"visible": true
+		}, {
+			"id": "uriparam_regex",
+			"title": "Regex",
+			"optional": false,
+			"type": "String",
+			"value": null,
 			"visible": true
 		} ]
 	}, {
@@ -4239,6 +4272,16 @@
 		"groups": [ "Building blocks A-L" ],
 		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "hazelcastProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "HotspotEndpoint",
+		"title": "Hotspot",
+		"view": "hotspotendpoint.svg",
+		"icon": "hotspotendpoint.png",
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "hotspotProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
