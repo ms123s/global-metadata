@@ -3065,18 +3065,27 @@
 			"value": "scpevent:dummy",
 			"visible": false
 		}, {
-			"id": "uriparam_filepattern",
+			"id": "uriparam_filePattern",
 			"title": "Filepattern",
 			"optional": false,
 			"type": "String",
 			"value": null,
 			"visible": true
 		}, {
-			"id": "uriparam_pathDestination",
+			"id": "uriparam_fileDestination",
 			"title": "Dest. Pathname",
 			"title_de": "Ablage Pfadname",
 			"description_de": "Ablage des Pfadnamens. z.B. <ul><li> <b>header.pathname</b> oder kurz: <b>h.pathname</b> => Ziel ist das Headerfeld <b>pathname</b></li><li><b>property.pathname</b> oder kurz <b>p.pathname</b> => Ziel ist Property <b>pathname</b></li><li> default ist <b>body</b></li></ul>",
 			"description":    "Place of pathname. e.g. <ul><li> <b>header.pathname</b> or short: <b>h.pathname</b> => Destination is headerfield <b>pathname</b></li><li><b>property.pathname</b> or short <b>p.pathname</b> Destination is property <b>pathname</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true
+		}, {
+			"id": "uriparam_vfsRootDestination",
+			"title": "Dest. VfsRoot",
+			"title_de": "Ablage VfsRoot",
+			"description_de": "Ablage der VfsRoot. z.B. <ul><li> <b>header.vfsRoot</b> oder kurz: <b>h.vfsRoot</b> => Ziel ist das Headerfeld <b>vfsRoot</b></li><li><b>property.vfsRoot</b> oder kurz <b>p.vfsRoot</b> => Ziel ist Property <b>vfsRoot</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Place of vfsRoot. e.g. <ul><li> <b>header.vfsRoot</b> or short: <b>h.vfsRoot</b> => Destination is headerfield <b>vfsRoot</b></li><li><b>property.vfsRoot</b> or short <b>p.vfsRoot</b> Destination is property <b>vfsRoot</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
 			"value": null,
 			"optional": true
@@ -3095,50 +3104,36 @@
 			"value": "deepzoom:dummy",
 			"visible": false
 		}, {
-			"id": "uriparam_inputpath",
-			"title": "Inputpath",
+			"id": "uriparam_vfsRoot",
+			"title": "VfsRoot",
 			"optional": false,
 			"type": "String",
 			"value": null,
 			"visible": true
 		}, {
-			"id": "uriparam_outputdir",
-			"title": "Outputdir",
-			"optional": false,
-			"type": "String",
-			"value": null,
-			"visible": true
-		} ]
-	}, {
-		"name": "hotspotProperties",
-		"properties": [ {
-			"id": "type_hotspot",
-			"type": "String",
-			"value": "Hotspot",
-			"visible": false,
-			"refToView": [ "endpoint_type" ]
-		}, {
-			"id": "uri_template",
-			"type": "String",
-			"value": "hotspot:dummy",
-			"visible": false
-		}, {
-			"id": "uriparam_inputpath",
-			"title": "Inputpath",
+			"id": "uriparam_pdfFile",
+			"title": "Pdffile",
 			"optional": false,
 			"type": "String",
 			"value": null,
 			"visible": true
 		}, {
-			"id": "uriparam_outputfile",
-			"title": "Outputfile",
+			"id": "uriparam_outputDirectory",
+			"title": "Output Directory",
 			"optional": false,
 			"type": "String",
 			"value": null,
 			"visible": true
 		}, {
-			"id": "uriparam_regex",
-			"title": "Regex",
+			"id": "uriparam_hotspotRegex",
+			"title": "Hotspot Regex",
+			"optional": false,
+			"type": "String",
+			"value": null,
+			"visible": true
+		}, {
+			"id": "uriparam_factor",
+			"title": "Factor",
 			"optional": false,
 			"type": "String",
 			"value": null,
@@ -4272,16 +4267,6 @@
 		"groups": [ "Building blocks A-L" ],
 		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "hazelcastProperties", "extraParamsProperties" ],
-		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
-	}, {
-		"type": "node",
-		"id": "HotspotEndpoint",
-		"title": "Hotspot",
-		"view": "hotspotendpoint.svg",
-		"icon": "hotspotendpoint.png",
-		"groups": [ "Building blocks A-L" ],
-		"groups_de": [ "Bausteine A-L" ],
-		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "hotspotProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
