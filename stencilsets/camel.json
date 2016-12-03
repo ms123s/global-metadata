@@ -3067,6 +3067,8 @@
 		}, {
 			"id": "uriparam_filePattern",
 			"title": "Filepattern",
+			"description_de": "Nur Ereignisse auf bei denen  das Muster auf den Filenamen passt, werden beachtet. <br>z.b: <b>.*\\.pdf$</b> : Nur Files mit der Endung '.pdf'",
+			"description": "Only events where the pattern fits the filename are considered. <br>z.b: <b>.*\\.pdf$</b> : Only files with the suffix '.pdf'",
 			"optional": false,
 			"type": "String",
 			"value": null,
@@ -3075,8 +3077,8 @@
 			"id": "uriparam_fileDestination",
 			"title": "Dest. Pathname",
 			"title_de": "Ablage Pfadname",
-			"description_de": "Ablage des Pfadnamens. z.B. <ul><li> <b>header.pathname</b> oder kurz: <b>h.pathname</b> => Ziel ist das Headerfeld <b>pathname</b></li><li><b>property.pathname</b> oder kurz <b>p.pathname</b> => Ziel ist Property <b>pathname</b></li><li> default ist <b>body</b></li></ul>",
-			"description":    "Place of pathname. e.g. <ul><li> <b>header.pathname</b> or short: <b>h.pathname</b> => Destination is headerfield <b>pathname</b></li><li><b>property.pathname</b> or short <b>p.pathname</b> Destination is property <b>pathname</b></li><li> default is <b>body</b></li></ul>",
+			"description_de": "Header/Property Feld in das der Pathname gespeichert wird. z.B. <ul><li> <b>header.pathname</b> oder kurz: <b>h.pathname</b> => Ziel ist das Headerfeld <b>pathname</b></li><li><b>property.pathname</b> oder kurz <b>p.pathname</b> => Ziel ist die Property <b>pathname</b></li><li> default ist <b>p.pathname</b></li></ul>",
+			"description":    "Header/Property Field into which the pathname is stored. e.g. <ul><li> <b>header.pathname</b> or short: <b>h.pathname</b> => Destination is headerfield <b>pathname</b></li><li><b>property.pathname</b> or short <b>p.pathname</b> Destination is property <b>pathname</b></li><li> default is <b>p.pathname</b></li></ul>",
 			"type": "String",
 			"value": null,
 			"optional": true
@@ -3084,8 +3086,8 @@
 			"id": "uriparam_vfsRootDestination",
 			"title": "Dest. VfsRoot",
 			"title_de": "Ablage VfsRoot",
-			"description_de": "Ablage der VfsRoot. z.B. <ul><li> <b>header.vfsRoot</b> oder kurz: <b>h.vfsRoot</b> => Ziel ist das Headerfeld <b>vfsRoot</b></li><li><b>property.vfsRoot</b> oder kurz <b>p.vfsRoot</b> => Ziel ist Property <b>vfsRoot</b></li><li> default ist <b>body</b></li></ul>",
-			"description":    "Place of vfsRoot. e.g. <ul><li> <b>header.vfsRoot</b> or short: <b>h.vfsRoot</b> => Destination is headerfield <b>vfsRoot</b></li><li><b>property.vfsRoot</b> or short <b>p.vfsRoot</b> Destination is property <b>vfsRoot</b></li><li> default is <b>body</b></li></ul>",
+			"description_de": "Header/Property Feld in das die VfsRoot(Homedir des Users)  gespeichert wird. z.B. <ul><li> <b>header.vfsRoot</b> oder kurz: <b>h.vfsRoot</b> => Ziel ist das Headerfeld <b>vfsRoot</b></li><li><b>property.vfsRoot</b> oder kurz <b>p.vfsRoot</b> => Ziel ist die Property <b>vfsRoot</b></li><li> default ist <b>p.vfsroot</b></li></ul>",
+			"description":    "Header/Property Field into which the VfsRoot (Homedir of the user)  is stored. e.g. <ul><li> <b>header.vfsRoot</b> or short: <b>h.vfsRoot</b> => Destination is headerfield <b>vfsRoot</b></li><li><b>property.vfsRoot</b> or short <b>p.vfsRoot</b> Destination is property <b>vfsRoot</b></li><li> default is <b>p.vfsroot</b></li></ul>",
 			"type": "String",
 			"value": null,
 			"optional": true
@@ -3106,6 +3108,8 @@
 		}, {
 			"id": "uriparam_vfsRoot",
 			"title": "VfsRoot",
+			"description_de": "Header/Property Feld das die VfsRoot(Homedir des Users) enthält.<br> zb. <b>p.vfsroot</b><br>Voreingestellt: <b>p.vfsroot</b>",
+			"description":    "Header/Property Field which the VfsRoot (Homedir of the user) contains.<br> eg. <b>p.vfsroot</b><br>Default: <b>p.vfsroot</b>",
 			"optional": false,
 			"type": "String",
 			"value": null,
@@ -3113,6 +3117,8 @@
 		}, {
 			"id": "uriparam_pdfFile",
 			"title": "Pdffile",
+			"description_de": "Header/Property Feld das den Path des PdfFile enthält.<br> zb. <b>p.pathname</b><br>Voreingestellt: <b>p.pathname</b>",
+			"description":    "Header/Property Field which the path of the pdffile contains.<br> eg. <b>p.pathname</b><br>Default: <b>p.pathname</b>",
 			"optional": false,
 			"type": "String",
 			"value": null,
@@ -3120,6 +3126,8 @@
 		}, {
 			"id": "uriparam_outputDirectory",
 			"title": "Output Directory",
+			"description_de": "Hier werden die Deepzoom Images und das Hotspotfile  abgelegt.<br>Relativer Verzeichnisname. Die Vfsroot wird vorangestellt",
+			"description":    "The Deepzoom Images and the Hotspotfile are stored here.<br>Relative directory name. The Vfsroot is preceded",
 			"optional": false,
 			"type": "String",
 			"value": null,
@@ -3127,6 +3135,8 @@
 		}, {
 			"id": "uriparam_hotspotRegex",
 			"title": "Hotspot Regex",
+			"description_de": "Der Hotspottext muss auf dieses Muster passen.<br> zb.: <b>[0-9]{1,4}</b> : Nur 1-4 stellige Zeichenketten, die nur Ziffer enthalten. ",
+			"description":    "The hotspot text must match this pattern. <br> zb.: <b>[0-9]{1,4}</b> : Only 1-4 digit strings,  containing only digit.",
 			"optional": false,
 			"type": "String",
 			"value": null,
@@ -3134,6 +3144,8 @@
 		}, {
 			"id": "uriparam_factor",
 			"title": "Factor",
+			"description_de": "Alle Koordinaten werden mit diesem Faktor multipliziert.",
+			"description":    "All coordinates are multiplied by this factor.",
 			"optional": false,
 			"type": "String",
 			"value": null,
