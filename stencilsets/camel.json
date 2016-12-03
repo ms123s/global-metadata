@@ -3067,7 +3067,7 @@
 		}, {
 			"id": "uriparam_filePattern",
 			"title": "Filepattern",
-			"description_de": "Nur Ereignisse auf bei denen  das Muster auf den Filenamen passt, werden beachtet. <br>z.b: <b>.*\\.pdf$</b> : Nur Files mit der Endung '.pdf'",
+			"description_de": "Nur Ereignisse bei denen  das Muster auf den Filenamen passt, werden beachtet. <br>z.b: <b>.*\\.pdf$</b> : Nur Files mit der Endung '.pdf'",
 			"description": "Only events where the pattern fits the filename are considered. <br>z.b: <b>.*\\.pdf$</b> : Only files with the suffix '.pdf'",
 			"optional": false,
 			"type": "String",
