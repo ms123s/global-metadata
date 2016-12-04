@@ -1447,6 +1447,10 @@
         "msgstr": "Homedirectory"
     },
     {
+        "msgid": "aid.user.ftphomedir",
+        "msgstr": "Ftp-Homedirectory"
+    },
+    {
         "msgid": "aid.user.password",
         "msgstr": "Password"
     },

@@ -235,6 +235,10 @@
         "msgstr": "Homedirectory"
     },
     {
+        "msgid": "aid.user.ftphomedir",
+        "msgstr": "Ftp-Homedirectory"
+    },
+    {
         "msgid": "data.group.admin",
         "msgstr": "Administratorrecht"
     },

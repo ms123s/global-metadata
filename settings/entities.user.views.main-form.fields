@@ -36,7 +36,12 @@
         {
             "name": "homedir",
             "enabled": true,
-            "tab": "tab2"
+            "tab": "tab1"
+        },
+        {
+            "name": "ftphomedir",
+            "enabled": true,
+            "tab": "tab1"
         },
         {
             "name": "roles",

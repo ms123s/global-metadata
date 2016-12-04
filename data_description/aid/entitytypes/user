@@ -66,6 +66,11 @@
             "name": "homedir",
             "datatype": "string"
         },
+        "ftphomedir": {
+            "enabled": true,
+            "name": "ftphomedir",
+            "datatype": "string"
+        },
         "password": {
             "enabled": true,
             "name": "password",
