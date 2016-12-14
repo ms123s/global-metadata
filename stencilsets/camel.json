@@ -3825,6 +3825,41 @@
 			"visible": true
 		} ]
 	}, {
+		"name": "kafkaProperties",
+		"properties": [ {
+			"id": "type_kafka",
+			"type": "String",
+			"value": "KAFKA",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "kafka:${host}:${port}",
+			"visible": false
+		}, {
+			"id": "urivalue_host",
+			"type": "String",
+			"title": "Host",
+			"title_de": "Host",
+			"visible": true,
+			"value": "127.0.0.1"
+		}, {
+			"id": "urivalue_port",
+			"title": "Port",
+			"readonly": false,
+			"type": "String",
+			"value": "9093",
+			"optional": false
+		}, {
+			"id": "uriparam_topic",
+			"title": "Topic",
+			"description": "Topic to use. From the consumer side you can specify also a comma separated list of topics.",
+			"type": "String",
+			"value": null,
+			"visible": true
+		} ]
+	}, {
 		"name": "zookeeperProperties",
 		"properties": [ {
 			"id": "type_zookeeper",
@@ -4299,6 +4334,16 @@
 		"groups": [ "Building blocks A-L" ],
 		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "jmsProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "KafkaEndpoint",
+		"title": "Kafka",
+		"view": "kafkaendpoint.svg",
+		"icon": "kafkaendpoint.png",
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "kafkaProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
