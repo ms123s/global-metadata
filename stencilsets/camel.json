@@ -3858,6 +3858,13 @@
 			"type": "String",
 			"value": null,
 			"visible": true
+		}, {
+			"id": "uriparam_groupId",
+			"title": "GroupId",
+			"description": "",
+			"type": "String",
+			"value": null,
+			"visible": true
 		} ]
 	}, {
 		"name": "zookeeperProperties",
