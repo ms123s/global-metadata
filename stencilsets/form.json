@@ -1899,6 +1899,18 @@
       "refToView": "",
       "length": "30"
     }, {
+      "id": "xf_label",
+      "type": "String",
+      "title": "Label",
+      "prefix": "oryx",
+      "value": "",
+      "description": "",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "length": "30"
+    }, {
       "id": "xf_selected",
       "type": "Combo",
       "title": "selected",
