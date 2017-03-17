@@ -214,6 +214,117 @@
       } ]
     } ]
   }, {
+    "name": "getPackageTree",
+    "properties": [ {
+      "id": "xf_varname",
+      "type": "String",
+      "title": "Inputtree",
+      "title_de": "Eingabebaum",
+      "value": "",
+      "description": "Name of the tree with the selectable elements",
+      "description_de": "Name der Baums mit den auszuwählenden Elementen",
+      "popular": false,
+      "readonly": "xf_jsonpath!='' || xf_service!=null",
+      "optional": true,
+      "length": "50"
+    }, {
+      "id": "xf_jsonpath",
+      "type": "String",
+      "title": "Json path",
+      "title_de": "Json Pfad",
+      "description": "Access to treestructur with <b>jsonpath</b>, refer <b>'Treestructure'</b> in the global form attributes<br/>eg. <br/><b>$.countrylist</b>",
+      "description_de": "Zugriff auf Baumstrukture mit <b>jsonpath</b>, siehe <b>'Baumstrukturen'</b< in den globalen Form Eigenschaften<br/> z.B: <br/><b>$.countrylist</b>",
+      "prefix": "oryx",
+      "value": "",
+      "popular": false,
+      "optional": true,
+      "readonly": "xf_varname!='' || xf_service!=null",
+      "refToView": ""
+    }, {
+      "id": "xf_service",
+      "type": "ResourceSelector",
+      "config": {
+        "type": [ "sw.camel" ],
+        "prefix": ""
+      },
+      "title": "Get(Service)",
+      "title_de": "Beziehen(Service)",
+      "prefix": "oryx",
+      "value": null,
+      "description": "<b>Get treestrukture generated per servicecall</b>.<br/>The service must return a tree, with these <b>properties (id, label, children)</b>.<br/> However, the properties can be also assigned (mapped).<br/>The service can be parameterized",
+      "description_de": "<b>Baumstruktur erzeugen per Serviceaufruf</b>.<br/>Der Service muss einen Baum mit folgenden <b>Eigenschaften (id, label, children)</b> liefern.<br/> Jedoch können die Eigenschaften auch zugewiesen(gemapped)  werden.<br/>Der Service kann parametrisiert werden",
+      "popular": false,
+      "readonly": "xf_varname!='' || xf_jsonpath!=''"
+    }, {
+      "id": "xf_parammapping",
+      "type": "Complex",
+      "title": "Parameter(Service)",
+      "value": "",
+      "description": "Parametermapping servicecall.<br/>In addition to form variables (field content) the following variables can also be used: <ul><li><b>$lang</b>: string, current language</li><li><b>$uuid</b> : string, value from <b>window.uuid</b> steht</li><li><b>$mode</b> : string, <b>edit</b> or <b>add</b></li></ul>",
+      "description_de": "Parametermapping Serviceaufruf.<br/>Neben den Formvariablen(Feldinhalte) können auch folgende Variablen benutzt werden: <ul><li><b>$lang</b>: string, aktuelle Sprache</li><li><b>$uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>$mode</b> : string, <b>edit</b> oder <b>add</b></li></ul>",
+      "popular": false,
+      "optional": true,
+      "readonly": "xf_varname!='' || xf_jsonpath!=''",
+      "complexItems": [ {
+        "id": "formexpr",
+        "name": "Formexpression",
+        "name_de": "Form Expression",
+        "type": "String",
+        "value": "",
+        "width": 400,
+        "optional": false
+      }, {
+        "id": "param",
+        "name": "Service parameter",
+        "name_de": "Service Parameter",
+        "type": "String",
+        "value": "",
+        "width": 150,
+        "optional": false
+      } ]
+    }, {
+      "id": "xf_resultmapping",
+      "type": "Complex",
+      "title": "Result(Service)",
+      "value": "",
+      "description": "Resultmapping for the servicecall.<br/>Can be empty, if the nodes of the tree(id,label,children) match",
+      "description_de": "Ergebniszuweisung für den Serviceaufruf.<br/>Kann leer sein, wenn die Eigenschaft(id,label,children) des Baums übereinstimmen",
+      "popular": false,
+      "optional": true,
+      "readonly": "false",
+      "complexItems": [ {
+        "id": "resultexpr",
+        "name": "Result expression",
+        "name_de": "Ergebnis Expression",
+        "type": "String",
+        "value": "",
+        "width": 400,
+        "optional": false
+      }, {
+        "id": "mapping",
+        "name": "Mapping",
+        "name_de": "Mapping",
+        "readonly": false,
+        "type": "combo",
+        "value": "value",
+        "items": [ {
+          "id": "id",
+          "title": "id",
+          "value": "id"
+        }, {
+          "id": "label",
+          "title": "label",
+          "value": "label"
+        }, {
+          "id": "children",
+          "title": "children",
+          "value": "children"
+        } ],
+        "width": 80,
+        "optional": false
+      } ]
+    } ]
+  }, {
     "name": "visibilityPackage",
     "properties": [ {
       "id": "xf_exclude",
@@ -1197,6 +1308,80 @@
     "view": "new_select1.svg",
     "icon": "new_select1.png",
     "propertyPackages": [ "getPackage", "visibilityPackage","tabindexPackage" ],
+    "roles": [ "core_form_controls", "controls_morph" ],
+    "layout": [ {
+      "type": "layout.xforms.label",
+      "moveY": -1,
+      "moveX": 0
+    } ],
+    "properties": [ {
+      "id": "xf_id",
+      "type": "String",
+      "title": "Id",
+      "prefix": "oryx",
+      "value": "",
+      "description": "",
+      "popular": true,
+      "readonly": false,
+      "optional": false,
+      "refToView": "",
+      "length": "30"
+    }, {
+      "id": "xf_default",
+      "type": "String",
+      "title": "Defaultvalue",
+      "title_de": "Voreinstellung",
+      "description_de": "Der Wert oder  #0,#1 .. für ein Element der Liste",
+      "description": "The value or  #0,#1 .. for a element of the list",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "length": "30"
+    }, {
+      "id": "xf_multiselection",
+      "title": "Multiselection",
+      "title_de": "Mehrfachauswahl",
+      "type": "Boolean",
+      "value": false,
+      "popular": true,
+      "readonly": false,
+      "optional": false
+    }, {
+      "id": "xf_required",
+      "type": "Combo",
+      "title": "Required",
+      "title_de": "Erforderlich",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "items": [ {
+        "id": "c1",
+        "value": "true",
+        "title": "true",
+        "refToView": ""
+      }, {
+        "id": "c2",
+        "value": "false",
+        "title": "false",
+        "refToView": ""
+      } ]
+    } ]
+  }, {
+    "type": "node",
+    "id": "Treeselect",
+    "title": "Treeselect",
+    "title_de": "Baumauswahl",
+    "groups": [ "Controls" ],
+    "description": "This form control allows the user to make single/multiple selections from a tree.",
+    "view": "new_itemset.svg",
+    "icon": "new_itemset.png",
+    "propertyPackages": [ "getPackageTree", "visibilityPackage","tabindexPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
     "layout": [ {
       "type": "layout.xforms.label",
