@@ -290,6 +290,7 @@
       "description": "Resultmapping for the servicecall.<br/>Can be empty, if the nodes of the tree(id,label,children) match",
       "description_de": "Ergebniszuweisung für den Serviceaufruf.<br/>Kann leer sein, wenn die Eigenschaft(id,label,children) des Baums übereinstimmen",
       "popular": false,
+      "include": false,
       "optional": true,
       "readonly": "false",
       "complexItems": [ {
