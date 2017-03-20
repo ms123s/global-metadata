@@ -467,6 +467,10 @@
         "msgstr": "Die Database Metadaten wurden erstellt"
     },
     {
+        "msgid": "datasource.orient_pack_data_not_ok",
+        "msgstr": "Packagename \"data\" und Orientdb nicht erlaubt"
+    },
+    {
         "msgid": "datasource.create_metadata_failed",
         "msgstr": "Das Erstellen der Database Metadaten schlug fehl"
     },

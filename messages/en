@@ -1299,6 +1299,10 @@
 				'msgstr': "DATANUCLEUS excludes(Pattern <b>with</b> databasename)"
 		},
     {
+        "msgid": "datasource.orient_pack_data_not_ok",
+        "msgstr": "Packagename \"data\" amd Orientdb not allowed"
+    },
+    {
         "msgid": "data.multiedit.start",
         "msgstr": "begin"
     },
