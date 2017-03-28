@@ -1071,8 +1071,12 @@
         "msgstr": "Structure mapping"
     },
     {
-        "msgid": "datamapper.entitytypes_create",
+        "msgid": "datamapper.entitytypes_create_nucleus",
         "msgstr": "Creating classes (Entitytypes)"
+    },
+    {
+        "msgid": "datamapper.entitytypes_create_orient",
+        "msgstr": "Creating classes for orientDB"
     },
     {
         "msgid": "datamapper.entity",

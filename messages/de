@@ -4723,8 +4723,12 @@
         "msgstr": "executeNamedFilter/List"
     },
     {
-        "msgid": "datamapper.entitytypes_create",
+        "msgid": "datamapper.entitytypes_create_nucleus",
         "msgstr": "Erstellen von Klassen(Entitytypes)"
+    },
+    {
+        "msgid": "datamapper.entitytypes_create_orient",
+        "msgstr": "Erstellen von Klassen für OrientDB"
     },
     {
         "msgid": "datamapper.metadata_edit",
