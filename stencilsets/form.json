@@ -1210,6 +1210,97 @@
     } ]
   }, {
     "type": "node",
+    "id": "Crud",
+    "title": "CRUD (embedded object)",
+    "title_de": "CRUD (eingebettes Objekt)",
+    "groups": [ "Controls" ],
+    "description": "This form control allows the user to create,edit and delete a embedded object.",
+    "view": "new_crud.svg",
+    "icon": "new_crud.png",
+    "propertyPackages": [ "getPackage", "visibilityPackage","tabindexPackage" ],
+    "roles": [ "core_form_controls", "controls_morph" ],
+    "layout": [ {
+      "type": "layout.xforms.label",
+      "moveY": -1,
+      "moveX": 0
+    } ],
+    "properties": [ {
+      "id": "xf_id",
+      "type": "String",
+      "title": "Id",
+      "prefix": "oryx",
+      "value": "",
+      "description": "",
+      "popular": true,
+      "readonly": false,
+      "optional": false,
+      "refToView": "",
+      "length": "30"
+    }, {
+      "id": "xf_multiselection",
+      "title": "Multiselection",
+      "title_de": "Mehrfachauswahl",
+      "type": "Boolean",
+      "value": false,
+      "popular": true,
+      "readonly": false,
+      "optional": false
+    }, {
+      "id": "xf_columns",
+      "type": "Complex",
+      "config": {
+        "helperTree": [ "sw.form", "sw.filter", "sw.entitytype" ]
+      },
+      "title": "Tablecolumns",
+      "title_de": "Tabellenspalten",
+      "value": "",
+      "description": "Tablecolumns",
+      "description_de": "Angezeigte Tabellenspalten",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "complexItems": [ {
+        "id": "colname",
+        "name": "Columnname",
+        "name_de": "Spaltenname",
+        "type": "String",
+        "value": "",
+        "width": 150,
+        "optional": false
+      }, {
+        "id": "display",
+        "name": "Header",
+        "name_de": "Anzeige",
+        "type": "String",
+        "value": "",
+        "width": 150,
+        "optional": true
+      } ]
+    }, {
+      "id": "xf_required",
+      "type": "Combo",
+      "title": "Required",
+      "title_de": "Erforderlich",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "items": [ {
+        "id": "c1",
+        "value": "true",
+        "title": "true",
+        "refToView": ""
+      }, {
+        "id": "c2",
+        "value": "false",
+        "title": "false",
+        "refToView": ""
+      } ]
+    } ]
+  }, {
+    "type": "node",
     "id": "Tableselect",
     "title": "Tableselect",
     "title_de": "Auswahl(Tabelle)",
@@ -1380,8 +1471,8 @@
     "title_de": "Baumauswahl",
     "groups": [ "Controls" ],
     "description": "This form control allows the user to make single/multiple selections from a tree.",
-    "view": "new_itemset.svg",
-    "icon": "new_itemset.png",
+    "view": "new_tree.svg",
+    "icon": "new_tree.png",
     "propertyPackages": [ "getPackageTree", "visibilityPackage","tabindexPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
     "layout": [ {

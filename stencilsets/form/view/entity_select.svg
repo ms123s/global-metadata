@@ -8,31 +8,25 @@
    height="52"
    version="1.0">
   <defs> </defs>  
- <g>
-    <rect oryx:anchors="top" oryx:resize="vertical horizontal" x="0" y="0" width="150" height="50" style="stroke: 2, 3;
-       stroke: black; stroke-width: 1;" fill="white"/>
-    <rect oryx:anchors="top left" x="4" y="4" width="12" height="12" stroke-width="1" stroke="black" fill="white"/>
-	<line oryx:anchors="top left" x1="14" y1="6" x2="9" y2="14" stroke-width="3" stroke="black"/>
-	<line oryx:anchors="top left" x1="6" y1="9" x2="9" y2="14" stroke-width="3" stroke="black"/>
 
-
+   <g oryx:minimumSize="30 24" oryx:maximumSize="350 24" >
+    <rect oryx:anchor="top" oryx:resize="horizontal" x="0" y="0" width="150" height="24" stroke="black" stroke-width="1" fill="white" />
     <g id="html" transform="scale(1,1)">
-      <foreignObject x="2" y="2" width="28" height="40">
+      <foreignObject x="2" y="2" width="100%" height="18">
 <div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/png;base64,
-iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
-B3RJTUUH3QYeDS0sR9jVAgAAAnVJREFUKM8lks1K60AYhmfG+SY/J79qKgZi6bGtGxG8DdduvCU5
-d+IVuFZE6Eqs4EKwiC2E0pqfaZxJMpOzyAW8Dw8PL358fHp5eVksFoeHh13X7XY713WFEADQdZ2U
-sm1bx3GyLJtOp1EU4dvbf1dXV0mSMMZMkyGEEEJtq39+frquAwDOOWOsH9/d3VGEUJ7nnHPP805P
-T6uqklL6vl8UxXw+BwAAKMtSKRXHsVKKcs4xxgBQFMVms4miyPO8HmGapta6qirLskzTVEp9f3+T
-4XAopSSEHB0dGYZBKSEENU1DKY2iyLZtSqnneU3TaK0vLy+pbdtvb28Y4yRJtNZ1XQdBkGWZlJJz
-XhQFxthxnMViMRwOkyShjLGbm5v9/aBttRDizx8bY4QQyvOSUooxllKGod+2erfb3d/f0/l8HgQB
-APi+P51OhZBSSgBYLpcfHx+EEIRQ73xwcPD6+kr39vYQQlprpVTXdRhjjDFCqMcDgGEYACCEUEpp
-rSljLAiCOI611pvNxnGcIPDKctc0TRzHnPM8z8Mw9H0fAAaDAb24uHh4eNhut6PRqHcDgK+vrz70
-er2u69p13TRNz87OJpMJrev6+vr6+PgYIVQUhWVZhgEIoTRdO47DGFNKmSbjvMrzfDab0dlsFgTB
-arUihIzHY8OA31+5XC4JIe/v75zzLMsAIAxDz/Oen5+JYRh9Ctu2GWPbbSaEGI//cs5Xq1XXdScn
-J57nlWUppXRdl/q+TwihlPb3CsMAY7TdZv21hBBVVZmmaVlWn4uORqOnp6c0TQeDQdu2WZbZti2E
-8H0/z/OmaVzXdV338/NzMpmcn5//B+llXBevYzaTAAAAAElFTkSuQmCC" /></div> </foreignObject>
+iVBORw0KGgoAAAANSUhEUgAAAA4AAAARCAYAAADtyJ2fAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAAA7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHASURB
+VCiRjZC/a9NRFMU/5/aLUaMJ/qBQobopQoSCQqEKYhA6d2iHgotuzm5qSd38AwSVouDgYKCbgw52
+8cfiKNaKRUpARV2qjbGQ7zsOSSVqiT1wH4933+GezxVArVbL3rd3ViWNI49hHQD209FX5A+CZyYe
+NRcPPqnXp3Kdv3z9RIq4DwwC74Dj9Ndbo+lIEfPAsOQ5oPIfE8Bh4fkMtAzenkxZsG0LRkQsZ4gG
+1hvgLOguEMZZwD5DFSj0eH6A7lkuZtjngG8ydaNPQb4LYi9KDdBDrBbyF4mmrSHwNKaUGdqCEuKC
+SBgBTkarnVwuA2EDmO7ZDiVub4IRwJ5uxT9d+1YgxjAzghdA6rOThHiOmZF0KkOMACPJvJK4KbOa
+AuQoAFhpHQI5lbFOI18DyIAmUJSoABULZH4P7733MK4FTrNAq0/Ev9UKPJuhuGJ8Q6KAowo+uslC
+ks1rhRds1kFXM6AkdAmTg186fEdJa+CfnazssCgq6RjWRcHABmMDGKbzMKqkUbqODaAO5x9aCaMJ
+YGmrgILFREwIYHLywcDuIytncjEecNJoCDzY/fpZ+KPF00g8/r50aKFen8p/AcOnsdaED2MMAAAA
+AElFTkSuQmCC
+" /></div> </foreignObject>
     </g>
-
+    	
   </g>
 </svg>

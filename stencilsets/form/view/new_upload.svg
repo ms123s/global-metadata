@@ -5,32 +5,26 @@
    xmlns:oryx="http://www.b3mn.org/oryx"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    width="152"
-   height="26"
+   height="52"
    version="1.0">
-  <defs></defs>
-   <g oryx:minimumSize="150 24" oryx:maximumSize="150 24" >
-    <rect oryx:anchor="top" x="0" y="0" width="86" height="24" stroke="black" stroke-width="1" fill="white" />
-    <rect oryx:anchor="top" x="90" y="0" width="60" height="24" stroke="black" stroke-width="1" fill="#dededf" />
-	<g id="b">
-		<text font-size="11" x="97" y="9" oryx:align="middle left" stroke="black">Upload...</text>
+  <defs> </defs>  
+
+   <g oryx:minimumSize="30 24" oryx:maximumSize="350 24" >
+    <rect oryx:anchor="top" oryx:resize="horizontal" x="0" y="0" width="150" height="24" stroke="black" stroke-width="1" fill="white" />
     <g id="html" transform="scale(1,1)">
-      <foreignObject x="2" y="2" width="28" height="40">
+      <foreignObject x="2" y="2" width="100%" height="18">
 <div xmlns="http://www.w3.org/1999/xhtml"><img src="data:image/png;base64,
-iVBORw0KGgoAAAANSUhEUgAAABEAAAATCAYAAAB2pebxAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
-WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wwYERkaBGcPDgAAAm1JREFUOMuNk7uL1VoUh7/9yE4O
-k4haWFlZWPkPTGHjhQtebWxEUEsrrWxEEGxErKws7G4zw0W93CvIND4qYVBbRRudsRAfhY3jTHKS
-vfayOJnMOTMobliEkOTb3/rtLAPw7NnzS865G9ZajDFDKQqAJmXcSZz/+81f3D77iG3LAhhjjoU8
-MBqNKMuSqqqoqopd1S6qsqIsS8Jo5AnhIecXTgBwYXGA+B6Cd56QB0IW8N6zaaWqxBiJxkMoINr/
-OL9whlunF7ebYJ0j8xkhBEIeyPN8qGI0oigKcDlkOWRhgQuLx2cgGIM1Bucc3nu883jvh/vMe0II
-lHMFIeSEUJBl2YPq4j8nhnYGkLVDzQRnLVWR8ercITaahqZpaOqauq4v/3GT/yeZ9ErTJ7PjBKxl
-9yhjzsOGTdRGWCdOtdOb/AwwDTK9sTEGsz2T313GbkE2v7NbIjtBBlh6+43Cm+Edw07bAaKqMw+c
-Mbz4tMGp+6tcffoZ+wtZ2xMmF3SAvf5ac+TOO/CW68tfWP6wju0Ntm+4Faz2BUhSjv+7Oq3Fn3dX
-+LjWDvO0A6JAQkmaUFWuLX/mwJ6c3YUDoMws8/vnuPniC7mdjIKqDh34oR1VkiQkCVfm9zGXe47e
-W+Hx++8c3Jvz5OQB6q5jfRwRkQloegBVlZQSkhKxixgMrVGQCCmCRNquQ6IQY4ckIaU0O8WTHISu
-6zCAiGCTR7oWYkeKjqZpaKMQRZAoQ+szJjEKxoyRGHHOodEh4wbamjRW6rqmjRMDESFGQXubTchS
-27aHJcbh1++cIdbfYbxOqoW1tTW61GenShIhpfQS4AddOiuYivW0zwAAAABJRU5ErkJggg==
+iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+AAAA7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFySURB
+VDiNhZMxT1RREIW/M+8Zo0FNtCCxkMKCf0AwsfEXEAilBRUJtSEStrSwYImtiVZib2zxH5CQjXQG
+dw0kFBaEkEAIuu8ei11w8/buMuXMme+eO5PRUmNzlqJ6h/UUKBkRhluCiVr6IEkrJZE+9wFjQ/n0
+VNgfArhzE2BcGC5KpDXsN8BURnMy3p5/kPSxlNNziI7tbdB9RIzsId1O6O5/hp5ILJbJ7EleRrwA
+32Bdw7ORvkW4aI3thK9AGk12J7qX6TtQ5V92E3kyCjUM3ZxGoh1bzdVzYH+4mjYEC1izqfJruVgH
+LuuyCNrRc+Tal9zAxSPQ1forqKYpWKqb/XPGrwAQqkH0Cjwf8KVXZwfxjIr3NcjvrebqeQkQ0KpN
+7iFAkoyNIYB7wIMapN3vh271N7shWwYwFGQ2pEHIp7frx8DhsMhHwK7wzxzEpnMN6UfOzcueWjPk
+ziLUgcHTNy3E3IAkgR9f+QZOhyCV9gH+AZbahaxsOtZwAAAAAElFTkSuQmCC
 " /></div> </foreignObject>
     </g>
-	</g>
+    	
   </g>
 </svg>
