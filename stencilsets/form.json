@@ -1217,7 +1217,7 @@
     "description": "This form control allows the user to create,edit and delete a embedded object.",
     "view": "new_crud.svg",
     "icon": "new_crud.png",
-    "propertyPackages": [ "getPackage", "visibilityPackage","tabindexPackage" ],
+    "propertyPackages": [ "visibilityPackage","tabindexPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
     "layout": [ {
       "type": "layout.xforms.label",
@@ -1237,14 +1237,23 @@
       "refToView": "",
       "length": "30"
     }, {
-      "id": "xf_multiselection",
-      "title": "Multiselection",
-      "title_de": "Mehrfachauswahl",
-      "type": "Boolean",
-      "value": false,
+      "id": "xf_module",
+      "type": "ResourceSelector",
+      "config": {
+        "type": "sw.entitytype",
+        "prefix": ""
+      },
+      "title": "Class",
+      "title_de": "Klasse",
+      "prefix": "oryx",
+      "value": "",
+      "description_de": "Die Klasse, aus der ein Objekt selektiert werden soll",
+      "description": "The class from which an object is to be selected",
       "popular": true,
       "readonly": false,
-      "optional": false
+      "optional": false,
+      "refToView": "",
+      "length": "100"
     }, {
       "id": "xf_columns",
       "type": "Complex",
