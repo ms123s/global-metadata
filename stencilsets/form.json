@@ -854,7 +854,7 @@
       "prefix": "oryx",
       "value": "",
       "popular": true,
-      "visible": "xf_type=='text' || xf_type=='password'",
+      "visible": "xf_type == 'string' || xf_type=='text' || xf_type=='password'",
       "optional": true,
       "refToView": "",
       "length": "100"

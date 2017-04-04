@@ -143,6 +143,10 @@
 				"msgstr": "Select"
 		},
 		{
+				"msgid": "button.take_over",
+				"msgstr": "Take over"
+		},
+		{
 				"msgid": "button.edit",
 				"msgstr": "Edit"
 		},

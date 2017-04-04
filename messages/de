@@ -5731,6 +5731,10 @@
 				"msgstr": "Speichern"
 		},
 		{
+				"msgid": "button.take_over",
+				"msgstr": "Übernehmen"
+		},
+		{
 				"msgid": "button.del",
 				"msgstr": "Löschen"
 		},
