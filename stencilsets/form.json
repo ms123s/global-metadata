@@ -1214,8 +1214,107 @@
     "title": "Embedded list",
     "groups": [ "Controls" ],
     "description": "This form control allows the user to create,edit and delete a embedded object.",
-    "view": "new_crud.svg",
-    "icon": "new_crud.png",
+    "view": "new_embeddedlist.svg",
+    "icon": "new_embeddedlist.png",
+    "propertyPackages": [ "visibilityPackage","tabindexPackage" ],
+    "roles": [ "core_form_controls", "controls_morph" ],
+    "layout": [ {
+      "type": "layout.xforms.label",
+      "moveY": -1,
+      "moveX": 0
+    } ],
+    "properties": [ {
+      "id": "xf_id",
+      "type": "String",
+      "title": "Id",
+      "prefix": "oryx",
+      "value": "",
+      "description": "",
+      "popular": true,
+      "readonly": false,
+      "optional": false,
+      "refToView": "",
+      "length": "30"
+    }, {
+      "id": "xf_module",
+      "type": "ResourceSelector",
+      "config": {
+        "type": "sw.entitytype",
+        "prefix": ""
+      },
+      "title": "Class",
+      "title_de": "Klasse",
+      "prefix": "oryx",
+      "value": "",
+      "description_de": "Die Klasse, aus der ein Objekt selektiert werden soll",
+      "description": "The class from which an object is to be selected",
+      "popular": true,
+      "readonly": false,
+      "optional": false,
+      "refToView": "",
+      "length": "100"
+    }, {
+      "id": "xf_columns",
+      "type": "Complex",
+      "config": {
+        "helperTree": [ "sw.form", "sw.filter", "sw.entitytype" ]
+      },
+      "title": "Tablecolumns",
+      "title_de": "Tabellenspalten",
+      "value": "",
+      "description": "Tablecolumns",
+      "description_de": "Angezeigte Tabellenspalten",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "complexItems": [ {
+        "id": "colname",
+        "name": "Columnname",
+        "name_de": "Spaltenname",
+        "type": "String",
+        "value": "",
+        "width": 150,
+        "optional": false
+      }, {
+        "id": "display",
+        "name": "Header",
+        "name_de": "Anzeige",
+        "type": "String",
+        "value": "",
+        "width": 150,
+        "optional": true
+      } ]
+    }, {
+      "id": "xf_required",
+      "type": "Combo",
+      "title": "Required",
+      "title_de": "Erforderlich",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "items": [ {
+        "id": "c1",
+        "value": "true",
+        "title": "true",
+        "refToView": ""
+      }, {
+        "id": "c2",
+        "value": "false",
+        "title": "false",
+        "refToView": ""
+      } ]
+    } ]
+  }, {
+    "type": "node",
+    "id": "LinkedList",
+    "title": "Linked list",
+    "groups": [ "Controls" ],
+    "description": "This form control allows the user to assign objects.",
+    "view": "new_linkedlist.svg",
+    "icon": "new_linkedlist.png",
     "propertyPackages": [ "visibilityPackage","tabindexPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
     "layout": [ {
