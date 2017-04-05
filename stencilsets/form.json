@@ -1210,9 +1210,8 @@
     } ]
   }, {
     "type": "node",
-    "id": "Crud",
-    "title": "CRUD (embedded object)",
-    "title_de": "CRUD (eingebettes Objekt)",
+    "id": "EmbeddedList",
+    "title": "Embedded list",
     "groups": [ "Controls" ],
     "description": "This form control allows the user to create,edit and delete a embedded object.",
     "view": "new_crud.svg",
