@@ -1210,6 +1210,52 @@
     } ]
   }, {
     "type": "node",
+    "id": "EmbeddedObj",
+    "title": "Embedded object",
+    "groups": [ "Controls" ],
+    "description": "This form control allows the user to create a embedded object.",
+    "view": "new_embeddedobj.svg",
+    "icon": "new_embeddedobj.png",
+    "propertyPackages": [ "visibilityPackage","tabindexPackage" ],
+    "roles": [ "core_form_controls", "controls_morph" ],
+    "layout": [ {
+      "type": "layout.xforms.label",
+      "moveY": -1,
+      "moveX": 0
+    } ],
+    "properties": [ {
+      "id": "xf_id",
+      "type": "String",
+      "title": "Id",
+      "prefix": "oryx",
+      "value": "",
+      "description": "",
+      "popular": true,
+      "readonly": false,
+      "optional": false,
+      "refToView": "",
+      "length": "30"
+    }, {
+      "id": "xf_module",
+      "type": "ResourceSelector",
+      "config": {
+        "type": "sw.entitytype",
+        "prefix": ""
+      },
+      "title": "Class",
+      "title_de": "Klasse",
+      "prefix": "oryx",
+      "value": "",
+      "description_de": "Die Klasse, aus der ein Objekt selektiert werden soll",
+      "description": "The class from which an object is to be selected",
+      "popular": true,
+      "readonly": false,
+      "optional": false,
+      "refToView": "",
+      "length": "100"
+    } ]
+  }, {
+    "type": "node",
     "id": "EmbeddedList",
     "title": "Embedded list",
     "groups": [ "Controls" ],
@@ -1405,6 +1451,52 @@
         "title": "false",
         "refToView": ""
       } ]
+    } ]
+  }, {
+    "type": "node",
+    "id": "LinkedObj",
+    "title": "Linked object",
+    "groups": [ "Controls" ],
+    "description": "This form control allows the user to link a object.",
+    "view": "new_linkedobj.svg",
+    "icon": "new_linkedobj.png",
+    "propertyPackages": [ "visibilityPackage","tabindexPackage" ],
+    "roles": [ "core_form_controls", "controls_morph" ],
+    "layout": [ {
+      "type": "layout.xforms.label",
+      "moveY": -1,
+      "moveX": 0
+    } ],
+    "properties": [ {
+      "id": "xf_id",
+      "type": "String",
+      "title": "Id",
+      "prefix": "oryx",
+      "value": "",
+      "description": "",
+      "popular": true,
+      "readonly": false,
+      "optional": false,
+      "refToView": "",
+      "length": "30"
+    }, {
+      "id": "xf_module",
+      "type": "ResourceSelector",
+      "config": {
+        "type": "sw.entitytype",
+        "prefix": ""
+      },
+      "title": "Class",
+      "title_de": "Klasse",
+      "prefix": "oryx",
+      "value": "",
+      "description_de": "Die Klasse, aus der ein Objekt selektiert werden soll",
+      "description": "The class from which an object is to be selected",
+      "popular": true,
+      "readonly": false,
+      "optional": false,
+      "refToView": "",
+      "length": "100"
     } ]
   }, {
     "type": "node",
