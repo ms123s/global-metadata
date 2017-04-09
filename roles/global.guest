@@ -55,6 +55,81 @@
             "permission": "docu:entities:data:friend",
             "actions": "read,write",
             "enabled": true
+        },
+        {
+            "permission": "playground:entities:data:article",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:article",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:unit",
+            "actions": "read",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:vat",
+            "actions": "read",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:supplier",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:supplierContact",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:payment",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:paymentMethod",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:bank",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:deliveryTerms",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:deliveryType",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:salutation",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:professionalFunction",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:department",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:country",
+            "actions": "read,write",
+            "enabled": true
         }
     ],
     "name": "global.guest"

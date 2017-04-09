@@ -2009,6 +2009,12 @@
 			"value": "localdata:${operation}",
 			"visible": false
 		}, {
+			"id": "uriparam_orientdb",
+			"title": "OrientDb",
+			"title_de": "OrientDb",
+			"type": "boolean",
+			"value": false
+		}, {
 			"id": "urivalue_operation",
 			"title": "Operation",
 			"title_de": "Operation",
@@ -2180,7 +2186,7 @@
 			"type": "String",
 			"value": null,
 			"optional": false,
-			"visible": "urivalue_operation=='insert' || urivalue_operation.startsWith('updateBy') || urivalue_operation.startsWith('upsert') || urivalue_operation.startsWith('delete') ||  urivalue_operation.startsWith('find')"
+			"visible": "!urivalue_operation.endsWith('ByFilter') && (urivalue_operation=='insert' || urivalue_operation.startsWith('updateBy') || urivalue_operation.startsWith('upsert') || urivalue_operation.startsWith('delete') ||  urivalue_operation.startsWith('find'))"
 		}, {
 			"id": "uriparam_filterName",
 			"title": "Filtername",

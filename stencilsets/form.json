@@ -1253,6 +1253,16 @@
       "optional": false,
       "refToView": "",
       "length": "100"
+    }, {
+      "id": "xf_inline",
+      "title": "Inline",
+      "description_de": "Display element inline",
+      "description": "Element inline darstellen",
+      "type": "Boolean",
+      "value": false,
+      "popular": true,
+      "readonly": false,
+      "optional": false
     } ]
   }, {
     "type": "node",
