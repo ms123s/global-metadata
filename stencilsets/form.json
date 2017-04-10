@@ -1084,7 +1084,7 @@
     "groups": [ "Controls" ],
     "view": "new_custom.svg",
     "icon": "new_custom.png",
-    "_roles": [ "core_form_controls", "controls_morph" ],
+    "roles": [ "core_form_controls", "controls_morph" ],
 
     "layout": [ {
       "type": "layout.xforms.label",
