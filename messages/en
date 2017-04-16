@@ -1499,6 +1499,50 @@
         "msgstr": "Vacation"
     },
     {
+        "msgid": "dmn.save",
+        "msgstr": "Save"
+    },
+    {
+        "msgid": "dmn.newInput",
+        "msgstr": "Inputcolumn"
+    },
+    {
+        "msgid": "dmn.newOutput",
+        "msgstr": "Outputcolumn"
+    },
+    {
+        "msgid": "dmn.newRow",
+        "msgstr": "new Row"
+    },
+    {
+        "msgid": "dmn.insertInput",
+        "msgstr": "Input Column"
+    },
+    {
+        "msgid": "dmn.insertOutput",
+        "msgstr": "Output Column"
+    },
+    {
+        "msgid": "dmn.removeColumn",
+        "msgstr": "remove Column"
+    },
+    {
+        "msgid": "dmn.removeRow",
+        "msgstr": "remove Row"
+    },
+    {
+        "msgid": "dmn.label",
+        "msgstr": "Label"
+    },
+    {
+        "msgid": "dmn.name",
+        "msgstr": "Name"
+    },
+    {
+        "msgid": "dmn.type",
+        "msgstr": "Type"
+    },
+    {
         "msgid": "Emphasis",
         "msgstr": "Emphasis"
     },
