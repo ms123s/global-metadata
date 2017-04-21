@@ -11,6 +11,21 @@
     "description": "",
     "index": 100,
     "fields": {
+        "attributes": {
+            "linkedclass": "",
+            "vertextype": "single",
+            "description": "",
+            "linkedtype": "7",
+            "index": 2,
+            "primary_key": false,
+            "edgeclass": "",
+            "enabled": true,
+            "edittype": "",
+            "edgeconn": false,
+            "vertexclass": "",
+            "datatype": "12",
+            "name": "attributes"
+        },
         "value": {
             "linkedclass": "",
             "vertextype": "single",

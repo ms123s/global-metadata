@@ -1,0 +1,46 @@
+[sw]
+	type = sw.schema
+--
+{
+  "init": {
+    "method": "global.schemaInitTest"
+  },
+  "save": {
+    "method": "global.schemaSaveTest"
+  },
+  "form": {
+    "title": "Live queries OrientDB",
+    "type": "object",
+    "properties": {
+      "live": {
+        "type": "array",
+        "format": "tabs",
+        "title": ".",
+        "uniqueItems": true,
+        "items": {
+          "type": "object",
+          "title": "Live query",
+          "headerTemplate": "{{ i1 }} - {{ self.name }}",
+          "properties": {
+            "name": {
+              "title": "Name",
+              "type": "string"
+            },
+            "sql": {
+              "title": "Sql",
+              "type": "string"
+            },
+            "database": {
+              "title": "Database",
+              "type": "string"
+            },
+            "call": {
+              "title": "Call",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

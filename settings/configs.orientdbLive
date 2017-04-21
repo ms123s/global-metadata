@@ -1,0 +1,22 @@
+[sw]
+	type = sw.setting
+--
+{
+    "schema": "orientDBlive.schema",
+    "data": {
+        "live": [
+            {
+                "call": "zzzzzzzzzzzz",
+                "database": "uuuuuuuuuuuuu",
+                "name": "hhhhh",
+                "sql": "kkkkkkkkkk"
+            },
+            {
+                "call": "zz",
+                "database": "rrt",
+                "name": "rtrrtrt",
+                "sql": "gffgfgfgfg"
+            }
+        ]
+    }
+}

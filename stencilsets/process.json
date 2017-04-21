@@ -1370,6 +1370,20 @@
 			"optional": true,
 			"length": "50"
 		}, {
+			"id": "ruleskey",
+			"title": "Regelschlüssel",
+			"value": "-",
+			"description": "Select from Registryentries with rules.<br/>Specify only Rulesname or Ruleskey.<br/>Rulesname has priority.",
+			"description_de": "Aus Registry Eintrage mit Regeln auswählen.<br/>Nur Regelschlüssel oder Regelname angeben.<br/>Regelname hat Vorzug.",
+			"config": {
+				"type": "ms123.util.RegistryKeyList",
+				"attributes":{ "subject":"decision" }
+			},
+			"type": "Choice",
+			"items": [],
+			"readonly": false,
+			"optional": true
+		}, {
 			"id": "variablesmapping",
 			"type": "Complex",
 			"config": {
