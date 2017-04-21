@@ -135,7 +135,7 @@
         "ref": "",
         "srcFile": null,
         "code": "print(\"Hello\")",
-        "script": "print(\"Hello\",p.form);\n\np.form.title=\"Manfred\";\nmsg.body=p.form\n",
+        "script": "print(\"Hello\",p.form);\n\n//p.form.title=\"Manfred\";\nmsg.body=p.form\n",
         "codeKind": "completeClass",
         "addImport": null,
         "codeLanguage": "njs",

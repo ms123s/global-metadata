@@ -9,13 +9,15 @@
                 "call": "zzzzzzzzzzzz",
                 "database": "uuuuuuuuuuuuu",
                 "name": "hhhhh",
-                "sql": "kkkkkkkkkk"
+                "enabled": true,
+                "sql": ""
             },
             {
                 "call": "zz",
                 "database": "rrt",
                 "name": "rtrrtrt",
-                "sql": "gffgfgfgfg"
+                "enabled": true,
+                "sql": ""
             }
         ]
     }
