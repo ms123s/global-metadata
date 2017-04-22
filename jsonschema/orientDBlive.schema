@@ -11,11 +11,11 @@
 			"live": {
 				"type": "array",
 				"format": "tabs",
-				"title": ".",
+				"title": "Queries",
 				"uniqueItems": true,
 				"items": {
 					"type": "object",
-					"title": "Live query",
+					"title": "Query",
 					"headerTemplate": "{{ i1 }} - {{ self.name }}",
 					"properties": {
 						"name": {
