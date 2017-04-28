@@ -6,18 +6,11 @@
     "data": {
         "live": [
             {
-                "call": "zzzzzzzzzzzz",
-                "database": "uuuuuuuuuuuuu",
-                "name": "hhhhh",
+                "call": "playground.liveTest",
+                "database": "playground",
+                "name": "test",
                 "enabled": true,
-                "sql": ""
-            },
-            {
-                "call": "zz",
-                "database": "rrt",
-                "name": "rtrrtrt",
-                "enabled": true,
-                "sql": ""
+                "sql": "live select  from street where name='ManfredY'"
             }
         ]
     }

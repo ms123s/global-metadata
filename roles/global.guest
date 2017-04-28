@@ -57,11 +57,6 @@
             "enabled": true
         },
         {
-            "permission": "playground:entities:data:article",
-            "actions": "read,write",
-            "enabled": true
-        },
-        {
             "permission": "mdm:entities:odata:article",
             "actions": "read,write",
             "enabled": true
@@ -128,6 +123,11 @@
         },
         {
             "permission": "mdm:entities:odata:country",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "playground:entities:odata:article",
             "actions": "read,write",
             "enabled": true
         }
