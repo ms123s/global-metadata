@@ -10,7 +10,7 @@
 			"type": "String",
 			"title": "Id",
 			"value": null,
-			"include": "stencil !=  'bpmndiagram' && stencil != 'textannotation'",
+			"include": "stencil != 'textannotation'",
 			"description": "Unique identifier of the element.",
 			"description_de": "Die eindeutige Id des elements.",
 			"popular": true
