@@ -1651,6 +1651,10 @@
         "msgstr": "Dependent"
     },
     {
+        "msgid": "error",
+        "msgstr": "Error"
+    },
+    {
         "msgid": "relations.one-to-many-bi",
         "msgstr": "One-to-Many-Bi: Primary class has an subpanel from the secondary class. The secondary have a reference to the primary"
     },
@@ -1933,6 +1937,10 @@
     {
         "msgid": "Groovy/Processor",
         "msgstr": "Groovy/Processor"
+    },
+    {
+        "msgid": "info",
+        "msgstr": "Information"
     },
     {
         "msgid": "import.drop_file",
@@ -3559,6 +3567,10 @@
         "msgstr": "The  node can be used in the menu, as well in the documentation"
     },
     {
+        "msgid": "success",
+        "msgstr": "Sucess"
+    },
+    {
         "msgid": "table.confirm.delete",
         "msgstr": "Delete the record?"
     },
@@ -3741,6 +3753,10 @@
     {
         "msgid": "Vertikal ausrichten",
         "msgstr": "Align vertical"
+    },
+    {
+        "msgid": "warning",
+        "msgstr": "Warning"
     },
     {
         "msgid": "widgets.form.multiedit_expression",

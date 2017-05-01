@@ -3,6 +3,22 @@
 --
 [
     {
+        "msgid": "error",
+        "msgstr": "Fehler"
+    },
+    {
+        "msgid": "warning",
+        "msgstr": "Warnung"
+    },
+    {
+        "msgid": "success",
+        "msgstr": "Erfolgreich"
+    },
+    {
+        "msgid": "info",
+        "msgstr": "Information"
+    },
+    {
         "msgid": "aid.field.constraints",
         "msgstr": "Plausibilitäten"
     },
