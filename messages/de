@@ -3271,6 +3271,10 @@
         "msgstr": "Prozesse"
     },
     {
+        "msgid": "shell.services_dir",
+        "msgstr": "Services"
+    },
+    {
         "msgid": "ms123.processexplorer.ProcessExplorer",
         "msgstr": "History"
     },
@@ -5953,5 +5957,9 @@
     {
         "msgid": "dmn.removeColumn",
         "msgstr": "Spalte entfernen"
+    },
+    {
+        "msgid": "crud2.select_with",
+        "msgstr": "Auswählen mit Doppel-Click"
     }
 ]

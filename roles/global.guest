@@ -130,6 +130,21 @@
             "permission": "playground:entities:odata:article",
             "actions": "read,write",
             "enabled": true
+        },
+        {
+            "permission": "purchase:entities:odata",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "playground:entities:odata:person",
+            "actions": "read",
+            "enabled": true
+        },
+        {
+            "permission": "playground:entities:odata",
+            "actions": "read,write",
+            "enabled": true
         }
     ],
     "name": "global.guest"

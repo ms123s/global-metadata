@@ -3115,6 +3115,10 @@
         "msgstr": "Select"
     },
     {
+        "msgid": "crud2.select_with",
+        "msgstr": "Select with double-click"
+    }
+    {
         "msgid": "settings.config_created",
         "msgstr": "Configuration created"
     },
@@ -3437,6 +3441,10 @@
     {
         "msgid": "shell.processes_dir",
         "msgstr": "Processes"
+    },
+    {
+        "msgid": "shell.services_dir",
+        "msgstr": "Services"
     },
     {
         "msgid": "shell.process_saved",
