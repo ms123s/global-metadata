@@ -520,6 +520,27 @@
 			"visible": true
 		} ]
 	}, {
+		"name": "loopProperties",
+		"properties": [ {
+			"id": "expression",
+			"title": "Expression",
+			"title_de": "Ausdruck",
+			"description": "Expression defining the length of the delay",
+			"optional": false;
+			"type": "Text",
+			"value": ""
+		}, {
+			"id": "language",
+			"title": "Language",
+			"title_de": "Sprache",
+			"readonly": false,
+			"type": "Choice",
+			"value": "groovy",
+			"items": "###language_items",
+			"width": 80,
+			"optional": true
+		} ]
+	}, {
 		"name": "messageFilterProperties",
 		"properties": [ {
 			"id": "expression",
@@ -2009,12 +2030,6 @@
 			"value": "localdata:${operation}",
 			"visible": false
 		}, {
-			"id": "uriparam_orientdb",
-			"title": "OrientDb",
-			"title_de": "OrientDb",
-			"type": "boolean",
-			"value": false
-		}, {
 			"id": "urivalue_operation",
 			"title": "Operation",
 			"title_de": "Operation",
@@ -2186,7 +2201,7 @@
 			"type": "String",
 			"value": null,
 			"optional": false,
-			"visible": "!urivalue_operation.endsWith('ByFilter') && (urivalue_operation=='insert' || urivalue_operation.startsWith('updateBy') || urivalue_operation.startsWith('upsert') || urivalue_operation.startsWith('delete') ||  urivalue_operation.startsWith('find'))"
+			"visible": "urivalue_operation=='insert' || urivalue_operation.startsWith('updateBy') || urivalue_operation.startsWith('upsert') || urivalue_operation.startsWith('delete') ||  urivalue_operation.startsWith('find')"
 		}, {
 			"id": "uriparam_filterName",
 			"title": "Filtername",
@@ -4506,6 +4521,33 @@
 		"view": "delay.svg",
 		"icon": "delay.png",
 		"propertyPackages": [ "baseProperties", "colorProperties", "delayProperties" ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd" ]
+	}, {
+		"type": "node",
+		"id": "Loop",
+		"title": "Loop",
+		"groups": [ "Control Flow" ],
+		"view": "loop.svg",
+		"icon": "loop.png",
+		"propertyPackages": [ "baseProperties", "colorProperties", "loopProperties" ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd" ]
+	}, {
+		"type": "node",
+		"id": "LoopDoWhile",
+		"title": "LoopDoWhile",
+		"groups": [ "Control Flow" ],
+		"view": "loopdowhile.svg",
+		"icon": "loopdowhile.png",
+		"propertyPackages": [ "baseProperties", "colorProperties", "loopProperties" ],
+		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd" ]
+	}, {
+		"type": "node",
+		"id": "End",
+		"title": "End",
+		"groups": [ "Control Flow" ],
+		"view": "end.svg",
+		"icon": "end.png",
+		"propertyPackages": [ "baseProperties", "colorProperties" ],
 		"roles": [ "all", "OneInOutRole", "simpleConnectionStart", "simpleConnectionEnd", "whenConnectionEnd" ]
 	}, {
 		"type": "node",

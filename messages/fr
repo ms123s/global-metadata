@@ -1,0 +1,33 @@
+[sw]
+        type = sw.messageslang
+--
+[
+    {
+        "msgstr": "Filtrer les résultats",
+        "msgid": "datatables.sSearch"
+    },
+    {
+        "msgstr": "Aucun élément trouvé",
+        "msgid": "datatables.sEmptyTable"
+    },
+    {
+        "msgstr": "Nouveau",
+        "msgid": "button.new"
+    },
+    {
+        "msgstr": "Éditer",
+        "msgid": "button.edit"
+    },
+    {
+        "msgstr": "Copier",
+        "msgid": "button.copy"
+    },
+    {
+        "msgstr": "Effacer",
+        "msgid": "button.del"
+    },
+    {
+        "msgstr": "Refresh",
+        "msgid": "button.refresh"
+    }
+]
