@@ -525,7 +525,7 @@
 			"id": "expression",
 			"title": "Expression",
 			"title_de": "Ausdruck",
-			"description": "Expression defining the length of the delay",
+			"description": "Expression defining the number of loops",
 			"optional": false;
 			"type": "Text",
 			"value": ""

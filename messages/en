@@ -1943,6 +1943,10 @@
         "msgstr": "Information"
     },
     {
+        "msgid": "import.or",
+        "msgstr": "or"
+    },
+    {
         "msgid": "import.drop_file",
         "msgstr": "<div style='position:relative;left:15%;top:50%;font-size:300%;'>Please drop a file</div>"
     },

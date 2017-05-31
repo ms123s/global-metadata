@@ -115,6 +115,10 @@
         "msgstr": "<div style='position:relative;left:15%;top:50%;font-size:300%;'>Please drop a file</div>"
     },
     {
+        "msgid": "import.or",
+        "msgstr": "oder"
+    },
+    {
         "msgid": "import.drop_file2",
         "msgstr": "Bitte eine Datei hierher ziehen"
     },
