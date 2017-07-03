@@ -115,8 +115,12 @@
         "msgid": "import.drop_file"
     },
     {
-        "msgstr": "Bitte eine Datei hierher ziehen",
-        "msgid": "import.drop_file2"
+        "msgid": "import.or",
+        "msgstr": "oder"
+    },
+    {
+        "msgid": "import.drop_file2",
+        "msgstr": "Bitte eine Datei hierher ziehen"
     },
     {
         "msgstr": "2.Upload",
