@@ -77,11 +77,6 @@
             "enabled": true
         },
         {
-            "permission": "mdm:entities:odata:supplierContact",
-            "actions": "read,write",
-            "enabled": true
-        },
-        {
             "permission": "mdm:entities:odata:payment",
             "actions": "read,write",
             "enabled": true
@@ -143,6 +138,36 @@
         },
         {
             "permission": "playground:entities:odata",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:customer",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:company",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:contact",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:address",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "mdm:entities:odata:communication",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "modeldata:entities:odata",
             "actions": "read,write",
             "enabled": true
         }

@@ -1023,6 +1023,10 @@
         "msgstr": "Classes adjust (Problematic by data type changes)"
     },
     {
+        "msgstr": "Delete only data,Classes are untouched",
+        "msgid": "datamapper.only_delete_data"
+    },
+    {
         "msgid": "datamapper.children_fields",
         "msgstr": "Child fields"
     },

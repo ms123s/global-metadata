@@ -980,6 +980,62 @@
 			"value": false
 		} ]
 	}, {
+		"name": "wawidocProperties",
+		"properties": [ {
+			"id": "type_wawidoc",
+			"type": "String",
+			"value": "WawiDoc",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uriparam_namespace",
+			"title": "Namespace",
+			"value": "-",
+			"description": "Namespace",
+			"description_de": "Namespace",
+			"config": {
+				type: "ms123.util.RepoList"
+			},
+			"type": "Combo",
+			"items": [],
+			"readonly": false,
+			"optional": true
+		}, {
+			"id": "uriparam_source",
+			"title": "Source",
+			"title_de": "Quelle",
+			"description_de": "Quelle des Templates, z.B. <ul><li> <b>header.template</b> oder kurz: <b>h.template</b> => Quelle ist das Headerfeld <b>template</b></li><li><b>property.template</b> oder kurz <b>p.template</b> =>  Quelle ist Property <b>template</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Source of the template, e.g. <ul><li> <b>header.template</b> or short: <b>h.template</b> => Source is the headerfield <b>template</b></li><li><b>property.template</b> or short <b>p.template</b> => Source is property <b>template</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
+		}, {
+			"id": "uriparam_destination",
+			"title": "Destination",
+			"title_de": "Ziel",
+			"description_de": "Ziel der Ausgabe. z.B. <ul><li> <b>header.doc</b> oder kurz: <b>h.doc</b> => Ziel ist das Headerfeld <b>doc</b></li><li><b>property.doc</b> oder kurz <b>p.doc</b> => Ziel ist Property <b>doc</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the output. e.g. <ul><li> <b>header.doc</b> or short: <b>h.doc</b> => Destination is headerfield <b>doc</b></li><li><b>property.doc</b> or short <b>p.doc</b> Destination is property <b>doc</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
+		}, {
+			"id": "uriparam_outputformat",
+			"title": "Outputformat",
+			"type": "Choice",
+			"value": "pdf",
+			"items": [ {
+				"id": "c1",
+				"title": "XSL-FO",
+				"value": "fo"
+			}, {
+				"id": "c2",
+				"title": "PDF",
+				"value": "pdf"
+			} ]
+		} ]
+	}, {
 		"name": "xdocreportProperties",
 		"properties": [ {
 			"id": "type_xdocreport",
@@ -2504,20 +2560,20 @@
 			"title": "Reference",
 			"description": "Reference to the bean implementing the processor's logic",
 			"value": "",
-			"visible": "codeLanguage=='groovy' || codeLanguage=='java'",
+			"visible": "(srcFile==null||srcFile=='') && (codeLanguage=='groovy' || codeLanguage=='java')",
 			"optional": true
 		}, {
 			"id": "srcFile",
 			"type": "ResourceSelector",
 			"config": {
-				"type": "sw.njs"
+				"type": "sw.${codeLanguage}"
 			},
 			"title": "Sourcefile",
 			"title_de": "Quelldatei",
 			"description": "The sourcefile which contains the script",
 			"description_de": "Die Quelldatei welche das Script beinhaltet",
 			"value": "",
-			"visible": "codeLanguage!='groovy' && codeLanguage!='java'",
+			"visible": "codeLanguage!='xroovy' && codeLanguage!='java'",
 			"optional": true
 		}, {
 			"id": "code",
@@ -2529,7 +2585,7 @@
 			"value": "",
 			"description": "<ul><li>the <b>void process(Exchange)</b> method or </li><li>the complete class(must implement the interface org.apache.camel.Processor),</li></ul> depend from the codekind ",
 			"description_de": "<ul><li>Die  <b>void process(Exchange)</b> Methode  oder</li><li> die <b>komplette Klasse</b>(muss das Interface org.apache.camel.Processor implementieren),</li></ul> abhängig von Kodeart ",
-			"visible": "codeLanguage=='groovy' || codeLanguage=='java'",
+			"visible": "(srcFile==null||srcFile=='') && (codeLanguage=='groovy' || codeLanguage=='java')",
 			"optional": true
 		}, {
 			"id": "script",
@@ -2549,7 +2605,7 @@
 			"title_de": "Kodeart",
 			"readonly": false,
 			"type": "Choice",
-			"visible": "codeLanguage=='groovy' || codeLanguage=='java'",
+			"visible": "(srcFile==null||srcFile=='') && (codeLanguage=='groovy' || codeLanguage=='java')",
 			"value": "completeClass",
 			"items": [ {
 				"id": "processMethod",
@@ -4457,6 +4513,16 @@
 		"groups": [ "Building blocks M-Z" ],
 		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "wampProperties", "rpcProperties", "publishProperties", "subscribeProperties", "permissionProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "WawiDocEndpoint",
+		"title": "WawiDoc",
+		"view": "wawidocendpoint.svg",
+		"icon": "wawidocendpoint.png",
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "wawidocProperties", "assignmentProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
