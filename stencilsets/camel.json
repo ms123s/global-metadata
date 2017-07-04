@@ -1009,6 +1009,11 @@
 			"visible": false,
 			"refToView": [ "endpoint_type" ]
 		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "wawidoc:dummy",
+			"visible": false
+		}, {
 			"id": "uriparam_namespace",
 			"title": "Namespace",
 			"value": "-",
