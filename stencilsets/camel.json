@@ -2086,6 +2086,12 @@
 			"visible": false,
 			"refToView": [ "endpoint_type" ]
 		}, {
+     "id": "uriparam_orientdb",
+     "title": "OrientDb",
+     "title_de": "OrientDb",
+     "type": "boolean",
+     "value": false
+   }, {
 			"id": "uri_template",
 			"type": "String",
 			"value": "localdata:${operation}",
