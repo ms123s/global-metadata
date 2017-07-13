@@ -18,6 +18,16 @@
       "optional": true,
       "length": "50"
     }, {
+			"id": "xf_namespace",
+			"title": "Namespace",
+			"description": "optional",
+			"config": {
+				type: "ms123.util.RepoList"
+			},
+			"type": "Combo",
+			"value": null,
+			"items": []
+		}, {
       "id": "xf_jsonpath",
       "type": "String",
       "title": "Json path",
@@ -119,6 +129,7 @@
       "type": "ResourceSelector",
       "config": {
         "type": [ "sw.filter" ],
+				"namespace":"${namespace}",
         "prefix": ""
       },
       "title": "Get(Filter)",
@@ -134,6 +145,7 @@
       "type": "ResourceSelector",
       "config": {
         "type": [ "sw.camel" ],
+				"namespace":"${namespace}",
         "prefix": ""
       },
       "title": "Get(Service)",
@@ -1774,6 +1786,44 @@
       "optional": false,
       "refToView": "",
       "length": "30"
+     }, {
+			"id": "xf_search",
+			"title": "Search",
+			"title_de": "Suche",
+			"type": "boolean",
+      "popular": false,
+			"width": 100,
+			"value": false,
+			"optional": true
+    }, {
+			"id": "xf_namespace",
+			"title": "Namespace",
+			"description": "optional",
+			"config": {
+				type: "ms123.util.RepoList"
+			},
+			"type": "Combo",
+			"value": null,
+			"items": []
+    }, {
+      "id": "xf_module",
+      "type": "ResourceSelector",
+      "config": {
+        "type": "sw.entitytype",
+				"namespace":"${xf_namespace}",
+        "prefix": ""
+      },
+      "title": "Class",
+      "title_de": "Klasse",
+      "prefix": "oryx",
+      "value": "",
+      "description_de": "Die Klasse, aus der ein Objekt selektiert werden soll",
+      "description": "The class from which an object is to be selected",
+      "popular": false,
+      "readonly": false,
+      "optional": false,
+      "refToView": "",
+      "length": "100"
     }, {
       "id": "xf_columns",
       "type": "Complex",
@@ -1785,7 +1835,7 @@
       "value": "",
       "description": "Tablecolumns",
       "description_de": "Angezeigte Tabellenspalten",
-      "popular": true,
+      "popular": false,
       "readonly": false,
       "optional": true,
       "complexItems": [ {
@@ -1826,6 +1876,14 @@
         "type": "boolean",
         "width": 100,
         "value": false,
+        "optional": true
+      }, {
+        "id": "parameter",
+        "name": "Parameter",
+        "name_de": "Parameter",
+        "type": "String",
+        "value": "",
+        "width": 100,
         "optional": true
       }, {
         "id": "type",
@@ -1874,6 +1932,11 @@
           "refToView": ""
         }, {
           "id": "c8",
+          "title": "Selection",
+          "value": "selection",
+          "refToView": ""
+        }, {
+          "id": "c9",
           "title": "Search",
           "title_de": "Suche",
           "value": "search",
