@@ -4338,6 +4338,14 @@
 				"msgid": "datatables.sSortAscending",
 				"msgstr" :": activate to sort column ascending"
 		},
+    {
+        "msgstr": "Upload Image",
+        "msgid": "cropper.upload"
+    },
+    {
+        "msgstr": "Edit Image",
+        "msgid": "cropper.editor"
+    },
 		{
 			"msgid": "datatables.sSortDescending",
 			"msgstr":": activate to sort column descending"

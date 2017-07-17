@@ -5972,14 +5972,10 @@
     },
     {
         "msgstr": "Image hochladen",
-        "msgid": "dropper.upload"
-    },
-    {
-        "msgstr": "Voransicht",
-        "msgid": "dropper.preview"
+        "msgid": "cropper.upload"
     },
     {
         "msgstr": "Image bearbeiten",
-        "msgid": "dropper.editor"
+        "msgid": "cropper.editor"
     }
 ]
