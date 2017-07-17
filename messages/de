@@ -5969,5 +5969,17 @@
     {
         "msgstr": "Auswählen mit Doppel-Click",
         "msgid": "crud2.select_with"
+    },
+    {
+        "msgstr": "Image hochladen",
+        "msgid": "dropper.upload"
+    },
+    {
+        "msgstr": "Voransicht",
+        "msgid": "dropper.preview"
+    },
+    {
+        "msgstr": "Image bearbeiten",
+        "msgid": "dropper.editor"
     }
 ]

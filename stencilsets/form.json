@@ -1066,6 +1066,17 @@
       "refToView": "",
       "length": "30"
     }, {
+      "id": "xf_multi",
+      "title": "Multi",
+      "title_de": "Mehrere",
+      "description_de": "Mehrere Dateien hochladen",
+      "description": "Upload multi files",
+      "type": "Boolean",
+      "value": true,
+      "popular": true,
+      "readonly": false,
+      "optional": false
+    }, {
       "id": "xf_required",
       "type": "Combo",
       "title": "Required",
@@ -1937,6 +1948,11 @@
           "refToView": ""
         }, {
           "id": "c9",
+          "title": "Expression",
+          "value": "expression",
+          "refToView": ""
+        }, {
+          "id": "c10",
           "title": "Search",
           "title_de": "Suche",
           "value": "search",
