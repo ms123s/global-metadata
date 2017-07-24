@@ -5975,6 +5975,26 @@
         "msgid": "cropper.upload"
     },
     {
+        "msgstr": "Bitte auswählen",
+        "msgid": "registry.select"
+    },
+    {
+        "msgstr": "laden",
+        "msgid": "registry.load"
+    },
+    {
+        "msgstr": "speichern",
+        "msgid": "registry.save"
+    },
+    {
+        "msgstr": "speichern unter ..",
+        "msgid": "registry.save_under"
+    },
+    {
+        "msgstr": "Objekt gespeichert",
+        "msgid": "registry.saved"
+    },
+    {
         "msgstr": "Image bearbeiten",
         "msgid": "cropper.editor"
     }

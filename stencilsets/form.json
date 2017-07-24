@@ -1948,11 +1948,6 @@
           "refToView": ""
         }, {
           "id": "c9",
-          "title": "Expression",
-          "value": "expression",
-          "refToView": ""
-        }, {
-          "id": "c10",
           "title": "Search",
           "title_de": "Suche",
           "value": "search",

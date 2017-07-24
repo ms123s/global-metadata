@@ -4346,6 +4346,26 @@
         "msgstr": "Edit Image",
         "msgid": "cropper.editor"
     },
+    {
+        "msgstr": "Please select",
+        "msgid": "registry.select"
+    },
+    {
+        "msgstr": "load",
+        "msgid": "registry.load"
+    },
+    {
+        "msgstr": "save",
+        "msgid": "registry.save"
+    },
+    {
+        "msgstr": "save under ..",
+        "msgid": "registry.save_under"
+    },
+    {
+        "msgstr": "Object saved",
+        "msgid": "registry.saved"
+    },
 		{
 			"msgid": "datatables.sSortDescending",
 			"msgstr":": activate to sort column descending"
