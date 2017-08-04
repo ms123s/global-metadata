@@ -1503,8 +1503,8 @@
         "msgstr": "Vacation"
     },
     {
-        "msgid": "dmn.save",
-        "msgstr": "Save"
+        "msgid": "dmn.clear",
+        "msgstr": "Delete"
     },
     {
         "msgid": "dmn.newInput",
@@ -3013,6 +3013,10 @@
     {
         "msgid": "Recent Colors",
         "msgstr": "Recent Colors"
+    },
+    {
+        "msgstr": "Roles",
+        "msgid": "structure.roles"
     },
     {
         "msgid": "ruleseditor.apply_changes",

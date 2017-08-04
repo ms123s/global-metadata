@@ -5119,6 +5119,10 @@
         "msgid": "stencileditor.description"
     },
     {
+        "msgstr": "Rollen",
+        "msgid": "structure.roles"
+    },
+    {
         "msgstr": "Titel",
         "msgid": "stencileditor.title"
     },
@@ -5923,8 +5927,8 @@
         "msgid": "mmenu.noResults"
     },
     {
-        "msgstr": "Speichern",
-        "msgid": "dmn.save"
+        "msgstr": "Löschen",
+        "msgid": "dmn.clear"
     },
     {
         "msgstr": "Inputspalte",

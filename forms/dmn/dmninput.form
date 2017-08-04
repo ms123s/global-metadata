@@ -108,9 +108,10 @@
       "resourceId": "oryx_BA25EFBD-5122-426D-A365-D42A8B67C302",
       "properties": {
         "xf_varname": "",
+        "xf_namespace": null,
         "xf_jsonpath": "",
         "xf_enumembed": {
-          "totalCount": 5,
+          "totalCount": 6,
           "items": [
             {
               "value": "string",
@@ -135,6 +136,11 @@
             {
               "value": "date",
               "label": "Date",
+              "tooltip": ""
+            },
+            {
+              "value": "list",
+              "label": "List",
               "tooltip": ""
             }
           ]

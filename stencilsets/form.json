@@ -688,6 +688,21 @@
         "optional": false
       } ]
     }, {
+      "id": "xf_validate_service",
+      "type": "ResourceSelector",
+      "config": {
+        "type": "sw.camel",
+        "prefix": ""
+      },
+      "title": "Global validate(Service)",
+      "title_de": "Globale Validierung(Service)",
+      "prefix": "oryx",
+      "value": null,
+      "description": "Form global validation using a service call.<br/>In addition to form variables (field content) the following variables can also be used: <ul> <li><b>uuid</b>: window.uuid</li><li><b>formData</b>: object, formData</li><li><b>lang</b>: string, current language</li><li><b>mode</b> : string, <b>edit</b> or <b>add</b></li></ul>., <br/><b>z.B.:</b><br/>def errors = [];<br/> def error = [:]<br/> error.errormsg = 'Message1'<br/> error.fieldname = 'fieldname1'<br/> errors.add( error);<br/> <br/> error = [:]<br/> error.errormsg = 'Message2'<br/> error.fieldname = 'fieldname2'<br/> errors.add( error);<br/> <br/> error = [:]<br/> error.errormsg = 'Globalerrormessage'<br/> errors.add( error);<br/><br/><b>min.body=errors</b><br/><br/>",
+      "description_de": "Form globale Validierung mittels Serviceaufrufs.<br/>Neben den Formvariablen(Feldinhalte) können auch folgende Variablen benutzt werden: <ul><li><b>uuid</b>: window.uuid</li><li><b>formData</b>: object, formData</li><li><b>lang</b>: string, aktuelle Sprache</li><li><b>mode</b> : string, <b>edit</b> oder <b>add</b></li></ul> <br/><b>z.B.:</b><br/>def errors = [];<br/> def error = [:]<br/> error.errormsg = 'Message1'<br/> error.fieldname = 'fieldname1'<br/> errors.add( error);<br/> <br/> error = [:]<br/> error.errormsg = 'Message2'<br/> error.fieldname = 'fieldname2'<br/> errors.add( error);<br/> <br/> error = [:]<br/> error.errormsg = 'Globalerrormessage'<br/> errors.add( error);<br/><br/><b>min.body=errors</b><br/><br/>",
+      "popular": false,
+      "readonly": false
+    }, {
       "id": "xf_postprocess",
       "config": {
         "mode": "text/x-groovy"
