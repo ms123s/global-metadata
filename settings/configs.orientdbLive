@@ -9,7 +9,7 @@
                 "call": "playground.liveTest",
                 "database": "playground",
                 "name": "test",
-                "enabled": true,
+                "enabled": false,
                 "sql": "live select  from street where name='ManfredY'"
             }
         ]
