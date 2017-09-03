@@ -5408,6 +5408,10 @@
 			"title": "taskCandidateGroup",
 			"value": "taskCandidateGroup"
 		}, {
+			"id": "taskCandidateGroupIn",
+			"title": "taskCandidateGroupIn",
+			"value": "taskCandidateGroupIn"
+		}, {
 			"id": "taskOwner",
 			"title": "taskOwner",
 			"value": "taskOwner"
