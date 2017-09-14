@@ -455,6 +455,19 @@
       "optional": true,
       "length": "50"
     }, {
+      "id": "xf_string_null_in_empty",
+      "type": "Boolean",
+      "title": "Nullwerte -> Leerstring",
+      "title_de": "Nullvalues -> Emptystring",
+      "prefix": "oryx",
+      "value": false,
+      "description": "Convert strings with nullvalues to emptystring",
+      "description_de": "Konvertieren von Strings mit Nullwerten in einen Leerstring",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": ""
+    }, {
       "id": "xf_default_buttons",
       "type": "Boolean",
       "title": "Default buttons",
