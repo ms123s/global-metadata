@@ -813,6 +813,11 @@
         "title": "DateYearMonth",
         "value": "dateyearmonth",
         "refToView": ""
+      }, {
+        "id": "c9",
+        "title": "Computed",
+        "value": "computed",
+        "refToView": ""
       } ]
     }, {
       "id": "xf_default",
@@ -859,6 +864,20 @@
       "description_de": "Das Script wird aufgerufen vor dem Auslesen der Daten aus der Form.",
       "prefix": "oryx",
       "value": "",
+      "popular": false,
+      "readonly": false,
+      "optional": true,
+      "refToView": ""
+    }, {
+      "id": "xf_expression",
+      "type": "text",
+      "title": "Expression",
+      "title_de": "Ausdruck",
+      "description": "The field content is recalculated for each change in the form.",
+      "description_de": "Der Feldinhalt wird bei jeder Änderung in der Form neu berechnet.",
+      "prefix": "oryx",
+      "value": "",
+      "visible": "xf_type == 'computed'",
       "popular": false,
       "readonly": false,
       "optional": true,
@@ -1686,6 +1705,20 @@
       "title_de": "Voreinstellung",
       "description_de": "Der Wert oder  #0,#1 .. für ein Element der Liste",
       "description": "The value or  #0,#1 .. for a element of the list",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "length": "30"
+    }, {
+      "id": "xf_parent_field_name",
+      "type": "String",
+      "title": "Parentname",
+      "title_de": "Parentname",
+      "description_de": "Eine Selectbox, von der der die Optionliste dieser Selectbox abhängt",
+      "description": "A selectbox from which the option list of this selectbox depends",
       "prefix": "oryx",
       "value": "",
       "popular": true,
