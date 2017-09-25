@@ -1736,6 +1736,15 @@
       "readonly": false,
       "optional": false
     }, {
+      "id": "xf_combobox",
+      "title_de": "Combobox",
+      "title": "Combobox",
+      "type": "Boolean",
+      "value": false,
+      "popular": true,
+      "readonly": false,
+      "optional": false
+    }, {
       "id": "xf_required",
       "type": "Combo",
       "title": "Required",
