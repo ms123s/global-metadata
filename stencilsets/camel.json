@@ -1412,9 +1412,9 @@
 		}, {
 			"id": "uriparam_variableNames",
 			"title": "VariableNames",
-			"description_de": "VariableNames, die angefragt werden.Komma getrennt. Wenn leer dann alle",
-			"description": "VariableNames that are requested. separated by commas.if empty then alle",
-			"visible": "urivalue_operation=='getProcessVariables' || urivalue_operation=='publishEvents' && urivalue_operation!= 'queryProcessInstances' && urivalue_operation!='queryTasks'",
+			"description_de": "VariableNames, die angefragt werden.Komma getrennt. Wenn leer dann alle (nicht bei getProcessInstances)",
+			"description": "VariableNames that are requested. separated by commas.if empty then alle (not by getProcessInstances)",
+			"visible": "urivalue_operation=='getProcessVariables' || urivalue_operation=='publishEvents' && urivalue_operation!='queryTasks'",
 			"type": "String",
 			"value": null,
 			"readonly": false,
