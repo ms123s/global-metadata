@@ -455,6 +455,19 @@
       "optional": true,
       "length": "50"
     }, {
+      "id": "xf_string_null_in_empty",
+      "type": "Boolean",
+      "title": "Nullwerte -> Leerstring",
+      "title_de": "Nullvalues -> Emptystring",
+      "prefix": "oryx",
+      "value": false,
+      "description": "Convert strings with nullvalues to emptystring",
+      "description_de": "Konvertieren von Strings mit Nullwerten in einen Leerstring",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": ""
+    }, {
       "id": "xf_default_buttons",
       "type": "Boolean",
       "title": "Default buttons",
@@ -800,6 +813,11 @@
         "title": "DateYearMonth",
         "value": "dateyearmonth",
         "refToView": ""
+      }, {
+        "id": "c9",
+        "title": "Computed",
+        "value": "computed",
+        "refToView": ""
       } ]
     }, {
       "id": "xf_default",
@@ -846,6 +864,20 @@
       "description_de": "Das Script wird aufgerufen vor dem Auslesen der Daten aus der Form.",
       "prefix": "oryx",
       "value": "",
+      "popular": false,
+      "readonly": false,
+      "optional": true,
+      "refToView": ""
+    }, {
+      "id": "xf_expression",
+      "type": "text",
+      "title": "Expression",
+      "title_de": "Ausdruck",
+      "description": "The field content is recalculated for each change in the form.",
+      "description_de": "Der Feldinhalt wird bei jeder Änderung in der Form neu berechnet.",
+      "prefix": "oryx",
+      "value": "",
+      "visible": "xf_type == 'computed'",
       "popular": false,
       "readonly": false,
       "optional": true,
@@ -1681,9 +1713,32 @@
       "refToView": "",
       "length": "30"
     }, {
+      "id": "xf_parent_field_name",
+      "type": "String",
+      "title": "Parentname",
+      "title_de": "Parentname",
+      "description_de": "Eine Selectbox, von der der die Optionliste dieser Selectbox abhängt",
+      "description": "A selectbox from which the option list of this selectbox depends",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "length": "30"
+    }, {
       "id": "xf_multiselection",
       "title": "Multiselection",
       "title_de": "Mehrfachauswahl",
+      "type": "Boolean",
+      "value": false,
+      "popular": true,
+      "readonly": false,
+      "optional": false
+    }, {
+      "id": "xf_combobox",
+      "title_de": "Combobox",
+      "title": "Combobox",
       "type": "Boolean",
       "value": false,
       "popular": true,

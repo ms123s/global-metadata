@@ -3129,7 +3129,7 @@
     {
         "msgid": "crud2.select_with",
         "msgstr": "Select with double-click"
-    }
+    },
     {
         "msgid": "settings.config_created",
         "msgstr": "Configuration created"
