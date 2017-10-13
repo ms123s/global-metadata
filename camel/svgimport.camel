@@ -77,7 +77,7 @@
         "rpcReturn": "bodyWithMime",
         "mimetype": "text/html",
         "rpcReturnHeaders": null,
-        "startableGroups": null,
+        "startableGroups": "global.guest",
         "startableUsers": "admin,guest"
       },
       "stencil": {
