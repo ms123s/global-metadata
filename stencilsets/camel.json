@@ -1407,7 +1407,7 @@
 			"description": "<b>Deprecated, use Assignments! </b> <br>Copy specified headerfields into the variables space of the process, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Maps will be transferred to the data model with the header name,if the modifier :asMap is appended, dataModel.put(headerName, Map).</li><li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
 			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation=='complete')",
 			"type": "String",
-			"value": null,
+			"value": "-",
 			"readonly": false
 		}, {
 			"id": "uriparam_variableNames",
