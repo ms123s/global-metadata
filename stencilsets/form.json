@@ -2204,6 +2204,7 @@
     "title_de": "Gruppe",
     "groups": [ "Containers" ],
     "description": "A container for defining a hierarchy of form controls.",
+    "propertyPackages": [ "visibilityPackage" ],
     "view": "new_group.svg",
     "icon": "new_group.png",
     "roles": [ "core_form_controls", "standard_container", "ui_common_container" ],
