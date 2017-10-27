@@ -1407,17 +1407,27 @@
 			"description": "<b>Deprecated, use Assignments! </b> <br>Copy specified headerfields into the variables space of the process, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Maps will be transferred to the data model with the header name,if the modifier :asMap is appended, dataModel.put(headerName, Map).</li><li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
 			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation=='complete')",
 			"type": "String",
-			"value": null,
-			"readonly": false,
+			"value": "-",
+			"readonly": false
 		}, {
 			"id": "uriparam_variableNames",
 			"title": "VariableNames",
 			"description_de": "VariableNames, die angefragt werden.Komma getrennt. Wenn leer dann alle",
 			"description": "VariableNames that are requested. separated by commas.if empty then alle",
-			"visible": "urivalue_operation=='getProcessVariables' || urivalue_operation=='publishEvents' && urivalue_operation!= 'queryProcessInstances' && urivalue_operation!='queryTasks'",
+			"visible": "urivalue_operation== 'queryProcessInstances' || urivalue_operation=='getProcessVariables' || urivalue_operation=='publishEvents' && urivalue_operation!='queryTasks'",
 			"type": "String",
 			"value": null,
-			"readonly": false,
+			"readonly": false
+		}, {
+			"id": "uriparam_destination",
+			"title": "Destination",
+			"title_de": "Ziel",
+			"description_de": "Ziel der Ausgabe. z.B. <ul><li> <b>header.html</b> oder kurz: <b>h.html</b> => Ziel ist das Headerfeld <b>html</b></li><li><b>property.html</b> oder kurz <b>p.html</b> => Ziel ist Property <b>html</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the output. e.g. <ul><li> <b>header.html</b> or short: <b>h.html</b> => Destination is headerfield <b>html</b></li><li><b>property.html</b> or short <b>p.html</b> Destination is property <b>html</b></li><li> default is <b>body</b></li></ul>",
+			"visible": "urivalue_operation== 'queryProcessInstances' || urivalue_operation=='getProcessVariables' || urivalue_operation=='startProcess' || urivalue_operation=='queryTasks'",
+			"type": "String",
+			"value": null,
+			"optional": true
 		}, {
 			"id": "uriparam_assignments",
 			"type": "Complex",
@@ -1586,7 +1596,7 @@
 			"description": "Namespace where the process is",
 			"description_de": "Namespace in dem der Prozess ist",
 			"config": {
-				type: "ms123.util.RepoList"
+				"type": "ms123.util.RepoList"
 			},
 			"type": "Combo",
 			"items": [],
@@ -1736,16 +1746,26 @@
 			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation=='complete')",
 			"type": "String",
 			"value": null,
-			"readonly": false,
+			"readonly": false
 		}, {
 			"id": "uriparam_variableNames",
 			"title": "VariableNames",
-			"description_de": "VariableNames, die angefragt werden.Komma getrennt. Wenn leer dann alle",
-			"description": "VariableNames that are requested. separated by commas.if empty then alle",
-			"visible": "urivalue_operation=='getProcessVariables' || urivalue_operation=='publishEvents' && urivalue_operation!= 'queryProcessInstances' && urivalue_operation!='queryTasks'",
+			"description_de": "VariableNames, die angefragt werden.Komma getrennt. Wenn leer dann alle(nicht bei queryProcessInstances)",
+			"description": "VariableNames that are requested. separated by commas.if empty then alle( not by queryProcessInstances)",
+			"visible": "urivalue_operation== 'queryProcessInstances' || urivalue_operation=='getProcessVariables' || urivalue_operation=='publishEvents' && urivalue_operation!='queryTasks'",
 			"type": "String",
 			"value": null,
-			"readonly": false,
+			"readonly": false
+		}, {
+			"id": "uriparam_destination",
+			"title": "Destination",
+			"title_de": "Ziel",
+			"description_de": "Ziel der Ausgabe. z.B. <ul><li> <b>header.html</b> oder kurz: <b>h.html</b> => Ziel ist das Headerfeld <b>html</b></li><li><b>property.html</b> oder kurz <b>p.html</b> => Ziel ist Property <b>html</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the output. e.g. <ul><li> <b>header.html</b> or short: <b>h.html</b> => Destination is headerfield <b>html</b></li><li><b>property.html</b> or short <b>p.html</b> Destination is property <b>html</b></li><li> default is <b>body</b></li></ul>",
+			"visible": "urivalue_operation== 'queryProcessInstances' || urivalue_operation=='getProcessVariables' || urivalue_operation=='startProcess' || urivalue_operation=='queryTasks'",
+			"type": "String",
+			"value": null,
+			"optional": true
 		}, {
 			"id": "uriparam_assignments",
 			"type": "Complex",
@@ -1935,7 +1955,7 @@
 				"id": "c2",
 				"title": "simpl4-Document",
 				"value": "document"
-			} ],
+			} ]
 		}, {
 			"id": "uriparam_source",
 			"title": "Source",
@@ -1956,7 +1976,7 @@
 				"id": "c1",
 				"title": "PDF",
 				"value": "pdf"
-			} ],
+			} ]
 		}, {
 			"id": "uriparam_destination",
 			"title": "Destination",
@@ -1972,7 +1992,7 @@
 			"title": "Namespace",
 			"description": "optional",
 			"config": {
-				type: "ms123.util.RepoList"
+				"type": "ms123.util.RepoList"
 			},
 			"type": "Choice",
 			"value": null,
@@ -1986,7 +2006,7 @@
 			"type": "String",
 			"value": null,
 			"visible": "uriparam_input=='document'",
-			"readonly": false,
+			"readonly": false
 		}, {
 			"id": "uriparam_paper.type",
 			"type": "Choice",
@@ -2650,7 +2670,7 @@
 			"type": "String",
 			"value": null,
 			"optional": true,
-			"visible": "urivalue_operation=='updateById' || urivalue_operation=='upsertById' || urivalue_operation=='deleteById' ||  urivalue_operation=='findById' || urivalue_operation=='findOneById'",
+			"visible": "urivalue_operation=='updateById' || urivalue_operation=='upsertById' || urivalue_operation=='deleteById' ||  urivalue_operation=='findById' || urivalue_operation=='findOneById'"
 		}, {
 			"id": "uriparam_where",
 			"title": "Where",
@@ -2660,7 +2680,7 @@
 			"type": "String",
 			"value": null,
 			"optional": true,
-			"visible": "urivalue_operation=='updateByWhere' || urivalue_operation=='upsertByWhere' || urivalue_operation=='deleteByWhere' ||  urivalue_operation=='findByWhere' || urivalue_operation=='findOneByWhere'",
+			"visible": "urivalue_operation=='updateByWhere' || urivalue_operation=='upsertByWhere' || urivalue_operation=='deleteByWhere' ||  urivalue_operation=='findByWhere' || urivalue_operation=='findOneByWhere'"
 		}, {
 			"id": "uriparam_objectCriteria",
 			"type": "Complex",
@@ -2979,7 +2999,7 @@
 			"title": "Additional imports",
 			"title_de": "Zusätzliche Importe",
 			"config": {
-				"asArray": true,
+				"asArray": true
 			},
 			"visible": "codeKind=='processMethod' && (codeLanguage=='groovy' || codeLanguage=='java')",
 			"value": null,
@@ -5339,7 +5359,7 @@
 		}, {
 			"id": "processInstanceId",
 			"title": "processInstanceId",
-			"enabled": "urivalue_operation=='getProcessVariables'",
+			"enabled": "urivalue_operation=='getProcessVariables' || urivalue_operation=='queryProcessInstances'",
 			"value": "processInstanceId"
 		}, {
 			"id": "businessKey",
