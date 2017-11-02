@@ -1960,6 +1960,14 @@
         "value": false,
         "optional": true
       }, {
+        "id": "xf_default",
+        "name": "Default",
+        "name_de": "Default",
+        "type": "String",
+        "value": "",
+        "width": 100,
+        "optional": true
+      }, {
         "id": "parameter",
         "name": "Parameter",
         "name_de": "Parameter",

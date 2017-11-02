@@ -6001,5 +6001,250 @@
     {
         "msgstr": "Image bearbeiten",
         "msgid": "cropper.editor"
+    },
+		{
+        "msgstr": "Inhalt Seite1",
+        "msgid": "te.page1_content"
+    },
+    {
+        "msgstr": "weiterer Inhalt",
+        "msgid": "te.additional_content"
+    },
+    {
+        "msgstr": "Dieser Inhalt wird ohne Berücksichtigung der Y-Koordinate an das Dokument angehängt",
+        "msgid": "te.additional_content_help"
+    },
+    {
+        "msgstr": "Kopf/Fuß Seite1",
+        "msgid": "te.page1_header"
+    },
+    {
+        "msgstr": "Kopf/Fuß Seite2",
+        "msgid": "te.page2_header"
+    },
+    {
+        "msgstr": "Setup",
+        "msgid": "te.setup"
+    },
+    {
+        "msgstr": "Kopf",
+        "msgid": "te.header"
+    },
+    {
+        "msgstr": "Fuß",
+        "msgid": "te.footer"
+    },
+    {
+        "msgstr": "Seite 1",
+        "msgid": "te.page1"
+    },
+    {
+        "msgstr": "Seite 2",
+        "msgid": "te.page2"
+    },
+    {
+        "msgstr": "Bildblock",
+        "msgid": "te.image_block"
+    },
+    {
+        "msgstr": "Tabellenblock",
+        "msgid": "te.table_block"
+    },
+    {
+        "msgstr": "Textblock",
+        "msgid": "te.text_block"
+    },
+    {
+        "msgstr": "Pos.",
+        "msgid": "te.position.header"
+    },
+    {
+        "msgstr": "Position",
+        "msgid": "te.position"
+    },
+    {
+        "msgstr": "MwSt.",
+        "msgid": "te.vat.header"
+    },
+    {
+        "msgstr": "Mehrwertsteuer",
+        "msgid": "te.vat"
+    },
+    {
+        "msgstr": "Id",
+        "msgid": "te.articleId.header"
+    },
+    {
+        "msgstr": "Artikel Id",
+        "msgid": "te.articleId"
+    },
+    {
+        "msgstr": "Name",
+        "msgid": "te.name.header"
+    },
+    {
+        "msgstr": "Name",
+        "msgid": "te.name"
+    },
+    {
+        "msgstr": "Beschreibung",
+        "msgid": "te.description.header"
+    },
+    {
+        "msgstr": "Beschreibung",
+        "msgid": "te.description"
+    },
+    {
+        "msgstr": "Einheit",
+        "msgid": "te.unit.header"
+    },
+    {
+        "msgstr": "Einheit",
+        "msgid": "te.unit"
+    },
+    {
+        "msgstr": "Menge",
+        "msgid": "te.amount.header"
+    },
+    {
+        "msgstr": "Menge",
+        "msgid": "te.amount"
+    },
+    {
+        "msgstr": "Einzelpreis",
+        "msgid": "te.retailPrice.header"
+    },
+    {
+        "msgstr": "Einzelpreis",
+        "msgid": "te.retailPrice"
+    },
+    {
+        "msgstr": "Gesamtpreis",
+        "msgid": "te.total.header"
+    },
+    {
+        "msgstr": "Gesamtpreis",
+        "msgid": "te.total"
+    },
+    {
+        "msgstr": "Ausrichtung",
+        "msgid": "te.align"
+    },
+    {
+        "msgstr": "Links",
+        "msgid": "te.left"
+    },
+    {
+        "msgstr": "Rechts",
+        "msgid": "te.right"
+    },
+    {
+        "msgstr": "Mitte",
+        "msgid": "te.center"
+    },
+    {
+        "msgstr": "Eigene Daten",
+        "msgid": "te.owndata"
+    },
+    {
+        "msgstr": "Kunden",
+        "msgid": "te.customer"
+    },
+    {
+        "msgstr": "Überschrift",
+        "msgid": "te.title"
+    },
+    {
+        "msgstr": "Welche Felder sollen angezeigt werden?",
+        "msgid": "te.fields_show"
+    },
+    {
+        "msgstr": "Papierformat",
+        "msgid": "te.paperFormat"
+    },
+    {
+        "msgstr": "Orientation",
+        "msgid": "te.orientation"
+    },
+    {
+        "msgstr": "Linker Rand(mm)",
+        "msgid": "te.leftMargin"
+    },
+    {
+        "msgstr": "Rechter Rand(mm)",
+        "msgid": "te.rightMargin"
+    },
+    {
+        "msgstr": "Oberer Rand(mm)",
+        "msgid": "te.topMargin"
+    },
+    {
+        "msgstr": "Unterer Rand(mm)",
+        "msgid": "te.bottomMargin"
+    },
+    {
+        "msgstr": "Kopfhöhe(mm)",
+        "msgid": "te.headerHeight"
+    },
+    {
+        "msgstr": "Fußhöhe(mm)",
+        "msgid": "te.footerHeight"
+    },
+    {
+        "msgstr": "Wie Seite 1",
+        "msgid": "te.as_page_one"
+    },
+    {
+        "msgstr": "Template laden",
+        "msgid": "te.load"
+    },
+    {
+        "msgstr": "speichern",
+        "msgid": "te.save"
+    },
+    {
+        "msgstr": "speichern unter ..",
+        "msgid": "te.save_under"
+    },
+    {
+        "msgstr": "Template zurücksetzen",
+        "msgid": "te.clear"
+    },
+    {
+        "msgstr": "Bitte einen Namen angeben",
+        "msgid": "te.enter_name"
+    },
+    {
+        "msgstr": "Template gespeichert",
+        "msgid": "te.template_saved"
+    },
+    {
+        "msgstr": "Bitte Template auswählen",
+        "msgid": "te.select_template"
+    },
+    {
+        "msgstr": "Text rechts ausrichten",
+        "msgid": "te.right_align"
+    },
+    {
+        "msgstr": "Neue Spalte anlegen",
+        "msgid": "te.new_column"
+    },
+    {
+        "msgstr": "Spalten Id",
+        "msgid": "te.columnId"
+    },
+    {
+        "msgstr": "Kopfbeschriftung",
+        "msgid": "te.columnHeader"
+    },
+    {
+        "msgstr": "Spaltentext",
+        "msgid": "te.columnText"
+    },
+    {
+        "msgstr": "Daten Referenz",
+        "msgid": "te.dataref"
     }
+
 ]
