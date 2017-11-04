@@ -6243,6 +6243,14 @@
         "msgid": "te.columnText"
     },
     {
+        "msgstr": "Pos. absolut",
+        "msgid": "te.absolute"
+    },
+    {
+        "msgstr": "Whitespace erhalten",
+        "msgid": "te.whiteSpacesPreserve"
+    },
+    {
         "msgstr": "Daten Referenz",
         "msgid": "te.dataref"
     }

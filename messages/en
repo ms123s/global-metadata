@@ -4370,6 +4370,18 @@
         "msgstr": "Object saved",
         "msgid": "registry.saved"
     },
+    {
+        "msgstr": "Pos. absolute",
+        "msgid": "te.absolute"
+    },
+    {
+        "msgstr": "Whitespace preserve",
+        "msgid": "te.whiteSpacePreserve"
+    },
+    {
+        "msgstr": "Data reference",
+        "msgid": "te.dataref"
+    },
 		{
 			"msgid": "datatables.sSortDescending",
 			"msgstr":": activate to sort column descending"
