@@ -6239,8 +6239,24 @@
         "msgid": "te.columnHeader"
     },
     {
+        "msgstr": "Export Template",
+        "msgid": "te.export"
+    },
+    {
+        "msgstr": "Import Template",
+        "msgid": "te.import"
+    },
+    {
         "msgstr": "Spaltentext",
         "msgid": "te.columnText"
+    },
+    {
+        "msgstr": "Export Template",
+        "msgid": "te.export"
+    },
+    {
+        "msgstr": "Import Template",
+        "msgid": "te.import"
     },
     {
         "msgstr": "Pos. absolut",
