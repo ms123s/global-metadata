@@ -1879,6 +1879,10 @@
         "msgid": "shell.filter_dir"
     },
     {
+        "msgstr": "Sprachen",
+        "msgid": "messages.lang.options"
+    },
+    {
         "msgstr": "Filter (inkrementell)",
         "msgid": "messages.filter"
     },
