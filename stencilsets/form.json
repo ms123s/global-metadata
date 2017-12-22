@@ -1114,6 +1114,17 @@
       "refToView": "",
       "length": "30"
     }, {
+      "id": "xf_maxsize",
+      "title": "Maxsize",
+      "title_de": "Max. Größe",
+      "description_de": "Maximale Dateigröße, 0 bedeutet unbegrenzt",
+      "description": "Maximum filesize,0 means unlimited",
+      "type": "Integer",
+      "value": 0,
+      "popular": true,
+      "readonly": false,
+      "optional": false
+    }, {
       "id": "xf_multi",
       "title": "Multi",
       "title_de": "Mehrere",
