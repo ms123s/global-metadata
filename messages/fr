@@ -29,5 +29,21 @@
     {
         "msgstr": "Refresh",
         "msgid": "button.refresh"
+    },
+    {
+        "msgstr": "Sélection avec double-clic",
+        "msgid": "crud2.select_with"
+    },
+    {
+        "msgstr": "Veuillez sélectionner un fichier",
+        "msgid": "import.select_file"
+    },
+    {
+        "msgstr": "ou",
+        "msgid": "import.or"
+    },
+    {
+        "msgstr": "Faites glisser un fichier ici",
+        "msgid": "import.drop_file2"
     }
 ]
