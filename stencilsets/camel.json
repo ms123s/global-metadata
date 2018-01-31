@@ -2383,6 +2383,52 @@
 			} ]
 		} ]
 	}, {
+		"name": "execProperties",
+		"properties": [ {
+			"id": "type_exec",
+			"type": "String",
+			"value": "EXEC",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "exec:${executable}",
+			"visible": false
+		}, {
+			"id": "urivalue_executable",
+			"title": "Executable",
+			"type": "string",
+			"description": "where executable is the name, or file path, of the system command that will be executed.<br />If executable name is used (e.g. exec:java), the executable must in the system path.",
+			"value": "",
+			"optional": false,
+			"visible": true
+		}, {
+			"id": "uriparam_args",
+			"title_de": "Argumente",
+			"title": "Arguments",
+			"description": "The arguments of the executable.<br /> The arguments may be one or many whitespace-separated tokens,that can be quoted with <br />\" - e.g. args=\"arg 1\" arg2 will use two arguments arg 1 and arg2.<br />To include the quotes use \"\" - e.g. args=\"\"arg 1\"\" arg2 will use the arguments \"arg 1\" and arg2.",
+			"optional": false,
+			"type": "string",
+			"value": null
+		}, {
+			"id": "uriparam_workingDir",
+			"title_de": "Arbeitsverzeichnis",
+			"title": "Workingdirectory",
+			"description": "The directory in which the command should be executed.<br />If null, the working directory of the current process will be used.",
+			"optional": false,
+			"type": "string",
+			"value": null
+		}, {
+			"id": "uriparam_outFile",
+			"title_de": "Ausgabedatei",
+			"title": "Outputfile",
+			"description": "The name of a file, created by the executable, that should be considered as its output.<br />If no outFile is set, the standard output (stdout) of the executable will be used instead.",
+			"optional": false,
+			"type": "string",
+			"value": null
+		} ]
+	}, {
 		"name": "sqlProperties",
 		"properties": [ {
 			"id": "type_sql",
@@ -4717,6 +4763,16 @@
 		"groups": [ "Building blocks A-L" ],
 		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "eventbusProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "ExecEndpoint",
+		"title": "Exec",
+		"view": "execendpoint.svg",
+		"icon": "execendpoint.png",
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "execProperties",  "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",

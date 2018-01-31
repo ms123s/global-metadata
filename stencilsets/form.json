@@ -1114,6 +1114,17 @@
       "refToView": "",
       "length": "30"
     }, {
+      "id": "xf_maxsize",
+      "title": "Maxsize",
+      "title_de": "Max. Größe",
+      "description_de": "Maximale Dateigröße, 0 bedeutet unbegrenzt",
+      "description": "Maximum filesize,0 means unlimited",
+      "type": "Integer",
+      "value": 0,
+      "popular": true,
+      "readonly": false,
+      "optional": false
+    }, {
       "id": "xf_multi",
       "title": "Multi",
       "title_de": "Mehrere",
@@ -2033,6 +2044,14 @@
           "refToView": ""
         } ]
       }, {
+        "id": "errormsg",
+        "name": "Errormessage",
+        "name_de": "Fehlermeldung",
+        "type": "String",
+        "value": "",
+        "width": 100,
+        "optional": true
+      }, {
         "id": "constraints",
         "name": "Constraints",
         "name_de": "Prüfung",
@@ -2040,6 +2059,7 @@
           "typecolumn": "type",
           "text": "###constraints_text",
           "textarea": "###constraints_text",
+          "selection": "###constraints_text",
           "date": "###constraints_date",
           "datetime": "###constraints_date",
           "number": "###constraints_number",
