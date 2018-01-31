@@ -2044,6 +2044,14 @@
           "refToView": ""
         } ]
       }, {
+        "id": "errormsg",
+        "name": "Errormessage",
+        "name_de": "Fehlermeldung",
+        "type": "String",
+        "value": "",
+        "width": 100,
+        "optional": true
+      }, {
         "id": "constraints",
         "name": "Constraints",
         "name_de": "Prüfung",
@@ -2051,6 +2059,7 @@
           "typecolumn": "type",
           "text": "###constraints_text",
           "textarea": "###constraints_text",
+          "selection": "###constraints_text",
           "date": "###constraints_date",
           "datetime": "###constraints_date",
           "number": "###constraints_number",
