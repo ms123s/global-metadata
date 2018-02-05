@@ -115,12 +115,12 @@
         "msgid": "import.drop_file"
     },
     {
-        "msgid": "import.or",
-        "msgstr": "oder"
+        "msgstr": "oder",
+        "msgid": "import.or"
     },
     {
-        "msgid": "import.drop_file2",
-        "msgstr": "Bitte eine Datei hierher ziehen"
+        "msgstr": "Bitte eine Datei hierher ziehen",
+        "msgid": "import.drop_file2"
     },
     {
         "msgstr": "2.Upload",
@@ -1877,6 +1877,10 @@
     {
         "msgstr": "Filter",
         "msgid": "shell.filter_dir"
+    },
+    {
+        "msgstr": "Sprachen",
+        "msgid": "messages.lang.options"
     },
     {
         "msgstr": "Filter (inkrementell)",
@@ -6002,7 +6006,7 @@
         "msgstr": "Image bearbeiten",
         "msgid": "cropper.editor"
     },
-		{
+    {
         "msgstr": "Inhalt Seite1",
         "msgid": "te.page1_content"
     },
@@ -6270,5 +6274,4 @@
         "msgstr": "Daten Referenz",
         "msgid": "te.dataref"
     }
-
 ]

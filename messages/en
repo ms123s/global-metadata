@@ -2103,6 +2103,10 @@
         "msgstr": "Filter (incremental)"
     },
     {
+        "msgid": "messages.lang.options",
+        "msgstr": "Languages"
+    },
+    {
         "msgid": "messages.messages_dir",
         "msgstr": "Translations"
     },
