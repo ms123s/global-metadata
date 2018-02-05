@@ -2039,6 +2039,7 @@
         "config": {
           "typecolumn": "type",
           "text": "###constraints_text",
+          "selection": "###constraints_text",
           "textarea": "###constraints_text",
           "date": "###constraints_date",
           "datetime": "###constraints_date",
