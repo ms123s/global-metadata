@@ -2439,7 +2439,7 @@
 		}, {
 			"id": "uri_template",
 			"type": "String",
-			"value": ":${cron}",
+			"value": "cron:${cron}",
 			"visible": false
 		}, {
 			"id": "urivalue_cron",

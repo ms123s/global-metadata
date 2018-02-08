@@ -170,6 +170,46 @@
             "permission": "modeldata:entities:odata",
             "actions": "read,write",
             "enabled": true
+        },
+        {
+            "permission": "boschetk:entities:odata",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "ges:entities:data:verkaufszeile_lager",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "ges:entities:data:verkaufsbemerkungszeile",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "ges:entities:data:regalnr",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "ges:entities:data:nve_wareneingang",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "ges:entities:data:fahrer",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "ges:entities:data:artikel_eancode",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
+            "permission": "ges:entities:data:artikel",
+            "actions": "read,write",
+            "enabled": true
         }
     ],
     "name": "global.guest"
