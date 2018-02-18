@@ -2429,6 +2429,43 @@
 			"value": null
 		} ]
 	}, {
+		"name": "quartzProperties",
+		"properties": [ {
+			"id": "type_quartz",
+			"type": "String",
+			"value": "QUARTZ",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "quartz2:dummy",
+			"visible": false
+		}, {
+			"id": "uriparam_cron",
+			"title": "Cron",
+			"type": "string",
+			"description": "<b>Specifies a cron expression</b><br />0 0 12 * * ?  Fire at 12:00 PM (noon) every day <br />0 15 10 ? * * Fire at 10:15 AM every day <br />0 15 10 * * ? Fire at 10:15 AM every day <br />0 15 10 * * ? * Fire at 10:15 AM every day <br />0 15 10 * * ? 2005  Fire at 10:15 AM every day during the year 2005 <br />0 * 14 * * ?  Fire every minute starting at 2:00 PM and ending at 2:59 PM, every day <br />0 0/5 14 * * ?  Fire every 5 minutes starting at 2:00 PM and ending at 2:55 PM, every day <br />0 0/5 14,18 * * ? Fire every 5 minutes starting at 2:00 PM and ending at 2:55 PM, AND fire every 5 minutes starting at 6:00 PM and ending at 6:55 PM, every day <br />0 0-5 14 * * ?  Fire every minute starting at 2:00 PM and ending at 2:05 PM, every day <br />0 10,44 14 ? 3 WED  Fire at 2:10 PM and at 2:44 PM every Wednesday in the month of March <br />0 15 10 ? * MON-FRI Fire at 10:15 AM every Monday, Tuesday, Wednesday, Thursday and Friday <br />0 15 10 15 * ?  Fire at 10:15 AM on the 15th day of every month <br />0 15 10 L * ? Fire at 10:15 AM on the last day of every month <br />0 15 10 ? * 6L  Fire at 10:15 AM on the last Friday of every month <br />0 15 10 ? * 6L  Fire at 10:15 AM on the last Friday of every month <br />0 15 10 ? * 6L 2002-2005  Fire at 10:15 AM on every last friday of every month during the years 2002, 2003, 2004, and 2005 <br />0 15 10 ? * 6#3 Fire at 10:15 AM on the third Friday of every month <br />0 0 12 1/5 * ?  Fire at 12 PM (noon) every 5 days every month, starting on the first day of the month <br />0 11 11 11 11 ? Fire every November 11 at 11:11 AM",
+			"value": "",
+			"optional": false,
+			"visible": true
+		}, {
+			"id": "uriparam_trigger.repeatCount",
+			"title_de": "Wiederholungen",
+			"title": "Repeat count",
+			"description": "How many times should the timer repeat?",
+			"optional": false,
+			"type": "Integer",
+			"value": 0
+		}, {
+			"id": "uriparam_trigger.repeatInterval",
+			"title": "Repeat interval",
+			"description": "The amount of time in milliseconds between repeated triggers.",
+			"optional": false,
+			"type": "Integer",
+			"value": 0
+		} ]
+	}, {
 		"name": "sqlProperties",
 		"properties": [ {
 			"id": "type_sql",
@@ -4585,8 +4622,8 @@
 			"id": "uriparam_source",
 			"title": "Source",
 			"title_de": "Quelle",
-			"description_de": "z.B. <ul><li> <b>header.sessionData</b> oder kurz: <b>h.sessionData</b> => Quelle ist das Headerfeld <b>sessionData</b></li><li><b>property.sessionData</b> oder kurz <b>p.sessionData</b> =>  Quelle ist Property <b>sessionData</b></li><li> default ist <b>body</b></li></ul>",
-			"description":    "e.g. <ul><li> <b>header.sessionData</b> or short: <b>h.sessionData</b> => Source is the headerfield <b>sessionData</b></li><li><b>property.sessionData</b> or short <b>p.sessionData</b> => Source is property <b>sessionData</b></li><li> default is <b>body</b></li></ul>",
+			"description_de": "z.B. <ul><li> <b>header.value</b> oder kurz: <b>h.value</b> => Quelle ist das Headerfeld <b>value</b></li><li><b>property.value</b> oder kurz <b>p.value</b> =>  Quelle ist Property <b>value</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "e.g. <ul><li> <b>header.value</b> or short: <b>h.value</b> => Source is the headerfield <b>value</b></li><li><b>property.value</b> or short <b>p.value</b> => Source is property <b>value</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
 			"value": null,
 			"optional": false,
@@ -4595,8 +4632,8 @@
 			"id": "uriparam_destination",
 			"title": "Destination",
 			"title_de": "Ziel",
-			"description_de": "Ziel des Ergebnisses. z.B. <ul><li> <b>header.sessionData</b> oder kurz: <b>h.sessionData</b> => Ziel ist das Headerfeld <b>sessionData</b></li><li><b>property.sessionData</b> oder kurz <b>p.sessionData</b> => Ziel ist Property <b>sessionData</b></li><li> default ist <b>body</b></li></ul>",
-			"description":    "Destination of the result. e.g. <ul><li> <b>header.sessionData</b> or short: <b>h.sessionData</b> => Destination is headerfield <b>sessionData</b></li><li><b>property.sessionData</b> or short <b>p.sessionData</b> Destination is property <b>sessionData</b></li><li> default is <b>body</b></li></ul>",
+			"description_de": "Ziel des Ergebnisses. z.B. <ul><li> <b>header.value</b> oder kurz: <b>h.value</b> => Ziel ist das Headerfeld <b>value</b></li><li><b>property.value</b> oder kurz <b>p.value</b> => Ziel ist Property <b>value</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the result. e.g. <ul><li> <b>header.value</b> or short: <b>h.value</b> => Destination is headerfield <b>value</b></li><li><b>property.value</b> or short <b>p.value</b> Destination is property <b>value</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
 			"value": null,
 			"optional": false,
@@ -4863,6 +4900,16 @@
 		"groups": [ "Building blocks M-Z" ],
 		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "activitiProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "QuartzEndpoint",
+		"title": "Quartz",
+		"view": "quartzendpoint.svg",
+		"icon": "quartzendpoint.png",
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "quartzProperties",  "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
