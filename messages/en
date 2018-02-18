@@ -4374,20 +4374,292 @@
         "msgstr": "Object saved",
         "msgid": "registry.saved"
     },
+		{
+			"msgid": "datatables.sSortDescending",
+			"msgstr":": activate to sort column descending"
+		},
     {
-        "msgstr": "Pos. absolute",
+        "msgstr": "Content page1",
+        "msgid": "te.page1_content"
+    },
+    {
+        "msgstr": "More content",
+        "msgid": "te.additional_content"
+    },
+    {
+        "msgstr": "This content is appended to the document without regard to the Y coordinate",
+        "msgid": "te.additional_content_help"
+    },
+    {
+        "msgstr": "Header/Footer page1",
+        "msgid": "te.page1_header"
+    },
+    {
+        "msgstr": "Header/Footer page2",
+        "msgid": "te.page2_header"
+    },
+    {
+        "msgstr": "Macro1",
+        "msgid": "te.macro1"
+    },
+    {
+        "msgstr": "Macro2",
+        "msgid": "te.macro2"
+    },
+    {
+        "msgstr": "Macro3",
+        "msgid": "te.macro3"
+    },
+    {
+        "msgstr": "used",
+        "msgid": "te.macroEnabled"
+    },
+    {
+        "msgstr": "Setup",
+        "msgid": "te.setup"
+    },
+    {
+        "msgstr": "Header",
+        "msgid": "te.header"
+    },
+    {
+        "msgstr": "Footer",
+        "msgid": "te.footer"
+    },
+    {
+        "msgstr": "Page 1",
+        "msgid": "te.page1"
+    },
+    {
+        "msgstr": "Page 2",
+        "msgid": "te.page2"
+    },
+    {
+        "msgstr": "Imageblock",
+        "msgid": "te.image_block"
+    },
+    {
+        "msgstr": "Tableblock",
+        "msgid": "te.table_block"
+    },
+    {
+        "msgstr": "Textblock",
+        "msgid": "te.text_block"
+    },
+    {
+        "msgstr": "Pos.",
+        "msgid": "te.position.header"
+    },
+    {
+        "msgstr": "Position",
+        "msgid": "te.position"
+    },
+    {
+        "msgstr": "Vat",
+        "msgid": "te.vat.header"
+    },
+    {
+        "msgstr": "Vat",
+        "msgid": "te.vat"
+    },
+    {
+        "msgstr": "Id",
+        "msgid": "te.articleId.header"
+    },
+    {
+        "msgstr": "Article Id",
+        "msgid": "te.articleId"
+    },
+    {
+        "msgstr": "Name",
+        "msgid": "te.name.header"
+    },
+    {
+        "msgstr": "Name",
+        "msgid": "te.name"
+    },
+    {
+        "msgstr": "Description",
+        "msgid": "te.description.header"
+    },
+    {
+        "msgstr": "Description",
+        "msgid": "te.description"
+    },
+    {
+        "msgstr": "Unit",
+        "msgid": "te.unit.header"
+    },
+    {
+        "msgstr": "Unit",
+        "msgid": "te.unit"
+    },
+    {
+        "msgstr": "Amount",
+        "msgid": "te.amount.header"
+    },
+    {
+        "msgstr": "Amount",
+        "msgid": "te.amount"
+    },
+    {
+        "msgstr": "Singleprice",
+        "msgid": "te.retailPrice.header"
+    },
+    {
+        "msgstr": "Singleprice",
+        "msgid": "te.retailPrice"
+    },
+    {
+        "msgstr": "Total",
+        "msgid": "te.total.header"
+    },
+    {
+        "msgstr": "Total",
+        "msgid": "te.total"
+    },
+    {
+        "msgstr": "Alignment",
+        "msgid": "te.align"
+    },
+    {
+        "msgstr": "Left",
+        "msgid": "te.left"
+    },
+    {
+        "msgstr": "Right",
+        "msgid": "te.right"
+    },
+    {
+        "msgstr": "Middle",
+        "msgid": "te.center"
+    },
+    {
+        "msgstr": "Own data",
+        "msgid": "te.owndata"
+    },
+    {
+        "msgstr": "Customer",
+        "msgid": "te.customer"
+    },
+    {
+        "msgstr": "Title",
+        "msgid": "te.title"
+    },
+    {
+        "msgstr": "Which fields should be displayed?",
+        "msgid": "te.fields_show"
+    },
+    {
+        "msgstr": "Paperformat",
+        "msgid": "te.paperFormat"
+    },
+    {
+        "msgstr": "Orientation",
+        "msgid": "te.orientation"
+    },
+    {
+        "msgstr": "Left margin(mm)",
+        "msgid": "te.leftMargin"
+    },
+    {
+        "msgstr": "Right margin(mm)",
+        "msgid": "te.rightMargin"
+    },
+    {
+        "msgstr": "Upper margin(mm)",
+        "msgid": "te.topMargin"
+    },
+    {
+        "msgstr": "Bottom margin(mm)",
+        "msgid": "te.bottomMargin"
+    },
+    {
+        "msgstr": "Headerheight(mm)",
+        "msgid": "te.headerHeight"
+    },
+    {
+        "msgstr": "Footerheight(mm)",
+        "msgid": "te.footerHeight"
+    },
+    {
+        "msgstr": "As page 1",
+        "msgid": "te.as_page_one"
+    },
+    {
+        "msgstr": "Load",
+        "msgid": "te.load"
+    },
+    {
+        "msgstr": "Save",
+        "msgid": "te.save"
+    },
+    {
+        "msgstr": "Save as ..",
+        "msgid": "te.save_under"
+    },
+    {
+        "msgstr": "Template reset",
+        "msgid": "te.clear"
+    },
+    {
+        "msgstr": "Please enter a name",
+        "msgid": "te.enter_name"
+    },
+    {
+        "msgstr": "Template saved",
+        "msgid": "te.template_saved"
+    },
+    {
+        "msgstr": "Please select a template",
+        "msgid": "te.select_template"
+    },
+    {
+        "msgstr": "Text right align",
+        "msgid": "te.right_align"
+    },
+    {
+        "msgstr": "Create a new column",
+        "msgid": "te.new_column"
+    },
+    {
+        "msgstr": "Column Id",
+        "msgid": "te.columnId"
+    },
+    {
+        "msgstr": "Headerdescription",
+        "msgid": "te.columnHeader"
+    },
+    {
+        "msgstr": "Export template",
+        "msgid": "te.export"
+    },
+    {
+        "msgstr": "Import template",
+        "msgid": "te.import"
+    },
+    {
+        "msgstr": "Columntext",
+        "msgid": "te.columnText"
+    },
+    {
+        "msgstr": "Export template",
+        "msgid": "te.export"
+    },
+    {
+        "msgstr": "Import template",
+        "msgid": "te.import"
+    },
+    {
+        "msgstr": "Pos. absolut",
         "msgid": "te.absolute"
     },
     {
-        "msgstr": "Whitespace preserve",
-        "msgid": "te.whiteSpacePreserve"
+        "msgstr": "Whitespace erhalten",
+        "msgid": "te.whiteSpacesPreserve"
     },
     {
         "msgstr": "Data reference",
         "msgid": "te.dataref"
-    },
-		{
-			"msgid": "datatables.sSortDescending",
-			"msgstr":": activate to sort column descending"
-		}
+    }
 ]

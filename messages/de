@@ -6027,6 +6027,22 @@
         "msgid": "te.page2_header"
     },
     {
+        "msgstr": "Macro1",
+        "msgid": "te.macro1"
+    },
+    {
+        "msgstr": "Macro2",
+        "msgid": "te.macro2"
+    },
+    {
+        "msgstr": "Macro3",
+        "msgid": "te.macro3"
+    },
+    {
+        "msgstr": "verwendet",
+        "msgid": "te.macroEnabled"
+    },
+    {
         "msgstr": "Setup",
         "msgid": "te.setup"
     },
