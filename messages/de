@@ -6287,8 +6287,44 @@
         "msgid": "te.whiteSpacesPreserve"
     },
     {
+        "msgstr": "Macroblock",
+        "msgid": "te.macro_block"
+    },
+    {
         "msgstr": "Macros",
         "msgid": "te.macros"
+    },
+    {
+        "msgstr": "Macronummer",
+        "msgid": "te.macroNum"
+    },
+    {
+        "msgstr": "Macro eins",
+        "msgid": "te.macroOne"
+    },
+    {
+        "msgstr": "Macro zwei",
+        "msgid": "te.macroTwo"
+    },
+    {
+        "msgstr": "Macro drei",
+        "msgid": "te.macroThree"
+    },
+    {
+        "msgstr": "Schleife",
+        "msgid": "te.loop"
+    },
+    {
+        "msgstr": "Nein",
+        "msgid": "te.loop_no"
+    },
+    {
+        "msgstr": "Ja",
+        "msgid": "te.loop_yes"
+    },
+    {
+        "msgstr": "Schleifenliste",
+        "msgid": "te.loop_collection"
     },
     {
         "msgstr": "Daten Referenz",

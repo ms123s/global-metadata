@@ -4663,6 +4663,42 @@
         "msgid": "te.macros"
     },
     {
+        "msgstr": "Macroblock",
+        "msgid": "te.macro_block"
+    },
+    {
+        "msgstr": "Macronumber",
+        "msgid": "te.macroNum"
+    },
+    {
+        "msgstr": "Macro one",
+        "msgid": "te.macroOne"
+    },
+    {
+        "msgstr": "Macro two",
+        "msgid": "te.macroTwo"
+    },
+    {
+        "msgstr": "Macro three",
+        "msgid": "te.macroThree"
+    },
+    {
+        "msgstr": "Loop",
+        "msgid": "te.loop"
+    },
+    {
+        "msgstr": "No",
+        "msgid": "te.loop_no"
+    },
+    {
+        "msgstr": "Yes",
+        "msgid": "te.loop_yes"
+    },
+    {
+        "msgstr": "Loop collection",
+        "msgid": "te.loop_collection"
+    },
+    {
         "msgstr": "Data reference",
         "msgid": "te.dataref"
     }
