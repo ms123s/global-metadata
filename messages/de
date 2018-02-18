@@ -6287,6 +6287,10 @@
         "msgid": "te.whiteSpacesPreserve"
     },
     {
+        "msgstr": "Macros",
+        "msgid": "te.macros"
+    },
+    {
         "msgstr": "Daten Referenz",
         "msgid": "te.dataref"
     }
