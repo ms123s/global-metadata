@@ -4695,6 +4695,10 @@
         "msgid": "te.loop_yes"
     },
     {
+        "msgstr": "Use height",
+        "msgid": "te.useHeight"
+    },
+    {
         "msgstr": "Loop collection",
         "msgid": "te.loop_collection"
     },

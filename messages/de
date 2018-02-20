@@ -6323,6 +6323,10 @@
         "msgid": "te.loop_yes"
     },
     {
+        "msgstr": "Höhe setzen",
+        "msgid": "te.useHeight"
+    },
+    {
         "msgstr": "Schleifenliste",
         "msgid": "te.loop_collection"
     },

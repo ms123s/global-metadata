@@ -329,6 +329,68 @@
         }
       },
       "dockers": []
+    },
+    {
+      "resourceId": "oryx_7C99AA75-593C-491C-B881-8C83FE0F8254",
+      "properties": {
+        "xf_exclude": null,
+        "xf_invisible": null,
+        "xf_readonly": null,
+        "xf_tabindex": 0,
+        "xf_id": "useHeight",
+        "xf_type": "boolean",
+        "xf_default": "false",
+        "xf_errormsg": "",
+        "xf_expression_in": null,
+        "xf_expression_out": null,
+        "xf_expression": null,
+        "xf_required": null,
+        "xf_constraint_text": null,
+        "xf_constraint_date": null,
+        "xf_constraint_boolean": null,
+        "xf_constraint_decimal": null,
+        "xf_constraint_number": null
+      },
+      "stencil": {
+        "id": "Input"
+      },
+      "childShapes": [
+        {
+          "resourceId": "oryx_BA593242-7022-4B69-AEA8-2C23591D83BF",
+          "properties": {
+            "xf_id": "",
+            "xf_text": "@te.useHeight"
+          },
+          "stencil": {
+            "id": "Label"
+          },
+          "childShapes": [],
+          "outgoing": [],
+          "bounds": {
+            "lowerRight": {
+              "x": 100,
+              "y": -1
+            },
+            "upperLeft": {
+              "x": 0,
+              "y": -21
+            }
+          },
+          "dockers": []
+        }
+      ],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 180,
+          "y": 270
+        },
+        "upperLeft": {
+          "x": 30,
+          "y": 246
+        }
+      },
+      "dockers": []
     }
   ],
   "bounds": {
