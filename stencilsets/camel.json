@@ -1421,8 +1421,8 @@
 		}, {
 			"id": "uriparam_includeExpr",
 			"title": "Include Expression",
-			"description_de": "Ein Expression der bestimmt ob ein Event published wird:<br/>Variablen:<br/><ul><li>processDefinitionId</li><li>processInstanceId</li><li>taskDefinitionKey</li><li> executionId</li><li> formKey</li><li> name</li><li> eventName</li></ul>",
-			"description": "An expression that determines whether an event is published:<br/>Variablen:<br/><ul><li>processDefinitionId</li><li>processInstanceId</li><li>taskDefinitionKey</li><li> executionId</li><li> formKey</li><li> name</li><li> eventName</li></ul>",
+			"description_de": "Ein Expression der bestimmt ob ein Event published wird:<br/>Variablen:      <br/><ul><li>processDefinitionId</li><li>taskDefinitionKey</li><li>formKey</li><li>eventName</li></ul>",
+			"description": "An expression that determines whether an event is published:<br/>Variablen:     <br/><ul><li>processDefinitionId</li><li>taskDefinitionKey</li><li>formKey</li><li>eventName</li></ul>",
 			"visible": "urivalue_operation== 'publishEvents'",
 			"type": "String",
 			"value": null,
@@ -1430,8 +1430,8 @@
 		}, {
 			"id": "uriparam_excludeExpr",
 			"title": "Exclude Expression",
-			"description_de": "Ein Expression der bestimmt ob ein Event nicht published wird:<br/>Variablen:<br/><ul><li>processDefinitionId</li><Li>processInstanceId</li><li>taskDefinitionKey</li><li> executionId</li><li> formKey</li><li> name</li><li> eventName</li></ul>",
-			"description": "An expression that determines whether an event is not published:<br/>Variablen:<br/><ul><li>processDefinitionId</li><Li>processInstanceId</li><li>taskDefinitionKey</li><li> executionId</li><li> formKey</li><li> name</li><li> eventName</li></ul>",
+			"description_de": "Ein Expression der bestimmt ob ein Event nicht published wird:<br/>Variablen:<br/><ul><li>processDefinitionId</li><li>taskDefinitionKey</li><li>formKey</li><li>eventName</li></ul>",
+			"description": "An expression that determines whether an event is not published:<br/>Variablen: <br/><ul><li>processDefinitionId</li><li>taskDefinitionKey</li><li>formKey</li><li>eventName</li></ul>",
 			"visible": "urivalue_operation== 'publishEvents'",
 			"type": "String",
 			"value": null,
