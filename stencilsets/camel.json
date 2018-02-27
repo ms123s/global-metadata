@@ -3746,6 +3746,20 @@
 				"value": "subscribe"
 			} ],
 			"visible": true
+		}, {
+			"id": "uriparam_tenantExcludeExpr",
+			"title": "Tenant ecxlude expression",
+			"description": "Tenat exclude expression.<br/>VarMap consists of the payload, additional 'userName'.<br/> zb.: tenant!=userName",
+			"type": "String",
+			"value": "tenant != userName",
+			"visible": "urivalue_mode=='pub'"
+		}, {
+			"id": "uriparam_excludeExpr",
+			"title": "Exclude expression",
+			"description": "Common exclude expression.<br/>VarMap consists of the payload, additional 'userName'.:<br/> zb.: candidateList.indexOf(userName) <0",
+			"type": "String",
+			"value": null,
+			"visible": "urivalue_mode=='pub'"
 		} ]
 	}, {
 		"name": "sedaProperties",
