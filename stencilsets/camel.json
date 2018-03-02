@@ -5574,6 +5574,10 @@
 			"id": "taskAssignee",
 			"title": "taskAssignee",
 			"value": "taskAssignee"
+		}, {
+			"id": "taskUnassigned",
+			"title": "taskUnassigned",
+			"value": "taskUnassigned"
 		} ],
 		"objectcriteria_operations": [ {
 			"id": "==",
