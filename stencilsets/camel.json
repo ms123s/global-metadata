@@ -2691,6 +2691,14 @@
 			"value": false,
 			"visible": "urivalue_operation=='multiInsertUpdate' && isupdate==true"
 		}, {
+			"id": "uriparam_list",
+			"title": "Multiple objects(List)",
+			"title_de": "Eine Liste von Objekten",
+			"description": "Inserting multiple objects.",
+			"type": "boolean",
+			"value": false,
+			"visible": "urivalue_operation=='insert'"
+		}, {
 			"id": "uriparam_namespace",
 			"title": "Namespace",
 			"description": "optional",
@@ -2700,6 +2708,12 @@
 			"type": "Combo",
 			"value": null,
 			"items": []
+		}, {
+			"id": "uriparam_pack",
+			"title": "Package",
+			"description": "If empty, then the package \"data\" or in case of orientdb \"odata\" is used",
+			"type": "String",
+			"value": null
 		}, {
 			"id": "uriparam_source",
 			"title": "Source",
@@ -2943,7 +2957,7 @@
 			"id": "uriparam_fileName",
 			"title": "Filename",
 			"title_de": "Dateiname",
-			"description": "Use Expression such as <a  target='_blank' href='http://camel.apache.org/file-language.html'>File Language</a> to dynamically set the filename.<br/>For consumers, it's used as a filename filter.<br/>For producers, it's used to evaluate the filename to write.<br/>If an expression is set, it take precedence over the CamelFileName header.",
+			"description": "Use Expression such ${property.fileName}.Where \"fileName\" is a property set in the header",
 			"type": "String",
 			"value": "",
 			"visible": true
