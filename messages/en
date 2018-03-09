@@ -63,6 +63,10 @@
         "msgstr": "Name"
     },
     {
+        "msgstr": "Nullable",
+        "msgid": "aid.field.nullable"
+    },
+    {
         "msgid": "aid.field.primary_key",
         "msgstr": "Primary key"
     },
@@ -1294,6 +1298,10 @@
 				'msgid': "datasource.jooq_excludes",
 				'msgstr': "JOOQ excludes(Pattern <b>without</b> databasename)"
 		}, 
+    {
+        "msgstr": "Generate Defaulvalue",
+        "msgid": "datasource.datanucleus_generate_defaultvalue"
+    },
 		{
 				'msgid': "datasource.create_datanucleus_metadata",
 				'msgstr': "generate DATANUCLEUS metadata"

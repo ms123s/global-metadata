@@ -96,6 +96,11 @@
             "name": "default_value",
             "datatype": "string"
         },
+        "nullable": {
+            "enabled": true,
+            "name": "nullable",
+            "datatype": "boolean"
+        },
         "name": {
             "enabled": true,
             "form_enabled_expr": "!isEdit",
