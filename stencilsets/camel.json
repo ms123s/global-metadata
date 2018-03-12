@@ -1249,6 +1249,10 @@
 				"id": "c9",
 				"title": "publishEvents",
 				"value": "publishEvents"
+			}, {
+				"id": "c10",
+				"title": "deleteProcessInstance",
+				"value": "deleteProcessInstance"
 			} ],
 			"visible": true
 		}, {
@@ -1310,6 +1314,15 @@
 			"visible": "urivalue_operation.startsWith('sendMessageEvent') || uriparam_sendMessage",
 			"type": "String",
 			"title": "Messagename",
+			"value": null,
+			"readonly": false,
+			"optional": true
+		}, {
+			"id": "uriparam_deleteReason",
+			"visible": "urivalue_operation.startsWith('deleteProcessInstance')",
+			"type": "String",
+			"title": "DeleteReason",
+			"title_de": "Grund",
 			"value": null,
 			"readonly": false,
 			"optional": true
