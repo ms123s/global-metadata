@@ -1405,7 +1405,7 @@
 			"title": "Headerfields",
 			"description_de": "<b>Veraltet. Verwende \"Assignments\"! </b><br>Angebene Headerfelder in den Variablenbereich des Prozesses kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Maps werden unter dem Headernamen ins Datenmodell übernommen,wenn der Modifier :asMap angegehängt ist, dataModel.put(headerName, Map).</li><li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
 			"description": "<b>Deprecated, use Assignments! </b> <br>Copy specified headerfields into the variables space of the process, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Maps will be transferred to the data model with the header name,if the modifier :asMap is appended, dataModel.put(headerName, Map).</li><li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
-			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation=='complete')",
+			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation!='complete')",
 			"type": "String",
 			"value": "-",
 			"readonly": false
@@ -1457,7 +1457,7 @@
 			"title_de": "Zuweisungen",
 			"description": "Assigning message headers and properties to process variables.<br>Alternate to headerfields.<br><ul><li> <b>header.header1</b> or short: <b>h.header1</b> => Source is the headerfield <b>header1</b></li><li><b>property.prop1</b> or short <b>p.prop1</b> => Source is property <b>prop1</b></li>",
 			"description_de": "Zuweisung von Message Headers und Properties zu Prozessvariablen. <br>Alternative zu Headerfields.<br><ul><li> <b>header.header1</b> oder kurz: <b>h.header1</b> => Quelle ist das Headerfeld <b>header1</b></li><li><b>property.prop1</b> oder kurz <b>p.prop1</b> =>  Quelle ist Property <b>prop1</b></li>",
-			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation=='complete')",
+			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation!='complete')",
 			"value": null,
 			"readonly": false,
 			"optional": true,
