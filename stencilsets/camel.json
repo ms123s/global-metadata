@@ -5582,6 +5582,10 @@
 			"title": "processVariableValueLike",
 			"value": "processVariableValueLike"
 		}, {
+			"id": "processVariable",
+			"title": "processVariable",
+			"value": "processVariable"
+		}, {
 			"id": "taskCandidateUser",
 			"title": "taskCandidateUser",
 			"value": "taskCandidateUser"
