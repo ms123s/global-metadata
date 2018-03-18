@@ -1501,10 +1501,10 @@
 				"id": "local",
 				"name": "Scope",
 				"name_de": "Scope",
-				"readonly": false,
 				"type": "Choice",
 				"value": "false",
 				"items": "###yesno_items",
+				"readonly": "urivalue_operation!='executeTaskOperation'",
 				"width": 180
 			} ]
 		}, {
