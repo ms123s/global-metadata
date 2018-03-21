@@ -1987,6 +1987,14 @@
         "width": 100,
         "optional": true
       }, {
+        "id": "errormsg",
+        "name": "Errormessage",
+        "name_de": "Fehlermeldung",
+        "type": "String",
+        "value": "",
+        "width": 100,
+        "optional": true
+      }, {
         "id": "type",
         "name": "Type",
         "name_de": "Type",
@@ -2043,14 +2051,6 @@
           "value": "search",
           "refToView": ""
         } ]
-      }, {
-        "id": "errormsg",
-        "name": "Errormessage",
-        "name_de": "Fehlermeldung",
-        "type": "String",
-        "value": "",
-        "width": 100,
-        "optional": true
       }, {
         "id": "constraints",
         "name": "Constraints",
