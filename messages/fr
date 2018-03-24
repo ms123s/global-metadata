@@ -1,5 +1,5 @@
 [sw]
-        type = sw.messageslang
+	type = sw.messageslang
 --
 [
     {
@@ -31,19 +31,15 @@
         "msgid": "button.refresh"
     },
     {
-        "msgstr": "Sélection avec double-clic",
-        "msgid": "crud2.select_with"
+        "msgstr": "SAUVER",
+        "msgid": "data.form.save"
     },
     {
-        "msgstr": "Veuillez sélectionner un fichier",
-        "msgid": "import.select_file"
+        "msgstr": "RETOUR",
+        "msgid": "button.back"
     },
     {
-        "msgstr": "ou",
-        "msgid": "import.or"
-    },
-    {
-        "msgstr": "Faites glisser un fichier ici",
-        "msgid": "import.drop_file2"
+        "msgstr": "ne doit pas être vide",
+        "msgid": "validation.NotBlank"
     }
 ]

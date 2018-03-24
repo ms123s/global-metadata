@@ -1,5 +1,5 @@
 [sw]
-        type = sw.messageslang
+	type = sw.messageslang
 --
 [
     {
@@ -49,21 +49,5 @@
     {
         "msgstr": "no debe estar vacío",
         "msgid": "validation.NotEmpty"
-    },
-    {
-        "msgstr": "Selección con doble clic",
-        "msgid": "crud2.select_with"
-    },
-    {
-        "msgstr": "Por favor seleccione un archivo",
-        "msgid": "import.select_file"
-    },
-    {
-        "msgstr": "o",
-        "msgid": "import.or"
-    },
-    {
-        "msgstr": "Por favor, arrastre un archivo aquí",
-        "msgid": "import.drop_file2"
     }
 ]

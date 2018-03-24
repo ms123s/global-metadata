@@ -3,22 +3,6 @@
 --
 [
     {
-        "msgstr": "Fehler",
-        "msgid": "error"
-    },
-    {
-        "msgstr": "Warnung",
-        "msgid": "warning"
-    },
-    {
-        "msgstr": "Erfolgreich",
-        "msgid": "success"
-    },
-    {
-        "msgstr": "Information",
-        "msgid": "info"
-    },
-    {
         "msgstr": "Plausibilitäten",
         "msgid": "aid.field.constraints"
     },
@@ -113,10 +97,6 @@
     {
         "msgstr": "<div style='position:relative;left:15%;top:50%;font-size:300%;'>Please drop a file</div>",
         "msgid": "import.drop_file"
-    },
-    {
-        "msgstr": "oder",
-        "msgid": "import.or"
     },
     {
         "msgstr": "Bitte eine Datei hierher ziehen",
@@ -487,10 +467,6 @@
         "msgid": "datasource.create_metadata_ok"
     },
     {
-        "msgstr": "Packagename \"data\" und Orientdb nicht erlaubt",
-        "msgid": "datasource.orient_pack_data_not_ok"
-    },
-    {
         "msgstr": "Das Erstellen der Database Metadaten schlug fehl",
         "msgid": "datasource.create_metadata_failed"
     },
@@ -691,7 +667,7 @@
         "msgid": "tasks.task.claim"
     },
     {
-        "msgstr": "Aufgabe übernommen",
+        "msgstr": "Aufgabe übernohmen",
         "msgid": "tasks.task.claimed"
     },
     {
@@ -1877,10 +1853,6 @@
     {
         "msgstr": "Filter",
         "msgid": "shell.filter_dir"
-    },
-    {
-        "msgstr": "Sprachen",
-        "msgid": "messages.lang.options"
     },
     {
         "msgstr": "Filter (inkrementell)",
@@ -3277,10 +3249,6 @@
     {
         "msgstr": "Prozesse",
         "msgid": "shell.processes_dir"
-    },
-    {
-        "msgstr": "Services",
-        "msgid": "shell.services_dir"
     },
     {
         "msgstr": "History",
@@ -4752,15 +4720,7 @@
     },
     {
         "msgstr": "Erstellen von Klassen(Entitytypes)",
-        "msgid": "datamapper.entitytypes_create_nucleus"
-    },
-    {
-        "msgstr": "Nur Daten löschen,Klassen bleiben unberührt",
-        "msgid": "datamapper.only_delete_data"
-    },
-    {
-        "msgstr": "Erstellen von Klassen für OrientDB",
-        "msgid": "datamapper.entitytypes_create_orient"
+        "msgid": "datamapper.entitytypes_create"
     },
     {
         "msgstr": "Ändern der Metadaten",
@@ -5121,10 +5081,6 @@
     {
         "msgstr": "Beschreibung",
         "msgid": "stencileditor.description"
-    },
-    {
-        "msgstr": "Rollen",
-        "msgid": "structure.roles"
     },
     {
         "msgstr": "Titel",
@@ -5651,7 +5607,7 @@
         "msgid": "querybuilder.is_not_null"
     },
     {
-        "msgstr": "Keine Daten in der Tabelle vorhanden",
+        "msgstr": "Keinen Eintrag gefunden",
         "msgid": "datatables.sEmptyTable"
     },
     {
@@ -5765,10 +5721,6 @@
     {
         "msgstr": "Speichern",
         "msgid": "button.save"
-    },
-    {
-        "msgstr": "Übernehmen",
-        "msgid": "button.take_over"
     },
     {
         "msgstr": "Löschen",
@@ -5929,409 +5881,5 @@
     {
         "msgstr": "Kein Ergebnis",
         "msgid": "mmenu.noResults"
-    },
-    {
-        "msgstr": "Löschen",
-        "msgid": "dmn.clear"
-    },
-    {
-        "msgstr": "Inputspalte",
-        "msgid": "dmn.newInput"
-    },
-    {
-        "msgstr": "Outputspalte",
-        "msgid": "dmn.newOutput"
-    },
-    {
-        "msgstr": "neue Zeile",
-        "msgid": "dmn.newRow"
-    },
-    {
-        "msgstr": "Label",
-        "msgid": "dmn.label"
-    },
-    {
-        "msgstr": "Name",
-        "msgid": "dmn.name"
-    },
-    {
-        "msgstr": "Type",
-        "msgid": "dmn.type"
-    },
-    {
-        "msgstr": "Input Spalte",
-        "msgid": "dmn.insertInput"
-    },
-    {
-        "msgstr": "Output Spalte",
-        "msgid": "dmn.insertOutput"
-    },
-    {
-        "msgstr": "Zeile entfernen",
-        "msgid": "dmn.removeRow"
-    },
-    {
-        "msgstr": "Spalte entfernen",
-        "msgid": "dmn.removeColumn"
-    },
-    {
-        "msgstr": "Auswählen mit Doppel-Click",
-        "msgid": "crud2.select_with"
-    },
-    {
-        "msgstr": "Image hochladen",
-        "msgid": "cropper.upload"
-    },
-    {
-        "msgstr": "Bitte auswählen",
-        "msgid": "registry.select"
-    },
-    {
-        "msgstr": "laden",
-        "msgid": "registry.load"
-    },
-    {
-        "msgstr": "speichern",
-        "msgid": "registry.save"
-    },
-    {
-        "msgstr": "speichern unter ..",
-        "msgid": "registry.save_under"
-    },
-    {
-        "msgstr": "Objekt gespeichert",
-        "msgid": "registry.saved"
-    },
-    {
-        "msgstr": "Image bearbeiten",
-        "msgid": "cropper.editor"
-    },
-    {
-        "msgstr": "Inhalt Seite1",
-        "msgid": "te.page1_content"
-    },
-    {
-        "msgstr": "weiterer Inhalt",
-        "msgid": "te.additional_content"
-    },
-    {
-        "msgstr": "Dieser Inhalt wird ohne Berücksichtigung der Y-Koordinate an das Dokument angehängt",
-        "msgid": "te.additional_content_help"
-    },
-    {
-        "msgstr": "Kopf/Fuß Seite1",
-        "msgid": "te.page1_header"
-    },
-    {
-        "msgstr": "Kopf/Fuß Seite2",
-        "msgid": "te.page2_header"
-    },
-    {
-        "msgstr": "Macro1",
-        "msgid": "te.macro1"
-    },
-    {
-        "msgstr": "Macro2",
-        "msgid": "te.macro2"
-    },
-    {
-        "msgstr": "Macro3",
-        "msgid": "te.macro3"
-    },
-    {
-        "msgstr": "verwendet",
-        "msgid": "te.macroEnabled"
-    },
-    {
-        "msgstr": "Setup",
-        "msgid": "te.setup"
-    },
-    {
-        "msgstr": "Kopf",
-        "msgid": "te.header"
-    },
-    {
-        "msgstr": "Fuß",
-        "msgid": "te.footer"
-    },
-    {
-        "msgstr": "Seite 1",
-        "msgid": "te.page1"
-    },
-    {
-        "msgstr": "Seite 2",
-        "msgid": "te.page2"
-    },
-    {
-        "msgstr": "Bildblock",
-        "msgid": "te.image_block"
-    },
-    {
-        "msgstr": "Tabellenblock",
-        "msgid": "te.table_block"
-    },
-    {
-        "msgstr": "Textblock",
-        "msgid": "te.text_block"
-    },
-    {
-        "msgstr": "Pos.",
-        "msgid": "te.position.header"
-    },
-    {
-        "msgstr": "Position",
-        "msgid": "te.position"
-    },
-    {
-        "msgstr": "MwSt.",
-        "msgid": "te.vat.header"
-    },
-    {
-        "msgstr": "Mehrwertsteuer",
-        "msgid": "te.vat"
-    },
-    {
-        "msgstr": "Id",
-        "msgid": "te.articleId.header"
-    },
-    {
-        "msgstr": "Artikel Id",
-        "msgid": "te.articleId"
-    },
-    {
-        "msgstr": "Name",
-        "msgid": "te.name.header"
-    },
-    {
-        "msgstr": "Name",
-        "msgid": "te.name"
-    },
-    {
-        "msgstr": "Beschreibung",
-        "msgid": "te.description.header"
-    },
-    {
-        "msgstr": "Beschreibung",
-        "msgid": "te.description"
-    },
-    {
-        "msgstr": "Einheit",
-        "msgid": "te.unit.header"
-    },
-    {
-        "msgstr": "Einheit",
-        "msgid": "te.unit"
-    },
-    {
-        "msgstr": "Menge",
-        "msgid": "te.amount.header"
-    },
-    {
-        "msgstr": "Menge",
-        "msgid": "te.amount"
-    },
-    {
-        "msgstr": "Einzelpreis",
-        "msgid": "te.retailPrice.header"
-    },
-    {
-        "msgstr": "Einzelpreis",
-        "msgid": "te.retailPrice"
-    },
-    {
-        "msgstr": "Gesamtpreis",
-        "msgid": "te.total.header"
-    },
-    {
-        "msgstr": "Gesamtpreis",
-        "msgid": "te.total"
-    },
-    {
-        "msgstr": "Ausrichtung",
-        "msgid": "te.align"
-    },
-    {
-        "msgstr": "Links",
-        "msgid": "te.left"
-    },
-    {
-        "msgstr": "Rechts",
-        "msgid": "te.right"
-    },
-    {
-        "msgstr": "Mitte",
-        "msgid": "te.center"
-    },
-    {
-        "msgstr": "Eigene Daten",
-        "msgid": "te.owndata"
-    },
-    {
-        "msgstr": "Kunden",
-        "msgid": "te.customer"
-    },
-    {
-        "msgstr": "Überschrift",
-        "msgid": "te.title"
-    },
-    {
-        "msgstr": "Welche Felder sollen angezeigt werden?",
-        "msgid": "te.fields_show"
-    },
-    {
-        "msgstr": "Papierformat",
-        "msgid": "te.paperFormat"
-    },
-    {
-        "msgstr": "Orientation",
-        "msgid": "te.orientation"
-    },
-    {
-        "msgstr": "Linker Rand(mm)",
-        "msgid": "te.leftMargin"
-    },
-    {
-        "msgstr": "Rechter Rand(mm)",
-        "msgid": "te.rightMargin"
-    },
-    {
-        "msgstr": "Oberer Rand(mm)",
-        "msgid": "te.topMargin"
-    },
-    {
-        "msgstr": "Unterer Rand(mm)",
-        "msgid": "te.bottomMargin"
-    },
-    {
-        "msgstr": "Kopfhöhe(mm)",
-        "msgid": "te.headerHeight"
-    },
-    {
-        "msgstr": "Fußhöhe(mm)",
-        "msgid": "te.footerHeight"
-    },
-    {
-        "msgstr": "Wie Seite 1",
-        "msgid": "te.as_page_one"
-    },
-    {
-        "msgstr": "Template laden",
-        "msgid": "te.load"
-    },
-    {
-        "msgstr": "speichern",
-        "msgid": "te.save"
-    },
-    {
-        "msgstr": "speichern unter ..",
-        "msgid": "te.save_under"
-    },
-    {
-        "msgstr": "Template zurücksetzen",
-        "msgid": "te.clear"
-    },
-    {
-        "msgstr": "Bitte einen Namen angeben",
-        "msgid": "te.enter_name"
-    },
-    {
-        "msgstr": "Template gespeichert",
-        "msgid": "te.template_saved"
-    },
-    {
-        "msgstr": "Bitte Template auswählen",
-        "msgid": "te.select_template"
-    },
-    {
-        "msgstr": "Text rechts ausrichten",
-        "msgid": "te.right_align"
-    },
-    {
-        "msgstr": "Neue Spalte anlegen",
-        "msgid": "te.new_column"
-    },
-    {
-        "msgstr": "Spalten Id",
-        "msgid": "te.columnId"
-    },
-    {
-        "msgstr": "Kopfbeschriftung",
-        "msgid": "te.columnHeader"
-    },
-    {
-        "msgstr": "Export Template",
-        "msgid": "te.export"
-    },
-    {
-        "msgstr": "Import Template",
-        "msgid": "te.import"
-    },
-    {
-        "msgstr": "Spaltentext",
-        "msgid": "te.columnText"
-    },
-    {
-        "msgstr": "Export Template",
-        "msgid": "te.export"
-    },
-    {
-        "msgstr": "Import Template",
-        "msgid": "te.import"
-    },
-    {
-        "msgstr": "Pos. absolut",
-        "msgid": "te.absolute"
-    },
-    {
-        "msgstr": "Whitespace erhalten",
-        "msgid": "te.whiteSpacesPreserve"
-    },
-    {
-        "msgstr": "Macroblock",
-        "msgid": "te.macro_block"
-    },
-    {
-        "msgstr": "Macros",
-        "msgid": "te.macros"
-    },
-    {
-        "msgstr": "Macronummer",
-        "msgid": "te.macroNum"
-    },
-    {
-        "msgstr": "Macro eins",
-        "msgid": "te.macroOne"
-    },
-    {
-        "msgstr": "Macro zwei",
-        "msgid": "te.macroTwo"
-    },
-    {
-        "msgstr": "Macro drei",
-        "msgid": "te.macroThree"
-    },
-    {
-        "msgstr": "Schleife",
-        "msgid": "te.loop"
-    },
-    {
-        "msgstr": "Nein",
-        "msgid": "te.loop_no"
-    },
-    {
-        "msgstr": "Ja",
-        "msgid": "te.loop_yes"
-    },
-    {
-        "msgstr": "Höhe setzen",
-        "msgid": "te.useHeight"
-    },
-    {
-        "msgstr": "Schleifenliste",
-        "msgid": "te.loop_collection"
-    },
-    {
-        "msgstr": "Daten Referenz",
-        "msgid": "te.dataref"
     }
 ]
