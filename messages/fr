@@ -31,6 +31,30 @@
         "msgid": "button.refresh"
     },
     {
+        "msgstr": "Sélection avec double-clic",
+        "msgid": "crud2.select_with"
+    },
+    {
+        "msgstr": "Veuillez sélectionner un fichier",
+        "msgid": "import.select_file"
+    },
+    {
+        "msgstr": "ou",
+        "msgid": "import.or"
+    },
+    {
+        "msgstr": "Faites glisser un fichier ici",
+        "msgid": "import.drop_file2"
+    },
+    {
+        "msgstr": "Erreur",
+        "msgid": "error"
+    },
+    {
+        "msgstr": "Nom d'utilisateur ou mot de passe inconnu incorrect",
+        "msgid": "login.error"
+    },
+    {
         "msgstr": "SAUVER",
         "msgid": "data.form.save"
     },

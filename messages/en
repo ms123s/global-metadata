@@ -103,7 +103,7 @@
         "msgid": "Big"
     },
     {
-        "msgstr": "Back",
+        "msgstr": "BACK",
         "msgid": "button.back"
     },
     {
@@ -145,6 +145,10 @@
     {
         "msgstr": "Select",
         "msgid": "button.select"
+    },
+    {
+        "msgstr": "Take over",
+        "msgid": "button.take_over"
     },
     {
         "msgstr": "Edit",
@@ -1075,6 +1079,10 @@
         "msgid": "datamapper.element_mapping"
     },
 		{
+        "msgstr": "Delete only data,Classes are untouched",
+        "msgid": "datamapper.only_delete_data"
+    },
+    {
 				'msgid': "datasource.packagename",
 				'msgstr': "Packagename"
 		}, 
@@ -1116,7 +1124,11 @@
 		},
     {
         "msgstr": "Creating classes (Entitytypes)",
-        "msgid": "datamapper.entitytypes_create"
+        "msgid": "datamapper.entitytypes_create_nucleus"
+    },
+    {
+        "msgstr": "Creating classes for orientDB",
+        "msgid": "datamapper.entitytypes_create_orient"
     },
     {
         "msgstr": "Class",
@@ -1289,6 +1301,10 @@
     {
         "msgstr": "Schema validate",
         "msgid": "datasource.is_schema_validate"
+    },
+    {
+        "msgstr": "Packagename \"data\" amd Orientdb not allowed",
+        "msgid": "datasource.orient_pack_data_not_ok"
     },
     {
         "msgstr": "Url(No input, means, share a  other datasource)",
@@ -4295,7 +4311,447 @@
         "msgid": "datatables.sSortAscending"
     },
     {
-        "msgstr": ": activate to sort column descending",
-        "msgid": "datatables.sSortDescending"
+        "msgstr": "Delete",
+        "msgid": "dmn.clear"
+    },
+    {
+        "msgstr": "Inputcolumn",
+        "msgid": "dmn.newInput"
+    },
+    {
+        "msgstr": "Outputcolumn",
+        "msgid": "dmn.newOutput"
+    },
+    {
+        "msgstr": "new Row",
+        "msgid": "dmn.newRow"
+    },
+    {
+        "msgstr": "Input Column",
+        "msgid": "dmn.insertInput"
+    },
+    {
+        "msgstr": "Output Column",
+        "msgid": "dmn.insertOutput"
+    },
+    {
+        "msgstr": "remove Column",
+        "msgid": "dmn.removeColumn"
+    },
+    {
+        "msgstr": "remove Row",
+        "msgid": "dmn.removeRow"
+    },
+    {
+        "msgstr": "Label",
+        "msgid": "dmn.label"
+    },
+    {
+        "msgstr": "Name",
+        "msgid": "dmn.name"
+    },
+    {
+        "msgstr": "Type",
+        "msgid": "dmn.type"
+    },
+    {
+        "msgstr": "Error",
+        "msgid": "error"
+    },
+    {
+        "msgstr": "Information",
+        "msgid": "info"
+    },
+    {
+        "msgstr": "or",
+        "msgid": "import.or"
+    },
+    {
+        "msgstr": "Languages",
+        "msgid": "messages.lang.options"
+    },
+    {
+        "msgstr": "Roles",
+        "msgid": "structure.roles"
+    },
+    {
+        "msgstr": "Select with double-click",
+        "msgid": "crud2.select_with"
+    },
+    {
+        "msgstr": "Services",
+        "msgid": "shell.services_dir"
+    },
+    {
+        "msgstr": "Success",
+        "msgid": "success"
+    },
+    {
+        "msgstr": "Warning",
+        "msgid": "warning"
+    },
+    {
+       "msgstr": "No items found",
+       "msgid": "datatables.sEmptyTable"
+    },
+    {
+        "msgstr": "Upload Image",
+        "msgid": "cropper.upload"
+    },
+    {
+        "msgstr": "Edit Image",
+        "msgid": "cropper.editor"
+    },
+    {
+        "msgstr": "Please select",
+        "msgid": "registry.select"
+    },
+    {
+        "msgstr": "load",
+        "msgid": "registry.load"
+    },
+    {
+        "msgstr": "save",
+        "msgid": "registry.save"
+    },
+    {
+        "msgstr": "save under ..",
+        "msgid": "registry.save_under"
+    },
+    {
+        "msgstr": "Object saved",
+        "msgid": "registry.saved"
+    },
+    {
+        "msgstr": "Content page1",
+        "msgid": "te.page1_content"
+    },
+    {
+        "msgstr": "More content",
+        "msgid": "te.additional_content"
+    },
+    {
+        "msgstr": "This content is appended to the document without regard to the Y coordinate",
+        "msgid": "te.additional_content_help"
+    },
+    {
+        "msgstr": "Header/Footer page1",
+        "msgid": "te.page1_header"
+    },
+    {
+        "msgstr": "Header/Footer page2",
+        "msgid": "te.page2_header"
+    },
+    {
+        "msgstr": "Macro1",
+        "msgid": "te.macro1"
+    },
+    {
+        "msgstr": "Macro2",
+        "msgid": "te.macro2"
+    },
+    {
+        "msgstr": "Macro3",
+        "msgid": "te.macro3"
+    },
+    {
+        "msgstr": "used",
+        "msgid": "te.macroEnabled"
+    },
+    {
+        "msgstr": "Setup",
+        "msgid": "te.setup"
+    },
+    {
+        "msgstr": "Header",
+        "msgid": "te.header"
+    },
+    {
+        "msgstr": "Footer",
+        "msgid": "te.footer"
+    },
+    {
+        "msgstr": "Page 1",
+        "msgid": "te.page1"
+    },
+    {
+        "msgstr": "Page 2",
+        "msgid": "te.page2"
+    },
+    {
+        "msgstr": "Imageblock",
+        "msgid": "te.image_block"
+    },
+    {
+        "msgstr": "Tableblock",
+        "msgid": "te.table_block"
+    },
+    {
+        "msgstr": "Textblock",
+        "msgid": "te.text_block"
+    },
+    {
+        "msgstr": "Pos.",
+        "msgid": "te.position.header"
+    },
+    {
+        "msgstr": "Position",
+        "msgid": "te.position"
+    },
+    {
+        "msgstr": "Vat",
+        "msgid": "te.vat.header"
+    },
+    {
+        "msgstr": "Vat",
+        "msgid": "te.vat"
+    },
+    {
+        "msgstr": "Id",
+        "msgid": "te.articleId.header"
+    },
+    {
+        "msgstr": "Article Id",
+        "msgid": "te.articleId"
+    },
+    {
+        "msgstr": "Name",
+        "msgid": "te.name.header"
+    },
+    {
+        "msgstr": "Name",
+        "msgid": "te.name"
+    },
+    {
+        "msgstr": "Description",
+        "msgid": "te.description.header"
+    },
+    {
+        "msgstr": "Description",
+        "msgid": "te.description"
+    },
+    {
+        "msgstr": "Unit",
+        "msgid": "te.unit.header"
+    },
+    {
+        "msgstr": "Unit",
+        "msgid": "te.unit"
+    },
+    {
+        "msgstr": "Amount",
+        "msgid": "te.amount.header"
+    },
+    {
+        "msgstr": "Amount",
+        "msgid": "te.amount"
+    },
+    {
+        "msgstr": "Singleprice",
+        "msgid": "te.retailPrice.header"
+    },
+    {
+        "msgstr": "Singleprice",
+        "msgid": "te.retailPrice"
+    },
+    {
+        "msgstr": "Total",
+        "msgid": "te.total.header"
+    },
+    {
+        "msgstr": "Total",
+        "msgid": "te.total"
+    },
+    {
+        "msgstr": "Alignment",
+        "msgid": "te.align"
+    },
+    {
+        "msgstr": "Left",
+        "msgid": "te.left"
+    },
+    {
+        "msgstr": "Right",
+        "msgid": "te.right"
+    },
+    {
+        "msgstr": "Middle",
+        "msgid": "te.center"
+    },
+    {
+        "msgstr": "Own data",
+        "msgid": "te.owndata"
+    },
+    {
+        "msgstr": "Customer",
+        "msgid": "te.customer"
+    },
+    {
+        "msgstr": "Title",
+        "msgid": "te.title"
+    },
+    {
+        "msgstr": "Which fields should be displayed?",
+        "msgid": "te.fields_show"
+    },
+    {
+        "msgstr": "Paperformat",
+        "msgid": "te.paperFormat"
+    },
+    {
+        "msgstr": "Orientation",
+        "msgid": "te.orientation"
+    },
+    {
+        "msgstr": "Left margin(mm)",
+        "msgid": "te.leftMargin"
+    },
+    {
+        "msgstr": "Right margin(mm)",
+        "msgid": "te.rightMargin"
+    },
+    {
+        "msgstr": "Upper margin(mm)",
+        "msgid": "te.topMargin"
+    },
+    {
+        "msgstr": "Bottom margin(mm)",
+        "msgid": "te.bottomMargin"
+    },
+    {
+        "msgstr": "Headerheight(mm)",
+        "msgid": "te.headerHeight"
+    },
+    {
+        "msgstr": "Footerheight(mm)",
+        "msgid": "te.footerHeight"
+    },
+    {
+        "msgstr": "As page 1",
+        "msgid": "te.as_page_one"
+    },
+    {
+        "msgstr": "Load",
+        "msgid": "te.load"
+    },
+    {
+        "msgstr": "Save",
+        "msgid": "te.save"
+    },
+    {
+        "msgstr": "Save as ..",
+        "msgid": "te.save_under"
+    },
+    {
+        "msgstr": "Template reset",
+        "msgid": "te.clear"
+    },
+    {
+        "msgstr": "Please enter a name",
+        "msgid": "te.enter_name"
+    },
+    {
+        "msgstr": "Template saved",
+        "msgid": "te.template_saved"
+    },
+    {
+        "msgstr": "Please select a template",
+        "msgid": "te.select_template"
+    },
+    {
+        "msgstr": "Text right align",
+        "msgid": "te.right_align"
+    },
+    {
+        "msgstr": "Create a new column",
+        "msgid": "te.new_column"
+    },
+    {
+        "msgstr": "Column Id",
+        "msgid": "te.columnId"
+    },
+    {
+        "msgstr": "Headerdescription",
+        "msgid": "te.columnHeader"
+    },
+    {
+        "msgstr": "Export template",
+        "msgid": "te.export"
+    },
+    {
+        "msgstr": "Import template",
+        "msgid": "te.import"
+    },
+    {
+        "msgstr": "Columntext",
+        "msgid": "te.columnText"
+    },
+    {
+        "msgstr": "Export template",
+        "msgid": "te.export"
+    },
+    {
+        "msgstr": "Import template",
+        "msgid": "te.import"
+    },
+    {
+        "msgstr": "Pos. absolut",
+        "msgid": "te.absolute"
+    },
+    {
+        "msgstr": "Whitespace erhalten",
+        "msgid": "te.whiteSpacesPreserve"
+    },
+    {
+        "msgstr": "Macros",
+        "msgid": "te.macros"
+    },
+    {
+        "msgstr": "Macroblock",
+        "msgid": "te.macro_block"
+    },
+    {
+        "msgstr": "Macronumber",
+        "msgid": "te.macroNum"
+    },
+    {
+        "msgstr": "Macro one",
+        "msgid": "te.macroOne"
+    },
+    {
+        "msgstr": "Macro two",
+        "msgid": "te.macroTwo"
+    },
+    {
+        "msgstr": "Macro three",
+        "msgid": "te.macroThree"
+    },
+    {
+        "msgstr": "Loop",
+        "msgid": "te.loop"
+    },
+    {
+        "msgstr": "No",
+        "msgid": "te.loop_no"
+    },
+    {
+        "msgstr": "Yes",
+        "msgid": "te.loop_yes"
+    },
+    {
+        "msgstr": "Use height",
+        "msgid": "te.useHeight"
+    },
+    {
+        "msgstr": "Loop collection",
+        "msgid": "te.loop_collection"
+    },
+    {
+        "msgstr": "Data reference",
+        "msgid": "te.dataref"
+    },
+    {
+       "msgstr": ": activate to sort column descending",
+       "msgid": "datatables.sSortDescending"
     }
 ]
