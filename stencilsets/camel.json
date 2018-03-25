@@ -1243,12 +1243,20 @@
 				"value": "queryTasks"
 			}, {
 				"id": "c8",
+				"title": "getTaskVariables",
+				"value": "getTaskVariables"
+			}, {
+				"id": "c9",
 				"title": "executeTaskOperation",
 				"value": "executeTaskOperation"
 			}, {
-				"id": "c9",
+				"id": "c10",
 				"title": "publishEvents",
 				"value": "publishEvents"
+			}, {
+				"id": "c11",
+				"title": "deleteProcessInstance",
+				"value": "deleteProcessInstance"
 			} ],
 			"visible": true
 		}, {
@@ -1314,8 +1322,17 @@
 			"readonly": false,
 			"optional": true
 		}, {
+			"id": "uriparam_deleteReason",
+			"visible": "urivalue_operation.startsWith('deleteProcessInstance')",
+			"type": "String",
+			"title": "DeleteReason",
+			"title_de": "Grund",
+			"value": null,
+			"readonly": false,
+			"optional": true
+		}, {
 			"id": "uriparam_businessKey",
-			"visible": "!urivalue_operation.startsWith('publishEvents') && urivalue_operation!='queryTasks' && urivalue_operation!='executeTaskOperation'",
+			"visible": "!urivalue_operation.startsWith('publishEvents') && urivalue_operation!='queryTasks' && urivalue_operation!='getTaskVariables' && urivalue_operation!='executeTaskOperation'",
 			"type": "String",
 			"title": "BusinessKey",
 			"value": null,
@@ -1405,7 +1422,7 @@
 			"title": "Headerfields",
 			"description_de": "<b>Veraltet. Verwende \"Assignments\"! </b><br>Angebene Headerfelder in den Variablenbereich des Prozesses kopieren, oder alle wenn nichts angeben ist.<br/>Komma getrennt.<ul><li>Maps werden ohne Headernamen ins Datenmodell übernommen, dataModel.putAll(Map).</li> <li>Maps werden unter dem Headernamen ins Datenmodell übernommen,wenn der Modifier :asMap angegehängt ist, dataModel.put(headerName, Map).</li><li>Alles andere wird unter dem Headernamen gespeichert,<br/> dataModel.put(headername,List) oder dataModell.put(headername,String)</li></ul>",
 			"description": "<b>Deprecated, use Assignments! </b> <br>Copy specified headerfields into the variables space of the process, or all if nothing is specified.<br/>separated by commas.<ul><li>Maps will be transferred to the data model without header name, dataModel.putAll(Map).</li> <li>Maps will be transferred to the data model with the header name,if the modifier :asMap is appended, dataModel.put(headerName, Map).</li><li>Everything else is stored under the header name,<br/> dataModel.put(headername,List) or dataModell.put(headername,String)</li></ul>",
-			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation=='complete')",
+			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && urivalue_operation!='getTaskVariables' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation!='complete')",
 			"type": "String",
 			"value": "-",
 			"readonly": false
@@ -1414,15 +1431,15 @@
 			"title": "VariableNames",
 			"description_de": "VariableNames, die angefragt werden.Komma getrennt. Wenn leer dann alle",
 			"description": "VariableNames that are requested. separated by commas.if empty then alle",
-			"visible": "urivalue_operation== 'queryProcessInstances' || urivalue_operation=='getProcessVariables'",
+			"visible": "urivalue_operation== 'queryProcessInstances' || urivalue_operation=='getProcessVariables' || urivalue_operation=='publishEvents' || urivalue_operation=='queryTasks' || urivalue_operation=='getTaskVariables'",
 			"type": "String",
 			"value": null,
 			"readonly": false
 		}, {
 			"id": "uriparam_includeExpr",
 			"title": "Include Expression",
-			"description_de": "Ein Expression der bestimmt ob ein Event published wird:<br/>Variablen:      <br/><ul><li>processDefinitionId</li><li>taskDefinitionKey</li><li>formKey</li><li>eventName</li></ul>",
-			"description": "An expression that determines whether an event is published:<br/>Variablen:     <br/><ul><li>processDefinitionId</li><li>taskDefinitionKey</li><li>formKey</li><li>eventName</li></ul>",
+			"description_de": "Ein Expression der bestimmt ob ein Event published wird:<br/>Variablen:      <br/><ul><li>processDefinitionId</li><li>taskDefinitionKey</li><li>formKey</li></ul>",
+			"description": "An expression that determines whether an event is published:<br/>Variablen:     <br/><ul><li>processDefinitionId</li><li>taskDefinitionKey</li><li>formKey</li></ul>",
 			"visible": "urivalue_operation== 'publishEvents'",
 			"type": "String",
 			"value": null,
@@ -1430,8 +1447,8 @@
 		}, {
 			"id": "uriparam_excludeExpr",
 			"title": "Exclude Expression",
-			"description_de": "Ein Expression der bestimmt ob ein Event nicht published wird:<br/>Variablen:<br/><ul><li>processDefinitionId</li><li>taskDefinitionKey</li><li>formKey</li><li>eventName</li></ul>",
-			"description": "An expression that determines whether an event is not published:<br/>Variablen: <br/><ul><li>processDefinitionId</li><li>taskDefinitionKey</li><li>formKey</li><li>eventName</li></ul>",
+			"description_de": "Ein Expression der bestimmt ob ein Event nicht published wird:<br/>Variablen:<br/><ul><li>processDefinitionId</li><li>taskDefinitionKey</li><li>formKey</li></ul>",
+			"description": "An expression that determines whether an event is not published:<br/>Variablen: <br/><ul><li>processDefinitionId</li><li>taskDefinitionKey</li><li>formKey</li></ul>",
 			"visible": "urivalue_operation== 'publishEvents'",
 			"type": "String",
 			"value": null,
@@ -1442,7 +1459,7 @@
 			"title_de": "Ziel",
 			"description_de": "Ziel der Ausgabe. z.B. <ul><li> <b>header.html</b> oder kurz: <b>h.html</b> => Ziel ist das Headerfeld <b>html</b></li><li><b>property.html</b> oder kurz <b>p.html</b> => Ziel ist Property <b>html</b></li><li> default ist <b>body</b></li></ul>",
 			"description":    "Destination of the output. e.g. <ul><li> <b>header.html</b> or short: <b>h.html</b> => Destination is headerfield <b>html</b></li><li><b>property.html</b> or short <b>p.html</b> Destination is property <b>html</b></li><li> default is <b>body</b></li></ul>",
-			"visible": "urivalue_operation== 'queryProcessInstances' || urivalue_operation=='getProcessVariables' || urivalue_operation=='startProcess' || urivalue_operation=='queryTasks'",
+			"visible": "urivalue_operation== 'queryProcessInstances' || urivalue_operation=='getProcessVariables' || urivalue_operation=='startProcess' || urivalue_operation=='queryTasks' || urivalue_operation=='getTaskVariables'",
 			"type": "String",
 			"value": null,
 			"optional": true
@@ -1457,7 +1474,7 @@
 			"title_de": "Zuweisungen",
 			"description": "Assigning message headers and properties to process variables.<br>Alternate to headerfields.<br><ul><li> <b>header.header1</b> or short: <b>h.header1</b> => Source is the headerfield <b>header1</b></li><li><b>property.prop1</b> or short <b>p.prop1</b> => Source is property <b>prop1</b></li>",
 			"description_de": "Zuweisung von Message Headers und Properties zu Prozessvariablen. <br>Alternative zu Headerfields.<br><ul><li> <b>header.header1</b> oder kurz: <b>h.header1</b> => Quelle ist das Headerfeld <b>header1</b></li><li><b>property.prop1</b> oder kurz <b>p.prop1</b> =>  Quelle ist Property <b>prop1</b></li>",
-			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation=='complete')",
+			"visible": "urivalue_operation!='getProcessVariables' && urivalue_operation!='publishEvents' && urivalue_operation!='queryProcessInstances' && urivalue_operation!='queryTasks' && urivalue_operation!='getTaskVariables' && (urivalue_operation!='executeTaskOperation' || uriparam_taskOperation!='xomplete')",
 			"value": null,
 			"readonly": false,
 			"optional": true,
@@ -1479,11 +1496,20 @@
 				"width": 180
 			}, {
 				"id": "variable",
-				"name_de": "Prozessvariable",
-				"name": "Processvariable",
+				"name_de": "Prozess/Taskvariable",
+				"name": "Process/Taskvariable",
 				"type": "String",
 				"value": null,
 				"width": 250
+			}, {
+				"id": "local",
+				"name": "Scope",
+				"name_de": "Scope",
+				"type": "Choice",
+				"value": "false",
+				"items": "###yesno_items",
+				"readonly": "urivalue_operation!='executeTaskOperation'",
+				"width": 180
 			} ]
 		}, {
 			"id": "uriparam_processCriteria",
@@ -1496,7 +1522,7 @@
 			"title_de": "Prozesskriterien",
 			"description": "Criteria of the process",
 			"description_de": "Kriterien des Prozesses",
-			"visible": "urivalue_operation!='publishEvents' && urivalue_operation!='queryTasks' && urivalue_operation!='executeTaskOperation'",
+			"visible": "urivalue_operation!='publishEvents' && urivalue_operation!='queryTasks' && urivalue_operation!='getTaskVariables' && urivalue_operation!='executeTaskOperation'",
 			"value": null,
 			"readonly": false,
 			"optional": true,
@@ -1528,7 +1554,7 @@
 			"title_de": "Taskkriterien",
 			"description": "Criteria of  tasks, which are queried",
 			"description_de": "Kriterien der Tasks, die abgefragt werden",
-			"visible": "urivalue_operation=='queryTasks'",
+			"visible": "urivalue_operation=='queryTasks' || urivalue_operation=='getTaskVariables'",
 			"value": null,
 			"readonly": false,
 			"optional": true,
@@ -1735,6 +1761,10 @@
 				"id": "c4",
 				"title": "assign",
 				"value": "assign"
+			}, {
+				"id": "c5",
+				"title": "setVariables",
+				"value": "setVariables"
 			} ]
 		}, {
 			"id": "uriparam_taskId",
@@ -2691,6 +2721,14 @@
 			"value": false,
 			"visible": "urivalue_operation=='multiInsertUpdate' && isupdate==true"
 		}, {
+			"id": "uriparam_list",
+			"title": "Multiple objects(List)",
+			"title_de": "Eine Liste von Objekten",
+			"description": "Inserting multiple objects.",
+			"type": "boolean",
+			"value": false,
+			"visible": "urivalue_operation=='insert'"
+		}, {
 			"id": "uriparam_namespace",
 			"title": "Namespace",
 			"description": "optional",
@@ -2700,6 +2738,12 @@
 			"type": "Combo",
 			"value": null,
 			"items": []
+		}, {
+			"id": "uriparam_pack",
+			"title": "Package",
+			"description": "If empty, then the package \"data\" or in case of orientdb \"odata\" is used",
+			"type": "String",
+			"value": null
 		}, {
 			"id": "uriparam_source",
 			"title": "Source",
@@ -2943,7 +2987,7 @@
 			"id": "uriparam_fileName",
 			"title": "Filename",
 			"title_de": "Dateiname",
-			"description": "Use Expression such as <a  target='_blank' href='http://camel.apache.org/file-language.html'>File Language</a> to dynamically set the filename.<br/>For consumers, it's used as a filename filter.<br/>For producers, it's used to evaluate the filename to write.<br/>If an expression is set, it take precedence over the CamelFileName header.",
+			"description": "Use Expression such ${property.fileName}.Where \"fileName\" is a property set in the header",
 			"type": "String",
 			"value": "",
 			"visible": true
@@ -3746,6 +3790,20 @@
 				"value": "subscribe"
 			} ],
 			"visible": true
+		}, {
+			"id": "uriparam_tenantExcludeExpr",
+			"title": "Tenant ecxlude expression",
+			"description": "Tenat exclude expression.<br/>VarMap consists of the payload, additional 'userName'.<br/> zb.: tenant!=userName",
+			"type": "String",
+			"value": "tenant != userName",
+			"visible": "urivalue_mode=='pub'"
+		}, {
+			"id": "uriparam_excludeExpr",
+			"title": "Exclude expression",
+			"description": "Common exclude expression.<br/>VarMap consists of the payload, additional 'userName'.:<br/> zb.: candidateList.indexOf(userName) <0",
+			"type": "String",
+			"value": null,
+			"visible": "urivalue_mode=='pub'"
 		} ]
 	}, {
 		"name": "sedaProperties",
@@ -5432,6 +5490,17 @@
 			"title": "Javascript",
 			"value": "javascript"
 		} ],
+		"yesno_items": [ {
+			"id": "no",
+			"title": "Process",
+			"title_de": "Prozess",
+			"value": "false"
+		}, {
+			"id": "yes",
+			"title": "Task",
+			"title_de": "Task",
+			"value": "true"
+		} ],
 		"parametertype_items": [ {
 			"id": "string",
 			"title": "String",
@@ -5541,6 +5610,14 @@
 			"title": "processVariableValueLike",
 			"value": "processVariableValueLike"
 		}, {
+			"id": "processVariable",
+			"title": "processVariable",
+			"value": "processVariable"
+		}, {
+			"id": "taskVariable",
+			"title": "taskVariable",
+			"value": "taskVariable"
+		}, {
 			"id": "taskCandidateUser",
 			"title": "taskCandidateUser",
 			"value": "taskCandidateUser"
@@ -5560,6 +5637,14 @@
 			"id": "taskAssignee",
 			"title": "taskAssignee",
 			"value": "taskAssignee"
+		}, {
+			"id": "taskAssigneeLike",
+			"title": "taskAssigneeLike",
+			"value": "taskAssigneeLike"
+		}, {
+			"id": "taskUnassigned",
+			"title": "taskUnassigned",
+			"value": "taskUnassigned"
 		} ],
 		"objectcriteria_operations": [ {
 			"id": "==",

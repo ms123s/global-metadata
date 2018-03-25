@@ -63,8 +63,12 @@
         "msgid": "aid.field.name"
     },
     {
-        "msgstr": "Primary key",
-        "msgid": "aid.field.primary_key"
+        "msgstr": "Nullable",
+        "msgid": "aid.field.nullable"
+    },
+    {
+        "msgid": "aid.field.primary_key",
+        "msgstr": "Primary key"
     },
     {
         "msgstr": "Search (list)",
@@ -1070,6 +1074,46 @@
         "msgstr": "Structure mapping",
         "msgid": "datamapper.element_mapping"
     },
+		{
+				'msgid': "datasource.packagename",
+				'msgstr': "Packagename"
+		}, 
+		{
+				'msgid': "datasource.create_jooq_metadata",
+				'msgstr': "generate JOOQ metadata"
+		}, 
+		{
+				'msgid': "datasource.jooq_inputschema",
+				'msgstr': "JOOQ inputschema"
+		}, 
+		{
+				'msgid': "datasource.jooq_includes",
+				'msgstr': "JOOQ includes(Pattern <b>without</b> databasename)"
+		}, 
+		{
+				'msgid': "datasource.jooq_excludes",
+				'msgstr': "JOOQ excludes(Pattern <b>without</b> databasename)"
+		}, 
+    {
+        "msgstr": "Generate Defaulvalue",
+        "msgid": "datasource.datanucleus_generate_defaultvalue"
+    },
+		{
+				'msgid': "datasource.create_datanucleus_metadata",
+				'msgstr': "generate DATANUCLEUS metadata"
+		}, 
+		{
+				'msgid': "datasource.datanucleus_inputschema",
+				'msgstr': "DATANUCLEUS inputschema"
+		}, 
+		{
+				'msgid': "datasource.datanucleus_includes",
+				'msgstr': "DATANUCLEUS includes(Pattern <b>with</b> databasename)"
+		}, 
+		{
+				'msgid': "datasource.datanucleus_excludes",
+				'msgstr': "DATANUCLEUS excludes(Pattern <b>with</b> databasename)"
+		},
     {
         "msgstr": "Creating classes (Entitytypes)",
         "msgid": "datamapper.entitytypes_create"

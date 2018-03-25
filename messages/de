@@ -59,6 +59,10 @@
         "msgid": "aid.field.name"
     },
     {
+        "msgstr": "Null erlaubt",
+        "msgid": "aid.field.nullable"
+    },
+    {
         "msgstr": "Primärer Schlüssel",
         "msgid": "aid.field.primary_key"
     },
@@ -533,6 +537,10 @@
     {
         "msgstr": "DATANUCLEUS inputschema",
         "msgid": "datasource.datanucleus_inputschema"
+    },
+    {
+        "msgstr": "Generate Defaulvalue",
+        "msgid": "datasource.datanucleus_generate_defaultvalue"
     },
     {
         "msgstr": "DATANUCLEUS includes(Pattern <b>mit</b> Databasename)",
