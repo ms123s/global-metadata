@@ -1062,6 +1062,45 @@
 			} ]
 		} ]
 	}, {
+		"name": "scriptConsumerProperties",
+		"properties": [ {
+			"id": "type_scriptconsumer",
+			"type": "String",
+			"value": "ScriptConsumer",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "scriptconsumer:dummy",
+			"visible": false
+		}, {
+			"id": "uriparam_namespace",
+			"title": "Namespace",
+			"value": "-",
+			"description": "Namespace",
+			"description_de": "Namespace",
+			"config": {
+				type: "ms123.util.RepoList"
+			},
+			"type": "Combo",
+			"items": [],
+			"readonly": false,
+			"optional": true
+		}, {
+			"id": "scriptfile",
+			"type": "ResourceSelector",
+			"config": {
+				"type": "sw.groovy"
+			},
+			"title": "Scriptfile",
+			"title_de": "Scriptdatei",
+			"description": "The file which contains the script",
+			"description_de": "Die Datei welche das Script beinhaltet",
+			"value": "",
+			"optional": true
+		} ]
+	}, {
 		"name": "xdocreportProperties",
 		"properties": [ {
 			"id": "type_xdocreport",
@@ -4826,6 +4865,16 @@
 		"groups": [ "Building blocks A-L" ],
 		"groups_de": [ "Bausteine A-L" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "asciidoctorProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "ScriptConsumerEndpoint",
+		"title": "ScriptConsumer",
+		"view": "scriptconsumerendpoint.svg",
+		"icon": "scriptconsumerendpoint.png",
+		"groups": [ "Building blocks A-L" ],
+		"groups_de": [ "Bausteine A-L" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "scriptconsumerProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
