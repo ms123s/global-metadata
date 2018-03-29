@@ -1062,7 +1062,7 @@
 			} ]
 		} ]
 	}, {
-		"name": "scriptConsumerProperties",
+		"name": "scriptconsumerProperties",
 		"properties": [ {
 			"id": "type_scriptconsumer",
 			"type": "String",
