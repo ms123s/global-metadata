@@ -65,5 +65,13 @@
     {
         "msgstr": "Por favor, arrastre un archivo aquí",
         "msgid": "import.drop_file2"
+    },
+    {
+        "msgstr": "Error",
+        "msgid": "error"
+    },
+    {
+        "msgstr": "Nombre de usuario desconocido o contraseña incorrecta",
+        "msgid": "login.error"
     }
 ]

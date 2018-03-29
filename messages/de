@@ -19,7 +19,23 @@
         "msgid": "info"
     },
     {
-        "msgstr": "Plausibilitäten",
+        "msgstr": "oder",
+        "msgid": "import.or"
+    },
+    {
+        "msgstr": "Services",
+        "msgid": "shell.services_dir"
+    },
+    {
+        "msgstr": "Sprachen",
+        "msgid": "messages.lang.options"
+    },
+    {
+        "msgstr": "Packagename \"data\" und Orientdb nicht erlaubt",
+        "msgid": "datasource.orient_pack_data_not_ok"
+    },
+    {
+       "msgstr": "Plausibilitäten",
         "msgid": "aid.field.constraints"
     },
     {
@@ -117,10 +133,6 @@
     {
         "msgstr": "<div style='position:relative;left:15%;top:50%;font-size:300%;'>Please drop a file</div>",
         "msgid": "import.drop_file"
-    },
-    {
-        "msgstr": "oder",
-        "msgid": "import.or"
     },
     {
         "msgstr": "Bitte eine Datei hierher ziehen",
@@ -489,10 +501,6 @@
     {
         "msgstr": "Die Database Metadaten wurden erstellt",
         "msgid": "datasource.create_metadata_ok"
-    },
-    {
-        "msgstr": "Packagename \"data\" und Orientdb nicht erlaubt",
-        "msgid": "datasource.orient_pack_data_not_ok"
     },
     {
         "msgstr": "Das Erstellen der Database Metadaten schlug fehl",
@@ -1885,10 +1893,6 @@
     {
         "msgstr": "Filter",
         "msgid": "shell.filter_dir"
-    },
-    {
-        "msgstr": "Sprachen",
-        "msgid": "messages.lang.options"
     },
     {
         "msgstr": "Filter (inkrementell)",
@@ -3285,10 +3289,6 @@
     {
         "msgstr": "Prozesse",
         "msgid": "shell.processes_dir"
-    },
-    {
-        "msgstr": "Services",
-        "msgid": "shell.services_dir"
     },
     {
         "msgstr": "History",
@@ -5131,12 +5131,12 @@
         "msgid": "stencileditor.description"
     },
     {
-        "msgstr": "Rollen",
-        "msgid": "structure.roles"
-    },
-    {
         "msgstr": "Titel",
         "msgid": "stencileditor.title"
+    },
+    {
+        "msgstr": "Rollen",
+        "msgid": "structure.roles"
     },
     {
         "msgstr": "Titel",
@@ -5659,7 +5659,7 @@
         "msgid": "querybuilder.is_not_null"
     },
     {
-        "msgstr": "Keine Daten in der Tabelle vorhanden",
+        "msgstr": "Keinen Eintrag gefunden",
         "msgid": "datatables.sEmptyTable"
     },
     {
@@ -5701,6 +5701,10 @@
     {
         "msgstr": "Keine Einträge vorhanden.",
         "msgid": "datatables.sZeroRecords"
+    },
+    {
+        "msgstr": "Übernehmen",
+        "msgid": "button.take_over"
     },
     {
         "msgstr": "Suche speichern",
@@ -5773,10 +5777,6 @@
     {
         "msgstr": "Speichern",
         "msgid": "button.save"
-    },
-    {
-        "msgstr": "Übernehmen",
-        "msgid": "button.take_over"
     },
     {
         "msgstr": "Löschen",
@@ -5933,10 +5933,6 @@
     {
         "msgstr": "Menü Filter",
         "msgid": "mmenu.search.placeholder"
-    },
-    {
-        "msgstr": "Kein Ergebnis",
-        "msgid": "mmenu.noResults"
     },
     {
         "msgstr": "Löschen",
@@ -6341,5 +6337,9 @@
     {
         "msgstr": "Daten Referenz",
         "msgid": "te.dataref"
+    },
+    {
+        "msgstr": "Kein Ergebnis",
+        "msgid": "mmenu.noResults"
     }
 ]
