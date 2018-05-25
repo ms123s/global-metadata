@@ -18,7 +18,7 @@
       "optional": true,
       "length": "50"
     }, {
-			"id": "xf_namespace",
+			"id": "namespace",
 			"title": "Namespace",
 			"description": "optional",
 			"config": {
@@ -1422,6 +1422,233 @@
         "width": 150,
         "optional": true
       } ]
+    }, {
+      "id": "xf_required",
+      "type": "Combo",
+      "title": "Required",
+      "title_de": "Erforderlich",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "items": [ {
+        "id": "c1",
+        "value": "true",
+        "title": "true",
+        "refToView": ""
+      }, {
+        "id": "c2",
+        "value": "false",
+        "title": "false",
+        "refToView": ""
+      } ]
+    } ]
+  }, {
+    "type": "node",
+    "id": "EmbeddedPrimitiveCollection",
+    "title": "Embedded primitive collection",
+    "groups": [ "Controls" ],
+    "description": "This form control allows the user to create,edit and delete a embedded map/set or list with primitive values (String,Integer,Date).",
+    "view": "new_embeddedlist.svg",
+    "icon": "new_embeddedlist.png",
+    "propertyPackages": [ "visibilityPackage","tabindexPackage" ],
+    "roles": [ "core_form_controls", "controls_morph" ],
+    "layout": [ {
+      "type": "layout.xforms.label",
+      "moveY": -1,
+      "moveX": 0
+    } ],
+    "properties": [ {
+      "id": "xf_id",
+      "type": "String",
+      "title": "Id",
+      "prefix": "oryx",
+      "value": "",
+      "description": "",
+      "popular": true,
+      "readonly": false,
+      "optional": false,
+      "refToView": "",
+      "length": "30"
+    }, {
+      "id": "xf_collectiontype",
+      "type": "Choice",
+      "title": "Collectiontype",
+      "prefix": "oryx",
+      "value": "map",
+      "description": "The collectiontype:map or list",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "items": [ {
+        "id": "c1",
+        "title": "Map",
+        "value": "map"
+      }, {
+        "id": "c2",
+        "title": "List",
+        "value": "list"
+      } ]
+    }, {
+      "id": "xf_keylabel",
+      "type": "String",
+      "title": "Label(Key)",
+      "title_de": "Bezeichnung(Schlüssel)",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "visible": "xf_collectiontype == 'map'",
+      "readonly": false,
+      "optional": true,
+      "refToView": ""
+    }, {
+      "id": "xf_valuelabel",
+      "type": "String",
+      "title": "Label(Value)",
+      "title_de": "Bezeichnung(Wert)",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": ""
+    }, {
+      "id": "xf_type",
+      "type": "Choice",
+      "title": "Input type",
+      "title_de": "Eingabetyp",
+      "prefix": "oryx",
+      "value": "text",
+      "description": "The input datatype",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": "",
+      "items": [ {
+        "id": "c1",
+        "title": "Text",
+        "value": "text",
+        "refToView": ""
+      }, {
+        "id": "c2",
+        "title": "Password",
+        "value": "password",
+        "refToView": ""
+      }, {
+        "id": "c3",
+        "title": "Number",
+        "value": "number",
+        "refToView": ""
+      }, {
+        "id": "c4",
+        "title": "Boolean",
+        "value": "boolean",
+        "refToView": ""
+      }, {
+        "id": "c5",
+        "title": "Decimal",
+        "value": "decimal",
+        "refToView": ""
+      }, {
+        "id": "c6",
+        "title": "Date",
+        "value": "date",
+        "refToView": ""
+      }, {
+        "id": "c7",
+        "title": "DateTime",
+        "value": "datetime",
+        "refToView": ""
+      }, {
+        "id": "c8",
+        "title": "DateYearMonth",
+        "value": "dateyearmonth",
+        "refToView": ""
+      }, {
+        "id": "c9",
+        "title": "Computed",
+        "value": "computed",
+        "refToView": ""
+      } ]
+    }, {
+      "id": "xf_constraint_text",
+      "type": "Constraints",
+      "config": "###constraints_text",
+      "title": "Constraint(String)",
+      "title_de": "Prüfung(String)",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "visible": "xf_type == 'string' || xf_type=='text' || xf_type=='password'",
+      "optional": true,
+      "refToView": "",
+      "length": "100"
+    }, {
+      "id": "xf_constraint_date",
+      "type": "Constraints",
+      "config": "###constraints_date",
+      "title": "Constraint(Date)",
+      "title_de": "Prüfung(Datum)",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "visible": "xf_type=='date'||xf_type=='datetime'||xf_type=='dateyearmonth'",
+      "optional": true,
+      "refToView": "",
+      "length": "100"
+    }, {
+      "id": "xf_constraint_boolean",
+      "type": "Constraints",
+      "config": "###constraints_boolean",
+      "title": "Constraint(Boolean)",
+      "title_de": "Prüfung(Boolean)",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "visible": "xf_type=='boolean'",
+      "optional": true,
+      "refToView": "",
+      "length": "100"
+    }, {
+      "id": "xf_constraint_decimal",
+      "type": "Constraints",
+      "config": "###constraints_decimal",
+      "title": "Constraint(Decimal)",
+      "title_de": "Prüfung(Dezimal)",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "visible": "xf_type=='decimal'",
+      "optional": true,
+      "refToView": "",
+      "length": "100"
+    }, {
+      "id": "xf_constraint_number",
+      "type": "Constraints",
+      "config": "###constraints_number",
+      "title": "Constraint(Number)",
+      "title_de": "Prüfung(Nummer)",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "visible": "xf_type=='number'",
+      "optional": true,
+      "refToView": "",
+      "length": "100"
+    }, {
+      "id": "xf_errormsg",
+      "type": "String",
+      "title": "Errormessage",
+      "title_de": "Fehlermeldung",
+      "prefix": "oryx",
+      "value": "",
+      "popular": true,
+      "readonly": false,
+      "optional": true,
+      "refToView": ""
     }, {
       "id": "xf_required",
       "type": "Combo",
