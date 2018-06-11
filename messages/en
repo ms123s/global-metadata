@@ -1891,6 +1891,10 @@
         "msgid": "form.execute"
     },
     {
+        "msgstr": "The key already exists",
+        "msgid": "form.key_exists"
+    },
+    {
         "msgstr": "Add record",
         "msgid": "graphicaleditor.add_record"
     },

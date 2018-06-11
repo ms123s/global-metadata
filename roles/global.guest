@@ -210,6 +210,11 @@
             "permission": "ges:entities:data:artikel",
             "actions": "read,write",
             "enabled": true
+        },
+        {
+            "permission": "pim:entities:odata",
+            "actions": "read,write",
+            "enabled": true
         }
     ],
     "name": "global.guest"

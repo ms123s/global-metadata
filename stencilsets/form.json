@@ -1709,13 +1709,25 @@
       "title_de": "Klasse",
       "prefix": "oryx",
       "value": "",
-      "description_de": "Die Klasse, aus der ein Objekt selektiert werden soll",
-      "description": "The class from which an object is to be selected",
+      "description_de": "Die Klasse, aus der eine Form abgeleitet wird",
+      "description": "The class from which a form is derived<br>Only used if formExpression is empty",
       "popular": true,
       "readonly": false,
       "optional": false,
       "refToView": "",
       "length": "100"
+    }, {
+      "id": "xf_formexpression",
+      "type": "String",
+      "title": "formExpression",
+      "prefix": "oryx",
+      "value": "",
+      "description": "String from which the formname are build<br>Formvariables be evaluated here",
+      "popular": true,
+      "readonly": false,
+      "optional": false,
+      "refToView": "",
+      "length": "30"
     }, {
       "id": "xf_inline",
       "title": "Inline",
