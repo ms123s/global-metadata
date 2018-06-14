@@ -1296,6 +1296,10 @@
 				"id": "c11",
 				"title": "deleteProcessInstance",
 				"value": "deleteProcessInstance"
+			}, {
+				"id": "c12",
+				"title": "setProcessVariables",
+				"value": "setProcessVariables"
 			} ],
 			"visible": true
 		}, {
