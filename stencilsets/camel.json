@@ -1088,7 +1088,7 @@
 			"readonly": false,
 			"optional": true
 		}, {
-			"id": "scriptfile",
+			"id": "uriparam_scriptfile",
 			"type": "ResourceSelector",
 			"config": {
 				"type": "sw.groovy"
@@ -1435,6 +1435,10 @@
 				"id": "c4",
 				"title": "assign",
 				"value": "assign"
+			}, {
+				"id": "c5",
+				"title": "setVariables",
+				"value": "setVariables"
 			} ]
 		}, {
 			"id": "uriparam_taskId",
@@ -4720,7 +4724,7 @@
 			}, {
 				"id": "c5",
 				"title": "Query",
-				"enabled": false,
+				"enabled": true,
 				"value": "5"
 			} ]
 		}, {
@@ -4743,6 +4747,14 @@
 			"value": null,
 			"optional": false,
 			"visible": "uriparam_operation=='1' || uriparam_operation=='4'"
+		}, {
+			"id": "uriparam_sql",
+			"title": "SQL",
+			"title_de": "SQL",
+			"type": "String",
+			"value": null,
+			"optional": false,
+			"visible": "uriparam_operation=='5'"
 		}, {
 			"id": "uriparam_destination",
 			"title": "Destination",
