@@ -187,6 +187,10 @@
         "msgid": "form.execute"
     },
     {
+        "msgstr": "Der Schlüssel ist bereits vorhanden",
+        "msgid": "form.key_exists"
+    },
+    {
         "msgstr": "Zurücksetzen",
         "msgid": "tasks.form.reset"
     },
