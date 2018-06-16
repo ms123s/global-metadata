@@ -4155,11 +4155,11 @@
         "msgid": "querybuilder.add_group"
     },
     {
-        "msgstr": "Delete",
+        "msgstr": "Delete rule",
         "msgid": "querybuilder.delete_rule"
     },
     {
-        "msgstr": "Delete",
+        "msgstr": "Delete group",
         "msgid": "querybuilder.delete_group"
     },
     {

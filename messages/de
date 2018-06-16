@@ -5571,11 +5571,11 @@
         "msgid": "querybuilder.add_group"
     },
     {
-        "msgstr": "",
+        "msgstr": "Role löschen",
         "msgid": "querybuilder.delete_rule"
     },
     {
-        "msgstr": "",
+        "msgstr": "Gruppe löschen",
         "msgid": "querybuilder.delete_group"
     },
     {

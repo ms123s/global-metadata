@@ -631,8 +631,17 @@
       "value": "",
       "popular": false,
       "optional": true,
-      "readonly": "xf_varname!='' || xf_service!=null",
+      "readonly": "xf_varname!='' || xf_service!=null || xf_resource!=''",
       "refToView": ""
+    }, {
+      "id": "xf_resource",
+      "type": "String",
+      "title": "Resourcetype",
+      "prefix": "oryx",
+      "value": null,
+      "description": "<b>Get a Resourcetree(eg.: sw.form)</b>",
+      "popular": false,
+      "readonly": "xf_varname!='' || xf_service!=null || xf_jsonpath!=''"
     }, {
       "id": "xf_service",
       "type": "ResourceSelector",
@@ -647,7 +656,7 @@
       "description": "<b>Get treestrukture generated per servicecall</b>.<br/>The service must return a tree, with these <b>properties (id, label, children)</b>.<br/> However, the properties can be also assigned (mapped).<br/>The service can be parameterized",
       "description_de": "<b>Baumstruktur erzeugen per Serviceaufruf</b>.<br/>Der Service muss einen Baum mit folgenden <b>Eigenschaften (id, label, children)</b> liefern.<br/> Jedoch können die Eigenschaften auch zugewiesen(gemapped)  werden.<br/>Der Service kann parametrisiert werden",
       "popular": false,
-      "readonly": "xf_varname!='' || xf_jsonpath!=''"
+      "readonly": "xf_varname!='' || xf_jsonpath!='' || xf_resource!=''"
     }, {
       "id": "xf_parammapping",
       "type": "Complex",
@@ -657,7 +666,7 @@
       "description_de": "Parametermapping Serviceaufruf.<br/>Neben den Formvariablen(Feldinhalte) können auch folgende Variablen benutzt werden: <ul><li><b>$lang</b>: string, aktuelle Sprache</li><li><b>$uuid</b> : string, Wert der in <b>window.uuid</b> steht</li><li><b>$mode</b> : string, <b>edit</b> oder <b>add</b></li></ul>",
       "popular": false,
       "optional": true,
-      "readonly": "xf_varname!='' || xf_jsonpath!=''",
+      "readonly": "xf_varname!='' || xf_jsonpath!='' || xf_resource!=''",
       "complexItems": [ {
         "id": "formexpr",
         "name": "Formexpression",
@@ -1209,6 +1218,18 @@
       "value": "",
       "popular": true,
       "description": "The default value is displayed, when the form is loaded.",
+      "readonly": false,
+      "optional": true,
+      "refToView": ""
+    }, {
+      "id": "xf_allowedpattern",
+      "type": "String",
+      "title_de": "Erlaubtes Muster",
+      "title": "Allowed Pattern",
+      "prefix": "oryx",
+      "description": "Example: <b>[0-9]</b> : allow only digits.",
+      "value": "",
+      "popular": true,
       "readonly": false,
       "optional": true,
       "refToView": ""
@@ -2481,6 +2502,7 @@
     "description": "This form control allows the user to make single/multiple selections from a list.",
     "view": "new_tableedit.svg",
     "icon": "new_tableedit.png",
+    "propertyPackages": [ "visibilityPackage" ],
     "roles": [ "core_form_controls", "controls_morph" ],
     "layout": [ {
       "type": "layout.xforms.label",
@@ -2591,6 +2613,13 @@
         "value": false,
         "optional": true
       }, {
+        "id": "xf_combobox",
+        "name": "Combobox",
+        "type": "boolean",
+        "width": 100,
+        "value": false,
+        "optional": true
+      }, {
         "id": "xf_default",
         "name": "Default",
         "name_de": "Default",
@@ -2666,6 +2695,11 @@
           "refToView": ""
         }, {
           "id": "c9",
+          "title": "TreeSelection",
+          "value": "Treeselection",
+          "refToView": ""
+        }, {
+          "id": "c10",
           "title": "Search",
           "title_de": "Suche",
           "value": "search",
