@@ -1748,7 +1748,7 @@
       "readonly": false,
       "optional": false,
       "refToView": "",
-      "length": "30"
+      "length": "60"
     }, {
       "id": "xf_inline",
       "title": "Inline",

@@ -950,6 +950,9 @@
         "msgstr": "Title expression (e.g.: first name + '' + last_name)",
         "msgid": "data.entity.titel_expression"
     },
+        "msgstr": "Id expression(e.g.:_id+'/'+code,def:_id)",
+        "msgid": "data.entity.id_expression"
+    },
     {
         "msgstr": "Processes in Aktionmenu",
         "msgid": "data.entity.workflow_list"
@@ -4175,6 +4178,10 @@
         "msgid": "querybuilder.filter_select_placeholder"
     },
     {
+        "msgstr": "Fulltext",
+        "msgid": "querybuilder.fulltext"
+    },
+    {
         "msgstr": "equal",
         "msgid": "querybuilder.equal"
     },
@@ -4185,6 +4192,14 @@
     {
         "msgstr": "in",
         "msgid": "querybuilder.in"
+    },
+    {
+        "msgstr": "not between",
+        "msgid": "querybuilder.not_between"
+    },
+    {
+        "msgstr": "between",
+        "msgid": "querybuilder.between"
     },
     {
         "msgstr": "not in",

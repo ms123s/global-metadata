@@ -787,6 +787,10 @@
         "msgid": "data.entity.titel_expression"
     },
     {
+        "msgstr": "Id-Ausdruck(z.B:_id+'/'+code,def:_id)",
+        "msgid": "data.entity.id_expression"
+    },
+    {
         "msgstr": "Keine Add/Del-Buttons als Master",
         "msgid": "data.entity.no_add_del_in_master"
     },
@@ -5573,6 +5577,18 @@
     {
         "msgstr": "Role löschen",
         "msgid": "querybuilder.delete_rule"
+    },
+    {
+        "msgstr": "nicht zwischen",
+        "msgid": "querybuilder.not_between"
+    },
+    {
+        "msgstr": "Fulltext",
+        "msgid": "querybuilder.fulltext"
+    },
+    {
+        "msgstr": "zwischen",
+        "msgid": "querybuilder.between"
     },
     {
         "msgstr": "Gruppe löschen",
