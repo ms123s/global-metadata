@@ -4054,7 +4054,7 @@
 			"type": "Choice",
 			"title": "Operation",
 			"title_de": "Operation",
-			"value": "get",
+			"value": "detect",
 			"items": [ {
 				"id": "c1",
 				"title": "Detect",
