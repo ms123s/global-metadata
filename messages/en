@@ -4150,6 +4150,10 @@
         "msgid": "validation.URL"
     },
     {
+        "msgstr": "Fulltextsearch",
+        "msgid": "querybuilder.fulltextsearch"
+    },
+    {
         "msgstr": "Add rule",
         "msgid": "querybuilder.add_rule"
     },

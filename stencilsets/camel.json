@@ -4037,6 +4037,69 @@
 			"value": 10000
 		} ]
 	}, {
+		"name": "tikaProperties",
+		"properties": [ {
+			"id": "type_tika",
+			"type": "String",
+			"value": "Tika",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "tika:${operation}",
+			"visible": false
+		}, {
+			"id": "urivalue_operation",
+			"type": "Choice",
+			"title": "Operation",
+			"title_de": "Operation",
+			"value": "get",
+			"items": [ {
+				"id": "c1",
+				"title": "Detect",
+				"value": "detect"
+			}, {
+				"id": "c2",
+				"title": "Parse",
+				"value": "parse"
+			} ]
+		}, {
+			"id": "uriparam_tikaParseOutputFormat",
+			"type": "Choice",
+			"title": "OutputFormat",
+			"title_de": "OutputFormat",
+			"value": "text",
+			"items": [ {
+				"id": "c1",
+				"title": "text",
+				"value": "text"
+			}, {
+				"id": "c2",
+				"title": "xml",
+				"value": "xml"
+			}, {
+				"id": "c2",
+				"title": "html",
+				"value": "html"
+			} ]
+		}, {
+			"id": "uriparam_synchronous",
+			"type": "Choice",
+			"title": "Synchronous",
+			"title_de": "Synchronous",
+			"value": "false",
+			"items": [ {
+				"id": "c1",
+				"title": "True",
+				"value": "true"
+			}, {
+				"id": "c2",
+				"title": "False",
+				"value": "false"
+			} ]
+		} ]
+	}, {
 		"name": "vfsProperties",
 		"properties": [ {
 			"id": "type_vfs",
@@ -5111,6 +5174,16 @@
 		"groups": [ "Building blocks M-Z" ],
 		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "templateProperties", "assignmentProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "TikaEndpoint",
+		"title": "Tika",
+		"view": "tikaendpoint.svg",
+		"icon": "tikaendpoint.png",
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "tikaProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",

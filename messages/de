@@ -5567,6 +5567,10 @@
         "msgid": "validation.URL"
     },
     {
+        "msgstr": "Volltextsuche",
+        "msgid": "querybuilder.fulltextsearch"
+    },
+    {
         "msgstr": "Regel",
         "msgid": "querybuilder.add_rule"
     },
