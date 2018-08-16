@@ -4037,6 +4037,96 @@
 			"value": 10000
 		} ]
 	}, {
+		"name": "tabulaProperties",
+		"properties": [ {
+			"id": "type_tabula",
+			"type": "String",
+			"value": "Tabula",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "tabula:${outputFormat}",
+			"visible": false
+		}, {
+			"id": "urivalue_outputFormat",
+			"type": "Choice",
+			"title": "OutputFormat",
+			"title_de": "Ausgabeformat",
+			"value": "csv",
+			"items": [ {
+				"id": "c1",
+				"title": "CSV",
+				"value": "csv"
+			}, {
+				"id": "c2",
+				"title": "TSV",
+				"value": "tsv"
+			}, {
+				"id": "c3",
+				"title": "JSON",
+				"value": "json"
+			} ]
+		}, {
+			"id": "uriparam_extractionMethod",
+			"type": "Choice",
+			"title": "Extractionmethod",
+			"description":    "Force PDF to be extracted using spreadsheet-mode extraction<br/>(if there are ruling lines separating each cell, as in a PDF of an Excel spreadsheet",
+			"value": "decide",
+			"items": [ {
+				"id": "c1",
+				"title": "Spreadsheet",
+				"value": "spreadsheet"
+			}, {
+				"id": "c2",
+				"title": "Basic",
+				"value": "basic"
+			}, {
+				"id": "c3",
+				"title": "Decide",
+				"value": "decide"
+			} ]
+		}, {
+			"id": "uriparam_pages",
+			"type": "Combo",
+			"title": "Pages",
+			"title_de": "Seiten",
+			"description":    "Comma separated list of ranges, or all.<br/>Examples:<ul><li>1-3,5-7</li><li>2-4</li><li>3<li>all</li><li>Default is 1</li></ul>",
+			"value": "all",
+			"items": [ {
+				"id": "c1",
+				"title": "ALL",
+				"value": "all"
+			} ]
+		}, {
+			"id": "uriparam_destination",
+			"title": "Destination",
+			"title_de": "Ziel",
+			"description_de": "Ziel der Daten. z.B. <ul><li> <b>header.data</b> oder kurz: <b>h.data</b> => Ziel ist das Headerfeld <b.data</b></li><li><b>property.data</b> oder kurz <b>p.data</b> => Ziel ist Property <b.data</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the data. e.g. <ul><li> <b>header.data</b> or short: <b>h.data</b> => Destination is headerfield <b.data</b></li><li><b>property.data</b> or short <b>p.data</b> Destination is property <b.data</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
+		}, {
+			"id": "uriparam_guess",
+			"type": "Choice",
+			"title": "Guess",
+			"title_de": "ermitteln",
+			"description":    "guess the page areas to extract using a detection algorithm.<br/>Currently we only have a detector that uses spreadsheets to find table areas",
+			"value": "false",
+			"items": [ {
+				"id": "c1",
+				"title": "True",
+				"value": "true"
+			}, {
+				"id": "c2",
+				"title": "False",
+				"value": "false"
+			} ]
+		} ]
+	}, {
 		"name": "tikaProperties",
 		"properties": [ {
 			"id": "type_tika",
@@ -4083,6 +4173,26 @@
 				"title": "html",
 				"value": "html"
 			} ]
+		}, {
+			"id": "uriparam_metadestination",
+			"title": "Destination(Meta)",
+			"title_de": "Ziel(Meta)",
+			"description_de": "Ziel der Metadaten. z.B. <ul><li> <b>header.meta</b> oder kurz: <b>h.meta</b> => Ziel ist das Headerfeld <b.meta</b></li><li><b>property.meta</b> oder kurz <b>p.meta</b> => Ziel ist Property <b.meta</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the metatdata. e.g. <ul><li> <b>header.meta</b> or short: <b>h.meta</b> => Destination is headerfield <b.meta</b></li><li><b>property.meta</b> or short <b>p.meta</b> Destination is property <b.meta</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
+		}, {
+			"id": "uriparam_datadestination",
+			"title": "Destination(Data)",
+			"title_de": "Ziel(Daten)",
+			"description_de": "Ziel der Daten. z.B. <ul><li> <b>header.data</b> oder kurz: <b>h.data</b> => Ziel ist das Headerfeld <b.data</b></li><li><b>property.data</b> oder kurz <b>p.data</b> => Ziel ist Property <b.data</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the data. e.g. <ul><li> <b>header.data</b> or short: <b>h.data</b> => Destination is headerfield <b.data</b></li><li><b>property.data</b> or short <b>p.data</b> Destination is property <b.data</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
 		}, {
 			"id": "uriparam_synchronous",
 			"type": "Choice",
@@ -5184,6 +5294,16 @@
 		"groups": [ "Building blocks M-Z" ],
 		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "tikaProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "TabulaEndpoint",
+		"title": "Tabula",
+		"view": "tabulaendpoint.svg",
+		"icon": "tabulaendpoint.png",
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "tabulaProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
