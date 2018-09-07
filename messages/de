@@ -2683,6 +2683,10 @@
         "msgid": "aid.user.surname"
     },
     {
+        "msgstr": "Orientdb roles,Komma getrennt",
+        "msgid": "aid.user.oroles"
+    },
+    {
         "msgstr": "Name",
         "msgid": "import.mapping.name_mapping"
     },

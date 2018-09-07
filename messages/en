@@ -1498,6 +1498,10 @@
         "msgid": "aid.user.admin"
     },
     {
+        "msgstr": "Orientdb roles,Comma delimited",
+        "msgid": "aid.user.oroles"
+    },
+    {
         "msgstr": "EMail",
         "msgid": "aid.user.email"
     },
