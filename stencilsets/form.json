@@ -2471,6 +2471,17 @@
       "readonly": false,
       "optional": false
     }, {
+			"id": "xf_namespace",
+			"title": "Namespace",
+			"description": "optional",
+      "popular": true,
+			"config": {
+				type: "ms123.util.RepoList"
+			},
+			"type": "Combo",
+			"value": null,
+			"items": []
+    }, {
       "id": "xf_required",
       "type": "Combo",
       "title": "Required",
