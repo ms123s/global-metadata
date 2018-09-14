@@ -4386,6 +4386,10 @@
         "msgid": "error"
     },
     {
+        "msgstr": "Keine Permission",
+        "msgid": "nopermission"
+    },
+    {
         "msgstr": "Information",
         "msgid": "info"
     },

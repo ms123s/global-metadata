@@ -7,6 +7,10 @@
         "msgid": "error"
     },
     {
+        "msgstr": "Keine Erlaubnis",
+        "msgid": "nopermission"
+    },
+    {
         "msgstr": "Warnung",
         "msgid": "warning"
     },
