@@ -950,6 +950,7 @@
         "msgstr": "Title expression (e.g.: first name + '' + last_name)",
         "msgid": "data.entity.titel_expression"
     },
+		{
         "msgstr": "Id expression(e.g.:_id+'/'+code,def:_id)",
         "msgid": "data.entity.id_expression"
     },
