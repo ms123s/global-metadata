@@ -3752,6 +3752,15 @@
 			"value": null,
 			"visible": true
 		}, {
+			"id": "uriparam_pngFile",
+			"title": "Pngfile",
+			"description_de": "Header/Property Feld das den Path des PngFile enthält.<br>Relativer Pfadname. Die Vfsroot wird vorangestellt.<br> zb. <b>p.pathname</b><br>Voreingestellt: <b>p.pathname</b>",
+			"description":    "Header/Property Field which the path of the pngfile contains.<br>Relative pathname. The Vfsroot is preceded.<br> eg. <b>p.pathname</b><br>Default: <b>p.pathname</b>",
+			"optional": false,
+			"type": "String",
+			"value": null,
+			"visible": true
+		}, {
 			"id": "uriparam_outputDirectory",
 			"title": "Output Directory",
 			"description_de": "Hier werden die Deepzoom Images und das Hotspotfile  abgelegt.<br>Relativer Verzeichnisname. Die Vfsroot wird vorangestellt",
