@@ -3774,7 +3774,16 @@
 			"title": "Hotspot Regex",
 			"description_de": "Der Hotspottext muss auf dieses Muster passen.<br> zb.: <b>[0-9]{1,4}</b> : Nur 1-4 stellige Zeichenketten, die nur Ziffer enthalten. ",
 			"description":    "The hotspot text must match this pattern. <br> zb.: <b>[0-9]{1,4}</b> : Only 1-4 digit strings,  containing only digit.",
-			"optional": false,
+			"optional": true,
+			"type": "String",
+			"value": null,
+			"visible": true
+		}, {
+			"id": "uriparam_tileSize",
+			"title": "TileSize",
+			"description_de": "Default ist 256.",
+			"description":    "Defaul is 256",
+			"optional": true,
 			"type": "String",
 			"value": null,
 			"visible": true
