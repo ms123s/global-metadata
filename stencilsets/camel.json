@@ -3779,6 +3779,15 @@
 			"value": null,
 			"visible": true
 		}, {
+			"id": "uriparam_dpi",
+			"title": "dpi",
+			"description_de": "Default ist 450.",
+			"description":    "Defaul is 450",
+			"optional": true,
+			"type": "String",
+			"value": null,
+			"visible": true
+		}, {
 			"id": "uriparam_tileSize",
 			"title": "TileSize",
 			"description_de": "Default ist 256.",
