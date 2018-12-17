@@ -3752,6 +3752,15 @@
 			"value": null,
 			"visible": true
 		}, {
+			"id": "uriparam_pngFile",
+			"title": "Pngfile",
+			"description_de": "Header/Property Feld das den Path des PngFile enthält.<br>Relativer Pfadname. Die Vfsroot wird vorangestellt.<br> zb. <b>p.pathname</b><br>Voreingestellt: <b>p.pathname</b>",
+			"description":    "Header/Property Field which the path of the pngfile contains.<br>Relative pathname. The Vfsroot is preceded.<br> eg. <b>p.pathname</b><br>Default: <b>p.pathname</b>",
+			"optional": false,
+			"type": "String",
+			"value": null,
+			"visible": true
+		}, {
 			"id": "uriparam_outputDirectory",
 			"title": "Output Directory",
 			"description_de": "Hier werden die Deepzoom Images und das Hotspotfile  abgelegt.<br>Relativer Verzeichnisname. Die Vfsroot wird vorangestellt",
@@ -3765,7 +3774,25 @@
 			"title": "Hotspot Regex",
 			"description_de": "Der Hotspottext muss auf dieses Muster passen.<br> zb.: <b>[0-9]{1,4}</b> : Nur 1-4 stellige Zeichenketten, die nur Ziffer enthalten. ",
 			"description":    "The hotspot text must match this pattern. <br> zb.: <b>[0-9]{1,4}</b> : Only 1-4 digit strings,  containing only digit.",
-			"optional": false,
+			"optional": true,
+			"type": "String",
+			"value": null,
+			"visible": true
+		}, {
+			"id": "uriparam_dpi",
+			"title": "dpi",
+			"description_de": "Default ist 450.",
+			"description":    "Defaul is 450",
+			"optional": true,
+			"type": "String",
+			"value": null,
+			"visible": true
+		}, {
+			"id": "uriparam_tileSize",
+			"title": "TileSize",
+			"description_de": "Default ist 256.",
+			"description":    "Defaul is 256",
+			"optional": true,
 			"type": "String",
 			"value": null,
 			"visible": true
@@ -4035,6 +4062,179 @@
 			"include": "urivalue_protocol=='ftp'",
 			"type": "Integer",
 			"value": 10000
+		} ]
+	}, {
+		"name": "tabulaProperties",
+		"properties": [ {
+			"id": "type_tabula",
+			"type": "String",
+			"value": "Tabula",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "tabula:${outputFormat}",
+			"visible": false
+		}, {
+			"id": "urivalue_outputFormat",
+			"type": "Choice",
+			"title": "OutputFormat",
+			"title_de": "Ausgabeformat",
+			"value": "csv",
+			"items": [ {
+				"id": "c1",
+				"title": "CSV",
+				"value": "csv"
+			}, {
+				"id": "c2",
+				"title": "TSV",
+				"value": "tsv"
+			}, {
+				"id": "c3",
+				"title": "JSON",
+				"value": "json"
+			} ]
+		}, {
+			"id": "uriparam_extractionMethod",
+			"type": "Choice",
+			"title": "Extractionmethod",
+			"description":    "Force PDF to be extracted using spreadsheet-mode extraction<br/>(if there are ruling lines separating each cell, as in a PDF of an Excel spreadsheet",
+			"value": "decide",
+			"items": [ {
+				"id": "c1",
+				"title": "Spreadsheet",
+				"value": "spreadsheet"
+			}, {
+				"id": "c2",
+				"title": "Basic",
+				"value": "basic"
+			}, {
+				"id": "c3",
+				"title": "Decide",
+				"value": "decide"
+			} ]
+		}, {
+			"id": "uriparam_pages",
+			"type": "Combo",
+			"title": "Pages",
+			"title_de": "Seiten",
+			"description":    "Comma separated list of ranges, or all.<br/>Examples:<ul><li>1-3,5-7</li><li>2-4</li><li>3<li>all</li><li>Default is 1</li></ul>",
+			"value": "all",
+			"items": [ {
+				"id": "c1",
+				"title": "ALL",
+				"value": "all"
+			} ]
+		}, {
+			"id": "uriparam_destination",
+			"title": "Destination",
+			"title_de": "Ziel",
+			"description_de": "Ziel der Daten. z.B. <ul><li> <b>header.data</b> oder kurz: <b>h.data</b> => Ziel ist das Headerfeld <b.data</b></li><li><b>property.data</b> oder kurz <b>p.data</b> => Ziel ist Property <b.data</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the data. e.g. <ul><li> <b>header.data</b> or short: <b>h.data</b> => Destination is headerfield <b.data</b></li><li><b>property.data</b> or short <b>p.data</b> Destination is property <b.data</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
+		}, {
+			"id": "uriparam_guess",
+			"type": "Choice",
+			"title": "Guess",
+			"title_de": "ermitteln",
+			"description":    "guess the page areas to extract using a detection algorithm.<br/>Currently we only have a detector that uses spreadsheets to find table areas",
+			"value": "false",
+			"items": [ {
+				"id": "c1",
+				"title": "True",
+				"value": "true"
+			}, {
+				"id": "c2",
+				"title": "False",
+				"value": "false"
+			} ]
+		} ]
+	}, {
+		"name": "tikaProperties",
+		"properties": [ {
+			"id": "type_tika",
+			"type": "String",
+			"value": "Tika",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "tika:${operation}",
+			"visible": false
+		}, {
+			"id": "urivalue_operation",
+			"type": "Choice",
+			"title": "Operation",
+			"title_de": "Operation",
+			"value": "detect",
+			"items": [ {
+				"id": "c1",
+				"title": "Detect",
+				"value": "detect"
+			}, {
+				"id": "c2",
+				"title": "Parse",
+				"value": "parse"
+			} ]
+		}, {
+			"id": "uriparam_tikaParseOutputFormat",
+			"type": "Choice",
+			"title": "OutputFormat",
+			"title_de": "OutputFormat",
+			"value": "text",
+			"items": [ {
+				"id": "c1",
+				"title": "text",
+				"value": "text"
+			}, {
+				"id": "c2",
+				"title": "xml",
+				"value": "xml"
+			}, {
+				"id": "c2",
+				"title": "html",
+				"value": "html"
+			} ]
+		}, {
+			"id": "uriparam_metadestination",
+			"title": "Destination(Meta)",
+			"title_de": "Ziel(Meta)",
+			"description_de": "Ziel der Metadaten. z.B. <ul><li> <b>header.meta</b> oder kurz: <b>h.meta</b> => Ziel ist das Headerfeld <b.meta</b></li><li><b>property.meta</b> oder kurz <b>p.meta</b> => Ziel ist Property <b.meta</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the metatdata. e.g. <ul><li> <b>header.meta</b> or short: <b>h.meta</b> => Destination is headerfield <b.meta</b></li><li><b>property.meta</b> or short <b>p.meta</b> Destination is property <b.meta</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
+		}, {
+			"id": "uriparam_datadestination",
+			"title": "Destination(Data)",
+			"title_de": "Ziel(Daten)",
+			"description_de": "Ziel der Daten. z.B. <ul><li> <b>header.data</b> oder kurz: <b>h.data</b> => Ziel ist das Headerfeld <b.data</b></li><li><b>property.data</b> oder kurz <b>p.data</b> => Ziel ist Property <b.data</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Destination of the data. e.g. <ul><li> <b>header.data</b> or short: <b>h.data</b> => Destination is headerfield <b.data</b></li><li><b>property.data</b> or short <b>p.data</b> Destination is property <b.data</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true,
+			"visible": "true"
+		}, {
+			"id": "uriparam_synchronous",
+			"type": "Choice",
+			"title": "Synchronous",
+			"title_de": "Synchronous",
+			"value": "false",
+			"items": [ {
+				"id": "c1",
+				"title": "True",
+				"value": "true"
+			}, {
+				"id": "c2",
+				"title": "False",
+				"value": "false"
+			} ]
 		} ]
 	}, {
 		"name": "vfsProperties",
@@ -5111,6 +5311,26 @@
 		"groups": [ "Building blocks M-Z" ],
 		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "templateProperties", "assignmentProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "TikaEndpoint",
+		"title": "Tika",
+		"view": "tikaendpoint.svg",
+		"icon": "tikaendpoint.png",
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "tikaProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "TabulaEndpoint",
+		"title": "Tabula",
+		"view": "tabulaendpoint.svg",
+		"icon": "tabulaendpoint.png",
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "tabulaProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",

@@ -7,6 +7,10 @@
         "msgid": "error"
     },
     {
+        "msgstr": "Keine Erlaubnis",
+        "msgid": "nopermission"
+    },
+    {
         "msgstr": "Warnung",
         "msgid": "warning"
     },
@@ -785,6 +789,10 @@
     {
         "msgstr": "Titelausdruck(z.B:vorname+' '+nachname)",
         "msgid": "data.entity.titel_expression"
+    },
+    {
+        "msgstr": "Id-Ausdruck(z.B:_id+'/'+code,def:_id)",
+        "msgid": "data.entity.id_expression"
     },
     {
         "msgstr": "Keine Add/Del-Buttons als Master",
@@ -2677,6 +2685,10 @@
     {
         "msgstr": "Name",
         "msgid": "aid.user.surname"
+    },
+    {
+        "msgstr": "Orientdb roles,Komma getrennt",
+        "msgid": "aid.user.oroles"
     },
     {
         "msgstr": "Name",
@@ -5563,6 +5575,10 @@
         "msgid": "validation.URL"
     },
     {
+        "msgstr": "Volltextsuche",
+        "msgid": "querybuilder.fulltextsearch"
+    },
+    {
         "msgstr": "Regel",
         "msgid": "querybuilder.add_rule"
     },
@@ -5571,11 +5587,23 @@
         "msgid": "querybuilder.add_group"
     },
     {
-        "msgstr": "",
+        "msgstr": "Role löschen",
         "msgid": "querybuilder.delete_rule"
     },
     {
-        "msgstr": "",
+        "msgstr": "nicht zwischen",
+        "msgid": "querybuilder.not_between"
+    },
+    {
+        "msgstr": "Fulltext",
+        "msgid": "querybuilder.fulltext"
+    },
+    {
+        "msgstr": "zwischen",
+        "msgid": "querybuilder.between"
+    },
+    {
+        "msgstr": "Gruppe löschen",
         "msgid": "querybuilder.delete_group"
     },
     {
