@@ -5637,6 +5637,26 @@
 			"enabled": "urivalue_operation!='startProcess'",
 			"value": "processVariable"
 		}, {
+			"id": "startedAfter",
+			"title": "startedAfter",
+			"enabled": "urivalue_operation!='startProcess'",
+			"value": "startedAfter"
+		}, {
+			"id": "startedBefore",
+			"title": "startedBefore",
+			"enabled": "urivalue_operation!='startProcess'",
+			"value": "startedBefore"
+		}, {
+			"id": "finishedAfter",
+			"title": "finishedAfter",
+			"enabled": "urivalue_operation!='startProcess'",
+			"value": "finishedAfter"
+		}, {
+			"id": "finishedBefore",
+			"title": "finishedBefore",
+			"enabled": "urivalue_operation!='startProcess'",
+			"value": "finishedBefore"
+		}, {
 			"id": "finished",
 			"title": "finished",
 			"enabled": "urivalue_operation=='queryProcessInstances'",
