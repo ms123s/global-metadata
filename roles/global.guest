@@ -215,6 +215,11 @@
             "permission": "pim:entities:odata",
             "actions": "read,write",
             "enabled": true
+        },
+        {
+            "permission": "ges:entities:odata",
+            "actions": "read,write",
+            "enabled": true
         }
     ],
     "name": "global.guest"
