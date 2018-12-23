@@ -4677,28 +4677,21 @@
 		}, {
 			"id": "uri_template",
 			"type": "String",
-			"value": "kafka:${host}:${port}",
+			"value": "kafka:${topic}",
 			"visible": false
 		}, {
-			"id": "urivalue_host",
+			"id": "urivalue_topic",
 			"type": "String",
-			"title": "Host",
-			"title_de": "Host",
-			"visible": true,
-			"value": "127.0.0.1"
-		}, {
-			"id": "urivalue_port",
-			"title": "Port",
-			"readonly": false,
-			"type": "String",
-			"value": "9093",
-			"optional": false
-		}, {
-			"id": "uriparam_topic",
 			"title": "Topic",
-			"description": "Topic to use. From the consumer side you can specify also a comma separated list of topics.",
+			"title_de": "Topic",
+			"visible": true,
+			"value": ""
+		}, {
+			"id": "uriparam_brokers",
+			"description": "URL of the Kafka brokers to use.<br> The format is host1:port1,host2:port2, and the list can be a subset of brokers or a VIP pointing to a subset of brokers.<br> This option is known as bootstrap.servers in the Kafka documentation.",
+			"title": "Brokers",
 			"type": "String",
-			"value": null,
+			"value": "localhost:9092",
 			"visible": true
 		}, {
 			"id": "uriparam_groupId",
