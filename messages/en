@@ -124,6 +124,10 @@
     },
     {
         "msgstr": "Next",
+        "msgid": "button.continue"
+    },
+    {
+        "msgstr": "Next",
         "msgid": "button.next"
     },
     {

@@ -5767,6 +5767,10 @@
         "msgid": "button.next"
     },
     {
+        "msgstr": "Weiter",
+        "msgid": "button.continue"
+    },
+    {
         "msgstr": "Vorheriger",
         "msgid": "button.prev"
     },
