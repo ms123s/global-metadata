@@ -217,6 +217,11 @@
             "enabled": true
         },
         {
+            "permission": "ges:entities:odata",
+            "actions": "read,write",
+            "enabled": true
+        },
+        {
             "permission": "complex:entities:odata",
             "actions": "read,write",
             "enabled": true
