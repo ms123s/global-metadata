@@ -1,0 +1,9 @@
+[sw]
+	type = sw.role
+--
+{
+    "permissions": [
+
+    ],
+    "name": "global.tpso"
+}

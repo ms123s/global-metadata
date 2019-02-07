@@ -39,6 +39,11 @@
             "tab": "tab2"
         },
         {
+            "name": "processengine",
+            "enabled": true,
+            "tab": "tab1"
+        },
+        {
             "name": "homedir",
             "enabled": true,
             "tab": "tab1"
