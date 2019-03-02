@@ -5943,6 +5943,10 @@
 			"id": "taskUnassigned",
 			"title": "taskUnassigned",
 			"value": "taskUnassigned"
+		}, {
+			"id": "active",
+			"title": "active",
+			"value": "active"
 		} ],
 		"objectcriteria_operations": [ {
 			"id": "==",
