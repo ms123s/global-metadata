@@ -124,6 +124,10 @@
     },
     {
         "msgstr": "Next",
+        "msgid": "button.continue"
+    },
+    {
+        "msgstr": "Next",
         "msgid": "button.next"
     },
     {
@@ -1517,6 +1521,10 @@
     {
         "msgstr": "Ftp-Homedirectory",
         "msgid": "aid.user.ftphomedir"
+    },
+    {
+        "msgstr": "Processengine",
+        "msgid": "aid.user.processengine"
     },
     {
         "msgstr": "Password",

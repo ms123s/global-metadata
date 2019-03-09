@@ -279,6 +279,10 @@
         "msgid": "aid.user.homedir"
     },
     {
+        "msgstr": "Prozessengine",
+        "msgid": "aid.user.processengine"
+    },
+    {
         "msgstr": "Ftp-Homedirectory",
         "msgid": "aid.user.ftphomedir"
     },
@@ -5765,6 +5769,10 @@
     {
         "msgstr": "Nächster",
         "msgid": "button.next"
+    },
+    {
+        "msgstr": "Weiter",
+        "msgid": "button.continue"
     },
     {
         "msgstr": "Vorheriger",

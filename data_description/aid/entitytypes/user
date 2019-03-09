@@ -65,6 +65,11 @@
             "name": "oroles",
             "datatype": "string"
         },
+        "processengine": {
+            "enabled": true,
+            "name": "processengine",
+            "datatype": "string"
+        },
 
         "homedir": {
             "enabled": true,
