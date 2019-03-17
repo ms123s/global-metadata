@@ -1,0 +1,21 @@
+[sw]
+	type = sw.messageslang
+--
+[
+    {
+        "msgstr": "Sök:",
+        "msgid": "datatables.sSearch"
+    },
+    {
+        "msgstr": "Tabellen innehåller ingen data",
+        "msgid": "datatables.sEmptyTable"
+    },
+    {
+        "msgstr": "",
+        "msgid": "datatables.sInfoPostFix"
+    },
+    {
+        "msgstr": "Visar _START_ till _END_ av totalt _TOTAL_ rader",
+        "msgid": "datatables.sInfo"
+    }
+]
