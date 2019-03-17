@@ -4667,6 +4667,64 @@
 			"visible": true
 		} ]
 	}, {
+		"name": "pulsarProperties",
+		"properties": [ {
+			"id": "type_pulsar",
+			"type": "String",
+			"value": "Pulsar",
+			"visible": false,
+			"refToView": [ "endpoint_type" ]
+		}, {
+			"id": "uri_template",
+			"type": "String",
+			"value": "pulsar:dummy",
+			"visible": false
+		}, {
+			"id": "uriparam_serviceUrl",
+			"description": "Broker serviceUrl",
+			"title": "ServiceUrl",
+			"type": "String",
+			"value": "pulsar://localhost:6650",
+			"visible": true
+		}, {
+			"id": "uriparam_messageSource",
+			"title": "Messagedaten",
+			"title_de": "Messagedata",
+			"description_de": "Quelle der Messagedaten., z.B. <ul><li> <b>header.data</b> oder kurz: <b>h.data</b> => Quelle ist das Headerfeld <b>data</b></li><li><b>property.data</b> oder kurz <b>p.data</b> =>  Quelle ist Property <b>data</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Source of the message data, e.g. <ul><li> <b>header.data</b> or short: <b>h.data</b> => Source is the headerfield <b>data</b></li><li><b>property.data</b> or short <b>p.data</b> => Source is property <b>data</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true
+		}, {
+			"id": "uriparam_topic",
+			"title": "Topic",
+			"description": "",
+			"type": "String",
+			"value": null,
+			"visible": true
+		}, {
+			"id": "uriparam_subscriptionName",
+			"title": "SubscriptionName",
+			"description": "",
+			"type": "String",
+			"value": null,
+			"visible": true
+		}, {
+			"id": "uriparam_sendTimeout",
+			"title": "Send Timeout",
+			"description": "",
+			"type": "Integer",
+			"value": 30,
+			"visible": true
+		}, {
+			"id": "uriparam_AckTimeout",
+			"title": "Ack Timeout",
+			"description": "",
+			"type": "Integer",
+			"value": 0,
+			"visible": true
+		} ]
+	}, {
 		"name": "kafkaProperties",
 		"properties": [ {
 			"id": "type_kafka",
@@ -5254,6 +5312,16 @@
 		"groups": [ "Building blocks M-Z" ],
 		"groups_de": [ "Bausteine M-Z" ],
 		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "processProperties", "extraParamsProperties" ],
+		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
+	}, {
+		"type": "node",
+		"id": "PulsarEndpoint",
+		"title": "Pulsar",
+		"view": "pulsarendpoint.svg",
+		"icon": "pulsarendpoint.png",
+		"groups": [ "Building blocks M-Z" ],
+		"groups_de": [ "Bausteine M-Z" ],
+		"propertyPackages": [ "endpointProperties", "baseProperties", "colorProperties", "pulsarProperties", "extraParamsProperties" ],
 		"roles": [ "simpleConnectionStart", "OneInOutRole", "simpleConnectionEnd", "whenConnectionEnd", "EndpointsMorph", "all" ]
 	}, {
 		"type": "node",
