@@ -4688,10 +4688,19 @@
 			"visible": true
 		}, {
 			"id": "uriparam_messageSource",
-			"title": "Messagedaten",
-			"title_de": "Messagedata",
-			"description_de": "Quelle der Messagedaten., z.B. <ul><li> <b>header.data</b> oder kurz: <b>h.data</b> => Quelle ist das Headerfeld <b>data</b></li><li><b>property.data</b> oder kurz <b>p.data</b> =>  Quelle ist Property <b>data</b></li><li> default ist <b>body</b></li></ul>",
-			"description":    "Source of the message data, e.g. <ul><li> <b>header.data</b> or short: <b>h.data</b> => Source is the headerfield <b>data</b></li><li><b>property.data</b> or short <b>p.data</b> => Source is property <b>data</b></li><li> default is <b>body</b></li></ul>",
+			"title": "Messagedaten Quelle",
+			"title_de": "Messagedata source",
+			"description_de": "Producer:Quelle der Messagedaten., z.B. <ul><li> <b>header.data</b> oder kurz: <b>h.data</b> => Quelle ist das Headerfeld <b>data</b></li><li><b>property.data</b> oder kurz <b>p.data</b> =>  Quelle ist Property <b>data</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Producer:Source of the message data, e.g. <ul><li> <b>header.data</b> or short: <b>h.data</b> => Source is the headerfield <b>data</b></li><li><b>property.data</b> or short <b>p.data</b> => Source is property <b>data</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true
+		}, {
+			"id": "uriparam_messageDestination",
+			"title": "Messagedaten Ziel",
+			"title_de": "Messagedata Destination",
+			"description_de": "Consumer:Ziel der Messagedaten., z.B. <ul><li> <b>header.data</b> oder kurz: <b>h.data</b> => Ziel ist das Headerfeld <b>data</b></li><li><b>property.data</b> oder kurz <b>p.data</b> =>  Ziel ist Property <b>data</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Consumer:Destination of the message data, e.g. <ul><li> <b>header.data</b> or short: <b>h.data</b> => Destination is the headerfield <b>data</b></li><li><b>property.data</b> or short <b>p.data</b> => Destination is property <b>data</b></li><li> default is <b>body</b></li></ul>",
 			"type": "String",
 			"value": null,
 			"optional": true
@@ -4717,11 +4726,11 @@
 			"value": 30,
 			"visible": true
 		}, {
-			"id": "uriparam_AckTimeout",
+			"id": "uriparam_ackTimeout",
 			"title": "Ack Timeout",
 			"description": "",
 			"type": "Integer",
-			"value": 0,
+			"value": 1500,
 			"visible": true
 		} ]
 	}, {
