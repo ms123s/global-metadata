@@ -4719,6 +4719,40 @@
 			"value": null,
 			"visible": true
 		}, {
+			"id": "uriparam_subscriptionType",
+			"title": "SubscriptionType",
+			"description": "Consumer option, ignored in producer",
+			"type": "Choice",
+			"value": "shared",
+			"items": [ {
+				"id": "c1",
+				"title": "Shared",
+				"value": "shared"
+			}, {
+				"id": "c2",
+				"title": "Exclusive",
+				"value": "exclusive"
+			}, {
+				"id": "c3",
+				"title": "Failover",
+				"value": "failover"
+			} ]
+		}, {
+			"id": "uriparam_seekTo",
+			"title": "Seek to",
+			"description": "Consumer option, ignored in producer: seek to latest or earliest message",
+			"type": "Choice",
+			"value": "latest",
+			"items": [ {
+				"id": "c1",
+				"title": "Latest",
+				"value": "latest"
+			}, {
+				"id": "c2",
+				"title": "Earliest",
+				"value": "earliest"
+			} ]
+		}, {
 			"id": "uriparam_sendTimeout",
 			"title": "Send Timeout",
 			"description": "",
@@ -4744,10 +4778,28 @@
 		}, {
 			"id": "uri_template",
 			"type": "String",
-			"value": "kafka:${topic}",
+			"value": "kafka:dummy",
 			"visible": false
 		}, {
-			"id": "urivalue_topic",
+			"id": "uriparam_messageSource",
+			"title": "Messagedaten Quelle",
+			"title_de": "Messagedata source",
+			"description_de": "Producer:Quelle der Messagedaten., z.B. <ul><li> <b>header.data</b> oder kurz: <b>h.data</b> => Quelle ist das Headerfeld <b>data</b></li><li><b>property.data</b> oder kurz <b>p.data</b> =>  Quelle ist Property <b>data</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Producer:Source of the message data, e.g. <ul><li> <b>header.data</b> or short: <b>h.data</b> => Source is the headerfield <b>data</b></li><li><b>property.data</b> or short <b>p.data</b> => Source is property <b>data</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true
+		}, {
+			"id": "uriparam_messageDestination",
+			"title": "Messagedaten Ziel",
+			"title_de": "Messagedata Destination",
+			"description_de": "Consumer:Ziel der Messagedaten., z.B. <ul><li> <b>header.data</b> oder kurz: <b>h.data</b> => Ziel ist das Headerfeld <b>data</b></li><li><b>property.data</b> oder kurz <b>p.data</b> =>  Ziel ist Property <b>data</b></li><li> default ist <b>body</b></li></ul>",
+			"description":    "Consumer:Destination of the message data, e.g. <ul><li> <b>header.data</b> or short: <b>h.data</b> => Destination is the headerfield <b>data</b></li><li><b>property.data</b> or short <b>p.data</b> => Destination is property <b>data</b></li><li> default is <b>body</b></li></ul>",
+			"type": "String",
+			"value": null,
+			"optional": true
+		}, {
+			"id": "uriparam_topic",
 			"type": "String",
 			"title": "Topic",
 			"title_de": "Topic",
@@ -4760,6 +4812,21 @@
 			"type": "String",
 			"value": "localhost:9092",
 			"visible": true
+		}, {
+			"id": "uriparam_seekTo",
+			"title": "Seek to",
+			"description": "Consumer option, ignored in producer: seek to end or beginning",
+			"type": "Choice",
+			"value": "end",
+			"items": [ {
+				"id": "c1",
+				"title": "End",
+				"value": "end"
+			}, {
+				"id": "c2",
+				"title": "Beginning",
+				"value": "beginning"
+			} ]
 		}, {
 			"id": "uriparam_groupId",
 			"title": "GroupId",
