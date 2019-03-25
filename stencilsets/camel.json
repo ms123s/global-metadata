@@ -4813,6 +4813,21 @@
 			"value": "localhost:9092",
 			"visible": true
 		}, {
+			"id": "uriparam_autoCommit",
+			"title": "AutoCommit",
+			"description": "Consumer option, ignored in producer",
+			"type": "Choice",
+			"value": "true",
+			"items": [ {
+				"id": "c1",
+				"title": "True",
+				"value": "true"
+			}, {
+				"id": "c2",
+				"title": "False",
+				"value": "false"
+			} ]
+		}, {
 			"id": "uriparam_seekTo",
 			"title": "Seek to",
 			"description": "Consumer option, ignored in producer: seek to end or beginning",
