@@ -632,6 +632,11 @@
 				"title": "Markdown",
 				"value": "markdown",
 				"refToView": "markdown"
+			},{
+				"id": "c4",
+				"title": "GroovyMarkupBuilder",
+				"value": "groovymarkupbuilder",
+				"refToView": "groovymarkupbuilder"
 			} ]
 		},
 		{
@@ -684,9 +689,22 @@
 			"id": "xf_groovymarkup",
 			"type": "text",
 			"title": "GroovyMarkup",
+			"description": "MarkupTemplateEngine is used",
 			"prefix": "oryx",
 			"value": "",
 			"visible": "xf_type=='groovymarkup'",
+			"popular": true,
+			"readonly": false,
+			"optional": true,
+			"refToView": ""
+		}, {
+			"id": "xf_groovymarkupbuilder",
+			"type": "text",
+			"title": "GroovyMarkupBuilder",
+			"prefix": "oryx",
+			"description": "MarkupBuilder is used",
+			"value": "",
+			"visible": "xf_type=='groovymarkupbuilder'",
 			"popular": true,
 			"readonly": false,
 			"optional": true,
