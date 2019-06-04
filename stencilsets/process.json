@@ -891,6 +891,9 @@
 		"groups": [ "Structural" ],
 		"groups_de": [ "Struktur" ],
 		"propertyPackages": [ "baseProperties", "colorProperties", "asynchronousbase", "executionlistenersbase", "loopcharacteristics", "activity", "istransactionProperties" ],
+		"layout": [ {
+			"type": "layout.bpmn2_0.subprocess"
+		} ],
 		"roles": [ "sequence_start", "Activity", "sequence_end", "all" ]
 	}, {
 		"type": "node",
