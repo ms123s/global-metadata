@@ -4807,7 +4807,7 @@
 			"value": ""
 		}, {
 			"id": "uriparam_brokers",
-			"description": "URL of the Kafka brokers to use.<br> The format is host1:port1,host2:port2, and the list can be a subset of brokers or a VIP pointing to a subset of brokers.<br> This option is known as bootstrap.servers in the Kafka documentation.",
+			"description": "URL of the Kafka brokers to use.<br> The format is host1:port1,host2:port2, and the list can be a subset of brokers or a VIP pointing to a subset of brokers.<br><br>if empty, then the value from <ul><li><b>branding('kafkaBootstrapServers')</b> and next from </li><li><b>evironment('kafka.bootstrap.servers')</b></li></ul> is used.",
 			"title": "Brokers",
 			"type": "String",
 			"value": "localhost:9094",
